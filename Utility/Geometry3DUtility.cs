@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,13 +15,25 @@ namespace NiceGraphicsLibrary
     /// Object to get the bounding box from
     /// </param>
     /// <return>
-    /// Returns the bounding box of the whole mesh
+    /// Returns the bounding box of the all meshes under the object.
+    /// Returns a bounding box with a vector (0,0,0) for center, min, max, extends and size  
+    /// if the object itself and none of its children has a MeshRenderer Component
     /// </return>
     /// <remarks>
-    /// To work, object with a mesh needs the component MeshRenderer
+    /// To work, object with a mesh needs the component MeshRenderer. 
     /// </remarks>
+    /// <exception cref="ArgumentNullException">
+    /// If rootObject is null
+    /// </exception>
     public static Bounds GetVolumeBoundingBox(GameObject rootObject)
-    {
+    {      
+      if (rootObject == null)
+      {
+        throw new ArgumentNullException($"{nameof(rootObject)} must not be null");
+      }
+
+      var resultBoundingBox = new Bounds();
+
       float minX = float.MaxValue;
       float maxX = float.MinValue;
       float minY = float.MaxValue;
@@ -28,15 +41,17 @@ namespace NiceGraphicsLibrary
       float minZ = float.MaxValue;
       float maxZ = float.MinValue;
 
+      bool hasMeshRenderer = false;
+
       CompareOneMesh(rootObject);
-
-      var bounding = new Bounds()
+      
+      if (hasMeshRenderer)
       {
-        max = new Vector3(maxX, maxY, maxZ),
-        min = new Vector3(minX, minY, minZ)
-      };
+        resultBoundingBox.max = new Vector3(maxX, maxY, maxZ);
+        resultBoundingBox.min = new Vector3(minX, minY, minZ);        
+      }
 
-      return bounding;
+      return resultBoundingBox;
 
       void CompareOneMesh(GameObject oneObject)
       {
@@ -44,6 +59,7 @@ namespace NiceGraphicsLibrary
 
         if (meshRenderer != null)
         {
+          hasMeshRenderer = true;
           Bounds boundingBox = meshRenderer.bounds;
           minX = Mathf.Min(minX, boundingBox.min.x);
           maxX = Mathf.Max(maxX, boundingBox.max.x);
