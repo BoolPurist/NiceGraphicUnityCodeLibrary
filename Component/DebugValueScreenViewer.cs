@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -30,7 +28,7 @@ namespace NiceGraphicLibrary
     [Min(0)]
     private int FontSize = 20;
 
-    private Dictionary<string, Text> _textLines;
+    private readonly Dictionary<string, Text> _textLines = new Dictionary<string, Text>();
     private GameObject _canvaseContainer;
     private VerticalLayoutGroup _layout;
 
@@ -82,6 +80,7 @@ namespace NiceGraphicLibrary
 
       if (_textLines.ContainsKey(valueName))
       {
+        Destroy(_textLines[valueName].gameObject);
         _textLines.Remove(valueName);
         return true;
       }
@@ -130,7 +129,7 @@ namespace NiceGraphicLibrary
         {
           text.color = FontColor;
           text.fontSize = FontSize;
-        }        
+        }
       }
     }
 
@@ -140,14 +139,13 @@ namespace NiceGraphicLibrary
 
     private void Awake()
     {
-      _textLines = new Dictionary<string, Text>();
       CreateCanvas();
       _isSetUp = true;
     }
 
     private void CreateCanvas()
     {
-      
+      Debug.Log("Creating Canvas.");
       _canvaseContainer = new GameObject("Screen Value Viewer");
 
       // Constructing adding components
@@ -166,30 +164,31 @@ namespace NiceGraphicLibrary
       _layout = _canvaseContainer.GetComponent<VerticalLayoutGroup>();
       _layout.childForceExpandHeight = false;
       _layout.childForceExpandWidth = false;
-      ApplyingLayout();      
+      ApplyingLayout();
     }
 
     private void CreateOneTextLine(string valueName, string value)
     {
       // Constructing text line
-      var root = new GameObject() { name = valueName };      
+      var root = new GameObject() { name = valueName };
       root.AddComponent<RectTransform>();
       root.AddComponent<CanvasRenderer>();
-      root.AddComponent<Text>();      
-      root.transform.SetParent(_canvaseContainer.transform);
-      
+      root.AddComponent<Text>();
+
       // Adjusting text line
       var newText = root.GetComponent<Text>();
       newText.font = Resources.GetBuiltinResource<Font>("Arial.ttf");
       newText.color = FontColor;
       newText.fontSize = FontSize;
       newText.text = CreateContentForTextLine(valueName, value);
-      
-      _textLines.Add(valueName, newText);      
+      Debug.Log($"newText: {newText}");
+      Debug.Log($"_canvaseContainer: {_canvaseContainer}");
+      _textLines.Add(valueName, newText);
+      newText.transform.SetParent(_canvaseContainer.transform);
     }
 
     #endregion
 
     private string CreateContentForTextLine(string valueName, string value) => $"{valueName}: {value}";
-  } 
+  }
 }
