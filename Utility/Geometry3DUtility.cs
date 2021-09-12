@@ -25,7 +25,7 @@ namespace NiceGraphicsLibrary
     /// <exception cref="ArgumentNullException">
     /// If rootObject is null
     /// </exception>
-    public static Bounds GetVolumeBoundingBox(GameObject rootObject)
+    public static Bounds GetBoundingBoxOfAllMeshes(GameObject rootObject)
     {      
       if (rootObject == null)
       {
@@ -75,6 +75,7 @@ namespace NiceGraphicsLibrary
         }
       }
     }
+  
   }
 
 }

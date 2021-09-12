@@ -28,7 +28,9 @@ namespace NiceGraphicLibrary
     [Min(0)]
     private int FontSize = 20;
 
+#pragma warning disable IDE0090 // Use 'new(...)'
     private readonly Dictionary<string, Text> _textLines = new Dictionary<string, Text>();
+#pragma warning restore IDE0090 // Use 'new(...)'
     private GameObject _canvaseContainer;
     private VerticalLayoutGroup _layout;
 
@@ -129,7 +131,7 @@ namespace NiceGraphicLibrary
         {
           text.color = FontColor;
           text.fontSize = FontSize;
-        }
+        }        
       }
     }
 

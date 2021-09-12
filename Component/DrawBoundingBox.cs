@@ -27,7 +27,7 @@ namespace NiceGraphicsLibrary
 
     private void OnDrawGizmosSelected()
     {      
-      Bounds boundingBox = Geometry3DUtility.GetVolumeBoundingBox(gameObject);
+      Bounds boundingBox = Geometry3DUtility.GetBoundingBoxOfAllMeshes(gameObject);
       
       Gizmos.color = Color.red;
       Gizmos.DrawSphere(boundingBox.center, RadiusSpherePoint);
