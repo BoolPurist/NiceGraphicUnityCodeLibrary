@@ -12,14 +12,21 @@ namespace NiceGraphicLibrary.Component
   /// </summary>
   public class DrawBoundingBox : MonoBehaviour
   {
-
+    /// <summary>
+    /// Used to group all colors adjustable via inspector for the component <see cref="DrawBoundingBox"/>
+    /// </summary>s
     [System.Serializable]
     public class ElementColors
     {
+      [Tooltip("Color of the drawn center.")]
       public Color Center = Color.red;
+      [Tooltip("Color of the point equaling center - extends.")]
       public Color Min = Color.blue;
+      [Tooltip("Color of the point equaling center + extends.")]
       public Color Max = Color.green;
+      [Tooltip("Color of the rim.")]
       public Color WireFrame = Color.grey;
+      [Tooltip("Color of the diagonal between min and max.")]
       public Color Diagonal = Color.cyan;
     }
 
