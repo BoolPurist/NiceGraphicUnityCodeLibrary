@@ -20,6 +20,14 @@ namespace NiceGraphicLibrary
     [SerializeField]
     private bool Z = true;
 
+    public void EnableXMovement() => X = true;
+    public void EnableYMovement() => Y = true;
+    public void EnableZMovement() => Z = true;
+    public void DisableXMovement() => X = false;
+    public void DisableYMovement() => Y = false;
+    public void DisableZMovement() => Z = false;
+
+
     public void OnMoveX(float inputXAxis)
     {
       if (X)

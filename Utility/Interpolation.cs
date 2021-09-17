@@ -41,7 +41,6 @@ namespace NiceGraphicLibrary
       } while (passedTime < duration);
       
     }
-
     
   } 
 }

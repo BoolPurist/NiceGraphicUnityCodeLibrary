@@ -146,8 +146,7 @@ namespace NiceGraphicLibrary
     }
 
     private void CreateCanvas()
-    {
-      Debug.Log("Creating Canvas.");
+    {      
       _canvaseContainer = new GameObject("Screen Value Viewer");
 
       // Constructing adding components
@@ -183,8 +182,6 @@ namespace NiceGraphicLibrary
       newText.color = FontColor;
       newText.fontSize = FontSize;
       newText.text = CreateContentForTextLine(valueName, value);
-      Debug.Log($"newText: {newText}");
-      Debug.Log($"_canvaseContainer: {_canvaseContainer}");
       _textLines.Add(valueName, newText);
       newText.transform.SetParent(_canvaseContainer.transform);
     }

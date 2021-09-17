@@ -8,7 +8,7 @@ namespace NiceGraphicLibrary
   /// <summary>
   /// Used to start a countdown from number of seconds to zero.
   /// </summary>
-  public class CountDown
+  public class CountDown 
   {
     // Moment to pass to reach zero, end of count down.
     private DateTime _timeStamp;

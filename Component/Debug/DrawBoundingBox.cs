@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace NiceGraphicsLibrary
+namespace NiceGraphicLibrary
 {
   public class DrawBoundingBox : MonoBehaviour
   {
@@ -28,7 +28,7 @@ namespace NiceGraphicsLibrary
     private void OnDrawGizmosSelected()
     {      
       Bounds boundingBox = Geometry3DUtility.GetBoundingBoxOfAllMeshes(gameObject);
-      
+      boundingBox.Encapsulate(this.transform.TransformPoint(Vector3.zero));
       Gizmos.color = Color.red;
       Gizmos.DrawSphere(boundingBox.center, RadiusSpherePoint);
       Gizmos.color = Colors.Min;
@@ -39,7 +39,10 @@ namespace NiceGraphicsLibrary
       Gizmos.DrawWireCube(boundingBox.center, boundingBox.size);
       Gizmos.color = Colors.Diagonal;
       Gizmos.DrawLine(boundingBox.min, boundingBox.max);
+     
     }
+
+    
   }
 
 }

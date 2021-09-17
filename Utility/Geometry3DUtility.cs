@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace NiceGraphicsLibrary
+namespace NiceGraphicLibrary
 {
   public static class Geometry3DUtility
   {
@@ -29,6 +29,7 @@ namespace NiceGraphicsLibrary
     {      
       if (rootObject == null)
       {
+        
         throw new ArgumentNullException($"{nameof(rootObject)} must not be null");
       }
 
@@ -44,11 +45,15 @@ namespace NiceGraphicsLibrary
       bool hasMeshRenderer = false;
 
       CompareOneMesh(rootObject);
-      
+
       if (hasMeshRenderer)
       {
         resultBoundingBox.max = new Vector3(maxX, maxY, maxZ);
-        resultBoundingBox.min = new Vector3(minX, minY, minZ);        
+        resultBoundingBox.min = new Vector3(minX, minY, minZ);
+      }
+      else
+      {
+        resultBoundingBox.center = rootObject.transform.position;
       }
 
       return resultBoundingBox;
