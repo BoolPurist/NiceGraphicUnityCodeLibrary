@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using UnityEngine; 
 
 
-namespace NiceGraphicLibrary
+namespace NiceGraphicLibrary.Component
 {
+  /// <summary>
+  /// Provides input management for keyboard inputs to control a component inheriting from type <see cref="PlayerMovement"/> 
+  /// </summary>
   [RequireComponent(typeof(PlayerMovement))]
   public class PlayerKeyboardMovementInput : MonoBehaviour
   {

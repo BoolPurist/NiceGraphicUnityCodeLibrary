@@ -3,8 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine; 
 
-namespace NiceGraphicLibrary
+namespace NiceGraphicLibrary.Utility
 {
+  /// <summary>
+  /// Provides functions for the unity coroutines to interpolate vales over time.
+  /// </summary>
   public static class Interpolation
   {
 

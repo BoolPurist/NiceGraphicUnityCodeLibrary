@@ -4,8 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NiceGraphicsLibrary
+namespace NiceGraphicLibrary.Utility
 {
+  /// <summary>
+  /// Demands a cool down which returns a value between 0 and 1 for passed time within an interval 
+  /// </summary>
   interface ICooldownTimer
   {   
     /// <summary>

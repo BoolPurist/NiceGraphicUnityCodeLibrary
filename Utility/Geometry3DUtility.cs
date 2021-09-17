@@ -3,8 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace NiceGraphicLibrary
+namespace NiceGraphicLibrary.Utility
 {
+  /// <summary>
+  /// Provides functions for handling math related task in the 3d geometry area
+  /// </summary>
   public static class Geometry3DUtility
   {
     /// <summary>
@@ -17,20 +20,17 @@ namespace NiceGraphicLibrary
     /// <return>
     /// Returns the bounding box of the all meshes under the object.
     /// Returns a bounding box with a vector (0,0,0) for center, min, max, extends and size  
-    /// if the object itself and none of its children has a MeshRenderer Component
+    /// if the object itself and none of its children has a MeshRenderer Component or is null
     /// </return>
     /// <remarks>
-    /// To work, object with a mesh needs the component MeshRenderer. 
+    /// To work, object with a mesh needs a component MeshRenderer. 
     /// </remarks>
-    /// <exception cref="ArgumentNullException">
-    /// If rootObject is null
-    /// </exception>
     public static Bounds GetBoundingBoxOfAllMeshes(GameObject rootObject)
     {      
       if (rootObject == null)
       {
-        
-        throw new ArgumentNullException($"{nameof(rootObject)} must not be null");
+        Debug.LogWarning($" {nameof(rootObject)} is null. Returned bounds with no volume and with a center of {Vector3.zero}");
+        return new Bounds(Vector3.zero, Vector3.zero);
       }
 
       var resultBoundingBox = new Bounds();

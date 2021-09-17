@@ -2,8 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace NiceGraphicLibrary
+using NiceGraphicLibrary.Utility;
+
+namespace NiceGraphicLibrary.Component
 {
+  /// <summary>
+  /// Draws a bounding box which contains all meshes under one game object
+  /// while selected even in editor mode.
+  /// </summary>
   public class DrawBoundingBox : MonoBehaviour
   {
 

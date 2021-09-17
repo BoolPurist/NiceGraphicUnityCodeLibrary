@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace NiceGraphicLibrary
+namespace NiceGraphicLibrary.Component
 {
   /// <summary>
   /// Other components can use the API of this one 

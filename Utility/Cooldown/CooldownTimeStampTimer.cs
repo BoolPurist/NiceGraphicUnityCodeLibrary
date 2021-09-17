@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 using UnityEngine;
 
-namespace NiceGraphicsLibrary
+namespace NiceGraphicLibrary.Utility
 {
+  /// <summary>
+  /// Object to return a value for the passed time within an interval.
+  /// Inner timer stops if ime.timeScale == 0.
+  /// </summary>
   public class CooldownTimeStampTimer : ICooldownTimer
   {
     // Moment to pass for cool down to wear off.

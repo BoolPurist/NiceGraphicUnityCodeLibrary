@@ -1,0 +1,4812 @@
+id: cs.temp.dll
+language: CSharp
+name:
+  Default: cs.temp.dll
+qualifiedName:
+  Default: cs.temp.dll
+type: Assembly
+modifiers: {}
+items:
+- id: NiceGraphicLibrary
+  commentId: N:NiceGraphicLibrary
+  language: CSharp
+  name:
+    CSharp: NiceGraphicLibrary
+    VB: NiceGraphicLibrary
+  nameWithType:
+    CSharp: NiceGraphicLibrary
+    VB: NiceGraphicLibrary
+  qualifiedName:
+    CSharp: NiceGraphicLibrary
+    VB: NiceGraphicLibrary
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+  modifiers: {}
+  items:
+  - id: NiceGraphicLibrary.DebugValueScreenViewer
+    commentId: T:NiceGraphicLibrary.DebugValueScreenViewer
+    language: CSharp
+    name:
+      CSharp: DebugValueScreenViewer
+      VB: DebugValueScreenViewer
+    nameWithType:
+      CSharp: DebugValueScreenViewer
+      VB: DebugValueScreenViewer
+    qualifiedName:
+      CSharp: NiceGraphicLibrary.DebugValueScreenViewer
+      VB: NiceGraphicLibrary.DebugValueScreenViewer
+    type: Class
+    assemblies:
+    - cs.temp.dll
+    namespace: NiceGraphicLibrary
+    source:
+      id: DebugValueScreenViewer
+      path: ''
+      startLine: 10
+    summary: "\nOther components can use the API of this one \nTo show values to the screen.\n"
+    example: []
+    syntax:
+      content:
+        CSharp: 'public class DebugValueScreenViewer : MonoBehaviour'
+        VB: >-
+          Public Class DebugValueScreenViewer
+
+              Inherits MonoBehaviour
+    inheritance:
+    - System.Object
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: NiceGraphicLibrary.DebugValueScreenViewer.UpdateValue(System.String,System.Object)
+      commentId: M:NiceGraphicLibrary.DebugValueScreenViewer.UpdateValue(System.String,System.Object)
+      language: CSharp
+      name:
+        CSharp: UpdateValue(String, Object)
+        VB: UpdateValue(String, Object)
+      nameWithType:
+        CSharp: DebugValueScreenViewer.UpdateValue(String, Object)
+        VB: DebugValueScreenViewer.UpdateValue(String, Object)
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.DebugValueScreenViewer.UpdateValue(System.String, System.Object)
+        VB: NiceGraphicLibrary.DebugValueScreenViewer.UpdateValue(System.String, System.Object)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: UpdateValue
+        path: ''
+        startLine: 52
+      summary: "\nEither creates a new text line to show an arbitrary value to the screen during the game or\nupdates the value displayed to the screen.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void UpdateValue(string valueName, object value)
+          VB: Public Sub UpdateValue(valueName As String, value As Object)
+        parameters:
+        - id: valueName
+          type: System.String
+          description: "\nLable assigned to the value. Is displayed to the left of the shown value\nIf this value was not added to this component then a new text line will be displayed.\nShould not be null or empty\n"
+        - id: value
+          type: System.Object
+          description: "\nValue to be shown right to the lable\n"
+      overload: NiceGraphicLibrary.DebugValueScreenViewer.UpdateValue*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: NiceGraphicLibrary.DebugValueScreenViewer.RemoveValue(System.String)
+      commentId: M:NiceGraphicLibrary.DebugValueScreenViewer.RemoveValue(System.String)
+      language: CSharp
+      name:
+        CSharp: RemoveValue(String)
+        VB: RemoveValue(String)
+      nameWithType:
+        CSharp: DebugValueScreenViewer.RemoveValue(String)
+        VB: DebugValueScreenViewer.RemoveValue(String)
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.DebugValueScreenViewer.RemoveValue(System.String)
+        VB: NiceGraphicLibrary.DebugValueScreenViewer.RemoveValue(System.String)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: RemoveValue
+        path: ''
+        startLine: 78
+      summary: "\nRemoves one text line for given lable if it exits\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public bool RemoveValue(string valueName)
+          VB: Public Function RemoveValue(valueName As String) As Boolean
+        parameters:
+        - id: valueName
+          type: System.String
+          description: "\nName  of the lable. Used to determine which text line needs to be deleted.\n"
+        return:
+          type: System.Boolean
+      overload: NiceGraphicLibrary.DebugValueScreenViewer.RemoveValue*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+  - id: NiceGraphicLibrary.DrawBoundingBox
+    commentId: T:NiceGraphicLibrary.DrawBoundingBox
+    language: CSharp
+    name:
+      CSharp: DrawBoundingBox
+      VB: DrawBoundingBox
+    nameWithType:
+      CSharp: DrawBoundingBox
+      VB: DrawBoundingBox
+    qualifiedName:
+      CSharp: NiceGraphicLibrary.DrawBoundingBox
+      VB: NiceGraphicLibrary.DrawBoundingBox
+    type: Class
+    assemblies:
+    - cs.temp.dll
+    namespace: NiceGraphicLibrary
+    source:
+      id: DrawBoundingBox
+      path: ''
+      startLine: 199
+    syntax:
+      content:
+        CSharp: 'public class DrawBoundingBox : MonoBehaviour'
+        VB: >-
+          Public Class DrawBoundingBox
+
+              Inherits MonoBehaviour
+    inheritance:
+    - System.Object
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items: []
+  - id: NiceGraphicLibrary.DrawBoundingBox.ElementColors
+    commentId: T:NiceGraphicLibrary.DrawBoundingBox.ElementColors
+    language: CSharp
+    name:
+      CSharp: DrawBoundingBox.ElementColors
+      VB: DrawBoundingBox.ElementColors
+    nameWithType:
+      CSharp: DrawBoundingBox.ElementColors
+      VB: DrawBoundingBox.ElementColors
+    qualifiedName:
+      CSharp: NiceGraphicLibrary.DrawBoundingBox.ElementColors
+      VB: NiceGraphicLibrary.DrawBoundingBox.ElementColors
+    type: Class
+    assemblies:
+    - cs.temp.dll
+    namespace: NiceGraphicLibrary
+    source:
+      id: ElementColors
+      path: ''
+      startLine: 202
+    syntax:
+      content:
+        CSharp: >-
+          [Serializable]
+
+          public class ElementColors
+        VB: >-
+          <Serializable>
+
+          Public Class ElementColors
+    inheritance:
+    - System.Object
+    inheritedMembers:
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    attributes:
+    - type: System.SerializableAttribute
+      ctor: System.SerializableAttribute.#ctor
+      arguments: []
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: NiceGraphicLibrary.DrawBoundingBox.ElementColors.Center
+      commentId: F:NiceGraphicLibrary.DrawBoundingBox.ElementColors.Center
+      language: CSharp
+      name:
+        CSharp: Center
+        VB: Center
+      nameWithType:
+        CSharp: DrawBoundingBox.ElementColors.Center
+        VB: DrawBoundingBox.ElementColors.Center
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.DrawBoundingBox.ElementColors.Center
+        VB: NiceGraphicLibrary.DrawBoundingBox.ElementColors.Center
+      type: Field
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: Center
+        path: ''
+        startLine: 205
+      syntax:
+        content:
+          CSharp: public Color Center
+          VB: Public Center As Color
+        return:
+          type: Color
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: NiceGraphicLibrary.DrawBoundingBox.ElementColors.Min
+      commentId: F:NiceGraphicLibrary.DrawBoundingBox.ElementColors.Min
+      language: CSharp
+      name:
+        CSharp: Min
+        VB: Min
+      nameWithType:
+        CSharp: DrawBoundingBox.ElementColors.Min
+        VB: DrawBoundingBox.ElementColors.Min
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.DrawBoundingBox.ElementColors.Min
+        VB: NiceGraphicLibrary.DrawBoundingBox.ElementColors.Min
+      type: Field
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: Min
+        path: ''
+        startLine: 206
+      syntax:
+        content:
+          CSharp: public Color Min
+          VB: Public Min As Color
+        return:
+          type: Color
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: NiceGraphicLibrary.DrawBoundingBox.ElementColors.Max
+      commentId: F:NiceGraphicLibrary.DrawBoundingBox.ElementColors.Max
+      language: CSharp
+      name:
+        CSharp: Max
+        VB: Max
+      nameWithType:
+        CSharp: DrawBoundingBox.ElementColors.Max
+        VB: DrawBoundingBox.ElementColors.Max
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.DrawBoundingBox.ElementColors.Max
+        VB: NiceGraphicLibrary.DrawBoundingBox.ElementColors.Max
+      type: Field
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: Max
+        path: ''
+        startLine: 207
+      syntax:
+        content:
+          CSharp: public Color Max
+          VB: Public Max As Color
+        return:
+          type: Color
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: NiceGraphicLibrary.DrawBoundingBox.ElementColors.WireFrame
+      commentId: F:NiceGraphicLibrary.DrawBoundingBox.ElementColors.WireFrame
+      language: CSharp
+      name:
+        CSharp: WireFrame
+        VB: WireFrame
+      nameWithType:
+        CSharp: DrawBoundingBox.ElementColors.WireFrame
+        VB: DrawBoundingBox.ElementColors.WireFrame
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.DrawBoundingBox.ElementColors.WireFrame
+        VB: NiceGraphicLibrary.DrawBoundingBox.ElementColors.WireFrame
+      type: Field
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: WireFrame
+        path: ''
+        startLine: 208
+      syntax:
+        content:
+          CSharp: public Color WireFrame
+          VB: Public WireFrame As Color
+        return:
+          type: Color
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: NiceGraphicLibrary.DrawBoundingBox.ElementColors.Diagonal
+      commentId: F:NiceGraphicLibrary.DrawBoundingBox.ElementColors.Diagonal
+      language: CSharp
+      name:
+        CSharp: Diagonal
+        VB: Diagonal
+      nameWithType:
+        CSharp: DrawBoundingBox.ElementColors.Diagonal
+        VB: DrawBoundingBox.ElementColors.Diagonal
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.DrawBoundingBox.ElementColors.Diagonal
+        VB: NiceGraphicLibrary.DrawBoundingBox.ElementColors.Diagonal
+      type: Field
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: Diagonal
+        path: ''
+        startLine: 209
+      syntax:
+        content:
+          CSharp: public Color Diagonal
+          VB: Public Diagonal As Color
+        return:
+          type: Color
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+  - id: NiceGraphicLibrary.DrawDebugLineTo
+    commentId: T:NiceGraphicLibrary.DrawDebugLineTo
+    language: CSharp
+    name:
+      CSharp: DrawDebugLineTo
+      VB: DrawDebugLineTo
+    nameWithType:
+      CSharp: DrawDebugLineTo
+      VB: DrawDebugLineTo
+    qualifiedName:
+      CSharp: NiceGraphicLibrary.DrawDebugLineTo
+      VB: NiceGraphicLibrary.DrawDebugLineTo
+    type: Class
+    assemblies:
+    - cs.temp.dll
+    namespace: NiceGraphicLibrary
+    source:
+      id: DrawDebugLineTo
+      path: ''
+      startLine: 248
+    syntax:
+      content:
+        CSharp: 'public class DrawDebugLineTo : MonoBehaviour'
+        VB: >-
+          Public Class DrawDebugLineTo
+
+              Inherits MonoBehaviour
+    inheritance:
+    - System.Object
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items: []
+  - id: NiceGraphicLibrary.DrawDebugLineTo.ReferencePoint
+    commentId: T:NiceGraphicLibrary.DrawDebugLineTo.ReferencePoint
+    language: CSharp
+    name:
+      CSharp: DrawDebugLineTo.ReferencePoint
+      VB: DrawDebugLineTo.ReferencePoint
+    nameWithType:
+      CSharp: DrawDebugLineTo.ReferencePoint
+      VB: DrawDebugLineTo.ReferencePoint
+    qualifiedName:
+      CSharp: NiceGraphicLibrary.DrawDebugLineTo.ReferencePoint
+      VB: NiceGraphicLibrary.DrawDebugLineTo.ReferencePoint
+    type: Enum
+    assemblies:
+    - cs.temp.dll
+    namespace: NiceGraphicLibrary
+    source:
+      id: ReferencePoint
+      path: ''
+      startLine: 250
+    syntax:
+      content:
+        CSharp: public enum ReferencePoint
+        VB: Public Enum ReferencePoint
+    modifiers:
+      CSharp:
+      - public
+      - enum
+      VB:
+      - Public
+      - Enum
+    items:
+    - id: NiceGraphicLibrary.DrawDebugLineTo.ReferencePoint.Pivot
+      commentId: F:NiceGraphicLibrary.DrawDebugLineTo.ReferencePoint.Pivot
+      language: CSharp
+      name:
+        CSharp: Pivot
+        VB: Pivot
+      nameWithType:
+        CSharp: DrawDebugLineTo.ReferencePoint.Pivot
+        VB: DrawDebugLineTo.ReferencePoint.Pivot
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.DrawDebugLineTo.ReferencePoint.Pivot
+        VB: NiceGraphicLibrary.DrawDebugLineTo.ReferencePoint.Pivot
+      type: Field
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: Pivot
+        path: ''
+        startLine: 250
+      syntax:
+        content:
+          CSharp: Pivot = 0
+          VB: Pivot = 0
+        return:
+          type: NiceGraphicLibrary.DrawDebugLineTo.ReferencePoint
+      modifiers:
+        CSharp:
+        - public
+        - const
+        VB:
+        - Public
+        - Const
+    - id: NiceGraphicLibrary.DrawDebugLineTo.ReferencePoint.Center
+      commentId: F:NiceGraphicLibrary.DrawDebugLineTo.ReferencePoint.Center
+      language: CSharp
+      name:
+        CSharp: Center
+        VB: Center
+      nameWithType:
+        CSharp: DrawDebugLineTo.ReferencePoint.Center
+        VB: DrawDebugLineTo.ReferencePoint.Center
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.DrawDebugLineTo.ReferencePoint.Center
+        VB: NiceGraphicLibrary.DrawDebugLineTo.ReferencePoint.Center
+      type: Field
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: Center
+        path: ''
+        startLine: 250
+      syntax:
+        content:
+          CSharp: Center = 1
+          VB: Center = 1
+        return:
+          type: NiceGraphicLibrary.DrawDebugLineTo.ReferencePoint
+      modifiers:
+        CSharp:
+        - public
+        - const
+        VB:
+        - Public
+        - Const
+  - id: NiceGraphicLibrary.LinearPlayerMovement
+    commentId: T:NiceGraphicLibrary.LinearPlayerMovement
+    language: CSharp
+    name:
+      CSharp: LinearPlayerMovement
+      VB: LinearPlayerMovement
+    nameWithType:
+      CSharp: LinearPlayerMovement
+      VB: LinearPlayerMovement
+    qualifiedName:
+      CSharp: NiceGraphicLibrary.LinearPlayerMovement
+      VB: NiceGraphicLibrary.LinearPlayerMovement
+    type: Class
+    assemblies:
+    - cs.temp.dll
+    namespace: NiceGraphicLibrary
+    source:
+      id: LinearPlayerMovement
+      path: ''
+      startLine: 287
+    syntax:
+      content:
+        CSharp: 'public class LinearPlayerMovement : MonoBehaviour'
+        VB: >-
+          Public Class LinearPlayerMovement
+
+              Inherits MonoBehaviour
+    inheritance:
+    - System.Object
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items: []
+  - id: NiceGraphicLibrary.PlayerKeyboardMovementInput
+    commentId: T:NiceGraphicLibrary.PlayerKeyboardMovementInput
+    language: CSharp
+    name:
+      CSharp: PlayerKeyboardMovementInput
+      VB: PlayerKeyboardMovementInput
+    nameWithType:
+      CSharp: PlayerKeyboardMovementInput
+      VB: PlayerKeyboardMovementInput
+    qualifiedName:
+      CSharp: NiceGraphicLibrary.PlayerKeyboardMovementInput
+      VB: NiceGraphicLibrary.PlayerKeyboardMovementInput
+    type: Class
+    assemblies:
+    - cs.temp.dll
+    namespace: NiceGraphicLibrary
+    source:
+      id: PlayerKeyboardMovementInput
+      path: ''
+      startLine: 299
+    syntax:
+      content:
+        CSharp: 'public class PlayerKeyboardMovementInput : MonoBehaviour'
+        VB: >-
+          Public Class PlayerKeyboardMovementInput
+
+              Inherits MonoBehaviour
+    inheritance:
+    - System.Object
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items: []
+  - id: NiceGraphicLibrary.PlayerMovement
+    commentId: T:NiceGraphicLibrary.PlayerMovement
+    language: CSharp
+    name:
+      CSharp: PlayerMovement
+      VB: PlayerMovement
+    nameWithType:
+      CSharp: PlayerMovement
+      VB: PlayerMovement
+    qualifiedName:
+      CSharp: NiceGraphicLibrary.PlayerMovement
+      VB: NiceGraphicLibrary.PlayerMovement
+    type: Class
+    assemblies:
+    - cs.temp.dll
+    namespace: NiceGraphicLibrary
+    source:
+      id: PlayerMovement
+      path: ''
+      startLine: 347
+    syntax:
+      content:
+        CSharp: 'public abstract class PlayerMovement : MonoBehaviour'
+        VB: >-
+          Public MustInherit Class PlayerMovement
+
+              Inherits MonoBehaviour
+    inheritance:
+    - System.Object
+    modifiers:
+      CSharp:
+      - public
+      - abstract
+      - class
+      VB:
+      - Public
+      - MustInherit
+      - Class
+    items:
+    - id: NiceGraphicLibrary.PlayerMovement._axisX
+      commentId: F:NiceGraphicLibrary.PlayerMovement._axisX
+      language: CSharp
+      name:
+        CSharp: _axisX
+        VB: _axisX
+      nameWithType:
+        CSharp: PlayerMovement._axisX
+        VB: PlayerMovement._axisX
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.PlayerMovement._axisX
+        VB: NiceGraphicLibrary.PlayerMovement._axisX
+      type: Field
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: _axisX
+        path: ''
+        startLine: 356
+      syntax:
+        content:
+          CSharp: protected float _axisX
+          VB: Protected _axisX As Single
+        return:
+          type: System.Single
+      modifiers:
+        CSharp:
+        - protected
+        VB:
+        - Protected
+    - id: NiceGraphicLibrary.PlayerMovement._axisY
+      commentId: F:NiceGraphicLibrary.PlayerMovement._axisY
+      language: CSharp
+      name:
+        CSharp: _axisY
+        VB: _axisY
+      nameWithType:
+        CSharp: PlayerMovement._axisY
+        VB: PlayerMovement._axisY
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.PlayerMovement._axisY
+        VB: NiceGraphicLibrary.PlayerMovement._axisY
+      type: Field
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: _axisY
+        path: ''
+        startLine: 357
+      syntax:
+        content:
+          CSharp: protected float _axisY
+          VB: Protected _axisY As Single
+        return:
+          type: System.Single
+      modifiers:
+        CSharp:
+        - protected
+        VB:
+        - Protected
+    - id: NiceGraphicLibrary.PlayerMovement._axisZ
+      commentId: F:NiceGraphicLibrary.PlayerMovement._axisZ
+      language: CSharp
+      name:
+        CSharp: _axisZ
+        VB: _axisZ
+      nameWithType:
+        CSharp: PlayerMovement._axisZ
+        VB: PlayerMovement._axisZ
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.PlayerMovement._axisZ
+        VB: NiceGraphicLibrary.PlayerMovement._axisZ
+      type: Field
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: _axisZ
+        path: ''
+        startLine: 358
+      syntax:
+        content:
+          CSharp: protected float _axisZ
+          VB: Protected _axisZ As Single
+        return:
+          type: System.Single
+      modifiers:
+        CSharp:
+        - protected
+        VB:
+        - Protected
+    - id: NiceGraphicLibrary.PlayerMovement._rb
+      commentId: F:NiceGraphicLibrary.PlayerMovement._rb
+      language: CSharp
+      name:
+        CSharp: _rb
+        VB: _rb
+      nameWithType:
+        CSharp: PlayerMovement._rb
+        VB: PlayerMovement._rb
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.PlayerMovement._rb
+        VB: NiceGraphicLibrary.PlayerMovement._rb
+      type: Field
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: _rb
+        path: ''
+        startLine: 360
+      syntax:
+        content:
+          CSharp: protected Rigidbody _rb
+          VB: Protected _rb As Rigidbody
+        return:
+          type: Rigidbody
+      modifiers:
+        CSharp:
+        - protected
+        VB:
+        - Protected
+    - id: NiceGraphicLibrary.PlayerMovement.EnableXMovement
+      commentId: M:NiceGraphicLibrary.PlayerMovement.EnableXMovement
+      language: CSharp
+      name:
+        CSharp: EnableXMovement()
+        VB: EnableXMovement()
+      nameWithType:
+        CSharp: PlayerMovement.EnableXMovement()
+        VB: PlayerMovement.EnableXMovement()
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.PlayerMovement.EnableXMovement()
+        VB: NiceGraphicLibrary.PlayerMovement.EnableXMovement()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: EnableXMovement
+        path: ''
+        startLine: 377
+      syntax:
+        content:
+          CSharp: public void EnableXMovement()
+          VB: Public Sub EnableXMovement
+      overload: NiceGraphicLibrary.PlayerMovement.EnableXMovement*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: NiceGraphicLibrary.PlayerMovement.EnableYMovement
+      commentId: M:NiceGraphicLibrary.PlayerMovement.EnableYMovement
+      language: CSharp
+      name:
+        CSharp: EnableYMovement()
+        VB: EnableYMovement()
+      nameWithType:
+        CSharp: PlayerMovement.EnableYMovement()
+        VB: PlayerMovement.EnableYMovement()
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.PlayerMovement.EnableYMovement()
+        VB: NiceGraphicLibrary.PlayerMovement.EnableYMovement()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: EnableYMovement
+        path: ''
+        startLine: 378
+      syntax:
+        content:
+          CSharp: public void EnableYMovement()
+          VB: Public Sub EnableYMovement
+      overload: NiceGraphicLibrary.PlayerMovement.EnableYMovement*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: NiceGraphicLibrary.PlayerMovement.EnableZMovement
+      commentId: M:NiceGraphicLibrary.PlayerMovement.EnableZMovement
+      language: CSharp
+      name:
+        CSharp: EnableZMovement()
+        VB: EnableZMovement()
+      nameWithType:
+        CSharp: PlayerMovement.EnableZMovement()
+        VB: PlayerMovement.EnableZMovement()
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.PlayerMovement.EnableZMovement()
+        VB: NiceGraphicLibrary.PlayerMovement.EnableZMovement()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: EnableZMovement
+        path: ''
+        startLine: 379
+      syntax:
+        content:
+          CSharp: public void EnableZMovement()
+          VB: Public Sub EnableZMovement
+      overload: NiceGraphicLibrary.PlayerMovement.EnableZMovement*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: NiceGraphicLibrary.PlayerMovement.DisableXMovement
+      commentId: M:NiceGraphicLibrary.PlayerMovement.DisableXMovement
+      language: CSharp
+      name:
+        CSharp: DisableXMovement()
+        VB: DisableXMovement()
+      nameWithType:
+        CSharp: PlayerMovement.DisableXMovement()
+        VB: PlayerMovement.DisableXMovement()
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.PlayerMovement.DisableXMovement()
+        VB: NiceGraphicLibrary.PlayerMovement.DisableXMovement()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: DisableXMovement
+        path: ''
+        startLine: 380
+      syntax:
+        content:
+          CSharp: public void DisableXMovement()
+          VB: Public Sub DisableXMovement
+      overload: NiceGraphicLibrary.PlayerMovement.DisableXMovement*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: NiceGraphicLibrary.PlayerMovement.DisableYMovement
+      commentId: M:NiceGraphicLibrary.PlayerMovement.DisableYMovement
+      language: CSharp
+      name:
+        CSharp: DisableYMovement()
+        VB: DisableYMovement()
+      nameWithType:
+        CSharp: PlayerMovement.DisableYMovement()
+        VB: PlayerMovement.DisableYMovement()
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.PlayerMovement.DisableYMovement()
+        VB: NiceGraphicLibrary.PlayerMovement.DisableYMovement()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: DisableYMovement
+        path: ''
+        startLine: 381
+      syntax:
+        content:
+          CSharp: public void DisableYMovement()
+          VB: Public Sub DisableYMovement
+      overload: NiceGraphicLibrary.PlayerMovement.DisableYMovement*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: NiceGraphicLibrary.PlayerMovement.DisableZMovement
+      commentId: M:NiceGraphicLibrary.PlayerMovement.DisableZMovement
+      language: CSharp
+      name:
+        CSharp: DisableZMovement()
+        VB: DisableZMovement()
+      nameWithType:
+        CSharp: PlayerMovement.DisableZMovement()
+        VB: PlayerMovement.DisableZMovement()
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.PlayerMovement.DisableZMovement()
+        VB: NiceGraphicLibrary.PlayerMovement.DisableZMovement()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: DisableZMovement
+        path: ''
+        startLine: 382
+      syntax:
+        content:
+          CSharp: public void DisableZMovement()
+          VB: Public Sub DisableZMovement
+      overload: NiceGraphicLibrary.PlayerMovement.DisableZMovement*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: NiceGraphicLibrary.PlayerMovement.OnMoveX(System.Single)
+      commentId: M:NiceGraphicLibrary.PlayerMovement.OnMoveX(System.Single)
+      language: CSharp
+      name:
+        CSharp: OnMoveX(Single)
+        VB: OnMoveX(Single)
+      nameWithType:
+        CSharp: PlayerMovement.OnMoveX(Single)
+        VB: PlayerMovement.OnMoveX(Single)
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.PlayerMovement.OnMoveX(System.Single)
+        VB: NiceGraphicLibrary.PlayerMovement.OnMoveX(System.Single)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: OnMoveX
+        path: ''
+        startLine: 388
+      syntax:
+        content:
+          CSharp: public void OnMoveX(float inputXAxis)
+          VB: Public Sub OnMoveX(inputXAxis As Single)
+        parameters:
+        - id: inputXAxis
+          type: System.Single
+      overload: NiceGraphicLibrary.PlayerMovement.OnMoveX*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: NiceGraphicLibrary.PlayerMovement.OnMoveY(System.Single)
+      commentId: M:NiceGraphicLibrary.PlayerMovement.OnMoveY(System.Single)
+      language: CSharp
+      name:
+        CSharp: OnMoveY(Single)
+        VB: OnMoveY(Single)
+      nameWithType:
+        CSharp: PlayerMovement.OnMoveY(Single)
+        VB: PlayerMovement.OnMoveY(Single)
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.PlayerMovement.OnMoveY(System.Single)
+        VB: NiceGraphicLibrary.PlayerMovement.OnMoveY(System.Single)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: OnMoveY
+        path: ''
+        startLine: 396
+      syntax:
+        content:
+          CSharp: public void OnMoveY(float inputYAxis)
+          VB: Public Sub OnMoveY(inputYAxis As Single)
+        parameters:
+        - id: inputYAxis
+          type: System.Single
+      overload: NiceGraphicLibrary.PlayerMovement.OnMoveY*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: NiceGraphicLibrary.PlayerMovement.OnMoveZ(System.Single)
+      commentId: M:NiceGraphicLibrary.PlayerMovement.OnMoveZ(System.Single)
+      language: CSharp
+      name:
+        CSharp: OnMoveZ(Single)
+        VB: OnMoveZ(Single)
+      nameWithType:
+        CSharp: PlayerMovement.OnMoveZ(Single)
+        VB: PlayerMovement.OnMoveZ(Single)
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.PlayerMovement.OnMoveZ(System.Single)
+        VB: NiceGraphicLibrary.PlayerMovement.OnMoveZ(System.Single)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: OnMoveZ
+        path: ''
+        startLine: 404
+      syntax:
+        content:
+          CSharp: public void OnMoveZ(float inputZAxis)
+          VB: Public Sub OnMoveZ(inputZAxis As Single)
+        parameters:
+        - id: inputZAxis
+          type: System.Single
+      overload: NiceGraphicLibrary.PlayerMovement.OnMoveZ*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: NiceGraphicLibrary.PlayerMovement.Start
+      commentId: M:NiceGraphicLibrary.PlayerMovement.Start
+      language: CSharp
+      name:
+        CSharp: Start()
+        VB: Start()
+      nameWithType:
+        CSharp: PlayerMovement.Start()
+        VB: PlayerMovement.Start()
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.PlayerMovement.Start()
+        VB: NiceGraphicLibrary.PlayerMovement.Start()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: Start
+        path: ''
+        startLine: 415
+      syntax:
+        content:
+          CSharp: protected virtual void Start()
+          VB: Protected Overridable Sub Start
+      overload: NiceGraphicLibrary.PlayerMovement.Start*
+      modifiers:
+        CSharp:
+        - protected
+        - virtual
+        VB:
+        - Protected
+        - Overridable
+    - id: NiceGraphicLibrary.PlayerMovement.FixedUpdate
+      commentId: M:NiceGraphicLibrary.PlayerMovement.FixedUpdate
+      language: CSharp
+      name:
+        CSharp: FixedUpdate()
+        VB: FixedUpdate()
+      nameWithType:
+        CSharp: PlayerMovement.FixedUpdate()
+        VB: PlayerMovement.FixedUpdate()
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.PlayerMovement.FixedUpdate()
+        VB: NiceGraphicLibrary.PlayerMovement.FixedUpdate()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: FixedUpdate
+        path: ''
+        startLine: 420
+      syntax:
+        content:
+          CSharp: protected virtual void FixedUpdate()
+          VB: Protected Overridable Sub FixedUpdate
+      overload: NiceGraphicLibrary.PlayerMovement.FixedUpdate*
+      modifiers:
+        CSharp:
+        - protected
+        - virtual
+        VB:
+        - Protected
+        - Overridable
+    - id: NiceGraphicLibrary.PlayerMovement.ApplyMovement
+      commentId: M:NiceGraphicLibrary.PlayerMovement.ApplyMovement
+      language: CSharp
+      name:
+        CSharp: ApplyMovement()
+        VB: ApplyMovement()
+      nameWithType:
+        CSharp: PlayerMovement.ApplyMovement()
+        VB: PlayerMovement.ApplyMovement()
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.PlayerMovement.ApplyMovement()
+        VB: NiceGraphicLibrary.PlayerMovement.ApplyMovement()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: ApplyMovement
+        path: ''
+        startLine: 458
+      syntax:
+        content:
+          CSharp: protected abstract float ApplyMovement()
+          VB: Protected MustOverride Function ApplyMovement As Single
+        return:
+          type: System.Single
+      overload: NiceGraphicLibrary.PlayerMovement.ApplyMovement*
+      modifiers:
+        CSharp:
+        - protected
+        - abstract
+        VB:
+        - Protected
+        - MustOverride
+  - id: NiceGraphicLibrary.PlayerMovement.MovementAxisLevel
+    commentId: T:NiceGraphicLibrary.PlayerMovement.MovementAxisLevel
+    language: CSharp
+    name:
+      CSharp: PlayerMovement.MovementAxisLevel
+      VB: PlayerMovement.MovementAxisLevel
+    nameWithType:
+      CSharp: PlayerMovement.MovementAxisLevel
+      VB: PlayerMovement.MovementAxisLevel
+    qualifiedName:
+      CSharp: NiceGraphicLibrary.PlayerMovement.MovementAxisLevel
+      VB: NiceGraphicLibrary.PlayerMovement.MovementAxisLevel
+    type: Enum
+    assemblies:
+    - cs.temp.dll
+    namespace: NiceGraphicLibrary
+    source:
+      id: MovementAxisLevel
+      path: ''
+      startLine: 353
+    summary: "\nDetermines if the object is moved along global axis or its local axis, orientation influenced by rotation.\n"
+    example: []
+    syntax:
+      content:
+        CSharp: public enum MovementAxisLevel
+        VB: Public Enum MovementAxisLevel
+    modifiers:
+      CSharp:
+      - public
+      - enum
+      VB:
+      - Public
+      - Enum
+    items:
+    - id: NiceGraphicLibrary.PlayerMovement.MovementAxisLevel.Global
+      commentId: F:NiceGraphicLibrary.PlayerMovement.MovementAxisLevel.Global
+      language: CSharp
+      name:
+        CSharp: Global
+        VB: Global
+      nameWithType:
+        CSharp: PlayerMovement.MovementAxisLevel.Global
+        VB: PlayerMovement.MovementAxisLevel.Global
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.PlayerMovement.MovementAxisLevel.Global
+        VB: NiceGraphicLibrary.PlayerMovement.MovementAxisLevel.Global
+      type: Field
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: Global
+        path: ''
+        startLine: 353
+      syntax:
+        content:
+          CSharp: Global = 0
+          VB: Global = 0
+        return:
+          type: NiceGraphicLibrary.PlayerMovement.MovementAxisLevel
+      modifiers:
+        CSharp:
+        - public
+        - const
+        VB:
+        - Public
+        - Const
+    - id: NiceGraphicLibrary.PlayerMovement.MovementAxisLevel.Local
+      commentId: F:NiceGraphicLibrary.PlayerMovement.MovementAxisLevel.Local
+      language: CSharp
+      name:
+        CSharp: Local
+        VB: Local
+      nameWithType:
+        CSharp: PlayerMovement.MovementAxisLevel.Local
+        VB: PlayerMovement.MovementAxisLevel.Local
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.PlayerMovement.MovementAxisLevel.Local
+        VB: NiceGraphicLibrary.PlayerMovement.MovementAxisLevel.Local
+      type: Field
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: Local
+        path: ''
+        startLine: 353
+      syntax:
+        content:
+          CSharp: Local = 1
+          VB: Local = 1
+        return:
+          type: NiceGraphicLibrary.PlayerMovement.MovementAxisLevel
+      modifiers:
+        CSharp:
+        - public
+        - const
+        VB:
+        - Public
+        - Const
+  - id: NiceGraphicLibrary.StaticPlayerMovement
+    commentId: T:NiceGraphicLibrary.StaticPlayerMovement
+    language: CSharp
+    name:
+      CSharp: StaticPlayerMovement
+      VB: StaticPlayerMovement
+    nameWithType:
+      CSharp: StaticPlayerMovement
+      VB: StaticPlayerMovement
+    qualifiedName:
+      CSharp: NiceGraphicLibrary.StaticPlayerMovement
+      VB: NiceGraphicLibrary.StaticPlayerMovement
+    type: Class
+    assemblies:
+    - cs.temp.dll
+    namespace: NiceGraphicLibrary
+    source:
+      id: StaticPlayerMovement
+      path: ''
+      startLine: 475
+    syntax:
+      content:
+        CSharp: 'public class StaticPlayerMovement : PlayerMovement'
+        VB: >-
+          Public Class StaticPlayerMovement
+
+              Inherits PlayerMovement
+    inheritance:
+    - System.Object
+    - NiceGraphicLibrary.PlayerMovement
+    inheritedMembers:
+    - NiceGraphicLibrary.PlayerMovement._axisX
+    - NiceGraphicLibrary.PlayerMovement._axisY
+    - NiceGraphicLibrary.PlayerMovement._axisZ
+    - NiceGraphicLibrary.PlayerMovement._rb
+    - NiceGraphicLibrary.PlayerMovement.EnableXMovement
+    - NiceGraphicLibrary.PlayerMovement.EnableYMovement
+    - NiceGraphicLibrary.PlayerMovement.EnableZMovement
+    - NiceGraphicLibrary.PlayerMovement.DisableXMovement
+    - NiceGraphicLibrary.PlayerMovement.DisableYMovement
+    - NiceGraphicLibrary.PlayerMovement.DisableZMovement
+    - NiceGraphicLibrary.PlayerMovement.OnMoveX(System.Single)
+    - NiceGraphicLibrary.PlayerMovement.OnMoveY(System.Single)
+    - NiceGraphicLibrary.PlayerMovement.OnMoveZ(System.Single)
+    - NiceGraphicLibrary.PlayerMovement.Start
+    - NiceGraphicLibrary.PlayerMovement.FixedUpdate
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: NiceGraphicLibrary.StaticPlayerMovement.SetSpeed(System.Single)
+      commentId: M:NiceGraphicLibrary.StaticPlayerMovement.SetSpeed(System.Single)
+      language: CSharp
+      name:
+        CSharp: SetSpeed(Single)
+        VB: SetSpeed(Single)
+      nameWithType:
+        CSharp: StaticPlayerMovement.SetSpeed(Single)
+        VB: StaticPlayerMovement.SetSpeed(Single)
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.StaticPlayerMovement.SetSpeed(System.Single)
+        VB: NiceGraphicLibrary.StaticPlayerMovement.SetSpeed(System.Single)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: SetSpeed
+        path: ''
+        startLine: 481
+      syntax:
+        content:
+          CSharp: public void SetSpeed(float newSpeed)
+          VB: Public Sub SetSpeed(newSpeed As Single)
+        parameters:
+        - id: newSpeed
+          type: System.Single
+      overload: NiceGraphicLibrary.StaticPlayerMovement.SetSpeed*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: NiceGraphicLibrary.StaticPlayerMovement.ApplyMovement
+      commentId: M:NiceGraphicLibrary.StaticPlayerMovement.ApplyMovement
+      language: CSharp
+      name:
+        CSharp: ApplyMovement()
+        VB: ApplyMovement()
+      nameWithType:
+        CSharp: StaticPlayerMovement.ApplyMovement()
+        VB: StaticPlayerMovement.ApplyMovement()
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.StaticPlayerMovement.ApplyMovement()
+        VB: NiceGraphicLibrary.StaticPlayerMovement.ApplyMovement()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: ApplyMovement
+        path: ''
+        startLine: 483
+      syntax:
+        content:
+          CSharp: protected override float ApplyMovement()
+          VB: Protected Overrides Function ApplyMovement As Single
+        return:
+          type: System.Single
+      overload: NiceGraphicLibrary.StaticPlayerMovement.ApplyMovement*
+      overridden: NiceGraphicLibrary.PlayerMovement.ApplyMovement
+      modifiers:
+        CSharp:
+        - protected
+        - override
+        VB:
+        - Protected
+        - Overrides
+  - id: NiceGraphicLibrary.Geometry3DUtility
+    commentId: T:NiceGraphicLibrary.Geometry3DUtility
+    language: CSharp
+    name:
+      CSharp: Geometry3DUtility
+      VB: Geometry3DUtility
+    nameWithType:
+      CSharp: Geometry3DUtility
+      VB: Geometry3DUtility
+    qualifiedName:
+      CSharp: NiceGraphicLibrary.Geometry3DUtility
+      VB: NiceGraphicLibrary.Geometry3DUtility
+    type: Class
+    assemblies:
+    - cs.temp.dll
+    namespace: NiceGraphicLibrary
+    source:
+      id: Geometry3DUtility
+      path: ''
+      startLine: 493
+    syntax:
+      content:
+        CSharp: public static class Geometry3DUtility
+        VB: Public Module Geometry3DUtility
+    inheritance:
+    - System.Object
+    inheritedMembers:
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    modifiers:
+      CSharp:
+      - public
+      - static
+      - class
+      VB:
+      - Public
+      - Module
+    items:
+    - id: NiceGraphicLibrary.Geometry3DUtility.GetBoundingBoxOfAllMeshes(GameObject)
+      commentId: M:NiceGraphicLibrary.Geometry3DUtility.GetBoundingBoxOfAllMeshes(GameObject)
+      language: CSharp
+      name:
+        CSharp: GetBoundingBoxOfAllMeshes(GameObject)
+        VB: GetBoundingBoxOfAllMeshes(GameObject)
+      nameWithType:
+        CSharp: Geometry3DUtility.GetBoundingBoxOfAllMeshes(GameObject)
+        VB: Geometry3DUtility.GetBoundingBoxOfAllMeshes(GameObject)
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.Geometry3DUtility.GetBoundingBoxOfAllMeshes(GameObject)
+        VB: NiceGraphicLibrary.Geometry3DUtility.GetBoundingBoxOfAllMeshes(GameObject)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: GetBoundingBoxOfAllMeshes
+        path: ''
+        startLine: 513
+      summary: "\nGets the center, size etc from a whole mesh of an object. Whole mesh can made up of several meshes\nresiding in the object itself and its children\n"
+      remarks: "\nTo work, object with a mesh needs the component MeshRenderer. \n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static Bounds GetBoundingBoxOfAllMeshes(GameObject rootObject)
+          VB: Public Shared Function GetBoundingBoxOfAllMeshes(rootObject As GameObject) As Bounds
+        parameters:
+        - id: rootObject
+          type: GameObject
+          description: "\nObject to get the bounding box from\n"
+        return:
+          type: Bounds
+      overload: NiceGraphicLibrary.Geometry3DUtility.GetBoundingBoxOfAllMeshes*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+  - id: NiceGraphicLibrary.Interpolation
+    commentId: T:NiceGraphicLibrary.Interpolation
+    language: CSharp
+    name:
+      CSharp: Interpolation
+      VB: Interpolation
+    nameWithType:
+      CSharp: Interpolation
+      VB: Interpolation
+    qualifiedName:
+      CSharp: NiceGraphicLibrary.Interpolation
+      VB: NiceGraphicLibrary.Interpolation
+    type: Class
+    assemblies:
+    - cs.temp.dll
+    namespace: NiceGraphicLibrary
+    source:
+      id: Interpolation
+      path: ''
+      startLine: 579
+    syntax:
+      content:
+        CSharp: public static class Interpolation
+        VB: Public Module Interpolation
+    inheritance:
+    - System.Object
+    inheritedMembers:
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    modifiers:
+      CSharp:
+      - public
+      - static
+      - class
+      VB:
+      - Public
+      - Module
+    items:
+    - id: NiceGraphicLibrary.Interpolation.InterpolateOverTime(System.Single,Action{System.Single})
+      commentId: M:NiceGraphicLibrary.Interpolation.InterpolateOverTime(System.Single,Action{System.Single})
+      language: CSharp
+      name:
+        CSharp: InterpolateOverTime(Single, Action<Single>)
+        VB: InterpolateOverTime(Single, Action(Of Single))
+      nameWithType:
+        CSharp: Interpolation.InterpolateOverTime(Single, Action<Single>)
+        VB: Interpolation.InterpolateOverTime(Single, Action(Of Single))
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.Interpolation.InterpolateOverTime(System.Single, Action<System.Single>)
+        VB: NiceGraphicLibrary.Interpolation.InterpolateOverTime(System.Single, Action(Of System.Single))
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: InterpolateOverTime
+        path: ''
+        startLine: 596
+      summary: "\nCoroutine to returns factor from 0 to 1 over a certain duration after each frame \nuntil the duration has passed    \n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static IEnumerator InterpolateOverTime(float duration, Action<float> interpolateReceiver)
+          VB: Public Shared Function InterpolateOverTime(duration As Single, interpolateReceiver As Action(Of Single)) As IEnumerator
+        parameters:
+        - id: duration
+          type: System.Single
+          description: "\nTime until the coroutine ends. Negative values will be converted to absolute/positive values.\n"
+        - id: interpolateReceiver
+          type: Action{System.Single}
+          description: "\nIs called after each frame. Its argument is from 0 to 1 for the amount of passed duration.\nShould not be null.\n"
+        return:
+          type: System.Collections.Generic.IEnumerator
+      overload: NiceGraphicLibrary.Interpolation.InterpolateOverTime*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+  - id: NiceGraphicLibrary.CooldownDeltaTimer
+    commentId: T:NiceGraphicLibrary.CooldownDeltaTimer
+    language: CSharp
+    name:
+      CSharp: CooldownDeltaTimer
+      VB: CooldownDeltaTimer
+    nameWithType:
+      CSharp: CooldownDeltaTimer
+      VB: CooldownDeltaTimer
+    qualifiedName:
+      CSharp: NiceGraphicLibrary.CooldownDeltaTimer
+      VB: NiceGraphicLibrary.CooldownDeltaTimer
+    type: Class
+    assemblies:
+    - cs.temp.dll
+    namespace: NiceGraphicLibrary
+    source:
+      id: CooldownDeltaTimer
+      path: ''
+      startLine: 628
+    syntax:
+      content:
+        CSharp: 'public class CooldownDeltaTimer : ICooldownTimer'
+        VB: >-
+          Public Class CooldownDeltaTimer
+
+              Implements ICooldownTimer
+    inheritance:
+    - System.Object
+    inheritedMembers:
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: NiceGraphicLibrary.CooldownDeltaTimer.#ctor(System.Single)
+      commentId: M:NiceGraphicLibrary.CooldownDeltaTimer.#ctor(System.Single)
+      language: CSharp
+      name:
+        CSharp: CooldownDeltaTimer(Single)
+        VB: CooldownDeltaTimer(Single)
+      nameWithType:
+        CSharp: CooldownDeltaTimer.CooldownDeltaTimer(Single)
+        VB: CooldownDeltaTimer.CooldownDeltaTimer(Single)
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.CooldownDeltaTimer.CooldownDeltaTimer(System.Single)
+        VB: NiceGraphicLibrary.CooldownDeltaTimer.CooldownDeltaTimer(System.Single)
+      type: Constructor
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: .ctor
+        path: ''
+        startLine: 639
+      example: []
+      syntax:
+        content:
+          CSharp: public CooldownDeltaTimer(float _endTime = 1F)
+          VB: Public Sub New(_endTime As Single = 1F)
+        parameters:
+        - id: _endTime
+          type: System.Single
+          description: "\nTime needs to pass untiles the cool down wears off\nNegative value will be converted to a positive one.\n"
+      overload: NiceGraphicLibrary.CooldownDeltaTimer.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: NiceGraphicLibrary.CooldownDeltaTimer.Update
+      commentId: M:NiceGraphicLibrary.CooldownDeltaTimer.Update
+      language: CSharp
+      name:
+        CSharp: Update()
+        VB: Update()
+      nameWithType:
+        CSharp: CooldownDeltaTimer.Update()
+        VB: CooldownDeltaTimer.Update()
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.CooldownDeltaTimer.Update()
+        VB: NiceGraphicLibrary.CooldownDeltaTimer.Update()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: Update
+        path: ''
+        startLine: 648
+      summary: "\nAdds the seconds passed since the last frame\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void Update()
+          VB: Public Sub Update
+      overload: NiceGraphicLibrary.CooldownDeltaTimer.Update*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: NiceGraphicLibrary.CooldownDeltaTimer.Update(System.Single)
+      commentId: M:NiceGraphicLibrary.CooldownDeltaTimer.Update(System.Single)
+      language: CSharp
+      name:
+        CSharp: Update(Single)
+        VB: Update(Single)
+      nameWithType:
+        CSharp: CooldownDeltaTimer.Update(Single)
+        VB: CooldownDeltaTimer.Update(Single)
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.CooldownDeltaTimer.Update(System.Single)
+        VB: NiceGraphicLibrary.CooldownDeltaTimer.Update(System.Single)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: Update
+        path: ''
+        startLine: 653
+      summary: "\nAdds given value to the passed time for the cool down.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void Update(float time)
+          VB: Public Sub Update(time As Single)
+        parameters:
+        - id: time
+          type: System.Single
+      overload: NiceGraphicLibrary.CooldownDeltaTimer.Update*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: NiceGraphicLibrary.CooldownDeltaTimer.PassedTimeFactor
+      commentId: P:NiceGraphicLibrary.CooldownDeltaTimer.PassedTimeFactor
+      language: CSharp
+      name:
+        CSharp: PassedTimeFactor
+        VB: PassedTimeFactor
+      nameWithType:
+        CSharp: CooldownDeltaTimer.PassedTimeFactor
+        VB: CooldownDeltaTimer.PassedTimeFactor
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.CooldownDeltaTimer.PassedTimeFactor
+        VB: NiceGraphicLibrary.CooldownDeltaTimer.PassedTimeFactor
+      type: Property
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: PassedTimeFactor
+        path: ''
+        startLine: 656
+      syntax:
+        content:
+          CSharp: public float PassedTimeFactor { get; }
+          VB: Public ReadOnly Property PassedTimeFactor As Single
+        parameters: []
+        return:
+          type: System.Single
+      overload: NiceGraphicLibrary.CooldownDeltaTimer.PassedTimeFactor*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        VB:
+        - Public
+        - ReadOnly
+    - id: NiceGraphicLibrary.CooldownDeltaTimer.Reset
+      commentId: M:NiceGraphicLibrary.CooldownDeltaTimer.Reset
+      language: CSharp
+      name:
+        CSharp: Reset()
+        VB: Reset()
+      nameWithType:
+        CSharp: CooldownDeltaTimer.Reset()
+        VB: CooldownDeltaTimer.Reset()
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.CooldownDeltaTimer.Reset()
+        VB: NiceGraphicLibrary.CooldownDeltaTimer.Reset()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: Reset
+        path: ''
+        startLine: 658
+      syntax:
+        content:
+          CSharp: public void Reset()
+          VB: Public Sub Reset
+      overload: NiceGraphicLibrary.CooldownDeltaTimer.Reset*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: NiceGraphicLibrary.CooldownDeltaTimer.WornOff
+      commentId: P:NiceGraphicLibrary.CooldownDeltaTimer.WornOff
+      language: CSharp
+      name:
+        CSharp: WornOff
+        VB: WornOff
+      nameWithType:
+        CSharp: CooldownDeltaTimer.WornOff
+        VB: CooldownDeltaTimer.WornOff
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.CooldownDeltaTimer.WornOff
+        VB: NiceGraphicLibrary.CooldownDeltaTimer.WornOff
+      type: Property
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: WornOff
+        path: ''
+        startLine: 660
+      syntax:
+        content:
+          CSharp: public bool WornOff { get; }
+          VB: Public ReadOnly Property WornOff As Boolean
+        parameters: []
+        return:
+          type: System.Boolean
+      overload: NiceGraphicLibrary.CooldownDeltaTimer.WornOff*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        VB:
+        - Public
+        - ReadOnly
+    - id: NiceGraphicLibrary.CooldownDeltaTimer.SetNewEndTime(System.Single)
+      commentId: M:NiceGraphicLibrary.CooldownDeltaTimer.SetNewEndTime(System.Single)
+      language: CSharp
+      name:
+        CSharp: SetNewEndTime(Single)
+        VB: SetNewEndTime(Single)
+      nameWithType:
+        CSharp: CooldownDeltaTimer.SetNewEndTime(Single)
+        VB: CooldownDeltaTimer.SetNewEndTime(Single)
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.CooldownDeltaTimer.SetNewEndTime(System.Single)
+        VB: NiceGraphicLibrary.CooldownDeltaTimer.SetNewEndTime(System.Single)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: SetNewEndTime
+        path: ''
+        startLine: 662
+      syntax:
+        content:
+          CSharp: public void SetNewEndTime(float newEndTime)
+          VB: Public Sub SetNewEndTime(newEndTime As Single)
+        parameters:
+        - id: newEndTime
+          type: System.Single
+      overload: NiceGraphicLibrary.CooldownDeltaTimer.SetNewEndTime*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+  - id: NiceGraphicLibrary.CooldownTimeStampTimer
+    commentId: T:NiceGraphicLibrary.CooldownTimeStampTimer
+    language: CSharp
+    name:
+      CSharp: CooldownTimeStampTimer
+      VB: CooldownTimeStampTimer
+    nameWithType:
+      CSharp: CooldownTimeStampTimer
+      VB: CooldownTimeStampTimer
+    qualifiedName:
+      CSharp: NiceGraphicLibrary.CooldownTimeStampTimer
+      VB: NiceGraphicLibrary.CooldownTimeStampTimer
+    type: Class
+    assemblies:
+    - cs.temp.dll
+    namespace: NiceGraphicLibrary
+    source:
+      id: CooldownTimeStampTimer
+      path: ''
+      startLine: 677
+    syntax:
+      content:
+        CSharp: 'public class CooldownTimeStampTimer : ICooldownTimer'
+        VB: >-
+          Public Class CooldownTimeStampTimer
+
+              Implements ICooldownTimer
+    inheritance:
+    - System.Object
+    inheritedMembers:
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: NiceGraphicLibrary.CooldownTimeStampTimer.#ctor(System.Double)
+      commentId: M:NiceGraphicLibrary.CooldownTimeStampTimer.#ctor(System.Double)
+      language: CSharp
+      name:
+        CSharp: CooldownTimeStampTimer(Double)
+        VB: CooldownTimeStampTimer(Double)
+      nameWithType:
+        CSharp: CooldownTimeStampTimer.CooldownTimeStampTimer(Double)
+        VB: CooldownTimeStampTimer.CooldownTimeStampTimer(Double)
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.CooldownTimeStampTimer.CooldownTimeStampTimer(System.Double)
+        VB: NiceGraphicLibrary.CooldownTimeStampTimer.CooldownTimeStampTimer(System.Double)
+      type: Constructor
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: .ctor
+        path: ''
+        startLine: 691
+      example: []
+      syntax:
+        content:
+          CSharp: public CooldownTimeStampTimer(double endTime = 1)
+          VB: Public Sub New(endTime As Double = 1)
+        parameters:
+        - id: endTime
+          type: System.Double
+      overload: NiceGraphicLibrary.CooldownTimeStampTimer.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: NiceGraphicLibrary.CooldownTimeStampTimer.PassedTimeFactor
+      commentId: P:NiceGraphicLibrary.CooldownTimeStampTimer.PassedTimeFactor
+      language: CSharp
+      name:
+        CSharp: PassedTimeFactor
+        VB: PassedTimeFactor
+      nameWithType:
+        CSharp: CooldownTimeStampTimer.PassedTimeFactor
+        VB: CooldownTimeStampTimer.PassedTimeFactor
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.CooldownTimeStampTimer.PassedTimeFactor
+        VB: NiceGraphicLibrary.CooldownTimeStampTimer.PassedTimeFactor
+      type: Property
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: PassedTimeFactor
+        path: ''
+        startLine: 698
+      syntax:
+        content:
+          CSharp: public float PassedTimeFactor { get; }
+          VB: Public ReadOnly Property PassedTimeFactor As Single
+        parameters: []
+        return:
+          type: System.Single
+      overload: NiceGraphicLibrary.CooldownTimeStampTimer.PassedTimeFactor*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        VB:
+        - Public
+        - ReadOnly
+    - id: NiceGraphicLibrary.CooldownTimeStampTimer.Reset
+      commentId: M:NiceGraphicLibrary.CooldownTimeStampTimer.Reset
+      language: CSharp
+      name:
+        CSharp: Reset()
+        VB: Reset()
+      nameWithType:
+        CSharp: CooldownTimeStampTimer.Reset()
+        VB: CooldownTimeStampTimer.Reset()
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.CooldownTimeStampTimer.Reset()
+        VB: NiceGraphicLibrary.CooldownTimeStampTimer.Reset()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: Reset
+        path: ''
+        startLine: 716
+      syntax:
+        content:
+          CSharp: public void Reset()
+          VB: Public Sub Reset
+      overload: NiceGraphicLibrary.CooldownTimeStampTimer.Reset*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: NiceGraphicLibrary.CooldownTimeStampTimer.WornOff
+      commentId: P:NiceGraphicLibrary.CooldownTimeStampTimer.WornOff
+      language: CSharp
+      name:
+        CSharp: WornOff
+        VB: WornOff
+      nameWithType:
+        CSharp: CooldownTimeStampTimer.WornOff
+        VB: CooldownTimeStampTimer.WornOff
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.CooldownTimeStampTimer.WornOff
+        VB: NiceGraphicLibrary.CooldownTimeStampTimer.WornOff
+      type: Property
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: WornOff
+        path: ''
+        startLine: 722
+      syntax:
+        content:
+          CSharp: public bool WornOff { get; }
+          VB: Public ReadOnly Property WornOff As Boolean
+        parameters: []
+        return:
+          type: System.Boolean
+      overload: NiceGraphicLibrary.CooldownTimeStampTimer.WornOff*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        VB:
+        - Public
+        - ReadOnly
+    - id: NiceGraphicLibrary.CooldownTimeStampTimer.SetNewEndTime(System.Single)
+      commentId: M:NiceGraphicLibrary.CooldownTimeStampTimer.SetNewEndTime(System.Single)
+      language: CSharp
+      name:
+        CSharp: SetNewEndTime(Single)
+        VB: SetNewEndTime(Single)
+      nameWithType:
+        CSharp: CooldownTimeStampTimer.SetNewEndTime(Single)
+        VB: CooldownTimeStampTimer.SetNewEndTime(Single)
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.CooldownTimeStampTimer.SetNewEndTime(System.Single)
+        VB: NiceGraphicLibrary.CooldownTimeStampTimer.SetNewEndTime(System.Single)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: SetNewEndTime
+        path: ''
+        startLine: 724
+      syntax:
+        content:
+          CSharp: public void SetNewEndTime(float newEndTime)
+          VB: Public Sub SetNewEndTime(newEndTime As Single)
+        parameters:
+        - id: newEndTime
+          type: System.Single
+      overload: NiceGraphicLibrary.CooldownTimeStampTimer.SetNewEndTime*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+  - id: NiceGraphicLibrary.CountDown
+    commentId: T:NiceGraphicLibrary.CountDown
+    language: CSharp
+    name:
+      CSharp: CountDown
+      VB: CountDown
+    nameWithType:
+      CSharp: CountDown
+      VB: CountDown
+    qualifiedName:
+      CSharp: NiceGraphicLibrary.CountDown
+      VB: NiceGraphicLibrary.CountDown
+    type: Class
+    assemblies:
+    - cs.temp.dll
+    namespace: NiceGraphicLibrary
+    source:
+      id: CountDown
+      path: ''
+      startLine: 745
+    summary: "\nUsed to start a countdown from number of seconds to zero.\n"
+    example: []
+    syntax:
+      content:
+        CSharp: public class CountDown
+        VB: Public Class CountDown
+    inheritance:
+    - System.Object
+    inheritedMembers:
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: NiceGraphicLibrary.CountDown.#ctor(System.Int32)
+      commentId: M:NiceGraphicLibrary.CountDown.#ctor(System.Int32)
+      language: CSharp
+      name:
+        CSharp: CountDown(Int32)
+        VB: CountDown(Int32)
+      nameWithType:
+        CSharp: CountDown.CountDown(Int32)
+        VB: CountDown.CountDown(Int32)
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.CountDown.CountDown(System.Int32)
+        VB: NiceGraphicLibrary.CountDown.CountDown(System.Int32)
+      type: Constructor
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: .ctor
+        path: ''
+        startLine: 758
+      summary: "\nSets the count down and starts it.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public CountDown(int seconds)
+          VB: Public Sub New(seconds As Integer)
+        parameters:
+        - id: seconds
+          type: System.Int32
+      overload: NiceGraphicLibrary.CountDown.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: NiceGraphicLibrary.CountDown.ResetAndStart
+      commentId: M:NiceGraphicLibrary.CountDown.ResetAndStart
+      language: CSharp
+      name:
+        CSharp: ResetAndStart()
+        VB: ResetAndStart()
+      nameWithType:
+        CSharp: CountDown.ResetAndStart()
+        VB: CountDown.ResetAndStart()
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.CountDown.ResetAndStart()
+        VB: NiceGraphicLibrary.CountDown.ResetAndStart()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: ResetAndStart
+        path: ''
+        startLine: 767
+      summary: "\nResets the countdown and starts it\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void ResetAndStart()
+          VB: Public Sub ResetAndStart
+      overload: NiceGraphicLibrary.CountDown.ResetAndStart*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: NiceGraphicLibrary.CountDown.RemainingSeconds
+      commentId: P:NiceGraphicLibrary.CountDown.RemainingSeconds
+      language: CSharp
+      name:
+        CSharp: RemainingSeconds
+        VB: RemainingSeconds
+      nameWithType:
+        CSharp: CountDown.RemainingSeconds
+        VB: CountDown.RemainingSeconds
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.CountDown.RemainingSeconds
+        VB: NiceGraphicLibrary.CountDown.RemainingSeconds
+      type: Property
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: RemainingSeconds
+        path: ''
+        startLine: 775
+      summary: "\nReturns remaining seconds of the count down\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public int RemainingSeconds { get; }
+          VB: Public ReadOnly Property RemainingSeconds As Integer
+        parameters: []
+        return:
+          type: System.Int32
+      overload: NiceGraphicLibrary.CountDown.RemainingSeconds*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        VB:
+        - Public
+        - ReadOnly
+    - id: NiceGraphicLibrary.CountDown.StartSeconds
+      commentId: P:NiceGraphicLibrary.CountDown.StartSeconds
+      language: CSharp
+      name:
+        CSharp: StartSeconds
+        VB: StartSeconds
+      nameWithType:
+        CSharp: CountDown.StartSeconds
+        VB: CountDown.StartSeconds
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.CountDown.StartSeconds
+        VB: NiceGraphicLibrary.CountDown.StartSeconds
+      type: Property
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: StartSeconds
+        path: ''
+        startLine: 783
+      summary: "\nSeconds from which the countdown starts to count down.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public float StartSeconds { get; set; }
+          VB: Public Property StartSeconds As Single
+        parameters: []
+        return:
+          type: System.Single
+          description: "\nNegativ values will be converted to positive values\n"
+      overload: NiceGraphicLibrary.CountDown.StartSeconds*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+  - id: NiceGraphicLibrary.Vector3Extension
+    commentId: T:NiceGraphicLibrary.Vector3Extension
+    language: CSharp
+    name:
+      CSharp: Vector3Extension
+      VB: Vector3Extension
+    nameWithType:
+      CSharp: Vector3Extension
+      VB: Vector3Extension
+    qualifiedName:
+      CSharp: NiceGraphicLibrary.Vector3Extension
+      VB: NiceGraphicLibrary.Vector3Extension
+    type: Class
+    assemblies:
+    - cs.temp.dll
+    namespace: NiceGraphicLibrary
+    source:
+      id: Vector3Extension
+      path: ''
+      startLine: 837
+    syntax:
+      content:
+        CSharp: public static class Vector3Extension
+        VB: Public Module Vector3Extension
+    inheritance:
+    - System.Object
+    inheritedMembers:
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    modifiers:
+      CSharp:
+      - public
+      - static
+      - class
+      VB:
+      - Public
+      - Module
+    items:
+    - isExtensionMethod: true
+      id: NiceGraphicLibrary.Vector3Extension.AddScale(Vector3,System.Single)
+      commentId: M:NiceGraphicLibrary.Vector3Extension.AddScale(Vector3,System.Single)
+      language: CSharp
+      name:
+        CSharp: AddScale(Vector3, Single)
+        VB: AddScale(Vector3, Single)
+      nameWithType:
+        CSharp: Vector3Extension.AddScale(Vector3, Single)
+        VB: Vector3Extension.AddScale(Vector3, Single)
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.Vector3Extension.AddScale(Vector3, System.Single)
+        VB: NiceGraphicLibrary.Vector3Extension.AddScale(Vector3, System.Single)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: AddScale
+        path: ''
+        startLine: 839
+      syntax:
+        content:
+          CSharp: public static Vector3 AddScale(this Vector3 vector, float scale)
+          VB: >-
+            <ExtensionAttribute>
+
+            Public Shared Function AddScale(vector As Vector3, scale As Single) As Vector3
+        parameters:
+        - id: vector
+          type: Vector3
+        - id: scale
+          type: System.Single
+        return:
+          type: Vector3
+      overload: NiceGraphicLibrary.Vector3Extension.AddScale*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - isExtensionMethod: true
+      id: NiceGraphicLibrary.Vector3Extension.SubScale(Vector3,System.Single)
+      commentId: M:NiceGraphicLibrary.Vector3Extension.SubScale(Vector3,System.Single)
+      language: CSharp
+      name:
+        CSharp: SubScale(Vector3, Single)
+        VB: SubScale(Vector3, Single)
+      nameWithType:
+        CSharp: Vector3Extension.SubScale(Vector3, Single)
+        VB: Vector3Extension.SubScale(Vector3, Single)
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.Vector3Extension.SubScale(Vector3, System.Single)
+        VB: NiceGraphicLibrary.Vector3Extension.SubScale(Vector3, System.Single)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: SubScale
+        path: ''
+        startLine: 840
+      syntax:
+        content:
+          CSharp: public static Vector3 SubScale(this Vector3 vector, float scale)
+          VB: >-
+            <ExtensionAttribute>
+
+            Public Shared Function SubScale(vector As Vector3, scale As Single) As Vector3
+        parameters:
+        - id: vector
+          type: Vector3
+        - id: scale
+          type: System.Single
+        return:
+          type: Vector3
+      overload: NiceGraphicLibrary.Vector3Extension.SubScale*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - isExtensionMethod: true
+      id: NiceGraphicLibrary.Vector3Extension.AddXScale(Vector3,System.Single)
+      commentId: M:NiceGraphicLibrary.Vector3Extension.AddXScale(Vector3,System.Single)
+      language: CSharp
+      name:
+        CSharp: AddXScale(Vector3, Single)
+        VB: AddXScale(Vector3, Single)
+      nameWithType:
+        CSharp: Vector3Extension.AddXScale(Vector3, Single)
+        VB: Vector3Extension.AddXScale(Vector3, Single)
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.Vector3Extension.AddXScale(Vector3, System.Single)
+        VB: NiceGraphicLibrary.Vector3Extension.AddXScale(Vector3, System.Single)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: AddXScale
+        path: ''
+        startLine: 842
+      syntax:
+        content:
+          CSharp: public static Vector3 AddXScale(this Vector3 vector, float scale)
+          VB: >-
+            <ExtensionAttribute>
+
+            Public Shared Function AddXScale(vector As Vector3, scale As Single) As Vector3
+        parameters:
+        - id: vector
+          type: Vector3
+        - id: scale
+          type: System.Single
+        return:
+          type: Vector3
+      overload: NiceGraphicLibrary.Vector3Extension.AddXScale*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - isExtensionMethod: true
+      id: NiceGraphicLibrary.Vector3Extension.AddYScale(Vector3,System.Single)
+      commentId: M:NiceGraphicLibrary.Vector3Extension.AddYScale(Vector3,System.Single)
+      language: CSharp
+      name:
+        CSharp: AddYScale(Vector3, Single)
+        VB: AddYScale(Vector3, Single)
+      nameWithType:
+        CSharp: Vector3Extension.AddYScale(Vector3, Single)
+        VB: Vector3Extension.AddYScale(Vector3, Single)
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.Vector3Extension.AddYScale(Vector3, System.Single)
+        VB: NiceGraphicLibrary.Vector3Extension.AddYScale(Vector3, System.Single)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: AddYScale
+        path: ''
+        startLine: 843
+      syntax:
+        content:
+          CSharp: public static Vector3 AddYScale(this Vector3 vector, float scale)
+          VB: >-
+            <ExtensionAttribute>
+
+            Public Shared Function AddYScale(vector As Vector3, scale As Single) As Vector3
+        parameters:
+        - id: vector
+          type: Vector3
+        - id: scale
+          type: System.Single
+        return:
+          type: Vector3
+      overload: NiceGraphicLibrary.Vector3Extension.AddYScale*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - isExtensionMethod: true
+      id: NiceGraphicLibrary.Vector3Extension.AddZScale(Vector3,System.Single)
+      commentId: M:NiceGraphicLibrary.Vector3Extension.AddZScale(Vector3,System.Single)
+      language: CSharp
+      name:
+        CSharp: AddZScale(Vector3, Single)
+        VB: AddZScale(Vector3, Single)
+      nameWithType:
+        CSharp: Vector3Extension.AddZScale(Vector3, Single)
+        VB: Vector3Extension.AddZScale(Vector3, Single)
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.Vector3Extension.AddZScale(Vector3, System.Single)
+        VB: NiceGraphicLibrary.Vector3Extension.AddZScale(Vector3, System.Single)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: AddZScale
+        path: ''
+        startLine: 844
+      syntax:
+        content:
+          CSharp: public static Vector3 AddZScale(this Vector3 vector, float scale)
+          VB: >-
+            <ExtensionAttribute>
+
+            Public Shared Function AddZScale(vector As Vector3, scale As Single) As Vector3
+        parameters:
+        - id: vector
+          type: Vector3
+        - id: scale
+          type: System.Single
+        return:
+          type: Vector3
+      overload: NiceGraphicLibrary.Vector3Extension.AddZScale*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - isExtensionMethod: true
+      id: NiceGraphicLibrary.Vector3Extension.SubXScale(Vector3,System.Single)
+      commentId: M:NiceGraphicLibrary.Vector3Extension.SubXScale(Vector3,System.Single)
+      language: CSharp
+      name:
+        CSharp: SubXScale(Vector3, Single)
+        VB: SubXScale(Vector3, Single)
+      nameWithType:
+        CSharp: Vector3Extension.SubXScale(Vector3, Single)
+        VB: Vector3Extension.SubXScale(Vector3, Single)
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.Vector3Extension.SubXScale(Vector3, System.Single)
+        VB: NiceGraphicLibrary.Vector3Extension.SubXScale(Vector3, System.Single)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: SubXScale
+        path: ''
+        startLine: 846
+      syntax:
+        content:
+          CSharp: public static Vector3 SubXScale(this Vector3 vector, float scale)
+          VB: >-
+            <ExtensionAttribute>
+
+            Public Shared Function SubXScale(vector As Vector3, scale As Single) As Vector3
+        parameters:
+        - id: vector
+          type: Vector3
+        - id: scale
+          type: System.Single
+        return:
+          type: Vector3
+      overload: NiceGraphicLibrary.Vector3Extension.SubXScale*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - isExtensionMethod: true
+      id: NiceGraphicLibrary.Vector3Extension.SubYScale(Vector3,System.Single)
+      commentId: M:NiceGraphicLibrary.Vector3Extension.SubYScale(Vector3,System.Single)
+      language: CSharp
+      name:
+        CSharp: SubYScale(Vector3, Single)
+        VB: SubYScale(Vector3, Single)
+      nameWithType:
+        CSharp: Vector3Extension.SubYScale(Vector3, Single)
+        VB: Vector3Extension.SubYScale(Vector3, Single)
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.Vector3Extension.SubYScale(Vector3, System.Single)
+        VB: NiceGraphicLibrary.Vector3Extension.SubYScale(Vector3, System.Single)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: SubYScale
+        path: ''
+        startLine: 847
+      syntax:
+        content:
+          CSharp: public static Vector3 SubYScale(this Vector3 vector, float scale)
+          VB: >-
+            <ExtensionAttribute>
+
+            Public Shared Function SubYScale(vector As Vector3, scale As Single) As Vector3
+        parameters:
+        - id: vector
+          type: Vector3
+        - id: scale
+          type: System.Single
+        return:
+          type: Vector3
+      overload: NiceGraphicLibrary.Vector3Extension.SubYScale*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - isExtensionMethod: true
+      id: NiceGraphicLibrary.Vector3Extension.SubZScale(Vector3,System.Single)
+      commentId: M:NiceGraphicLibrary.Vector3Extension.SubZScale(Vector3,System.Single)
+      language: CSharp
+      name:
+        CSharp: SubZScale(Vector3, Single)
+        VB: SubZScale(Vector3, Single)
+      nameWithType:
+        CSharp: Vector3Extension.SubZScale(Vector3, Single)
+        VB: Vector3Extension.SubZScale(Vector3, Single)
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.Vector3Extension.SubZScale(Vector3, System.Single)
+        VB: NiceGraphicLibrary.Vector3Extension.SubZScale(Vector3, System.Single)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: SubZScale
+        path: ''
+        startLine: 848
+      syntax:
+        content:
+          CSharp: public static Vector3 SubZScale(this Vector3 vector, float scale)
+          VB: >-
+            <ExtensionAttribute>
+
+            Public Shared Function SubZScale(vector As Vector3, scale As Single) As Vector3
+        parameters:
+        - id: vector
+          type: Vector3
+        - id: scale
+          type: System.Single
+        return:
+          type: Vector3
+      overload: NiceGraphicLibrary.Vector3Extension.SubZScale*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - isExtensionMethod: true
+      id: NiceGraphicLibrary.Vector3Extension.MultiplyWithXScale(Vector3,System.Single)
+      commentId: M:NiceGraphicLibrary.Vector3Extension.MultiplyWithXScale(Vector3,System.Single)
+      language: CSharp
+      name:
+        CSharp: MultiplyWithXScale(Vector3, Single)
+        VB: MultiplyWithXScale(Vector3, Single)
+      nameWithType:
+        CSharp: Vector3Extension.MultiplyWithXScale(Vector3, Single)
+        VB: Vector3Extension.MultiplyWithXScale(Vector3, Single)
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.Vector3Extension.MultiplyWithXScale(Vector3, System.Single)
+        VB: NiceGraphicLibrary.Vector3Extension.MultiplyWithXScale(Vector3, System.Single)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: MultiplyWithXScale
+        path: ''
+        startLine: 850
+      syntax:
+        content:
+          CSharp: public static Vector3 MultiplyWithXScale(this Vector3 vector, float scale)
+          VB: >-
+            <ExtensionAttribute>
+
+            Public Shared Function MultiplyWithXScale(vector As Vector3, scale As Single) As Vector3
+        parameters:
+        - id: vector
+          type: Vector3
+        - id: scale
+          type: System.Single
+        return:
+          type: Vector3
+      overload: NiceGraphicLibrary.Vector3Extension.MultiplyWithXScale*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - isExtensionMethod: true
+      id: NiceGraphicLibrary.Vector3Extension.MultiplyWithYScale(Vector3,System.Single)
+      commentId: M:NiceGraphicLibrary.Vector3Extension.MultiplyWithYScale(Vector3,System.Single)
+      language: CSharp
+      name:
+        CSharp: MultiplyWithYScale(Vector3, Single)
+        VB: MultiplyWithYScale(Vector3, Single)
+      nameWithType:
+        CSharp: Vector3Extension.MultiplyWithYScale(Vector3, Single)
+        VB: Vector3Extension.MultiplyWithYScale(Vector3, Single)
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.Vector3Extension.MultiplyWithYScale(Vector3, System.Single)
+        VB: NiceGraphicLibrary.Vector3Extension.MultiplyWithYScale(Vector3, System.Single)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: MultiplyWithYScale
+        path: ''
+        startLine: 854
+      syntax:
+        content:
+          CSharp: public static Vector3 MultiplyWithYScale(this Vector3 vector, float scale)
+          VB: >-
+            <ExtensionAttribute>
+
+            Public Shared Function MultiplyWithYScale(vector As Vector3, scale As Single) As Vector3
+        parameters:
+        - id: vector
+          type: Vector3
+        - id: scale
+          type: System.Single
+        return:
+          type: Vector3
+      overload: NiceGraphicLibrary.Vector3Extension.MultiplyWithYScale*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - isExtensionMethod: true
+      id: NiceGraphicLibrary.Vector3Extension.MultiplyWithZScale(Vector3,System.Single)
+      commentId: M:NiceGraphicLibrary.Vector3Extension.MultiplyWithZScale(Vector3,System.Single)
+      language: CSharp
+      name:
+        CSharp: MultiplyWithZScale(Vector3, Single)
+        VB: MultiplyWithZScale(Vector3, Single)
+      nameWithType:
+        CSharp: Vector3Extension.MultiplyWithZScale(Vector3, Single)
+        VB: Vector3Extension.MultiplyWithZScale(Vector3, Single)
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.Vector3Extension.MultiplyWithZScale(Vector3, System.Single)
+        VB: NiceGraphicLibrary.Vector3Extension.MultiplyWithZScale(Vector3, System.Single)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: MultiplyWithZScale
+        path: ''
+        startLine: 856
+      syntax:
+        content:
+          CSharp: public static Vector3 MultiplyWithZScale(this Vector3 vector, float scale)
+          VB: >-
+            <ExtensionAttribute>
+
+            Public Shared Function MultiplyWithZScale(vector As Vector3, scale As Single) As Vector3
+        parameters:
+        - id: vector
+          type: Vector3
+        - id: scale
+          type: System.Single
+        return:
+          type: Vector3
+      overload: NiceGraphicLibrary.Vector3Extension.MultiplyWithZScale*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - isExtensionMethod: true
+      id: NiceGraphicLibrary.Vector3Extension.DivideByXScale(Vector3,System.Single)
+      commentId: M:NiceGraphicLibrary.Vector3Extension.DivideByXScale(Vector3,System.Single)
+      language: CSharp
+      name:
+        CSharp: DivideByXScale(Vector3, Single)
+        VB: DivideByXScale(Vector3, Single)
+      nameWithType:
+        CSharp: Vector3Extension.DivideByXScale(Vector3, Single)
+        VB: Vector3Extension.DivideByXScale(Vector3, Single)
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.Vector3Extension.DivideByXScale(Vector3, System.Single)
+        VB: NiceGraphicLibrary.Vector3Extension.DivideByXScale(Vector3, System.Single)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: DivideByXScale
+        path: ''
+        startLine: 859
+      syntax:
+        content:
+          CSharp: public static Vector3 DivideByXScale(this Vector3 vector, float scale)
+          VB: >-
+            <ExtensionAttribute>
+
+            Public Shared Function DivideByXScale(vector As Vector3, scale As Single) As Vector3
+        parameters:
+        - id: vector
+          type: Vector3
+        - id: scale
+          type: System.Single
+        return:
+          type: Vector3
+      overload: NiceGraphicLibrary.Vector3Extension.DivideByXScale*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - isExtensionMethod: true
+      id: NiceGraphicLibrary.Vector3Extension.DivideByYScale(Vector3,System.Single)
+      commentId: M:NiceGraphicLibrary.Vector3Extension.DivideByYScale(Vector3,System.Single)
+      language: CSharp
+      name:
+        CSharp: DivideByYScale(Vector3, Single)
+        VB: DivideByYScale(Vector3, Single)
+      nameWithType:
+        CSharp: Vector3Extension.DivideByYScale(Vector3, Single)
+        VB: Vector3Extension.DivideByYScale(Vector3, Single)
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.Vector3Extension.DivideByYScale(Vector3, System.Single)
+        VB: NiceGraphicLibrary.Vector3Extension.DivideByYScale(Vector3, System.Single)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: DivideByYScale
+        path: ''
+        startLine: 861
+      syntax:
+        content:
+          CSharp: public static Vector3 DivideByYScale(this Vector3 vector, float scale)
+          VB: >-
+            <ExtensionAttribute>
+
+            Public Shared Function DivideByYScale(vector As Vector3, scale As Single) As Vector3
+        parameters:
+        - id: vector
+          type: Vector3
+        - id: scale
+          type: System.Single
+        return:
+          type: Vector3
+      overload: NiceGraphicLibrary.Vector3Extension.DivideByYScale*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - isExtensionMethod: true
+      id: NiceGraphicLibrary.Vector3Extension.DivideByZScale(Vector3,System.Single)
+      commentId: M:NiceGraphicLibrary.Vector3Extension.DivideByZScale(Vector3,System.Single)
+      language: CSharp
+      name:
+        CSharp: DivideByZScale(Vector3, Single)
+        VB: DivideByZScale(Vector3, Single)
+      nameWithType:
+        CSharp: Vector3Extension.DivideByZScale(Vector3, Single)
+        VB: Vector3Extension.DivideByZScale(Vector3, Single)
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.Vector3Extension.DivideByZScale(Vector3, System.Single)
+        VB: NiceGraphicLibrary.Vector3Extension.DivideByZScale(Vector3, System.Single)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: DivideByZScale
+        path: ''
+        startLine: 863
+      syntax:
+        content:
+          CSharp: public static Vector3 DivideByZScale(this Vector3 vector, float scale)
+          VB: >-
+            <ExtensionAttribute>
+
+            Public Shared Function DivideByZScale(vector As Vector3, scale As Single) As Vector3
+        parameters:
+        - id: vector
+          type: Vector3
+        - id: scale
+          type: System.Single
+        return:
+          type: Vector3
+      overload: NiceGraphicLibrary.Vector3Extension.DivideByZScale*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - isExtensionMethod: true
+      id: NiceGraphicLibrary.Vector3Extension.DivideByVector(Vector3,Vector3)
+      commentId: M:NiceGraphicLibrary.Vector3Extension.DivideByVector(Vector3,Vector3)
+      language: CSharp
+      name:
+        CSharp: DivideByVector(Vector3, Vector3)
+        VB: DivideByVector(Vector3, Vector3)
+      nameWithType:
+        CSharp: Vector3Extension.DivideByVector(Vector3, Vector3)
+        VB: Vector3Extension.DivideByVector(Vector3, Vector3)
+      qualifiedName:
+        CSharp: NiceGraphicLibrary.Vector3Extension.DivideByVector(Vector3, Vector3)
+        VB: NiceGraphicLibrary.Vector3Extension.DivideByVector(Vector3, Vector3)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: NiceGraphicLibrary
+      source:
+        id: DivideByVector
+        path: ''
+        startLine: 866
+      syntax:
+        content:
+          CSharp: public static Vector3 DivideByVector(this Vector3 vector, Vector3 otherVector)
+          VB: >-
+            <ExtensionAttribute>
+
+            Public Shared Function DivideByVector(vector As Vector3, otherVector As Vector3) As Vector3
+        parameters:
+        - id: vector
+          type: Vector3
+        - id: otherVector
+          type: Vector3
+        return:
+          type: Vector3
+      overload: NiceGraphicLibrary.Vector3Extension.DivideByVector*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+references:
+  System:
+    name:
+      CSharp:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+        isExternal: true
+      VB:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+    isDefinition: true
+    commentId: N:System
+  System.String:
+    name:
+      CSharp:
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+      VB:
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.String
+  System.Object:
+    name:
+      CSharp:
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      VB:
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Object
+  NiceGraphicLibrary.DebugValueScreenViewer.UpdateValue*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.DebugValueScreenViewer.UpdateValue*
+        name: UpdateValue
+        nameWithType: DebugValueScreenViewer.UpdateValue
+        qualifiedName: NiceGraphicLibrary.DebugValueScreenViewer.UpdateValue
+      VB:
+      - id: NiceGraphicLibrary.DebugValueScreenViewer.UpdateValue*
+        name: UpdateValue
+        nameWithType: DebugValueScreenViewer.UpdateValue
+        qualifiedName: NiceGraphicLibrary.DebugValueScreenViewer.UpdateValue
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.DebugValueScreenViewer.UpdateValue
+  System.Boolean:
+    name:
+      CSharp:
+      - id: System.Boolean
+        name: Boolean
+        nameWithType: Boolean
+        qualifiedName: System.Boolean
+        isExternal: true
+      VB:
+      - id: System.Boolean
+        name: Boolean
+        nameWithType: Boolean
+        qualifiedName: System.Boolean
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Boolean
+  NiceGraphicLibrary.DebugValueScreenViewer.RemoveValue*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.DebugValueScreenViewer.RemoveValue*
+        name: RemoveValue
+        nameWithType: DebugValueScreenViewer.RemoveValue
+        qualifiedName: NiceGraphicLibrary.DebugValueScreenViewer.RemoveValue
+      VB:
+      - id: NiceGraphicLibrary.DebugValueScreenViewer.RemoveValue*
+        name: RemoveValue
+        nameWithType: DebugValueScreenViewer.RemoveValue
+        qualifiedName: NiceGraphicLibrary.DebugValueScreenViewer.RemoveValue
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.DebugValueScreenViewer.RemoveValue
+  NiceGraphicLibrary.DebugValueScreenViewer:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.DebugValueScreenViewer
+        name: DebugValueScreenViewer
+        nameWithType: DebugValueScreenViewer
+        qualifiedName: NiceGraphicLibrary.DebugValueScreenViewer
+      VB:
+      - id: NiceGraphicLibrary.DebugValueScreenViewer
+        name: DebugValueScreenViewer
+        nameWithType: DebugValueScreenViewer
+        qualifiedName: NiceGraphicLibrary.DebugValueScreenViewer
+    isDefinition: true
+    commentId: T:NiceGraphicLibrary.DebugValueScreenViewer
+  NiceGraphicLibrary.DrawBoundingBox:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.DrawBoundingBox
+        name: DrawBoundingBox
+        nameWithType: DrawBoundingBox
+        qualifiedName: NiceGraphicLibrary.DrawBoundingBox
+      VB:
+      - id: NiceGraphicLibrary.DrawBoundingBox
+        name: DrawBoundingBox
+        nameWithType: DrawBoundingBox
+        qualifiedName: NiceGraphicLibrary.DrawBoundingBox
+    isDefinition: true
+    commentId: T:NiceGraphicLibrary.DrawBoundingBox
+  System.Object.ToString:
+    name:
+      CSharp:
+      - id: System.Object.ToString
+        name: ToString
+        nameWithType: Object.ToString
+        qualifiedName: System.Object.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.ToString
+        name: ToString
+        nameWithType: Object.ToString
+        qualifiedName: System.Object.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.ToString
+  System.Object.Equals(System.Object):
+    name:
+      CSharp:
+      - id: System.Object.Equals(System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.Equals(System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.Equals(System.Object)
+  System.Object.Equals(System.Object,System.Object):
+    name:
+      CSharp:
+      - id: System.Object.Equals(System.Object,System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.Equals(System.Object,System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.Equals(System.Object,System.Object)
+  System.Object.ReferenceEquals(System.Object,System.Object):
+    name:
+      CSharp:
+      - id: System.Object.ReferenceEquals(System.Object,System.Object)
+        name: ReferenceEquals
+        nameWithType: Object.ReferenceEquals
+        qualifiedName: System.Object.ReferenceEquals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.ReferenceEquals(System.Object,System.Object)
+        name: ReferenceEquals
+        nameWithType: Object.ReferenceEquals
+        qualifiedName: System.Object.ReferenceEquals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  System.Object.GetHashCode:
+    name:
+      CSharp:
+      - id: System.Object.GetHashCode
+        name: GetHashCode
+        nameWithType: Object.GetHashCode
+        qualifiedName: System.Object.GetHashCode
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.GetHashCode
+        name: GetHashCode
+        nameWithType: Object.GetHashCode
+        qualifiedName: System.Object.GetHashCode
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.GetHashCode
+  System.Object.GetType:
+    name:
+      CSharp:
+      - id: System.Object.GetType
+        name: GetType
+        nameWithType: Object.GetType
+        qualifiedName: System.Object.GetType
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.GetType
+        name: GetType
+        nameWithType: Object.GetType
+        qualifiedName: System.Object.GetType
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.GetType
+  System.Object.MemberwiseClone:
+    name:
+      CSharp:
+      - id: System.Object.MemberwiseClone
+        name: MemberwiseClone
+        nameWithType: Object.MemberwiseClone
+        qualifiedName: System.Object.MemberwiseClone
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.MemberwiseClone
+        name: MemberwiseClone
+        nameWithType: Object.MemberwiseClone
+        qualifiedName: System.Object.MemberwiseClone
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.MemberwiseClone
+  Color:
+    name:
+      CSharp:
+      - id: Color
+        name: Color
+        nameWithType: Color
+        qualifiedName: Color
+        isExternal: true
+      VB:
+      - id: Color
+        name: Color
+        nameWithType: Color
+        qualifiedName: Color
+        isExternal: true
+    isDefinition: true
+  NiceGraphicLibrary.DrawBoundingBox.ElementColors:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.DrawBoundingBox.ElementColors
+        name: DrawBoundingBox.ElementColors
+        nameWithType: DrawBoundingBox.ElementColors
+        qualifiedName: NiceGraphicLibrary.DrawBoundingBox.ElementColors
+      VB:
+      - id: NiceGraphicLibrary.DrawBoundingBox.ElementColors
+        name: DrawBoundingBox.ElementColors
+        nameWithType: DrawBoundingBox.ElementColors
+        qualifiedName: NiceGraphicLibrary.DrawBoundingBox.ElementColors
+    isDefinition: true
+    commentId: T:NiceGraphicLibrary.DrawBoundingBox.ElementColors
+  System.SerializableAttribute:
+    name:
+      CSharp:
+      - id: System.SerializableAttribute
+        name: SerializableAttribute
+        nameWithType: SerializableAttribute
+        qualifiedName: System.SerializableAttribute
+        isExternal: true
+      VB:
+      - id: System.SerializableAttribute
+        name: SerializableAttribute
+        nameWithType: SerializableAttribute
+        qualifiedName: System.SerializableAttribute
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.SerializableAttribute
+  System.SerializableAttribute.#ctor:
+    name:
+      CSharp:
+      - id: System.SerializableAttribute.#ctor
+        name: SerializableAttribute
+        nameWithType: SerializableAttribute.SerializableAttribute
+        qualifiedName: System.SerializableAttribute.SerializableAttribute
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.SerializableAttribute.#ctor
+        name: SerializableAttribute
+        nameWithType: SerializableAttribute.SerializableAttribute
+        qualifiedName: System.SerializableAttribute.SerializableAttribute
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.SerializableAttribute
+    commentId: M:System.SerializableAttribute.#ctor
+  NiceGraphicLibrary.DrawDebugLineTo:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.DrawDebugLineTo
+        name: DrawDebugLineTo
+        nameWithType: DrawDebugLineTo
+        qualifiedName: NiceGraphicLibrary.DrawDebugLineTo
+      VB:
+      - id: NiceGraphicLibrary.DrawDebugLineTo
+        name: DrawDebugLineTo
+        nameWithType: DrawDebugLineTo
+        qualifiedName: NiceGraphicLibrary.DrawDebugLineTo
+    isDefinition: true
+    commentId: T:NiceGraphicLibrary.DrawDebugLineTo
+  NiceGraphicLibrary:
+    name:
+      CSharp:
+      - name: NiceGraphicLibrary
+        nameWithType: NiceGraphicLibrary
+        qualifiedName: NiceGraphicLibrary
+      VB:
+      - name: NiceGraphicLibrary
+        nameWithType: NiceGraphicLibrary
+        qualifiedName: NiceGraphicLibrary
+    isDefinition: true
+    commentId: N:NiceGraphicLibrary
+  NiceGraphicLibrary.DrawDebugLineTo.ReferencePoint:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.DrawDebugLineTo.ReferencePoint
+        name: DrawDebugLineTo.ReferencePoint
+        nameWithType: DrawDebugLineTo.ReferencePoint
+        qualifiedName: NiceGraphicLibrary.DrawDebugLineTo.ReferencePoint
+      VB:
+      - id: NiceGraphicLibrary.DrawDebugLineTo.ReferencePoint
+        name: DrawDebugLineTo.ReferencePoint
+        nameWithType: DrawDebugLineTo.ReferencePoint
+        qualifiedName: NiceGraphicLibrary.DrawDebugLineTo.ReferencePoint
+    isDefinition: true
+    parent: NiceGraphicLibrary
+    commentId: T:NiceGraphicLibrary.DrawDebugLineTo.ReferencePoint
+  NiceGraphicLibrary.LinearPlayerMovement:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.LinearPlayerMovement
+        name: LinearPlayerMovement
+        nameWithType: LinearPlayerMovement
+        qualifiedName: NiceGraphicLibrary.LinearPlayerMovement
+      VB:
+      - id: NiceGraphicLibrary.LinearPlayerMovement
+        name: LinearPlayerMovement
+        nameWithType: LinearPlayerMovement
+        qualifiedName: NiceGraphicLibrary.LinearPlayerMovement
+    isDefinition: true
+    commentId: T:NiceGraphicLibrary.LinearPlayerMovement
+  NiceGraphicLibrary.PlayerKeyboardMovementInput:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.PlayerKeyboardMovementInput
+        name: PlayerKeyboardMovementInput
+        nameWithType: PlayerKeyboardMovementInput
+        qualifiedName: NiceGraphicLibrary.PlayerKeyboardMovementInput
+      VB:
+      - id: NiceGraphicLibrary.PlayerKeyboardMovementInput
+        name: PlayerKeyboardMovementInput
+        nameWithType: PlayerKeyboardMovementInput
+        qualifiedName: NiceGraphicLibrary.PlayerKeyboardMovementInput
+    isDefinition: true
+    commentId: T:NiceGraphicLibrary.PlayerKeyboardMovementInput
+  System.Single:
+    name:
+      CSharp:
+      - id: System.Single
+        name: Single
+        nameWithType: Single
+        qualifiedName: System.Single
+        isExternal: true
+      VB:
+      - id: System.Single
+        name: Single
+        nameWithType: Single
+        qualifiedName: System.Single
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Single
+  Rigidbody:
+    name:
+      CSharp:
+      - id: Rigidbody
+        name: Rigidbody
+        nameWithType: Rigidbody
+        qualifiedName: Rigidbody
+        isExternal: true
+      VB:
+      - id: Rigidbody
+        name: Rigidbody
+        nameWithType: Rigidbody
+        qualifiedName: Rigidbody
+        isExternal: true
+    isDefinition: true
+    commentId: '!:Rigidbody'
+  NiceGraphicLibrary.PlayerMovement.EnableXMovement*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.PlayerMovement.EnableXMovement*
+        name: EnableXMovement
+        nameWithType: PlayerMovement.EnableXMovement
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.EnableXMovement
+      VB:
+      - id: NiceGraphicLibrary.PlayerMovement.EnableXMovement*
+        name: EnableXMovement
+        nameWithType: PlayerMovement.EnableXMovement
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.EnableXMovement
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.PlayerMovement.EnableXMovement
+  NiceGraphicLibrary.PlayerMovement.EnableYMovement*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.PlayerMovement.EnableYMovement*
+        name: EnableYMovement
+        nameWithType: PlayerMovement.EnableYMovement
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.EnableYMovement
+      VB:
+      - id: NiceGraphicLibrary.PlayerMovement.EnableYMovement*
+        name: EnableYMovement
+        nameWithType: PlayerMovement.EnableYMovement
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.EnableYMovement
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.PlayerMovement.EnableYMovement
+  NiceGraphicLibrary.PlayerMovement.EnableZMovement*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.PlayerMovement.EnableZMovement*
+        name: EnableZMovement
+        nameWithType: PlayerMovement.EnableZMovement
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.EnableZMovement
+      VB:
+      - id: NiceGraphicLibrary.PlayerMovement.EnableZMovement*
+        name: EnableZMovement
+        nameWithType: PlayerMovement.EnableZMovement
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.EnableZMovement
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.PlayerMovement.EnableZMovement
+  NiceGraphicLibrary.PlayerMovement.DisableXMovement*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.PlayerMovement.DisableXMovement*
+        name: DisableXMovement
+        nameWithType: PlayerMovement.DisableXMovement
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.DisableXMovement
+      VB:
+      - id: NiceGraphicLibrary.PlayerMovement.DisableXMovement*
+        name: DisableXMovement
+        nameWithType: PlayerMovement.DisableXMovement
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.DisableXMovement
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.PlayerMovement.DisableXMovement
+  NiceGraphicLibrary.PlayerMovement.DisableYMovement*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.PlayerMovement.DisableYMovement*
+        name: DisableYMovement
+        nameWithType: PlayerMovement.DisableYMovement
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.DisableYMovement
+      VB:
+      - id: NiceGraphicLibrary.PlayerMovement.DisableYMovement*
+        name: DisableYMovement
+        nameWithType: PlayerMovement.DisableYMovement
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.DisableYMovement
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.PlayerMovement.DisableYMovement
+  NiceGraphicLibrary.PlayerMovement.DisableZMovement*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.PlayerMovement.DisableZMovement*
+        name: DisableZMovement
+        nameWithType: PlayerMovement.DisableZMovement
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.DisableZMovement
+      VB:
+      - id: NiceGraphicLibrary.PlayerMovement.DisableZMovement*
+        name: DisableZMovement
+        nameWithType: PlayerMovement.DisableZMovement
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.DisableZMovement
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.PlayerMovement.DisableZMovement
+  NiceGraphicLibrary.PlayerMovement.OnMoveX*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.PlayerMovement.OnMoveX*
+        name: OnMoveX
+        nameWithType: PlayerMovement.OnMoveX
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.OnMoveX
+      VB:
+      - id: NiceGraphicLibrary.PlayerMovement.OnMoveX*
+        name: OnMoveX
+        nameWithType: PlayerMovement.OnMoveX
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.OnMoveX
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.PlayerMovement.OnMoveX
+  NiceGraphicLibrary.PlayerMovement.OnMoveY*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.PlayerMovement.OnMoveY*
+        name: OnMoveY
+        nameWithType: PlayerMovement.OnMoveY
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.OnMoveY
+      VB:
+      - id: NiceGraphicLibrary.PlayerMovement.OnMoveY*
+        name: OnMoveY
+        nameWithType: PlayerMovement.OnMoveY
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.OnMoveY
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.PlayerMovement.OnMoveY
+  NiceGraphicLibrary.PlayerMovement.OnMoveZ*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.PlayerMovement.OnMoveZ*
+        name: OnMoveZ
+        nameWithType: PlayerMovement.OnMoveZ
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.OnMoveZ
+      VB:
+      - id: NiceGraphicLibrary.PlayerMovement.OnMoveZ*
+        name: OnMoveZ
+        nameWithType: PlayerMovement.OnMoveZ
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.OnMoveZ
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.PlayerMovement.OnMoveZ
+  NiceGraphicLibrary.PlayerMovement.Start*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.PlayerMovement.Start*
+        name: Start
+        nameWithType: PlayerMovement.Start
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.Start
+      VB:
+      - id: NiceGraphicLibrary.PlayerMovement.Start*
+        name: Start
+        nameWithType: PlayerMovement.Start
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.Start
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.PlayerMovement.Start
+  NiceGraphicLibrary.PlayerMovement.FixedUpdate*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.PlayerMovement.FixedUpdate*
+        name: FixedUpdate
+        nameWithType: PlayerMovement.FixedUpdate
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.FixedUpdate
+      VB:
+      - id: NiceGraphicLibrary.PlayerMovement.FixedUpdate*
+        name: FixedUpdate
+        nameWithType: PlayerMovement.FixedUpdate
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.FixedUpdate
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.PlayerMovement.FixedUpdate
+  NiceGraphicLibrary.PlayerMovement.ApplyMovement*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.PlayerMovement.ApplyMovement*
+        name: ApplyMovement
+        nameWithType: PlayerMovement.ApplyMovement
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.ApplyMovement
+      VB:
+      - id: NiceGraphicLibrary.PlayerMovement.ApplyMovement*
+        name: ApplyMovement
+        nameWithType: PlayerMovement.ApplyMovement
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.ApplyMovement
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.PlayerMovement.ApplyMovement
+  NiceGraphicLibrary.PlayerMovement:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.PlayerMovement
+        name: PlayerMovement
+        nameWithType: PlayerMovement
+        qualifiedName: NiceGraphicLibrary.PlayerMovement
+      VB:
+      - id: NiceGraphicLibrary.PlayerMovement
+        name: PlayerMovement
+        nameWithType: PlayerMovement
+        qualifiedName: NiceGraphicLibrary.PlayerMovement
+    isDefinition: true
+    parent: NiceGraphicLibrary
+    commentId: T:NiceGraphicLibrary.PlayerMovement
+  NiceGraphicLibrary.PlayerMovement.MovementAxisLevel:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.PlayerMovement.MovementAxisLevel
+        name: PlayerMovement.MovementAxisLevel
+        nameWithType: PlayerMovement.MovementAxisLevel
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.MovementAxisLevel
+      VB:
+      - id: NiceGraphicLibrary.PlayerMovement.MovementAxisLevel
+        name: PlayerMovement.MovementAxisLevel
+        nameWithType: PlayerMovement.MovementAxisLevel
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.MovementAxisLevel
+    isDefinition: true
+    parent: NiceGraphicLibrary
+    commentId: T:NiceGraphicLibrary.PlayerMovement.MovementAxisLevel
+  NiceGraphicLibrary.PlayerMovement._axisX:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.PlayerMovement._axisX
+        name: _axisX
+        nameWithType: PlayerMovement._axisX
+        qualifiedName: NiceGraphicLibrary.PlayerMovement._axisX
+      VB:
+      - id: NiceGraphicLibrary.PlayerMovement._axisX
+        name: _axisX
+        nameWithType: PlayerMovement._axisX
+        qualifiedName: NiceGraphicLibrary.PlayerMovement._axisX
+    isDefinition: true
+    parent: NiceGraphicLibrary.PlayerMovement
+    commentId: F:NiceGraphicLibrary.PlayerMovement._axisX
+  NiceGraphicLibrary.PlayerMovement._axisY:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.PlayerMovement._axisY
+        name: _axisY
+        nameWithType: PlayerMovement._axisY
+        qualifiedName: NiceGraphicLibrary.PlayerMovement._axisY
+      VB:
+      - id: NiceGraphicLibrary.PlayerMovement._axisY
+        name: _axisY
+        nameWithType: PlayerMovement._axisY
+        qualifiedName: NiceGraphicLibrary.PlayerMovement._axisY
+    isDefinition: true
+    parent: NiceGraphicLibrary.PlayerMovement
+    commentId: F:NiceGraphicLibrary.PlayerMovement._axisY
+  NiceGraphicLibrary.PlayerMovement._axisZ:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.PlayerMovement._axisZ
+        name: _axisZ
+        nameWithType: PlayerMovement._axisZ
+        qualifiedName: NiceGraphicLibrary.PlayerMovement._axisZ
+      VB:
+      - id: NiceGraphicLibrary.PlayerMovement._axisZ
+        name: _axisZ
+        nameWithType: PlayerMovement._axisZ
+        qualifiedName: NiceGraphicLibrary.PlayerMovement._axisZ
+    isDefinition: true
+    parent: NiceGraphicLibrary.PlayerMovement
+    commentId: F:NiceGraphicLibrary.PlayerMovement._axisZ
+  NiceGraphicLibrary.PlayerMovement._rb:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.PlayerMovement._rb
+        name: _rb
+        nameWithType: PlayerMovement._rb
+        qualifiedName: NiceGraphicLibrary.PlayerMovement._rb
+      VB:
+      - id: NiceGraphicLibrary.PlayerMovement._rb
+        name: _rb
+        nameWithType: PlayerMovement._rb
+        qualifiedName: NiceGraphicLibrary.PlayerMovement._rb
+    isDefinition: true
+    parent: NiceGraphicLibrary.PlayerMovement
+    commentId: F:NiceGraphicLibrary.PlayerMovement._rb
+  NiceGraphicLibrary.PlayerMovement.EnableXMovement:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.PlayerMovement.EnableXMovement
+        name: EnableXMovement
+        nameWithType: PlayerMovement.EnableXMovement
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.EnableXMovement
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: NiceGraphicLibrary.PlayerMovement.EnableXMovement
+        name: EnableXMovement
+        nameWithType: PlayerMovement.EnableXMovement
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.EnableXMovement
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: NiceGraphicLibrary.PlayerMovement
+    commentId: M:NiceGraphicLibrary.PlayerMovement.EnableXMovement
+  NiceGraphicLibrary.PlayerMovement.EnableYMovement:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.PlayerMovement.EnableYMovement
+        name: EnableYMovement
+        nameWithType: PlayerMovement.EnableYMovement
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.EnableYMovement
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: NiceGraphicLibrary.PlayerMovement.EnableYMovement
+        name: EnableYMovement
+        nameWithType: PlayerMovement.EnableYMovement
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.EnableYMovement
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: NiceGraphicLibrary.PlayerMovement
+    commentId: M:NiceGraphicLibrary.PlayerMovement.EnableYMovement
+  NiceGraphicLibrary.PlayerMovement.EnableZMovement:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.PlayerMovement.EnableZMovement
+        name: EnableZMovement
+        nameWithType: PlayerMovement.EnableZMovement
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.EnableZMovement
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: NiceGraphicLibrary.PlayerMovement.EnableZMovement
+        name: EnableZMovement
+        nameWithType: PlayerMovement.EnableZMovement
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.EnableZMovement
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: NiceGraphicLibrary.PlayerMovement
+    commentId: M:NiceGraphicLibrary.PlayerMovement.EnableZMovement
+  NiceGraphicLibrary.PlayerMovement.DisableXMovement:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.PlayerMovement.DisableXMovement
+        name: DisableXMovement
+        nameWithType: PlayerMovement.DisableXMovement
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.DisableXMovement
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: NiceGraphicLibrary.PlayerMovement.DisableXMovement
+        name: DisableXMovement
+        nameWithType: PlayerMovement.DisableXMovement
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.DisableXMovement
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: NiceGraphicLibrary.PlayerMovement
+    commentId: M:NiceGraphicLibrary.PlayerMovement.DisableXMovement
+  NiceGraphicLibrary.PlayerMovement.DisableYMovement:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.PlayerMovement.DisableYMovement
+        name: DisableYMovement
+        nameWithType: PlayerMovement.DisableYMovement
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.DisableYMovement
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: NiceGraphicLibrary.PlayerMovement.DisableYMovement
+        name: DisableYMovement
+        nameWithType: PlayerMovement.DisableYMovement
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.DisableYMovement
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: NiceGraphicLibrary.PlayerMovement
+    commentId: M:NiceGraphicLibrary.PlayerMovement.DisableYMovement
+  NiceGraphicLibrary.PlayerMovement.DisableZMovement:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.PlayerMovement.DisableZMovement
+        name: DisableZMovement
+        nameWithType: PlayerMovement.DisableZMovement
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.DisableZMovement
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: NiceGraphicLibrary.PlayerMovement.DisableZMovement
+        name: DisableZMovement
+        nameWithType: PlayerMovement.DisableZMovement
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.DisableZMovement
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: NiceGraphicLibrary.PlayerMovement
+    commentId: M:NiceGraphicLibrary.PlayerMovement.DisableZMovement
+  NiceGraphicLibrary.PlayerMovement.OnMoveX(System.Single):
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.PlayerMovement.OnMoveX(System.Single)
+        name: OnMoveX
+        nameWithType: PlayerMovement.OnMoveX
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.OnMoveX
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Single
+        name: Single
+        nameWithType: Single
+        qualifiedName: System.Single
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: NiceGraphicLibrary.PlayerMovement.OnMoveX(System.Single)
+        name: OnMoveX
+        nameWithType: PlayerMovement.OnMoveX
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.OnMoveX
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Single
+        name: Single
+        nameWithType: Single
+        qualifiedName: System.Single
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: NiceGraphicLibrary.PlayerMovement
+    commentId: M:NiceGraphicLibrary.PlayerMovement.OnMoveX(System.Single)
+  NiceGraphicLibrary.PlayerMovement.OnMoveY(System.Single):
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.PlayerMovement.OnMoveY(System.Single)
+        name: OnMoveY
+        nameWithType: PlayerMovement.OnMoveY
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.OnMoveY
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Single
+        name: Single
+        nameWithType: Single
+        qualifiedName: System.Single
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: NiceGraphicLibrary.PlayerMovement.OnMoveY(System.Single)
+        name: OnMoveY
+        nameWithType: PlayerMovement.OnMoveY
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.OnMoveY
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Single
+        name: Single
+        nameWithType: Single
+        qualifiedName: System.Single
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: NiceGraphicLibrary.PlayerMovement
+    commentId: M:NiceGraphicLibrary.PlayerMovement.OnMoveY(System.Single)
+  NiceGraphicLibrary.PlayerMovement.OnMoveZ(System.Single):
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.PlayerMovement.OnMoveZ(System.Single)
+        name: OnMoveZ
+        nameWithType: PlayerMovement.OnMoveZ
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.OnMoveZ
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Single
+        name: Single
+        nameWithType: Single
+        qualifiedName: System.Single
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: NiceGraphicLibrary.PlayerMovement.OnMoveZ(System.Single)
+        name: OnMoveZ
+        nameWithType: PlayerMovement.OnMoveZ
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.OnMoveZ
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Single
+        name: Single
+        nameWithType: Single
+        qualifiedName: System.Single
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: NiceGraphicLibrary.PlayerMovement
+    commentId: M:NiceGraphicLibrary.PlayerMovement.OnMoveZ(System.Single)
+  NiceGraphicLibrary.PlayerMovement.Start:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.PlayerMovement.Start
+        name: Start
+        nameWithType: PlayerMovement.Start
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.Start
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: NiceGraphicLibrary.PlayerMovement.Start
+        name: Start
+        nameWithType: PlayerMovement.Start
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.Start
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: NiceGraphicLibrary.PlayerMovement
+    commentId: M:NiceGraphicLibrary.PlayerMovement.Start
+  NiceGraphicLibrary.PlayerMovement.FixedUpdate:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.PlayerMovement.FixedUpdate
+        name: FixedUpdate
+        nameWithType: PlayerMovement.FixedUpdate
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.FixedUpdate
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: NiceGraphicLibrary.PlayerMovement.FixedUpdate
+        name: FixedUpdate
+        nameWithType: PlayerMovement.FixedUpdate
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.FixedUpdate
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: NiceGraphicLibrary.PlayerMovement
+    commentId: M:NiceGraphicLibrary.PlayerMovement.FixedUpdate
+  NiceGraphicLibrary.StaticPlayerMovement.SetSpeed*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.StaticPlayerMovement.SetSpeed*
+        name: SetSpeed
+        nameWithType: StaticPlayerMovement.SetSpeed
+        qualifiedName: NiceGraphicLibrary.StaticPlayerMovement.SetSpeed
+      VB:
+      - id: NiceGraphicLibrary.StaticPlayerMovement.SetSpeed*
+        name: SetSpeed
+        nameWithType: StaticPlayerMovement.SetSpeed
+        qualifiedName: NiceGraphicLibrary.StaticPlayerMovement.SetSpeed
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.StaticPlayerMovement.SetSpeed
+  NiceGraphicLibrary.PlayerMovement.ApplyMovement:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.PlayerMovement.ApplyMovement
+        name: ApplyMovement
+        nameWithType: PlayerMovement.ApplyMovement
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.ApplyMovement
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: NiceGraphicLibrary.PlayerMovement.ApplyMovement
+        name: ApplyMovement
+        nameWithType: PlayerMovement.ApplyMovement
+        qualifiedName: NiceGraphicLibrary.PlayerMovement.ApplyMovement
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: NiceGraphicLibrary.PlayerMovement
+    commentId: M:NiceGraphicLibrary.PlayerMovement.ApplyMovement
+  NiceGraphicLibrary.StaticPlayerMovement.ApplyMovement*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.StaticPlayerMovement.ApplyMovement*
+        name: ApplyMovement
+        nameWithType: StaticPlayerMovement.ApplyMovement
+        qualifiedName: NiceGraphicLibrary.StaticPlayerMovement.ApplyMovement
+      VB:
+      - id: NiceGraphicLibrary.StaticPlayerMovement.ApplyMovement*
+        name: ApplyMovement
+        nameWithType: StaticPlayerMovement.ApplyMovement
+        qualifiedName: NiceGraphicLibrary.StaticPlayerMovement.ApplyMovement
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.StaticPlayerMovement.ApplyMovement
+  NiceGraphicLibrary.StaticPlayerMovement:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.StaticPlayerMovement
+        name: StaticPlayerMovement
+        nameWithType: StaticPlayerMovement
+        qualifiedName: NiceGraphicLibrary.StaticPlayerMovement
+      VB:
+      - id: NiceGraphicLibrary.StaticPlayerMovement
+        name: StaticPlayerMovement
+        nameWithType: StaticPlayerMovement
+        qualifiedName: NiceGraphicLibrary.StaticPlayerMovement
+    isDefinition: true
+    commentId: T:NiceGraphicLibrary.StaticPlayerMovement
+  Bounds:
+    name:
+      CSharp:
+      - id: Bounds
+        name: Bounds
+        nameWithType: Bounds
+        qualifiedName: Bounds
+        isExternal: true
+      VB:
+      - id: Bounds
+        name: Bounds
+        nameWithType: Bounds
+        qualifiedName: Bounds
+        isExternal: true
+    isDefinition: true
+    commentId: '!:Bounds'
+  GameObject:
+    name:
+      CSharp:
+      - id: GameObject
+        name: GameObject
+        nameWithType: GameObject
+        qualifiedName: GameObject
+        isExternal: true
+      VB:
+      - id: GameObject
+        name: GameObject
+        nameWithType: GameObject
+        qualifiedName: GameObject
+        isExternal: true
+    isDefinition: true
+    commentId: '!:GameObject'
+  NiceGraphicLibrary.Geometry3DUtility.GetBoundingBoxOfAllMeshes*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.Geometry3DUtility.GetBoundingBoxOfAllMeshes*
+        name: GetBoundingBoxOfAllMeshes
+        nameWithType: Geometry3DUtility.GetBoundingBoxOfAllMeshes
+        qualifiedName: NiceGraphicLibrary.Geometry3DUtility.GetBoundingBoxOfAllMeshes
+      VB:
+      - id: NiceGraphicLibrary.Geometry3DUtility.GetBoundingBoxOfAllMeshes*
+        name: GetBoundingBoxOfAllMeshes
+        nameWithType: Geometry3DUtility.GetBoundingBoxOfAllMeshes
+        qualifiedName: NiceGraphicLibrary.Geometry3DUtility.GetBoundingBoxOfAllMeshes
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.Geometry3DUtility.GetBoundingBoxOfAllMeshes
+  NiceGraphicLibrary.Geometry3DUtility:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.Geometry3DUtility
+        name: Geometry3DUtility
+        nameWithType: Geometry3DUtility
+        qualifiedName: NiceGraphicLibrary.Geometry3DUtility
+      VB:
+      - id: NiceGraphicLibrary.Geometry3DUtility
+        name: Geometry3DUtility
+        nameWithType: Geometry3DUtility
+        qualifiedName: NiceGraphicLibrary.Geometry3DUtility
+    isDefinition: true
+    commentId: T:NiceGraphicLibrary.Geometry3DUtility
+  System.Collections.Generic.IEnumerator:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.IEnumerator
+        name: IEnumerator
+        nameWithType: IEnumerator
+        qualifiedName: System.Collections.Generic.IEnumerator
+        isExternal: true
+      VB:
+      - id: System.Collections.Generic.IEnumerator
+        name: IEnumerator
+        nameWithType: IEnumerator
+        qualifiedName: System.Collections.Generic.IEnumerator
+        isExternal: true
+    isDefinition: true
+    commentId: '!:System.Collections.Generic.IEnumerator'
+  Action`1:
+    name:
+      CSharp:
+      - id: Action`1
+        name: Action
+        nameWithType: Action
+        qualifiedName: Action
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - name: ''
+        nameWithType: ''
+        qualifiedName: ''
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: Action`1
+        name: Action
+        nameWithType: Action
+        qualifiedName: Action
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - name: ''
+        nameWithType: ''
+        qualifiedName: ''
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: '!:Action`1'
+  Action{System.Single}:
+    name:
+      CSharp:
+      - id: Action`1
+        name: Action
+        nameWithType: Action
+        qualifiedName: Action
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - id: System.Single
+        name: Single
+        nameWithType: Single
+        qualifiedName: System.Single
+        isExternal: true
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: Action`1
+        name: Action
+        nameWithType: Action
+        qualifiedName: Action
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - id: System.Single
+        name: Single
+        nameWithType: Single
+        qualifiedName: System.Single
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: Action`1
+    commentId: '!:Action{System.Single}'
+  NiceGraphicLibrary.Interpolation.InterpolateOverTime*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.Interpolation.InterpolateOverTime*
+        name: InterpolateOverTime
+        nameWithType: Interpolation.InterpolateOverTime
+        qualifiedName: NiceGraphicLibrary.Interpolation.InterpolateOverTime
+      VB:
+      - id: NiceGraphicLibrary.Interpolation.InterpolateOverTime*
+        name: InterpolateOverTime
+        nameWithType: Interpolation.InterpolateOverTime
+        qualifiedName: NiceGraphicLibrary.Interpolation.InterpolateOverTime
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.Interpolation.InterpolateOverTime
+  NiceGraphicLibrary.Interpolation:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.Interpolation
+        name: Interpolation
+        nameWithType: Interpolation
+        qualifiedName: NiceGraphicLibrary.Interpolation
+      VB:
+      - id: NiceGraphicLibrary.Interpolation
+        name: Interpolation
+        nameWithType: Interpolation
+        qualifiedName: NiceGraphicLibrary.Interpolation
+    isDefinition: true
+    commentId: T:NiceGraphicLibrary.Interpolation
+  NiceGraphicLibrary.CooldownDeltaTimer.#ctor*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.CooldownDeltaTimer.#ctor*
+        name: CooldownDeltaTimer
+        nameWithType: CooldownDeltaTimer.CooldownDeltaTimer
+        qualifiedName: NiceGraphicLibrary.CooldownDeltaTimer.CooldownDeltaTimer
+      VB:
+      - id: NiceGraphicLibrary.CooldownDeltaTimer.#ctor*
+        name: CooldownDeltaTimer
+        nameWithType: CooldownDeltaTimer.CooldownDeltaTimer
+        qualifiedName: NiceGraphicLibrary.CooldownDeltaTimer.CooldownDeltaTimer
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.CooldownDeltaTimer.#ctor
+  NiceGraphicLibrary.CooldownDeltaTimer.Update*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.CooldownDeltaTimer.Update*
+        name: Update
+        nameWithType: CooldownDeltaTimer.Update
+        qualifiedName: NiceGraphicLibrary.CooldownDeltaTimer.Update
+      VB:
+      - id: NiceGraphicLibrary.CooldownDeltaTimer.Update*
+        name: Update
+        nameWithType: CooldownDeltaTimer.Update
+        qualifiedName: NiceGraphicLibrary.CooldownDeltaTimer.Update
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.CooldownDeltaTimer.Update
+  NiceGraphicLibrary.CooldownDeltaTimer.PassedTimeFactor*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.CooldownDeltaTimer.PassedTimeFactor*
+        name: PassedTimeFactor
+        nameWithType: CooldownDeltaTimer.PassedTimeFactor
+        qualifiedName: NiceGraphicLibrary.CooldownDeltaTimer.PassedTimeFactor
+      VB:
+      - id: NiceGraphicLibrary.CooldownDeltaTimer.PassedTimeFactor*
+        name: PassedTimeFactor
+        nameWithType: CooldownDeltaTimer.PassedTimeFactor
+        qualifiedName: NiceGraphicLibrary.CooldownDeltaTimer.PassedTimeFactor
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.CooldownDeltaTimer.PassedTimeFactor
+  NiceGraphicLibrary.CooldownDeltaTimer.Reset*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.CooldownDeltaTimer.Reset*
+        name: Reset
+        nameWithType: CooldownDeltaTimer.Reset
+        qualifiedName: NiceGraphicLibrary.CooldownDeltaTimer.Reset
+      VB:
+      - id: NiceGraphicLibrary.CooldownDeltaTimer.Reset*
+        name: Reset
+        nameWithType: CooldownDeltaTimer.Reset
+        qualifiedName: NiceGraphicLibrary.CooldownDeltaTimer.Reset
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.CooldownDeltaTimer.Reset
+  NiceGraphicLibrary.CooldownDeltaTimer.WornOff*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.CooldownDeltaTimer.WornOff*
+        name: WornOff
+        nameWithType: CooldownDeltaTimer.WornOff
+        qualifiedName: NiceGraphicLibrary.CooldownDeltaTimer.WornOff
+      VB:
+      - id: NiceGraphicLibrary.CooldownDeltaTimer.WornOff*
+        name: WornOff
+        nameWithType: CooldownDeltaTimer.WornOff
+        qualifiedName: NiceGraphicLibrary.CooldownDeltaTimer.WornOff
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.CooldownDeltaTimer.WornOff
+  NiceGraphicLibrary.CooldownDeltaTimer.SetNewEndTime*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.CooldownDeltaTimer.SetNewEndTime*
+        name: SetNewEndTime
+        nameWithType: CooldownDeltaTimer.SetNewEndTime
+        qualifiedName: NiceGraphicLibrary.CooldownDeltaTimer.SetNewEndTime
+      VB:
+      - id: NiceGraphicLibrary.CooldownDeltaTimer.SetNewEndTime*
+        name: SetNewEndTime
+        nameWithType: CooldownDeltaTimer.SetNewEndTime
+        qualifiedName: NiceGraphicLibrary.CooldownDeltaTimer.SetNewEndTime
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.CooldownDeltaTimer.SetNewEndTime
+  NiceGraphicLibrary.CooldownDeltaTimer:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.CooldownDeltaTimer
+        name: CooldownDeltaTimer
+        nameWithType: CooldownDeltaTimer
+        qualifiedName: NiceGraphicLibrary.CooldownDeltaTimer
+      VB:
+      - id: NiceGraphicLibrary.CooldownDeltaTimer
+        name: CooldownDeltaTimer
+        nameWithType: CooldownDeltaTimer
+        qualifiedName: NiceGraphicLibrary.CooldownDeltaTimer
+    isDefinition: true
+    commentId: T:NiceGraphicLibrary.CooldownDeltaTimer
+  System.Double:
+    name:
+      CSharp:
+      - id: System.Double
+        name: Double
+        nameWithType: Double
+        qualifiedName: System.Double
+        isExternal: true
+      VB:
+      - id: System.Double
+        name: Double
+        nameWithType: Double
+        qualifiedName: System.Double
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Double
+  NiceGraphicLibrary.CooldownTimeStampTimer.#ctor*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.CooldownTimeStampTimer.#ctor*
+        name: CooldownTimeStampTimer
+        nameWithType: CooldownTimeStampTimer.CooldownTimeStampTimer
+        qualifiedName: NiceGraphicLibrary.CooldownTimeStampTimer.CooldownTimeStampTimer
+      VB:
+      - id: NiceGraphicLibrary.CooldownTimeStampTimer.#ctor*
+        name: CooldownTimeStampTimer
+        nameWithType: CooldownTimeStampTimer.CooldownTimeStampTimer
+        qualifiedName: NiceGraphicLibrary.CooldownTimeStampTimer.CooldownTimeStampTimer
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.CooldownTimeStampTimer.#ctor
+  NiceGraphicLibrary.CooldownTimeStampTimer.PassedTimeFactor*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.CooldownTimeStampTimer.PassedTimeFactor*
+        name: PassedTimeFactor
+        nameWithType: CooldownTimeStampTimer.PassedTimeFactor
+        qualifiedName: NiceGraphicLibrary.CooldownTimeStampTimer.PassedTimeFactor
+      VB:
+      - id: NiceGraphicLibrary.CooldownTimeStampTimer.PassedTimeFactor*
+        name: PassedTimeFactor
+        nameWithType: CooldownTimeStampTimer.PassedTimeFactor
+        qualifiedName: NiceGraphicLibrary.CooldownTimeStampTimer.PassedTimeFactor
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.CooldownTimeStampTimer.PassedTimeFactor
+  NiceGraphicLibrary.CooldownTimeStampTimer.Reset*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.CooldownTimeStampTimer.Reset*
+        name: Reset
+        nameWithType: CooldownTimeStampTimer.Reset
+        qualifiedName: NiceGraphicLibrary.CooldownTimeStampTimer.Reset
+      VB:
+      - id: NiceGraphicLibrary.CooldownTimeStampTimer.Reset*
+        name: Reset
+        nameWithType: CooldownTimeStampTimer.Reset
+        qualifiedName: NiceGraphicLibrary.CooldownTimeStampTimer.Reset
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.CooldownTimeStampTimer.Reset
+  NiceGraphicLibrary.CooldownTimeStampTimer.WornOff*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.CooldownTimeStampTimer.WornOff*
+        name: WornOff
+        nameWithType: CooldownTimeStampTimer.WornOff
+        qualifiedName: NiceGraphicLibrary.CooldownTimeStampTimer.WornOff
+      VB:
+      - id: NiceGraphicLibrary.CooldownTimeStampTimer.WornOff*
+        name: WornOff
+        nameWithType: CooldownTimeStampTimer.WornOff
+        qualifiedName: NiceGraphicLibrary.CooldownTimeStampTimer.WornOff
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.CooldownTimeStampTimer.WornOff
+  NiceGraphicLibrary.CooldownTimeStampTimer.SetNewEndTime*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.CooldownTimeStampTimer.SetNewEndTime*
+        name: SetNewEndTime
+        nameWithType: CooldownTimeStampTimer.SetNewEndTime
+        qualifiedName: NiceGraphicLibrary.CooldownTimeStampTimer.SetNewEndTime
+      VB:
+      - id: NiceGraphicLibrary.CooldownTimeStampTimer.SetNewEndTime*
+        name: SetNewEndTime
+        nameWithType: CooldownTimeStampTimer.SetNewEndTime
+        qualifiedName: NiceGraphicLibrary.CooldownTimeStampTimer.SetNewEndTime
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.CooldownTimeStampTimer.SetNewEndTime
+  NiceGraphicLibrary.CooldownTimeStampTimer:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.CooldownTimeStampTimer
+        name: CooldownTimeStampTimer
+        nameWithType: CooldownTimeStampTimer
+        qualifiedName: NiceGraphicLibrary.CooldownTimeStampTimer
+      VB:
+      - id: NiceGraphicLibrary.CooldownTimeStampTimer
+        name: CooldownTimeStampTimer
+        nameWithType: CooldownTimeStampTimer
+        qualifiedName: NiceGraphicLibrary.CooldownTimeStampTimer
+    isDefinition: true
+    commentId: T:NiceGraphicLibrary.CooldownTimeStampTimer
+  System.Int32:
+    name:
+      CSharp:
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      VB:
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Int32
+  NiceGraphicLibrary.CountDown.#ctor*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.CountDown.#ctor*
+        name: CountDown
+        nameWithType: CountDown.CountDown
+        qualifiedName: NiceGraphicLibrary.CountDown.CountDown
+      VB:
+      - id: NiceGraphicLibrary.CountDown.#ctor*
+        name: CountDown
+        nameWithType: CountDown.CountDown
+        qualifiedName: NiceGraphicLibrary.CountDown.CountDown
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.CountDown.#ctor
+  NiceGraphicLibrary.CountDown.ResetAndStart*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.CountDown.ResetAndStart*
+        name: ResetAndStart
+        nameWithType: CountDown.ResetAndStart
+        qualifiedName: NiceGraphicLibrary.CountDown.ResetAndStart
+      VB:
+      - id: NiceGraphicLibrary.CountDown.ResetAndStart*
+        name: ResetAndStart
+        nameWithType: CountDown.ResetAndStart
+        qualifiedName: NiceGraphicLibrary.CountDown.ResetAndStart
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.CountDown.ResetAndStart
+  NiceGraphicLibrary.CountDown.RemainingSeconds*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.CountDown.RemainingSeconds*
+        name: RemainingSeconds
+        nameWithType: CountDown.RemainingSeconds
+        qualifiedName: NiceGraphicLibrary.CountDown.RemainingSeconds
+      VB:
+      - id: NiceGraphicLibrary.CountDown.RemainingSeconds*
+        name: RemainingSeconds
+        nameWithType: CountDown.RemainingSeconds
+        qualifiedName: NiceGraphicLibrary.CountDown.RemainingSeconds
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.CountDown.RemainingSeconds
+  NiceGraphicLibrary.CountDown.StartSeconds*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.CountDown.StartSeconds*
+        name: StartSeconds
+        nameWithType: CountDown.StartSeconds
+        qualifiedName: NiceGraphicLibrary.CountDown.StartSeconds
+      VB:
+      - id: NiceGraphicLibrary.CountDown.StartSeconds*
+        name: StartSeconds
+        nameWithType: CountDown.StartSeconds
+        qualifiedName: NiceGraphicLibrary.CountDown.StartSeconds
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.CountDown.StartSeconds
+  NiceGraphicLibrary.CountDown:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.CountDown
+        name: CountDown
+        nameWithType: CountDown
+        qualifiedName: NiceGraphicLibrary.CountDown
+      VB:
+      - id: NiceGraphicLibrary.CountDown
+        name: CountDown
+        nameWithType: CountDown
+        qualifiedName: NiceGraphicLibrary.CountDown
+    isDefinition: true
+    commentId: T:NiceGraphicLibrary.CountDown
+  Vector3:
+    name:
+      CSharp:
+      - id: Vector3
+        name: Vector3
+        nameWithType: Vector3
+        qualifiedName: Vector3
+        isExternal: true
+      VB:
+      - id: Vector3
+        name: Vector3
+        nameWithType: Vector3
+        qualifiedName: Vector3
+        isExternal: true
+    isDefinition: true
+  NiceGraphicLibrary.Vector3Extension.AddScale*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.Vector3Extension.AddScale*
+        name: AddScale
+        nameWithType: Vector3Extension.AddScale
+        qualifiedName: NiceGraphicLibrary.Vector3Extension.AddScale
+      VB:
+      - id: NiceGraphicLibrary.Vector3Extension.AddScale*
+        name: AddScale
+        nameWithType: Vector3Extension.AddScale
+        qualifiedName: NiceGraphicLibrary.Vector3Extension.AddScale
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.Vector3Extension.AddScale
+  NiceGraphicLibrary.Vector3Extension.SubScale*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.Vector3Extension.SubScale*
+        name: SubScale
+        nameWithType: Vector3Extension.SubScale
+        qualifiedName: NiceGraphicLibrary.Vector3Extension.SubScale
+      VB:
+      - id: NiceGraphicLibrary.Vector3Extension.SubScale*
+        name: SubScale
+        nameWithType: Vector3Extension.SubScale
+        qualifiedName: NiceGraphicLibrary.Vector3Extension.SubScale
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.Vector3Extension.SubScale
+  NiceGraphicLibrary.Vector3Extension.AddXScale*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.Vector3Extension.AddXScale*
+        name: AddXScale
+        nameWithType: Vector3Extension.AddXScale
+        qualifiedName: NiceGraphicLibrary.Vector3Extension.AddXScale
+      VB:
+      - id: NiceGraphicLibrary.Vector3Extension.AddXScale*
+        name: AddXScale
+        nameWithType: Vector3Extension.AddXScale
+        qualifiedName: NiceGraphicLibrary.Vector3Extension.AddXScale
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.Vector3Extension.AddXScale
+  NiceGraphicLibrary.Vector3Extension.AddYScale*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.Vector3Extension.AddYScale*
+        name: AddYScale
+        nameWithType: Vector3Extension.AddYScale
+        qualifiedName: NiceGraphicLibrary.Vector3Extension.AddYScale
+      VB:
+      - id: NiceGraphicLibrary.Vector3Extension.AddYScale*
+        name: AddYScale
+        nameWithType: Vector3Extension.AddYScale
+        qualifiedName: NiceGraphicLibrary.Vector3Extension.AddYScale
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.Vector3Extension.AddYScale
+  NiceGraphicLibrary.Vector3Extension.AddZScale*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.Vector3Extension.AddZScale*
+        name: AddZScale
+        nameWithType: Vector3Extension.AddZScale
+        qualifiedName: NiceGraphicLibrary.Vector3Extension.AddZScale
+      VB:
+      - id: NiceGraphicLibrary.Vector3Extension.AddZScale*
+        name: AddZScale
+        nameWithType: Vector3Extension.AddZScale
+        qualifiedName: NiceGraphicLibrary.Vector3Extension.AddZScale
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.Vector3Extension.AddZScale
+  NiceGraphicLibrary.Vector3Extension.SubXScale*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.Vector3Extension.SubXScale*
+        name: SubXScale
+        nameWithType: Vector3Extension.SubXScale
+        qualifiedName: NiceGraphicLibrary.Vector3Extension.SubXScale
+      VB:
+      - id: NiceGraphicLibrary.Vector3Extension.SubXScale*
+        name: SubXScale
+        nameWithType: Vector3Extension.SubXScale
+        qualifiedName: NiceGraphicLibrary.Vector3Extension.SubXScale
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.Vector3Extension.SubXScale
+  NiceGraphicLibrary.Vector3Extension.SubYScale*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.Vector3Extension.SubYScale*
+        name: SubYScale
+        nameWithType: Vector3Extension.SubYScale
+        qualifiedName: NiceGraphicLibrary.Vector3Extension.SubYScale
+      VB:
+      - id: NiceGraphicLibrary.Vector3Extension.SubYScale*
+        name: SubYScale
+        nameWithType: Vector3Extension.SubYScale
+        qualifiedName: NiceGraphicLibrary.Vector3Extension.SubYScale
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.Vector3Extension.SubYScale
+  NiceGraphicLibrary.Vector3Extension.SubZScale*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.Vector3Extension.SubZScale*
+        name: SubZScale
+        nameWithType: Vector3Extension.SubZScale
+        qualifiedName: NiceGraphicLibrary.Vector3Extension.SubZScale
+      VB:
+      - id: NiceGraphicLibrary.Vector3Extension.SubZScale*
+        name: SubZScale
+        nameWithType: Vector3Extension.SubZScale
+        qualifiedName: NiceGraphicLibrary.Vector3Extension.SubZScale
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.Vector3Extension.SubZScale
+  NiceGraphicLibrary.Vector3Extension.MultiplyWithXScale*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.Vector3Extension.MultiplyWithXScale*
+        name: MultiplyWithXScale
+        nameWithType: Vector3Extension.MultiplyWithXScale
+        qualifiedName: NiceGraphicLibrary.Vector3Extension.MultiplyWithXScale
+      VB:
+      - id: NiceGraphicLibrary.Vector3Extension.MultiplyWithXScale*
+        name: MultiplyWithXScale
+        nameWithType: Vector3Extension.MultiplyWithXScale
+        qualifiedName: NiceGraphicLibrary.Vector3Extension.MultiplyWithXScale
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.Vector3Extension.MultiplyWithXScale
+  NiceGraphicLibrary.Vector3Extension.MultiplyWithYScale*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.Vector3Extension.MultiplyWithYScale*
+        name: MultiplyWithYScale
+        nameWithType: Vector3Extension.MultiplyWithYScale
+        qualifiedName: NiceGraphicLibrary.Vector3Extension.MultiplyWithYScale
+      VB:
+      - id: NiceGraphicLibrary.Vector3Extension.MultiplyWithYScale*
+        name: MultiplyWithYScale
+        nameWithType: Vector3Extension.MultiplyWithYScale
+        qualifiedName: NiceGraphicLibrary.Vector3Extension.MultiplyWithYScale
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.Vector3Extension.MultiplyWithYScale
+  NiceGraphicLibrary.Vector3Extension.MultiplyWithZScale*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.Vector3Extension.MultiplyWithZScale*
+        name: MultiplyWithZScale
+        nameWithType: Vector3Extension.MultiplyWithZScale
+        qualifiedName: NiceGraphicLibrary.Vector3Extension.MultiplyWithZScale
+      VB:
+      - id: NiceGraphicLibrary.Vector3Extension.MultiplyWithZScale*
+        name: MultiplyWithZScale
+        nameWithType: Vector3Extension.MultiplyWithZScale
+        qualifiedName: NiceGraphicLibrary.Vector3Extension.MultiplyWithZScale
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.Vector3Extension.MultiplyWithZScale
+  NiceGraphicLibrary.Vector3Extension.DivideByXScale*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.Vector3Extension.DivideByXScale*
+        name: DivideByXScale
+        nameWithType: Vector3Extension.DivideByXScale
+        qualifiedName: NiceGraphicLibrary.Vector3Extension.DivideByXScale
+      VB:
+      - id: NiceGraphicLibrary.Vector3Extension.DivideByXScale*
+        name: DivideByXScale
+        nameWithType: Vector3Extension.DivideByXScale
+        qualifiedName: NiceGraphicLibrary.Vector3Extension.DivideByXScale
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.Vector3Extension.DivideByXScale
+  NiceGraphicLibrary.Vector3Extension.DivideByYScale*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.Vector3Extension.DivideByYScale*
+        name: DivideByYScale
+        nameWithType: Vector3Extension.DivideByYScale
+        qualifiedName: NiceGraphicLibrary.Vector3Extension.DivideByYScale
+      VB:
+      - id: NiceGraphicLibrary.Vector3Extension.DivideByYScale*
+        name: DivideByYScale
+        nameWithType: Vector3Extension.DivideByYScale
+        qualifiedName: NiceGraphicLibrary.Vector3Extension.DivideByYScale
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.Vector3Extension.DivideByYScale
+  NiceGraphicLibrary.Vector3Extension.DivideByZScale*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.Vector3Extension.DivideByZScale*
+        name: DivideByZScale
+        nameWithType: Vector3Extension.DivideByZScale
+        qualifiedName: NiceGraphicLibrary.Vector3Extension.DivideByZScale
+      VB:
+      - id: NiceGraphicLibrary.Vector3Extension.DivideByZScale*
+        name: DivideByZScale
+        nameWithType: Vector3Extension.DivideByZScale
+        qualifiedName: NiceGraphicLibrary.Vector3Extension.DivideByZScale
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.Vector3Extension.DivideByZScale
+  NiceGraphicLibrary.Vector3Extension.DivideByVector*:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.Vector3Extension.DivideByVector*
+        name: DivideByVector
+        nameWithType: Vector3Extension.DivideByVector
+        qualifiedName: NiceGraphicLibrary.Vector3Extension.DivideByVector
+      VB:
+      - id: NiceGraphicLibrary.Vector3Extension.DivideByVector*
+        name: DivideByVector
+        nameWithType: Vector3Extension.DivideByVector
+        qualifiedName: NiceGraphicLibrary.Vector3Extension.DivideByVector
+    isDefinition: true
+    commentId: Overload:NiceGraphicLibrary.Vector3Extension.DivideByVector
+  NiceGraphicLibrary.Vector3Extension:
+    name:
+      CSharp:
+      - id: NiceGraphicLibrary.Vector3Extension
+        name: Vector3Extension
+        nameWithType: Vector3Extension
+        qualifiedName: NiceGraphicLibrary.Vector3Extension
+      VB:
+      - id: NiceGraphicLibrary.Vector3Extension
+        name: Vector3Extension
+        nameWithType: Vector3Extension
+        qualifiedName: NiceGraphicLibrary.Vector3Extension
+    isDefinition: true
+    commentId: T:NiceGraphicLibrary.Vector3Extension

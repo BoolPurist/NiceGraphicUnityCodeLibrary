@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine; 
 
-namespace NiceGraphicLibrary
+namespace NiceGraphicLibrary.Component
 {
+  /// <summary>
+  /// Moves an object with same always.
+  /// </summary>
   public class StaticPlayerMovement : PlayerMovement
   {
     [SerializeField]

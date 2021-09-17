@@ -1,9 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine; 
+using UnityEngine;
+using NiceGraphicLibrary.Utility;
 
-namespace NiceGraphicLibrary
+namespace NiceGraphicLibrary.Component
 {
+  /// <summary>
+  /// Draws a thin line between 2 objects even in editor mode.
+  /// </summary>
   public class DrawDebugLineTo : MonoBehaviour
   {
     public enum ReferencePoint { Pivot, Center }

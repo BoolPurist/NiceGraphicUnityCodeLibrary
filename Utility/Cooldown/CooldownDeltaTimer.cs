@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 using UnityEngine;
 
-namespace NiceGraphicsLibrary
+namespace NiceGraphicLibrary.Utility
 {
+  /// <summary>
+  /// Object to return a value for the passed time within an interval.
+  /// That cool down does not stop even if Time.timeScale== 0 because the inner timer works the DateTime API
+  /// </summary>
   public class CooldownDeltaTimer : ICooldownTimer
   {
     // Time to be passed until cool down wears off.

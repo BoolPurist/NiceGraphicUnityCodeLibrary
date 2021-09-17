@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 using UnityEngine;
 
-namespace NiceGraphicsLibrary
+namespace NiceGraphicLibrary.Utility
 {
+  /// <summary>
+  /// Extensions methods to calculate Vector3 with floats, multiply Vector3 with each other.
+  /// </summary>
   public static class Vector3Extension
   {
     public static Vector3 AddScale(this Vector3 vector, float scale) => vector + (Vector3.one * scale);
