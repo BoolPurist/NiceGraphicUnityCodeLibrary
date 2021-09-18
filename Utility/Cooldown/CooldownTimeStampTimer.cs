@@ -10,7 +10,7 @@ namespace NiceGraphicLibrary.Utility
 {
   /// <summary>
   /// Object to return a value for the passed time within an interval.
-  /// Inner timer stops if ime.timeScale == 0.
+  /// Inner timer stops if Time.timeScale == 0.
   /// </summary>
   public class CooldownTimeStampTimer : ICooldownTimer
   {
