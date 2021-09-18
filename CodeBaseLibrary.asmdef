@@ -1,5 +1,6 @@
 {
-    "name": "ProjectScripts",
+    "name": "CodeBaseLibrary",
+    "rootNamespace": "",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],

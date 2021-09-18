@@ -11,6 +11,8 @@ namespace NiceGraphicLibrary.Component
   [RequireComponent(typeof(PlayerMovement))]
   public class PlayerKeyboardMovementInput : MonoBehaviour
   {
+
+#pragma warning disable IDE0044 // Add readonly modifier
     [SerializeField]
     private KeyCode MoveLeft = KeyCode.A;
     [SerializeField]
@@ -23,6 +25,7 @@ namespace NiceGraphicLibrary.Component
     private KeyCode MoveForward = KeyCode.Space;
     [SerializeField]
     private KeyCode MoveBack = KeyCode.C;
+#pragma warning restore IDE0044 // Add readonly modifier
     
     private PlayerMovement _movementComponent;
 

@@ -30,15 +30,18 @@ namespace NiceGraphicLibrary.Component
       public Color Diagonal = Color.cyan;
     }
 
+#pragma warning disable IDE0044 // Add readonly modifier
     [SerializeField]
     [Min(0)]
     [Tooltip("Radius of a sphere which represents a point")]
     private float RadiusSpherePoint = 0.1f;
-
     [SerializeField]
     private ElementColors Colors;
+#pragma warning restore IDE0044 // Add readonly modifier
 
+#pragma warning disable IDE0051 // Remove unused private members
     private void OnDrawGizmosSelected()
+
     {      
       Bounds boundingBox = Geometry3DUtility.GetBoundingBoxOfAllMeshes(gameObject);
       boundingBox.Encapsulate(this.transform.TransformPoint(Vector3.zero));
@@ -54,8 +57,8 @@ namespace NiceGraphicLibrary.Component
       Gizmos.DrawLine(boundingBox.min, boundingBox.max);
      
     }
+#pragma warning restore IDE0051 // Remove unused private members
 
-    
   }
 
 }

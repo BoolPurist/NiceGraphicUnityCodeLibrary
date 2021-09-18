@@ -5,7 +5,8 @@ using UnityEngine;
 namespace NiceGraphicLibrary
 {
   /// <summary>
-  /// Component to swap different audio clips for an audio source during play time
+  /// Component to swap different audio clips for an audio source during play time.
+  /// Audio clips with their name id is given by fields in the inspector.
   /// </summary>
   [RequireComponent(typeof(AudioSource))]
   public class SoundClipManager : MonoBehaviour
@@ -33,17 +34,19 @@ namespace NiceGraphicLibrary
     private readonly Dictionary<string, AudioClip> _Entries = new Dictionary<string, AudioClip>();        
     private AudioSource _MusicSource;
 
+    public int CountAudioClip => _Entries.Count;
+
     /// <summary>
-    /// Changes the clip audio of attached source audio the a clip with the name equal to the given name exits.
+    /// Changes the clip audio of attached source audio and plays this clip now.
     /// </summary>
     /// <param name="nameOfAudioClip">
-    /// Name to use to search for the clip to swap in
+    /// Name to use for searching for the clip to swap in
     /// </param>
     /// <param name="playOnLoop">
     /// If true sound will be played in a loop
     /// </param>
     /// <remarks>
-    /// If nameOfAudioClip is null, empty or no clip was stored to this key, nothing happens
+    /// If nameOfAudioClip is null, empty or no clip was stored under the given name [nameOfAudioClip], nothing happens
     /// </remarks>
     public void ChangeToAudioClip(string nameOfAudioClip, bool playOnLoop = false)
     {
@@ -54,7 +57,7 @@ namespace NiceGraphicLibrary
       }
       else
       {
-        Debug.LogWarning($"For {nameof(nameOfAudioClip)} = {nameOfAudioClip} was no entry found !");
+        Debug.LogWarning($"For {nameof(nameOfAudioClip)} = [{nameOfAudioClip}] was no entry found !");
       }
 
     }
@@ -89,5 +92,20 @@ namespace NiceGraphicLibrary
       }      
     }
 
-  } 
+#if UNITY_INCLUDE_TESTS
+
+    public void UnityTest_ReplaceDictionary(Dictionary<string, AudioClip> dict)
+    {
+      _Entries.Clear();
+      foreach (KeyValuePair<string, AudioClip> keyPair in dict)
+      {
+        _Entries.Add(keyPair.Key, keyPair.Value);
+      }
+    }
+
+   
+
+#endif
+
+  }
 }

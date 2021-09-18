@@ -24,7 +24,9 @@ namespace NiceGraphicLibrary.Component
 
     [SerializeField]
     [Tooltip("Global: is moved  interdependently on its rotation. Local: is moved dependently on its rotation.")]
+#pragma warning disable IDE0044 // Add readonly modifier
     private MovementAxisLevel _CurrentAxisLevel = MovementAxisLevel.Global;
+#pragma warning restore IDE0044 // Add readonly modifier
 
     [SerializeField]
     [Tooltip("Object is moved along x direction.")]
