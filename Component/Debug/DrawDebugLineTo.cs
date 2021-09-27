@@ -11,9 +11,10 @@ namespace NiceGraphicLibrary.Component
   public class DrawDebugLineTo : MonoBehaviour
   {
     public enum ReferencePoint { Pivot, Center }
-
+#pragma warning disable CS0649
     [SerializeField]
     private GameObject _Target;
+#pragma warning restore CS0649
     [SerializeField]
     private Color _GizmoColor = Color.white;
     [SerializeField]

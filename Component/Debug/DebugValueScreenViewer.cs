@@ -28,9 +28,8 @@ namespace NiceGraphicLibrary.Component
     [Min(0)]
     private int FontSize = 20;
 
-#pragma warning disable IDE0090 // Use 'new(...)'
     private readonly Dictionary<string, Text> _textLines = new Dictionary<string, Text>();
-#pragma warning restore IDE0090 // Use 'new(...)'
+
     private GameObject _canvaseContainer;
     private VerticalLayoutGroup _layout;
 
@@ -94,11 +93,11 @@ namespace NiceGraphicLibrary.Component
     {
       if (valueName == null)
       {
-        Debug.LogError($"{nameof(valueName)} must not be null !");
+        Debug.LogWarning($"{nameof(valueName)} must not be null !");
       }
       else if (string.IsNullOrWhiteSpace(valueName))
       {
-        Debug.LogError($"{nameof(valueName)} is empty !");
+        Debug.LogWarning($"{nameof(valueName)} is empty !");
       }
     }
 

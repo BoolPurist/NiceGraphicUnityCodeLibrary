@@ -25,7 +25,7 @@ namespace NiceGraphicLibrary.Utility
     /// <return>
     /// IEnumerator as argument for the StartCoroutine function
     /// </return>
-    public static IEnumerator InterpolateOverTime(float duration, Action<float> interpolateReceiver)
+    public static IEnumerator InterpolateOverTime(float duration, Action<float> interpolateReceiver, float startDuration = 0f)
     {
       if (interpolateReceiver == null)
       {
@@ -33,8 +33,8 @@ namespace NiceGraphicLibrary.Utility
         yield break;
       }
       
-      float passedTime = 0f;
       duration = Mathf.Abs(duration);
+      float passedTime = Mathf.Clamp(startDuration, 0f, duration);
       
       do {
         passedTime += Time.deltaTime;

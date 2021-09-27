@@ -103,8 +103,6 @@ namespace NiceGraphicLibrary
       }
     }
 
-   
-
 #endif
 
   }
