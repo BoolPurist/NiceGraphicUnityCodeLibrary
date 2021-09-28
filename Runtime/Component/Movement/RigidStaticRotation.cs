@@ -10,7 +10,7 @@ namespace NiceGraphicLibrary
     private void ApplyRotationMotion()
     {
       float currentSpeed = Speed * Time.deltaTime;     
-      Quaternion targetRotation = Quaternion.AngleAxis(currentSpeed, _movement);
+      Quaternion targetRotation = Quaternion.AngleAxis(currentSpeed, _movement);      
       _rb.MoveRotation(_rb.rotation * targetRotation);
     }
 

@@ -7,6 +7,8 @@ namespace NiceGraphicLibrary
 {
   public abstract class RigidInterpolatedMotion : RigidGeometryMotion
   {
+    
+
     [SerializeField]
     [Min(0)]
     protected float _Duration = 1f;

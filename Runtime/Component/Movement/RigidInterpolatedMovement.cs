@@ -90,6 +90,8 @@ namespace NiceGraphicLibrary
       _viewer.UpdateValue("_currentSpeedZ", _currentSpeedZ);
     }
 
+    
+
     private float LinearSpeedInterpopulation(float speed, float durationRatio)
       => Mathf.Lerp(0f, speed, durationRatio);
 
