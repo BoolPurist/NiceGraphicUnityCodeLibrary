@@ -1,0 +1,12 @@
+using UnityEngine;
+
+namespace NiceGraphicLibrary
+{
+  /// <summary>
+  /// 
+  /// </summary>
+  public class #SCRIPTNAME# : PropertyAttribute 
+  { 
+    #NOTRIM#
+  }
+}
