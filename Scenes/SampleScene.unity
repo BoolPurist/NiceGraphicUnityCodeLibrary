@@ -603,6 +603,7 @@ GameObject:
   - component: {fileID: 1596519682}
   - component: {fileID: 1596519681}
   - component: {fileID: 1596519688}
+  - component: {fileID: 1596519689}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -758,3 +759,15 @@ MonoBehaviour:
   ContentAlignment: 0
   FontColor: {r: 0, g: 0, b: 0, a: 1}
   FontSize: 20
+--- !u!114 &1596519689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596519680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 070214a328ed8a147a17f4a9edce2c23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

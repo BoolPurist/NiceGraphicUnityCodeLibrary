@@ -1,0 +1,14 @@
+using UnityEditor;
+using UnityEngine;
+
+namespace NiceGraphicLibrary.Editor
+{
+  [CustomPropertyDrawer(typeof(/* type of custom attribute */))]
+  public class #SCRIPTNAME# : DecoratorDrawer
+  {
+    public override void OnGUI(Rect position)
+    {
+      #NOTRIM#
+    }
+  } 
+}
