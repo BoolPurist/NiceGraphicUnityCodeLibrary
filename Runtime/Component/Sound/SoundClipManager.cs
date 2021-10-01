@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine; 
+using UnityEngine;
 
-namespace NiceGraphicLibrary
+using NiceGraphicLibrary.Utility;
+
+namespace NiceGraphicLibrary.Component
 {
   /// <summary>
   /// Component to swap different audio clips for an audio source during play time.
@@ -28,13 +30,15 @@ namespace NiceGraphicLibrary
     }
 
     [SerializeField]
-    [Tooltip("List of clips which can be changed to during play time. The name is key to provide as argument for the public function  ChangeToAudioClip")]
+    [Tooltip("List of clips which can be changed to during play time. The name is key to provide as argument for the public function ChangeToAudioClip")]
     private List<ClipEntry> _ClipEntries = new List<ClipEntry>();
-    
-    private readonly Dictionary<string, AudioClip> _Entries = new Dictionary<string, AudioClip>();        
+
+    private ListToDictionaryConverter<string, AudioClip, ClipEntry> _entryToDictionaryConverter = 
+      new ListToDictionaryConverter<string, AudioClip, ClipEntry>(nameof(ClipEntry._Name), nameof(ClipEntry._Clip));
+    private Dictionary<string, AudioClip> _DictionaryForEntries = new Dictionary<string, AudioClip>();        
     private AudioSource _MusicSource;
 
-    public int CountAudioClip => _Entries.Count;
+    public int CountAudioClip => _DictionaryForEntries.Count;
 
     /// <summary>
     /// Changes the clip audio of attached source audio and plays this clip now.
@@ -51,9 +55,9 @@ namespace NiceGraphicLibrary
     public void ChangeToAudioClip(string nameOfAudioClip, bool playOnLoop = false)
     {
 
-      if (_Entries.ContainsKey(nameOfAudioClip))
+      if (_DictionaryForEntries.ContainsKey(nameOfAudioClip))
       {
-        ChangeClip(_Entries[nameOfAudioClip], playOnLoop);
+        ChangeClip(_DictionaryForEntries[nameOfAudioClip], playOnLoop);
       }
       else
       {
@@ -62,6 +66,7 @@ namespace NiceGraphicLibrary
 
     }
 
+    // Stops player and changes clip and starts this new clip.
     private void ChangeClip(AudioClip newClip, bool playOnLoop)
     {
       _MusicSource.Stop();
@@ -70,36 +75,19 @@ namespace NiceGraphicLibrary
       _MusicSource.Play();
     }
 
-    private void Awake()
-    {
-      _MusicSource = GetComponent<AudioSource>();
-    }
+    private void Awake() => _MusicSource = GetComponent<AudioSource>();
 
     private void OnValidate()
-    {
-      _Entries.Clear();
-
-      for (int i = 0; i < _ClipEntries.Count; i++)
-      {
-        string name = _ClipEntries[i]._Name;
-        AudioClip clip = _ClipEntries[i]._Clip;
-
-        if (!string.IsNullOrEmpty(name) && !_Entries.ContainsKey(name) && clip != null)
-        {
-          _Entries.Add(name, clip);
-        }
-        
-      }      
-    }
+      => _DictionaryForEntries = _entryToDictionaryConverter.CreateDictionaryFrom(_ClipEntries);
 
 #if UNITY_INCLUDE_TESTS
 
     public void UnityTest_ReplaceDictionary(Dictionary<string, AudioClip> dict)
     {
-      _Entries.Clear();
+      _DictionaryForEntries.Clear();
       foreach (KeyValuePair<string, AudioClip> keyPair in dict)
       {
-        _Entries.Add(keyPair.Key, keyPair.Value);
+        _DictionaryForEntries.Add(keyPair.Key, keyPair.Value);
       }
     }
 
