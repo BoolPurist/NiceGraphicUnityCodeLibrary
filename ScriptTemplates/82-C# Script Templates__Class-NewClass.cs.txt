@@ -1,14 +1,12 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine; 
 
 namespace NiceGraphicLibrary
 {
-  public class NewComponent : MonoBehaviour
+  public class #SCRIPTNAME#
   {
-    [DrawLine]
-    [SerializeField]
-    private int number = 2;
-    
+    #NOTRIM#
   } 
 }

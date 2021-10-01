@@ -9,8 +9,6 @@ namespace NiceGraphicLibrary.Editor
   {
     private DrawLineAttribute _usedAttribute;
 
-    private static readonly Color COLOR_TRANSPARANT = new Color(0f, 0f, 0f, 0f);
-
     private DrawLineAttribute UsedAttribute
     {
       get
@@ -48,9 +46,9 @@ namespace NiceGraphicLibrary.Editor
       spaceAreaBottom.height = UsedAttribute.Space;
       spaceAreaBottom.y = nextY;
 
-      EditorGUI.DrawRect(spaceAreaTop, COLOR_TRANSPARANT);
+      EditorGUI.DrawRect(spaceAreaTop, Color.clear);
       EditorGUI.DrawRect(lineArea, UsedAttribute.LineColor);
-      EditorGUI.DrawRect(spaceAreaBottom, COLOR_TRANSPARANT);
+      EditorGUI.DrawRect(spaceAreaBottom, Color.clear);
       
     }
   } 
