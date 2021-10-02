@@ -12,7 +12,7 @@ namespace NiceGraphicLibrary.Utility
   {
 
     /// <summary>
-    /// Coroutine to returns factor from 0 to 1 to a given delegate over a certain duration after each frame 
+    /// Coroutine to return factor from 0 to 1 to a given delegate over a certain duration after each frame 
     /// until the duration has passed    
     /// </summary>
     /// <param name="duration">
@@ -22,27 +22,142 @@ namespace NiceGraphicLibrary.Utility
     /// Is called after each frame. Its argument is from 0 to 1 for the amount of passed duration.
     /// Should not be null.
     /// </param>
-    /// <return>
-    /// IEnumerator as argument for the StartCoroutine function
-    /// </return>
-    public static IEnumerator InterpolateOverTime(float duration, Action<float> interpolateReceiver, float startDuration = 0f)
+    public static IEnumerator InterpolateOverTime(float duration, Action<float> interpolateReceiver)
     {
-      if (interpolateReceiver == null)
+      if (!IsValidReceiver(interpolateReceiver, nameof(interpolateReceiver)))
       {
-        Debug.LogWarning($"{nameof(interpolateReceiver)} was null. Coroutine can not be executed");
         yield break;
       }
-      
+
       duration = Mathf.Abs(duration);
-      float passedTime = Mathf.Clamp(startDuration, 0f, duration);
-      
+      float passedTime = 0f;
+
       do {
-        passedTime += Time.deltaTime;
-        float currentInterpolation = Mathf.Lerp(0f, duration, passedTime / duration);
-        interpolateReceiver(currentInterpolation);
+        passedTime = Mathf.Min(passedTime + Time.deltaTime, duration);
+        float passedTimeRatio = passedTime / duration;
+        interpolateReceiver(passedTimeRatio);
         yield return null;
       } while (passedTime < duration);
-      
+    }
+
+    /// <summary>
+    /// Coroutine to return interpolated speed from [startFloat], default 0, to [endFloat]
+    /// over the given duration
+    /// </summary>
+    /// <param name="duration">
+    /// Time until the coroutine ends. Negative values will be converted to absolute/positive values.
+    /// </param>
+    /// <param name="endFloat">
+    /// End float value at the end of the interpolation
+    /// </param>
+    /// <param name="floatReceiver">
+    /// Is called after each frame. Its argument is between float [startFloat], default 0, to [endFloat] depending on the given duration.
+    /// Should not be null.
+    /// </param>
+    /// <param name="startFloat">
+    /// Start float at the start of the duration. Defaults to zero
+    /// </param>
+    public static IEnumerator InterpolationFloatOverTime(float duration, float endFloat, Action<float> floatReceiver, float startFloat = 0f)
+    {
+      if (!IsValidReceiver(floatReceiver, nameof(floatReceiver)))
+      {
+        yield break;
+      }
+
+      yield return InterpolateOverTime(duration, passedTimeRatio => floatReceiver(Mathf.Lerp(startFloat, endFloat, passedTimeRatio)));
+    }
+
+    /// <summary>
+    /// Coroutine to return interpolated color between [startColor] to [targetColor]
+    /// over the given duration
+    /// </summary>
+    /// <param name="duration">
+    /// Time until the coroutine ends. Negative values will be converted to absolute/positive values.
+    /// </param>
+    /// <param name="startColor">
+    /// Color at the start of the duration.
+    /// </param>
+    /// <param name="targetColor">
+    /// Color at the end of the interpolation
+    /// </param>
+    /// <param name="colorReceiver">
+    /// Is called after each frame. Its argument is between color the [startColor] and the [targetColor] depending on the given duration.
+    /// Should not be null.
+    /// </param>
+    public static IEnumerator InterpolateColorOverTime(float duration, Color startColor, Color targetColor, Action<Color> colorReceiver)
+    {
+      if (!IsValidReceiver(colorReceiver, nameof(colorReceiver)))
+      {
+        yield break;
+      }
+
+      yield return InterpolateOverTime(duration, passedTimeRatio => colorReceiver(Color.Lerp(startColor, targetColor, passedTimeRatio)));
+    }
+
+    /// <summary>
+    /// Coroutine to return interpolated 3d Vector from [startColor] to [targetColor]
+    /// over the given duration
+    /// </summary>
+    /// <param name="duration">
+    /// Time until the coroutine ends. Negative values will be converted to absolute/positive values.
+    /// </param>
+    /// <param name="startVector">
+    /// 3d vector at the start of the duration.
+    /// </param>
+    /// <param name="endVector">
+    /// 3d vector at the end of the interpolation
+    /// </param>
+    /// <param name="vectorReceiver">
+    /// Is called after each frame. Its argument is between 3d vector the [startVector] and the [endVector] depending on the given duration.
+    /// Should not be null.
+    /// </param>
+    public static IEnumerator InterpolateVector3OverTime(float duration, Vector3 startVector, Vector3 endVector, Action<Vector3> vectorReceiver)
+    {
+      if (!IsValidReceiver(vectorReceiver, nameof(vectorReceiver)))
+      {
+        yield break;
+      }
+
+      yield return InterpolateOverTime(duration, passedTimeRatio => vectorReceiver(Vector3.Lerp(startVector, endVector, passedTimeRatio)));
+    }
+
+    /// <summary>
+    /// Coroutine to return interpolated 2d Vector from [startColor] to [targetColor]
+    /// over the given duration
+    /// </summary>
+    /// <param name="duration">
+    /// Time until the coroutine ends. Negative values will be converted to absolute/positive values.
+    /// </param>
+    /// <param name="startVector">
+    /// 2d vector at the start of the duration.
+    /// </param>
+    /// <param name="endVector">
+    /// 2d vector at the end of the interpolation
+    /// </param>
+    /// <param name="vectorReceiver">
+    /// Is called after each frame. Its argument is between 2d vector the [startVector] and the [endVector] depending on the given duration.
+    /// Should not be null.
+    /// </param>
+    public static IEnumerator InterpolateVector2OverTime(float duration, Vector2 startVector, Vector2 endVector, Action<Vector2> vectorReceiver)
+    {
+      if (!IsValidReceiver(vectorReceiver, nameof(vectorReceiver)))
+      {
+        yield break;
+      }
+
+      yield return InterpolateOverTime(duration, passedTimeRatio => vectorReceiver(Vector2.Lerp(startVector, endVector, passedTimeRatio)));
+    } 
+
+    // Used to check if receiver as callback function in a coroutine can  be executed, in not null. 
+    private static bool IsValidReceiver<TAction>(Action<TAction> coroutineToCheck, string functionName)    
+    {
+      if (coroutineToCheck == null)
+      {
+        Debug.LogWarning($"{functionName} was null. Coroutine can not be executed");
+        return false;
+      }
+
+      return true;
     }
 
     /// <summary>
