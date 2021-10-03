@@ -31,13 +31,14 @@ namespace NiceGraphicLibrary.Utility
 
       duration = Mathf.Abs(duration);
       float passedTime = 0f;
-
       do {
         passedTime = Mathf.Min(passedTime + Time.deltaTime, duration);
         float passedTimeRatio = passedTime / duration;
         interpolateReceiver(passedTimeRatio);
         yield return null;
       } while (passedTime < duration);
+
+      yield break;
     }
 
     /// <summary>
@@ -53,18 +54,14 @@ namespace NiceGraphicLibrary.Utility
     /// <param name="floatReceiver">
     /// Is called after each frame. Its argument is between float [startFloat], default 0, to [endFloat] depending on the given duration.
     /// Should not be null.
-    /// </param>
-    /// <param name="startFloat">
-    /// Start float at the start of the duration. Defaults to zero
-    /// </param>
-    public static IEnumerator InterpolationFloatOverTime(float duration, float endFloat, Action<float> floatReceiver, float startFloat = 0f)
+    public static IEnumerator InterpolationFloatOverTime(float duration, float endFloat, Action<float> floatReceiver)
     {
       if (!IsValidReceiver(floatReceiver, nameof(floatReceiver)))
       {
         yield break;
       }
 
-      yield return InterpolateOverTime(duration, passedTimeRatio => floatReceiver(Mathf.Lerp(startFloat, endFloat, passedTimeRatio)));
+      yield return InterpolateOverTime(duration, passedTimeRatio => floatReceiver( endFloat * passedTimeRatio ));
     }
 
     /// <summary>
