@@ -879,8 +879,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1596519680}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18ffd936734bb6e49ba6f3d4ec6e7bcf, type: 3}
+  m_Script: {fileID: 11500000, guid: 3263038c5378fe94fb34218c29007a91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _StartColor: {r: 1, g: 1, b: 1, a: 1}
-  _EndColor: {r: 1, g: 0, b: 0, a: 1}
+  _name: asdf asdf sdf

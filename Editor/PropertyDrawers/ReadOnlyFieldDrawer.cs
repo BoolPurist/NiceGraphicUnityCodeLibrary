@@ -1,5 +1,6 @@
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace NiceGraphicLibrary.Editor
 {
@@ -15,12 +16,19 @@ namespace NiceGraphicLibrary.Editor
     {
       ReadOnlyFieldAttribute Atrribute = (ReadOnlyFieldAttribute)attribute;
 
-      label.text = Atrribute.IsEmpty ? label.text : Atrribute.DifferentName;
+      if (!Atrribute.ReadOnlyForPlay || Application.isPlaying)
+      {
+        label.text = Atrribute.IsEmpty ? label.text : Atrribute.DifferentName;
 
-      bool wasEnabled = GUI.enabled;
-      GUI.enabled = false;
-      EditorGUI.PropertyField(position, property, label, true);
-      GUI.enabled = wasEnabled;
+        bool wasEnabled = GUI.enabled;
+        GUI.enabled = false;
+        EditorGUI.PropertyField(position, property, label, true);
+        GUI.enabled = wasEnabled;
+      }
+      else 
+      {
+        EditorGUI.PropertyField(position, property, label, true);
+      }
     }
   } 
 }

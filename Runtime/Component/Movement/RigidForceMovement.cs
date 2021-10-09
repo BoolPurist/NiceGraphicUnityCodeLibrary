@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using NiceGraphicLibrary.Component;
 
-namespace NiceGraphicLibrary
+
+namespace NiceGraphicLibrary.Component
 {
   public class RigidForceMovement : RigidGeometryMotion
   {

@@ -46,8 +46,8 @@ namespace NiceGraphicLibrary
     internal void CleanUpCoroutines() => _startedCoroutines.RemoveAll(element => element == null);
 
     /// <summary>
-        /// Stops all coroutines including the sub coroutines
-        /// </summary>
+    /// Stops all coroutines including the sub coroutines
+    /// </summary>
     public void StopAllCoroutines()
     {
       CleanUpCoroutines();

@@ -14,10 +14,10 @@ namespace NiceGraphicLibrary.Utility
     /// Stops a coroutine and starts it again
     /// </summary>
     /// <param name="component">
-    /// Component on which the coroutine should be reset. Should not be null.
+    /// Component on which the coroutine should be reset. If null coroutine will not be started.
     /// </param>
     /// <param name="coroutineToReset">
-    /// Coroutine to reset. Should not be null.
+    /// Coroutine to reset. If null coroutine will not be started.
     /// </param>
     /// <returns>
     /// Reference of reset coroutine
@@ -41,10 +41,10 @@ namespace NiceGraphicLibrary.Utility
     /// Starts a coroutine after a certain delay
     /// </summary>
     /// <param name="component">
-    /// Component on which the coroutine should be reset. Should not be null.
+    /// Component on which the coroutine should be reset. If null coroutine will not be started.
     /// </param>
     /// <param name="coroutineToStartDelayed">
-    /// coroutine to be stated delayed. Should not be null.
+    /// coroutine to be stated delayed. If null coroutine will not be started.
     /// </param>
     /// <param name="delayInSeconds">
     /// Seconds to pass for start of the coroutine
@@ -81,10 +81,10 @@ namespace NiceGraphicLibrary.Utility
     /// Starts coroutine and starts it again an again in a interval with given time.
     /// </summary>
     /// <param name="component">
-    /// Component on which the coroutine should be reset. Should not be null.
+    /// Component on which the coroutine should be reset. If null coroutine will not be started.
     /// </param>
     /// <param name="coroutineToStartInInterval">
-    /// Coroutine to start in a given interval again and again
+    /// Coroutine to start in a given interval again and again. If null coroutine will not be started.
     /// </param>
     /// <param name="intervalInSeconds">
     /// Time to pass to start a coroutine again.
@@ -123,10 +123,10 @@ namespace NiceGraphicLibrary.Utility
     /// Starts a coroutine and starts again after the coroutine is finished
     /// </summary>
     /// <param name="component">
-    /// Component on game object to start coroutine in a loop. Should not be null.
+    /// Component on game object to start coroutine in a loop. If null coroutine will not be started.
     /// </param>
     /// <param name="coroutineToStarInInterval">
-    /// Coroutine to start in a loop.
+    /// Coroutine to start in a loop. If null coroutine will not be started.
     /// </param>
     /// <returns>
     /// Object to stop the starting of new coroutines and stops current started coroutine within the loop.
