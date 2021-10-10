@@ -11,7 +11,7 @@ namespace NiceGraphicLibrary.Component
     protected MovementAxisLevel _AxisLevel = MovementAxisLevel.Global;
     [SerializeField]
     [Min(0)]
-    private float _Speed = 0f;
+    private float _Speed = 1f;
     [SerializeField]
 #pragma warning disable IDE0044 // Add readonly modifier
     private bool _AllowX = true;
@@ -23,6 +23,16 @@ namespace NiceGraphicLibrary.Component
 
     public Vector3 Velocity => _rb != null ? _rb.velocity : Vector3.zero;
     public float Speed => _Speed;
+
+    protected IDeltaTimeProvider _timeDelta = new UnityDeltaTimeProvider();
+
+    public void ProvideDeltaTime(IDeltaTimeProvider provider)
+    {
+      if (provider != null)
+      {
+        _timeDelta = provider;
+      }
+    }
 
     private float _speedModifier = 1f;
     public float SpeedModifier
@@ -86,8 +96,14 @@ namespace NiceGraphicLibrary.Component
     }
     #endregion
 
-    protected virtual void Start()
-      => _rb = GetComponent<Rigidbody>();
+    protected virtual void Awake()
+    {
+      _rb = GetComponent<Rigidbody>();
+      if (_rb == null)
+      {
+        _rb = gameObject.AddComponent<Rigidbody>();
+      }
+    }
 
     protected void ProcessGlobalAxis()
     {
@@ -119,5 +135,19 @@ namespace NiceGraphicLibrary.Component
       _axisZ = 0f;
       _movement = Vector3.zero;
     }
+
+#if UNITY_INCLUDE_TESTS
+
+    public void SetSpeed(float newSpeed)
+    {
+      _Speed = newSpeed;
+    }
+
+    public void ExecuteNextFixedUpdate()
+    {
+      FixedUpdate();
+    }
+
+#endif
   }
 }

@@ -9,11 +9,9 @@ namespace NiceGraphicLibrary.Component
   {
     private DebugValueScreenViewer _viewer;
 
-    protected override void Start()
-    {
-      base.Start();
+    void Start()
+    {      
       _viewer = GetComponent<DebugValueScreenViewer>();
-
     }
     protected override void ApplyMovement()
     {
