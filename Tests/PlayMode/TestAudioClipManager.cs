@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
@@ -7,7 +8,7 @@ using UnityEngine.TestTools;
 using NiceGraphicLibrary;
 using NiceGraphicLibrary.Component;
 
-namespace PlayModeTests
+namespace NiceGraphicLibrary.PlayModeTests
 {
   [TestFixture]
   public class TestAudioClipManager
