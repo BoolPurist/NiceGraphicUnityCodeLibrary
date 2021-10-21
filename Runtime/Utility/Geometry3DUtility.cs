@@ -80,7 +80,96 @@ namespace NiceGraphicLibrary.Utility
         }
       }
     }
-  
+
+    /// <summary>
+    /// Finds out if a point is on the line which can be drawn by the a given direction
+    /// </summary>
+    /// <param name="point">Point to be check for being on the line</param>
+    /// <param name="direction">Direction which draws the imaginative line </param>
+    /// <param name="offset">Start point for line in the direction</param>
+    /// <param name="delatTolerance">
+    /// Tolerance for the check. The higher, the less closer the point must the to the direction line.
+    /// Negative values will be converted to their absolute value.
+    /// </param>
+    /// <returns>
+    /// True if the point in on the direction line.
+    /// </returns>
+    public static bool IsPointInDirection(
+      Vector3 point, 
+      Vector3 direction, 
+      Vector3 offset = new Vector3(), 
+      float delatTolerance = 0.001f
+      )
+    {
+      delatTolerance = Mathf.Abs(delatTolerance);
+
+      // Equation for one line with a start point and direction: 
+      // point.x = offset.x + factor * direction.x
+      // point.y = offset.y + factor * direction.y
+      // point.z = offset.z + factor * direction.z
+
+      // To find out if point is part of the line extending in infinity for the direction
+      // Solve the equation for the factor on each component 
+      // the factor on each component should be equal.
+
+      // Solution for factor on one component
+      // factor = (point.x - offset.x) / direction
+
+      float xOffset = point.x - offset.x;
+      float yOffset = point.y - offset.y;
+      float zOffset = point.z - offset.z;
+
+      bool xDirectionIsNull = direction.x == 0f;
+      bool yDirectionIsNull = direction.y == 0f;
+      bool zDirectionIsNull = direction.z == 0f;
+
+      // float.PositiveInfinity used to prevent passing the check
+      // (difference between to factors) <= delatTolerance for component 
+      // of the direction being zero.
+      float xFactor = xDirectionIsNull ? float.PositiveInfinity : xOffset / direction.x;
+      float yFactor = yDirectionIsNull ? float.PositiveInfinity : yOffset / direction.y;
+      float zFactor = zDirectionIsNull ? float.PositiveInfinity : zOffset / direction.z;
+
+      float differenceXAndY = Mathf.Abs(xFactor - yFactor);
+      float differenceXAndZ = Mathf.Abs(xFactor - zFactor);
+      float differenceYAndZ = Mathf.Abs(yFactor - zFactor);
+
+      bool xFactorToYFactorDifferenceInTolerance = differenceXAndY <= delatTolerance;
+      bool xFactorToZFactorDifferenceInTolerance = differenceXAndZ <= delatTolerance;
+      bool yFactorToZFactorDifferenceInTolerance = differenceYAndZ <= delatTolerance;
+
+      bool xIsAtStartWithNoDirection = IsAtStartWihtNoDirectionAmount(xDirectionIsNull, xOffset);
+      bool yIsAtStartWithNoDirection = IsAtStartWihtNoDirectionAmount(yDirectionIsNull, yOffset);
+      bool zIsAtStartWithNoDirection = IsAtStartWihtNoDirectionAmount(zDirectionIsNull, zOffset);
+
+      if (
+        (xIsAtStartWithNoDirection && yIsAtStartWithNoDirection) || 
+        (xIsAtStartWithNoDirection && zIsAtStartWithNoDirection) ||
+        (yIsAtStartWithNoDirection && zIsAtStartWithNoDirection)
+        )
+      {
+        return true;
+      }
+      else if (xIsAtStartWithNoDirection)
+      {
+        return yFactorToZFactorDifferenceInTolerance;
+      }
+      else if (yIsAtStartWithNoDirection)
+      {
+        return xFactorToZFactorDifferenceInTolerance;
+      }
+      else if (zIsAtStartWithNoDirection)
+      {
+        return xFactorToYFactorDifferenceInTolerance;
+      }
+      else
+      {
+        return xFactorToYFactorDifferenceInTolerance && xFactorToZFactorDifferenceInTolerance && yFactorToZFactorDifferenceInTolerance;
+      }
+
+      bool IsAtStartWihtNoDirectionAmount(in bool isZero, in float coordinateComponentOffset)
+        => isZero && coordinateComponentOffset == 0f;
+    }
   }
 
 }

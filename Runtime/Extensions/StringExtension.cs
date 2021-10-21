@@ -16,8 +16,14 @@ namespace NiceGraphicLibrary
     /// Returns a string encapsulated with a [color] tag so it will be displayed as colored text if printed
     /// according to given hex code.
     /// </summary>
+    /// <param name="hexCodeColor">
+    /// Expected Format: 6 symbols from 0 to F as hex number. # at the start is not needed.
+    /// </param>
     public static string WithHexColor(this string text, string hexCodeColor)
-      => $"<color=\"#{hexCodeColor}\">{text}</color>";
+    {
+      hexCodeColor = hexCodeColor.Contains("#") ? hexCodeColor : "#" + hexCodeColor;
+      return $"<color=\"{hexCodeColor}\">{text}</color>";
+    } 
     /// <summary>
     /// Returns a string encapsulated with a [b] tag so it will be displayed as bold text if printed
     /// </summary>

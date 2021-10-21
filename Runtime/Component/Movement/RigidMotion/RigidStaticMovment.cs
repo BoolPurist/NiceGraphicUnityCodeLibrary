@@ -14,11 +14,15 @@ namespace NiceGraphicLibrary.Component
       Vector3 movement = currentSpeed * _movement;      
       Vector3 nextPosition = _rb.position + movement;
 
-#if UNITY_INCLUDE_TESTS      
-      transform.position = nextPosition;
-#else
-      _rb.MovePosition(nextPosition);
-#endif
+      if (IsSetForUnitTest)
+      {
+        transform.position = nextPosition;
+      }
+      else
+      {
+        _rb.MovePosition(nextPosition);
+      }
+
     }
 
     protected override void ProcessAxis()

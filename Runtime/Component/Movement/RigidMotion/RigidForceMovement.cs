@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,14 +13,32 @@ namespace NiceGraphicLibrary.Component
     private ForceMode _ForceMode = ForceMode.VelocityChange;
 #pragma warning restore IDE0044 // Add readonly modifier
 
+    private Action<Vector3> _movementFunction;
+
+    public ForceMode ForceMode
+    {
+      get => _ForceMode;
+      set => _ForceMode = value;
+    }
+
     protected override void ApplyMovement()
     {
-      float currentSpeed = Speed * Time.deltaTime;
+      float currentSpeed = Speed * _timeDelta.GetDelatTime();
       Vector3 currentMovement = _movement * currentSpeed;
-      _rb.AddForce(currentMovement, _ForceMode);
+
+      if (IsSetForUnitTest)
+      {
+        transform.position += currentMovement;
+      }
+      else
+      {
+        _rb.AddForce(currentMovement, _ForceMode);
+      }     
+
     }
 
     protected override void ProcessAxis()
       => ProcessMovementAxis();
+
   }
 }

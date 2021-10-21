@@ -5,11 +5,11 @@ using UnityEngine;
 
 namespace NiceGraphicLibrary
 {
+  /// <summary>
+  /// Returns Time.deltaTime. Used during runtime of the game.
+  /// </summary>
   public class UnityDeltaTimeProvider : IDeltaTimeProvider
   {
-    public float GetDelatTime()
-    {
-      return Time.deltaTime;
-    }
+    public float GetDelatTime() => Time.deltaTime;
   }
 }

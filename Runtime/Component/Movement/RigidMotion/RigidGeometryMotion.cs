@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace NiceGraphicLibrary.Component
 {
-  public abstract class RigidGeometryMotion : MonoBehaviour
+  public abstract class RigidGeometryMotion : MonoBehaviour, IAdjustableForUnitTest
   {
 
     [SerializeField]
@@ -21,18 +21,30 @@ namespace NiceGraphicLibrary.Component
     private bool _AllowZ = true;
 #pragma warning restore IDE0044 // Add readonly modifier
 
+    public bool IsSetForUnitTest { get; set; }
+
     public Vector3 Velocity => _rb != null ? _rb.velocity : Vector3.zero;
     public float Speed => _Speed;
 
+    public virtual void ForceStand()
+      => _rb.velocity = Vector3.zero;
+
     protected IDeltaTimeProvider _timeDelta = new UnityDeltaTimeProvider();
 
-    public void ProvideDeltaTime(IDeltaTimeProvider provider)
+    public MovementAxisLevel AxisLevel
+    {
+      get => _AxisLevel;
+      set => _AxisLevel = value;
+    }
+
+    public void ProvideDeltaTimeWith(IDeltaTimeProvider provider)
     {
       if (provider != null)
       {
         _timeDelta = provider;
       }
     }
+
 
     private float _speedModifier = 1f;
     public float SpeedModifier
@@ -44,6 +56,8 @@ namespace NiceGraphicLibrary.Component
         _Speed *= _speedModifier;
       }
     }
+
+    
 
 
     // movement direction from -1 to 1.
@@ -136,18 +150,26 @@ namespace NiceGraphicLibrary.Component
       _movement = Vector3.zero;
     }
 
-#if UNITY_INCLUDE_TESTS
+
 
     public void SetSpeed(float newSpeed)
     {
       _Speed = newSpeed;
     }
 
+    /// <summary>
+    /// Meant to be executed by unit tests so they do not have to wait for the next frame/ not use coroutines/IEnumrator stuff.
+    /// If executed outside of unit tests nothing will be done with this call.
+    /// </summary>
     public void ExecuteNextFixedUpdate()
     {
-      FixedUpdate();
+      if (IsSetForUnitTest)
+      {
+        FixedUpdate();
+      }
     }
 
-#endif
+    
+
   }
 }

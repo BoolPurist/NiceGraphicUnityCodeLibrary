@@ -32,7 +32,11 @@ namespace NiceGraphicLibrary.PlayTests
     [Test]
     public void Test_Movement()
     {      
-      TestBase_RigidMotion.Test_HasMoved(_componentToTest);
+      TestBase_RigidMotion.TestRun_HasMovedForStaticMovementGlobal(_componentToTest);
     }
+
+    [Test]
+    public void Test_MovementLocal()
+      => TestBase_RigidMotion.TestRun_HasMovedForStaticMovementLocal(_componentToTest);
   }
 }

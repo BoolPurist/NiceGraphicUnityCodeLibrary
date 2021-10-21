@@ -46,9 +46,7 @@ public class TestStopableCoroutines
 
     yield return new WaitForSeconds(3f);
 
-    CoroutineUtility.ResetCoroutine(_component, CoroutineToRestart());
-
-    yield return new WaitForSeconds(0.1f);
+    CoroutineUtility.ResetCoroutine(_component, CoroutineToRestart());    
 
     Assert.AreEqual(0f, counter, $"{nameof(counter)} should be reset to zero. Actual value {counter}");
 
