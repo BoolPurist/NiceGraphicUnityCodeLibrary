@@ -11,7 +11,7 @@ using NiceGraphicLibrary.Component.Movement;
 namespace NiceGraphicLibrary.Tests.Runtime.Tests_RigidMotion
 {
   [TestFixture]
-  public class TestRigidForceMovement
+  public class Test_RigidForceMovement
   {
     private RigidForceMovement _componentToTest;
     private static readonly ForceMode[] _allForceModes = (ForceMode[])Enum.GetValues(typeof(ForceMode));

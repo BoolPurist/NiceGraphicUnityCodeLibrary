@@ -9,13 +9,13 @@ namespace NiceGraphicLibrary
   /// Allows to stop all coroutines, including sub coroutines, started by a function which returns this instance.
   /// Can not be constructed but is returned by certain functions for example in the static class <see cref="NiceGraphicLibrary.Utility.CoroutineUtility"/>
   /// </summary>
-  public class StopableCoroutines
+  public class StoppableCoroutines
   {
     private readonly MonoBehaviour _coroutineController;
     private readonly List<Coroutine> _startedCoroutines = new List<Coroutine>();
 
 
-    internal StopableCoroutines(MonoBehaviour component)
+    internal StoppableCoroutines(MonoBehaviour component)
     {
       if (component != null)
       {
@@ -29,7 +29,7 @@ namespace NiceGraphicLibrary
 
     }
 
-    internal StopableCoroutines AddCreatedCoroutine(Coroutine createdCoroutine)
+    internal StoppableCoroutines AddCreatedCoroutine(Coroutine createdCoroutine)
     {
       _startedCoroutines.Add(createdCoroutine);
       return this;

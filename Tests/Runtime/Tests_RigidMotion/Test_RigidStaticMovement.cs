@@ -11,7 +11,7 @@ using NiceGraphicLibrary.Component.Movement;
 namespace NiceGraphicLibrary.Tests.Runtime.Tests_RigidMotion
 {
   [TestFixture]
-  public class TestRigidStaticMovment
+  public class Test_RigidStaticMovement
   {
 
     

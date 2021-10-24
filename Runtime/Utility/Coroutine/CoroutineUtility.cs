@@ -52,12 +52,12 @@ namespace NiceGraphicLibrary.Utility
     /// <returns>
     /// Object to prevent the start of the coroutine if not started yet or stopping it if started already
     /// </returns>
-    public static StopableCoroutines StartCoroutineDelayed(MonoBehaviour component, Func<IEnumerator> coroutineToStartDelayed, float delayInSeconds = 1f)
+    public static StoppableCoroutines StartCoroutineDelayed(MonoBehaviour component, Func<IEnumerator> coroutineToStartDelayed, float delayInSeconds = 1f)
     {
       
       return InitializeMainCoroutine(component, coroutineToStartDelayed, delayInSeconds, Delay);
 
-      IEnumerator Delay(float delay, StopableCoroutines coroutines, Func<IEnumerator> newCoroutineConstructor)
+      IEnumerator Delay(float delay, StoppableCoroutines coroutines, Func<IEnumerator> newCoroutineConstructor)
       {
         yield return new WaitForSeconds(delay);
         coroutines.AddCreatedCoroutine(component.StartCoroutine(newCoroutineConstructor()));
@@ -65,7 +65,7 @@ namespace NiceGraphicLibrary.Utility
     }
 
     /// <inheritdoc cref="CoroutineUtility.StartCoroutineDelayed(MonoBehaviour, Func{IEnumerator}, float)"/>
-    public static StopableCoroutines StartActionDelayed(MonoBehaviour component, Action coroutineToStartDelayed, float delayInSeconds = 1f)
+    public static StoppableCoroutines StartActionDelayed(MonoBehaviour component, Action coroutineToStartDelayed, float delayInSeconds = 1f)
     {
       if (coroutineToStartDelayed != null)
       {
@@ -92,11 +92,11 @@ namespace NiceGraphicLibrary.Utility
     /// <returns>
     /// Object to stop the starting of coroutines  in the given interval and stops all coroutines started by this interval call.
     /// </returns>
-    public static StopableCoroutines StarCoroutineInInterval(MonoBehaviour component, Func<IEnumerator> coroutineToStartInInterval, float intervalInSeconds = 1f)
+    public static StoppableCoroutines StarCoroutineInInterval(MonoBehaviour component, Func<IEnumerator> coroutineToStartInInterval, float intervalInSeconds = 1f)
     {
       return InitializeMainCoroutine(component, coroutineToStartInInterval, intervalInSeconds, Interval);
 
-      IEnumerator Interval(float interval, StopableCoroutines coroutines, Func<IEnumerator> coroutineConstructor)
+      IEnumerator Interval(float interval, StoppableCoroutines coroutines, Func<IEnumerator> coroutineConstructor)
       {
         while (true)
         {          
@@ -107,7 +107,7 @@ namespace NiceGraphicLibrary.Utility
     }
 
     /// <inheritdoc cref="CoroutineUtility.StarCoroutineInInterval" />
-    public static StopableCoroutines StartActionInInterval(MonoBehaviour component, Action actionToStarInInterval, float intervalInSeconds = 1f)
+    public static StoppableCoroutines StartActionInInterval(MonoBehaviour component, Action actionToStarInInterval, float intervalInSeconds = 1f)
     {
       if (actionToStarInInterval != null)
       {
@@ -131,11 +131,11 @@ namespace NiceGraphicLibrary.Utility
     /// <returns>
     /// Object to stop the starting of new coroutines and stops current started coroutine within the loop.
     /// </returns>
-    public static StopableCoroutines StartCoroutineInLoop(MonoBehaviour component, Func<IEnumerator> coroutineToStarInInterval)
+    public static StoppableCoroutines StartCoroutineInLoop(MonoBehaviour component, Func<IEnumerator> coroutineToStarInInterval)
     {
       return InitializeMainCoroutine(component, coroutineToStarInInterval, 0f, Loop);
 
-      IEnumerator Loop(float delay, StopableCoroutines coroutines, Func<IEnumerator> coroutineConstructor)
+      IEnumerator Loop(float delay, StoppableCoroutines coroutines, Func<IEnumerator> coroutineConstructor)
       {
         Coroutine lastStartedCoroutine;
 
@@ -151,7 +151,7 @@ namespace NiceGraphicLibrary.Utility
     }
 
     /// <inheritdoc cref="CoroutineUtility.StartCoroutineInLoop" />
-    public static StopableCoroutines StartActionInLoop(MonoBehaviour component, Action actionToStarInLoop)
+    public static StoppableCoroutines StartActionInLoop(MonoBehaviour component, Action actionToStarInLoop)
     {
       if (actionToStarInLoop != null)
       {
@@ -170,16 +170,16 @@ namespace NiceGraphicLibrary.Utility
       yield break;
     }
 
-    private static StopableCoroutines InitializeMainCoroutine(
+    private static StoppableCoroutines InitializeMainCoroutine(
       MonoBehaviour component, 
       Func<IEnumerator> coroutineConstructor, 
       float seconds, 
-      Func<float, StopableCoroutines, Func<IEnumerator>, IEnumerator> subCoroutinesLogic
+      Func<float, StoppableCoroutines, Func<IEnumerator>, IEnumerator> subCoroutinesLogic
       )
     {      
       if (component != null && coroutineConstructor != null)
       {
-        StopableCoroutines coroutineContainer = new StopableCoroutines(component);
+        StoppableCoroutines coroutineContainer = new StoppableCoroutines(component);
         seconds = Mathf.Abs(seconds);
         return coroutineContainer.AddCreatedCoroutine(component.StartCoroutine(subCoroutinesLogic(seconds, coroutineContainer, coroutineConstructor)));
       }

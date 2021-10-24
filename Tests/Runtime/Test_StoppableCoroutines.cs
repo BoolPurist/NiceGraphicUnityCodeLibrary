@@ -9,7 +9,7 @@ using NiceGraphicLibrary;
 namespace NiceGraphicLibrary.Tests.Runtime
 { 
   [TestFixture]
-  public class TestStopableCoroutines
+  public class Test_StoppableCoroutines
   {
     private const float TIME_SCALE_SLOW = 100f;
     private const float DELAY_TIME = 2f;
@@ -68,7 +68,7 @@ namespace NiceGraphicLibrary.Tests.Runtime
     {
       yield return Test_StartDelayed(DELAY_TIME, TestAction);
 
-      StopableCoroutines TestAction(float delay)
+      StoppableCoroutines TestAction(float delay)
         => CoroutineUtility.StartCoroutineDelayed(_component, () => Coroutine_StartCoroutineDelayed(), delay);
 
     }
@@ -78,7 +78,7 @@ namespace NiceGraphicLibrary.Tests.Runtime
     {
       yield return Test_StartDelayed(DELAY_TIME, TestAction);
 
-      StopableCoroutines TestAction(float delay)
+      StoppableCoroutines TestAction(float delay)
          => CoroutineUtility.StartActionDelayed(_component, () => _testCounter++, delay);
     }
 
@@ -86,7 +86,7 @@ namespace NiceGraphicLibrary.Tests.Runtime
     public IEnumerator Test_StarCoroutineInInterval()
     {
       yield return Test_StartInterval(INTERVAL_TIME, TestAction);
-      StopableCoroutines TestAction(float delay)
+      StoppableCoroutines TestAction(float delay)
         => CoroutineUtility.StarCoroutineInInterval(_component, () => Coroutine_StartCoroutineDelayed(), delay);
     }
 
@@ -94,7 +94,7 @@ namespace NiceGraphicLibrary.Tests.Runtime
     public IEnumerator Test_StarActionInInterval()
     {
       yield return Test_StartInterval(INTERVAL_TIME, TestAction);
-      StopableCoroutines TestAction(float delay)
+      StoppableCoroutines TestAction(float delay)
          => CoroutineUtility.StartActionInInterval(_component, () => _testCounter++, delay);
     }
 
@@ -102,7 +102,7 @@ namespace NiceGraphicLibrary.Tests.Runtime
     public IEnumerator Test_StartLoop()
     {
 
-      StopableCoroutines stopper = CoroutineUtility.StartCoroutineInLoop(_component, () => Coroutine_StartCoroutineLoop());
+      StoppableCoroutines stopper = CoroutineUtility.StartCoroutineInLoop(_component, () => Coroutine_StartCoroutineLoop());
       yield return new WaitForSeconds(1f);
 
       stopper.StopAllCoroutines();
@@ -119,7 +119,7 @@ namespace NiceGraphicLibrary.Tests.Runtime
     {
       const float delaySeconds = 1f;
 
-      StopableCoroutines stopper = CoroutineUtility.StartActionInLoop(_component, () => _testCounter++);
+      StoppableCoroutines stopper = CoroutineUtility.StartActionInLoop(_component, () => _testCounter++);
       yield return new WaitForSeconds(delaySeconds);
       stopper.StopAllCoroutines();
 
@@ -138,7 +138,7 @@ namespace NiceGraphicLibrary.Tests.Runtime
     #endregion
 
     #region Test routines
-    private IEnumerator Test_StartDelayed(float delay, Func<float, StopableCoroutines> delayedCoroutineLogic)
+    private IEnumerator Test_StartDelayed(float delay, Func<float, StoppableCoroutines> delayedCoroutineLogic)
     {
       // Test if after delay the counter is increased.
       const int expectedCounterValue = 1;
@@ -152,7 +152,7 @@ namespace NiceGraphicLibrary.Tests.Runtime
         );
 
       // Test if after half of the delay canceling of coroutine prevents the increase of counter.
-      StopableCoroutines stopper = delayedCoroutineLogic(delay);
+      StoppableCoroutines stopper = delayedCoroutineLogic(delay);
 
       yield return new WaitForSeconds(delay / 2f);
       stopper.StopAllCoroutines();
@@ -164,7 +164,7 @@ namespace NiceGraphicLibrary.Tests.Runtime
         );
     }
 
-    private IEnumerator Test_StartInterval(float interval, Func<float, StopableCoroutines> intervalCoroutineLogic)
+    private IEnumerator Test_StartInterval(float interval, Func<float, StoppableCoroutines> intervalCoroutineLogic)
     {
       // Test if counter is 3 after start + 2 cycle and one second tolerance 
       // because the coroutines are not always executed immediately after 
@@ -172,7 +172,7 @@ namespace NiceGraphicLibrary.Tests.Runtime
 
       const float expectedCounterValue = 3f;
       float firstWaitPeriod = (interval * (expectedCounterValue + 1f));
-      StopableCoroutines stopper = intervalCoroutineLogic(interval);
+      StoppableCoroutines stopper = intervalCoroutineLogic(interval);
       yield return new WaitForSeconds(firstWaitPeriod);
       stopper.StopAllCoroutines();
 

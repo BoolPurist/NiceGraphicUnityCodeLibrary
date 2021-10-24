@@ -12,7 +12,7 @@ using NiceGraphicLibrary.Component.Movement;
 namespace NiceGraphicLibrary.Tests.Runtime.Tests_RigidMotion
 {
   [TestFixture]
-  public class TestRigidInterpolatedMovement
+  public class Test_RigidInterpolatedMovement
   {
     private RigidInterpolatedMovement _componentToTest;
 
