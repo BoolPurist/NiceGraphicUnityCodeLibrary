@@ -1,10 +1,10 @@
 {
-    "name": "EditorTests",
+    "name": "chaosallin.nicegraphiclibrary.Tests.Editor",
     "rootNamespace": "",
     "references": [
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
-        "CodeBaseLibrary"
+        "chaosallin.nicegraphiclibrary"
     ],
     "includePlatforms": [
         "Editor"

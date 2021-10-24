@@ -1,9 +1,7 @@
 {
-    "name": "CodeBaseLibrary",
+    "name": "chaosallin.nicegraphiclibrary.Editor",
     "rootNamespace": "",
-    "references": [
-        "GUID:edfe9c23887d7064fa33acce0fd31f06"
-    ],
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

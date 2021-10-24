@@ -1,10 +1,10 @@
 {
-    "name": "PlayModeTests",
+    "name": "chaosallin.nicegraphiclibrary.Tests",
     "rootNamespace": "",
     "references": [
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
-        "CodeBaseLibrary"
+        "chaosallin.nicegraphiclibrary"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
