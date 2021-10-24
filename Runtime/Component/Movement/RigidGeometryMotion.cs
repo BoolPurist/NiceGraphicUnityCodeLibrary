@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine; 
+using UnityEngine;
 
-namespace NiceGraphicLibrary.Component
+
+namespace NiceGraphicLibrary.Component.Movement
 {
   public abstract class RigidGeometryMotion : MonoBehaviour, IAdjustableForUnitTest
   {
-
     [SerializeField]
     protected MovementAxisLevel _AxisLevel = MovementAxisLevel.Global;
     [SerializeField]

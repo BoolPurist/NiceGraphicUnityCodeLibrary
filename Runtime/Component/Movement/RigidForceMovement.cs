@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-namespace NiceGraphicLibrary.Component
+namespace NiceGraphicLibrary.Component.Movement
 {
   public class RigidForceMovement : RigidGeometryMotion
   {

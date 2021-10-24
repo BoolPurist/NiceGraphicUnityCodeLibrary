@@ -7,7 +7,7 @@ using UnityEngine.TestTools;
 
 using NiceGraphicLibrary;
 
-namespace NiceGraphicLibrary.PlayTests
+namespace NiceGraphicLibrary.Tests.Runtime
 {
   [TestFixture]
   public class #SCRIPTNAME#

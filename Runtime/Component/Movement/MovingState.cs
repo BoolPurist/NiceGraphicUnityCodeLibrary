@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NiceGraphicLibrary
+namespace NiceGraphicLibrary.Component.Movement
 {
   public enum MovingState
   {

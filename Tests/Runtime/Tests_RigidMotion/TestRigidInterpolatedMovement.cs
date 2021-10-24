@@ -7,8 +7,9 @@ using UnityEngine.TestTools;
 
 using NiceGraphicLibrary;
 using NiceGraphicLibrary.Component;
+using NiceGraphicLibrary.Component.Movement;
 
-namespace NiceGraphicLibrary.PlayTests
+namespace NiceGraphicLibrary.Tests.Runtime.Tests_RigidMotion
 {
   [TestFixture]
   public class TestRigidInterpolatedMovement
@@ -54,7 +55,7 @@ namespace NiceGraphicLibrary.PlayTests
 
     [Test]
     public void Test_SlowingMovementGobal()
-      => TestBase_RigidMotion.Test_RunForInterpolatedMotionSlowing(
+      => TestBase_RigidMotion.TestRun_ForInterpolatedMotionSlowing(
         _componentToTest, 
         MovementAxisLevel.Global,
         TEST_DURATION_GROWING_SPEED, 
@@ -63,15 +64,30 @@ namespace NiceGraphicLibrary.PlayTests
 
     [Test]
     public void Test_SlowingMovementLocal()
-      => TestBase_RigidMotion.Test_RunForInterpolatedMotionSlowing(
+      => TestBase_RigidMotion.TestRun_ForInterpolatedMotionSlowing(
         _componentToTest,
         MovementAxisLevel.Local,
         TEST_DURATION_GROWING_SPEED,
         TEST_DELTA_STEP_GROWING_SPEED
         );
 
+    [Test]
+    public void Test_CounterMovementGobal()
+      => TestBase_RigidMotion.TestRun_ForInterpolatedMotionCounter(
+        _componentToTest,
+        MovementAxisLevel.Local,
+        TEST_DURATION_GROWING_SPEED,
+        TEST_DELTA_STEP_GROWING_SPEED
+        );
 
-
+    [Test]
+    public void Test_CounterMovementLocal()
+      => TestBase_RigidMotion.TestRun_ForInterpolatedMotionCounter(
+        _componentToTest,
+        MovementAxisLevel.Local,
+        TEST_DURATION_GROWING_SPEED,
+        TEST_DELTA_STEP_GROWING_SPEED
+        );
 
   }
 }

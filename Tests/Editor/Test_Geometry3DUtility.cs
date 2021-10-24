@@ -8,10 +8,10 @@ using UnityEngine.TestTools;
 using NiceGraphicLibrary;
 using NiceGraphicLibrary.Utility;
 
-namespace NiceGraphicLibrary.EditorModeTests
+namespace NiceGraphicLibrary.Tests.Editor
 {
   [TestFixture]
-  public class TestGeometry3DUtility
+  public class Test_Geometry3DUtility
   {
 
     [TestCaseSource(nameof(TestCase_IsPointInDirection_ForTrue))]    

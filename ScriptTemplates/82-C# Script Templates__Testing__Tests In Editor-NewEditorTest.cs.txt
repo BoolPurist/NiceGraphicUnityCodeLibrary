@@ -7,7 +7,7 @@ using UnityEngine.TestTools;
 
 using NiceGraphicLibrary;
 
-namespace NiceGraphicLibrary.EditorModeTests
+namespace NiceGraphicLibrary.Tests.Editor
 {
   [TestFixture]
   public class #SCRIPTNAME#

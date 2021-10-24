@@ -6,11 +6,11 @@ using UnityEngine;
 using UnityEngine.TestTools;
 using NiceGraphicLibrary.Utility;
 
-namespace NiceGraphicLibrary.Test.Editor
+namespace NiceGraphicLibrary.Tests.Editor
 {
+  [TestFixture]
   public class Test_ListToDictionaryConverter
   {
-
     private class Person
     {
       public string Name;
@@ -31,7 +31,6 @@ namespace NiceGraphicLibrary.Test.Editor
     #region Test data
     private class EmptyPerson { }
 
-#pragma warning disable IDE0090 // Use 'new(...)'
     private ListToDictionaryConverter<string, int, Person> ConverterForTests
       => new ListToDictionaryConverter<string, int, Person>(nameof(Person.Name), nameof(Person.Age));
     #endregion
@@ -50,7 +49,6 @@ namespace NiceGraphicLibrary.Test.Editor
             Age = 24
           }
         };
-#pragma warning restore IDE0090 // Use 'new(...)'
 
     #region Tests
     [Test]

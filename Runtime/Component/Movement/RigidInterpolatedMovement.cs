@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using NiceGraphicLibrary.Component;
 
-namespace NiceGraphicLibrary.Component
+namespace NiceGraphicLibrary.Component.Movement
 {
   public class RigidInterpolatedMovement : RigidInterpolatedMotion
   {

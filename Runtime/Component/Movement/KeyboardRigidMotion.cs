@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine; 
 
 
-namespace NiceGraphicLibrary.Component
+namespace NiceGraphicLibrary.Component.Movement
 {
   /// <summary>
   /// Provides input management for keyboard inputs to control a component inheriting from type <see cref="RigidBodyMovement"/> 

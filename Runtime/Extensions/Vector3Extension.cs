@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using UnityEngine;
 
-namespace NiceGraphicLibrary.Utility
+namespace NiceGraphicLibrary.Extensions
 {
   /// <summary>
   /// Extensions methods to calculate Vector3 with floats, multiply Vector3 with each other.

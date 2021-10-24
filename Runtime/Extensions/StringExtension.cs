@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine; 
 
-namespace NiceGraphicLibrary
+namespace NiceGraphicLibrary.Extensions
 {
   public static class StringExtension
   {

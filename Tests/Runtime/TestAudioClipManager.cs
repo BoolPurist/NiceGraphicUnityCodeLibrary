@@ -8,7 +8,7 @@ using UnityEngine.TestTools;
 using NiceGraphicLibrary;
 using NiceGraphicLibrary.Component;
 
-namespace NiceGraphicLibrary.PlayModeTests
+namespace NiceGraphicLibrary.Tests.Runtime
 {
   [TestFixture]
   public class TestAudioClipManager

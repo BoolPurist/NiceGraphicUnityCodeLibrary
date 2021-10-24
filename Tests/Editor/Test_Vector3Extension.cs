@@ -2,9 +2,9 @@
 using UnityEngine;
 
 using NiceGraphicLibrary;
-using NiceGraphicLibrary.Utility;
+using NiceGraphicLibrary.Extensions;
 
-namespace TestEditor
+namespace NiceGraphicLibrary.Tests.Editor
 {
   public class Test_Vector3Extension
   {

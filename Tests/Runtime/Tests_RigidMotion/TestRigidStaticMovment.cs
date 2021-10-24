@@ -5,10 +5,10 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-using NiceGraphicLibrary;
-using NiceGraphicLibrary.Component;
+using NiceGraphicLibrary.Component.Movement;
 
-namespace NiceGraphicLibrary.PlayTests
+
+namespace NiceGraphicLibrary.Tests.Runtime.Tests_RigidMotion
 {
   [TestFixture]
   public class TestRigidStaticMovment

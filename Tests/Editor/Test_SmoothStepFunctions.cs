@@ -8,7 +8,7 @@ using UnityEngine.TestTools.Utils;
 
 using NiceGraphicLibrary.Utility;
 
-namespace TestEditor
+namespace NiceGraphicLibrary.Tests.Editor
 {
   [TestFixture]
   public class Test_SmoothStepFunctions

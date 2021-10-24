@@ -3,13 +3,12 @@ using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.TestTools.Utils;
 
 using NiceGraphicLibrary.Component;
 using NiceGraphicLibrary.Utility;
+using NiceGraphicLibrary.Component.Movement;
 
-
-namespace NiceGraphicLibrary.PlayTests
+namespace NiceGraphicLibrary.Tests.Runtime.Tests_RigidMotion
 {
   public static class TestBase_RigidMotion
   {
@@ -125,7 +124,7 @@ namespace NiceGraphicLibrary.PlayTests
       TestStep_HasMovedLocal(movementComponentToTest, TestMovementDirection.Backward, directions);
     }
 
-    public static void Test_RunForInterpolatedMotionSlowing(
+    public static void TestRun_ForInterpolatedMotionSlowing(
       RigidInterpolatedMotion componentToTest,
       MovementAxisLevel localOrGlobal,
       in float duration,
@@ -163,22 +162,39 @@ namespace NiceGraphicLibrary.PlayTests
       TestStep_IsMovingGrowing(componentToTest, duration, durationStep, TestMovementDirection.Backward, directions);
     }
 
+    public static void TestRun_ForInterpolatedMotionCounter(
+      RigidInterpolatedMotion componentToTest,
+      MovementAxisLevel localOrGlobal,
+      in float duration,
+      in float durationStep
+      )
+    {
+      Dictionary<TestMovementDirection, Vector3> directions = SetUpComponentForTestRun(componentToTest, localOrGlobal);
+
+      TestStep_CounterDirection(componentToTest, duration, durationStep, TestMovementDirection.Right, directions);
+      TestStep_CounterDirection(componentToTest, duration, durationStep, TestMovementDirection.Left, directions);
+      TestStep_CounterDirection(componentToTest, duration, durationStep, TestMovementDirection.Up, directions);
+      TestStep_CounterDirection(componentToTest, duration, durationStep, TestMovementDirection.Down, directions);
+      TestStep_CounterDirection(componentToTest, duration, durationStep, TestMovementDirection.Forward, directions);
+      TestStep_CounterDirection(componentToTest, duration, durationStep, TestMovementDirection.Backward, directions);
+    }
+
     #endregion
 
     #region Test steps execute a test for one given direction
 
     private static void TestStep_StaticMovement(
       RigidGeometryMotion movementComponentToTest, 
-      TestMovementDirection testDirection,
+      in TestMovementDirection testDirection,
       Dictionary<TestMovementDirection, Vector3> directions
       )
     {
 
-      string nameOfDirection, nameOfAxis;
+     
 
       Vector3 expectedPosition = GetPositionAfterMovement(
-        out nameOfDirection, 
-        out nameOfAxis,
+        out string nameOfDirection, 
+        out string nameOfAxis,
         movementComponentToTest,
         testDirection,
         directions
@@ -194,14 +210,14 @@ namespace NiceGraphicLibrary.PlayTests
 
     private static void TestStep_HasMovedGlobal(
       RigidGeometryMotion movementComponentToTest,
-      TestMovementDirection testDirection
+      in TestMovementDirection testDirection
       )
     {
-      string nameOfDirection, nameOfAxis;
+      
 
       Vector3 actualPosition = GetPositionAfterMovement(
-        out nameOfDirection,
-        out nameOfAxis,
+        out string nameOfDirection,
+        out string nameOfAxis,
         movementComponentToTest,
         testDirection,
         DirectionsGlobal
@@ -341,8 +357,8 @@ namespace NiceGraphicLibrary.PlayTests
 
     private static void TestStep_IsMovingGrowing(
       RigidInterpolatedMotion componentToTest,
-      float duration,
-      float deltaStep,
+      in float duration,
+      in float deltaStep,
       TestMovementDirection testDirection,
       Dictionary<TestMovementDirection, Vector3> directionDictionary
       )
@@ -354,7 +370,7 @@ namespace NiceGraphicLibrary.PlayTests
       Action testCallBackForMovement = GetCallBackForTestDirection(componentToTest, testDirection);
       Func<float, float, bool> coordinateChecker = GetCallBackForDirectionCheck();
       Func<RigidInterpolatedMotion, MovingState> getterForActualMovingState = GetterForMovingState(testDirection);
-      MovingState expectedMovingStateEveryFrame = GetExpectedMovingState(testDirection, false);
+      MovingState expectedMovingStateEveryFrame = GetExpectedMovingState(testDirection, ExpectedMovingStateCase.SpeedingUp);
 
       float previousDeltaDistance = 0f;
 
@@ -372,7 +388,6 @@ namespace NiceGraphicLibrary.PlayTests
 
         // Have to round up result 
         currentDeltaDistance = Vector3.Distance(previousCoordinate, currentCoordinate);
-        float currentDeltaDistanceToTest = currentDeltaDistance + GREATER_ERROR_TOLERANCE;
 
         Assert.True(
           Geometry3DUtility.IsPointInDirection(objectTransform.position, directionDictionary[testDirection]),
@@ -380,8 +395,8 @@ namespace NiceGraphicLibrary.PlayTests
           $"Object moved from {objectTransform.position} to {objectTransform.position}"
           );
 
-        Assert.GreaterOrEqual(
-            currentDeltaDistanceToTest,
+        Assert.Greater(
+            currentDeltaDistance,
             previousDeltaDistance,
             $"Object did not travel a larger distance compared with the previous distance in direction {testDirection}. " +
             $"Last traveled distance {currentDeltaDistance} and previous traveled distance {previousCoordinate}"
@@ -424,27 +439,18 @@ namespace NiceGraphicLibrary.PlayTests
       Dictionary<TestMovementDirection, Vector3> directionDictionary
       )
     {
-      const float ONE = 1f;
 
-      // Set up component so it reached its maximum speed for testing 
-      Transform objectTransform = ResetMotionComponentForMoveAndPosition(componentToTest);
-      AttachFakeDeltaTimeProvider(componentToTest, ONE);
-      componentToTest.Duration = ONE;
-
-      Action setUpBeforeSlowingDown = GetCallBackForTestDirection(componentToTest, testDirection);
-      setUpBeforeSlowingDown();
-      componentToTest.ExecuteNextFixedUpdate();
+      Transform objectTransform = SetUpComponentToMaximumSpeed(componentToTest, testDirection);
 
       AttachFakeDeltaTimeProvider(componentToTest, deltaStep);
       componentToTest.SlowingDuration = duration;
-      
-      // Running test
 
+      // Running test
       float previousDeltaDistance = float.MaxValue;
       float currentDeltaDistance = 0f;
       Vector3 previousPosition = objectTransform.position;
       Vector3 currentPosition = objectTransform.position;
-      MovingState expectedSlowingState = GetExpectedMovingState(testDirection, true);
+      MovingState expectedSlowingState = GetExpectedMovingState(testDirection, ExpectedMovingStateCase.SlowingDown);
       Func<RigidInterpolatedMotion, MovingState> getterForCurrentMovingState = GetterForMovingState(testDirection);
       MovingState actualState;
 
@@ -455,7 +461,6 @@ namespace NiceGraphicLibrary.PlayTests
 
         currentPosition = objectTransform.position;
         currentDeltaDistance = Vector3.Distance(previousPosition, currentPosition);
-        float currentDeltaDistanceToTest = currentDeltaDistance + GREATER_ERROR_TOLERANCE;
 
         Assert.IsTrue(
           Geometry3DUtility.IsPointInDirection(objectTransform.position, directionDictionary[testDirection]),
@@ -463,8 +468,8 @@ namespace NiceGraphicLibrary.PlayTests
           $"Object moved from {previousPosition} to {objectTransform.position}"
           );
 
-        Assert.LessOrEqual(
-          currentDeltaDistanceToTest,
+        Assert.Less(
+          currentDeltaDistance,
           previousDeltaDistance,
           $"Object did slow down ! " + 
           $"Actual distance traveled {currentDeltaDistance} and previous traveled distance {previousDeltaDistance}"
@@ -477,11 +482,64 @@ namespace NiceGraphicLibrary.PlayTests
         AssertForMovingState(actualState, expectedSlowingState);
       }
 
-      // Last update should result in standing.
-      componentToTest.ExecuteNextFixedUpdate();
-      actualState = getterForCurrentMovingState(componentToTest);
+      AssertIfRigidIsStandingAtEnd(componentToTest, getterForCurrentMovingState);
+    }
 
-      AssertForMovingState(actualState, MovingState.Standing);     
+
+
+
+    private static void TestStep_CounterDirection(
+      RigidInterpolatedMotion componentToTest,
+      in float duration,
+      in float deltaStep,
+      in TestMovementDirection testDirection,
+      Dictionary<TestMovementDirection, Vector3> directionDictionary
+      )
+    {
+      Transform objectTransform = SetUpComponentToMaximumSpeed(componentToTest, testDirection);
+
+      AttachFakeDeltaTimeProvider(componentToTest, deltaStep);
+      componentToTest.CounterDuration = duration;
+
+      // Running test
+      float previousDeltaDistance = float.MaxValue;
+      float currentDeltaDistance = 0f;
+      Vector3 previousPosition = objectTransform.position;
+      Vector3 currentPosition = objectTransform.position;
+      Action rigidMover = GetCallBackForTestDirection(componentToTest, testDirection, true);
+      MovingState expectedSlowingState = GetExpectedMovingState(testDirection, ExpectedMovingStateCase.CounterSpeedingUp);
+      Func<RigidInterpolatedMotion, MovingState> getterForCurrentMovingState = GetterForMovingState(testDirection);
+      MovingState actualState;
+
+      for (float currentSlowingDuration = 0; currentSlowingDuration < duration; currentSlowingDuration += deltaStep)
+      {
+        rigidMover();
+        componentToTest.ExecuteNextFixedUpdate();
+
+        currentPosition = objectTransform.position;
+        currentDeltaDistance = Vector3.Distance(previousPosition, currentPosition);
+
+        Assert.IsTrue(
+          Geometry3DUtility.IsPointInDirection(objectTransform.position, directionDictionary[testDirection]),
+          $"Object did not move further into the direction {testDirection}." +
+          $"Object moved from {previousPosition} to {objectTransform.position}"
+          );
+
+        Assert.Less(
+          currentDeltaDistance,
+          previousDeltaDistance,
+          $"Object did slow down ! " +
+          $"Actual distance traveled {currentDeltaDistance} and previous traveled distance {previousDeltaDistance}"
+          );
+
+        previousDeltaDistance = currentDeltaDistance;
+        previousPosition = currentPosition;
+
+        actualState = getterForCurrentMovingState(componentToTest);
+        AssertForMovingState(actualState, expectedSlowingState);
+      }
+
+      AssertIfRigidIsStandingAtEnd(componentToTest, getterForCurrentMovingState);
     }
 
     #endregion
@@ -501,64 +559,29 @@ namespace NiceGraphicLibrary.PlayTests
         DirectionsGlobal : CreateLocalDirectionsLocal(component.transform);
     }
 
-    private static float GetCurrentCoordinateFromDirection(
-      in TestMovementDirection testDirection,
-      Transform objectWithLocation
-      )
-    {
-      switch (testDirection)
-      {
-        case TestMovementDirection.Right:
-        case TestMovementDirection.Left:
-          return objectWithLocation.position.x;
-        case TestMovementDirection.Up:
-        case TestMovementDirection.Down:
-          return objectWithLocation.position.y;
-        case TestMovementDirection.Forward:
-        case TestMovementDirection.Backward:
-          return objectWithLocation.position.z;
-        default:
-          throw new ArgumentException($"For the Value {testDirection} of the enum {nameof(TestMovementDirection)}");
-      }
-    }
-
-    private static Func<float, float, bool> GetCallBackForCounterDirectionCheck(in TestMovementDirection testDirection)
-    {
-      switch (testDirection)
-      {
-        case TestMovementDirection.Right:
-        case TestMovementDirection.Up:
-        case TestMovementDirection.Forward:
-          return (currentCoordinate, previousCoordinate) => currentCoordinate > previousCoordinate;
-        case TestMovementDirection.Left:
-        case TestMovementDirection.Down:
-        case TestMovementDirection.Backward:
-          return (currentCoordinate, previousCoordinate) => currentCoordinate < previousCoordinate;
-        default:
-          ThrowForNotAccountedTestMovementDirectionValue(testDirection);
-          return null;
-      }
-    }
-
     private static Action GetCallBackForTestDirection(
       RigidGeometryMotion componentToTest, 
-      in TestMovementDirection testDirection
+      in TestMovementDirection testDirection,
+      in bool isCounterDirection = false
       )
     {
+      float directionFactor = isCounterDirection ? -1f : 1f;
+      float oppositeDirectionFactor = directionFactor * -1f;
+
       switch (testDirection)
       {
         case TestMovementDirection.Right:
-          return () => componentToTest.OnXMotion(1f);
+          return () => componentToTest.OnXMotion(directionFactor);
         case TestMovementDirection.Left:
-          return () => componentToTest.OnXMotion(-1f);
+          return () => componentToTest.OnXMotion(oppositeDirectionFactor);
         case TestMovementDirection.Up:
-          return () => componentToTest.OnYMotion(1f);
+          return () => componentToTest.OnYMotion(directionFactor);
         case TestMovementDirection.Down:
-          return () => componentToTest.OnYMotion(-1f);
+          return () => componentToTest.OnYMotion(oppositeDirectionFactor);
         case TestMovementDirection.Forward:
-          return () => componentToTest.OnZMotion(1f);
+          return () => componentToTest.OnZMotion(directionFactor);
         case TestMovementDirection.Backward:
-          return () => componentToTest.OnZMotion(-1f);
+          return () => componentToTest.OnZMotion(oppositeDirectionFactor);
         default:
           ThrowForNotAccountedTestMovementDirectionValue(testDirection);
           return null;
@@ -579,23 +602,18 @@ namespace NiceGraphicLibrary.PlayTests
       componentToWorkWith.ProvideDeltaTimeWith(fakeDeltaProvider);
     }
 
-    private static Dictionary<TestMovementDirection, Vector3> CreateLocalDirectionsLocal(
-      Transform transform
-      )
-    {
-      var returnedDictionary = new Dictionary<TestMovementDirection, Vector3>();
+    private static Dictionary<TestMovementDirection, Vector3> CreateLocalDirectionsLocal(Transform transform) 
+      => new Dictionary<TestMovementDirection, Vector3>()
+        {
+          { TestMovementDirection.Right, transform.right },
+          { TestMovementDirection.Left, transform.right * -1f },
+          { TestMovementDirection.Up, transform.up },
+          { TestMovementDirection.Down, transform.up * -1f },
+          { TestMovementDirection.Forward, transform.forward },
+          { TestMovementDirection.Backward, transform.forward * -1f },
+        };
 
-      returnedDictionary.Add(TestMovementDirection.Right, transform.right);
-      returnedDictionary.Add(TestMovementDirection.Left, transform.right * -1f);
-
-      returnedDictionary.Add(TestMovementDirection.Up, transform.up);
-      returnedDictionary.Add(TestMovementDirection.Down, transform.up * -1f);
-
-      returnedDictionary.Add(TestMovementDirection.Forward, transform.forward);
-      returnedDictionary.Add(TestMovementDirection.Backward, transform.forward * -1f);
-
-      return returnedDictionary;
-    }
+    
 
     private static Vector3 GetPositionAfterMovement(
       out string nameOfDirection,
@@ -676,13 +694,33 @@ namespace NiceGraphicLibrary.PlayTests
     private static void ThrowForNotAccountedTestMovementDirectionValue(in TestMovementDirection invalidDirection)
       => throw new ArgumentException($"For the Value {invalidDirection} of the enum {nameof(TestMovementDirection)}");
 
+    private enum ExpectedMovingStateCase { SpeedingUp, SlowingDown, CounterSpeedingUp }
+
     private static MovingState GetExpectedMovingState(
       in TestMovementDirection testDirection,
-      in bool isSlowing
+      in ExpectedMovingStateCase stateCase
       )
     {
-      MovingState forwardState = isSlowing ? MovingState.SlowingDownFront: MovingState.SpeedingUpFront;
-      MovingState backwardState = isSlowing ? MovingState.SlowingDownBack : MovingState.SpeedingUpBack;
+      MovingState forwardState = MovingState.Standing;
+      MovingState backwardState = MovingState.Standing;
+
+      switch (stateCase)
+      {
+        case ExpectedMovingStateCase.SpeedingUp:
+          forwardState = MovingState.SpeedingUpFront;
+          backwardState = MovingState.SpeedingUpBack;
+          break;
+        case ExpectedMovingStateCase.SlowingDown:
+          forwardState = MovingState.SlowingDownFront;
+          backwardState = MovingState.SlowingDownBack;
+          break;
+        case ExpectedMovingStateCase.CounterSpeedingUp:
+          forwardState = MovingState.CounterSpeedingUpBack;
+          backwardState = MovingState.CounterSpeedingUpFront;
+          break;
+      }
+
+
 
       switch (testDirection)
       {
@@ -710,6 +748,35 @@ namespace NiceGraphicLibrary.PlayTests
         actualState,
         $"Actual state [{actualState}] is not the supposed state [{expectedMovingStateEveryFrame}]"
         );
+    }
+
+    private static Transform SetUpComponentToMaximumSpeed(
+      RigidInterpolatedMotion componentToTest,
+      in TestMovementDirection testDirection
+      )
+    {
+      const float ONE = 1f;
+      // Set up component so it reached its maximum speed for testing 
+      Transform objectTransform = ResetMotionComponentForMoveAndPosition(componentToTest);
+      AttachFakeDeltaTimeProvider(componentToTest, ONE);
+      componentToTest.Duration = ONE;
+
+      Action setUpBeforeSlowingDown = GetCallBackForTestDirection(componentToTest, testDirection);
+      setUpBeforeSlowingDown();
+      componentToTest.ExecuteNextFixedUpdate();
+
+      return objectTransform;
+    }
+
+    private static void AssertIfRigidIsStandingAtEnd(
+      RigidInterpolatedMotion componentToTest,
+      Func<RigidInterpolatedMotion, MovingState> getterForCurrentMovingState
+      )
+    {
+      // Last update should result in standing.
+      componentToTest.ExecuteNextFixedUpdate();
+      MovingState actualState = getterForCurrentMovingState(componentToTest);
+      AssertForMovingState(actualState, MovingState.Standing);
     }
 
     #endregion

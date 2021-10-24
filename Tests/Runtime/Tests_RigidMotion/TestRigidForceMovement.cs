@@ -6,16 +6,15 @@ using UnityEngine;
 using UnityEngine.TestTools;
 
 using NiceGraphicLibrary;
-using NiceGraphicLibrary.Component;
+using NiceGraphicLibrary.Component.Movement;
 
-namespace NiceGraphicLibrary.PlayTests
+namespace NiceGraphicLibrary.Tests.Runtime.Tests_RigidMotion
 {
   [TestFixture]
   public class TestRigidForceMovement
   {
     private RigidForceMovement _componentToTest;
     private static readonly ForceMode[] _allForceModes = (ForceMode[])Enum.GetValues(typeof(ForceMode));
-
 
     [SetUp]
     public void ConstructObject()
