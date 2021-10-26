@@ -4,9 +4,10 @@
       "src": [
         {
           "files": [
-            "CodeBaseLibrary.csproj"
+            "/Runtime/**.cs",
+            "/Editor/**.cs"
           ],
-          "src": "../"          
+          "src": "../Assets/PackageNicegraphicLibrary"          
         }
       ],
       "dest": "api",
