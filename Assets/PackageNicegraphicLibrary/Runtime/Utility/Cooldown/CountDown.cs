@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine; 
 
-namespace NiceGraphicLibrary.Utility
+namespace NiceGraphicLibrary.Utility.Cooldown
 {
   /// <summary>
   /// Used to start a countdown from number of seconds to zero.

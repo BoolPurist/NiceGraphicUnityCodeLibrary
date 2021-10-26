@@ -4,7 +4,7 @@ using UnityEngine;
 
 using NiceGraphicLibrary.Utility;
 
-namespace NiceGraphicLibrary.Component
+namespace NiceGraphicLibrary.Component.Sound
 {
   /// <summary>
   /// Component to swap different audio clips for an audio source during play time.

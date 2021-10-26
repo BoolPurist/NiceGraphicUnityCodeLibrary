@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NiceGraphicLibrary
+namespace NiceGraphicLibrary.Component.Movement
 {
   /// <summary>
   /// Determines if the object is moved along global axis or its local axis, orientation influenced by rotation.

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using UnityEngine;
 
-namespace NiceGraphicLibrary.Utility
+namespace NiceGraphicLibrary.Utility.Cooldown
 {
   /// <summary>
   /// Object to return a value for the passed time within an interval.

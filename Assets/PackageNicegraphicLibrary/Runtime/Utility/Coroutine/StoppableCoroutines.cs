@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine; 
 
-namespace NiceGraphicLibrary
+namespace NiceGraphicLibrary.Utility.Coroutines
 {
   /// <summary>
   /// Allows to stop all coroutines, including sub coroutines, started by a function which returns this instance.
@@ -13,7 +13,6 @@ namespace NiceGraphicLibrary
   {
     private readonly MonoBehaviour _coroutineController;
     private readonly List<Coroutine> _startedCoroutines = new List<Coroutine>();
-
 
     internal StoppableCoroutines(MonoBehaviour component)
     {

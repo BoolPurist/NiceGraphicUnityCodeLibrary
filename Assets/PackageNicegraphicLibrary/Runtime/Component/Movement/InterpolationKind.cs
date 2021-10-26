@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine; 
 
-namespace NiceGraphicLibrary
+namespace NiceGraphicLibrary.Component.Movement
 {
   public enum InterpolationKind
   {

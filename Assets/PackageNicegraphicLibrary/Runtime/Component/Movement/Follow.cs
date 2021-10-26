@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine; 
 
-namespace NiceGraphicLibrary
+namespace NiceGraphicLibrary.Component.Movement
 {
   [ExecuteInEditMode]
   public class Follow : MonoBehaviour

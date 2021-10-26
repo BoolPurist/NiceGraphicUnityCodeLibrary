@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace NiceGraphicLibrary
+    <title>Class DebugDrawAllPoints
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace NiceGraphicLibrary
+    <meta name="title" content="Class DebugDrawAllPoints
    ">
     <meta name="generator" content="docfx 2.58.4.0">
     
@@ -68,35 +68,56 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="NiceGraphicLibrary">
+            <article class="content wrap" id="_content" data-uid="NiceGraphicLibrary.Component.Debugging.DebugDrawAllPoints">
   
-  <h1 id="NiceGraphicLibrary" data-uid="NiceGraphicLibrary" class="text-break">Namespace NiceGraphicLibrary
+  
+  <h1 id="NiceGraphicLibrary_Component_Debugging_DebugDrawAllPoints" data-uid="NiceGraphicLibrary.Component.Debugging.DebugDrawAllPoints" class="text-break">Class DebugDrawAllPoints
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Component draw a 2d graph in 3d space based on (x, y) tuples</p>
+</div>
   <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
-    <h3 id="classes">Classes
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DebugDrawAllPoints</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="NiceGraphicLibrary.Component.Debugging.html">NiceGraphicLibrary.Component.Debugging</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="NiceGraphicLibrary_Component_Debugging_DebugDrawAllPoints_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DebugDrawAllPoints : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="methods">Methods
   </h3>
-      <h4><a class="xref" href="NiceGraphicLibrary.DrawLineAttribute.html">DrawLineAttribute</a></h4>
-      <section><p>Draws a colored line in the inspector between property fields</p>
-</section>
-      <h4><a class="xref" href="NiceGraphicLibrary.FakeDeltaTimeProvider.html">FakeDeltaTimeProvider</a></h4>
-      <section><p>Used for unit testing. Fakes return value for Time.deltaTime to test without waiting for frames</p>
-</section>
-      <h4><a class="xref" href="NiceGraphicLibrary.ReadOnlyFieldAttribute.html">ReadOnlyFieldAttribute</a></h4>
-      <section><p>Attribute placed above a field to rendere the variable only as read only in editor/play mode or only play mode</p>
-</section>
-      <h4><a class="xref" href="NiceGraphicLibrary.UnityDeltaTimeProvider.html">UnityDeltaTimeProvider</a></h4>
-      <section><p>Returns Time.deltaTime. Used during runtime of the game.</p>
-</section>
-    <h3 id="interfaces">Interfaces
-  </h3>
-      <h4><a class="xref" href="NiceGraphicLibrary.IAdjustableForUnitTest.html">IAdjustableForUnitTest</a></h4>
-      <section><p>Provides API to set object to switch inner logic to work for unit tests</p>
-</section>
-      <h4><a class="xref" href="NiceGraphicLibrary.IDeltaTimeProvider.html">IDeltaTimeProvider</a></h4>
-      <section><p>Interface to change the source for Time.deltaTime</p>
-</section>
+  
+  
+  <a id="NiceGraphicLibrary_Component_Debugging_DebugDrawAllPoints_Replace2DPoints_" data-uid="NiceGraphicLibrary.Component.Debugging.DebugDrawAllPoints.Replace2DPoints*"></a>
+  <h4 id="NiceGraphicLibrary_Component_Debugging_DebugDrawAllPoints_Replace2DPoints_Vector2___" data-uid="NiceGraphicLibrary.Component.Debugging.DebugDrawAllPoints.Replace2DPoints(Vector2[])">Replace2DPoints(Vector2[])</h4>
+  <div class="markdown level1 summary"><p>Causes component to draw the graph from the new provided points</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Replace2DPoints(Vector2[] points)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span>[]</td>
+        <td><span class="parametername">points</span></td>
+        <td><p>Array of points for drawing the new graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine; 
 
-namespace NiceGraphicLibrary.Utility
+namespace NiceGraphicLibrary.Utility.Coroutines
 {
   /// <summary>
   /// Functions to start coroutines delayed, in certain interval or in a loop

@@ -7,8 +7,6 @@ namespace NiceGraphicLibrary.Component.Movement
 {
   public class RigidInterpolatedMovement : RigidInterpolatedMotion
   {
-    private DebugValueScreenViewer _viewer;
-
     protected override void ApplyMovement()
     {
 

@@ -3,8 +3,8 @@ using System.Collections;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
-using NiceGraphicLibrary.Utility;
-using NiceGraphicLibrary;
+
+using NiceGraphicLibrary.Utility.Coroutines;
 
 namespace NiceGraphicLibrary.Tests.Runtime
 { 

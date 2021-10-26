@@ -7,6 +7,7 @@ using UnityEngine.TestTools;
 
 using NiceGraphicLibrary;
 using NiceGraphicLibrary.Component;
+using NiceGraphicLibrary.Component.Sound;
 
 namespace NiceGraphicLibrary.Tests.Runtime
 {
