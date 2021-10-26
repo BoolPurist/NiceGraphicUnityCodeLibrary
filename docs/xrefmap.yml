@@ -1,0 +1,1705 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: NiceGraphicLibrary
+  name: NiceGraphicLibrary
+  href: api/NiceGraphicLibrary.html
+  commentId: N:NiceGraphicLibrary
+  fullName: NiceGraphicLibrary
+  nameWithType: NiceGraphicLibrary
+- uid: NiceGraphicLibrary.Component
+  name: NiceGraphicLibrary.Component
+  href: api/NiceGraphicLibrary.Component.html
+  commentId: N:NiceGraphicLibrary.Component
+  fullName: NiceGraphicLibrary.Component
+  nameWithType: NiceGraphicLibrary.Component
+- uid: NiceGraphicLibrary.Component.DebugDrawAllPoints
+  name: DebugDrawAllPoints
+  href: api/NiceGraphicLibrary.Component.DebugDrawAllPoints.html
+  commentId: T:NiceGraphicLibrary.Component.DebugDrawAllPoints
+  fullName: NiceGraphicLibrary.Component.DebugDrawAllPoints
+  nameWithType: DebugDrawAllPoints
+- uid: NiceGraphicLibrary.Component.DebugDrawAllPoints.Replace2DPoints(UnityEngine.Vector2[])
+  name: Replace2DPoints(Vector2[])
+  href: api/NiceGraphicLibrary.Component.DebugDrawAllPoints.html#NiceGraphicLibrary_Component_DebugDrawAllPoints_Replace2DPoints_UnityEngine_Vector2___
+  commentId: M:NiceGraphicLibrary.Component.DebugDrawAllPoints.Replace2DPoints(UnityEngine.Vector2[])
+  name.vb: Replace2DPoints(Vector2())
+  fullName: NiceGraphicLibrary.Component.DebugDrawAllPoints.Replace2DPoints(UnityEngine.Vector2[])
+  fullName.vb: NiceGraphicLibrary.Component.DebugDrawAllPoints.Replace2DPoints(UnityEngine.Vector2())
+  nameWithType: DebugDrawAllPoints.Replace2DPoints(Vector2[])
+  nameWithType.vb: DebugDrawAllPoints.Replace2DPoints(Vector2())
+- uid: NiceGraphicLibrary.Component.DebugDrawAllPoints.Replace2DPoints*
+  name: Replace2DPoints
+  href: api/NiceGraphicLibrary.Component.DebugDrawAllPoints.html#NiceGraphicLibrary_Component_DebugDrawAllPoints_Replace2DPoints_
+  commentId: Overload:NiceGraphicLibrary.Component.DebugDrawAllPoints.Replace2DPoints
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Component.DebugDrawAllPoints.Replace2DPoints
+  nameWithType: DebugDrawAllPoints.Replace2DPoints
+- uid: NiceGraphicLibrary.Component.DebugValueScreenViewer
+  name: DebugValueScreenViewer
+  href: api/NiceGraphicLibrary.Component.DebugValueScreenViewer.html
+  commentId: T:NiceGraphicLibrary.Component.DebugValueScreenViewer
+  fullName: NiceGraphicLibrary.Component.DebugValueScreenViewer
+  nameWithType: DebugValueScreenViewer
+- uid: NiceGraphicLibrary.Component.DebugValueScreenViewer.RemoveValue(System.String)
+  name: RemoveValue(String)
+  href: api/NiceGraphicLibrary.Component.DebugValueScreenViewer.html#NiceGraphicLibrary_Component_DebugValueScreenViewer_RemoveValue_System_String_
+  commentId: M:NiceGraphicLibrary.Component.DebugValueScreenViewer.RemoveValue(System.String)
+  fullName: NiceGraphicLibrary.Component.DebugValueScreenViewer.RemoveValue(System.String)
+  nameWithType: DebugValueScreenViewer.RemoveValue(String)
+- uid: NiceGraphicLibrary.Component.DebugValueScreenViewer.RemoveValue*
+  name: RemoveValue
+  href: api/NiceGraphicLibrary.Component.DebugValueScreenViewer.html#NiceGraphicLibrary_Component_DebugValueScreenViewer_RemoveValue_
+  commentId: Overload:NiceGraphicLibrary.Component.DebugValueScreenViewer.RemoveValue
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Component.DebugValueScreenViewer.RemoveValue
+  nameWithType: DebugValueScreenViewer.RemoveValue
+- uid: NiceGraphicLibrary.Component.DebugValueScreenViewer.UpdateValue(System.String,System.Object)
+  name: UpdateValue(String, Object)
+  href: api/NiceGraphicLibrary.Component.DebugValueScreenViewer.html#NiceGraphicLibrary_Component_DebugValueScreenViewer_UpdateValue_System_String_System_Object_
+  commentId: M:NiceGraphicLibrary.Component.DebugValueScreenViewer.UpdateValue(System.String,System.Object)
+  fullName: NiceGraphicLibrary.Component.DebugValueScreenViewer.UpdateValue(System.String, System.Object)
+  nameWithType: DebugValueScreenViewer.UpdateValue(String, Object)
+- uid: NiceGraphicLibrary.Component.DebugValueScreenViewer.UpdateValue*
+  name: UpdateValue
+  href: api/NiceGraphicLibrary.Component.DebugValueScreenViewer.html#NiceGraphicLibrary_Component_DebugValueScreenViewer_UpdateValue_
+  commentId: Overload:NiceGraphicLibrary.Component.DebugValueScreenViewer.UpdateValue
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Component.DebugValueScreenViewer.UpdateValue
+  nameWithType: DebugValueScreenViewer.UpdateValue
+- uid: NiceGraphicLibrary.Component.DrawBoundingBox
+  name: DrawBoundingBox
+  href: api/NiceGraphicLibrary.Component.DrawBoundingBox.html
+  commentId: T:NiceGraphicLibrary.Component.DrawBoundingBox
+  fullName: NiceGraphicLibrary.Component.DrawBoundingBox
+  nameWithType: DrawBoundingBox
+- uid: NiceGraphicLibrary.Component.DrawBoundingBox.ElementColors
+  name: DrawBoundingBox.ElementColors
+  href: api/NiceGraphicLibrary.Component.DrawBoundingBox.ElementColors.html
+  commentId: T:NiceGraphicLibrary.Component.DrawBoundingBox.ElementColors
+  fullName: NiceGraphicLibrary.Component.DrawBoundingBox.ElementColors
+  nameWithType: DrawBoundingBox.ElementColors
+- uid: NiceGraphicLibrary.Component.DrawBoundingBox.ElementColors.Center
+  name: Center
+  href: api/NiceGraphicLibrary.Component.DrawBoundingBox.ElementColors.html#NiceGraphicLibrary_Component_DrawBoundingBox_ElementColors_Center
+  commentId: F:NiceGraphicLibrary.Component.DrawBoundingBox.ElementColors.Center
+  fullName: NiceGraphicLibrary.Component.DrawBoundingBox.ElementColors.Center
+  nameWithType: DrawBoundingBox.ElementColors.Center
+- uid: NiceGraphicLibrary.Component.DrawBoundingBox.ElementColors.Diagonal
+  name: Diagonal
+  href: api/NiceGraphicLibrary.Component.DrawBoundingBox.ElementColors.html#NiceGraphicLibrary_Component_DrawBoundingBox_ElementColors_Diagonal
+  commentId: F:NiceGraphicLibrary.Component.DrawBoundingBox.ElementColors.Diagonal
+  fullName: NiceGraphicLibrary.Component.DrawBoundingBox.ElementColors.Diagonal
+  nameWithType: DrawBoundingBox.ElementColors.Diagonal
+- uid: NiceGraphicLibrary.Component.DrawBoundingBox.ElementColors.Max
+  name: Max
+  href: api/NiceGraphicLibrary.Component.DrawBoundingBox.ElementColors.html#NiceGraphicLibrary_Component_DrawBoundingBox_ElementColors_Max
+  commentId: F:NiceGraphicLibrary.Component.DrawBoundingBox.ElementColors.Max
+  fullName: NiceGraphicLibrary.Component.DrawBoundingBox.ElementColors.Max
+  nameWithType: DrawBoundingBox.ElementColors.Max
+- uid: NiceGraphicLibrary.Component.DrawBoundingBox.ElementColors.Min
+  name: Min
+  href: api/NiceGraphicLibrary.Component.DrawBoundingBox.ElementColors.html#NiceGraphicLibrary_Component_DrawBoundingBox_ElementColors_Min
+  commentId: F:NiceGraphicLibrary.Component.DrawBoundingBox.ElementColors.Min
+  fullName: NiceGraphicLibrary.Component.DrawBoundingBox.ElementColors.Min
+  nameWithType: DrawBoundingBox.ElementColors.Min
+- uid: NiceGraphicLibrary.Component.DrawBoundingBox.ElementColors.WireFrame
+  name: WireFrame
+  href: api/NiceGraphicLibrary.Component.DrawBoundingBox.ElementColors.html#NiceGraphicLibrary_Component_DrawBoundingBox_ElementColors_WireFrame
+  commentId: F:NiceGraphicLibrary.Component.DrawBoundingBox.ElementColors.WireFrame
+  fullName: NiceGraphicLibrary.Component.DrawBoundingBox.ElementColors.WireFrame
+  nameWithType: DrawBoundingBox.ElementColors.WireFrame
+- uid: NiceGraphicLibrary.Component.DrawDebugLineTo
+  name: DrawDebugLineTo
+  href: api/NiceGraphicLibrary.Component.DrawDebugLineTo.html
+  commentId: T:NiceGraphicLibrary.Component.DrawDebugLineTo
+  fullName: NiceGraphicLibrary.Component.DrawDebugLineTo
+  nameWithType: DrawDebugLineTo
+- uid: NiceGraphicLibrary.Component.DrawDebugLineTo.ReferencePoint
+  name: DrawDebugLineTo.ReferencePoint
+  href: api/NiceGraphicLibrary.Component.DrawDebugLineTo.ReferencePoint.html
+  commentId: T:NiceGraphicLibrary.Component.DrawDebugLineTo.ReferencePoint
+  fullName: NiceGraphicLibrary.Component.DrawDebugLineTo.ReferencePoint
+  nameWithType: DrawDebugLineTo.ReferencePoint
+- uid: NiceGraphicLibrary.Component.DrawDebugLineTo.ReferencePoint.Center
+  name: Center
+  href: api/NiceGraphicLibrary.Component.DrawDebugLineTo.ReferencePoint.html#NiceGraphicLibrary_Component_DrawDebugLineTo_ReferencePoint_Center
+  commentId: F:NiceGraphicLibrary.Component.DrawDebugLineTo.ReferencePoint.Center
+  fullName: NiceGraphicLibrary.Component.DrawDebugLineTo.ReferencePoint.Center
+  nameWithType: DrawDebugLineTo.ReferencePoint.Center
+- uid: NiceGraphicLibrary.Component.DrawDebugLineTo.ReferencePoint.Pivot
+  name: Pivot
+  href: api/NiceGraphicLibrary.Component.DrawDebugLineTo.ReferencePoint.html#NiceGraphicLibrary_Component_DrawDebugLineTo_ReferencePoint_Pivot
+  commentId: F:NiceGraphicLibrary.Component.DrawDebugLineTo.ReferencePoint.Pivot
+  fullName: NiceGraphicLibrary.Component.DrawDebugLineTo.ReferencePoint.Pivot
+  nameWithType: DrawDebugLineTo.ReferencePoint.Pivot
+- uid: NiceGraphicLibrary.Component.KeyboardRigidMotion
+  name: KeyboardRigidMotion
+  href: api/NiceGraphicLibrary.Component.KeyboardRigidMotion.html
+  commentId: T:NiceGraphicLibrary.Component.KeyboardRigidMotion
+  fullName: NiceGraphicLibrary.Component.KeyboardRigidMotion
+  nameWithType: KeyboardRigidMotion
+- uid: NiceGraphicLibrary.Component.SoundClipManager
+  name: SoundClipManager
+  href: api/NiceGraphicLibrary.Component.SoundClipManager.html
+  commentId: T:NiceGraphicLibrary.Component.SoundClipManager
+  fullName: NiceGraphicLibrary.Component.SoundClipManager
+  nameWithType: SoundClipManager
+- uid: NiceGraphicLibrary.Component.SoundClipManager.ChangeToAudioClip(System.String,System.Boolean)
+  name: ChangeToAudioClip(String, Boolean)
+  href: api/NiceGraphicLibrary.Component.SoundClipManager.html#NiceGraphicLibrary_Component_SoundClipManager_ChangeToAudioClip_System_String_System_Boolean_
+  commentId: M:NiceGraphicLibrary.Component.SoundClipManager.ChangeToAudioClip(System.String,System.Boolean)
+  fullName: NiceGraphicLibrary.Component.SoundClipManager.ChangeToAudioClip(System.String, System.Boolean)
+  nameWithType: SoundClipManager.ChangeToAudioClip(String, Boolean)
+- uid: NiceGraphicLibrary.Component.SoundClipManager.ChangeToAudioClip*
+  name: ChangeToAudioClip
+  href: api/NiceGraphicLibrary.Component.SoundClipManager.html#NiceGraphicLibrary_Component_SoundClipManager_ChangeToAudioClip_
+  commentId: Overload:NiceGraphicLibrary.Component.SoundClipManager.ChangeToAudioClip
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Component.SoundClipManager.ChangeToAudioClip
+  nameWithType: SoundClipManager.ChangeToAudioClip
+- uid: NiceGraphicLibrary.Component.SoundClipManager.ClipEntry
+  name: SoundClipManager.ClipEntry
+  href: api/NiceGraphicLibrary.Component.SoundClipManager.ClipEntry.html
+  commentId: T:NiceGraphicLibrary.Component.SoundClipManager.ClipEntry
+  fullName: NiceGraphicLibrary.Component.SoundClipManager.ClipEntry
+  nameWithType: SoundClipManager.ClipEntry
+- uid: NiceGraphicLibrary.Component.SoundClipManager.ClipEntry._Clip
+  name: _Clip
+  href: api/NiceGraphicLibrary.Component.SoundClipManager.ClipEntry.html#NiceGraphicLibrary_Component_SoundClipManager_ClipEntry__Clip
+  commentId: F:NiceGraphicLibrary.Component.SoundClipManager.ClipEntry._Clip
+  fullName: NiceGraphicLibrary.Component.SoundClipManager.ClipEntry._Clip
+  nameWithType: SoundClipManager.ClipEntry._Clip
+- uid: NiceGraphicLibrary.Component.SoundClipManager.ClipEntry._Name
+  name: _Name
+  href: api/NiceGraphicLibrary.Component.SoundClipManager.ClipEntry.html#NiceGraphicLibrary_Component_SoundClipManager_ClipEntry__Name
+  commentId: F:NiceGraphicLibrary.Component.SoundClipManager.ClipEntry._Name
+  fullName: NiceGraphicLibrary.Component.SoundClipManager.ClipEntry._Name
+  nameWithType: SoundClipManager.ClipEntry._Name
+- uid: NiceGraphicLibrary.Component.SoundClipManager.CountAudioClip
+  name: CountAudioClip
+  href: api/NiceGraphicLibrary.Component.SoundClipManager.html#NiceGraphicLibrary_Component_SoundClipManager_CountAudioClip
+  commentId: P:NiceGraphicLibrary.Component.SoundClipManager.CountAudioClip
+  fullName: NiceGraphicLibrary.Component.SoundClipManager.CountAudioClip
+  nameWithType: SoundClipManager.CountAudioClip
+- uid: NiceGraphicLibrary.Component.SoundClipManager.CountAudioClip*
+  name: CountAudioClip
+  href: api/NiceGraphicLibrary.Component.SoundClipManager.html#NiceGraphicLibrary_Component_SoundClipManager_CountAudioClip_
+  commentId: Overload:NiceGraphicLibrary.Component.SoundClipManager.CountAudioClip
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Component.SoundClipManager.CountAudioClip
+  nameWithType: SoundClipManager.CountAudioClip
+- uid: NiceGraphicLibrary.Follow
+  name: Follow
+  href: api/NiceGraphicLibrary.Follow.html
+  commentId: T:NiceGraphicLibrary.Follow
+  fullName: NiceGraphicLibrary.Follow
+  nameWithType: Follow
+- uid: NiceGraphicLibrary.Follow.SetObjectToFollow(UnityEngine.Transform)
+  name: SetObjectToFollow(Transform)
+  href: api/NiceGraphicLibrary.Follow.html#NiceGraphicLibrary_Follow_SetObjectToFollow_UnityEngine_Transform_
+  commentId: M:NiceGraphicLibrary.Follow.SetObjectToFollow(UnityEngine.Transform)
+  fullName: NiceGraphicLibrary.Follow.SetObjectToFollow(UnityEngine.Transform)
+  nameWithType: Follow.SetObjectToFollow(Transform)
+- uid: NiceGraphicLibrary.Follow.SetObjectToFollow*
+  name: SetObjectToFollow
+  href: api/NiceGraphicLibrary.Follow.html#NiceGraphicLibrary_Follow_SetObjectToFollow_
+  commentId: Overload:NiceGraphicLibrary.Follow.SetObjectToFollow
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Follow.SetObjectToFollow
+  nameWithType: Follow.SetObjectToFollow
+- uid: NiceGraphicLibrary.Follow.Update
+  name: Update()
+  href: api/NiceGraphicLibrary.Follow.html#NiceGraphicLibrary_Follow_Update
+  commentId: M:NiceGraphicLibrary.Follow.Update
+  fullName: NiceGraphicLibrary.Follow.Update()
+  nameWithType: Follow.Update()
+- uid: NiceGraphicLibrary.Follow.Update*
+  name: Update
+  href: api/NiceGraphicLibrary.Follow.html#NiceGraphicLibrary_Follow_Update_
+  commentId: Overload:NiceGraphicLibrary.Follow.Update
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Follow.Update
+  nameWithType: Follow.Update
+- uid: NiceGraphicLibrary.InterpolationKind
+  name: InterpolationKind
+  href: api/NiceGraphicLibrary.InterpolationKind.html
+  commentId: T:NiceGraphicLibrary.InterpolationKind
+  fullName: NiceGraphicLibrary.InterpolationKind
+  nameWithType: InterpolationKind
+- uid: NiceGraphicLibrary.InterpolationKind.Linear
+  name: Linear
+  href: api/NiceGraphicLibrary.InterpolationKind.html#NiceGraphicLibrary_InterpolationKind_Linear
+  commentId: F:NiceGraphicLibrary.InterpolationKind.Linear
+  fullName: NiceGraphicLibrary.InterpolationKind.Linear
+  nameWithType: InterpolationKind.Linear
+- uid: NiceGraphicLibrary.InterpolationKind.SmoothStep
+  name: SmoothStep
+  href: api/NiceGraphicLibrary.InterpolationKind.html#NiceGraphicLibrary_InterpolationKind_SmoothStep
+  commentId: F:NiceGraphicLibrary.InterpolationKind.SmoothStep
+  fullName: NiceGraphicLibrary.InterpolationKind.SmoothStep
+  nameWithType: InterpolationKind.SmoothStep
+- uid: NiceGraphicLibrary.InterpolationKind.Spherical
+  name: Spherical
+  href: api/NiceGraphicLibrary.InterpolationKind.html#NiceGraphicLibrary_InterpolationKind_Spherical
+  commentId: F:NiceGraphicLibrary.InterpolationKind.Spherical
+  fullName: NiceGraphicLibrary.InterpolationKind.Spherical
+  nameWithType: InterpolationKind.Spherical
+- uid: NiceGraphicLibrary.MovementAxisLevel
+  name: MovementAxisLevel
+  href: api/NiceGraphicLibrary.MovementAxisLevel.html
+  commentId: T:NiceGraphicLibrary.MovementAxisLevel
+  fullName: NiceGraphicLibrary.MovementAxisLevel
+  nameWithType: MovementAxisLevel
+- uid: NiceGraphicLibrary.MovementAxisLevel.Global
+  name: Global
+  href: api/NiceGraphicLibrary.MovementAxisLevel.html#NiceGraphicLibrary_MovementAxisLevel_Global
+  commentId: F:NiceGraphicLibrary.MovementAxisLevel.Global
+  fullName: NiceGraphicLibrary.MovementAxisLevel.Global
+  nameWithType: MovementAxisLevel.Global
+- uid: NiceGraphicLibrary.MovementAxisLevel.Local
+  name: Local
+  href: api/NiceGraphicLibrary.MovementAxisLevel.html#NiceGraphicLibrary_MovementAxisLevel_Local
+  commentId: F:NiceGraphicLibrary.MovementAxisLevel.Local
+  fullName: NiceGraphicLibrary.MovementAxisLevel.Local
+  nameWithType: MovementAxisLevel.Local
+- uid: NiceGraphicLibrary.MovingState
+  name: MovingState
+  href: api/NiceGraphicLibrary.MovingState.html
+  commentId: T:NiceGraphicLibrary.MovingState
+  fullName: NiceGraphicLibrary.MovingState
+  nameWithType: MovingState
+- uid: NiceGraphicLibrary.MovingState.CounterSpeedingUpBack
+  name: CounterSpeedingUpBack
+  href: api/NiceGraphicLibrary.MovingState.html#NiceGraphicLibrary_MovingState_CounterSpeedingUpBack
+  commentId: F:NiceGraphicLibrary.MovingState.CounterSpeedingUpBack
+  fullName: NiceGraphicLibrary.MovingState.CounterSpeedingUpBack
+  nameWithType: MovingState.CounterSpeedingUpBack
+- uid: NiceGraphicLibrary.MovingState.CounterSpeedingUpFront
+  name: CounterSpeedingUpFront
+  href: api/NiceGraphicLibrary.MovingState.html#NiceGraphicLibrary_MovingState_CounterSpeedingUpFront
+  commentId: F:NiceGraphicLibrary.MovingState.CounterSpeedingUpFront
+  fullName: NiceGraphicLibrary.MovingState.CounterSpeedingUpFront
+  nameWithType: MovingState.CounterSpeedingUpFront
+- uid: NiceGraphicLibrary.MovingState.SlowingDownBack
+  name: SlowingDownBack
+  href: api/NiceGraphicLibrary.MovingState.html#NiceGraphicLibrary_MovingState_SlowingDownBack
+  commentId: F:NiceGraphicLibrary.MovingState.SlowingDownBack
+  fullName: NiceGraphicLibrary.MovingState.SlowingDownBack
+  nameWithType: MovingState.SlowingDownBack
+- uid: NiceGraphicLibrary.MovingState.SlowingDownFront
+  name: SlowingDownFront
+  href: api/NiceGraphicLibrary.MovingState.html#NiceGraphicLibrary_MovingState_SlowingDownFront
+  commentId: F:NiceGraphicLibrary.MovingState.SlowingDownFront
+  fullName: NiceGraphicLibrary.MovingState.SlowingDownFront
+  nameWithType: MovingState.SlowingDownFront
+- uid: NiceGraphicLibrary.MovingState.SpeedingUpBack
+  name: SpeedingUpBack
+  href: api/NiceGraphicLibrary.MovingState.html#NiceGraphicLibrary_MovingState_SpeedingUpBack
+  commentId: F:NiceGraphicLibrary.MovingState.SpeedingUpBack
+  fullName: NiceGraphicLibrary.MovingState.SpeedingUpBack
+  nameWithType: MovingState.SpeedingUpBack
+- uid: NiceGraphicLibrary.MovingState.SpeedingUpFront
+  name: SpeedingUpFront
+  href: api/NiceGraphicLibrary.MovingState.html#NiceGraphicLibrary_MovingState_SpeedingUpFront
+  commentId: F:NiceGraphicLibrary.MovingState.SpeedingUpFront
+  fullName: NiceGraphicLibrary.MovingState.SpeedingUpFront
+  nameWithType: MovingState.SpeedingUpFront
+- uid: NiceGraphicLibrary.MovingState.Standing
+  name: Standing
+  href: api/NiceGraphicLibrary.MovingState.html#NiceGraphicLibrary_MovingState_Standing
+  commentId: F:NiceGraphicLibrary.MovingState.Standing
+  fullName: NiceGraphicLibrary.MovingState.Standing
+  nameWithType: MovingState.Standing
+- uid: NiceGraphicLibrary.RigidForceMovement
+  name: RigidForceMovement
+  href: api/NiceGraphicLibrary.RigidForceMovement.html
+  commentId: T:NiceGraphicLibrary.RigidForceMovement
+  fullName: NiceGraphicLibrary.RigidForceMovement
+  nameWithType: RigidForceMovement
+- uid: NiceGraphicLibrary.RigidForceMovement.ApplyMovement
+  name: ApplyMovement()
+  href: api/NiceGraphicLibrary.RigidForceMovement.html#NiceGraphicLibrary_RigidForceMovement_ApplyMovement
+  commentId: M:NiceGraphicLibrary.RigidForceMovement.ApplyMovement
+  fullName: NiceGraphicLibrary.RigidForceMovement.ApplyMovement()
+  nameWithType: RigidForceMovement.ApplyMovement()
+- uid: NiceGraphicLibrary.RigidForceMovement.ApplyMovement*
+  name: ApplyMovement
+  href: api/NiceGraphicLibrary.RigidForceMovement.html#NiceGraphicLibrary_RigidForceMovement_ApplyMovement_
+  commentId: Overload:NiceGraphicLibrary.RigidForceMovement.ApplyMovement
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.RigidForceMovement.ApplyMovement
+  nameWithType: RigidForceMovement.ApplyMovement
+- uid: NiceGraphicLibrary.RigidForceMovement.ProcessAxis
+  name: ProcessAxis()
+  href: api/NiceGraphicLibrary.RigidForceMovement.html#NiceGraphicLibrary_RigidForceMovement_ProcessAxis
+  commentId: M:NiceGraphicLibrary.RigidForceMovement.ProcessAxis
+  fullName: NiceGraphicLibrary.RigidForceMovement.ProcessAxis()
+  nameWithType: RigidForceMovement.ProcessAxis()
+- uid: NiceGraphicLibrary.RigidForceMovement.ProcessAxis*
+  name: ProcessAxis
+  href: api/NiceGraphicLibrary.RigidForceMovement.html#NiceGraphicLibrary_RigidForceMovement_ProcessAxis_
+  commentId: Overload:NiceGraphicLibrary.RigidForceMovement.ProcessAxis
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.RigidForceMovement.ProcessAxis
+  nameWithType: RigidForceMovement.ProcessAxis
+- uid: NiceGraphicLibrary.RigidGeometryMotion
+  name: RigidGeometryMotion
+  href: api/NiceGraphicLibrary.RigidGeometryMotion.html
+  commentId: T:NiceGraphicLibrary.RigidGeometryMotion
+  fullName: NiceGraphicLibrary.RigidGeometryMotion
+  nameWithType: RigidGeometryMotion
+- uid: NiceGraphicLibrary.RigidGeometryMotion._AxisLevel
+  name: _AxisLevel
+  href: api/NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion__AxisLevel
+  commentId: F:NiceGraphicLibrary.RigidGeometryMotion._AxisLevel
+  fullName: NiceGraphicLibrary.RigidGeometryMotion._AxisLevel
+  nameWithType: RigidGeometryMotion._AxisLevel
+- uid: NiceGraphicLibrary.RigidGeometryMotion._axisX
+  name: _axisX
+  href: api/NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion__axisX
+  commentId: F:NiceGraphicLibrary.RigidGeometryMotion._axisX
+  fullName: NiceGraphicLibrary.RigidGeometryMotion._axisX
+  nameWithType: RigidGeometryMotion._axisX
+- uid: NiceGraphicLibrary.RigidGeometryMotion._axisY
+  name: _axisY
+  href: api/NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion__axisY
+  commentId: F:NiceGraphicLibrary.RigidGeometryMotion._axisY
+  fullName: NiceGraphicLibrary.RigidGeometryMotion._axisY
+  nameWithType: RigidGeometryMotion._axisY
+- uid: NiceGraphicLibrary.RigidGeometryMotion._axisZ
+  name: _axisZ
+  href: api/NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion__axisZ
+  commentId: F:NiceGraphicLibrary.RigidGeometryMotion._axisZ
+  fullName: NiceGraphicLibrary.RigidGeometryMotion._axisZ
+  nameWithType: RigidGeometryMotion._axisZ
+- uid: NiceGraphicLibrary.RigidGeometryMotion._movement
+  name: _movement
+  href: api/NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion__movement
+  commentId: F:NiceGraphicLibrary.RigidGeometryMotion._movement
+  fullName: NiceGraphicLibrary.RigidGeometryMotion._movement
+  nameWithType: RigidGeometryMotion._movement
+- uid: NiceGraphicLibrary.RigidGeometryMotion._rb
+  name: _rb
+  href: api/NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion__rb
+  commentId: F:NiceGraphicLibrary.RigidGeometryMotion._rb
+  fullName: NiceGraphicLibrary.RigidGeometryMotion._rb
+  nameWithType: RigidGeometryMotion._rb
+- uid: NiceGraphicLibrary.RigidGeometryMotion.ApplyMovement
+  name: ApplyMovement()
+  href: api/NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_ApplyMovement
+  commentId: M:NiceGraphicLibrary.RigidGeometryMotion.ApplyMovement
+  fullName: NiceGraphicLibrary.RigidGeometryMotion.ApplyMovement()
+  nameWithType: RigidGeometryMotion.ApplyMovement()
+- uid: NiceGraphicLibrary.RigidGeometryMotion.ApplyMovement*
+  name: ApplyMovement
+  href: api/NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_ApplyMovement_
+  commentId: Overload:NiceGraphicLibrary.RigidGeometryMotion.ApplyMovement
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.RigidGeometryMotion.ApplyMovement
+  nameWithType: RigidGeometryMotion.ApplyMovement
+- uid: NiceGraphicLibrary.RigidGeometryMotion.ClampInput(System.Single)
+  name: ClampInput(Single)
+  href: api/NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_ClampInput_System_Single_
+  commentId: M:NiceGraphicLibrary.RigidGeometryMotion.ClampInput(System.Single)
+  fullName: NiceGraphicLibrary.RigidGeometryMotion.ClampInput(System.Single)
+  nameWithType: RigidGeometryMotion.ClampInput(Single)
+- uid: NiceGraphicLibrary.RigidGeometryMotion.ClampInput*
+  name: ClampInput
+  href: api/NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_ClampInput_
+  commentId: Overload:NiceGraphicLibrary.RigidGeometryMotion.ClampInput
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.RigidGeometryMotion.ClampInput
+  nameWithType: RigidGeometryMotion.ClampInput
+- uid: NiceGraphicLibrary.RigidGeometryMotion.FixedUpdate
+  name: FixedUpdate()
+  href: api/NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_FixedUpdate
+  commentId: M:NiceGraphicLibrary.RigidGeometryMotion.FixedUpdate
+  fullName: NiceGraphicLibrary.RigidGeometryMotion.FixedUpdate()
+  nameWithType: RigidGeometryMotion.FixedUpdate()
+- uid: NiceGraphicLibrary.RigidGeometryMotion.FixedUpdate*
+  name: FixedUpdate
+  href: api/NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_FixedUpdate_
+  commentId: Overload:NiceGraphicLibrary.RigidGeometryMotion.FixedUpdate
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.RigidGeometryMotion.FixedUpdate
+  nameWithType: RigidGeometryMotion.FixedUpdate
+- uid: NiceGraphicLibrary.RigidGeometryMotion.OnXMotion(System.Single)
+  name: OnXMotion(Single)
+  href: api/NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_OnXMotion_System_Single_
+  commentId: M:NiceGraphicLibrary.RigidGeometryMotion.OnXMotion(System.Single)
+  fullName: NiceGraphicLibrary.RigidGeometryMotion.OnXMotion(System.Single)
+  nameWithType: RigidGeometryMotion.OnXMotion(Single)
+- uid: NiceGraphicLibrary.RigidGeometryMotion.OnXMotion*
+  name: OnXMotion
+  href: api/NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_OnXMotion_
+  commentId: Overload:NiceGraphicLibrary.RigidGeometryMotion.OnXMotion
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.RigidGeometryMotion.OnXMotion
+  nameWithType: RigidGeometryMotion.OnXMotion
+- uid: NiceGraphicLibrary.RigidGeometryMotion.OnYMotion(System.Single)
+  name: OnYMotion(Single)
+  href: api/NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_OnYMotion_System_Single_
+  commentId: M:NiceGraphicLibrary.RigidGeometryMotion.OnYMotion(System.Single)
+  fullName: NiceGraphicLibrary.RigidGeometryMotion.OnYMotion(System.Single)
+  nameWithType: RigidGeometryMotion.OnYMotion(Single)
+- uid: NiceGraphicLibrary.RigidGeometryMotion.OnYMotion*
+  name: OnYMotion
+  href: api/NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_OnYMotion_
+  commentId: Overload:NiceGraphicLibrary.RigidGeometryMotion.OnYMotion
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.RigidGeometryMotion.OnYMotion
+  nameWithType: RigidGeometryMotion.OnYMotion
+- uid: NiceGraphicLibrary.RigidGeometryMotion.OnZMotion(System.Single)
+  name: OnZMotion(Single)
+  href: api/NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_OnZMotion_System_Single_
+  commentId: M:NiceGraphicLibrary.RigidGeometryMotion.OnZMotion(System.Single)
+  fullName: NiceGraphicLibrary.RigidGeometryMotion.OnZMotion(System.Single)
+  nameWithType: RigidGeometryMotion.OnZMotion(Single)
+- uid: NiceGraphicLibrary.RigidGeometryMotion.OnZMotion*
+  name: OnZMotion
+  href: api/NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_OnZMotion_
+  commentId: Overload:NiceGraphicLibrary.RigidGeometryMotion.OnZMotion
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.RigidGeometryMotion.OnZMotion
+  nameWithType: RigidGeometryMotion.OnZMotion
+- uid: NiceGraphicLibrary.RigidGeometryMotion.ProcessAxis
+  name: ProcessAxis()
+  href: api/NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_ProcessAxis
+  commentId: M:NiceGraphicLibrary.RigidGeometryMotion.ProcessAxis
+  fullName: NiceGraphicLibrary.RigidGeometryMotion.ProcessAxis()
+  nameWithType: RigidGeometryMotion.ProcessAxis()
+- uid: NiceGraphicLibrary.RigidGeometryMotion.ProcessAxis*
+  name: ProcessAxis
+  href: api/NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_ProcessAxis_
+  commentId: Overload:NiceGraphicLibrary.RigidGeometryMotion.ProcessAxis
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.RigidGeometryMotion.ProcessAxis
+  nameWithType: RigidGeometryMotion.ProcessAxis
+- uid: NiceGraphicLibrary.RigidGeometryMotion.ProcessGlobalAxis
+  name: ProcessGlobalAxis()
+  href: api/NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_ProcessGlobalAxis
+  commentId: M:NiceGraphicLibrary.RigidGeometryMotion.ProcessGlobalAxis
+  fullName: NiceGraphicLibrary.RigidGeometryMotion.ProcessGlobalAxis()
+  nameWithType: RigidGeometryMotion.ProcessGlobalAxis()
+- uid: NiceGraphicLibrary.RigidGeometryMotion.ProcessGlobalAxis*
+  name: ProcessGlobalAxis
+  href: api/NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_ProcessGlobalAxis_
+  commentId: Overload:NiceGraphicLibrary.RigidGeometryMotion.ProcessGlobalAxis
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.RigidGeometryMotion.ProcessGlobalAxis
+  nameWithType: RigidGeometryMotion.ProcessGlobalAxis
+- uid: NiceGraphicLibrary.RigidGeometryMotion.ProcessLocalAxis
+  name: ProcessLocalAxis()
+  href: api/NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_ProcessLocalAxis
+  commentId: M:NiceGraphicLibrary.RigidGeometryMotion.ProcessLocalAxis
+  fullName: NiceGraphicLibrary.RigidGeometryMotion.ProcessLocalAxis()
+  nameWithType: RigidGeometryMotion.ProcessLocalAxis()
+- uid: NiceGraphicLibrary.RigidGeometryMotion.ProcessLocalAxis*
+  name: ProcessLocalAxis
+  href: api/NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_ProcessLocalAxis_
+  commentId: Overload:NiceGraphicLibrary.RigidGeometryMotion.ProcessLocalAxis
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.RigidGeometryMotion.ProcessLocalAxis
+  nameWithType: RigidGeometryMotion.ProcessLocalAxis
+- uid: NiceGraphicLibrary.RigidGeometryMotion.ProcessMovementAxis
+  name: ProcessMovementAxis()
+  href: api/NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_ProcessMovementAxis
+  commentId: M:NiceGraphicLibrary.RigidGeometryMotion.ProcessMovementAxis
+  fullName: NiceGraphicLibrary.RigidGeometryMotion.ProcessMovementAxis()
+  nameWithType: RigidGeometryMotion.ProcessMovementAxis()
+- uid: NiceGraphicLibrary.RigidGeometryMotion.ProcessMovementAxis*
+  name: ProcessMovementAxis
+  href: api/NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_ProcessMovementAxis_
+  commentId: Overload:NiceGraphicLibrary.RigidGeometryMotion.ProcessMovementAxis
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.RigidGeometryMotion.ProcessMovementAxis
+  nameWithType: RigidGeometryMotion.ProcessMovementAxis
+- uid: NiceGraphicLibrary.RigidGeometryMotion.Speed
+  name: Speed
+  href: api/NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_Speed
+  commentId: P:NiceGraphicLibrary.RigidGeometryMotion.Speed
+  fullName: NiceGraphicLibrary.RigidGeometryMotion.Speed
+  nameWithType: RigidGeometryMotion.Speed
+- uid: NiceGraphicLibrary.RigidGeometryMotion.Speed*
+  name: Speed
+  href: api/NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_Speed_
+  commentId: Overload:NiceGraphicLibrary.RigidGeometryMotion.Speed
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.RigidGeometryMotion.Speed
+  nameWithType: RigidGeometryMotion.Speed
+- uid: NiceGraphicLibrary.RigidGeometryMotion.SpeedModifier
+  name: SpeedModifier
+  href: api/NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_SpeedModifier
+  commentId: P:NiceGraphicLibrary.RigidGeometryMotion.SpeedModifier
+  fullName: NiceGraphicLibrary.RigidGeometryMotion.SpeedModifier
+  nameWithType: RigidGeometryMotion.SpeedModifier
+- uid: NiceGraphicLibrary.RigidGeometryMotion.SpeedModifier*
+  name: SpeedModifier
+  href: api/NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_SpeedModifier_
+  commentId: Overload:NiceGraphicLibrary.RigidGeometryMotion.SpeedModifier
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.RigidGeometryMotion.SpeedModifier
+  nameWithType: RigidGeometryMotion.SpeedModifier
+- uid: NiceGraphicLibrary.RigidGeometryMotion.Start
+  name: Start()
+  href: api/NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_Start
+  commentId: M:NiceGraphicLibrary.RigidGeometryMotion.Start
+  fullName: NiceGraphicLibrary.RigidGeometryMotion.Start()
+  nameWithType: RigidGeometryMotion.Start()
+- uid: NiceGraphicLibrary.RigidGeometryMotion.Start*
+  name: Start
+  href: api/NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_Start_
+  commentId: Overload:NiceGraphicLibrary.RigidGeometryMotion.Start
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.RigidGeometryMotion.Start
+  nameWithType: RigidGeometryMotion.Start
+- uid: NiceGraphicLibrary.RigidGeometryMotion.Velocity
+  name: Velocity
+  href: api/NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_Velocity
+  commentId: P:NiceGraphicLibrary.RigidGeometryMotion.Velocity
+  fullName: NiceGraphicLibrary.RigidGeometryMotion.Velocity
+  nameWithType: RigidGeometryMotion.Velocity
+- uid: NiceGraphicLibrary.RigidGeometryMotion.Velocity*
+  name: Velocity
+  href: api/NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_Velocity_
+  commentId: Overload:NiceGraphicLibrary.RigidGeometryMotion.Velocity
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.RigidGeometryMotion.Velocity
+  nameWithType: RigidGeometryMotion.Velocity
+- uid: NiceGraphicLibrary.RigidInterpolatedMotion
+  name: RigidInterpolatedMotion
+  href: api/NiceGraphicLibrary.RigidInterpolatedMotion.html
+  commentId: T:NiceGraphicLibrary.RigidInterpolatedMotion
+  fullName: NiceGraphicLibrary.RigidInterpolatedMotion
+  nameWithType: RigidInterpolatedMotion
+- uid: NiceGraphicLibrary.RigidInterpolatedMotion._CounterDuration
+  name: _CounterDuration
+  href: api/NiceGraphicLibrary.RigidInterpolatedMotion.html#NiceGraphicLibrary_RigidInterpolatedMotion__CounterDuration
+  commentId: F:NiceGraphicLibrary.RigidInterpolatedMotion._CounterDuration
+  fullName: NiceGraphicLibrary.RigidInterpolatedMotion._CounterDuration
+  nameWithType: RigidInterpolatedMotion._CounterDuration
+- uid: NiceGraphicLibrary.RigidInterpolatedMotion._currentCounterDurationX
+  name: _currentCounterDurationX
+  href: api/NiceGraphicLibrary.RigidInterpolatedMotion.html#NiceGraphicLibrary_RigidInterpolatedMotion__currentCounterDurationX
+  commentId: F:NiceGraphicLibrary.RigidInterpolatedMotion._currentCounterDurationX
+  fullName: NiceGraphicLibrary.RigidInterpolatedMotion._currentCounterDurationX
+  nameWithType: RigidInterpolatedMotion._currentCounterDurationX
+- uid: NiceGraphicLibrary.RigidInterpolatedMotion._currentCounterDurationY
+  name: _currentCounterDurationY
+  href: api/NiceGraphicLibrary.RigidInterpolatedMotion.html#NiceGraphicLibrary_RigidInterpolatedMotion__currentCounterDurationY
+  commentId: F:NiceGraphicLibrary.RigidInterpolatedMotion._currentCounterDurationY
+  fullName: NiceGraphicLibrary.RigidInterpolatedMotion._currentCounterDurationY
+  nameWithType: RigidInterpolatedMotion._currentCounterDurationY
+- uid: NiceGraphicLibrary.RigidInterpolatedMotion._currentCounterDurationZ
+  name: _currentCounterDurationZ
+  href: api/NiceGraphicLibrary.RigidInterpolatedMotion.html#NiceGraphicLibrary_RigidInterpolatedMotion__currentCounterDurationZ
+  commentId: F:NiceGraphicLibrary.RigidInterpolatedMotion._currentCounterDurationZ
+  fullName: NiceGraphicLibrary.RigidInterpolatedMotion._currentCounterDurationZ
+  nameWithType: RigidInterpolatedMotion._currentCounterDurationZ
+- uid: NiceGraphicLibrary.RigidInterpolatedMotion._currentDurationX
+  name: _currentDurationX
+  href: api/NiceGraphicLibrary.RigidInterpolatedMotion.html#NiceGraphicLibrary_RigidInterpolatedMotion__currentDurationX
+  commentId: F:NiceGraphicLibrary.RigidInterpolatedMotion._currentDurationX
+  fullName: NiceGraphicLibrary.RigidInterpolatedMotion._currentDurationX
+  nameWithType: RigidInterpolatedMotion._currentDurationX
+- uid: NiceGraphicLibrary.RigidInterpolatedMotion._currentDurationY
+  name: _currentDurationY
+  href: api/NiceGraphicLibrary.RigidInterpolatedMotion.html#NiceGraphicLibrary_RigidInterpolatedMotion__currentDurationY
+  commentId: F:NiceGraphicLibrary.RigidInterpolatedMotion._currentDurationY
+  fullName: NiceGraphicLibrary.RigidInterpolatedMotion._currentDurationY
+  nameWithType: RigidInterpolatedMotion._currentDurationY
+- uid: NiceGraphicLibrary.RigidInterpolatedMotion._currentDurationZ
+  name: _currentDurationZ
+  href: api/NiceGraphicLibrary.RigidInterpolatedMotion.html#NiceGraphicLibrary_RigidInterpolatedMotion__currentDurationZ
+  commentId: F:NiceGraphicLibrary.RigidInterpolatedMotion._currentDurationZ
+  fullName: NiceGraphicLibrary.RigidInterpolatedMotion._currentDurationZ
+  nameWithType: RigidInterpolatedMotion._currentDurationZ
+- uid: NiceGraphicLibrary.RigidInterpolatedMotion._currentMovingStateX
+  name: _currentMovingStateX
+  href: api/NiceGraphicLibrary.RigidInterpolatedMotion.html#NiceGraphicLibrary_RigidInterpolatedMotion__currentMovingStateX
+  commentId: F:NiceGraphicLibrary.RigidInterpolatedMotion._currentMovingStateX
+  fullName: NiceGraphicLibrary.RigidInterpolatedMotion._currentMovingStateX
+  nameWithType: RigidInterpolatedMotion._currentMovingStateX
+- uid: NiceGraphicLibrary.RigidInterpolatedMotion._currentMovingStateY
+  name: _currentMovingStateY
+  href: api/NiceGraphicLibrary.RigidInterpolatedMotion.html#NiceGraphicLibrary_RigidInterpolatedMotion__currentMovingStateY
+  commentId: F:NiceGraphicLibrary.RigidInterpolatedMotion._currentMovingStateY
+  fullName: NiceGraphicLibrary.RigidInterpolatedMotion._currentMovingStateY
+  nameWithType: RigidInterpolatedMotion._currentMovingStateY
+- uid: NiceGraphicLibrary.RigidInterpolatedMotion._currentMovingStateZ
+  name: _currentMovingStateZ
+  href: api/NiceGraphicLibrary.RigidInterpolatedMotion.html#NiceGraphicLibrary_RigidInterpolatedMotion__currentMovingStateZ
+  commentId: F:NiceGraphicLibrary.RigidInterpolatedMotion._currentMovingStateZ
+  fullName: NiceGraphicLibrary.RigidInterpolatedMotion._currentMovingStateZ
+  nameWithType: RigidInterpolatedMotion._currentMovingStateZ
+- uid: NiceGraphicLibrary.RigidInterpolatedMotion._currentSlowingDurationX
+  name: _currentSlowingDurationX
+  href: api/NiceGraphicLibrary.RigidInterpolatedMotion.html#NiceGraphicLibrary_RigidInterpolatedMotion__currentSlowingDurationX
+  commentId: F:NiceGraphicLibrary.RigidInterpolatedMotion._currentSlowingDurationX
+  fullName: NiceGraphicLibrary.RigidInterpolatedMotion._currentSlowingDurationX
+  nameWithType: RigidInterpolatedMotion._currentSlowingDurationX
+- uid: NiceGraphicLibrary.RigidInterpolatedMotion._currentSlowingDurationY
+  name: _currentSlowingDurationY
+  href: api/NiceGraphicLibrary.RigidInterpolatedMotion.html#NiceGraphicLibrary_RigidInterpolatedMotion__currentSlowingDurationY
+  commentId: F:NiceGraphicLibrary.RigidInterpolatedMotion._currentSlowingDurationY
+  fullName: NiceGraphicLibrary.RigidInterpolatedMotion._currentSlowingDurationY
+  nameWithType: RigidInterpolatedMotion._currentSlowingDurationY
+- uid: NiceGraphicLibrary.RigidInterpolatedMotion._currentSlowingDurationZ
+  name: _currentSlowingDurationZ
+  href: api/NiceGraphicLibrary.RigidInterpolatedMotion.html#NiceGraphicLibrary_RigidInterpolatedMotion__currentSlowingDurationZ
+  commentId: F:NiceGraphicLibrary.RigidInterpolatedMotion._currentSlowingDurationZ
+  fullName: NiceGraphicLibrary.RigidInterpolatedMotion._currentSlowingDurationZ
+  nameWithType: RigidInterpolatedMotion._currentSlowingDurationZ
+- uid: NiceGraphicLibrary.RigidInterpolatedMotion._currentSpeedX
+  name: _currentSpeedX
+  href: api/NiceGraphicLibrary.RigidInterpolatedMotion.html#NiceGraphicLibrary_RigidInterpolatedMotion__currentSpeedX
+  commentId: F:NiceGraphicLibrary.RigidInterpolatedMotion._currentSpeedX
+  fullName: NiceGraphicLibrary.RigidInterpolatedMotion._currentSpeedX
+  nameWithType: RigidInterpolatedMotion._currentSpeedX
+- uid: NiceGraphicLibrary.RigidInterpolatedMotion._currentSpeedY
+  name: _currentSpeedY
+  href: api/NiceGraphicLibrary.RigidInterpolatedMotion.html#NiceGraphicLibrary_RigidInterpolatedMotion__currentSpeedY
+  commentId: F:NiceGraphicLibrary.RigidInterpolatedMotion._currentSpeedY
+  fullName: NiceGraphicLibrary.RigidInterpolatedMotion._currentSpeedY
+  nameWithType: RigidInterpolatedMotion._currentSpeedY
+- uid: NiceGraphicLibrary.RigidInterpolatedMotion._currentSpeedZ
+  name: _currentSpeedZ
+  href: api/NiceGraphicLibrary.RigidInterpolatedMotion.html#NiceGraphicLibrary_RigidInterpolatedMotion__currentSpeedZ
+  commentId: F:NiceGraphicLibrary.RigidInterpolatedMotion._currentSpeedZ
+  fullName: NiceGraphicLibrary.RigidInterpolatedMotion._currentSpeedZ
+  nameWithType: RigidInterpolatedMotion._currentSpeedZ
+- uid: NiceGraphicLibrary.RigidInterpolatedMotion._Duration
+  name: _Duration
+  href: api/NiceGraphicLibrary.RigidInterpolatedMotion.html#NiceGraphicLibrary_RigidInterpolatedMotion__Duration
+  commentId: F:NiceGraphicLibrary.RigidInterpolatedMotion._Duration
+  fullName: NiceGraphicLibrary.RigidInterpolatedMotion._Duration
+  nameWithType: RigidInterpolatedMotion._Duration
+- uid: NiceGraphicLibrary.RigidInterpolatedMotion._SlowingDuration
+  name: _SlowingDuration
+  href: api/NiceGraphicLibrary.RigidInterpolatedMotion.html#NiceGraphicLibrary_RigidInterpolatedMotion__SlowingDuration
+  commentId: F:NiceGraphicLibrary.RigidInterpolatedMotion._SlowingDuration
+  fullName: NiceGraphicLibrary.RigidInterpolatedMotion._SlowingDuration
+  nameWithType: RigidInterpolatedMotion._SlowingDuration
+- uid: NiceGraphicLibrary.RigidInterpolatedMotion.CalculateMotionCycle(NiceGraphicLibrary.MovingState@,System.Single@,System.Single@,System.Single@,System.Single@,System.Single@,System.Func{System.Single,System.Single,System.Single},System.Func{System.Single,System.Single,System.Single})
+  name: CalculateMotionCycle(ref MovingState, in Single, ref Single, ref Single, ref Single, ref Single, Func<Single, Single, Single>, Func<Single, Single, Single>)
+  href: api/NiceGraphicLibrary.RigidInterpolatedMotion.html#NiceGraphicLibrary_RigidInterpolatedMotion_CalculateMotionCycle_NiceGraphicLibrary_MovingState__System_Single__System_Single__System_Single__System_Single__System_Single__System_Func_System_Single_System_Single_System_Single__System_Func_System_Single_System_Single_System_Single__
+  commentId: M:NiceGraphicLibrary.RigidInterpolatedMotion.CalculateMotionCycle(NiceGraphicLibrary.MovingState@,System.Single@,System.Single@,System.Single@,System.Single@,System.Single@,System.Func{System.Single,System.Single,System.Single},System.Func{System.Single,System.Single,System.Single})
+  name.vb: CalculateMotionCycle(ByRef MovingState, ByRef Single, ByRef Single, ByRef Single, ByRef Single, ByRef Single, Func(Of Single, Single, Single), Func(Of Single, Single, Single))
+  fullName: NiceGraphicLibrary.RigidInterpolatedMotion.CalculateMotionCycle(ref NiceGraphicLibrary.MovingState, in System.Single, ref System.Single, ref System.Single, ref System.Single, ref System.Single, System.Func<System.Single, System.Single, System.Single>, System.Func<System.Single, System.Single, System.Single>)
+  fullName.vb: NiceGraphicLibrary.RigidInterpolatedMotion.CalculateMotionCycle(ByRef NiceGraphicLibrary.MovingState, ByRef System.Single, ByRef System.Single, ByRef System.Single, ByRef System.Single, ByRef System.Single, System.Func(Of System.Single, System.Single, System.Single), System.Func(Of System.Single, System.Single, System.Single))
+  nameWithType: RigidInterpolatedMotion.CalculateMotionCycle(ref MovingState, in Single, ref Single, ref Single, ref Single, ref Single, Func<Single, Single, Single>, Func<Single, Single, Single>)
+  nameWithType.vb: RigidInterpolatedMotion.CalculateMotionCycle(ByRef MovingState, ByRef Single, ByRef Single, ByRef Single, ByRef Single, ByRef Single, Func(Of Single, Single, Single), Func(Of Single, Single, Single))
+- uid: NiceGraphicLibrary.RigidInterpolatedMotion.CalculateMotionCycle*
+  name: CalculateMotionCycle
+  href: api/NiceGraphicLibrary.RigidInterpolatedMotion.html#NiceGraphicLibrary_RigidInterpolatedMotion_CalculateMotionCycle_
+  commentId: Overload:NiceGraphicLibrary.RigidInterpolatedMotion.CalculateMotionCycle
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.RigidInterpolatedMotion.CalculateMotionCycle
+  nameWithType: RigidInterpolatedMotion.CalculateMotionCycle
+- uid: NiceGraphicLibrary.RigidInterpolatedMotion.CurrentMovingStateX
+  name: CurrentMovingStateX
+  href: api/NiceGraphicLibrary.RigidInterpolatedMotion.html#NiceGraphicLibrary_RigidInterpolatedMotion_CurrentMovingStateX
+  commentId: P:NiceGraphicLibrary.RigidInterpolatedMotion.CurrentMovingStateX
+  fullName: NiceGraphicLibrary.RigidInterpolatedMotion.CurrentMovingStateX
+  nameWithType: RigidInterpolatedMotion.CurrentMovingStateX
+- uid: NiceGraphicLibrary.RigidInterpolatedMotion.CurrentMovingStateX*
+  name: CurrentMovingStateX
+  href: api/NiceGraphicLibrary.RigidInterpolatedMotion.html#NiceGraphicLibrary_RigidInterpolatedMotion_CurrentMovingStateX_
+  commentId: Overload:NiceGraphicLibrary.RigidInterpolatedMotion.CurrentMovingStateX
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.RigidInterpolatedMotion.CurrentMovingStateX
+  nameWithType: RigidInterpolatedMotion.CurrentMovingStateX
+- uid: NiceGraphicLibrary.RigidInterpolatedMotion.CurrentMovingStateY
+  name: CurrentMovingStateY
+  href: api/NiceGraphicLibrary.RigidInterpolatedMotion.html#NiceGraphicLibrary_RigidInterpolatedMotion_CurrentMovingStateY
+  commentId: P:NiceGraphicLibrary.RigidInterpolatedMotion.CurrentMovingStateY
+  fullName: NiceGraphicLibrary.RigidInterpolatedMotion.CurrentMovingStateY
+  nameWithType: RigidInterpolatedMotion.CurrentMovingStateY
+- uid: NiceGraphicLibrary.RigidInterpolatedMotion.CurrentMovingStateY*
+  name: CurrentMovingStateY
+  href: api/NiceGraphicLibrary.RigidInterpolatedMotion.html#NiceGraphicLibrary_RigidInterpolatedMotion_CurrentMovingStateY_
+  commentId: Overload:NiceGraphicLibrary.RigidInterpolatedMotion.CurrentMovingStateY
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.RigidInterpolatedMotion.CurrentMovingStateY
+  nameWithType: RigidInterpolatedMotion.CurrentMovingStateY
+- uid: NiceGraphicLibrary.RigidInterpolatedMotion.CurrentMovingStateZ
+  name: CurrentMovingStateZ
+  href: api/NiceGraphicLibrary.RigidInterpolatedMotion.html#NiceGraphicLibrary_RigidInterpolatedMotion_CurrentMovingStateZ
+  commentId: P:NiceGraphicLibrary.RigidInterpolatedMotion.CurrentMovingStateZ
+  fullName: NiceGraphicLibrary.RigidInterpolatedMotion.CurrentMovingStateZ
+  nameWithType: RigidInterpolatedMotion.CurrentMovingStateZ
+- uid: NiceGraphicLibrary.RigidInterpolatedMotion.CurrentMovingStateZ*
+  name: CurrentMovingStateZ
+  href: api/NiceGraphicLibrary.RigidInterpolatedMotion.html#NiceGraphicLibrary_RigidInterpolatedMotion_CurrentMovingStateZ_
+  commentId: Overload:NiceGraphicLibrary.RigidInterpolatedMotion.CurrentMovingStateZ
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.RigidInterpolatedMotion.CurrentMovingStateZ
+  nameWithType: RigidInterpolatedMotion.CurrentMovingStateZ
+- uid: NiceGraphicLibrary.RigidInterpolatedMovement
+  name: RigidInterpolatedMovement
+  href: api/NiceGraphicLibrary.RigidInterpolatedMovement.html
+  commentId: T:NiceGraphicLibrary.RigidInterpolatedMovement
+  fullName: NiceGraphicLibrary.RigidInterpolatedMovement
+  nameWithType: RigidInterpolatedMovement
+- uid: NiceGraphicLibrary.RigidInterpolatedMovement.ApplyMovement
+  name: ApplyMovement()
+  href: api/NiceGraphicLibrary.RigidInterpolatedMovement.html#NiceGraphicLibrary_RigidInterpolatedMovement_ApplyMovement
+  commentId: M:NiceGraphicLibrary.RigidInterpolatedMovement.ApplyMovement
+  fullName: NiceGraphicLibrary.RigidInterpolatedMovement.ApplyMovement()
+  nameWithType: RigidInterpolatedMovement.ApplyMovement()
+- uid: NiceGraphicLibrary.RigidInterpolatedMovement.ApplyMovement*
+  name: ApplyMovement
+  href: api/NiceGraphicLibrary.RigidInterpolatedMovement.html#NiceGraphicLibrary_RigidInterpolatedMovement_ApplyMovement_
+  commentId: Overload:NiceGraphicLibrary.RigidInterpolatedMovement.ApplyMovement
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.RigidInterpolatedMovement.ApplyMovement
+  nameWithType: RigidInterpolatedMovement.ApplyMovement
+- uid: NiceGraphicLibrary.RigidInterpolatedMovement.ProcessAxis
+  name: ProcessAxis()
+  href: api/NiceGraphicLibrary.RigidInterpolatedMovement.html#NiceGraphicLibrary_RigidInterpolatedMovement_ProcessAxis
+  commentId: M:NiceGraphicLibrary.RigidInterpolatedMovement.ProcessAxis
+  fullName: NiceGraphicLibrary.RigidInterpolatedMovement.ProcessAxis()
+  nameWithType: RigidInterpolatedMovement.ProcessAxis()
+- uid: NiceGraphicLibrary.RigidInterpolatedMovement.ProcessAxis*
+  name: ProcessAxis
+  href: api/NiceGraphicLibrary.RigidInterpolatedMovement.html#NiceGraphicLibrary_RigidInterpolatedMovement_ProcessAxis_
+  commentId: Overload:NiceGraphicLibrary.RigidInterpolatedMovement.ProcessAxis
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.RigidInterpolatedMovement.ProcessAxis
+  nameWithType: RigidInterpolatedMovement.ProcessAxis
+- uid: NiceGraphicLibrary.RigidInterpolatedMovement.Start
+  name: Start()
+  href: api/NiceGraphicLibrary.RigidInterpolatedMovement.html#NiceGraphicLibrary_RigidInterpolatedMovement_Start
+  commentId: M:NiceGraphicLibrary.RigidInterpolatedMovement.Start
+  fullName: NiceGraphicLibrary.RigidInterpolatedMovement.Start()
+  nameWithType: RigidInterpolatedMovement.Start()
+- uid: NiceGraphicLibrary.RigidInterpolatedMovement.Start*
+  name: Start
+  href: api/NiceGraphicLibrary.RigidInterpolatedMovement.html#NiceGraphicLibrary_RigidInterpolatedMovement_Start_
+  commentId: Overload:NiceGraphicLibrary.RigidInterpolatedMovement.Start
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.RigidInterpolatedMovement.Start
+  nameWithType: RigidInterpolatedMovement.Start
+- uid: NiceGraphicLibrary.RigidStaticMovment
+  name: RigidStaticMovment
+  href: api/NiceGraphicLibrary.RigidStaticMovment.html
+  commentId: T:NiceGraphicLibrary.RigidStaticMovment
+  fullName: NiceGraphicLibrary.RigidStaticMovment
+  nameWithType: RigidStaticMovment
+- uid: NiceGraphicLibrary.RigidStaticMovment.ApplyMovement
+  name: ApplyMovement()
+  href: api/NiceGraphicLibrary.RigidStaticMovment.html#NiceGraphicLibrary_RigidStaticMovment_ApplyMovement
+  commentId: M:NiceGraphicLibrary.RigidStaticMovment.ApplyMovement
+  fullName: NiceGraphicLibrary.RigidStaticMovment.ApplyMovement()
+  nameWithType: RigidStaticMovment.ApplyMovement()
+- uid: NiceGraphicLibrary.RigidStaticMovment.ApplyMovement*
+  name: ApplyMovement
+  href: api/NiceGraphicLibrary.RigidStaticMovment.html#NiceGraphicLibrary_RigidStaticMovment_ApplyMovement_
+  commentId: Overload:NiceGraphicLibrary.RigidStaticMovment.ApplyMovement
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.RigidStaticMovment.ApplyMovement
+  nameWithType: RigidStaticMovment.ApplyMovement
+- uid: NiceGraphicLibrary.RigidStaticMovment.ProcessAxis
+  name: ProcessAxis()
+  href: api/NiceGraphicLibrary.RigidStaticMovment.html#NiceGraphicLibrary_RigidStaticMovment_ProcessAxis
+  commentId: M:NiceGraphicLibrary.RigidStaticMovment.ProcessAxis
+  fullName: NiceGraphicLibrary.RigidStaticMovment.ProcessAxis()
+  nameWithType: RigidStaticMovment.ProcessAxis()
+- uid: NiceGraphicLibrary.RigidStaticMovment.ProcessAxis*
+  name: ProcessAxis
+  href: api/NiceGraphicLibrary.RigidStaticMovment.html#NiceGraphicLibrary_RigidStaticMovment_ProcessAxis_
+  commentId: Overload:NiceGraphicLibrary.RigidStaticMovment.ProcessAxis
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.RigidStaticMovment.ProcessAxis
+  nameWithType: RigidStaticMovment.ProcessAxis
+- uid: NiceGraphicLibrary.RigidStaticRotation
+  name: RigidStaticRotation
+  href: api/NiceGraphicLibrary.RigidStaticRotation.html
+  commentId: T:NiceGraphicLibrary.RigidStaticRotation
+  fullName: NiceGraphicLibrary.RigidStaticRotation
+  nameWithType: RigidStaticRotation
+- uid: NiceGraphicLibrary.RigidStaticRotation.ApplyMovement
+  name: ApplyMovement()
+  href: api/NiceGraphicLibrary.RigidStaticRotation.html#NiceGraphicLibrary_RigidStaticRotation_ApplyMovement
+  commentId: M:NiceGraphicLibrary.RigidStaticRotation.ApplyMovement
+  fullName: NiceGraphicLibrary.RigidStaticRotation.ApplyMovement()
+  nameWithType: RigidStaticRotation.ApplyMovement()
+- uid: NiceGraphicLibrary.RigidStaticRotation.ApplyMovement*
+  name: ApplyMovement
+  href: api/NiceGraphicLibrary.RigidStaticRotation.html#NiceGraphicLibrary_RigidStaticRotation_ApplyMovement_
+  commentId: Overload:NiceGraphicLibrary.RigidStaticRotation.ApplyMovement
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.RigidStaticRotation.ApplyMovement
+  nameWithType: RigidStaticRotation.ApplyMovement
+- uid: NiceGraphicLibrary.RigidStaticRotation.ProcessAxis
+  name: ProcessAxis()
+  href: api/NiceGraphicLibrary.RigidStaticRotation.html#NiceGraphicLibrary_RigidStaticRotation_ProcessAxis
+  commentId: M:NiceGraphicLibrary.RigidStaticRotation.ProcessAxis
+  fullName: NiceGraphicLibrary.RigidStaticRotation.ProcessAxis()
+  nameWithType: RigidStaticRotation.ProcessAxis()
+- uid: NiceGraphicLibrary.RigidStaticRotation.ProcessAxis*
+  name: ProcessAxis
+  href: api/NiceGraphicLibrary.RigidStaticRotation.html#NiceGraphicLibrary_RigidStaticRotation_ProcessAxis_
+  commentId: Overload:NiceGraphicLibrary.RigidStaticRotation.ProcessAxis
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.RigidStaticRotation.ProcessAxis
+  nameWithType: RigidStaticRotation.ProcessAxis
+- uid: NiceGraphicLibrary.StopableCoroutines
+  name: StopableCoroutines
+  href: api/NiceGraphicLibrary.StopableCoroutines.html
+  commentId: T:NiceGraphicLibrary.StopableCoroutines
+  fullName: NiceGraphicLibrary.StopableCoroutines
+  nameWithType: StopableCoroutines
+- uid: NiceGraphicLibrary.StopableCoroutines.StopAllCoroutines
+  name: StopAllCoroutines()
+  href: api/NiceGraphicLibrary.StopableCoroutines.html#NiceGraphicLibrary_StopableCoroutines_StopAllCoroutines
+  commentId: M:NiceGraphicLibrary.StopableCoroutines.StopAllCoroutines
+  fullName: NiceGraphicLibrary.StopableCoroutines.StopAllCoroutines()
+  nameWithType: StopableCoroutines.StopAllCoroutines()
+- uid: NiceGraphicLibrary.StopableCoroutines.StopAllCoroutines*
+  name: StopAllCoroutines
+  href: api/NiceGraphicLibrary.StopableCoroutines.html#NiceGraphicLibrary_StopableCoroutines_StopAllCoroutines_
+  commentId: Overload:NiceGraphicLibrary.StopableCoroutines.StopAllCoroutines
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.StopableCoroutines.StopAllCoroutines
+  nameWithType: StopableCoroutines.StopAllCoroutines
+- uid: NiceGraphicLibrary.StringExtension
+  name: StringExtension
+  href: api/NiceGraphicLibrary.StringExtension.html
+  commentId: T:NiceGraphicLibrary.StringExtension
+  fullName: NiceGraphicLibrary.StringExtension
+  nameWithType: StringExtension
+- uid: NiceGraphicLibrary.StringExtension.Bold(System.String)
+  name: Bold(String)
+  href: api/NiceGraphicLibrary.StringExtension.html#NiceGraphicLibrary_StringExtension_Bold_System_String_
+  commentId: M:NiceGraphicLibrary.StringExtension.Bold(System.String)
+  fullName: NiceGraphicLibrary.StringExtension.Bold(System.String)
+  nameWithType: StringExtension.Bold(String)
+- uid: NiceGraphicLibrary.StringExtension.Bold*
+  name: Bold
+  href: api/NiceGraphicLibrary.StringExtension.html#NiceGraphicLibrary_StringExtension_Bold_
+  commentId: Overload:NiceGraphicLibrary.StringExtension.Bold
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.StringExtension.Bold
+  nameWithType: StringExtension.Bold
+- uid: NiceGraphicLibrary.StringExtension.Italic(System.String)
+  name: Italic(String)
+  href: api/NiceGraphicLibrary.StringExtension.html#NiceGraphicLibrary_StringExtension_Italic_System_String_
+  commentId: M:NiceGraphicLibrary.StringExtension.Italic(System.String)
+  fullName: NiceGraphicLibrary.StringExtension.Italic(System.String)
+  nameWithType: StringExtension.Italic(String)
+- uid: NiceGraphicLibrary.StringExtension.Italic*
+  name: Italic
+  href: api/NiceGraphicLibrary.StringExtension.html#NiceGraphicLibrary_StringExtension_Italic_
+  commentId: Overload:NiceGraphicLibrary.StringExtension.Italic
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.StringExtension.Italic
+  nameWithType: StringExtension.Italic
+- uid: NiceGraphicLibrary.StringExtension.WithColor(System.String,UnityEngine.Color)
+  name: WithColor(String, Color)
+  href: api/NiceGraphicLibrary.StringExtension.html#NiceGraphicLibrary_StringExtension_WithColor_System_String_UnityEngine_Color_
+  commentId: M:NiceGraphicLibrary.StringExtension.WithColor(System.String,UnityEngine.Color)
+  fullName: NiceGraphicLibrary.StringExtension.WithColor(System.String, UnityEngine.Color)
+  nameWithType: StringExtension.WithColor(String, Color)
+- uid: NiceGraphicLibrary.StringExtension.WithColor*
+  name: WithColor
+  href: api/NiceGraphicLibrary.StringExtension.html#NiceGraphicLibrary_StringExtension_WithColor_
+  commentId: Overload:NiceGraphicLibrary.StringExtension.WithColor
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.StringExtension.WithColor
+  nameWithType: StringExtension.WithColor
+- uid: NiceGraphicLibrary.StringExtension.WithHexColor(System.String,System.String)
+  name: WithHexColor(String, String)
+  href: api/NiceGraphicLibrary.StringExtension.html#NiceGraphicLibrary_StringExtension_WithHexColor_System_String_System_String_
+  commentId: M:NiceGraphicLibrary.StringExtension.WithHexColor(System.String,System.String)
+  fullName: NiceGraphicLibrary.StringExtension.WithHexColor(System.String, System.String)
+  nameWithType: StringExtension.WithHexColor(String, String)
+- uid: NiceGraphicLibrary.StringExtension.WithHexColor*
+  name: WithHexColor
+  href: api/NiceGraphicLibrary.StringExtension.html#NiceGraphicLibrary_StringExtension_WithHexColor_
+  commentId: Overload:NiceGraphicLibrary.StringExtension.WithHexColor
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.StringExtension.WithHexColor
+  nameWithType: StringExtension.WithHexColor
+- uid: NiceGraphicLibrary.StringExtension.WithSize(System.String,System.Int32)
+  name: WithSize(String, Int32)
+  href: api/NiceGraphicLibrary.StringExtension.html#NiceGraphicLibrary_StringExtension_WithSize_System_String_System_Int32_
+  commentId: M:NiceGraphicLibrary.StringExtension.WithSize(System.String,System.Int32)
+  fullName: NiceGraphicLibrary.StringExtension.WithSize(System.String, System.Int32)
+  nameWithType: StringExtension.WithSize(String, Int32)
+- uid: NiceGraphicLibrary.StringExtension.WithSize*
+  name: WithSize
+  href: api/NiceGraphicLibrary.StringExtension.html#NiceGraphicLibrary_StringExtension_WithSize_
+  commentId: Overload:NiceGraphicLibrary.StringExtension.WithSize
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.StringExtension.WithSize
+  nameWithType: StringExtension.WithSize
+- uid: NiceGraphicLibrary.Utility
+  name: NiceGraphicLibrary.Utility
+  href: api/NiceGraphicLibrary.Utility.html
+  commentId: N:NiceGraphicLibrary.Utility
+  fullName: NiceGraphicLibrary.Utility
+  nameWithType: NiceGraphicLibrary.Utility
+- uid: NiceGraphicLibrary.Utility.CooldownDeltaTimer
+  name: CooldownDeltaTimer
+  href: api/NiceGraphicLibrary.Utility.CooldownDeltaTimer.html
+  commentId: T:NiceGraphicLibrary.Utility.CooldownDeltaTimer
+  fullName: NiceGraphicLibrary.Utility.CooldownDeltaTimer
+  nameWithType: CooldownDeltaTimer
+- uid: NiceGraphicLibrary.Utility.CooldownDeltaTimer.#ctor(System.Single)
+  name: CooldownDeltaTimer(Single)
+  href: api/NiceGraphicLibrary.Utility.CooldownDeltaTimer.html#NiceGraphicLibrary_Utility_CooldownDeltaTimer__ctor_System_Single_
+  commentId: M:NiceGraphicLibrary.Utility.CooldownDeltaTimer.#ctor(System.Single)
+  fullName: NiceGraphicLibrary.Utility.CooldownDeltaTimer.CooldownDeltaTimer(System.Single)
+  nameWithType: CooldownDeltaTimer.CooldownDeltaTimer(Single)
+- uid: NiceGraphicLibrary.Utility.CooldownDeltaTimer.#ctor*
+  name: CooldownDeltaTimer
+  href: api/NiceGraphicLibrary.Utility.CooldownDeltaTimer.html#NiceGraphicLibrary_Utility_CooldownDeltaTimer__ctor_
+  commentId: Overload:NiceGraphicLibrary.Utility.CooldownDeltaTimer.#ctor
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.CooldownDeltaTimer.CooldownDeltaTimer
+  nameWithType: CooldownDeltaTimer.CooldownDeltaTimer
+- uid: NiceGraphicLibrary.Utility.CooldownDeltaTimer.PassedTimeFactor
+  name: PassedTimeFactor
+  href: api/NiceGraphicLibrary.Utility.CooldownDeltaTimer.html#NiceGraphicLibrary_Utility_CooldownDeltaTimer_PassedTimeFactor
+  commentId: P:NiceGraphicLibrary.Utility.CooldownDeltaTimer.PassedTimeFactor
+  fullName: NiceGraphicLibrary.Utility.CooldownDeltaTimer.PassedTimeFactor
+  nameWithType: CooldownDeltaTimer.PassedTimeFactor
+- uid: NiceGraphicLibrary.Utility.CooldownDeltaTimer.PassedTimeFactor*
+  name: PassedTimeFactor
+  href: api/NiceGraphicLibrary.Utility.CooldownDeltaTimer.html#NiceGraphicLibrary_Utility_CooldownDeltaTimer_PassedTimeFactor_
+  commentId: Overload:NiceGraphicLibrary.Utility.CooldownDeltaTimer.PassedTimeFactor
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.CooldownDeltaTimer.PassedTimeFactor
+  nameWithType: CooldownDeltaTimer.PassedTimeFactor
+- uid: NiceGraphicLibrary.Utility.CooldownDeltaTimer.Reset
+  name: Reset()
+  href: api/NiceGraphicLibrary.Utility.CooldownDeltaTimer.html#NiceGraphicLibrary_Utility_CooldownDeltaTimer_Reset
+  commentId: M:NiceGraphicLibrary.Utility.CooldownDeltaTimer.Reset
+  fullName: NiceGraphicLibrary.Utility.CooldownDeltaTimer.Reset()
+  nameWithType: CooldownDeltaTimer.Reset()
+- uid: NiceGraphicLibrary.Utility.CooldownDeltaTimer.Reset*
+  name: Reset
+  href: api/NiceGraphicLibrary.Utility.CooldownDeltaTimer.html#NiceGraphicLibrary_Utility_CooldownDeltaTimer_Reset_
+  commentId: Overload:NiceGraphicLibrary.Utility.CooldownDeltaTimer.Reset
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.CooldownDeltaTimer.Reset
+  nameWithType: CooldownDeltaTimer.Reset
+- uid: NiceGraphicLibrary.Utility.CooldownDeltaTimer.SetNewEndTime(System.Single)
+  name: SetNewEndTime(Single)
+  href: api/NiceGraphicLibrary.Utility.CooldownDeltaTimer.html#NiceGraphicLibrary_Utility_CooldownDeltaTimer_SetNewEndTime_System_Single_
+  commentId: M:NiceGraphicLibrary.Utility.CooldownDeltaTimer.SetNewEndTime(System.Single)
+  fullName: NiceGraphicLibrary.Utility.CooldownDeltaTimer.SetNewEndTime(System.Single)
+  nameWithType: CooldownDeltaTimer.SetNewEndTime(Single)
+- uid: NiceGraphicLibrary.Utility.CooldownDeltaTimer.SetNewEndTime*
+  name: SetNewEndTime
+  href: api/NiceGraphicLibrary.Utility.CooldownDeltaTimer.html#NiceGraphicLibrary_Utility_CooldownDeltaTimer_SetNewEndTime_
+  commentId: Overload:NiceGraphicLibrary.Utility.CooldownDeltaTimer.SetNewEndTime
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.CooldownDeltaTimer.SetNewEndTime
+  nameWithType: CooldownDeltaTimer.SetNewEndTime
+- uid: NiceGraphicLibrary.Utility.CooldownDeltaTimer.Update
+  name: Update()
+  href: api/NiceGraphicLibrary.Utility.CooldownDeltaTimer.html#NiceGraphicLibrary_Utility_CooldownDeltaTimer_Update
+  commentId: M:NiceGraphicLibrary.Utility.CooldownDeltaTimer.Update
+  fullName: NiceGraphicLibrary.Utility.CooldownDeltaTimer.Update()
+  nameWithType: CooldownDeltaTimer.Update()
+- uid: NiceGraphicLibrary.Utility.CooldownDeltaTimer.Update(System.Single)
+  name: Update(Single)
+  href: api/NiceGraphicLibrary.Utility.CooldownDeltaTimer.html#NiceGraphicLibrary_Utility_CooldownDeltaTimer_Update_System_Single_
+  commentId: M:NiceGraphicLibrary.Utility.CooldownDeltaTimer.Update(System.Single)
+  fullName: NiceGraphicLibrary.Utility.CooldownDeltaTimer.Update(System.Single)
+  nameWithType: CooldownDeltaTimer.Update(Single)
+- uid: NiceGraphicLibrary.Utility.CooldownDeltaTimer.Update*
+  name: Update
+  href: api/NiceGraphicLibrary.Utility.CooldownDeltaTimer.html#NiceGraphicLibrary_Utility_CooldownDeltaTimer_Update_
+  commentId: Overload:NiceGraphicLibrary.Utility.CooldownDeltaTimer.Update
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.CooldownDeltaTimer.Update
+  nameWithType: CooldownDeltaTimer.Update
+- uid: NiceGraphicLibrary.Utility.CooldownDeltaTimer.WornOff
+  name: WornOff
+  href: api/NiceGraphicLibrary.Utility.CooldownDeltaTimer.html#NiceGraphicLibrary_Utility_CooldownDeltaTimer_WornOff
+  commentId: P:NiceGraphicLibrary.Utility.CooldownDeltaTimer.WornOff
+  fullName: NiceGraphicLibrary.Utility.CooldownDeltaTimer.WornOff
+  nameWithType: CooldownDeltaTimer.WornOff
+- uid: NiceGraphicLibrary.Utility.CooldownDeltaTimer.WornOff*
+  name: WornOff
+  href: api/NiceGraphicLibrary.Utility.CooldownDeltaTimer.html#NiceGraphicLibrary_Utility_CooldownDeltaTimer_WornOff_
+  commentId: Overload:NiceGraphicLibrary.Utility.CooldownDeltaTimer.WornOff
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.CooldownDeltaTimer.WornOff
+  nameWithType: CooldownDeltaTimer.WornOff
+- uid: NiceGraphicLibrary.Utility.CooldownTimeStampTimer
+  name: CooldownTimeStampTimer
+  href: api/NiceGraphicLibrary.Utility.CooldownTimeStampTimer.html
+  commentId: T:NiceGraphicLibrary.Utility.CooldownTimeStampTimer
+  fullName: NiceGraphicLibrary.Utility.CooldownTimeStampTimer
+  nameWithType: CooldownTimeStampTimer
+- uid: NiceGraphicLibrary.Utility.CooldownTimeStampTimer.#ctor(System.Double)
+  name: CooldownTimeStampTimer(Double)
+  href: api/NiceGraphicLibrary.Utility.CooldownTimeStampTimer.html#NiceGraphicLibrary_Utility_CooldownTimeStampTimer__ctor_System_Double_
+  commentId: M:NiceGraphicLibrary.Utility.CooldownTimeStampTimer.#ctor(System.Double)
+  fullName: NiceGraphicLibrary.Utility.CooldownTimeStampTimer.CooldownTimeStampTimer(System.Double)
+  nameWithType: CooldownTimeStampTimer.CooldownTimeStampTimer(Double)
+- uid: NiceGraphicLibrary.Utility.CooldownTimeStampTimer.#ctor*
+  name: CooldownTimeStampTimer
+  href: api/NiceGraphicLibrary.Utility.CooldownTimeStampTimer.html#NiceGraphicLibrary_Utility_CooldownTimeStampTimer__ctor_
+  commentId: Overload:NiceGraphicLibrary.Utility.CooldownTimeStampTimer.#ctor
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.CooldownTimeStampTimer.CooldownTimeStampTimer
+  nameWithType: CooldownTimeStampTimer.CooldownTimeStampTimer
+- uid: NiceGraphicLibrary.Utility.CooldownTimeStampTimer.PassedTimeFactor
+  name: PassedTimeFactor
+  href: api/NiceGraphicLibrary.Utility.CooldownTimeStampTimer.html#NiceGraphicLibrary_Utility_CooldownTimeStampTimer_PassedTimeFactor
+  commentId: P:NiceGraphicLibrary.Utility.CooldownTimeStampTimer.PassedTimeFactor
+  fullName: NiceGraphicLibrary.Utility.CooldownTimeStampTimer.PassedTimeFactor
+  nameWithType: CooldownTimeStampTimer.PassedTimeFactor
+- uid: NiceGraphicLibrary.Utility.CooldownTimeStampTimer.PassedTimeFactor*
+  name: PassedTimeFactor
+  href: api/NiceGraphicLibrary.Utility.CooldownTimeStampTimer.html#NiceGraphicLibrary_Utility_CooldownTimeStampTimer_PassedTimeFactor_
+  commentId: Overload:NiceGraphicLibrary.Utility.CooldownTimeStampTimer.PassedTimeFactor
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.CooldownTimeStampTimer.PassedTimeFactor
+  nameWithType: CooldownTimeStampTimer.PassedTimeFactor
+- uid: NiceGraphicLibrary.Utility.CooldownTimeStampTimer.Reset
+  name: Reset()
+  href: api/NiceGraphicLibrary.Utility.CooldownTimeStampTimer.html#NiceGraphicLibrary_Utility_CooldownTimeStampTimer_Reset
+  commentId: M:NiceGraphicLibrary.Utility.CooldownTimeStampTimer.Reset
+  fullName: NiceGraphicLibrary.Utility.CooldownTimeStampTimer.Reset()
+  nameWithType: CooldownTimeStampTimer.Reset()
+- uid: NiceGraphicLibrary.Utility.CooldownTimeStampTimer.Reset*
+  name: Reset
+  href: api/NiceGraphicLibrary.Utility.CooldownTimeStampTimer.html#NiceGraphicLibrary_Utility_CooldownTimeStampTimer_Reset_
+  commentId: Overload:NiceGraphicLibrary.Utility.CooldownTimeStampTimer.Reset
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.CooldownTimeStampTimer.Reset
+  nameWithType: CooldownTimeStampTimer.Reset
+- uid: NiceGraphicLibrary.Utility.CooldownTimeStampTimer.SetNewEndTime(System.Single)
+  name: SetNewEndTime(Single)
+  href: api/NiceGraphicLibrary.Utility.CooldownTimeStampTimer.html#NiceGraphicLibrary_Utility_CooldownTimeStampTimer_SetNewEndTime_System_Single_
+  commentId: M:NiceGraphicLibrary.Utility.CooldownTimeStampTimer.SetNewEndTime(System.Single)
+  fullName: NiceGraphicLibrary.Utility.CooldownTimeStampTimer.SetNewEndTime(System.Single)
+  nameWithType: CooldownTimeStampTimer.SetNewEndTime(Single)
+- uid: NiceGraphicLibrary.Utility.CooldownTimeStampTimer.SetNewEndTime*
+  name: SetNewEndTime
+  href: api/NiceGraphicLibrary.Utility.CooldownTimeStampTimer.html#NiceGraphicLibrary_Utility_CooldownTimeStampTimer_SetNewEndTime_
+  commentId: Overload:NiceGraphicLibrary.Utility.CooldownTimeStampTimer.SetNewEndTime
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.CooldownTimeStampTimer.SetNewEndTime
+  nameWithType: CooldownTimeStampTimer.SetNewEndTime
+- uid: NiceGraphicLibrary.Utility.CooldownTimeStampTimer.WornOff
+  name: WornOff
+  href: api/NiceGraphicLibrary.Utility.CooldownTimeStampTimer.html#NiceGraphicLibrary_Utility_CooldownTimeStampTimer_WornOff
+  commentId: P:NiceGraphicLibrary.Utility.CooldownTimeStampTimer.WornOff
+  fullName: NiceGraphicLibrary.Utility.CooldownTimeStampTimer.WornOff
+  nameWithType: CooldownTimeStampTimer.WornOff
+- uid: NiceGraphicLibrary.Utility.CooldownTimeStampTimer.WornOff*
+  name: WornOff
+  href: api/NiceGraphicLibrary.Utility.CooldownTimeStampTimer.html#NiceGraphicLibrary_Utility_CooldownTimeStampTimer_WornOff_
+  commentId: Overload:NiceGraphicLibrary.Utility.CooldownTimeStampTimer.WornOff
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.CooldownTimeStampTimer.WornOff
+  nameWithType: CooldownTimeStampTimer.WornOff
+- uid: NiceGraphicLibrary.Utility.CoroutineUtility
+  name: CoroutineUtility
+  href: api/NiceGraphicLibrary.Utility.CoroutineUtility.html
+  commentId: T:NiceGraphicLibrary.Utility.CoroutineUtility
+  fullName: NiceGraphicLibrary.Utility.CoroutineUtility
+  nameWithType: CoroutineUtility
+- uid: NiceGraphicLibrary.Utility.CoroutineUtility.ResetCoroutine(UnityEngine.MonoBehaviour,System.Collections.IEnumerator)
+  name: ResetCoroutine(MonoBehaviour, IEnumerator)
+  href: api/NiceGraphicLibrary.Utility.CoroutineUtility.html#NiceGraphicLibrary_Utility_CoroutineUtility_ResetCoroutine_UnityEngine_MonoBehaviour_System_Collections_IEnumerator_
+  commentId: M:NiceGraphicLibrary.Utility.CoroutineUtility.ResetCoroutine(UnityEngine.MonoBehaviour,System.Collections.IEnumerator)
+  fullName: NiceGraphicLibrary.Utility.CoroutineUtility.ResetCoroutine(UnityEngine.MonoBehaviour, System.Collections.IEnumerator)
+  nameWithType: CoroutineUtility.ResetCoroutine(MonoBehaviour, IEnumerator)
+- uid: NiceGraphicLibrary.Utility.CoroutineUtility.ResetCoroutine*
+  name: ResetCoroutine
+  href: api/NiceGraphicLibrary.Utility.CoroutineUtility.html#NiceGraphicLibrary_Utility_CoroutineUtility_ResetCoroutine_
+  commentId: Overload:NiceGraphicLibrary.Utility.CoroutineUtility.ResetCoroutine
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.CoroutineUtility.ResetCoroutine
+  nameWithType: CoroutineUtility.ResetCoroutine
+- uid: NiceGraphicLibrary.Utility.CoroutineUtility.StarCoroutineInInterval(UnityEngine.MonoBehaviour,System.Func{System.Collections.IEnumerator},System.Single)
+  name: StarCoroutineInInterval(MonoBehaviour, Func<IEnumerator>, Single)
+  href: api/NiceGraphicLibrary.Utility.CoroutineUtility.html#NiceGraphicLibrary_Utility_CoroutineUtility_StarCoroutineInInterval_UnityEngine_MonoBehaviour_System_Func_System_Collections_IEnumerator__System_Single_
+  commentId: M:NiceGraphicLibrary.Utility.CoroutineUtility.StarCoroutineInInterval(UnityEngine.MonoBehaviour,System.Func{System.Collections.IEnumerator},System.Single)
+  name.vb: StarCoroutineInInterval(MonoBehaviour, Func(Of IEnumerator), Single)
+  fullName: NiceGraphicLibrary.Utility.CoroutineUtility.StarCoroutineInInterval(UnityEngine.MonoBehaviour, System.Func<System.Collections.IEnumerator>, System.Single)
+  fullName.vb: NiceGraphicLibrary.Utility.CoroutineUtility.StarCoroutineInInterval(UnityEngine.MonoBehaviour, System.Func(Of System.Collections.IEnumerator), System.Single)
+  nameWithType: CoroutineUtility.StarCoroutineInInterval(MonoBehaviour, Func<IEnumerator>, Single)
+  nameWithType.vb: CoroutineUtility.StarCoroutineInInterval(MonoBehaviour, Func(Of IEnumerator), Single)
+- uid: NiceGraphicLibrary.Utility.CoroutineUtility.StarCoroutineInInterval*
+  name: StarCoroutineInInterval
+  href: api/NiceGraphicLibrary.Utility.CoroutineUtility.html#NiceGraphicLibrary_Utility_CoroutineUtility_StarCoroutineInInterval_
+  commentId: Overload:NiceGraphicLibrary.Utility.CoroutineUtility.StarCoroutineInInterval
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.CoroutineUtility.StarCoroutineInInterval
+  nameWithType: CoroutineUtility.StarCoroutineInInterval
+- uid: NiceGraphicLibrary.Utility.CoroutineUtility.StartActionDelayed(UnityEngine.MonoBehaviour,System.Action,System.Single)
+  name: StartActionDelayed(MonoBehaviour, Action, Single)
+  href: api/NiceGraphicLibrary.Utility.CoroutineUtility.html#NiceGraphicLibrary_Utility_CoroutineUtility_StartActionDelayed_UnityEngine_MonoBehaviour_System_Action_System_Single_
+  commentId: M:NiceGraphicLibrary.Utility.CoroutineUtility.StartActionDelayed(UnityEngine.MonoBehaviour,System.Action,System.Single)
+  fullName: NiceGraphicLibrary.Utility.CoroutineUtility.StartActionDelayed(UnityEngine.MonoBehaviour, System.Action, System.Single)
+  nameWithType: CoroutineUtility.StartActionDelayed(MonoBehaviour, Action, Single)
+- uid: NiceGraphicLibrary.Utility.CoroutineUtility.StartActionDelayed*
+  name: StartActionDelayed
+  href: api/NiceGraphicLibrary.Utility.CoroutineUtility.html#NiceGraphicLibrary_Utility_CoroutineUtility_StartActionDelayed_
+  commentId: Overload:NiceGraphicLibrary.Utility.CoroutineUtility.StartActionDelayed
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.CoroutineUtility.StartActionDelayed
+  nameWithType: CoroutineUtility.StartActionDelayed
+- uid: NiceGraphicLibrary.Utility.CoroutineUtility.StartActionInInterval(UnityEngine.MonoBehaviour,System.Action,System.Single)
+  name: StartActionInInterval(MonoBehaviour, Action, Single)
+  href: api/NiceGraphicLibrary.Utility.CoroutineUtility.html#NiceGraphicLibrary_Utility_CoroutineUtility_StartActionInInterval_UnityEngine_MonoBehaviour_System_Action_System_Single_
+  commentId: M:NiceGraphicLibrary.Utility.CoroutineUtility.StartActionInInterval(UnityEngine.MonoBehaviour,System.Action,System.Single)
+  fullName: NiceGraphicLibrary.Utility.CoroutineUtility.StartActionInInterval(UnityEngine.MonoBehaviour, System.Action, System.Single)
+  nameWithType: CoroutineUtility.StartActionInInterval(MonoBehaviour, Action, Single)
+- uid: NiceGraphicLibrary.Utility.CoroutineUtility.StartActionInInterval*
+  name: StartActionInInterval
+  href: api/NiceGraphicLibrary.Utility.CoroutineUtility.html#NiceGraphicLibrary_Utility_CoroutineUtility_StartActionInInterval_
+  commentId: Overload:NiceGraphicLibrary.Utility.CoroutineUtility.StartActionInInterval
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.CoroutineUtility.StartActionInInterval
+  nameWithType: CoroutineUtility.StartActionInInterval
+- uid: NiceGraphicLibrary.Utility.CoroutineUtility.StartActionInLoop(UnityEngine.MonoBehaviour,System.Action)
+  name: StartActionInLoop(MonoBehaviour, Action)
+  href: api/NiceGraphicLibrary.Utility.CoroutineUtility.html#NiceGraphicLibrary_Utility_CoroutineUtility_StartActionInLoop_UnityEngine_MonoBehaviour_System_Action_
+  commentId: M:NiceGraphicLibrary.Utility.CoroutineUtility.StartActionInLoop(UnityEngine.MonoBehaviour,System.Action)
+  fullName: NiceGraphicLibrary.Utility.CoroutineUtility.StartActionInLoop(UnityEngine.MonoBehaviour, System.Action)
+  nameWithType: CoroutineUtility.StartActionInLoop(MonoBehaviour, Action)
+- uid: NiceGraphicLibrary.Utility.CoroutineUtility.StartActionInLoop*
+  name: StartActionInLoop
+  href: api/NiceGraphicLibrary.Utility.CoroutineUtility.html#NiceGraphicLibrary_Utility_CoroutineUtility_StartActionInLoop_
+  commentId: Overload:NiceGraphicLibrary.Utility.CoroutineUtility.StartActionInLoop
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.CoroutineUtility.StartActionInLoop
+  nameWithType: CoroutineUtility.StartActionInLoop
+- uid: NiceGraphicLibrary.Utility.CoroutineUtility.StartCoroutineDelayed(UnityEngine.MonoBehaviour,System.Func{System.Collections.IEnumerator},System.Single)
+  name: StartCoroutineDelayed(MonoBehaviour, Func<IEnumerator>, Single)
+  href: api/NiceGraphicLibrary.Utility.CoroutineUtility.html#NiceGraphicLibrary_Utility_CoroutineUtility_StartCoroutineDelayed_UnityEngine_MonoBehaviour_System_Func_System_Collections_IEnumerator__System_Single_
+  commentId: M:NiceGraphicLibrary.Utility.CoroutineUtility.StartCoroutineDelayed(UnityEngine.MonoBehaviour,System.Func{System.Collections.IEnumerator},System.Single)
+  name.vb: StartCoroutineDelayed(MonoBehaviour, Func(Of IEnumerator), Single)
+  fullName: NiceGraphicLibrary.Utility.CoroutineUtility.StartCoroutineDelayed(UnityEngine.MonoBehaviour, System.Func<System.Collections.IEnumerator>, System.Single)
+  fullName.vb: NiceGraphicLibrary.Utility.CoroutineUtility.StartCoroutineDelayed(UnityEngine.MonoBehaviour, System.Func(Of System.Collections.IEnumerator), System.Single)
+  nameWithType: CoroutineUtility.StartCoroutineDelayed(MonoBehaviour, Func<IEnumerator>, Single)
+  nameWithType.vb: CoroutineUtility.StartCoroutineDelayed(MonoBehaviour, Func(Of IEnumerator), Single)
+- uid: NiceGraphicLibrary.Utility.CoroutineUtility.StartCoroutineDelayed*
+  name: StartCoroutineDelayed
+  href: api/NiceGraphicLibrary.Utility.CoroutineUtility.html#NiceGraphicLibrary_Utility_CoroutineUtility_StartCoroutineDelayed_
+  commentId: Overload:NiceGraphicLibrary.Utility.CoroutineUtility.StartCoroutineDelayed
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.CoroutineUtility.StartCoroutineDelayed
+  nameWithType: CoroutineUtility.StartCoroutineDelayed
+- uid: NiceGraphicLibrary.Utility.CoroutineUtility.StartCoroutineInLoop(UnityEngine.MonoBehaviour,System.Func{System.Collections.IEnumerator})
+  name: StartCoroutineInLoop(MonoBehaviour, Func<IEnumerator>)
+  href: api/NiceGraphicLibrary.Utility.CoroutineUtility.html#NiceGraphicLibrary_Utility_CoroutineUtility_StartCoroutineInLoop_UnityEngine_MonoBehaviour_System_Func_System_Collections_IEnumerator__
+  commentId: M:NiceGraphicLibrary.Utility.CoroutineUtility.StartCoroutineInLoop(UnityEngine.MonoBehaviour,System.Func{System.Collections.IEnumerator})
+  name.vb: StartCoroutineInLoop(MonoBehaviour, Func(Of IEnumerator))
+  fullName: NiceGraphicLibrary.Utility.CoroutineUtility.StartCoroutineInLoop(UnityEngine.MonoBehaviour, System.Func<System.Collections.IEnumerator>)
+  fullName.vb: NiceGraphicLibrary.Utility.CoroutineUtility.StartCoroutineInLoop(UnityEngine.MonoBehaviour, System.Func(Of System.Collections.IEnumerator))
+  nameWithType: CoroutineUtility.StartCoroutineInLoop(MonoBehaviour, Func<IEnumerator>)
+  nameWithType.vb: CoroutineUtility.StartCoroutineInLoop(MonoBehaviour, Func(Of IEnumerator))
+- uid: NiceGraphicLibrary.Utility.CoroutineUtility.StartCoroutineInLoop*
+  name: StartCoroutineInLoop
+  href: api/NiceGraphicLibrary.Utility.CoroutineUtility.html#NiceGraphicLibrary_Utility_CoroutineUtility_StartCoroutineInLoop_
+  commentId: Overload:NiceGraphicLibrary.Utility.CoroutineUtility.StartCoroutineInLoop
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.CoroutineUtility.StartCoroutineInLoop
+  nameWithType: CoroutineUtility.StartCoroutineInLoop
+- uid: NiceGraphicLibrary.Utility.CountDown
+  name: CountDown
+  href: api/NiceGraphicLibrary.Utility.CountDown.html
+  commentId: T:NiceGraphicLibrary.Utility.CountDown
+  fullName: NiceGraphicLibrary.Utility.CountDown
+  nameWithType: CountDown
+- uid: NiceGraphicLibrary.Utility.CountDown.#ctor(System.Int32)
+  name: CountDown(Int32)
+  href: api/NiceGraphicLibrary.Utility.CountDown.html#NiceGraphicLibrary_Utility_CountDown__ctor_System_Int32_
+  commentId: M:NiceGraphicLibrary.Utility.CountDown.#ctor(System.Int32)
+  fullName: NiceGraphicLibrary.Utility.CountDown.CountDown(System.Int32)
+  nameWithType: CountDown.CountDown(Int32)
+- uid: NiceGraphicLibrary.Utility.CountDown.#ctor*
+  name: CountDown
+  href: api/NiceGraphicLibrary.Utility.CountDown.html#NiceGraphicLibrary_Utility_CountDown__ctor_
+  commentId: Overload:NiceGraphicLibrary.Utility.CountDown.#ctor
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.CountDown.CountDown
+  nameWithType: CountDown.CountDown
+- uid: NiceGraphicLibrary.Utility.CountDown.RemainingSeconds
+  name: RemainingSeconds
+  href: api/NiceGraphicLibrary.Utility.CountDown.html#NiceGraphicLibrary_Utility_CountDown_RemainingSeconds
+  commentId: P:NiceGraphicLibrary.Utility.CountDown.RemainingSeconds
+  fullName: NiceGraphicLibrary.Utility.CountDown.RemainingSeconds
+  nameWithType: CountDown.RemainingSeconds
+- uid: NiceGraphicLibrary.Utility.CountDown.RemainingSeconds*
+  name: RemainingSeconds
+  href: api/NiceGraphicLibrary.Utility.CountDown.html#NiceGraphicLibrary_Utility_CountDown_RemainingSeconds_
+  commentId: Overload:NiceGraphicLibrary.Utility.CountDown.RemainingSeconds
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.CountDown.RemainingSeconds
+  nameWithType: CountDown.RemainingSeconds
+- uid: NiceGraphicLibrary.Utility.CountDown.ResetAndStart
+  name: ResetAndStart()
+  href: api/NiceGraphicLibrary.Utility.CountDown.html#NiceGraphicLibrary_Utility_CountDown_ResetAndStart
+  commentId: M:NiceGraphicLibrary.Utility.CountDown.ResetAndStart
+  fullName: NiceGraphicLibrary.Utility.CountDown.ResetAndStart()
+  nameWithType: CountDown.ResetAndStart()
+- uid: NiceGraphicLibrary.Utility.CountDown.ResetAndStart*
+  name: ResetAndStart
+  href: api/NiceGraphicLibrary.Utility.CountDown.html#NiceGraphicLibrary_Utility_CountDown_ResetAndStart_
+  commentId: Overload:NiceGraphicLibrary.Utility.CountDown.ResetAndStart
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.CountDown.ResetAndStart
+  nameWithType: CountDown.ResetAndStart
+- uid: NiceGraphicLibrary.Utility.CountDown.StartSeconds
+  name: StartSeconds
+  href: api/NiceGraphicLibrary.Utility.CountDown.html#NiceGraphicLibrary_Utility_CountDown_StartSeconds
+  commentId: P:NiceGraphicLibrary.Utility.CountDown.StartSeconds
+  fullName: NiceGraphicLibrary.Utility.CountDown.StartSeconds
+  nameWithType: CountDown.StartSeconds
+- uid: NiceGraphicLibrary.Utility.CountDown.StartSeconds*
+  name: StartSeconds
+  href: api/NiceGraphicLibrary.Utility.CountDown.html#NiceGraphicLibrary_Utility_CountDown_StartSeconds_
+  commentId: Overload:NiceGraphicLibrary.Utility.CountDown.StartSeconds
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.CountDown.StartSeconds
+  nameWithType: CountDown.StartSeconds
+- uid: NiceGraphicLibrary.Utility.Geometry3DUtility
+  name: Geometry3DUtility
+  href: api/NiceGraphicLibrary.Utility.Geometry3DUtility.html
+  commentId: T:NiceGraphicLibrary.Utility.Geometry3DUtility
+  fullName: NiceGraphicLibrary.Utility.Geometry3DUtility
+  nameWithType: Geometry3DUtility
+- uid: NiceGraphicLibrary.Utility.Geometry3DUtility.GetBoundingBoxOfAllMeshes(UnityEngine.GameObject)
+  name: GetBoundingBoxOfAllMeshes(GameObject)
+  href: api/NiceGraphicLibrary.Utility.Geometry3DUtility.html#NiceGraphicLibrary_Utility_Geometry3DUtility_GetBoundingBoxOfAllMeshes_UnityEngine_GameObject_
+  commentId: M:NiceGraphicLibrary.Utility.Geometry3DUtility.GetBoundingBoxOfAllMeshes(UnityEngine.GameObject)
+  fullName: NiceGraphicLibrary.Utility.Geometry3DUtility.GetBoundingBoxOfAllMeshes(UnityEngine.GameObject)
+  nameWithType: Geometry3DUtility.GetBoundingBoxOfAllMeshes(GameObject)
+- uid: NiceGraphicLibrary.Utility.Geometry3DUtility.GetBoundingBoxOfAllMeshes*
+  name: GetBoundingBoxOfAllMeshes
+  href: api/NiceGraphicLibrary.Utility.Geometry3DUtility.html#NiceGraphicLibrary_Utility_Geometry3DUtility_GetBoundingBoxOfAllMeshes_
+  commentId: Overload:NiceGraphicLibrary.Utility.Geometry3DUtility.GetBoundingBoxOfAllMeshes
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Geometry3DUtility.GetBoundingBoxOfAllMeshes
+  nameWithType: Geometry3DUtility.GetBoundingBoxOfAllMeshes
+- uid: NiceGraphicLibrary.Utility.Interpolation
+  name: Interpolation
+  href: api/NiceGraphicLibrary.Utility.Interpolation.html
+  commentId: T:NiceGraphicLibrary.Utility.Interpolation
+  fullName: NiceGraphicLibrary.Utility.Interpolation
+  nameWithType: Interpolation
+- uid: NiceGraphicLibrary.Utility.Interpolation.InterpolateColorOverTime(System.Single,UnityEngine.Color,UnityEngine.Color,System.Action{UnityEngine.Color})
+  name: InterpolateColorOverTime(Single, Color, Color, Action<Color>)
+  href: api/NiceGraphicLibrary.Utility.Interpolation.html#NiceGraphicLibrary_Utility_Interpolation_InterpolateColorOverTime_System_Single_UnityEngine_Color_UnityEngine_Color_System_Action_UnityEngine_Color__
+  commentId: M:NiceGraphicLibrary.Utility.Interpolation.InterpolateColorOverTime(System.Single,UnityEngine.Color,UnityEngine.Color,System.Action{UnityEngine.Color})
+  name.vb: InterpolateColorOverTime(Single, Color, Color, Action(Of Color))
+  fullName: NiceGraphicLibrary.Utility.Interpolation.InterpolateColorOverTime(System.Single, UnityEngine.Color, UnityEngine.Color, System.Action<UnityEngine.Color>)
+  fullName.vb: NiceGraphicLibrary.Utility.Interpolation.InterpolateColorOverTime(System.Single, UnityEngine.Color, UnityEngine.Color, System.Action(Of UnityEngine.Color))
+  nameWithType: Interpolation.InterpolateColorOverTime(Single, Color, Color, Action<Color>)
+  nameWithType.vb: Interpolation.InterpolateColorOverTime(Single, Color, Color, Action(Of Color))
+- uid: NiceGraphicLibrary.Utility.Interpolation.InterpolateColorOverTime*
+  name: InterpolateColorOverTime
+  href: api/NiceGraphicLibrary.Utility.Interpolation.html#NiceGraphicLibrary_Utility_Interpolation_InterpolateColorOverTime_
+  commentId: Overload:NiceGraphicLibrary.Utility.Interpolation.InterpolateColorOverTime
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Interpolation.InterpolateColorOverTime
+  nameWithType: Interpolation.InterpolateColorOverTime
+- uid: NiceGraphicLibrary.Utility.Interpolation.InterpolateOverTime(System.Single,System.Action{System.Single})
+  name: InterpolateOverTime(Single, Action<Single>)
+  href: api/NiceGraphicLibrary.Utility.Interpolation.html#NiceGraphicLibrary_Utility_Interpolation_InterpolateOverTime_System_Single_System_Action_System_Single__
+  commentId: M:NiceGraphicLibrary.Utility.Interpolation.InterpolateOverTime(System.Single,System.Action{System.Single})
+  name.vb: InterpolateOverTime(Single, Action(Of Single))
+  fullName: NiceGraphicLibrary.Utility.Interpolation.InterpolateOverTime(System.Single, System.Action<System.Single>)
+  fullName.vb: NiceGraphicLibrary.Utility.Interpolation.InterpolateOverTime(System.Single, System.Action(Of System.Single))
+  nameWithType: Interpolation.InterpolateOverTime(Single, Action<Single>)
+  nameWithType.vb: Interpolation.InterpolateOverTime(Single, Action(Of Single))
+- uid: NiceGraphicLibrary.Utility.Interpolation.InterpolateOverTime*
+  name: InterpolateOverTime
+  href: api/NiceGraphicLibrary.Utility.Interpolation.html#NiceGraphicLibrary_Utility_Interpolation_InterpolateOverTime_
+  commentId: Overload:NiceGraphicLibrary.Utility.Interpolation.InterpolateOverTime
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Interpolation.InterpolateOverTime
+  nameWithType: Interpolation.InterpolateOverTime
+- uid: NiceGraphicLibrary.Utility.Interpolation.InterpolateVector2OverTime(System.Single,UnityEngine.Vector2,UnityEngine.Vector2,System.Action{UnityEngine.Vector2})
+  name: InterpolateVector2OverTime(Single, Vector2, Vector2, Action<Vector2>)
+  href: api/NiceGraphicLibrary.Utility.Interpolation.html#NiceGraphicLibrary_Utility_Interpolation_InterpolateVector2OverTime_System_Single_UnityEngine_Vector2_UnityEngine_Vector2_System_Action_UnityEngine_Vector2__
+  commentId: M:NiceGraphicLibrary.Utility.Interpolation.InterpolateVector2OverTime(System.Single,UnityEngine.Vector2,UnityEngine.Vector2,System.Action{UnityEngine.Vector2})
+  name.vb: InterpolateVector2OverTime(Single, Vector2, Vector2, Action(Of Vector2))
+  fullName: NiceGraphicLibrary.Utility.Interpolation.InterpolateVector2OverTime(System.Single, UnityEngine.Vector2, UnityEngine.Vector2, System.Action<UnityEngine.Vector2>)
+  fullName.vb: NiceGraphicLibrary.Utility.Interpolation.InterpolateVector2OverTime(System.Single, UnityEngine.Vector2, UnityEngine.Vector2, System.Action(Of UnityEngine.Vector2))
+  nameWithType: Interpolation.InterpolateVector2OverTime(Single, Vector2, Vector2, Action<Vector2>)
+  nameWithType.vb: Interpolation.InterpolateVector2OverTime(Single, Vector2, Vector2, Action(Of Vector2))
+- uid: NiceGraphicLibrary.Utility.Interpolation.InterpolateVector2OverTime*
+  name: InterpolateVector2OverTime
+  href: api/NiceGraphicLibrary.Utility.Interpolation.html#NiceGraphicLibrary_Utility_Interpolation_InterpolateVector2OverTime_
+  commentId: Overload:NiceGraphicLibrary.Utility.Interpolation.InterpolateVector2OverTime
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Interpolation.InterpolateVector2OverTime
+  nameWithType: Interpolation.InterpolateVector2OverTime
+- uid: NiceGraphicLibrary.Utility.Interpolation.InterpolateVector3OverTime(System.Single,UnityEngine.Vector3,UnityEngine.Vector3,System.Action{UnityEngine.Vector3})
+  name: InterpolateVector3OverTime(Single, Vector3, Vector3, Action<Vector3>)
+  href: api/NiceGraphicLibrary.Utility.Interpolation.html#NiceGraphicLibrary_Utility_Interpolation_InterpolateVector3OverTime_System_Single_UnityEngine_Vector3_UnityEngine_Vector3_System_Action_UnityEngine_Vector3__
+  commentId: M:NiceGraphicLibrary.Utility.Interpolation.InterpolateVector3OverTime(System.Single,UnityEngine.Vector3,UnityEngine.Vector3,System.Action{UnityEngine.Vector3})
+  name.vb: InterpolateVector3OverTime(Single, Vector3, Vector3, Action(Of Vector3))
+  fullName: NiceGraphicLibrary.Utility.Interpolation.InterpolateVector3OverTime(System.Single, UnityEngine.Vector3, UnityEngine.Vector3, System.Action<UnityEngine.Vector3>)
+  fullName.vb: NiceGraphicLibrary.Utility.Interpolation.InterpolateVector3OverTime(System.Single, UnityEngine.Vector3, UnityEngine.Vector3, System.Action(Of UnityEngine.Vector3))
+  nameWithType: Interpolation.InterpolateVector3OverTime(Single, Vector3, Vector3, Action<Vector3>)
+  nameWithType.vb: Interpolation.InterpolateVector3OverTime(Single, Vector3, Vector3, Action(Of Vector3))
+- uid: NiceGraphicLibrary.Utility.Interpolation.InterpolateVector3OverTime*
+  name: InterpolateVector3OverTime
+  href: api/NiceGraphicLibrary.Utility.Interpolation.html#NiceGraphicLibrary_Utility_Interpolation_InterpolateVector3OverTime_
+  commentId: Overload:NiceGraphicLibrary.Utility.Interpolation.InterpolateVector3OverTime
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Interpolation.InterpolateVector3OverTime
+  nameWithType: Interpolation.InterpolateVector3OverTime
+- uid: NiceGraphicLibrary.Utility.Interpolation.InterpolationFloatOverTime(System.Single,System.Single,System.Action{System.Single})
+  name: InterpolationFloatOverTime(Single, Single, Action<Single>)
+  href: api/NiceGraphicLibrary.Utility.Interpolation.html#NiceGraphicLibrary_Utility_Interpolation_InterpolationFloatOverTime_System_Single_System_Single_System_Action_System_Single__
+  commentId: M:NiceGraphicLibrary.Utility.Interpolation.InterpolationFloatOverTime(System.Single,System.Single,System.Action{System.Single})
+  name.vb: InterpolationFloatOverTime(Single, Single, Action(Of Single))
+  fullName: NiceGraphicLibrary.Utility.Interpolation.InterpolationFloatOverTime(System.Single, System.Single, System.Action<System.Single>)
+  fullName.vb: NiceGraphicLibrary.Utility.Interpolation.InterpolationFloatOverTime(System.Single, System.Single, System.Action(Of System.Single))
+  nameWithType: Interpolation.InterpolationFloatOverTime(Single, Single, Action<Single>)
+  nameWithType.vb: Interpolation.InterpolationFloatOverTime(Single, Single, Action(Of Single))
+- uid: NiceGraphicLibrary.Utility.Interpolation.InterpolationFloatOverTime*
+  name: InterpolationFloatOverTime
+  href: api/NiceGraphicLibrary.Utility.Interpolation.html#NiceGraphicLibrary_Utility_Interpolation_InterpolationFloatOverTime_
+  commentId: Overload:NiceGraphicLibrary.Utility.Interpolation.InterpolationFloatOverTime
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Interpolation.InterpolationFloatOverTime
+  nameWithType: Interpolation.InterpolationFloatOverTime
+- uid: NiceGraphicLibrary.Utility.Interpolation.InverseSmootherStep(System.Single,System.Single)
+  name: InverseSmootherStep(Single, Single)
+  href: api/NiceGraphicLibrary.Utility.Interpolation.html#NiceGraphicLibrary_Utility_Interpolation_InverseSmootherStep_System_Single_System_Single_
+  commentId: M:NiceGraphicLibrary.Utility.Interpolation.InverseSmootherStep(System.Single,System.Single)
+  fullName: NiceGraphicLibrary.Utility.Interpolation.InverseSmootherStep(System.Single, System.Single)
+  nameWithType: Interpolation.InverseSmootherStep(Single, Single)
+- uid: NiceGraphicLibrary.Utility.Interpolation.InverseSmootherStep*
+  name: InverseSmootherStep
+  href: api/NiceGraphicLibrary.Utility.Interpolation.html#NiceGraphicLibrary_Utility_Interpolation_InverseSmootherStep_
+  commentId: Overload:NiceGraphicLibrary.Utility.Interpolation.InverseSmootherStep
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Interpolation.InverseSmootherStep
+  nameWithType: Interpolation.InverseSmootherStep
+- uid: NiceGraphicLibrary.Utility.Interpolation.InverseSmoothStep(System.Single,System.Single)
+  name: InverseSmoothStep(Single, Single)
+  href: api/NiceGraphicLibrary.Utility.Interpolation.html#NiceGraphicLibrary_Utility_Interpolation_InverseSmoothStep_System_Single_System_Single_
+  commentId: M:NiceGraphicLibrary.Utility.Interpolation.InverseSmoothStep(System.Single,System.Single)
+  fullName: NiceGraphicLibrary.Utility.Interpolation.InverseSmoothStep(System.Single, System.Single)
+  nameWithType: Interpolation.InverseSmoothStep(Single, Single)
+- uid: NiceGraphicLibrary.Utility.Interpolation.InverseSmoothStep*
+  name: InverseSmoothStep
+  href: api/NiceGraphicLibrary.Utility.Interpolation.html#NiceGraphicLibrary_Utility_Interpolation_InverseSmoothStep_
+  commentId: Overload:NiceGraphicLibrary.Utility.Interpolation.InverseSmoothStep
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Interpolation.InverseSmoothStep
+  nameWithType: Interpolation.InverseSmoothStep
+- uid: NiceGraphicLibrary.Utility.Interpolation.SmootherStep(System.Single,System.Single)
+  name: SmootherStep(Single, Single)
+  href: api/NiceGraphicLibrary.Utility.Interpolation.html#NiceGraphicLibrary_Utility_Interpolation_SmootherStep_System_Single_System_Single_
+  commentId: M:NiceGraphicLibrary.Utility.Interpolation.SmootherStep(System.Single,System.Single)
+  fullName: NiceGraphicLibrary.Utility.Interpolation.SmootherStep(System.Single, System.Single)
+  nameWithType: Interpolation.SmootherStep(Single, Single)
+- uid: NiceGraphicLibrary.Utility.Interpolation.SmootherStep*
+  name: SmootherStep
+  href: api/NiceGraphicLibrary.Utility.Interpolation.html#NiceGraphicLibrary_Utility_Interpolation_SmootherStep_
+  commentId: Overload:NiceGraphicLibrary.Utility.Interpolation.SmootherStep
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Interpolation.SmootherStep
+  nameWithType: Interpolation.SmootherStep
+- uid: NiceGraphicLibrary.Utility.Interpolation.SmoothStep(System.Single,System.Single)
+  name: SmoothStep(Single, Single)
+  href: api/NiceGraphicLibrary.Utility.Interpolation.html#NiceGraphicLibrary_Utility_Interpolation_SmoothStep_System_Single_System_Single_
+  commentId: M:NiceGraphicLibrary.Utility.Interpolation.SmoothStep(System.Single,System.Single)
+  fullName: NiceGraphicLibrary.Utility.Interpolation.SmoothStep(System.Single, System.Single)
+  nameWithType: Interpolation.SmoothStep(Single, Single)
+- uid: NiceGraphicLibrary.Utility.Interpolation.SmoothStep*
+  name: SmoothStep
+  href: api/NiceGraphicLibrary.Utility.Interpolation.html#NiceGraphicLibrary_Utility_Interpolation_SmoothStep_
+  commentId: Overload:NiceGraphicLibrary.Utility.Interpolation.SmoothStep
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Interpolation.SmoothStep
+  nameWithType: Interpolation.SmoothStep
+- uid: NiceGraphicLibrary.Utility.ListToDictionaryConverter`3
+  name: ListToDictionaryConverter<TKey, TValue, OType>
+  href: api/NiceGraphicLibrary.Utility.ListToDictionaryConverter-3.html
+  commentId: T:NiceGraphicLibrary.Utility.ListToDictionaryConverter`3
+  name.vb: ListToDictionaryConverter(Of TKey, TValue, OType)
+  fullName: NiceGraphicLibrary.Utility.ListToDictionaryConverter<TKey, TValue, OType>
+  fullName.vb: NiceGraphicLibrary.Utility.ListToDictionaryConverter(Of TKey, TValue, OType)
+  nameWithType: ListToDictionaryConverter<TKey, TValue, OType>
+  nameWithType.vb: ListToDictionaryConverter(Of TKey, TValue, OType)
+- uid: NiceGraphicLibrary.Utility.ListToDictionaryConverter`3.#ctor(System.String,System.String)
+  name: ListToDictionaryConverter(String, String)
+  href: api/NiceGraphicLibrary.Utility.ListToDictionaryConverter-3.html#NiceGraphicLibrary_Utility_ListToDictionaryConverter_3__ctor_System_String_System_String_
+  commentId: M:NiceGraphicLibrary.Utility.ListToDictionaryConverter`3.#ctor(System.String,System.String)
+  fullName: NiceGraphicLibrary.Utility.ListToDictionaryConverter<TKey, TValue, OType>.ListToDictionaryConverter(System.String, System.String)
+  fullName.vb: NiceGraphicLibrary.Utility.ListToDictionaryConverter(Of TKey, TValue, OType).ListToDictionaryConverter(System.String, System.String)
+  nameWithType: ListToDictionaryConverter<TKey, TValue, OType>.ListToDictionaryConverter(String, String)
+  nameWithType.vb: ListToDictionaryConverter(Of TKey, TValue, OType).ListToDictionaryConverter(String, String)
+- uid: NiceGraphicLibrary.Utility.ListToDictionaryConverter`3.#ctor*
+  name: ListToDictionaryConverter
+  href: api/NiceGraphicLibrary.Utility.ListToDictionaryConverter-3.html#NiceGraphicLibrary_Utility_ListToDictionaryConverter_3__ctor_
+  commentId: Overload:NiceGraphicLibrary.Utility.ListToDictionaryConverter`3.#ctor
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.ListToDictionaryConverter<TKey, TValue, OType>.ListToDictionaryConverter
+  fullName.vb: NiceGraphicLibrary.Utility.ListToDictionaryConverter(Of TKey, TValue, OType).ListToDictionaryConverter
+  nameWithType: ListToDictionaryConverter<TKey, TValue, OType>.ListToDictionaryConverter
+  nameWithType.vb: ListToDictionaryConverter(Of TKey, TValue, OType).ListToDictionaryConverter
+- uid: NiceGraphicLibrary.Utility.ListToDictionaryConverter`3.CreateDictionaryFrom(System.Collections.Generic.IList{`2})
+  name: CreateDictionaryFrom(IList<OType>)
+  href: api/NiceGraphicLibrary.Utility.ListToDictionaryConverter-3.html#NiceGraphicLibrary_Utility_ListToDictionaryConverter_3_CreateDictionaryFrom_System_Collections_Generic_IList__2__
+  commentId: M:NiceGraphicLibrary.Utility.ListToDictionaryConverter`3.CreateDictionaryFrom(System.Collections.Generic.IList{`2})
+  name.vb: CreateDictionaryFrom(IList(Of OType))
+  fullName: NiceGraphicLibrary.Utility.ListToDictionaryConverter<TKey, TValue, OType>.CreateDictionaryFrom(System.Collections.Generic.IList<OType>)
+  fullName.vb: NiceGraphicLibrary.Utility.ListToDictionaryConverter(Of TKey, TValue, OType).CreateDictionaryFrom(System.Collections.Generic.IList(Of OType))
+  nameWithType: ListToDictionaryConverter<TKey, TValue, OType>.CreateDictionaryFrom(IList<OType>)
+  nameWithType.vb: ListToDictionaryConverter(Of TKey, TValue, OType).CreateDictionaryFrom(IList(Of OType))
+- uid: NiceGraphicLibrary.Utility.ListToDictionaryConverter`3.CreateDictionaryFrom*
+  name: CreateDictionaryFrom
+  href: api/NiceGraphicLibrary.Utility.ListToDictionaryConverter-3.html#NiceGraphicLibrary_Utility_ListToDictionaryConverter_3_CreateDictionaryFrom_
+  commentId: Overload:NiceGraphicLibrary.Utility.ListToDictionaryConverter`3.CreateDictionaryFrom
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.ListToDictionaryConverter<TKey, TValue, OType>.CreateDictionaryFrom
+  fullName.vb: NiceGraphicLibrary.Utility.ListToDictionaryConverter(Of TKey, TValue, OType).CreateDictionaryFrom
+  nameWithType: ListToDictionaryConverter<TKey, TValue, OType>.CreateDictionaryFrom
+  nameWithType.vb: ListToDictionaryConverter(Of TKey, TValue, OType).CreateDictionaryFrom
+- uid: NiceGraphicLibrary.Utility.ListToDictionaryConverter`3.CreateListFrom(System.Collections.Generic.IDictionary{`0,`1})
+  name: CreateListFrom(IDictionary<TKey, TValue>)
+  href: api/NiceGraphicLibrary.Utility.ListToDictionaryConverter-3.html#NiceGraphicLibrary_Utility_ListToDictionaryConverter_3_CreateListFrom_System_Collections_Generic_IDictionary__0__1__
+  commentId: M:NiceGraphicLibrary.Utility.ListToDictionaryConverter`3.CreateListFrom(System.Collections.Generic.IDictionary{`0,`1})
+  name.vb: CreateListFrom(IDictionary(Of TKey, TValue))
+  fullName: NiceGraphicLibrary.Utility.ListToDictionaryConverter<TKey, TValue, OType>.CreateListFrom(System.Collections.Generic.IDictionary<TKey, TValue>)
+  fullName.vb: NiceGraphicLibrary.Utility.ListToDictionaryConverter(Of TKey, TValue, OType).CreateListFrom(System.Collections.Generic.IDictionary(Of TKey, TValue))
+  nameWithType: ListToDictionaryConverter<TKey, TValue, OType>.CreateListFrom(IDictionary<TKey, TValue>)
+  nameWithType.vb: ListToDictionaryConverter(Of TKey, TValue, OType).CreateListFrom(IDictionary(Of TKey, TValue))
+- uid: NiceGraphicLibrary.Utility.ListToDictionaryConverter`3.CreateListFrom*
+  name: CreateListFrom
+  href: api/NiceGraphicLibrary.Utility.ListToDictionaryConverter-3.html#NiceGraphicLibrary_Utility_ListToDictionaryConverter_3_CreateListFrom_
+  commentId: Overload:NiceGraphicLibrary.Utility.ListToDictionaryConverter`3.CreateListFrom
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.ListToDictionaryConverter<TKey, TValue, OType>.CreateListFrom
+  fullName.vb: NiceGraphicLibrary.Utility.ListToDictionaryConverter(Of TKey, TValue, OType).CreateListFrom
+  nameWithType: ListToDictionaryConverter<TKey, TValue, OType>.CreateListFrom
+  nameWithType.vb: ListToDictionaryConverter(Of TKey, TValue, OType).CreateListFrom
+- uid: NiceGraphicLibrary.Utility.ListToDictionaryConverter`3.ToString
+  name: ToString()
+  href: api/NiceGraphicLibrary.Utility.ListToDictionaryConverter-3.html#NiceGraphicLibrary_Utility_ListToDictionaryConverter_3_ToString
+  commentId: M:NiceGraphicLibrary.Utility.ListToDictionaryConverter`3.ToString
+  fullName: NiceGraphicLibrary.Utility.ListToDictionaryConverter<TKey, TValue, OType>.ToString()
+  fullName.vb: NiceGraphicLibrary.Utility.ListToDictionaryConverter(Of TKey, TValue, OType).ToString()
+  nameWithType: ListToDictionaryConverter<TKey, TValue, OType>.ToString()
+  nameWithType.vb: ListToDictionaryConverter(Of TKey, TValue, OType).ToString()
+- uid: NiceGraphicLibrary.Utility.ListToDictionaryConverter`3.ToString*
+  name: ToString
+  href: api/NiceGraphicLibrary.Utility.ListToDictionaryConverter-3.html#NiceGraphicLibrary_Utility_ListToDictionaryConverter_3_ToString_
+  commentId: Overload:NiceGraphicLibrary.Utility.ListToDictionaryConverter`3.ToString
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.ListToDictionaryConverter<TKey, TValue, OType>.ToString
+  fullName.vb: NiceGraphicLibrary.Utility.ListToDictionaryConverter(Of TKey, TValue, OType).ToString
+  nameWithType: ListToDictionaryConverter<TKey, TValue, OType>.ToString
+  nameWithType.vb: ListToDictionaryConverter(Of TKey, TValue, OType).ToString
+- uid: NiceGraphicLibrary.Utility.Vector3Extension
+  name: Vector3Extension
+  href: api/NiceGraphicLibrary.Utility.Vector3Extension.html
+  commentId: T:NiceGraphicLibrary.Utility.Vector3Extension
+  fullName: NiceGraphicLibrary.Utility.Vector3Extension
+  nameWithType: Vector3Extension
+- uid: NiceGraphicLibrary.Utility.Vector3Extension.AddScale(UnityEngine.Vector3,System.Single)
+  name: AddScale(Vector3, Single)
+  href: api/NiceGraphicLibrary.Utility.Vector3Extension.html#NiceGraphicLibrary_Utility_Vector3Extension_AddScale_UnityEngine_Vector3_System_Single_
+  commentId: M:NiceGraphicLibrary.Utility.Vector3Extension.AddScale(UnityEngine.Vector3,System.Single)
+  fullName: NiceGraphicLibrary.Utility.Vector3Extension.AddScale(UnityEngine.Vector3, System.Single)
+  nameWithType: Vector3Extension.AddScale(Vector3, Single)
+- uid: NiceGraphicLibrary.Utility.Vector3Extension.AddScale*
+  name: AddScale
+  href: api/NiceGraphicLibrary.Utility.Vector3Extension.html#NiceGraphicLibrary_Utility_Vector3Extension_AddScale_
+  commentId: Overload:NiceGraphicLibrary.Utility.Vector3Extension.AddScale
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Vector3Extension.AddScale
+  nameWithType: Vector3Extension.AddScale
+- uid: NiceGraphicLibrary.Utility.Vector3Extension.AddXScale(UnityEngine.Vector3,System.Single)
+  name: AddXScale(Vector3, Single)
+  href: api/NiceGraphicLibrary.Utility.Vector3Extension.html#NiceGraphicLibrary_Utility_Vector3Extension_AddXScale_UnityEngine_Vector3_System_Single_
+  commentId: M:NiceGraphicLibrary.Utility.Vector3Extension.AddXScale(UnityEngine.Vector3,System.Single)
+  fullName: NiceGraphicLibrary.Utility.Vector3Extension.AddXScale(UnityEngine.Vector3, System.Single)
+  nameWithType: Vector3Extension.AddXScale(Vector3, Single)
+- uid: NiceGraphicLibrary.Utility.Vector3Extension.AddXScale*
+  name: AddXScale
+  href: api/NiceGraphicLibrary.Utility.Vector3Extension.html#NiceGraphicLibrary_Utility_Vector3Extension_AddXScale_
+  commentId: Overload:NiceGraphicLibrary.Utility.Vector3Extension.AddXScale
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Vector3Extension.AddXScale
+  nameWithType: Vector3Extension.AddXScale
+- uid: NiceGraphicLibrary.Utility.Vector3Extension.AddYScale(UnityEngine.Vector3,System.Single)
+  name: AddYScale(Vector3, Single)
+  href: api/NiceGraphicLibrary.Utility.Vector3Extension.html#NiceGraphicLibrary_Utility_Vector3Extension_AddYScale_UnityEngine_Vector3_System_Single_
+  commentId: M:NiceGraphicLibrary.Utility.Vector3Extension.AddYScale(UnityEngine.Vector3,System.Single)
+  fullName: NiceGraphicLibrary.Utility.Vector3Extension.AddYScale(UnityEngine.Vector3, System.Single)
+  nameWithType: Vector3Extension.AddYScale(Vector3, Single)
+- uid: NiceGraphicLibrary.Utility.Vector3Extension.AddYScale*
+  name: AddYScale
+  href: api/NiceGraphicLibrary.Utility.Vector3Extension.html#NiceGraphicLibrary_Utility_Vector3Extension_AddYScale_
+  commentId: Overload:NiceGraphicLibrary.Utility.Vector3Extension.AddYScale
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Vector3Extension.AddYScale
+  nameWithType: Vector3Extension.AddYScale
+- uid: NiceGraphicLibrary.Utility.Vector3Extension.AddZScale(UnityEngine.Vector3,System.Single)
+  name: AddZScale(Vector3, Single)
+  href: api/NiceGraphicLibrary.Utility.Vector3Extension.html#NiceGraphicLibrary_Utility_Vector3Extension_AddZScale_UnityEngine_Vector3_System_Single_
+  commentId: M:NiceGraphicLibrary.Utility.Vector3Extension.AddZScale(UnityEngine.Vector3,System.Single)
+  fullName: NiceGraphicLibrary.Utility.Vector3Extension.AddZScale(UnityEngine.Vector3, System.Single)
+  nameWithType: Vector3Extension.AddZScale(Vector3, Single)
+- uid: NiceGraphicLibrary.Utility.Vector3Extension.AddZScale*
+  name: AddZScale
+  href: api/NiceGraphicLibrary.Utility.Vector3Extension.html#NiceGraphicLibrary_Utility_Vector3Extension_AddZScale_
+  commentId: Overload:NiceGraphicLibrary.Utility.Vector3Extension.AddZScale
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Vector3Extension.AddZScale
+  nameWithType: Vector3Extension.AddZScale
+- uid: NiceGraphicLibrary.Utility.Vector3Extension.DivideByVector(UnityEngine.Vector3,UnityEngine.Vector3)
+  name: DivideByVector(Vector3, Vector3)
+  href: api/NiceGraphicLibrary.Utility.Vector3Extension.html#NiceGraphicLibrary_Utility_Vector3Extension_DivideByVector_UnityEngine_Vector3_UnityEngine_Vector3_
+  commentId: M:NiceGraphicLibrary.Utility.Vector3Extension.DivideByVector(UnityEngine.Vector3,UnityEngine.Vector3)
+  fullName: NiceGraphicLibrary.Utility.Vector3Extension.DivideByVector(UnityEngine.Vector3, UnityEngine.Vector3)
+  nameWithType: Vector3Extension.DivideByVector(Vector3, Vector3)
+- uid: NiceGraphicLibrary.Utility.Vector3Extension.DivideByVector*
+  name: DivideByVector
+  href: api/NiceGraphicLibrary.Utility.Vector3Extension.html#NiceGraphicLibrary_Utility_Vector3Extension_DivideByVector_
+  commentId: Overload:NiceGraphicLibrary.Utility.Vector3Extension.DivideByVector
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Vector3Extension.DivideByVector
+  nameWithType: Vector3Extension.DivideByVector
+- uid: NiceGraphicLibrary.Utility.Vector3Extension.DivideByXScale(UnityEngine.Vector3,System.Single)
+  name: DivideByXScale(Vector3, Single)
+  href: api/NiceGraphicLibrary.Utility.Vector3Extension.html#NiceGraphicLibrary_Utility_Vector3Extension_DivideByXScale_UnityEngine_Vector3_System_Single_
+  commentId: M:NiceGraphicLibrary.Utility.Vector3Extension.DivideByXScale(UnityEngine.Vector3,System.Single)
+  fullName: NiceGraphicLibrary.Utility.Vector3Extension.DivideByXScale(UnityEngine.Vector3, System.Single)
+  nameWithType: Vector3Extension.DivideByXScale(Vector3, Single)
+- uid: NiceGraphicLibrary.Utility.Vector3Extension.DivideByXScale*
+  name: DivideByXScale
+  href: api/NiceGraphicLibrary.Utility.Vector3Extension.html#NiceGraphicLibrary_Utility_Vector3Extension_DivideByXScale_
+  commentId: Overload:NiceGraphicLibrary.Utility.Vector3Extension.DivideByXScale
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Vector3Extension.DivideByXScale
+  nameWithType: Vector3Extension.DivideByXScale
+- uid: NiceGraphicLibrary.Utility.Vector3Extension.DivideByYScale(UnityEngine.Vector3,System.Single)
+  name: DivideByYScale(Vector3, Single)
+  href: api/NiceGraphicLibrary.Utility.Vector3Extension.html#NiceGraphicLibrary_Utility_Vector3Extension_DivideByYScale_UnityEngine_Vector3_System_Single_
+  commentId: M:NiceGraphicLibrary.Utility.Vector3Extension.DivideByYScale(UnityEngine.Vector3,System.Single)
+  fullName: NiceGraphicLibrary.Utility.Vector3Extension.DivideByYScale(UnityEngine.Vector3, System.Single)
+  nameWithType: Vector3Extension.DivideByYScale(Vector3, Single)
+- uid: NiceGraphicLibrary.Utility.Vector3Extension.DivideByYScale*
+  name: DivideByYScale
+  href: api/NiceGraphicLibrary.Utility.Vector3Extension.html#NiceGraphicLibrary_Utility_Vector3Extension_DivideByYScale_
+  commentId: Overload:NiceGraphicLibrary.Utility.Vector3Extension.DivideByYScale
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Vector3Extension.DivideByYScale
+  nameWithType: Vector3Extension.DivideByYScale
+- uid: NiceGraphicLibrary.Utility.Vector3Extension.DivideByZScale(UnityEngine.Vector3,System.Single)
+  name: DivideByZScale(Vector3, Single)
+  href: api/NiceGraphicLibrary.Utility.Vector3Extension.html#NiceGraphicLibrary_Utility_Vector3Extension_DivideByZScale_UnityEngine_Vector3_System_Single_
+  commentId: M:NiceGraphicLibrary.Utility.Vector3Extension.DivideByZScale(UnityEngine.Vector3,System.Single)
+  fullName: NiceGraphicLibrary.Utility.Vector3Extension.DivideByZScale(UnityEngine.Vector3, System.Single)
+  nameWithType: Vector3Extension.DivideByZScale(Vector3, Single)
+- uid: NiceGraphicLibrary.Utility.Vector3Extension.DivideByZScale*
+  name: DivideByZScale
+  href: api/NiceGraphicLibrary.Utility.Vector3Extension.html#NiceGraphicLibrary_Utility_Vector3Extension_DivideByZScale_
+  commentId: Overload:NiceGraphicLibrary.Utility.Vector3Extension.DivideByZScale
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Vector3Extension.DivideByZScale
+  nameWithType: Vector3Extension.DivideByZScale
+- uid: NiceGraphicLibrary.Utility.Vector3Extension.MultiplyWithXScale(UnityEngine.Vector3,System.Single)
+  name: MultiplyWithXScale(Vector3, Single)
+  href: api/NiceGraphicLibrary.Utility.Vector3Extension.html#NiceGraphicLibrary_Utility_Vector3Extension_MultiplyWithXScale_UnityEngine_Vector3_System_Single_
+  commentId: M:NiceGraphicLibrary.Utility.Vector3Extension.MultiplyWithXScale(UnityEngine.Vector3,System.Single)
+  fullName: NiceGraphicLibrary.Utility.Vector3Extension.MultiplyWithXScale(UnityEngine.Vector3, System.Single)
+  nameWithType: Vector3Extension.MultiplyWithXScale(Vector3, Single)
+- uid: NiceGraphicLibrary.Utility.Vector3Extension.MultiplyWithXScale*
+  name: MultiplyWithXScale
+  href: api/NiceGraphicLibrary.Utility.Vector3Extension.html#NiceGraphicLibrary_Utility_Vector3Extension_MultiplyWithXScale_
+  commentId: Overload:NiceGraphicLibrary.Utility.Vector3Extension.MultiplyWithXScale
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Vector3Extension.MultiplyWithXScale
+  nameWithType: Vector3Extension.MultiplyWithXScale
+- uid: NiceGraphicLibrary.Utility.Vector3Extension.MultiplyWithYScale(UnityEngine.Vector3,System.Single)
+  name: MultiplyWithYScale(Vector3, Single)
+  href: api/NiceGraphicLibrary.Utility.Vector3Extension.html#NiceGraphicLibrary_Utility_Vector3Extension_MultiplyWithYScale_UnityEngine_Vector3_System_Single_
+  commentId: M:NiceGraphicLibrary.Utility.Vector3Extension.MultiplyWithYScale(UnityEngine.Vector3,System.Single)
+  fullName: NiceGraphicLibrary.Utility.Vector3Extension.MultiplyWithYScale(UnityEngine.Vector3, System.Single)
+  nameWithType: Vector3Extension.MultiplyWithYScale(Vector3, Single)
+- uid: NiceGraphicLibrary.Utility.Vector3Extension.MultiplyWithYScale*
+  name: MultiplyWithYScale
+  href: api/NiceGraphicLibrary.Utility.Vector3Extension.html#NiceGraphicLibrary_Utility_Vector3Extension_MultiplyWithYScale_
+  commentId: Overload:NiceGraphicLibrary.Utility.Vector3Extension.MultiplyWithYScale
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Vector3Extension.MultiplyWithYScale
+  nameWithType: Vector3Extension.MultiplyWithYScale
+- uid: NiceGraphicLibrary.Utility.Vector3Extension.MultiplyWithZScale(UnityEngine.Vector3,System.Single)
+  name: MultiplyWithZScale(Vector3, Single)
+  href: api/NiceGraphicLibrary.Utility.Vector3Extension.html#NiceGraphicLibrary_Utility_Vector3Extension_MultiplyWithZScale_UnityEngine_Vector3_System_Single_
+  commentId: M:NiceGraphicLibrary.Utility.Vector3Extension.MultiplyWithZScale(UnityEngine.Vector3,System.Single)
+  fullName: NiceGraphicLibrary.Utility.Vector3Extension.MultiplyWithZScale(UnityEngine.Vector3, System.Single)
+  nameWithType: Vector3Extension.MultiplyWithZScale(Vector3, Single)
+- uid: NiceGraphicLibrary.Utility.Vector3Extension.MultiplyWithZScale*
+  name: MultiplyWithZScale
+  href: api/NiceGraphicLibrary.Utility.Vector3Extension.html#NiceGraphicLibrary_Utility_Vector3Extension_MultiplyWithZScale_
+  commentId: Overload:NiceGraphicLibrary.Utility.Vector3Extension.MultiplyWithZScale
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Vector3Extension.MultiplyWithZScale
+  nameWithType: Vector3Extension.MultiplyWithZScale
+- uid: NiceGraphicLibrary.Utility.Vector3Extension.SubScale(UnityEngine.Vector3,System.Single)
+  name: SubScale(Vector3, Single)
+  href: api/NiceGraphicLibrary.Utility.Vector3Extension.html#NiceGraphicLibrary_Utility_Vector3Extension_SubScale_UnityEngine_Vector3_System_Single_
+  commentId: M:NiceGraphicLibrary.Utility.Vector3Extension.SubScale(UnityEngine.Vector3,System.Single)
+  fullName: NiceGraphicLibrary.Utility.Vector3Extension.SubScale(UnityEngine.Vector3, System.Single)
+  nameWithType: Vector3Extension.SubScale(Vector3, Single)
+- uid: NiceGraphicLibrary.Utility.Vector3Extension.SubScale*
+  name: SubScale
+  href: api/NiceGraphicLibrary.Utility.Vector3Extension.html#NiceGraphicLibrary_Utility_Vector3Extension_SubScale_
+  commentId: Overload:NiceGraphicLibrary.Utility.Vector3Extension.SubScale
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Vector3Extension.SubScale
+  nameWithType: Vector3Extension.SubScale
+- uid: NiceGraphicLibrary.Utility.Vector3Extension.SubXScale(UnityEngine.Vector3,System.Single)
+  name: SubXScale(Vector3, Single)
+  href: api/NiceGraphicLibrary.Utility.Vector3Extension.html#NiceGraphicLibrary_Utility_Vector3Extension_SubXScale_UnityEngine_Vector3_System_Single_
+  commentId: M:NiceGraphicLibrary.Utility.Vector3Extension.SubXScale(UnityEngine.Vector3,System.Single)
+  fullName: NiceGraphicLibrary.Utility.Vector3Extension.SubXScale(UnityEngine.Vector3, System.Single)
+  nameWithType: Vector3Extension.SubXScale(Vector3, Single)
+- uid: NiceGraphicLibrary.Utility.Vector3Extension.SubXScale*
+  name: SubXScale
+  href: api/NiceGraphicLibrary.Utility.Vector3Extension.html#NiceGraphicLibrary_Utility_Vector3Extension_SubXScale_
+  commentId: Overload:NiceGraphicLibrary.Utility.Vector3Extension.SubXScale
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Vector3Extension.SubXScale
+  nameWithType: Vector3Extension.SubXScale
+- uid: NiceGraphicLibrary.Utility.Vector3Extension.SubYScale(UnityEngine.Vector3,System.Single)
+  name: SubYScale(Vector3, Single)
+  href: api/NiceGraphicLibrary.Utility.Vector3Extension.html#NiceGraphicLibrary_Utility_Vector3Extension_SubYScale_UnityEngine_Vector3_System_Single_
+  commentId: M:NiceGraphicLibrary.Utility.Vector3Extension.SubYScale(UnityEngine.Vector3,System.Single)
+  fullName: NiceGraphicLibrary.Utility.Vector3Extension.SubYScale(UnityEngine.Vector3, System.Single)
+  nameWithType: Vector3Extension.SubYScale(Vector3, Single)
+- uid: NiceGraphicLibrary.Utility.Vector3Extension.SubYScale*
+  name: SubYScale
+  href: api/NiceGraphicLibrary.Utility.Vector3Extension.html#NiceGraphicLibrary_Utility_Vector3Extension_SubYScale_
+  commentId: Overload:NiceGraphicLibrary.Utility.Vector3Extension.SubYScale
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Vector3Extension.SubYScale
+  nameWithType: Vector3Extension.SubYScale
+- uid: NiceGraphicLibrary.Utility.Vector3Extension.SubZScale(UnityEngine.Vector3,System.Single)
+  name: SubZScale(Vector3, Single)
+  href: api/NiceGraphicLibrary.Utility.Vector3Extension.html#NiceGraphicLibrary_Utility_Vector3Extension_SubZScale_UnityEngine_Vector3_System_Single_
+  commentId: M:NiceGraphicLibrary.Utility.Vector3Extension.SubZScale(UnityEngine.Vector3,System.Single)
+  fullName: NiceGraphicLibrary.Utility.Vector3Extension.SubZScale(UnityEngine.Vector3, System.Single)
+  nameWithType: Vector3Extension.SubZScale(Vector3, Single)
+- uid: NiceGraphicLibrary.Utility.Vector3Extension.SubZScale*
+  name: SubZScale
+  href: api/NiceGraphicLibrary.Utility.Vector3Extension.html#NiceGraphicLibrary_Utility_Vector3Extension_SubZScale_
+  commentId: Overload:NiceGraphicLibrary.Utility.Vector3Extension.SubZScale
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Vector3Extension.SubZScale
+  nameWithType: Vector3Extension.SubZScale
