@@ -17,11 +17,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/NiceGraphicLibrary.Component.DebugDrawAllPoints.yml",
+      "source_relative_path": "api/NiceGraphicLibrary.Component.Debugging.DebugDrawAllPoints.yml",
       "output": {
         ".html": {
-          "relative_path": "api/NiceGraphicLibrary.Component.DebugDrawAllPoints.html",
-          "hash": "1aUuZrvgTPpvE+9f//rwON4xNJuM3kQ1kdFy1uvMd9E="
+          "relative_path": "api/NiceGraphicLibrary.Component.Debugging.DebugDrawAllPoints.html",
+          "hash": "mH51HJxB/7/uNsRVhDZsWPygVwq06+V2DRlv0iGAlZA="
         }
       },
       "is_incremental": true,
@@ -29,11 +29,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/NiceGraphicLibrary.Component.DebugValueScreenViewer.yml",
+      "source_relative_path": "api/NiceGraphicLibrary.Component.Debugging.DebugValueScreenViewer.yml",
       "output": {
         ".html": {
-          "relative_path": "api/NiceGraphicLibrary.Component.DebugValueScreenViewer.html",
-          "hash": "ezMTU4Unc98reVxyktSNseT5e7NeFMk/htUx/IG8MDI="
+          "relative_path": "api/NiceGraphicLibrary.Component.Debugging.DebugValueScreenViewer.html",
+          "hash": "wdFGhoWxV0j4xwmsNqJEMUQ1+H1lgAHesxQJ1VXsVMA="
         }
       },
       "is_incremental": true,
@@ -41,11 +41,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/NiceGraphicLibrary.Component.DrawBoundingBox.ElementColors.yml",
+      "source_relative_path": "api/NiceGraphicLibrary.Component.Debugging.DrawBoundingBox.ElementColors.yml",
       "output": {
         ".html": {
-          "relative_path": "api/NiceGraphicLibrary.Component.DrawBoundingBox.ElementColors.html",
-          "hash": "m3n15/60Hj85/cOI2aWbM/ALCJK0CP6p3i5mSHFbUu4="
+          "relative_path": "api/NiceGraphicLibrary.Component.Debugging.DrawBoundingBox.ElementColors.html",
+          "hash": "W2OtGI0yseDbU10oNIJZuQ7kL2LlLBpi3KChblwl1L4="
         }
       },
       "is_incremental": true,
@@ -53,11 +53,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/NiceGraphicLibrary.Component.DrawBoundingBox.yml",
+      "source_relative_path": "api/NiceGraphicLibrary.Component.Debugging.DrawBoundingBox.yml",
       "output": {
         ".html": {
-          "relative_path": "api/NiceGraphicLibrary.Component.DrawBoundingBox.html",
-          "hash": "ZkXVGimd8Tp1+aHdeGS56ppgs30NGTzKgRyeqvnZtPk="
+          "relative_path": "api/NiceGraphicLibrary.Component.Debugging.DrawBoundingBox.html",
+          "hash": "sBruwi1EPh+TRNQS2ulra/4q7iOe/OKPGaeecT4t5c4="
         }
       },
       "is_incremental": true,
@@ -65,11 +65,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/NiceGraphicLibrary.Component.DrawDebugLineTo.ReferencePoint.yml",
+      "source_relative_path": "api/NiceGraphicLibrary.Component.Debugging.DrawDebugLineTo.ReferencePoint.yml",
       "output": {
         ".html": {
-          "relative_path": "api/NiceGraphicLibrary.Component.DrawDebugLineTo.ReferencePoint.html",
-          "hash": "hkA+WOs4OyYDwg23bHAWBTmDZTuymux2I6I3bM/7egw="
+          "relative_path": "api/NiceGraphicLibrary.Component.Debugging.DrawDebugLineTo.ReferencePoint.html",
+          "hash": "ytG6dFMPhBR9q+XtvkGXS+tQ4uf6QJq0kJcInof0t8I="
         }
       },
       "is_incremental": true,
@@ -77,11 +77,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/NiceGraphicLibrary.Component.DrawDebugLineTo.yml",
+      "source_relative_path": "api/NiceGraphicLibrary.Component.Debugging.DrawDebugLineTo.yml",
       "output": {
         ".html": {
-          "relative_path": "api/NiceGraphicLibrary.Component.DrawDebugLineTo.html",
-          "hash": "GzG/hbWbv7XwAS37tM91nME5MMbBy7W7llagfbzwufU="
+          "relative_path": "api/NiceGraphicLibrary.Component.Debugging.DrawDebugLineTo.html",
+          "hash": "nM5r5Fy92+Pmm4BuqXudVNbVgnxPeU2kJMdZBwii9n0="
         }
       },
       "is_incremental": true,
@@ -89,11 +89,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/NiceGraphicLibrary.Component.KeyboardRigidMotion.yml",
+      "source_relative_path": "api/NiceGraphicLibrary.Component.Debugging.yml",
       "output": {
         ".html": {
-          "relative_path": "api/NiceGraphicLibrary.Component.KeyboardRigidMotion.html",
-          "hash": "90T31ewTmOwjdUtGjehyVnWOrValzN4lo4FErSA1bOY="
+          "relative_path": "api/NiceGraphicLibrary.Component.Debugging.html",
+          "hash": "Gu9wWX6LiRBk3wKLCKoGi5535SjYaJvKo9qp0TObSGE="
         }
       },
       "is_incremental": true,
@@ -101,11 +101,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/NiceGraphicLibrary.Component.SoundClipManager.ClipEntry.yml",
+      "source_relative_path": "api/NiceGraphicLibrary.Component.Movement.Follow.yml",
       "output": {
         ".html": {
-          "relative_path": "api/NiceGraphicLibrary.Component.SoundClipManager.ClipEntry.html",
-          "hash": "BOV+7YKIRaZkMBG5WgEDK2nnYKVjjqpBk2lCp6HXE9E="
+          "relative_path": "api/NiceGraphicLibrary.Component.Movement.Follow.html",
+          "hash": "SL7jCAGfVovxxBxhED2tr11BxMbrQUMjeesWzV1NBAA="
         }
       },
       "is_incremental": true,
@@ -113,11 +113,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/NiceGraphicLibrary.Component.SoundClipManager.yml",
+      "source_relative_path": "api/NiceGraphicLibrary.Component.Movement.InterpolationKind.yml",
       "output": {
         ".html": {
-          "relative_path": "api/NiceGraphicLibrary.Component.SoundClipManager.html",
-          "hash": "air4dJV6tJD2+iNn+obuhdnrZHnTCOukwYe91yRqq8M="
+          "relative_path": "api/NiceGraphicLibrary.Component.Movement.InterpolationKind.html",
+          "hash": "8LdeZGdX+ODR85lVhn9f5SpDVP/PLhqMeSBPzKbWi2k="
         }
       },
       "is_incremental": true,
@@ -125,11 +125,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/NiceGraphicLibrary.Component.yml",
+      "source_relative_path": "api/NiceGraphicLibrary.Component.Movement.KeyboardRigidMotion.yml",
       "output": {
         ".html": {
-          "relative_path": "api/NiceGraphicLibrary.Component.html",
-          "hash": "ndDYAC22YnNCcqVrJN1VJ/ae8K5xoVVNKaZuEhOIYz8="
+          "relative_path": "api/NiceGraphicLibrary.Component.Movement.KeyboardRigidMotion.html",
+          "hash": "Om/oGg8SAgnvIg6xtgkSK9tNSTm6pnq64bqnYNHNpVc="
         }
       },
       "is_incremental": true,
@@ -137,11 +137,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/NiceGraphicLibrary.Follow.yml",
+      "source_relative_path": "api/NiceGraphicLibrary.Component.Movement.MovementAxisLevel.yml",
       "output": {
         ".html": {
-          "relative_path": "api/NiceGraphicLibrary.Follow.html",
-          "hash": "yXeMPwfGDFa1/CvGk6Ifh0K9pfA0RR8VDOPeLToTN9o="
+          "relative_path": "api/NiceGraphicLibrary.Component.Movement.MovementAxisLevel.html",
+          "hash": "zay0MV6bkPd2OoswMxTCzzsv1WPLqkC1gFFpygPfARs="
         }
       },
       "is_incremental": true,
@@ -149,11 +149,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/NiceGraphicLibrary.InterpolationKind.yml",
+      "source_relative_path": "api/NiceGraphicLibrary.Component.Movement.MovingState.yml",
       "output": {
         ".html": {
-          "relative_path": "api/NiceGraphicLibrary.InterpolationKind.html",
-          "hash": "vBCzxaedWtt/Q25GR879hYGwjbk24rYr5dyYpGHzu/s="
+          "relative_path": "api/NiceGraphicLibrary.Component.Movement.MovingState.html",
+          "hash": "BL3nAyQGmUMHbHJgZ3+WQsq8xPlWXWgwDB+5gz0430c="
         }
       },
       "is_incremental": true,
@@ -161,11 +161,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/NiceGraphicLibrary.MovementAxisLevel.yml",
+      "source_relative_path": "api/NiceGraphicLibrary.Component.Movement.RigidForceMovement.yml",
       "output": {
         ".html": {
-          "relative_path": "api/NiceGraphicLibrary.MovementAxisLevel.html",
-          "hash": "+A6PyV202TMqI6cED8E4KKirpmgXeOffbM87YCZ6HSo="
+          "relative_path": "api/NiceGraphicLibrary.Component.Movement.RigidForceMovement.html",
+          "hash": "mHp5HuSTcTzfMdkzWswbY2p1kmBdilrvYUl6+B1ccIA="
         }
       },
       "is_incremental": true,
@@ -173,11 +173,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/NiceGraphicLibrary.MovingState.yml",
+      "source_relative_path": "api/NiceGraphicLibrary.Component.Movement.RigidGeometryMotion.yml",
       "output": {
         ".html": {
-          "relative_path": "api/NiceGraphicLibrary.MovingState.html",
-          "hash": "EfrGYmonNcLpR9zLIpreP0gp+6J/h36nWlsvvuY469g="
+          "relative_path": "api/NiceGraphicLibrary.Component.Movement.RigidGeometryMotion.html",
+          "hash": "4AMFlVWaQ2rQIzpeUcyRCDDZVuckAnTes6pxCo2NO/c="
         }
       },
       "is_incremental": true,
@@ -185,11 +185,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/NiceGraphicLibrary.RigidForceMovement.yml",
+      "source_relative_path": "api/NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.yml",
       "output": {
         ".html": {
-          "relative_path": "api/NiceGraphicLibrary.RigidForceMovement.html",
-          "hash": "OGS6z0i9Xk2hSKf65Jn39UumSfQHydrw6hGrT7XBbSY="
+          "relative_path": "api/NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.html",
+          "hash": "wW+fX2NZu79WtyWBzSnAdM7R2I3T42R6rX/oWdNYke8="
         }
       },
       "is_incremental": true,
@@ -197,11 +197,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/NiceGraphicLibrary.RigidGeometryMotion.yml",
+      "source_relative_path": "api/NiceGraphicLibrary.Component.Movement.RigidInterpolatedMovement.yml",
       "output": {
         ".html": {
-          "relative_path": "api/NiceGraphicLibrary.RigidGeometryMotion.html",
-          "hash": "sk9Z58vwl0KoGphHRvc1x6Flwl3dmnzGkFUfMRTKgaY="
+          "relative_path": "api/NiceGraphicLibrary.Component.Movement.RigidInterpolatedMovement.html",
+          "hash": "Xgtxpu+15cdO3EUpDsv2gyZcLU1Jtq2cRT7nCXc5dKw="
         }
       },
       "is_incremental": true,
@@ -209,11 +209,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/NiceGraphicLibrary.RigidInterpolatedMotion.yml",
+      "source_relative_path": "api/NiceGraphicLibrary.Component.Movement.RigidStaticMovment.yml",
       "output": {
         ".html": {
-          "relative_path": "api/NiceGraphicLibrary.RigidInterpolatedMotion.html",
-          "hash": "5JvdGDIETDrbF1oqM4nfQAcGcuRQh/XRCcWxlwxfrdw="
+          "relative_path": "api/NiceGraphicLibrary.Component.Movement.RigidStaticMovment.html",
+          "hash": "iir7nxf6S3fZDwu4MQ1GSRnas8dTDl/tFN4k6X7sZwI="
         }
       },
       "is_incremental": true,
@@ -221,11 +221,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/NiceGraphicLibrary.RigidInterpolatedMovement.yml",
+      "source_relative_path": "api/NiceGraphicLibrary.Component.Movement.RigidStaticRotation.yml",
       "output": {
         ".html": {
-          "relative_path": "api/NiceGraphicLibrary.RigidInterpolatedMovement.html",
-          "hash": "DHYoJ6pZzy0CfLZtLHqNt/pdwNLX9qvnotz/P2NDYMU="
+          "relative_path": "api/NiceGraphicLibrary.Component.Movement.RigidStaticRotation.html",
+          "hash": "bzhzIGpGBhigrL3V62/iq8Iei+i1M0NqUa6FxKWtJ44="
         }
       },
       "is_incremental": true,
@@ -233,11 +233,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/NiceGraphicLibrary.RigidStaticMovment.yml",
+      "source_relative_path": "api/NiceGraphicLibrary.Component.Movement.yml",
       "output": {
         ".html": {
-          "relative_path": "api/NiceGraphicLibrary.RigidStaticMovment.html",
-          "hash": "seOjsZAVZnsNiWnMaLnc6AK2uCvIDF0j/xgSOrSV8xQ="
+          "relative_path": "api/NiceGraphicLibrary.Component.Movement.html",
+          "hash": "H7Z0jVjsLqOq8hpEPlBtPxLsEVe8vDUc40TW0mZBhqs="
         }
       },
       "is_incremental": true,
@@ -245,11 +245,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/NiceGraphicLibrary.RigidStaticRotation.yml",
+      "source_relative_path": "api/NiceGraphicLibrary.Component.Sound.SoundClipManager.ClipEntry.yml",
       "output": {
         ".html": {
-          "relative_path": "api/NiceGraphicLibrary.RigidStaticRotation.html",
-          "hash": "evxIdq7Znmf8wxkgd5mGwiHf7b7a5b1RZvWL6fDO1zY="
+          "relative_path": "api/NiceGraphicLibrary.Component.Sound.SoundClipManager.ClipEntry.html",
+          "hash": "I/ezKdhk4Znep4WolIir9z1/vYSzmsOrXWOztTVcGD4="
         }
       },
       "is_incremental": true,
@@ -257,11 +257,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/NiceGraphicLibrary.StopableCoroutines.yml",
+      "source_relative_path": "api/NiceGraphicLibrary.Component.Sound.SoundClipManager.yml",
       "output": {
         ".html": {
-          "relative_path": "api/NiceGraphicLibrary.StopableCoroutines.html",
-          "hash": "K2yh5srBH9gXzNJg62oKaTaeCV6JOYgx9OOUmOW9SLw="
+          "relative_path": "api/NiceGraphicLibrary.Component.Sound.SoundClipManager.html",
+          "hash": "DLXPFDcFVreZdySthXAi2ZC/hMoa67M1aacHUKuw0Zg="
         }
       },
       "is_incremental": true,
@@ -269,11 +269,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/NiceGraphicLibrary.StringExtension.yml",
+      "source_relative_path": "api/NiceGraphicLibrary.Component.Sound.yml",
       "output": {
         ".html": {
-          "relative_path": "api/NiceGraphicLibrary.StringExtension.html",
-          "hash": "346OeE68mm6MMMuqnJwORBssjNSOkgjYe3kzg7MyzRY="
+          "relative_path": "api/NiceGraphicLibrary.Component.Sound.html",
+          "hash": "VC272AyHfaen7s0DXTYwzw1O/rGy+2lB17s9T1z8skY="
         }
       },
       "is_incremental": true,
@@ -281,11 +281,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/NiceGraphicLibrary.Utility.CooldownDeltaTimer.yml",
+      "source_relative_path": "api/NiceGraphicLibrary.DrawLineAttribute.yml",
       "output": {
         ".html": {
-          "relative_path": "api/NiceGraphicLibrary.Utility.CooldownDeltaTimer.html",
-          "hash": "N/tVP+5yvZPLz6E6/Or9AfThFHqqzspM/gslfPWpsX8="
+          "relative_path": "api/NiceGraphicLibrary.DrawLineAttribute.html",
+          "hash": "q9Tus3k8BqwOsXqV+fnxQ5AFwRQftzO3LwVQ8LfpznI="
         }
       },
       "is_incremental": true,
@@ -293,11 +293,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/NiceGraphicLibrary.Utility.CooldownTimeStampTimer.yml",
+      "source_relative_path": "api/NiceGraphicLibrary.Editor.DrawLineDecorator.yml",
       "output": {
         ".html": {
-          "relative_path": "api/NiceGraphicLibrary.Utility.CooldownTimeStampTimer.html",
-          "hash": "UF7q6CXL+AeWbtpi9juKl11uFOJ4MtkEZGSfwYghKdA="
+          "relative_path": "api/NiceGraphicLibrary.Editor.DrawLineDecorator.html",
+          "hash": "m5qCS5vf+ohiVA3XSDHBS4KNrlHiBA39+tHQP+8YbgA="
         }
       },
       "is_incremental": true,
@@ -305,11 +305,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/NiceGraphicLibrary.Utility.CoroutineUtility.yml",
+      "source_relative_path": "api/NiceGraphicLibrary.Editor.ReadOnlyFieldDrawer.yml",
       "output": {
         ".html": {
-          "relative_path": "api/NiceGraphicLibrary.Utility.CoroutineUtility.html",
-          "hash": "KDssE60WfucviZfcAgC+bvw193SjNXJ8Bmx2t+84Wrs="
+          "relative_path": "api/NiceGraphicLibrary.Editor.ReadOnlyFieldDrawer.html",
+          "hash": "yaSw+bKzISMEWrT6SrLGKNFzY9TlNu9wNKz3DAIuPHM="
         }
       },
       "is_incremental": true,
@@ -317,11 +317,191 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/NiceGraphicLibrary.Utility.CountDown.yml",
+      "source_relative_path": "api/NiceGraphicLibrary.Editor.yml",
       "output": {
         ".html": {
-          "relative_path": "api/NiceGraphicLibrary.Utility.CountDown.html",
-          "hash": "xJCcrwlCaMMNiYrYPA/yrn8QeJP4Ysjnza3Yl2FlRG0="
+          "relative_path": "api/NiceGraphicLibrary.Editor.html",
+          "hash": "3PHqFmfr2ezi30xkk+YA9SRiVTpCPz+kHou00dJlUkk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NiceGraphicLibrary.Extensions.StringExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NiceGraphicLibrary.Extensions.StringExtension.html",
+          "hash": "+v3p3MG2AUTeH9rppixKN95/a6bw98HTWMPOHr0XIcA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NiceGraphicLibrary.Extensions.Vector3Extension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NiceGraphicLibrary.Extensions.Vector3Extension.html",
+          "hash": "UE0MnzIlK2oSCGxc93CIVFasZP3EzTiluRfe7OZRVEY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NiceGraphicLibrary.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NiceGraphicLibrary.Extensions.html",
+          "hash": "TkW6GyPA8a286S68bJGpf9RTCnDF+9mSpMvk6OZ3oZA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NiceGraphicLibrary.FakeDeltaTimeProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NiceGraphicLibrary.FakeDeltaTimeProvider.html",
+          "hash": "TXKc9UdZLOnTTjnSISdJO9owFL4TbJclqIWa89r0OjY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NiceGraphicLibrary.IAdjustableForUnitTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NiceGraphicLibrary.IAdjustableForUnitTest.html",
+          "hash": "pueJ1QboYMiN1bPRYqWXqiBdjQed4kntzwkW+Tlg6VA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NiceGraphicLibrary.IDeltaTimeProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NiceGraphicLibrary.IDeltaTimeProvider.html",
+          "hash": "nKy04VVQAAl0GLS4uYlpx2zenfDaBHEvscSjKp+1L14="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NiceGraphicLibrary.ReadOnlyFieldAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NiceGraphicLibrary.ReadOnlyFieldAttribute.html",
+          "hash": "SyaxPn5rqNZVJ0gs8d7EUL6H/jdSt1F7Pgzj6s4/dXY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NiceGraphicLibrary.UnityDeltaTimeProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NiceGraphicLibrary.UnityDeltaTimeProvider.html",
+          "hash": "6zTJrx5iE0vmzjdOSElB6JldeFgoY+j5PL4gEhIookM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.html",
+          "hash": "yEOspXOCKXqyjWHXjxwdvgRA1D9l/b2unQbChrKrz28="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.html",
+          "hash": "KWuBB/hn9qSuSwzcYX0LguuhZgVsxcRuzfiR6yVNRKA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NiceGraphicLibrary.Utility.Cooldown.CountDown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html",
+          "hash": "D2nppFZVkrqY+Bcyl3uUAf1NzFQEb+09Dol3sHGyvJA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NiceGraphicLibrary.Utility.Cooldown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NiceGraphicLibrary.Utility.Cooldown.html",
+          "hash": "GlO7UU8qjK9s64ZimwnJErx14Y2wbE0g/TnWoswiPFA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.html",
+          "hash": "Z0V8+FaRjyG+RU0tQYk4B/RdfzPEC84Or+a0zbnvAMk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NiceGraphicLibrary.Utility.Coroutines.StoppableCoroutines.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NiceGraphicLibrary.Utility.Coroutines.StoppableCoroutines.html",
+          "hash": "coyg2Ydq54lYB8W7m63c2OO0j03UMJlp4mDegkXi5n4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NiceGraphicLibrary.Utility.Coroutines.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NiceGraphicLibrary.Utility.Coroutines.html",
+          "hash": "YvRyYEfDfG+krCOz3a3eOWshB2MsufR2/BHxqptIe00="
         }
       },
       "is_incremental": true,
@@ -333,7 +513,7 @@
       "output": {
         ".html": {
           "relative_path": "api/NiceGraphicLibrary.Utility.Geometry3DUtility.html",
-          "hash": "HUlMUEwMGggDNLEKAL1am2w6c0+QMtfrUQtB4XUyGak="
+          "hash": "Ts9D/NTyXKE4OuPN5eqCTt6QaSx7bCmcdXm+uVsFXdo="
         }
       },
       "is_incremental": true,
@@ -345,7 +525,7 @@
       "output": {
         ".html": {
           "relative_path": "api/NiceGraphicLibrary.Utility.Interpolation.html",
-          "hash": "kr4UJy2iLBlcmcFhExBlazeSRbuE/Dx11xaFxQGwfYc="
+          "hash": "8Z4rW0FtfboGDvQCejUZ/QNDmeWM2MM/5hHqhoA8zbA="
         }
       },
       "is_incremental": true,
@@ -357,19 +537,7 @@
       "output": {
         ".html": {
           "relative_path": "api/NiceGraphicLibrary.Utility.ListToDictionaryConverter-3.html",
-          "hash": "xFuv0ApOKOGMhWnBJpiyhXCriDmaTTjjyG0I5k139lE="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/NiceGraphicLibrary.Utility.Vector3Extension.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/NiceGraphicLibrary.Utility.Vector3Extension.html",
-          "hash": "/9pyoYO/XmjI6jLoDSRRf8KwkucNrsdo3pPxJLsjaBA="
+          "hash": "jK4+5rh/7cVRCMSZ0eNcoEJKXl3AqkRqLTd0bfCEtn8="
         }
       },
       "is_incremental": true,
@@ -381,7 +549,7 @@
       "output": {
         ".html": {
           "relative_path": "api/NiceGraphicLibrary.Utility.html",
-          "hash": "S7WpMovCB8ICSri8w7JprcqAtTx/RamhdgNV5uQnvxw="
+          "hash": "o4Z0kS2uDduDylqmQ3jJ7q04+KZTbDmPQCKZ8VZb/ow="
         }
       },
       "is_incremental": true,
@@ -393,7 +561,7 @@
       "output": {
         ".html": {
           "relative_path": "api/NiceGraphicLibrary.html",
-          "hash": "UJx0Ch3zaAwo/F2uxsQ7WRyfIC7kSjBahhW4zypaVyc="
+          "hash": "nvzy5k0PZosbsGnzr++WRcPhiL+IEjAhnwbV5QGKZTg="
         }
       },
       "is_incremental": true,
@@ -417,7 +585,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "rixlr6IJolJlmecKMYsGmRY6x606AKNN90aQwWJgoKI="
+          "hash": "mmgjSCuaQHELWkLAOAfSpCvs8+gLsxHncT9Lms3vGSA="
         }
       },
       "is_incremental": false,
@@ -490,8 +658,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 32,
-          "skipped_file_count": 32
+          "total_file_count": 46,
+          "skipped_file_count": 46
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

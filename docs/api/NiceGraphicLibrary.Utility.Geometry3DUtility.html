@@ -84,10 +84,16 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.GetHashCode()</span>
@@ -98,30 +104,19 @@
     <div>
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="NiceGraphicLibrary.Utility.html">NiceGraphicLibrary.Utility</a></h6>
-  <h6><strong>Assembly</strong>: CodeBaseLibrary.dll</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="NiceGraphicLibrary_Utility_Geometry3DUtility_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static class Geometry3DUtility</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/new/main/apiSpec/new?filename=NiceGraphicLibrary_Utility_Geometry3DUtility_GetBoundingBoxOfAllMeshes_UnityEngine_GameObject_.md&amp;value=---%0Auid%3A%20NiceGraphicLibrary.Utility.Geometry3DUtility.GetBoundingBoxOfAllMeshes(UnityEngine.GameObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/blob/main/Runtime/Utility/Geometry3DUtility.cs/#L28">View Source</a>
-  </span>
+  
+  
   <a id="NiceGraphicLibrary_Utility_Geometry3DUtility_GetBoundingBoxOfAllMeshes_" data-uid="NiceGraphicLibrary.Utility.Geometry3DUtility.GetBoundingBoxOfAllMeshes*"></a>
-  <h4 id="NiceGraphicLibrary_Utility_Geometry3DUtility_GetBoundingBoxOfAllMeshes_UnityEngine_GameObject_" data-uid="NiceGraphicLibrary.Utility.Geometry3DUtility.GetBoundingBoxOfAllMeshes(UnityEngine.GameObject)">GetBoundingBoxOfAllMeshes(GameObject)</h4>
+  <h4 id="NiceGraphicLibrary_Utility_Geometry3DUtility_GetBoundingBoxOfAllMeshes_GameObject_" data-uid="NiceGraphicLibrary.Utility.Geometry3DUtility.GetBoundingBoxOfAllMeshes(GameObject)">GetBoundingBoxOfAllMeshes(GameObject)</h4>
   <div class="markdown level1 summary"><p>Gets the center, size etc from a whole mesh of an object. Whole mesh can made up of several meshes
 residing in the object itself and its children</p>
 </div>
@@ -141,7 +136,7 @@ residing in the object itself and its children</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">UnityEngine.GameObject</span></td>
+        <td><span class="xref">GameObject</span></td>
         <td><span class="parametername">rootObject</span></td>
         <td><p>Object to get the bounding box from</p>
 </td>
@@ -158,14 +153,78 @@ residing in the object itself and its children</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">UnityEngine.Bounds</span></td>
+        <td><span class="xref">Bounds</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="NiceGraphicLibrary_Utility_Geometry3DUtility_GetBoundingBoxOfAllMeshes_UnityEngine_GameObject__remarks">Remarks</h5>
+  <h5 id="NiceGraphicLibrary_Utility_Geometry3DUtility_GetBoundingBoxOfAllMeshes_GameObject__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>To work, object with a mesh needs a component MeshRenderer.</p>
 </div>
+  
+  
+  <a id="NiceGraphicLibrary_Utility_Geometry3DUtility_IsPointInDirection_" data-uid="NiceGraphicLibrary.Utility.Geometry3DUtility.IsPointInDirection*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_Geometry3DUtility_IsPointInDirection_Vector3_Vector3_Vector3_System_Single_" data-uid="NiceGraphicLibrary.Utility.Geometry3DUtility.IsPointInDirection(Vector3,Vector3,Vector3,System.Single)">IsPointInDirection(Vector3, Vector3, Vector3, Single)</h4>
+  <div class="markdown level1 summary"><p>Finds out if a point is on the line which can be drawn by the a given direction</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsPointInDirection(Vector3 point, Vector3 direction, Vector3 offset = null, float delatTolerance = 0.001F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">point</span></td>
+        <td><p>Point to be check for being on the line</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">direction</span></td>
+        <td><p>Direction which draws the imaginative line</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>Start point for line in the direction</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">delatTolerance</span></td>
+        <td><p>Tolerance for the check. The higher, the less closer the point must the to the direction line.
+Negative values will be converted to their absolute value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the point in on the direction line.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
@@ -173,12 +232,6 @@ residing in the object itself and its children</p>
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
-                  <li>
-                    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/new/main/apiSpec/new?filename=NiceGraphicLibrary_Utility_Geometry3DUtility.md&amp;value=---%0Auid%3A%20NiceGraphicLibrary.Utility.Geometry3DUtility%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/blob/main/Runtime/Utility/Geometry3DUtility.cs/#L11" class="contribution-link">View Source</a>
-                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
