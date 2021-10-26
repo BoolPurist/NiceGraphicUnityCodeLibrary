@@ -1,0 +1,1188 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RigidInterpolatedMotion
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RigidInterpolatedMotion
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="NiceGraphicLibrary.RigidInterpolatedMotion">
+  
+  
+  <h1 id="NiceGraphicLibrary_RigidInterpolatedMotion" data-uid="NiceGraphicLibrary.RigidInterpolatedMotion" class="text-break">Class RigidInterpolatedMotion
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><a class="xref" href="NiceGraphicLibrary.RigidGeometryMotion.html">RigidGeometryMotion</a></div>
+    <div class="level6"><span class="xref">RigidInterpolatedMotion</span></div>
+      <div class="level7"><a class="xref" href="NiceGraphicLibrary.RigidInterpolatedMovement.html">RigidInterpolatedMovement</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion__AxisLevel">RigidGeometryMotion._AxisLevel</a>
+    </div>
+    <div>
+      <a class="xref" href="NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_Velocity">RigidGeometryMotion.Velocity</a>
+    </div>
+    <div>
+      <a class="xref" href="NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_Speed">RigidGeometryMotion.Speed</a>
+    </div>
+    <div>
+      <a class="xref" href="NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_SpeedModifier">RigidGeometryMotion.SpeedModifier</a>
+    </div>
+    <div>
+      <a class="xref" href="NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion__axisX">RigidGeometryMotion._axisX</a>
+    </div>
+    <div>
+      <a class="xref" href="NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion__axisY">RigidGeometryMotion._axisY</a>
+    </div>
+    <div>
+      <a class="xref" href="NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion__axisZ">RigidGeometryMotion._axisZ</a>
+    </div>
+    <div>
+      <a class="xref" href="NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion__movement">RigidGeometryMotion._movement</a>
+    </div>
+    <div>
+      <a class="xref" href="NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion__rb">RigidGeometryMotion._rb</a>
+    </div>
+    <div>
+      <a class="xref" href="NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_FixedUpdate">RigidGeometryMotion.FixedUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_ApplyMovement">RigidGeometryMotion.ApplyMovement()</a>
+    </div>
+    <div>
+      <a class="xref" href="NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_ProcessAxis">RigidGeometryMotion.ProcessAxis()</a>
+    </div>
+    <div>
+      <a class="xref" href="NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_ProcessMovementAxis">RigidGeometryMotion.ProcessMovementAxis()</a>
+    </div>
+    <div>
+      <a class="xref" href="NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_OnXMotion_System_Single_">RigidGeometryMotion.OnXMotion(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_OnYMotion_System_Single_">RigidGeometryMotion.OnYMotion(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_OnZMotion_System_Single_">RigidGeometryMotion.OnZMotion(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_ClampInput_System_Single_">RigidGeometryMotion.ClampInput(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_Start">RigidGeometryMotion.Start()</a>
+    </div>
+    <div>
+      <a class="xref" href="NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_ProcessGlobalAxis">RigidGeometryMotion.ProcessGlobalAxis()</a>
+    </div>
+    <div>
+      <a class="xref" href="NiceGraphicLibrary.RigidGeometryMotion.html#NiceGraphicLibrary_RigidGeometryMotion_ProcessLocalAxis">RigidGeometryMotion.ProcessLocalAxis()</a>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.IsInvoking()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.CancelInvoke()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.Invoke(System.String, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.InvokeRepeating(System.String, System.Single, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.CancelInvoke(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.IsInvoking(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine(System.Collections.IEnumerator)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine_Auto(System.Collections.IEnumerator)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StopCoroutine(System.Collections.IEnumerator)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StopCoroutine(UnityEngine.Coroutine)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StopCoroutine(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StopAllCoroutines()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.print(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.useGUILayout</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.runInEditMode</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Behaviour.enabled</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Behaviour.isActiveAndEnabled</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponent(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.TryGetComponent(System.Type, UnityEngine.Component)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.TryGetComponent&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponent(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren&lt;T&gt;(System.Boolean, System.Collections.Generic.List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren&lt;T&gt;(System.Collections.Generic.List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInParent(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent&lt;T&gt;(System.Boolean, System.Collections.Generic.List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponents(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponents(System.Type, System.Collections.Generic.List&lt;UnityEngine.Component&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponents&lt;T&gt;(System.Collections.Generic.List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponents&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.CompareTag(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String, System.Object, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessage(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessage(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessage(System.String, System.Object, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessage(System.String, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String, System.Object, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.transform</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.gameObject</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.tag</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.GetInstanceID()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Vector3, UnityEngine.Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Transform, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Vector3, UnityEngine.Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Transform, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Destroy(UnityEngine.Object, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Destroy(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyImmediate(UnityEngine.Object, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyImmediate(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyObject(UnityEngine.Object, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyObject(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindSceneObjectsOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfTypeIncludingAssets(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfTypeAll(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.name</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.hideFlags</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="NiceGraphicLibrary.html">NiceGraphicLibrary</a></h6>
+  <h6><strong>Assembly</strong>: CodeBaseLibrary.dll</h6>
+  <h5 id="NiceGraphicLibrary_RigidInterpolatedMotion_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class RigidInterpolatedMotion : RigidGeometryMotion</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/new/main/apiSpec/new?filename=NiceGraphicLibrary_RigidInterpolatedMotion__CounterDuration.md&amp;value=---%0Auid%3A%20NiceGraphicLibrary.RigidInterpolatedMotion._CounterDuration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/blob/main/Runtime/Component/Movement/RigidInterpolatedMotion.cs/#L17">View Source</a>
+  </span>
+  <h4 id="NiceGraphicLibrary_RigidInterpolatedMotion__CounterDuration" data-uid="NiceGraphicLibrary.RigidInterpolatedMotion._CounterDuration">_CounterDuration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Min(0F)]
+protected float _CounterDuration</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/new/main/apiSpec/new?filename=NiceGraphicLibrary_RigidInterpolatedMotion__currentCounterDurationX.md&amp;value=---%0Auid%3A%20NiceGraphicLibrary.RigidInterpolatedMotion._currentCounterDurationX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/blob/main/Runtime/Component/Movement/RigidInterpolatedMotion.cs/#L24">View Source</a>
+  </span>
+  <h4 id="NiceGraphicLibrary_RigidInterpolatedMotion__currentCounterDurationX" data-uid="NiceGraphicLibrary.RigidInterpolatedMotion._currentCounterDurationX">_currentCounterDurationX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _currentCounterDurationX</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/new/main/apiSpec/new?filename=NiceGraphicLibrary_RigidInterpolatedMotion__currentCounterDurationY.md&amp;value=---%0Auid%3A%20NiceGraphicLibrary.RigidInterpolatedMotion._currentCounterDurationY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/blob/main/Runtime/Component/Movement/RigidInterpolatedMotion.cs/#L28">View Source</a>
+  </span>
+  <h4 id="NiceGraphicLibrary_RigidInterpolatedMotion__currentCounterDurationY" data-uid="NiceGraphicLibrary.RigidInterpolatedMotion._currentCounterDurationY">_currentCounterDurationY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _currentCounterDurationY</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/new/main/apiSpec/new?filename=NiceGraphicLibrary_RigidInterpolatedMotion__currentCounterDurationZ.md&amp;value=---%0Auid%3A%20NiceGraphicLibrary.RigidInterpolatedMotion._currentCounterDurationZ%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/blob/main/Runtime/Component/Movement/RigidInterpolatedMotion.cs/#L32">View Source</a>
+  </span>
+  <h4 id="NiceGraphicLibrary_RigidInterpolatedMotion__currentCounterDurationZ" data-uid="NiceGraphicLibrary.RigidInterpolatedMotion._currentCounterDurationZ">_currentCounterDurationZ</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _currentCounterDurationZ</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/new/main/apiSpec/new?filename=NiceGraphicLibrary_RigidInterpolatedMotion__currentDurationX.md&amp;value=---%0Auid%3A%20NiceGraphicLibrary.RigidInterpolatedMotion._currentDurationX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/blob/main/Runtime/Component/Movement/RigidInterpolatedMotion.cs/#L22">View Source</a>
+  </span>
+  <h4 id="NiceGraphicLibrary_RigidInterpolatedMotion__currentDurationX" data-uid="NiceGraphicLibrary.RigidInterpolatedMotion._currentDurationX">_currentDurationX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _currentDurationX</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/new/main/apiSpec/new?filename=NiceGraphicLibrary_RigidInterpolatedMotion__currentDurationY.md&amp;value=---%0Auid%3A%20NiceGraphicLibrary.RigidInterpolatedMotion._currentDurationY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/blob/main/Runtime/Component/Movement/RigidInterpolatedMotion.cs/#L26">View Source</a>
+  </span>
+  <h4 id="NiceGraphicLibrary_RigidInterpolatedMotion__currentDurationY" data-uid="NiceGraphicLibrary.RigidInterpolatedMotion._currentDurationY">_currentDurationY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _currentDurationY</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/new/main/apiSpec/new?filename=NiceGraphicLibrary_RigidInterpolatedMotion__currentDurationZ.md&amp;value=---%0Auid%3A%20NiceGraphicLibrary.RigidInterpolatedMotion._currentDurationZ%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/blob/main/Runtime/Component/Movement/RigidInterpolatedMotion.cs/#L30">View Source</a>
+  </span>
+  <h4 id="NiceGraphicLibrary_RigidInterpolatedMotion__currentDurationZ" data-uid="NiceGraphicLibrary.RigidInterpolatedMotion._currentDurationZ">_currentDurationZ</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _currentDurationZ</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/new/main/apiSpec/new?filename=NiceGraphicLibrary_RigidInterpolatedMotion__currentMovingStateX.md&amp;value=---%0Auid%3A%20NiceGraphicLibrary.RigidInterpolatedMotion._currentMovingStateX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/blob/main/Runtime/Component/Movement/RigidInterpolatedMotion.cs/#L35">View Source</a>
+  </span>
+  <h4 id="NiceGraphicLibrary_RigidInterpolatedMotion__currentMovingStateX" data-uid="NiceGraphicLibrary.RigidInterpolatedMotion._currentMovingStateX">_currentMovingStateX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected MovingState _currentMovingStateX</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NiceGraphicLibrary.MovingState.html">MovingState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/new/main/apiSpec/new?filename=NiceGraphicLibrary_RigidInterpolatedMotion__currentMovingStateY.md&amp;value=---%0Auid%3A%20NiceGraphicLibrary.RigidInterpolatedMotion._currentMovingStateY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/blob/main/Runtime/Component/Movement/RigidInterpolatedMotion.cs/#L36">View Source</a>
+  </span>
+  <h4 id="NiceGraphicLibrary_RigidInterpolatedMotion__currentMovingStateY" data-uid="NiceGraphicLibrary.RigidInterpolatedMotion._currentMovingStateY">_currentMovingStateY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected MovingState _currentMovingStateY</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NiceGraphicLibrary.MovingState.html">MovingState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/new/main/apiSpec/new?filename=NiceGraphicLibrary_RigidInterpolatedMotion__currentMovingStateZ.md&amp;value=---%0Auid%3A%20NiceGraphicLibrary.RigidInterpolatedMotion._currentMovingStateZ%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/blob/main/Runtime/Component/Movement/RigidInterpolatedMotion.cs/#L37">View Source</a>
+  </span>
+  <h4 id="NiceGraphicLibrary_RigidInterpolatedMotion__currentMovingStateZ" data-uid="NiceGraphicLibrary.RigidInterpolatedMotion._currentMovingStateZ">_currentMovingStateZ</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected MovingState _currentMovingStateZ</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NiceGraphicLibrary.MovingState.html">MovingState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/new/main/apiSpec/new?filename=NiceGraphicLibrary_RigidInterpolatedMotion__currentSlowingDurationX.md&amp;value=---%0Auid%3A%20NiceGraphicLibrary.RigidInterpolatedMotion._currentSlowingDurationX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/blob/main/Runtime/Component/Movement/RigidInterpolatedMotion.cs/#L23">View Source</a>
+  </span>
+  <h4 id="NiceGraphicLibrary_RigidInterpolatedMotion__currentSlowingDurationX" data-uid="NiceGraphicLibrary.RigidInterpolatedMotion._currentSlowingDurationX">_currentSlowingDurationX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _currentSlowingDurationX</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/new/main/apiSpec/new?filename=NiceGraphicLibrary_RigidInterpolatedMotion__currentSlowingDurationY.md&amp;value=---%0Auid%3A%20NiceGraphicLibrary.RigidInterpolatedMotion._currentSlowingDurationY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/blob/main/Runtime/Component/Movement/RigidInterpolatedMotion.cs/#L27">View Source</a>
+  </span>
+  <h4 id="NiceGraphicLibrary_RigidInterpolatedMotion__currentSlowingDurationY" data-uid="NiceGraphicLibrary.RigidInterpolatedMotion._currentSlowingDurationY">_currentSlowingDurationY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _currentSlowingDurationY</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/new/main/apiSpec/new?filename=NiceGraphicLibrary_RigidInterpolatedMotion__currentSlowingDurationZ.md&amp;value=---%0Auid%3A%20NiceGraphicLibrary.RigidInterpolatedMotion._currentSlowingDurationZ%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/blob/main/Runtime/Component/Movement/RigidInterpolatedMotion.cs/#L31">View Source</a>
+  </span>
+  <h4 id="NiceGraphicLibrary_RigidInterpolatedMotion__currentSlowingDurationZ" data-uid="NiceGraphicLibrary.RigidInterpolatedMotion._currentSlowingDurationZ">_currentSlowingDurationZ</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _currentSlowingDurationZ</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/new/main/apiSpec/new?filename=NiceGraphicLibrary_RigidInterpolatedMotion__currentSpeedX.md&amp;value=---%0Auid%3A%20NiceGraphicLibrary.RigidInterpolatedMotion._currentSpeedX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/blob/main/Runtime/Component/Movement/RigidInterpolatedMotion.cs/#L25">View Source</a>
+  </span>
+  <h4 id="NiceGraphicLibrary_RigidInterpolatedMotion__currentSpeedX" data-uid="NiceGraphicLibrary.RigidInterpolatedMotion._currentSpeedX">_currentSpeedX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _currentSpeedX</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/new/main/apiSpec/new?filename=NiceGraphicLibrary_RigidInterpolatedMotion__currentSpeedY.md&amp;value=---%0Auid%3A%20NiceGraphicLibrary.RigidInterpolatedMotion._currentSpeedY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/blob/main/Runtime/Component/Movement/RigidInterpolatedMotion.cs/#L29">View Source</a>
+  </span>
+  <h4 id="NiceGraphicLibrary_RigidInterpolatedMotion__currentSpeedY" data-uid="NiceGraphicLibrary.RigidInterpolatedMotion._currentSpeedY">_currentSpeedY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _currentSpeedY</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/new/main/apiSpec/new?filename=NiceGraphicLibrary_RigidInterpolatedMotion__currentSpeedZ.md&amp;value=---%0Auid%3A%20NiceGraphicLibrary.RigidInterpolatedMotion._currentSpeedZ%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/blob/main/Runtime/Component/Movement/RigidInterpolatedMotion.cs/#L33">View Source</a>
+  </span>
+  <h4 id="NiceGraphicLibrary_RigidInterpolatedMotion__currentSpeedZ" data-uid="NiceGraphicLibrary.RigidInterpolatedMotion._currentSpeedZ">_currentSpeedZ</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _currentSpeedZ</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/new/main/apiSpec/new?filename=NiceGraphicLibrary_RigidInterpolatedMotion__Duration.md&amp;value=---%0Auid%3A%20NiceGraphicLibrary.RigidInterpolatedMotion._Duration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/blob/main/Runtime/Component/Movement/RigidInterpolatedMotion.cs/#L14">View Source</a>
+  </span>
+  <h4 id="NiceGraphicLibrary_RigidInterpolatedMotion__Duration" data-uid="NiceGraphicLibrary.RigidInterpolatedMotion._Duration">_Duration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Min(0F)]
+protected float _Duration</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/new/main/apiSpec/new?filename=NiceGraphicLibrary_RigidInterpolatedMotion__SlowingDuration.md&amp;value=---%0Auid%3A%20NiceGraphicLibrary.RigidInterpolatedMotion._SlowingDuration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/blob/main/Runtime/Component/Movement/RigidInterpolatedMotion.cs/#L20">View Source</a>
+  </span>
+  <h4 id="NiceGraphicLibrary_RigidInterpolatedMotion__SlowingDuration" data-uid="NiceGraphicLibrary.RigidInterpolatedMotion._SlowingDuration">_SlowingDuration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Min(0F)]
+protected float _SlowingDuration</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/new/main/apiSpec/new?filename=NiceGraphicLibrary_RigidInterpolatedMotion_CurrentMovingStateX.md&amp;value=---%0Auid%3A%20NiceGraphicLibrary.RigidInterpolatedMotion.CurrentMovingStateX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/blob/main/Runtime/Component/Movement/RigidInterpolatedMotion.cs/#L39">View Source</a>
+  </span>
+  <a id="NiceGraphicLibrary_RigidInterpolatedMotion_CurrentMovingStateX_" data-uid="NiceGraphicLibrary.RigidInterpolatedMotion.CurrentMovingStateX*"></a>
+  <h4 id="NiceGraphicLibrary_RigidInterpolatedMotion_CurrentMovingStateX" data-uid="NiceGraphicLibrary.RigidInterpolatedMotion.CurrentMovingStateX">CurrentMovingStateX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MovingState CurrentMovingStateX { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NiceGraphicLibrary.MovingState.html">MovingState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/new/main/apiSpec/new?filename=NiceGraphicLibrary_RigidInterpolatedMotion_CurrentMovingStateY.md&amp;value=---%0Auid%3A%20NiceGraphicLibrary.RigidInterpolatedMotion.CurrentMovingStateY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/blob/main/Runtime/Component/Movement/RigidInterpolatedMotion.cs/#L40">View Source</a>
+  </span>
+  <a id="NiceGraphicLibrary_RigidInterpolatedMotion_CurrentMovingStateY_" data-uid="NiceGraphicLibrary.RigidInterpolatedMotion.CurrentMovingStateY*"></a>
+  <h4 id="NiceGraphicLibrary_RigidInterpolatedMotion_CurrentMovingStateY" data-uid="NiceGraphicLibrary.RigidInterpolatedMotion.CurrentMovingStateY">CurrentMovingStateY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MovingState CurrentMovingStateY { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NiceGraphicLibrary.MovingState.html">MovingState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/new/main/apiSpec/new?filename=NiceGraphicLibrary_RigidInterpolatedMotion_CurrentMovingStateZ.md&amp;value=---%0Auid%3A%20NiceGraphicLibrary.RigidInterpolatedMotion.CurrentMovingStateZ%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/blob/main/Runtime/Component/Movement/RigidInterpolatedMotion.cs/#L41">View Source</a>
+  </span>
+  <a id="NiceGraphicLibrary_RigidInterpolatedMotion_CurrentMovingStateZ_" data-uid="NiceGraphicLibrary.RigidInterpolatedMotion.CurrentMovingStateZ*"></a>
+  <h4 id="NiceGraphicLibrary_RigidInterpolatedMotion_CurrentMovingStateZ" data-uid="NiceGraphicLibrary.RigidInterpolatedMotion.CurrentMovingStateZ">CurrentMovingStateZ</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MovingState CurrentMovingStateZ { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NiceGraphicLibrary.MovingState.html">MovingState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/new/main/apiSpec/new?filename=NiceGraphicLibrary_RigidInterpolatedMotion_CalculateMotionCycle_NiceGraphicLibrary_MovingState__System_Single__System_Single__System_Single__System_Single__System_Single__System_Func_System_Single_System_Single_System_Single__System_Func_System_Single_System_Single_System_Single__.md&amp;value=---%0Auid%3A%20NiceGraphicLibrary.RigidInterpolatedMotion.CalculateMotionCycle(NiceGraphicLibrary.MovingState%40%2CSystem.Single%40%2CSystem.Single%40%2CSystem.Single%40%2CSystem.Single%40%2CSystem.Single%40%2CSystem.Func%7BSystem.Single%2CSystem.Single%2CSystem.Single%7D%2CSystem.Func%7BSystem.Single%2CSystem.Single%2CSystem.Single%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/blob/main/Runtime/Component/Movement/RigidInterpolatedMotion.cs/#L43">View Source</a>
+  </span>
+  <a id="NiceGraphicLibrary_RigidInterpolatedMotion_CalculateMotionCycle_" data-uid="NiceGraphicLibrary.RigidInterpolatedMotion.CalculateMotionCycle*"></a>
+  <h4 id="NiceGraphicLibrary_RigidInterpolatedMotion_CalculateMotionCycle_NiceGraphicLibrary_MovingState__System_Single__System_Single__System_Single__System_Single__System_Single__System_Func_System_Single_System_Single_System_Single__System_Func_System_Single_System_Single_System_Single__" data-uid="NiceGraphicLibrary.RigidInterpolatedMotion.CalculateMotionCycle(NiceGraphicLibrary.MovingState@,System.Single@,System.Single@,System.Single@,System.Single@,System.Single@,System.Func{System.Single,System.Single,System.Single},System.Func{System.Single,System.Single,System.Single})">CalculateMotionCycle(ref MovingState, in Single, ref Single, ref Single, ref Single, ref Single, Func&lt;Single, Single, Single&gt;, Func&lt;Single, Single, Single&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void CalculateMotionCycle(ref MovingState movingState, in float axisDirection, ref float duration, ref float slowingDuration, ref float counteDuration, ref float speed, Func&lt;float, float, float&gt; interpolation, Func&lt;float, float, float&gt; inverseInterpolation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NiceGraphicLibrary.MovingState.html">MovingState</a></td>
+        <td><span class="parametername">movingState</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">axisDirection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">duration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">slowingDuration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">counteDuration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">speed</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Single</span>, <span class="xref">System.Single</span>, <span class="xref">System.Single</span>&gt;</td>
+        <td><span class="parametername">interpolation</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Single</span>, <span class="xref">System.Single</span>, <span class="xref">System.Single</span>&gt;</td>
+        <td><span class="parametername">inverseInterpolation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/new/main/apiSpec/new?filename=NiceGraphicLibrary_RigidInterpolatedMotion.md&amp;value=---%0Auid%3A%20NiceGraphicLibrary.RigidInterpolatedMotion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/BoolPurist/NiceGraphicUnityCodeLibrary/blob/main/Runtime/Component/Movement/RigidInterpolatedMotion.cs/#L8" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

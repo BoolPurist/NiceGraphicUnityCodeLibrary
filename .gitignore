@@ -399,7 +399,6 @@ FodyWeavers.xsd
 /**/packages/
 /**/bin/
 /**/obj/
-/**/api
 
 ## unity specific
 

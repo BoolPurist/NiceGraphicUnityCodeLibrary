@@ -1,0 +1,662 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Interpolation
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Interpolation
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="NiceGraphicLibrary.Utility.Interpolation">
+  
+  
+  <h1 id="NiceGraphicLibrary_Utility_Interpolation" data-uid="NiceGraphicLibrary.Utility.Interpolation" class="text-break">Class Interpolation
+  </h1>
+  <div class="markdown level0 summary"><p>Provides functions to interpolate values.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Interpolation</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="NiceGraphicLibrary.Utility.html">NiceGraphicLibrary.Utility</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="NiceGraphicLibrary_Utility_Interpolation_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Interpolation</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="NiceGraphicLibrary_Utility_Interpolation_InterpolateColorOverTime_" data-uid="NiceGraphicLibrary.Utility.Interpolation.InterpolateColorOverTime*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_Interpolation_InterpolateColorOverTime_System_Single_Color_Color_System_Action_Color__" data-uid="NiceGraphicLibrary.Utility.Interpolation.InterpolateColorOverTime(System.Single,Color,Color,System.Action{Color})">InterpolateColorOverTime(Single, Color, Color, Action&lt;Color&gt;)</h4>
+  <div class="markdown level1 summary"><p>Coroutine to return interpolated color between [startColor] to [targetColor]
+over the given duration</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator InterpolateColorOverTime(float duration, Color startColor, Color targetColor, Action&lt;Color&gt; colorReceiver)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">duration</span></td>
+        <td><p>Time until the coroutine ends. Negative values will be converted to absolute/positive values.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td><span class="parametername">startColor</span></td>
+        <td><p>Color at the start of the duration.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td><span class="parametername">targetColor</span></td>
+        <td><p>Color at the end of the interpolation</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">Color</span>&gt;</td>
+        <td><span class="parametername">colorReceiver</span></td>
+        <td><p>Is called after each frame. Its argument is between color the [startColor] and the [targetColor] depending on the given duration.
+Should not be null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="NiceGraphicLibrary_Utility_Interpolation_InterpolateOverTime_" data-uid="NiceGraphicLibrary.Utility.Interpolation.InterpolateOverTime*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_Interpolation_InterpolateOverTime_System_Single_System_Action_System_Single__" data-uid="NiceGraphicLibrary.Utility.Interpolation.InterpolateOverTime(System.Single,System.Action{System.Single})">InterpolateOverTime(Single, Action&lt;Single&gt;)</h4>
+  <div class="markdown level1 summary"><p>Coroutine to return factor from 0 to 1 to a given delegate over a certain duration after each frame
+until the duration has passed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator InterpolateOverTime(float duration, Action&lt;float&gt; interpolateReceiver)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">duration</span></td>
+        <td><p>Time until the coroutine ends. Negative values will be converted to absolute/positive values.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Single</span>&gt;</td>
+        <td><span class="parametername">interpolateReceiver</span></td>
+        <td><p>Is called after each frame. Its argument is from 0 to 1 for the amount of passed duration.
+Should not be null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="NiceGraphicLibrary_Utility_Interpolation_InterpolateVector2OverTime_" data-uid="NiceGraphicLibrary.Utility.Interpolation.InterpolateVector2OverTime*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_Interpolation_InterpolateVector2OverTime_System_Single_Vector2_Vector2_System_Action_Vector2__" data-uid="NiceGraphicLibrary.Utility.Interpolation.InterpolateVector2OverTime(System.Single,Vector2,Vector2,System.Action{Vector2})">InterpolateVector2OverTime(Single, Vector2, Vector2, Action&lt;Vector2&gt;)</h4>
+  <div class="markdown level1 summary"><p>Coroutine to return interpolated 2d Vector from [startColor] to [targetColor]
+over the given duration</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator InterpolateVector2OverTime(float duration, Vector2 startVector, Vector2 endVector, Action&lt;Vector2&gt; vectorReceiver)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">duration</span></td>
+        <td><p>Time until the coroutine ends. Negative values will be converted to absolute/positive values.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td><span class="parametername">startVector</span></td>
+        <td><p>2d vector at the start of the duration.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td><span class="parametername">endVector</span></td>
+        <td><p>2d vector at the end of the interpolation</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">Vector2</span>&gt;</td>
+        <td><span class="parametername">vectorReceiver</span></td>
+        <td><p>Is called after each frame. Its argument is between 2d vector the [startVector] and the [endVector] depending on the given duration.
+Should not be null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="NiceGraphicLibrary_Utility_Interpolation_InterpolateVector3OverTime_" data-uid="NiceGraphicLibrary.Utility.Interpolation.InterpolateVector3OverTime*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_Interpolation_InterpolateVector3OverTime_System_Single_Vector3_Vector3_System_Action_Vector3__" data-uid="NiceGraphicLibrary.Utility.Interpolation.InterpolateVector3OverTime(System.Single,Vector3,Vector3,System.Action{Vector3})">InterpolateVector3OverTime(Single, Vector3, Vector3, Action&lt;Vector3&gt;)</h4>
+  <div class="markdown level1 summary"><p>Coroutine to return interpolated 3d Vector from [startColor] to [targetColor]
+over the given duration</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator InterpolateVector3OverTime(float duration, Vector3 startVector, Vector3 endVector, Action&lt;Vector3&gt; vectorReceiver)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">duration</span></td>
+        <td><p>Time until the coroutine ends. Negative values will be converted to absolute/positive values.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">startVector</span></td>
+        <td><p>3d vector at the start of the duration.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">endVector</span></td>
+        <td><p>3d vector at the end of the interpolation</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">Vector3</span>&gt;</td>
+        <td><span class="parametername">vectorReceiver</span></td>
+        <td><p>Is called after each frame. Its argument is between 3d vector the [startVector] and the [endVector] depending on the given duration.
+Should not be null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="NiceGraphicLibrary_Utility_Interpolation_InterpolationFloatOverTime_" data-uid="NiceGraphicLibrary.Utility.Interpolation.InterpolationFloatOverTime*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_Interpolation_InterpolationFloatOverTime_System_Single_System_Single_System_Action_System_Single__" data-uid="NiceGraphicLibrary.Utility.Interpolation.InterpolationFloatOverTime(System.Single,System.Single,System.Action{System.Single})">InterpolationFloatOverTime(Single, Single, Action&lt;Single&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator InterpolationFloatOverTime(float duration, float endFloat, Action&lt;float&gt; floatReceiver)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">duration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">endFloat</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Single</span>&gt;</td>
+        <td><span class="parametername">floatReceiver</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="NiceGraphicLibrary_Utility_Interpolation_InverseSmootherStep_" data-uid="NiceGraphicLibrary.Utility.Interpolation.InverseSmootherStep*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_Interpolation_InverseSmootherStep_System_Single_System_Single_" data-uid="NiceGraphicLibrary.Utility.Interpolation.InverseSmootherStep(System.Single,System.Single)">InverseSmootherStep(Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Turns the output of smoother step upside down. Can be used for deceleration after acceleration by <a class="xref" href="NiceGraphicLibrary.Utility.Interpolation.html#NiceGraphicLibrary_Utility_Interpolation_SmootherStep_System_Single_System_Single_">SmootherStep(Single, Single)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float InverseSmootherStep(float numberValue, float factor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">numberValue</span></td>
+        <td><p>Value to be plotted</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">factor</span></td>
+        <td><p>Factor to plot parameter [value] according to the smooth step function
+factor will be clamped between 0 and 1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>Returns from parameter [value] to 0 depending on the parameter [factor]</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="NiceGraphicLibrary_Utility_Interpolation_InverseSmoothStep_" data-uid="NiceGraphicLibrary.Utility.Interpolation.InverseSmoothStep*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_Interpolation_InverseSmoothStep_System_Single_System_Single_" data-uid="NiceGraphicLibrary.Utility.Interpolation.InverseSmoothStep(System.Single,System.Single)">InverseSmoothStep(Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Turns the output of smooth step upside down. Can be used for deceleration after acceleration by <a class="xref" href="NiceGraphicLibrary.Utility.Interpolation.html#NiceGraphicLibrary_Utility_Interpolation_SmoothStep_System_Single_System_Single_">SmoothStep(Single, Single)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float InverseSmoothStep(float numberValue, float factor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">numberValue</span></td>
+        <td><p>Value to be plotted</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">factor</span></td>
+        <td><p>Factor to plot parameter [value] according to the smooth step function
+factor will be clamped between 0 and 1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>Returns from parameter [value] to 0 depending on the parameter [factor]</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="NiceGraphicLibrary_Utility_Interpolation_SmootherStep_" data-uid="NiceGraphicLibrary.Utility.Interpolation.SmootherStep*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_Interpolation_SmootherStep_System_Single_System_Single_" data-uid="NiceGraphicLibrary.Utility.Interpolation.SmootherStep(System.Single,System.Single)">SmootherStep(Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Smooth step variation suggested by Ken Perlin better approximation but requires more calculation than <a class="xref" href="NiceGraphicLibrary.Utility.Interpolation.html#NiceGraphicLibrary_Utility_Interpolation_SmoothStep_System_Single_System_Single_">SmoothStep(Single, Single)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float SmootherStep(float numberValue, float factor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">numberValue</span></td>
+        <td><p>Value to be plotted</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">factor</span></td>
+        <td><p>Factor to plot parameter [value] according to the smooth step function
+factor will be clamped between 0 and 1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>Returns a number from 0 to the given parameter [value] depending on the parameter [factor]</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="NiceGraphicLibrary_Utility_Interpolation_SmootherStep_System_Single_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Implementation comes from wiki <a href="https://en.wikipedia.org/wiki/Smoothstep">https://en.wikipedia.org/wiki/Smoothstep</a></p>
+</div>
+  
+  
+  <a id="NiceGraphicLibrary_Utility_Interpolation_SmoothStep_" data-uid="NiceGraphicLibrary.Utility.Interpolation.SmoothStep*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_Interpolation_SmoothStep_System_Single_System_Single_" data-uid="NiceGraphicLibrary.Utility.Interpolation.SmoothStep(System.Single,System.Single)">SmoothStep(Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Returns plotted value of the smooth step function. Has lower acceleration near 0 and 1 factor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float SmoothStep(float numberValue, float factor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">numberValue</span></td>
+        <td><p>Value to be plotted</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">factor</span></td>
+        <td><p>Factor to plot parameter [value] according to the smooth step function
+factor will be clamped between 0 and 1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>Returns a number from 0 to given parameter [value] depending on the parameter [factor]</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="NiceGraphicLibrary_Utility_Interpolation_SmoothStep_System_Single_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Implementation comes from wiki <a href="https://en.wikipedia.org/wiki/Smoothstep">https://en.wikipedia.org/wiki/Smoothstep</a></p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
