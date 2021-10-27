@@ -456,3 +456,7 @@ artifacts
 
 .Editor
 .UnityLauncher.Editor
+
+## Own custom rules
+
+/Assets/TestComponents

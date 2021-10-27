@@ -600,7 +600,6 @@ GameObject:
   - component: {fileID: 1596519685}
   - component: {fileID: 1596519684}
   - component: {fileID: 1596519683}
-  - component: {fileID: 1596519682}
   - component: {fileID: 1596519681}
   m_Layer: 0
   m_Name: Cube
@@ -618,37 +617,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1596519680}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2029eb21fc94d548aa10d939e3be360, type: 3}
+  m_Script: {fileID: 11500000, guid: 67e88453a7ab14c4892c1329667d7500, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _AxisLevel: 0
-  _Speed: 2
-  _AllowX: 1
-  _AllowY: 1
-  _AllowZ: 1
-  _Duration: 1
-  _CounterDuration: 0.5
-  _SlowingDuration: 1
-  _AccelerationKind: 1
---- !u!114 &1596519682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1596519680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36d7337403b973542a099f34522bdb52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _Motion: {fileID: 1596519681}
-  MoveLeft: 97
-  MoveRight: 100
-  MoveUp: 119
-  MoveDown: 115
-  MoveForward: 32
-  MoveBack: 99
+  SecondsToCountDown: 15
+  _viewer: {fileID: 0}
 --- !u!54 &1596519683
 Rigidbody:
   m_ObjectHideFlags: 0
