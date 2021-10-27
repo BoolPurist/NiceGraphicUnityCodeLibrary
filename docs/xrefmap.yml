@@ -183,18 +183,18 @@ references:
   commentId: F:NiceGraphicLibrary.Component.Movement.InterpolationKind.Linear
   fullName: NiceGraphicLibrary.Component.Movement.InterpolationKind.Linear
   nameWithType: InterpolationKind.Linear
+- uid: NiceGraphicLibrary.Component.Movement.InterpolationKind.SmootherStep
+  name: SmootherStep
+  href: api/NiceGraphicLibrary.Component.Movement.InterpolationKind.html#NiceGraphicLibrary_Component_Movement_InterpolationKind_SmootherStep
+  commentId: F:NiceGraphicLibrary.Component.Movement.InterpolationKind.SmootherStep
+  fullName: NiceGraphicLibrary.Component.Movement.InterpolationKind.SmootherStep
+  nameWithType: InterpolationKind.SmootherStep
 - uid: NiceGraphicLibrary.Component.Movement.InterpolationKind.SmoothStep
   name: SmoothStep
   href: api/NiceGraphicLibrary.Component.Movement.InterpolationKind.html#NiceGraphicLibrary_Component_Movement_InterpolationKind_SmoothStep
   commentId: F:NiceGraphicLibrary.Component.Movement.InterpolationKind.SmoothStep
   fullName: NiceGraphicLibrary.Component.Movement.InterpolationKind.SmoothStep
   nameWithType: InterpolationKind.SmoothStep
-- uid: NiceGraphicLibrary.Component.Movement.InterpolationKind.Spherical
-  name: Spherical
-  href: api/NiceGraphicLibrary.Component.Movement.InterpolationKind.html#NiceGraphicLibrary_Component_Movement_InterpolationKind_Spherical
-  commentId: F:NiceGraphicLibrary.Component.Movement.InterpolationKind.Spherical
-  fullName: NiceGraphicLibrary.Component.Movement.InterpolationKind.Spherical
-  nameWithType: InterpolationKind.Spherical
 - uid: NiceGraphicLibrary.Component.Movement.KeyboardRigidMotion
   name: KeyboardRigidMotion
   href: api/NiceGraphicLibrary.Component.Movement.KeyboardRigidMotion.html
@@ -626,6 +626,12 @@ references:
   commentId: T:NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion
   fullName: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion
   nameWithType: RigidInterpolatedMotion
+- uid: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion._AccelerationKind
+  name: _AccelerationKind
+  href: api/NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.html#NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion__AccelerationKind
+  commentId: F:NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion._AccelerationKind
+  fullName: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion._AccelerationKind
+  nameWithType: RigidInterpolatedMotion._AccelerationKind
 - uid: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion._CounterDuration
   name: _CounterDuration
   href: api/NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.html#NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion__CounterDuration
@@ -734,15 +740,28 @@ references:
   commentId: F:NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion._SlowingDuration
   fullName: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion._SlowingDuration
   nameWithType: RigidInterpolatedMotion._SlowingDuration
-- uid: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycle(NiceGraphicLibrary.Component.Movement.MovingState@,System.Single@,System.Single@,System.Single@,System.Single@,System.Single@,System.Func{System.Single,System.Single,System.Single},System.Func{System.Single,System.Single,System.Single})
-  name: CalculateMotionCycle(ref MovingState, in Single, ref Single, ref Single, ref Single, ref Single, Func<Single, Single, Single>, Func<Single, Single, Single>)
-  href: api/NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.html#NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion_CalculateMotionCycle_NiceGraphicLibrary_Component_Movement_MovingState__System_Single__System_Single__System_Single__System_Single__System_Single__System_Func_System_Single_System_Single_System_Single__System_Func_System_Single_System_Single_System_Single__
-  commentId: M:NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycle(NiceGraphicLibrary.Component.Movement.MovingState@,System.Single@,System.Single@,System.Single@,System.Single@,System.Single@,System.Func{System.Single,System.Single,System.Single},System.Func{System.Single,System.Single,System.Single})
-  name.vb: CalculateMotionCycle(ByRef MovingState, ByRef Single, ByRef Single, ByRef Single, ByRef Single, ByRef Single, Func(Of Single, Single, Single), Func(Of Single, Single, Single))
-  fullName: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycle(ref NiceGraphicLibrary.Component.Movement.MovingState, in System.Single, ref System.Single, ref System.Single, ref System.Single, ref System.Single, System.Func<System.Single, System.Single, System.Single>, System.Func<System.Single, System.Single, System.Single>)
-  fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycle(ByRef NiceGraphicLibrary.Component.Movement.MovingState, ByRef System.Single, ByRef System.Single, ByRef System.Single, ByRef System.Single, ByRef System.Single, System.Func(Of System.Single, System.Single, System.Single), System.Func(Of System.Single, System.Single, System.Single))
-  nameWithType: RigidInterpolatedMotion.CalculateMotionCycle(ref MovingState, in Single, ref Single, ref Single, ref Single, ref Single, Func<Single, Single, Single>, Func<Single, Single, Single>)
-  nameWithType.vb: RigidInterpolatedMotion.CalculateMotionCycle(ByRef MovingState, ByRef Single, ByRef Single, ByRef Single, ByRef Single, ByRef Single, Func(Of Single, Single, Single), Func(Of Single, Single, Single))
+- uid: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.AccelerationKind
+  name: AccelerationKind
+  href: api/NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.html#NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion_AccelerationKind
+  commentId: P:NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.AccelerationKind
+  fullName: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.AccelerationKind
+  nameWithType: RigidInterpolatedMotion.AccelerationKind
+- uid: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.AccelerationKind*
+  name: AccelerationKind
+  href: api/NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.html#NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion_AccelerationKind_
+  commentId: Overload:NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.AccelerationKind
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.AccelerationKind
+  nameWithType: RigidInterpolatedMotion.AccelerationKind
+- uid: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycle(NiceGraphicLibrary.Component.Movement.MovingState@,System.Single@,System.Single@,System.Single@,System.Single@,System.Single@)
+  name: CalculateMotionCycle(ref MovingState, in Single, ref Single, ref Single, ref Single, ref Single)
+  href: api/NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.html#NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion_CalculateMotionCycle_NiceGraphicLibrary_Component_Movement_MovingState__System_Single__System_Single__System_Single__System_Single__System_Single__
+  commentId: M:NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycle(NiceGraphicLibrary.Component.Movement.MovingState@,System.Single@,System.Single@,System.Single@,System.Single@,System.Single@)
+  name.vb: CalculateMotionCycle(ByRef MovingState, ByRef Single, ByRef Single, ByRef Single, ByRef Single, ByRef Single)
+  fullName: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycle(ref NiceGraphicLibrary.Component.Movement.MovingState, in System.Single, ref System.Single, ref System.Single, ref System.Single, ref System.Single)
+  fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycle(ByRef NiceGraphicLibrary.Component.Movement.MovingState, ByRef System.Single, ByRef System.Single, ByRef System.Single, ByRef System.Single, ByRef System.Single)
+  nameWithType: RigidInterpolatedMotion.CalculateMotionCycle(ref MovingState, in Single, ref Single, ref Single, ref Single, ref Single)
+  nameWithType.vb: RigidInterpolatedMotion.CalculateMotionCycle(ByRef MovingState, ByRef Single, ByRef Single, ByRef Single, ByRef Single, ByRef Single)
 - uid: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycle*
   name: CalculateMotionCycle
   href: api/NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.html#NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion_CalculateMotionCycle_
@@ -750,15 +769,12 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycle
   nameWithType: RigidInterpolatedMotion.CalculateMotionCycle
-- uid: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycleX(System.Func{System.Single,System.Single,System.Single},System.Func{System.Single,System.Single,System.Single})
-  name: CalculateMotionCycleX(Func<Single, Single, Single>, Func<Single, Single, Single>)
-  href: api/NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.html#NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion_CalculateMotionCycleX_System_Func_System_Single_System_Single_System_Single__System_Func_System_Single_System_Single_System_Single__
-  commentId: M:NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycleX(System.Func{System.Single,System.Single,System.Single},System.Func{System.Single,System.Single,System.Single})
-  name.vb: CalculateMotionCycleX(Func(Of Single, Single, Single), Func(Of Single, Single, Single))
-  fullName: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycleX(System.Func<System.Single, System.Single, System.Single>, System.Func<System.Single, System.Single, System.Single>)
-  fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycleX(System.Func(Of System.Single, System.Single, System.Single), System.Func(Of System.Single, System.Single, System.Single))
-  nameWithType: RigidInterpolatedMotion.CalculateMotionCycleX(Func<Single, Single, Single>, Func<Single, Single, Single>)
-  nameWithType.vb: RigidInterpolatedMotion.CalculateMotionCycleX(Func(Of Single, Single, Single), Func(Of Single, Single, Single))
+- uid: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycleX
+  name: CalculateMotionCycleX()
+  href: api/NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.html#NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion_CalculateMotionCycleX
+  commentId: M:NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycleX
+  fullName: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycleX()
+  nameWithType: RigidInterpolatedMotion.CalculateMotionCycleX()
 - uid: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycleX*
   name: CalculateMotionCycleX
   href: api/NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.html#NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion_CalculateMotionCycleX_
@@ -766,15 +782,12 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycleX
   nameWithType: RigidInterpolatedMotion.CalculateMotionCycleX
-- uid: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycleY(System.Func{System.Single,System.Single,System.Single},System.Func{System.Single,System.Single,System.Single})
-  name: CalculateMotionCycleY(Func<Single, Single, Single>, Func<Single, Single, Single>)
-  href: api/NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.html#NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion_CalculateMotionCycleY_System_Func_System_Single_System_Single_System_Single__System_Func_System_Single_System_Single_System_Single__
-  commentId: M:NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycleY(System.Func{System.Single,System.Single,System.Single},System.Func{System.Single,System.Single,System.Single})
-  name.vb: CalculateMotionCycleY(Func(Of Single, Single, Single), Func(Of Single, Single, Single))
-  fullName: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycleY(System.Func<System.Single, System.Single, System.Single>, System.Func<System.Single, System.Single, System.Single>)
-  fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycleY(System.Func(Of System.Single, System.Single, System.Single), System.Func(Of System.Single, System.Single, System.Single))
-  nameWithType: RigidInterpolatedMotion.CalculateMotionCycleY(Func<Single, Single, Single>, Func<Single, Single, Single>)
-  nameWithType.vb: RigidInterpolatedMotion.CalculateMotionCycleY(Func(Of Single, Single, Single), Func(Of Single, Single, Single))
+- uid: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycleY
+  name: CalculateMotionCycleY()
+  href: api/NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.html#NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion_CalculateMotionCycleY
+  commentId: M:NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycleY
+  fullName: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycleY()
+  nameWithType: RigidInterpolatedMotion.CalculateMotionCycleY()
 - uid: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycleY*
   name: CalculateMotionCycleY
   href: api/NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.html#NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion_CalculateMotionCycleY_
@@ -782,15 +795,12 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycleY
   nameWithType: RigidInterpolatedMotion.CalculateMotionCycleY
-- uid: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycleZ(System.Func{System.Single,System.Single,System.Single},System.Func{System.Single,System.Single,System.Single})
-  name: CalculateMotionCycleZ(Func<Single, Single, Single>, Func<Single, Single, Single>)
-  href: api/NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.html#NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion_CalculateMotionCycleZ_System_Func_System_Single_System_Single_System_Single__System_Func_System_Single_System_Single_System_Single__
-  commentId: M:NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycleZ(System.Func{System.Single,System.Single,System.Single},System.Func{System.Single,System.Single,System.Single})
-  name.vb: CalculateMotionCycleZ(Func(Of Single, Single, Single), Func(Of Single, Single, Single))
-  fullName: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycleZ(System.Func<System.Single, System.Single, System.Single>, System.Func<System.Single, System.Single, System.Single>)
-  fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycleZ(System.Func(Of System.Single, System.Single, System.Single), System.Func(Of System.Single, System.Single, System.Single))
-  nameWithType: RigidInterpolatedMotion.CalculateMotionCycleZ(Func<Single, Single, Single>, Func<Single, Single, Single>)
-  nameWithType.vb: RigidInterpolatedMotion.CalculateMotionCycleZ(Func(Of Single, Single, Single), Func(Of Single, Single, Single))
+- uid: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycleZ
+  name: CalculateMotionCycleZ()
+  href: api/NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.html#NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion_CalculateMotionCycleZ
+  commentId: M:NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycleZ
+  fullName: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycleZ()
+  nameWithType: RigidInterpolatedMotion.CalculateMotionCycleZ()
 - uid: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycleZ*
   name: CalculateMotionCycleZ
   href: api/NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.html#NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion_CalculateMotionCycleZ_
@@ -876,6 +886,19 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.ForceStand
   nameWithType: RigidInterpolatedMotion.ForceStand
+- uid: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.OnValidate
+  name: OnValidate()
+  href: api/NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.html#NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion_OnValidate
+  commentId: M:NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.OnValidate
+  fullName: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.OnValidate()
+  nameWithType: RigidInterpolatedMotion.OnValidate()
+- uid: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.OnValidate*
+  name: OnValidate
+  href: api/NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.html#NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion_OnValidate_
+  commentId: Overload:NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.OnValidate
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.OnValidate
+  nameWithType: RigidInterpolatedMotion.OnValidate
 - uid: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.SlowingDuration
   name: SlowingDuration
   href: api/NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.html#NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion_SlowingDuration
@@ -1199,6 +1222,28 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.Editor.ReadOnlyFieldDrawer.OnGUI
   nameWithType: ReadOnlyFieldDrawer.OnGUI
+- uid: NiceGraphicLibrary.ErrorMessages
+  name: ErrorMessages
+  href: api/NiceGraphicLibrary.ErrorMessages.html
+  commentId: T:NiceGraphicLibrary.ErrorMessages
+  fullName: NiceGraphicLibrary.ErrorMessages
+  nameWithType: ErrorMessages
+- uid: NiceGraphicLibrary.ErrorMessages.NotAccountedEnumValue*
+  name: NotAccountedEnumValue
+  href: api/NiceGraphicLibrary.ErrorMessages.html#NiceGraphicLibrary_ErrorMessages_NotAccountedEnumValue_
+  commentId: Overload:NiceGraphicLibrary.ErrorMessages.NotAccountedEnumValue
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.ErrorMessages.NotAccountedEnumValue
+  nameWithType: ErrorMessages.NotAccountedEnumValue
+- uid: NiceGraphicLibrary.ErrorMessages.NotAccountedEnumValue``1(``0)
+  name: NotAccountedEnumValue<T>(T)
+  href: api/NiceGraphicLibrary.ErrorMessages.html#NiceGraphicLibrary_ErrorMessages_NotAccountedEnumValue__1___0_
+  commentId: M:NiceGraphicLibrary.ErrorMessages.NotAccountedEnumValue``1(``0)
+  name.vb: NotAccountedEnumValue(Of T)(T)
+  fullName: NiceGraphicLibrary.ErrorMessages.NotAccountedEnumValue<T>(T)
+  fullName.vb: NiceGraphicLibrary.ErrorMessages.NotAccountedEnumValue(Of T)(T)
+  nameWithType: ErrorMessages.NotAccountedEnumValue<T>(T)
+  nameWithType.vb: ErrorMessages.NotAccountedEnumValue(Of T)(T)
 - uid: NiceGraphicLibrary.Extensions
   name: NiceGraphicLibrary.Extensions
   href: api/NiceGraphicLibrary.Extensions.html
@@ -1528,6 +1573,77 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.FakeDeltaTimeProvider.GetDelatTime
   nameWithType: FakeDeltaTimeProvider.GetDelatTime
+- uid: NiceGraphicLibrary.FixedDateTimeProvider
+  name: FixedDateTimeProvider
+  href: api/NiceGraphicLibrary.FixedDateTimeProvider.html
+  commentId: T:NiceGraphicLibrary.FixedDateTimeProvider
+  fullName: NiceGraphicLibrary.FixedDateTimeProvider
+  nameWithType: FixedDateTimeProvider
+- uid: NiceGraphicLibrary.FixedDateTimeProvider.ChangeBySeconds(System.Int32)
+  name: ChangeBySeconds(Int32)
+  href: api/NiceGraphicLibrary.FixedDateTimeProvider.html#NiceGraphicLibrary_FixedDateTimeProvider_ChangeBySeconds_System_Int32_
+  commentId: M:NiceGraphicLibrary.FixedDateTimeProvider.ChangeBySeconds(System.Int32)
+  fullName: NiceGraphicLibrary.FixedDateTimeProvider.ChangeBySeconds(System.Int32)
+  nameWithType: FixedDateTimeProvider.ChangeBySeconds(Int32)
+- uid: NiceGraphicLibrary.FixedDateTimeProvider.ChangeBySeconds*
+  name: ChangeBySeconds
+  href: api/NiceGraphicLibrary.FixedDateTimeProvider.html#NiceGraphicLibrary_FixedDateTimeProvider_ChangeBySeconds_
+  commentId: Overload:NiceGraphicLibrary.FixedDateTimeProvider.ChangeBySeconds
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.FixedDateTimeProvider.ChangeBySeconds
+  nameWithType: FixedDateTimeProvider.ChangeBySeconds
+- uid: NiceGraphicLibrary.FixedDateTimeProvider.FixedTimeStamp
+  name: FixedTimeStamp
+  href: api/NiceGraphicLibrary.FixedDateTimeProvider.html#NiceGraphicLibrary_FixedDateTimeProvider_FixedTimeStamp
+  commentId: P:NiceGraphicLibrary.FixedDateTimeProvider.FixedTimeStamp
+  fullName: NiceGraphicLibrary.FixedDateTimeProvider.FixedTimeStamp
+  nameWithType: FixedDateTimeProvider.FixedTimeStamp
+- uid: NiceGraphicLibrary.FixedDateTimeProvider.FixedTimeStamp*
+  name: FixedTimeStamp
+  href: api/NiceGraphicLibrary.FixedDateTimeProvider.html#NiceGraphicLibrary_FixedDateTimeProvider_FixedTimeStamp_
+  commentId: Overload:NiceGraphicLibrary.FixedDateTimeProvider.FixedTimeStamp
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.FixedDateTimeProvider.FixedTimeStamp
+  nameWithType: FixedDateTimeProvider.FixedTimeStamp
+- uid: NiceGraphicLibrary.FixedDateTimeProvider.GetNowDateTime
+  name: GetNowDateTime()
+  href: api/NiceGraphicLibrary.FixedDateTimeProvider.html#NiceGraphicLibrary_FixedDateTimeProvider_GetNowDateTime
+  commentId: M:NiceGraphicLibrary.FixedDateTimeProvider.GetNowDateTime
+  fullName: NiceGraphicLibrary.FixedDateTimeProvider.GetNowDateTime()
+  nameWithType: FixedDateTimeProvider.GetNowDateTime()
+- uid: NiceGraphicLibrary.FixedDateTimeProvider.GetNowDateTime*
+  name: GetNowDateTime
+  href: api/NiceGraphicLibrary.FixedDateTimeProvider.html#NiceGraphicLibrary_FixedDateTimeProvider_GetNowDateTime_
+  commentId: Overload:NiceGraphicLibrary.FixedDateTimeProvider.GetNowDateTime
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.FixedDateTimeProvider.GetNowDateTime
+  nameWithType: FixedDateTimeProvider.GetNowDateTime
+- uid: NiceGraphicLibrary.FixedDateTimeProvider.MinusOneSecond
+  name: MinusOneSecond()
+  href: api/NiceGraphicLibrary.FixedDateTimeProvider.html#NiceGraphicLibrary_FixedDateTimeProvider_MinusOneSecond
+  commentId: M:NiceGraphicLibrary.FixedDateTimeProvider.MinusOneSecond
+  fullName: NiceGraphicLibrary.FixedDateTimeProvider.MinusOneSecond()
+  nameWithType: FixedDateTimeProvider.MinusOneSecond()
+- uid: NiceGraphicLibrary.FixedDateTimeProvider.MinusOneSecond*
+  name: MinusOneSecond
+  href: api/NiceGraphicLibrary.FixedDateTimeProvider.html#NiceGraphicLibrary_FixedDateTimeProvider_MinusOneSecond_
+  commentId: Overload:NiceGraphicLibrary.FixedDateTimeProvider.MinusOneSecond
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.FixedDateTimeProvider.MinusOneSecond
+  nameWithType: FixedDateTimeProvider.MinusOneSecond
+- uid: NiceGraphicLibrary.FixedDateTimeProvider.PlusOneSecond
+  name: PlusOneSecond()
+  href: api/NiceGraphicLibrary.FixedDateTimeProvider.html#NiceGraphicLibrary_FixedDateTimeProvider_PlusOneSecond
+  commentId: M:NiceGraphicLibrary.FixedDateTimeProvider.PlusOneSecond
+  fullName: NiceGraphicLibrary.FixedDateTimeProvider.PlusOneSecond()
+  nameWithType: FixedDateTimeProvider.PlusOneSecond()
+- uid: NiceGraphicLibrary.FixedDateTimeProvider.PlusOneSecond*
+  name: PlusOneSecond
+  href: api/NiceGraphicLibrary.FixedDateTimeProvider.html#NiceGraphicLibrary_FixedDateTimeProvider_PlusOneSecond_
+  commentId: Overload:NiceGraphicLibrary.FixedDateTimeProvider.PlusOneSecond
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.FixedDateTimeProvider.PlusOneSecond
+  nameWithType: FixedDateTimeProvider.PlusOneSecond
 - uid: NiceGraphicLibrary.IAdjustableForUnitTest
   name: IAdjustableForUnitTest
   href: api/NiceGraphicLibrary.IAdjustableForUnitTest.html
@@ -1547,6 +1663,25 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.IAdjustableForUnitTest.IsSetForUnitTest
   nameWithType: IAdjustableForUnitTest.IsSetForUnitTest
+- uid: NiceGraphicLibrary.IDateTimeProvider
+  name: IDateTimeProvider
+  href: api/NiceGraphicLibrary.IDateTimeProvider.html
+  commentId: T:NiceGraphicLibrary.IDateTimeProvider
+  fullName: NiceGraphicLibrary.IDateTimeProvider
+  nameWithType: IDateTimeProvider
+- uid: NiceGraphicLibrary.IDateTimeProvider.GetNowDateTime
+  name: GetNowDateTime()
+  href: api/NiceGraphicLibrary.IDateTimeProvider.html#NiceGraphicLibrary_IDateTimeProvider_GetNowDateTime
+  commentId: M:NiceGraphicLibrary.IDateTimeProvider.GetNowDateTime
+  fullName: NiceGraphicLibrary.IDateTimeProvider.GetNowDateTime()
+  nameWithType: IDateTimeProvider.GetNowDateTime()
+- uid: NiceGraphicLibrary.IDateTimeProvider.GetNowDateTime*
+  name: GetNowDateTime
+  href: api/NiceGraphicLibrary.IDateTimeProvider.html#NiceGraphicLibrary_IDateTimeProvider_GetNowDateTime_
+  commentId: Overload:NiceGraphicLibrary.IDateTimeProvider.GetNowDateTime
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.IDateTimeProvider.GetNowDateTime
+  nameWithType: IDateTimeProvider.GetNowDateTime
 - uid: NiceGraphicLibrary.IDeltaTimeProvider
   name: IDeltaTimeProvider
   href: api/NiceGraphicLibrary.IDeltaTimeProvider.html
@@ -1566,6 +1701,25 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.IDeltaTimeProvider.GetDelatTime
   nameWithType: IDeltaTimeProvider.GetDelatTime
+- uid: NiceGraphicLibrary.ITakesDateTimeProvider
+  name: ITakesDateTimeProvider
+  href: api/NiceGraphicLibrary.ITakesDateTimeProvider.html
+  commentId: T:NiceGraphicLibrary.ITakesDateTimeProvider
+  fullName: NiceGraphicLibrary.ITakesDateTimeProvider
+  nameWithType: ITakesDateTimeProvider
+- uid: NiceGraphicLibrary.ITakesDateTimeProvider.SetDateTimeProvider(NiceGraphicLibrary.IDateTimeProvider)
+  name: SetDateTimeProvider(IDateTimeProvider)
+  href: api/NiceGraphicLibrary.ITakesDateTimeProvider.html#NiceGraphicLibrary_ITakesDateTimeProvider_SetDateTimeProvider_NiceGraphicLibrary_IDateTimeProvider_
+  commentId: M:NiceGraphicLibrary.ITakesDateTimeProvider.SetDateTimeProvider(NiceGraphicLibrary.IDateTimeProvider)
+  fullName: NiceGraphicLibrary.ITakesDateTimeProvider.SetDateTimeProvider(NiceGraphicLibrary.IDateTimeProvider)
+  nameWithType: ITakesDateTimeProvider.SetDateTimeProvider(IDateTimeProvider)
+- uid: NiceGraphicLibrary.ITakesDateTimeProvider.SetDateTimeProvider*
+  name: SetDateTimeProvider
+  href: api/NiceGraphicLibrary.ITakesDateTimeProvider.html#NiceGraphicLibrary_ITakesDateTimeProvider_SetDateTimeProvider_
+  commentId: Overload:NiceGraphicLibrary.ITakesDateTimeProvider.SetDateTimeProvider
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.ITakesDateTimeProvider.SetDateTimeProvider
+  nameWithType: ITakesDateTimeProvider.SetDateTimeProvider
 - uid: NiceGraphicLibrary.ReadOnlyFieldAttribute
   name: ReadOnlyFieldAttribute
   href: api/NiceGraphicLibrary.ReadOnlyFieldAttribute.html
@@ -1655,6 +1809,25 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.UnityDeltaTimeProvider.GetDelatTime
   nameWithType: UnityDeltaTimeProvider.GetDelatTime
+- uid: NiceGraphicLibrary.UtcDateTimeProvider
+  name: UtcDateTimeProvider
+  href: api/NiceGraphicLibrary.UtcDateTimeProvider.html
+  commentId: T:NiceGraphicLibrary.UtcDateTimeProvider
+  fullName: NiceGraphicLibrary.UtcDateTimeProvider
+  nameWithType: UtcDateTimeProvider
+- uid: NiceGraphicLibrary.UtcDateTimeProvider.GetNowDateTime
+  name: GetNowDateTime()
+  href: api/NiceGraphicLibrary.UtcDateTimeProvider.html#NiceGraphicLibrary_UtcDateTimeProvider_GetNowDateTime
+  commentId: M:NiceGraphicLibrary.UtcDateTimeProvider.GetNowDateTime
+  fullName: NiceGraphicLibrary.UtcDateTimeProvider.GetNowDateTime()
+  nameWithType: UtcDateTimeProvider.GetNowDateTime()
+- uid: NiceGraphicLibrary.UtcDateTimeProvider.GetNowDateTime*
+  name: GetNowDateTime
+  href: api/NiceGraphicLibrary.UtcDateTimeProvider.html#NiceGraphicLibrary_UtcDateTimeProvider_GetNowDateTime_
+  commentId: Overload:NiceGraphicLibrary.UtcDateTimeProvider.GetNowDateTime
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.UtcDateTimeProvider.GetNowDateTime
+  nameWithType: UtcDateTimeProvider.GetNowDateTime
 - uid: NiceGraphicLibrary.Utility
   name: NiceGraphicLibrary.Utility
   href: api/NiceGraphicLibrary.Utility.html
@@ -1834,12 +2007,12 @@ references:
   commentId: T:NiceGraphicLibrary.Utility.Cooldown.CountDown
   fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown
   nameWithType: CountDown
-- uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.#ctor(System.Int32)
-  name: CountDown(Int32)
-  href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown__ctor_System_Int32_
-  commentId: M:NiceGraphicLibrary.Utility.Cooldown.CountDown.#ctor(System.Int32)
-  fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.CountDown(System.Int32)
-  nameWithType: CountDown.CountDown(Int32)
+- uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.#ctor(System.Int32,System.Boolean)
+  name: CountDown(Int32, Boolean)
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown__ctor_System_Int32_System_Boolean_
+  commentId: M:NiceGraphicLibrary.Utility.Cooldown.CountDown.#ctor(System.Int32,System.Boolean)
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.CountDown(System.Int32, System.Boolean)
+  nameWithType: CountDown.CountDown(Int32, Boolean)
 - uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.#ctor*
   name: CountDown
   href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown__ctor_
@@ -1847,6 +2020,32 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.CountDown
   nameWithType: CountDown.CountDown
+- uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.IsDone
+  name: IsDone
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_IsDone
+  commentId: P:NiceGraphicLibrary.Utility.Cooldown.CountDown.IsDone
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.IsDone
+  nameWithType: CountDown.IsDone
+- uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.IsDone*
+  name: IsDone
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_IsDone_
+  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.CountDown.IsDone
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.IsDone
+  nameWithType: CountDown.IsDone
+- uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.IsStopped
+  name: IsStopped
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_IsStopped
+  commentId: P:NiceGraphicLibrary.Utility.Cooldown.CountDown.IsStopped
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.IsStopped
+  nameWithType: CountDown.IsStopped
+- uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.IsStopped*
+  name: IsStopped
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_IsStopped_
+  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.CountDown.IsStopped
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.IsStopped
+  nameWithType: CountDown.IsStopped
 - uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.RemainingSeconds
   name: RemainingSeconds
   href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_RemainingSeconds
@@ -1860,19 +2059,45 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.RemainingSeconds
   nameWithType: CountDown.RemainingSeconds
-- uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.ResetAndStart
-  name: ResetAndStart()
-  href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_ResetAndStart
-  commentId: M:NiceGraphicLibrary.Utility.Cooldown.CountDown.ResetAndStart
-  fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.ResetAndStart()
-  nameWithType: CountDown.ResetAndStart()
-- uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.ResetAndStart*
-  name: ResetAndStart
-  href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_ResetAndStart_
-  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.CountDown.ResetAndStart
+- uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.Reset(System.Boolean)
+  name: Reset(Boolean)
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_Reset_System_Boolean_
+  commentId: M:NiceGraphicLibrary.Utility.Cooldown.CountDown.Reset(System.Boolean)
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.Reset(System.Boolean)
+  nameWithType: CountDown.Reset(Boolean)
+- uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.Reset*
+  name: Reset
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_Reset_
+  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.CountDown.Reset
   isSpec: "True"
-  fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.ResetAndStart
-  nameWithType: CountDown.ResetAndStart
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.Reset
+  nameWithType: CountDown.Reset
+- uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.Resume
+  name: Resume()
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_Resume
+  commentId: M:NiceGraphicLibrary.Utility.Cooldown.CountDown.Resume
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.Resume()
+  nameWithType: CountDown.Resume()
+- uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.Resume*
+  name: Resume
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_Resume_
+  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.CountDown.Resume
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.Resume
+  nameWithType: CountDown.Resume
+- uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.SetDateTimeProvider(NiceGraphicLibrary.IDateTimeProvider)
+  name: SetDateTimeProvider(IDateTimeProvider)
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_SetDateTimeProvider_NiceGraphicLibrary_IDateTimeProvider_
+  commentId: M:NiceGraphicLibrary.Utility.Cooldown.CountDown.SetDateTimeProvider(NiceGraphicLibrary.IDateTimeProvider)
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.SetDateTimeProvider(NiceGraphicLibrary.IDateTimeProvider)
+  nameWithType: CountDown.SetDateTimeProvider(IDateTimeProvider)
+- uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.SetDateTimeProvider*
+  name: SetDateTimeProvider
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_SetDateTimeProvider_
+  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.CountDown.SetDateTimeProvider
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.SetDateTimeProvider
+  nameWithType: CountDown.SetDateTimeProvider
 - uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.StartSeconds
   name: StartSeconds
   href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_StartSeconds
@@ -1886,6 +2111,19 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.StartSeconds
   nameWithType: CountDown.StartSeconds
+- uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.Stop
+  name: Stop()
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_Stop
+  commentId: M:NiceGraphicLibrary.Utility.Cooldown.CountDown.Stop
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.Stop()
+  nameWithType: CountDown.Stop()
+- uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.Stop*
+  name: Stop
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_Stop_
+  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.CountDown.Stop
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.Stop
+  nameWithType: CountDown.Stop
 - uid: NiceGraphicLibrary.Utility.Coroutines
   name: NiceGraphicLibrary.Utility.Coroutines
   href: api/NiceGraphicLibrary.Utility.Coroutines.html

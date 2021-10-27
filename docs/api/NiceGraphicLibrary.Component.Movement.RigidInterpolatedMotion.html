@@ -177,6 +177,30 @@
   </h3>
   
   
+  <h4 id="NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion__AccelerationKind" data-uid="NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion._AccelerationKind">_AccelerationKind</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected InterpolationKind _AccelerationKind</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NiceGraphicLibrary.Component.Movement.InterpolationKind.html">InterpolationKind</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <h4 id="NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion__CounterDuration" data-uid="NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion._CounterDuration">_CounterDuration</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -611,6 +635,31 @@
   </h3>
   
   
+  <a id="NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion_AccelerationKind_" data-uid="NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.AccelerationKind*"></a>
+  <h4 id="NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion_AccelerationKind" data-uid="NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.AccelerationKind">AccelerationKind</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InterpolationKind AccelerationKind { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NiceGraphicLibrary.Component.Movement.InterpolationKind.html">InterpolationKind</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion_CounterDuration_" data-uid="NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CounterDuration*"></a>
   <h4 id="NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion_CounterDuration" data-uid="NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CounterDuration">CounterDuration</h4>
   <div class="markdown level1 summary"></div>
@@ -764,12 +813,12 @@
   
   
   <a id="NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion_CalculateMotionCycle_" data-uid="NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycle*"></a>
-  <h4 id="NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion_CalculateMotionCycle_NiceGraphicLibrary_Component_Movement_MovingState__System_Single__System_Single__System_Single__System_Single__System_Single__System_Func_System_Single_System_Single_System_Single__System_Func_System_Single_System_Single_System_Single__" data-uid="NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycle(NiceGraphicLibrary.Component.Movement.MovingState@,System.Single@,System.Single@,System.Single@,System.Single@,System.Single@,System.Func{System.Single,System.Single,System.Single},System.Func{System.Single,System.Single,System.Single})">CalculateMotionCycle(ref MovingState, in Single, ref Single, ref Single, ref Single, ref Single, Func&lt;Single, Single, Single&gt;, Func&lt;Single, Single, Single&gt;)</h4>
+  <h4 id="NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion_CalculateMotionCycle_NiceGraphicLibrary_Component_Movement_MovingState__System_Single__System_Single__System_Single__System_Single__System_Single__" data-uid="NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycle(NiceGraphicLibrary.Component.Movement.MovingState@,System.Single@,System.Single@,System.Single@,System.Single@,System.Single@)">CalculateMotionCycle(ref MovingState, in Single, ref Single, ref Single, ref Single, ref Single)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void CalculateMotionCycle(ref MovingState movingState, in float axisDirection, ref float duration, ref float slowingDuration, ref float counteDuration, ref float speed, Func&lt;float, float, float&gt; interpolation, Func&lt;float, float, float&gt; inverseInterpolation)</code></pre>
+    <pre><code class="lang-csharp hljs">protected void CalculateMotionCycle(ref MovingState movingState, in float axisDirection, ref float duration, ref float slowingDuration, ref float counteDuration, ref float speed)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -811,114 +860,38 @@
         <td><span class="parametername">speed</span></td>
         <td></td>
       </tr>
-      <tr>
-        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Single</span>, <span class="xref">System.Single</span>, <span class="xref">System.Single</span>&gt;</td>
-        <td><span class="parametername">interpolation</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Single</span>, <span class="xref">System.Single</span>, <span class="xref">System.Single</span>&gt;</td>
-        <td><span class="parametername">inverseInterpolation</span></td>
-        <td></td>
-      </tr>
     </tbody>
   </table>
   
   
   <a id="NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion_CalculateMotionCycleX_" data-uid="NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycleX*"></a>
-  <h4 id="NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion_CalculateMotionCycleX_System_Func_System_Single_System_Single_System_Single__System_Func_System_Single_System_Single_System_Single__" data-uid="NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycleX(System.Func{System.Single,System.Single,System.Single},System.Func{System.Single,System.Single,System.Single})">CalculateMotionCycleX(Func&lt;Single, Single, Single&gt;, Func&lt;Single, Single, Single&gt;)</h4>
+  <h4 id="NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion_CalculateMotionCycleX" data-uid="NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycleX">CalculateMotionCycleX()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void CalculateMotionCycleX(Func&lt;float, float, float&gt; interpolation, Func&lt;float, float, float&gt; inverseInterpolation)</code></pre>
+    <pre><code class="lang-csharp hljs">protected void CalculateMotionCycleX()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Single</span>, <span class="xref">System.Single</span>, <span class="xref">System.Single</span>&gt;</td>
-        <td><span class="parametername">interpolation</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Single</span>, <span class="xref">System.Single</span>, <span class="xref">System.Single</span>&gt;</td>
-        <td><span class="parametername">inverseInterpolation</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion_CalculateMotionCycleY_" data-uid="NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycleY*"></a>
-  <h4 id="NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion_CalculateMotionCycleY_System_Func_System_Single_System_Single_System_Single__System_Func_System_Single_System_Single_System_Single__" data-uid="NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycleY(System.Func{System.Single,System.Single,System.Single},System.Func{System.Single,System.Single,System.Single})">CalculateMotionCycleY(Func&lt;Single, Single, Single&gt;, Func&lt;Single, Single, Single&gt;)</h4>
+  <h4 id="NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion_CalculateMotionCycleY" data-uid="NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycleY">CalculateMotionCycleY()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void CalculateMotionCycleY(Func&lt;float, float, float&gt; interpolation, Func&lt;float, float, float&gt; inverseInterpolation)</code></pre>
+    <pre><code class="lang-csharp hljs">protected void CalculateMotionCycleY()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Single</span>, <span class="xref">System.Single</span>, <span class="xref">System.Single</span>&gt;</td>
-        <td><span class="parametername">interpolation</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Single</span>, <span class="xref">System.Single</span>, <span class="xref">System.Single</span>&gt;</td>
-        <td><span class="parametername">inverseInterpolation</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion_CalculateMotionCycleZ_" data-uid="NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycleZ*"></a>
-  <h4 id="NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion_CalculateMotionCycleZ_System_Func_System_Single_System_Single_System_Single__System_Func_System_Single_System_Single_System_Single__" data-uid="NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycleZ(System.Func{System.Single,System.Single,System.Single},System.Func{System.Single,System.Single,System.Single})">CalculateMotionCycleZ(Func&lt;Single, Single, Single&gt;, Func&lt;Single, Single, Single&gt;)</h4>
+  <h4 id="NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion_CalculateMotionCycleZ" data-uid="NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.CalculateMotionCycleZ">CalculateMotionCycleZ()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void CalculateMotionCycleZ(Func&lt;float, float, float&gt; interpolation, Func&lt;float, float, float&gt; inverseInterpolation)</code></pre>
+    <pre><code class="lang-csharp hljs">protected void CalculateMotionCycleZ()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Single</span>, <span class="xref">System.Single</span>, <span class="xref">System.Single</span>&gt;</td>
-        <td><span class="parametername">interpolation</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Single</span>, <span class="xref">System.Single</span>, <span class="xref">System.Single</span>&gt;</td>
-        <td><span class="parametername">inverseInterpolation</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion_ForceStand_" data-uid="NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.ForceStand*"></a>
@@ -931,6 +904,16 @@
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="NiceGraphicLibrary.Component.Movement.RigidGeometryMotion.html#NiceGraphicLibrary_Component_Movement_RigidGeometryMotion_ForceStand">RigidGeometryMotion.ForceStand()</a></div>
+  
+  
+  <a id="NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion_OnValidate_" data-uid="NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.OnValidate*"></a>
+  <h4 id="NiceGraphicLibrary_Component_Movement_RigidInterpolatedMotion_OnValidate" data-uid="NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.OnValidate">OnValidate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnValidate()</code></pre>
+  </div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="NiceGraphicLibrary.IAdjustableForUnitTest.html">IAdjustableForUnitTest</a>

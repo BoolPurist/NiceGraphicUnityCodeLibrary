@@ -73,13 +73,17 @@
   
   <h1 id="NiceGraphicLibrary_Utility_Cooldown_CountDown" data-uid="NiceGraphicLibrary.Utility.Cooldown.CountDown" class="text-break">Class CountDown
   </h1>
-  <div class="markdown level0 summary"><p>Used to start a countdown from number of seconds to zero.</p>
+  <div class="markdown level0 summary"><p>Used to manage a countdown independently from Time.deltaTime.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">CountDown</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="NiceGraphicLibrary.ITakesDateTimeProvider.html">ITakesDateTimeProvider</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -109,20 +113,20 @@
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="NiceGraphicLibrary_Utility_Cooldown_CountDown_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class CountDown</code></pre>
+    <pre><code class="lang-csharp hljs">public class CountDown : ITakesDateTimeProvider</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="NiceGraphicLibrary_Utility_Cooldown_CountDown__ctor_" data-uid="NiceGraphicLibrary.Utility.Cooldown.CountDown.#ctor*"></a>
-  <h4 id="NiceGraphicLibrary_Utility_Cooldown_CountDown__ctor_System_Int32_" data-uid="NiceGraphicLibrary.Utility.Cooldown.CountDown.#ctor(System.Int32)">CountDown(Int32)</h4>
-  <div class="markdown level1 summary"><p>Sets the count down and starts it.</p>
+  <h4 id="NiceGraphicLibrary_Utility_Cooldown_CountDown__ctor_System_Int32_System_Boolean_" data-uid="NiceGraphicLibrary.Utility.Cooldown.CountDown.#ctor(System.Int32,System.Boolean)">CountDown(Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Sets up count down.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CountDown(int seconds)</code></pre>
+    <pre><code class="lang-csharp hljs">public CountDown(int seconds, bool startAfterCreation = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -137,7 +141,15 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">seconds</span></td>
-        <td></td>
+        <td><p>Seconds to count down.
+Negativ values will be converted to positive values</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">startAfterCreation</span></td>
+        <td><p>If true then the count down starts after creation. If false the count down is stopped until <a class="xref" href="NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_Resume">Resume()</a> is called</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -145,9 +157,61 @@
   </h3>
   
   
+  <a id="NiceGraphicLibrary_Utility_Cooldown_CountDown_IsDone_" data-uid="NiceGraphicLibrary.Utility.Cooldown.CountDown.IsDone*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_Cooldown_CountDown_IsDone" data-uid="NiceGraphicLibrary.Utility.Cooldown.CountDown.IsDone">IsDone</h4>
+  <div class="markdown level1 summary"><p>Getter: If true the count down has counted down completely.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDone { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="NiceGraphicLibrary_Utility_Cooldown_CountDown_IsStopped_" data-uid="NiceGraphicLibrary.Utility.Cooldown.CountDown.IsStopped*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_Cooldown_CountDown_IsStopped" data-uid="NiceGraphicLibrary.Utility.Cooldown.CountDown.IsStopped">IsStopped</h4>
+  <div class="markdown level1 summary"><p>Getter: If true count down is stopped, not counting down further</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsStopped { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="NiceGraphicLibrary_Utility_Cooldown_CountDown_RemainingSeconds_" data-uid="NiceGraphicLibrary.Utility.Cooldown.CountDown.RemainingSeconds*"></a>
   <h4 id="NiceGraphicLibrary_Utility_Cooldown_CountDown_RemainingSeconds" data-uid="NiceGraphicLibrary.Utility.Cooldown.CountDown.RemainingSeconds">RemainingSeconds</h4>
-  <div class="markdown level1 summary"><p>Returns remaining seconds of the count down</p>
+  <div class="markdown level1 summary"><p>Returns remaining seconds to count down. If zero the count down is done.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -178,7 +242,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float StartSeconds { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int StartSeconds { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -190,7 +254,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Single</span></td>
+        <td><span class="xref">System.Int32</span></td>
         <td><p>Negativ values will be converted to positive values</p>
 </td>
       </tr>
@@ -200,14 +264,90 @@
   </h3>
   
   
-  <a id="NiceGraphicLibrary_Utility_Cooldown_CountDown_ResetAndStart_" data-uid="NiceGraphicLibrary.Utility.Cooldown.CountDown.ResetAndStart*"></a>
-  <h4 id="NiceGraphicLibrary_Utility_Cooldown_CountDown_ResetAndStart" data-uid="NiceGraphicLibrary.Utility.Cooldown.CountDown.ResetAndStart">ResetAndStart()</h4>
-  <div class="markdown level1 summary"><p>Resets the countdown and starts it</p>
+  <a id="NiceGraphicLibrary_Utility_Cooldown_CountDown_Reset_" data-uid="NiceGraphicLibrary.Utility.Cooldown.CountDown.Reset*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_Cooldown_CountDown_Reset_System_Boolean_" data-uid="NiceGraphicLibrary.Utility.Cooldown.CountDown.Reset(System.Boolean)">Reset(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Resets the countdown. it starts from <a class="xref" href="NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_StartSeconds">StartSeconds</a> again</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void ResetAndStart()</code></pre>
+    <pre><code class="lang-csharp hljs">public void Reset(bool startAfterReset = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">startAfterReset</span></td>
+        <td><p>If true the count down starts from <a class="xref" href="NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_StartSeconds">StartSeconds</a> to count down right away.
+If false the count down does not start until <a class="xref" href="NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_Resume">Resume()</a> is called</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="NiceGraphicLibrary_Utility_Cooldown_CountDown_Resume_" data-uid="NiceGraphicLibrary.Utility.Cooldown.CountDown.Resume*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_Cooldown_CountDown_Resume" data-uid="NiceGraphicLibrary.Utility.Cooldown.CountDown.Resume">Resume()</h4>
+  <div class="markdown level1 summary"><p>Resumes the counting. <a class="xref" href="NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_RemainingSeconds">RemainingSeconds</a> changes again.
+Counting starts from the remaining seconds before <a class="xref" href="NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_Stop">Stop()</a> was called.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Resume()</code></pre>
+  </div>
+  
+  
+  <a id="NiceGraphicLibrary_Utility_Cooldown_CountDown_SetDateTimeProvider_" data-uid="NiceGraphicLibrary.Utility.Cooldown.CountDown.SetDateTimeProvider*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_Cooldown_CountDown_SetDateTimeProvider_NiceGraphicLibrary_IDateTimeProvider_" data-uid="NiceGraphicLibrary.Utility.Cooldown.CountDown.SetDateTimeProvider(NiceGraphicLibrary.IDateTimeProvider)">SetDateTimeProvider(IDateTimeProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDateTimeProvider(IDateTimeProvider provider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NiceGraphicLibrary.IDateTimeProvider.html">IDateTimeProvider</a></td>
+        <td><span class="parametername">provider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="NiceGraphicLibrary_Utility_Cooldown_CountDown_SetDateTimeProvider_NiceGraphicLibrary_IDateTimeProvider__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Resets the count down after this call</p>
+</div>
+  
+  
+  <a id="NiceGraphicLibrary_Utility_Cooldown_CountDown_Stop_" data-uid="NiceGraphicLibrary.Utility.Cooldown.CountDown.Stop*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_Cooldown_CountDown_Stop" data-uid="NiceGraphicLibrary.Utility.Cooldown.CountDown.Stop">Stop()</h4>
+  <div class="markdown level1 summary"><p>Stops the count down from counting further. <a class="xref" href="NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_RemainingSeconds">RemainingSeconds</a> does not change anymore.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Stop()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="NiceGraphicLibrary.ITakesDateTimeProvider.html">ITakesDateTimeProvider</a>
   </div>
 </article>
           </div>
