@@ -37,57 +37,44 @@ namespace NiceGraphicLibrary.Tests.Runtime.Tests_RigidMotion
 
     [Test]
     public void Test_GrowingMovementGobal()
-      => TestBase_RigidMotion.TestRun_ForInterpolatedMotionGrowing(
-        _componentToTest, 
-        MovementAxisLevel.Global,
-        TEST_DURATION_GROWING_SPEED, 
-        TEST_DELTA_STEP_GROWING_SPEED
-        );
+      => Test_OneInterpolatedRun(TestBase_RigidMotion.TestRun_ForInterpolatedMotionGrowing, MovementAxisLevel.Global);
 
     [Test]
     public void Test_GrowingMovementLocal()
-      => TestBase_RigidMotion.TestRun_ForInterpolatedMotionGrowing(
-        _componentToTest,
-        MovementAxisLevel.Local,
-        TEST_DURATION_GROWING_SPEED, 
-        TEST_DELTA_STEP_GROWING_SPEED
-        );
+      => Test_OneInterpolatedRun(TestBase_RigidMotion.TestRun_ForInterpolatedMotionGrowing, MovementAxisLevel.Local);
 
     [Test]
     public void Test_SlowingMovementGobal()
-      => TestBase_RigidMotion.TestRun_ForInterpolatedMotionSlowing(
-        _componentToTest, 
-        MovementAxisLevel.Global,
-        TEST_DURATION_GROWING_SPEED, 
-        TEST_DELTA_STEP_GROWING_SPEED
-        );
-
+      => Test_OneInterpolatedRun(TestBase_RigidMotion.TestRun_ForInterpolatedMotionSlowing, MovementAxisLevel.Global);
+       
     [Test]
     public void Test_SlowingMovementLocal()
-      => TestBase_RigidMotion.TestRun_ForInterpolatedMotionSlowing(
-        _componentToTest,
-        MovementAxisLevel.Local,
-        TEST_DURATION_GROWING_SPEED,
-        TEST_DELTA_STEP_GROWING_SPEED
-        );
+      => Test_OneInterpolatedRun(TestBase_RigidMotion.TestRun_ForInterpolatedMotionSlowing, MovementAxisLevel.Local);
 
     [Test]
     public void Test_CounterMovementGobal()
-      => TestBase_RigidMotion.TestRun_ForInterpolatedMotionCounter(
-        _componentToTest,
-        MovementAxisLevel.Local,
-        TEST_DURATION_GROWING_SPEED,
-        TEST_DELTA_STEP_GROWING_SPEED
-        );
+      => Test_OneInterpolatedRun(TestBase_RigidMotion.TestRun_ForInterpolatedMotionCounter, MovementAxisLevel.Global);
 
     [Test]
     public void Test_CounterMovementLocal()
-      => TestBase_RigidMotion.TestRun_ForInterpolatedMotionCounter(
-        _componentToTest,
-        MovementAxisLevel.Local,
-        TEST_DURATION_GROWING_SPEED,
-        TEST_DELTA_STEP_GROWING_SPEED
-        );
+      => Test_OneInterpolatedRun(TestBase_RigidMotion.TestRun_ForInterpolatedMotionCounter, MovementAxisLevel.Local);
 
+    private void Test_OneInterpolatedRun(
+      Action<RigidInterpolatedMotion, MovementAxisLevel, float, float> testRunFunction,
+      MovementAxisLevel locaOrGlobal
+      )
+    {
+      foreach (InterpolationKind interpolation in Enum.GetValues(typeof(InterpolationKind)))
+      {
+        _componentToTest.AccelerationKind = interpolation;
+
+        testRunFunction(
+          _componentToTest,
+          locaOrGlobal,
+          TEST_DURATION_GROWING_SPEED,
+          TEST_DELTA_STEP_GROWING_SPEED
+          );
+      }
+    }
   }
 }

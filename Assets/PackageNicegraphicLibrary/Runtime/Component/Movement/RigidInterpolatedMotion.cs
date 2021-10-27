@@ -3,41 +3,79 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using NiceGraphicLibrary.Utility;
+
 namespace NiceGraphicLibrary.Component.Movement
 {
   public abstract class RigidInterpolatedMotion : RigidGeometryMotion
   {
-
+    private const float MIN_VALUE_FOR_DURATIONS = 1E-5f;
 
     [SerializeField]
-    [Min(0)]
     protected float _Duration = 1f;
     [SerializeField]
-    [Min(0)]
     protected float _CounterDuration = 0.5f;
     [SerializeField]
-    [Min(0)]
     protected float _SlowingDuration = 1f;
+    [SerializeField]
+    protected InterpolationKind _AccelerationKind = InterpolationKind.Linear;
+
+    public InterpolationKind AccelerationKind
+    {
+      get => _AccelerationKind;
+      set
+      {
+        _AccelerationKind = value;
+
+        switch (value)
+        {
+          case InterpolationKind.Linear:
+            _currentInterpolation = LinearInterpolation;
+            _currentInverseInterpolation = InverseLinearInterpolation;
+            break;
+          case InterpolationKind.SmoothStep:
+            _currentInterpolation = SmoothStepInterpolation;
+            _currentInverseInterpolation = InverseSmoothStepInterpolation;
+            break;
+          case InterpolationKind.SmootherStep:
+            _currentInterpolation = SmootherStepInterpolation;
+            _currentInverseInterpolation = InverseSmootherStepInterpolation;
+            break;
+          default:
+            Debug.LogError(ErrorMessages.NotAccountedEnumValue(value), this.gameObject);
+            break;
+        }
+      }
+    }
+
+    protected virtual void OnValidate()
+    {
+      AccelerationKind = _AccelerationKind;
+      Duration = _Duration;
+      SlowingDuration = _SlowingDuration;
+      CounterDuration = _CounterDuration;
+    }
 
     public float Duration
     {
       get => _Duration;
-      set => _Duration = Math.Abs(value);     
+      set => _Duration = MinDuration(value);     
     }
 
     public float SlowingDuration
     {
       get => _SlowingDuration;
-      set => _SlowingDuration = Math.Abs(value);
+      set => _SlowingDuration = MinDuration(value);
     }
 
     public float CounterDuration
     {
       get => _CounterDuration;
-      set => _CounterDuration = Math.Abs(value);
+      set => _CounterDuration = MinDuration(value);
     }
 
-
+    private float MinDuration(in float floatValue) 
+      => Mathf.Max(MIN_VALUE_FOR_DURATIONS, Mathf.Abs(floatValue));
 
     protected float _currentDurationX = 0f;
     protected float _currentSlowingDurationX = 0f;
@@ -55,6 +93,9 @@ namespace NiceGraphicLibrary.Component.Movement
     protected MovingState _currentMovingStateX = MovingState.Standing;
     protected MovingState _currentMovingStateY = MovingState.Standing;
     protected MovingState _currentMovingStateZ = MovingState.Standing;
+
+    private Func<float, float, float> _currentInterpolation = LinearInterpolation;
+    private Func<float, float, float> _currentInverseInterpolation = InverseLinearInterpolation;
 
     public MovingState CurrentMovingStateX => _currentMovingStateX;
     public MovingState CurrentMovingStateY => _currentMovingStateY;
@@ -83,8 +124,6 @@ namespace NiceGraphicLibrary.Component.Movement
     }
 
     protected void CalculateMotionCycleX(
-      Func<float, float, float> interpolation,
-      Func<float, float, float> inverseInterpolation
       )
     {
       CalculateMotionCycle(
@@ -93,15 +132,11 @@ namespace NiceGraphicLibrary.Component.Movement
         ref _currentDurationX,
         ref _currentSlowingDurationX,
         ref _currentCounterDurationX,
-        ref _currentSpeedX,
-        interpolation,
-        inverseInterpolation
+        ref _currentSpeedX
         );
     }
 
     protected void CalculateMotionCycleY(
-      Func<float, float, float> interpolation,
-      Func<float, float, float> inverseInterpolation
       )
     {
       CalculateMotionCycle(
@@ -110,15 +145,11 @@ namespace NiceGraphicLibrary.Component.Movement
         ref _currentDurationY,
         ref _currentSlowingDurationY,
         ref _currentCounterDurationY,
-        ref _currentSpeedY,
-        interpolation,
-        inverseInterpolation
+        ref _currentSpeedY
         );
     }
 
     protected void CalculateMotionCycleZ(
-      Func<float, float, float> interpolation,
-      Func<float, float, float> inverseInterpolation
       )
     {
       CalculateMotionCycle(
@@ -127,9 +158,7 @@ namespace NiceGraphicLibrary.Component.Movement
         ref _currentDurationZ,
         ref _currentSlowingDurationZ,
         ref _currentCounterDurationZ,
-        ref _currentSpeedZ,
-        interpolation,
-        inverseInterpolation
+        ref _currentSpeedZ
         );
     }
 
@@ -139,9 +168,7 @@ namespace NiceGraphicLibrary.Component.Movement
         ref float duration,
         ref float slowingDuration,
         ref float counteDuration,
-        ref float speed,
-        Func<float, float, float> interpolation,
-        Func<float, float, float> inverseInterpolation
+        ref float speed
       )
     {
       bool stateHasChanged;
@@ -187,7 +214,7 @@ namespace NiceGraphicLibrary.Component.Movement
             counteDuration = 0f;
             slowingDuration = 0f;
             duration = Mathf.Min(duration + _timeDelta.GetDelatTime(), _Duration);
-            speed = interpolation(Speed, duration / _Duration);
+            speed = _currentInterpolation(Speed, duration / _Duration);
           }
         }
         else if (movingState == MovingState.SpeedingUpBack)
@@ -207,7 +234,7 @@ namespace NiceGraphicLibrary.Component.Movement
             counteDuration = 0f;
             slowingDuration = 0f;
             duration = Mathf.Min(duration + _timeDelta.GetDelatTime(), _Duration);
-            speed = -interpolation(Speed, duration / _Duration);
+            speed = -_currentInterpolation(Speed, duration / _Duration);
           }
         }
         else if (movingState == MovingState.SlowingDownFront)
@@ -232,7 +259,7 @@ namespace NiceGraphicLibrary.Component.Movement
             duration = 0f;
             counteDuration = 0f;
             slowingDuration = Mathf.Min(slowingDuration + _timeDelta.GetDelatTime(), _SlowingDuration);
-            speed = inverseInterpolation(Speed, slowingDuration / _SlowingDuration);
+            speed = _currentInverseInterpolation(Speed, slowingDuration / _SlowingDuration);
           }
         }
         else if (movingState == MovingState.SlowingDownBack)
@@ -256,7 +283,7 @@ namespace NiceGraphicLibrary.Component.Movement
             duration = 0f;
             counteDuration = 0f;
             slowingDuration = Mathf.Min(slowingDuration + _timeDelta.GetDelatTime(), _SlowingDuration);
-            speed = -inverseInterpolation(Speed, slowingDuration / _SlowingDuration);
+            speed = -_currentInverseInterpolation(Speed, slowingDuration / _SlowingDuration);
           }
         }
         else if (movingState == MovingState.CounterSpeedingUpFront)
@@ -279,7 +306,7 @@ namespace NiceGraphicLibrary.Component.Movement
             duration = 0f;
             slowingDuration = 0f;
             counteDuration = Mathf.Min(counteDuration + _timeDelta.GetDelatTime(), _CounterDuration);
-            speed = -inverseInterpolation(Speed, counteDuration / _CounterDuration);
+            speed = -_currentInverseInterpolation(Speed, counteDuration / _CounterDuration);
           }
         }
         else if (movingState == MovingState.CounterSpeedingUpBack)
@@ -303,7 +330,7 @@ namespace NiceGraphicLibrary.Component.Movement
             duration = 0f;
             slowingDuration = 0f;
             counteDuration = Mathf.Min(counteDuration + _timeDelta.GetDelatTime(), _CounterDuration);
-            speed = inverseInterpolation(Speed, counteDuration / _CounterDuration);
+            speed = _currentInverseInterpolation(Speed, counteDuration / _CounterDuration);
           }
         }
 
@@ -345,6 +372,22 @@ namespace NiceGraphicLibrary.Component.Movement
 
     }
 
+    private static float LinearInterpolation(float speed, float durationRatio)
+      => Mathf.Lerp(0f, speed, durationRatio);
 
+    private static float InverseLinearInterpolation(float speed, float durationRatio)
+      => Mathf.Lerp(0f, speed, 1f - durationRatio);
+
+    private static float SmoothStepInterpolation(float speed, float durationRatio)
+      => Interpolation.SmootherStep(speed, durationRatio);
+
+    private static float SmootherStepInterpolation(float speed, float durationRatio)
+      => Interpolation.SmootherStep(speed, durationRatio);
+
+    private static float InverseSmoothStepInterpolation(float speed, float durationRatio)
+      => Interpolation.InverseSmoothStep(speed, durationRatio);
+
+    private static float InverseSmootherStepInterpolation(float speed, float durationRatio)
+      => Interpolation.InverseSmootherStep(speed, durationRatio);
   }
 }

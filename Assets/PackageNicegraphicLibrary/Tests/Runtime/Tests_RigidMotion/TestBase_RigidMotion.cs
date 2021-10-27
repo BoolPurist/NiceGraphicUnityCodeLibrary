@@ -127,8 +127,8 @@ namespace NiceGraphicLibrary.Tests.Runtime.Tests_RigidMotion
     public static void TestRun_ForInterpolatedMotionSlowing(
       RigidInterpolatedMotion componentToTest,
       MovementAxisLevel localOrGlobal,
-      in float duration,
-      in float durationStep
+      float duration,
+      float durationStep
       )
     {
       Dictionary<TestMovementDirection, Vector3> directions = SetUpComponentForTestRun(componentToTest, localOrGlobal);
@@ -144,8 +144,8 @@ namespace NiceGraphicLibrary.Tests.Runtime.Tests_RigidMotion
     public static void TestRun_ForInterpolatedMotionGrowing(
       RigidInterpolatedMotion componentToTest,
       MovementAxisLevel localOrGlobal,
-      in float duration,
-      in float durationStep
+      float duration,
+      float durationStep
       )
     {
 
@@ -165,8 +165,8 @@ namespace NiceGraphicLibrary.Tests.Runtime.Tests_RigidMotion
     public static void TestRun_ForInterpolatedMotionCounter(
       RigidInterpolatedMotion componentToTest,
       MovementAxisLevel localOrGlobal,
-      in float duration,
-      in float durationStep
+      float duration,
+      float durationStep
       )
     {
       Dictionary<TestMovementDirection, Vector3> directions = SetUpComponentForTestRun(componentToTest, localOrGlobal);

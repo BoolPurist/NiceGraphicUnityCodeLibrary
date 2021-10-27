@@ -9,7 +9,7 @@ namespace NiceGraphicLibrary.Component.Movement
   {
     Linear,
     SmoothStep,
-    Spherical,
+    SmootherStep,
 
   } 
 }

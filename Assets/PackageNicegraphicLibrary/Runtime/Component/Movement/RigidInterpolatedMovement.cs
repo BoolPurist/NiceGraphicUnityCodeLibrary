@@ -10,9 +10,9 @@ namespace NiceGraphicLibrary.Component.Movement
     protected override void ApplyMovement()
     {
 
-      base.CalculateMotionCycleX(LinearSpeedInterpopulation, InverseLinearSpeedInterpopulation);
-      base.CalculateMotionCycleY(LinearSpeedInterpopulation, InverseLinearSpeedInterpopulation);
-      base.CalculateMotionCycleZ(LinearSpeedInterpopulation, InverseLinearSpeedInterpopulation);
+      base.CalculateMotionCycleX();
+      base.CalculateMotionCycleY();
+      base.CalculateMotionCycleZ();
 
       Vector3 nextMove = Vector3.zero;
 
@@ -41,15 +41,6 @@ namespace NiceGraphicLibrary.Component.Movement
       }
 
     }
-
-
-
-
-    private float LinearSpeedInterpopulation(float speed, float durationRatio)
-      => Mathf.Lerp(0f, speed, durationRatio);
-
-    private float InverseLinearSpeedInterpopulation(float speed, float durationRatio)
-      => Mathf.Lerp(0f, speed, 1f - durationRatio);
 
     protected override void ProcessAxis()
       => ProcessGlobalAxis();

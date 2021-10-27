@@ -618,15 +618,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1596519680}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36d189f29a696f34fae68fbc6d3628a1, type: 3}
+  m_Script: {fileID: 11500000, guid: c2029eb21fc94d548aa10d939e3be360, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _AxisLevel: 0
-  _Speed: 1
+  _Speed: 2
   _AllowX: 1
   _AllowY: 1
   _AllowZ: 1
-  _ForceMode: 2
+  _Duration: 1
+  _CounterDuration: 0.5
+  _SlowingDuration: 1
+  _AccelerationKind: 1
 --- !u!114 &1596519682
 MonoBehaviour:
   m_ObjectHideFlags: 0
