@@ -1834,6 +1834,44 @@ references:
   commentId: N:NiceGraphicLibrary.Utility
   fullName: NiceGraphicLibrary.Utility
   nameWithType: NiceGraphicLibrary.Utility
+- uid: NiceGraphicLibrary.Utility.ComponentUtility
+  name: ComponentUtility
+  href: api/NiceGraphicLibrary.Utility.ComponentUtility.html
+  commentId: T:NiceGraphicLibrary.Utility.ComponentUtility
+  fullName: NiceGraphicLibrary.Utility.ComponentUtility
+  nameWithType: ComponentUtility
+- uid: NiceGraphicLibrary.Utility.ComponentUtility.EnsureComponentOn*
+  name: EnsureComponentOn
+  href: api/NiceGraphicLibrary.Utility.ComponentUtility.html#NiceGraphicLibrary_Utility_ComponentUtility_EnsureComponentOn_
+  commentId: Overload:NiceGraphicLibrary.Utility.ComponentUtility.EnsureComponentOn
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.ComponentUtility.EnsureComponentOn
+  nameWithType: ComponentUtility.EnsureComponentOn
+- uid: NiceGraphicLibrary.Utility.ComponentUtility.EnsureComponentOn``1(GameObject)
+  name: EnsureComponentOn<TComponent>(GameObject)
+  href: api/NiceGraphicLibrary.Utility.ComponentUtility.html#NiceGraphicLibrary_Utility_ComponentUtility_EnsureComponentOn__1_GameObject_
+  commentId: M:NiceGraphicLibrary.Utility.ComponentUtility.EnsureComponentOn``1(GameObject)
+  name.vb: EnsureComponentOn(Of TComponent)(GameObject)
+  fullName: NiceGraphicLibrary.Utility.ComponentUtility.EnsureComponentOn<TComponent>(GameObject)
+  fullName.vb: NiceGraphicLibrary.Utility.ComponentUtility.EnsureComponentOn(Of TComponent)(GameObject)
+  nameWithType: ComponentUtility.EnsureComponentOn<TComponent>(GameObject)
+  nameWithType.vb: ComponentUtility.EnsureComponentOn(Of TComponent)(GameObject)
+- uid: NiceGraphicLibrary.Utility.ComponentUtility.HasComponentOn*
+  name: HasComponentOn
+  href: api/NiceGraphicLibrary.Utility.ComponentUtility.html#NiceGraphicLibrary_Utility_ComponentUtility_HasComponentOn_
+  commentId: Overload:NiceGraphicLibrary.Utility.ComponentUtility.HasComponentOn
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.ComponentUtility.HasComponentOn
+  nameWithType: ComponentUtility.HasComponentOn
+- uid: NiceGraphicLibrary.Utility.ComponentUtility.HasComponentOn``1(GameObject)
+  name: HasComponentOn<TComponent>(GameObject)
+  href: api/NiceGraphicLibrary.Utility.ComponentUtility.html#NiceGraphicLibrary_Utility_ComponentUtility_HasComponentOn__1_GameObject_
+  commentId: M:NiceGraphicLibrary.Utility.ComponentUtility.HasComponentOn``1(GameObject)
+  name.vb: HasComponentOn(Of TComponent)(GameObject)
+  fullName: NiceGraphicLibrary.Utility.ComponentUtility.HasComponentOn<TComponent>(GameObject)
+  fullName.vb: NiceGraphicLibrary.Utility.ComponentUtility.HasComponentOn(Of TComponent)(GameObject)
+  nameWithType: ComponentUtility.HasComponentOn<TComponent>(GameObject)
+  nameWithType.vb: ComponentUtility.HasComponentOn(Of TComponent)(GameObject)
 - uid: NiceGraphicLibrary.Utility.Cooldown
   name: NiceGraphicLibrary.Utility.Cooldown
   href: api/NiceGraphicLibrary.Utility.Cooldown.html

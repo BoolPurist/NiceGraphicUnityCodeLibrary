@@ -485,6 +485,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/NiceGraphicLibrary.Utility.ComponentUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NiceGraphicLibrary.Utility.ComponentUtility.html",
+          "hash": "KLZjtWuJ6yIQdNwuJ4I4xkVsOCpbpQllHo01hPxkXjg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.yml",
       "output": {
         ".html": {
@@ -609,7 +621,7 @@
       "output": {
         ".html": {
           "relative_path": "api/NiceGraphicLibrary.Utility.html",
-          "hash": "o4Z0kS2uDduDylqmQ3jJ7q04+KZTbDmPQCKZ8VZb/ow="
+          "hash": "fjuAvr9v/pRcYg9Nq6Rp1LAlcGtqURsVFEi/mRMqYho="
         }
       },
       "is_incremental": false,
@@ -645,7 +657,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "Q/e/2qPCrNDjON1pSppImXt53sl71PmfpHZrZ4eAnCg="
+          "hash": "dV8xYY0925J256ggrYvpyoPcTGCJ8yDvJ+/u3XY1pE0="
         }
       },
       "is_incremental": false,
@@ -718,8 +730,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 51,
-          "skipped_file_count": 13
+          "total_file_count": 52,
+          "skipped_file_count": 41
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
