@@ -82,6 +82,12 @@ Inner timer stops if Time.timeScale == 0.</p>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">CooldownTimeStampTimer</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="NiceGraphicLibrary.ITakesDateTimeProvider.html">ITakesDateTimeProvider</a></div>
+    <div><a class="xref" href="NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer-1.html">IStoppableCoolDownTimer</a>&lt;<span class="xref">System.Single</span>&gt;</div>
+    <div><a class="xref" href="NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer-1.html">ICooldownTimer</a>&lt;<span class="xref">System.Single</span>&gt;</div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -110,19 +116,19 @@ Inner timer stops if Time.timeScale == 0.</p>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class CooldownTimeStampTimer : ICooldownTimer</code></pre>
+    <pre><code class="lang-csharp hljs">public class CooldownTimeStampTimer : ITakesDateTimeProvider, IStoppableCoolDownTimer&lt;float&gt;, ICooldownTimer&lt;float&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer__ctor_" data-uid="NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.#ctor*"></a>
-  <h4 id="NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer__ctor_System_Double_" data-uid="NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.#ctor(System.Double)">CooldownTimeStampTimer(Double)</h4>
+  <h4 id="NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer__ctor_System_Single_" data-uid="NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.#ctor(System.Single)">CooldownTimeStampTimer(Single)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CooldownTimeStampTimer(double endTime = 1)</code></pre>
+    <pre><code class="lang-csharp hljs">public CooldownTimeStampTimer(float secondsToPass = 1F)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -135,9 +141,11 @@ Inner timer stops if Time.timeScale == 0.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">endTime</span></td>
-        <td></td>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">secondsToPass</span></td>
+        <td><p>Time needs to pass untiles the cool down wears off
+Negative value will be converted to a positive one.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -145,13 +153,88 @@ Inner timer stops if Time.timeScale == 0.</p>
   </h3>
   
   
-  <a id="NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_PassedTimeFactor_" data-uid="NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.PassedTimeFactor*"></a>
-  <h4 id="NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_PassedTimeFactor" data-uid="NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.PassedTimeFactor">PassedTimeFactor</h4>
+  <a id="NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_IsStopped_" data-uid="NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.IsStopped*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_IsStopped" data-uid="NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.IsStopped">IsStopped</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float PassedTimeFactor { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public bool IsStopped { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_PassedSeconds_" data-uid="NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.PassedSeconds*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_PassedSeconds" data-uid="NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.PassedSeconds">PassedSeconds</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float PassedSeconds { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_PassedTimeRatio_" data-uid="NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.PassedTimeRatio*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_PassedTimeRatio" data-uid="NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.PassedTimeRatio">PassedTimeRatio</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float PassedTimeRatio { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_SecondsToPass_" data-uid="NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.SecondsToPass*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_SecondsToPass" data-uid="NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.SecondsToPass">SecondsToPass</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SecondsToPass { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -207,13 +290,33 @@ Inner timer stops if Time.timeScale == 0.</p>
   </div>
   
   
-  <a id="NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_SetNewEndTime_" data-uid="NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.SetNewEndTime*"></a>
-  <h4 id="NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_SetNewEndTime_System_Single_" data-uid="NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.SetNewEndTime(System.Single)">SetNewEndTime(Single)</h4>
+  <a id="NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_ResetAndStart_" data-uid="NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.ResetAndStart*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_ResetAndStart" data-uid="NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.ResetAndStart">ResetAndStart()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetNewEndTime(float newEndTime)</code></pre>
+    <pre><code class="lang-csharp hljs">public void ResetAndStart()</code></pre>
+  </div>
+  
+  
+  <a id="NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_Resume_" data-uid="NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.Resume*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_Resume" data-uid="NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.Resume">Resume()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Resume()</code></pre>
+  </div>
+  
+  
+  <a id="NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_SetDateTimeProvider_" data-uid="NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.SetDateTimeProvider*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_SetDateTimeProvider_NiceGraphicLibrary_IDateTimeProvider_" data-uid="NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.SetDateTimeProvider(NiceGraphicLibrary.IDateTimeProvider)">SetDateTimeProvider(IDateTimeProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDateTimeProvider(IDateTimeProvider provider)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -226,12 +329,32 @@ Inner timer stops if Time.timeScale == 0.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">newEndTime</span></td>
+        <td><a class="xref" href="NiceGraphicLibrary.IDateTimeProvider.html">IDateTimeProvider</a></td>
+        <td><span class="parametername">provider</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_Stop_" data-uid="NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.Stop*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_Stop" data-uid="NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.Stop">Stop()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Stop()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="NiceGraphicLibrary.ITakesDateTimeProvider.html">ITakesDateTimeProvider</a>
+  </div>
+  <div>
+      <a class="xref" href="NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer-1.html">IStoppableCoolDownTimer&lt;TSeconds&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer-1.html">ICooldownTimer&lt;TSeconds&gt;</a>
+  </div>
 </article>
           </div>
           

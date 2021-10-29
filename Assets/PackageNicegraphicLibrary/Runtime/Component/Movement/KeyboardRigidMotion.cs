@@ -6,9 +6,8 @@ using UnityEngine;
 namespace NiceGraphicLibrary.Component.Movement
 {
   /// <summary>
-  /// Provides input management for keyboard inputs to control a component inheriting from type <see cref="RigidBodyMovement"/> 
-  /// </summary>
-  
+  /// Provides input management for keyboard inputs to control a component inheriting from type <see cref="RigidGeometryMotion"/> 
+  /// </summary>  
   public class KeyboardRigidMotion : MonoBehaviour
   {
     [SerializeField]

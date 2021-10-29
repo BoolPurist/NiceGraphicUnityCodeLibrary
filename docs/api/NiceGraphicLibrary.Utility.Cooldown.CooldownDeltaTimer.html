@@ -82,6 +82,11 @@ That cool down does not stop even if Time.timeScale== 0 because the inner timer 
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">CooldownDeltaTimer</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer-1.html">ICooldownTimer</a>&lt;<span class="xref">System.Single</span>&gt;</div>
+    <div><a class="xref" href="NiceGraphicLibrary.ITakesDeltaTimeProvider.html">ITakesDeltaTimeProvider</a></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -110,7 +115,7 @@ That cool down does not stop even if Time.timeScale== 0 because the inner timer 
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="NiceGraphicLibrary_Utility_Cooldown_CooldownDeltaTimer_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class CooldownDeltaTimer : ICooldownTimer</code></pre>
+    <pre><code class="lang-csharp hljs">public class CooldownDeltaTimer : ICooldownTimer&lt;float&gt;, ITakesDeltaTimeProvider</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -147,13 +152,63 @@ Negative value will be converted to a positive one.</p>
   </h3>
   
   
-  <a id="NiceGraphicLibrary_Utility_Cooldown_CooldownDeltaTimer_PassedTimeFactor_" data-uid="NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.PassedTimeFactor*"></a>
-  <h4 id="NiceGraphicLibrary_Utility_Cooldown_CooldownDeltaTimer_PassedTimeFactor" data-uid="NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.PassedTimeFactor">PassedTimeFactor</h4>
+  <a id="NiceGraphicLibrary_Utility_Cooldown_CooldownDeltaTimer_PassedSeconds_" data-uid="NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.PassedSeconds*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_Cooldown_CooldownDeltaTimer_PassedSeconds" data-uid="NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.PassedSeconds">PassedSeconds</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float PassedTimeFactor { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public float PassedSeconds { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="NiceGraphicLibrary_Utility_Cooldown_CooldownDeltaTimer_PassedTimeRatio_" data-uid="NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.PassedTimeRatio*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_Cooldown_CooldownDeltaTimer_PassedTimeRatio" data-uid="NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.PassedTimeRatio">PassedTimeRatio</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float PassedTimeRatio { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="NiceGraphicLibrary_Utility_Cooldown_CooldownDeltaTimer_SecondsToPass_" data-uid="NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.SecondsToPass*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_Cooldown_CooldownDeltaTimer_SecondsToPass" data-uid="NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.SecondsToPass">SecondsToPass</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SecondsToPass { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -209,13 +264,13 @@ Negative value will be converted to a positive one.</p>
   </div>
   
   
-  <a id="NiceGraphicLibrary_Utility_Cooldown_CooldownDeltaTimer_SetNewEndTime_" data-uid="NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.SetNewEndTime*"></a>
-  <h4 id="NiceGraphicLibrary_Utility_Cooldown_CooldownDeltaTimer_SetNewEndTime_System_Single_" data-uid="NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.SetNewEndTime(System.Single)">SetNewEndTime(Single)</h4>
+  <a id="NiceGraphicLibrary_Utility_Cooldown_CooldownDeltaTimer_SetDeltaTimeProvider_" data-uid="NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.SetDeltaTimeProvider*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_Cooldown_CooldownDeltaTimer_SetDeltaTimeProvider_NiceGraphicLibrary_IDeltaTimeProvider_" data-uid="NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.SetDeltaTimeProvider(NiceGraphicLibrary.IDeltaTimeProvider)">SetDeltaTimeProvider(IDeltaTimeProvider)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetNewEndTime(float newEndTime)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SetDeltaTimeProvider(IDeltaTimeProvider provider)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -228,8 +283,8 @@ Negative value will be converted to a positive one.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">newEndTime</span></td>
+        <td><a class="xref" href="NiceGraphicLibrary.IDeltaTimeProvider.html">IDeltaTimeProvider</a></td>
+        <td><span class="parametername">provider</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -273,6 +328,13 @@ Negative value will be converted to a positive one.</p>
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer-1.html">ICooldownTimer&lt;TSeconds&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="NiceGraphicLibrary.ITakesDeltaTimeProvider.html">ITakesDeltaTimeProvider</a>
+  </div>
 </article>
           </div>
           

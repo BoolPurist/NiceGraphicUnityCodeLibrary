@@ -23,12 +23,9 @@
     /// <summary>
     /// Sets time until the cool down wears off.
     /// </summary>
-    /// <param name="newEndTime">
-    /// Negative value will be converted to a positive one
-    /// </param>
     TSeconds SecondsToPass { get; set; }
     /// <summary>
-    /// Deletes passed time as if the cool down and pauses the cool down.
+    /// Deletes passed time as if pauses the cool down.
     /// </summary>
     void Reset();
   }

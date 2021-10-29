@@ -42,18 +42,19 @@ namespace NiceGraphicLibrary.Utility
     }
 
     /// <summary>
-    /// Coroutine to return interpolated speed from [startFloat], default 0, to [endFloat]
-    /// over the given duration
+    /// Coroutine to return interpolated speed from [startFloat] to [endFloat]
+    /// over the given duration. Defaults to 0.
     /// </summary>
     /// <param name="duration">
-    /// Time until the coroutine ends. Negative values will be converted to absolute/positive values.
+    /// Time until the interpolation is complete. Negative values will be converted to absolute/positive values.
     /// </param>
     /// <param name="endFloat">
     /// End float value at the end of the interpolation
     /// </param>
     /// <param name="floatReceiver">
-    /// Is called after each frame. Its argument is between float [startFloat], default 0, to [endFloat] depending on the given duration.
+    /// Is called after each frame. Its argument is between float [startFloat] to [endFloat] depending on the given duration.
     /// Should not be null.
+    /// </param>
     public static IEnumerator InterpolationFloatOverTime(float duration, float endFloat, Action<float> floatReceiver)
     {
       if (!IsValidReceiver(floatReceiver, nameof(floatReceiver)))

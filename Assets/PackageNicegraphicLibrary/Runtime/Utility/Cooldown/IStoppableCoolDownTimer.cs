@@ -13,15 +13,15 @@
     /// </summary>
     bool IsStopped { get; }
     /// <summary>
-    /// Lets the cool down timer continue its counting if it was stopped.
+    /// Lets the cool down timer continue with its counting if it was stopped before.
     /// </summary>
     void Resume();
     /// <summary>
-    /// Stops freezes the time of the cool down timer if it is not already stopped.
+    /// Freezes the cool down timer if it is not already stopped.
     /// </summary>
     void Stop();
     /// <summary>
-    /// Deletes the progress of cool down timer and starts it.
+    /// Deletes the progress of cool down timer and starts it again.
     /// </summary>
     void ResetAndStart();
   }

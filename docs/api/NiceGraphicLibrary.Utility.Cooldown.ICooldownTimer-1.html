@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class FixedDateTimeProvider
+    <title>Interface ICooldownTimer&lt;TSeconds&gt;
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class FixedDateTimeProvider
+    <meta name="title" content="Interface ICooldownTimer&lt;TSeconds&gt;
    ">
     <meta name="generator" content="docfx 2.58.4.0">
     
@@ -68,63 +68,48 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="NiceGraphicLibrary.FixedDateTimeProvider">
+            <article class="content wrap" id="_content" data-uid="NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer`1">
   
   
-  <h1 id="NiceGraphicLibrary_FixedDateTimeProvider" data-uid="NiceGraphicLibrary.FixedDateTimeProvider" class="text-break">Class FixedDateTimeProvider
+  <h1 id="NiceGraphicLibrary_Utility_Cooldown_ICooldownTimer_1" data-uid="NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer`1" class="text-break">Interface ICooldownTimer&lt;TSeconds&gt;
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Demands a cool down which returns a value between 0 and 1 for passed time within an interval</p>
+</div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">FixedDateTimeProvider</span></div>
-  </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><a class="xref" href="NiceGraphicLibrary.IDateTimeProvider.html">IDateTimeProvider</a></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="NiceGraphicLibrary.html">NiceGraphicLibrary</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="NiceGraphicLibrary.Utility.Cooldown.html">NiceGraphicLibrary.Utility.Cooldown</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="NiceGraphicLibrary_FixedDateTimeProvider_syntax">Syntax</h5>
+  <h5 id="NiceGraphicLibrary_Utility_Cooldown_ICooldownTimer_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class FixedDateTimeProvider : IDateTimeProvider</code></pre>
+    <pre><code class="lang-csharp hljs">public interface ICooldownTimer&lt;TSeconds&gt;</code></pre>
   </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSeconds</span></td>
+        <td><p>Type for seconds of the cool down for example like int or float</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   
   
-  <a id="NiceGraphicLibrary_FixedDateTimeProvider_FixedTimeStamp_" data-uid="NiceGraphicLibrary.FixedDateTimeProvider.FixedTimeStamp*"></a>
-  <h4 id="NiceGraphicLibrary_FixedDateTimeProvider_FixedTimeStamp" data-uid="NiceGraphicLibrary.FixedDateTimeProvider.FixedTimeStamp">FixedTimeStamp</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="NiceGraphicLibrary_Utility_Cooldown_ICooldownTimer_1_PassedSeconds_" data-uid="NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer`1.PassedSeconds*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_Cooldown_ICooldownTimer_1_PassedSeconds" data-uid="NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer`1.PassedSeconds">PassedSeconds</h4>
+  <div class="markdown level1 summary"><p>Returns the passed time between zero and the given end time</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DateTime FixedTimeStamp { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">TSeconds PassedSeconds { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -136,7 +121,85 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="xref">TSeconds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="NiceGraphicLibrary_Utility_Cooldown_ICooldownTimer_1_PassedTimeRatio_" data-uid="NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer`1.PassedTimeRatio*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_Cooldown_ICooldownTimer_1_PassedTimeRatio" data-uid="NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer`1.PassedTimeRatio">PassedTimeRatio</h4>
+  <div class="markdown level1 summary"><p>Returns a value between 0 and 1. 0 for no time passed and 1 for the cool down has worn off.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float PassedTimeRatio { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="NiceGraphicLibrary_Utility_Cooldown_ICooldownTimer_1_SecondsToPass_" data-uid="NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer`1.SecondsToPass*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_Cooldown_ICooldownTimer_1_SecondsToPass" data-uid="NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer`1.SecondsToPass">SecondsToPass</h4>
+  <div class="markdown level1 summary"><p>Sets time until the cool down wears off.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TSeconds SecondsToPass { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSeconds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="NiceGraphicLibrary_Utility_Cooldown_ICooldownTimer_1_WornOff_" data-uid="NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer`1.WornOff*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_Cooldown_ICooldownTimer_1_WornOff" data-uid="NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer`1.WornOff">WornOff</h4>
+  <div class="markdown level1 summary"><p>Returns true if the cool down has worn off completely</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool WornOff { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -145,79 +208,14 @@
   </h3>
   
   
-  <a id="NiceGraphicLibrary_FixedDateTimeProvider_ChangeBySeconds_" data-uid="NiceGraphicLibrary.FixedDateTimeProvider.ChangeBySeconds*"></a>
-  <h4 id="NiceGraphicLibrary_FixedDateTimeProvider_ChangeBySeconds_System_Int32_" data-uid="NiceGraphicLibrary.FixedDateTimeProvider.ChangeBySeconds(System.Int32)">ChangeBySeconds(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="NiceGraphicLibrary_Utility_Cooldown_ICooldownTimer_1_Reset_" data-uid="NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer`1.Reset*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_Cooldown_ICooldownTimer_1_Reset" data-uid="NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer`1.Reset">Reset()</h4>
+  <div class="markdown level1 summary"><p>Deletes passed time as if pauses the cool down.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void ChangeBySeconds(int seconds)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">seconds</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="NiceGraphicLibrary_FixedDateTimeProvider_GetNowDateTime_" data-uid="NiceGraphicLibrary.FixedDateTimeProvider.GetNowDateTime*"></a>
-  <h4 id="NiceGraphicLibrary_FixedDateTimeProvider_GetNowDateTime" data-uid="NiceGraphicLibrary.FixedDateTimeProvider.GetNowDateTime">GetNowDateTime()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DateTime GetNowDateTime()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.DateTime</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="NiceGraphicLibrary_FixedDateTimeProvider_MinusOneSecond_" data-uid="NiceGraphicLibrary.FixedDateTimeProvider.MinusOneSecond*"></a>
-  <h4 id="NiceGraphicLibrary_FixedDateTimeProvider_MinusOneSecond" data-uid="NiceGraphicLibrary.FixedDateTimeProvider.MinusOneSecond">MinusOneSecond()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void MinusOneSecond()</code></pre>
-  </div>
-  
-  
-  <a id="NiceGraphicLibrary_FixedDateTimeProvider_PlusOneSecond_" data-uid="NiceGraphicLibrary.FixedDateTimeProvider.PlusOneSecond*"></a>
-  <h4 id="NiceGraphicLibrary_FixedDateTimeProvider_PlusOneSecond" data-uid="NiceGraphicLibrary.FixedDateTimeProvider.PlusOneSecond">PlusOneSecond()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void PlusOneSecond()</code></pre>
-  </div>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="NiceGraphicLibrary.IDateTimeProvider.html">IDateTimeProvider</a>
+    <pre><code class="lang-csharp hljs">void Reset()</code></pre>
   </div>
 </article>
           </div>

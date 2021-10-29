@@ -1720,6 +1720,25 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.ITakesDateTimeProvider.SetDateTimeProvider
   nameWithType: ITakesDateTimeProvider.SetDateTimeProvider
+- uid: NiceGraphicLibrary.ITakesDeltaTimeProvider
+  name: ITakesDeltaTimeProvider
+  href: api/NiceGraphicLibrary.ITakesDeltaTimeProvider.html
+  commentId: T:NiceGraphicLibrary.ITakesDeltaTimeProvider
+  fullName: NiceGraphicLibrary.ITakesDeltaTimeProvider
+  nameWithType: ITakesDeltaTimeProvider
+- uid: NiceGraphicLibrary.ITakesDeltaTimeProvider.SetDeltaTimeProvider(NiceGraphicLibrary.IDeltaTimeProvider)
+  name: SetDeltaTimeProvider(IDeltaTimeProvider)
+  href: api/NiceGraphicLibrary.ITakesDeltaTimeProvider.html#NiceGraphicLibrary_ITakesDeltaTimeProvider_SetDeltaTimeProvider_NiceGraphicLibrary_IDeltaTimeProvider_
+  commentId: M:NiceGraphicLibrary.ITakesDeltaTimeProvider.SetDeltaTimeProvider(NiceGraphicLibrary.IDeltaTimeProvider)
+  fullName: NiceGraphicLibrary.ITakesDeltaTimeProvider.SetDeltaTimeProvider(NiceGraphicLibrary.IDeltaTimeProvider)
+  nameWithType: ITakesDeltaTimeProvider.SetDeltaTimeProvider(IDeltaTimeProvider)
+- uid: NiceGraphicLibrary.ITakesDeltaTimeProvider.SetDeltaTimeProvider*
+  name: SetDeltaTimeProvider
+  href: api/NiceGraphicLibrary.ITakesDeltaTimeProvider.html#NiceGraphicLibrary_ITakesDeltaTimeProvider_SetDeltaTimeProvider_
+  commentId: Overload:NiceGraphicLibrary.ITakesDeltaTimeProvider.SetDeltaTimeProvider
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.ITakesDeltaTimeProvider.SetDeltaTimeProvider
+  nameWithType: ITakesDeltaTimeProvider.SetDeltaTimeProvider
 - uid: NiceGraphicLibrary.ReadOnlyFieldAttribute
   name: ReadOnlyFieldAttribute
   href: api/NiceGraphicLibrary.ReadOnlyFieldAttribute.html
@@ -1897,19 +1916,32 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.CooldownDeltaTimer
   nameWithType: CooldownDeltaTimer.CooldownDeltaTimer
-- uid: NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.PassedTimeFactor
-  name: PassedTimeFactor
-  href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownDeltaTimer_PassedTimeFactor
-  commentId: P:NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.PassedTimeFactor
-  fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.PassedTimeFactor
-  nameWithType: CooldownDeltaTimer.PassedTimeFactor
-- uid: NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.PassedTimeFactor*
-  name: PassedTimeFactor
-  href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownDeltaTimer_PassedTimeFactor_
-  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.PassedTimeFactor
+- uid: NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.PassedSeconds
+  name: PassedSeconds
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownDeltaTimer_PassedSeconds
+  commentId: P:NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.PassedSeconds
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.PassedSeconds
+  nameWithType: CooldownDeltaTimer.PassedSeconds
+- uid: NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.PassedSeconds*
+  name: PassedSeconds
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownDeltaTimer_PassedSeconds_
+  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.PassedSeconds
   isSpec: "True"
-  fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.PassedTimeFactor
-  nameWithType: CooldownDeltaTimer.PassedTimeFactor
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.PassedSeconds
+  nameWithType: CooldownDeltaTimer.PassedSeconds
+- uid: NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.PassedTimeRatio
+  name: PassedTimeRatio
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownDeltaTimer_PassedTimeRatio
+  commentId: P:NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.PassedTimeRatio
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.PassedTimeRatio
+  nameWithType: CooldownDeltaTimer.PassedTimeRatio
+- uid: NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.PassedTimeRatio*
+  name: PassedTimeRatio
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownDeltaTimer_PassedTimeRatio_
+  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.PassedTimeRatio
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.PassedTimeRatio
+  nameWithType: CooldownDeltaTimer.PassedTimeRatio
 - uid: NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.Reset
   name: Reset()
   href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownDeltaTimer_Reset
@@ -1923,19 +1955,32 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.Reset
   nameWithType: CooldownDeltaTimer.Reset
-- uid: NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.SetNewEndTime(System.Single)
-  name: SetNewEndTime(Single)
-  href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownDeltaTimer_SetNewEndTime_System_Single_
-  commentId: M:NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.SetNewEndTime(System.Single)
-  fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.SetNewEndTime(System.Single)
-  nameWithType: CooldownDeltaTimer.SetNewEndTime(Single)
-- uid: NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.SetNewEndTime*
-  name: SetNewEndTime
-  href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownDeltaTimer_SetNewEndTime_
-  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.SetNewEndTime
+- uid: NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.SecondsToPass
+  name: SecondsToPass
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownDeltaTimer_SecondsToPass
+  commentId: P:NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.SecondsToPass
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.SecondsToPass
+  nameWithType: CooldownDeltaTimer.SecondsToPass
+- uid: NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.SecondsToPass*
+  name: SecondsToPass
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownDeltaTimer_SecondsToPass_
+  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.SecondsToPass
   isSpec: "True"
-  fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.SetNewEndTime
-  nameWithType: CooldownDeltaTimer.SetNewEndTime
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.SecondsToPass
+  nameWithType: CooldownDeltaTimer.SecondsToPass
+- uid: NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.SetDeltaTimeProvider(NiceGraphicLibrary.IDeltaTimeProvider)
+  name: SetDeltaTimeProvider(IDeltaTimeProvider)
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownDeltaTimer_SetDeltaTimeProvider_NiceGraphicLibrary_IDeltaTimeProvider_
+  commentId: M:NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.SetDeltaTimeProvider(NiceGraphicLibrary.IDeltaTimeProvider)
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.SetDeltaTimeProvider(NiceGraphicLibrary.IDeltaTimeProvider)
+  nameWithType: CooldownDeltaTimer.SetDeltaTimeProvider(IDeltaTimeProvider)
+- uid: NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.SetDeltaTimeProvider*
+  name: SetDeltaTimeProvider
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownDeltaTimer_SetDeltaTimeProvider_
+  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.SetDeltaTimeProvider
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.SetDeltaTimeProvider
+  nameWithType: CooldownDeltaTimer.SetDeltaTimeProvider
 - uid: NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.Update
   name: Update()
   href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownDeltaTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownDeltaTimer_Update
@@ -1974,12 +2019,12 @@ references:
   commentId: T:NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer
   fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer
   nameWithType: CooldownTimeStampTimer
-- uid: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.#ctor(System.Double)
-  name: CooldownTimeStampTimer(Double)
-  href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer__ctor_System_Double_
-  commentId: M:NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.#ctor(System.Double)
-  fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.CooldownTimeStampTimer(System.Double)
-  nameWithType: CooldownTimeStampTimer.CooldownTimeStampTimer(Double)
+- uid: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.#ctor(System.Single)
+  name: CooldownTimeStampTimer(Single)
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer__ctor_System_Single_
+  commentId: M:NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.#ctor(System.Single)
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.CooldownTimeStampTimer(System.Single)
+  nameWithType: CooldownTimeStampTimer.CooldownTimeStampTimer(Single)
 - uid: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.#ctor*
   name: CooldownTimeStampTimer
   href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer__ctor_
@@ -1987,19 +2032,45 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.CooldownTimeStampTimer
   nameWithType: CooldownTimeStampTimer.CooldownTimeStampTimer
-- uid: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.PassedTimeFactor
-  name: PassedTimeFactor
-  href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_PassedTimeFactor
-  commentId: P:NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.PassedTimeFactor
-  fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.PassedTimeFactor
-  nameWithType: CooldownTimeStampTimer.PassedTimeFactor
-- uid: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.PassedTimeFactor*
-  name: PassedTimeFactor
-  href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_PassedTimeFactor_
-  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.PassedTimeFactor
+- uid: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.IsStopped
+  name: IsStopped
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_IsStopped
+  commentId: P:NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.IsStopped
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.IsStopped
+  nameWithType: CooldownTimeStampTimer.IsStopped
+- uid: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.IsStopped*
+  name: IsStopped
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_IsStopped_
+  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.IsStopped
   isSpec: "True"
-  fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.PassedTimeFactor
-  nameWithType: CooldownTimeStampTimer.PassedTimeFactor
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.IsStopped
+  nameWithType: CooldownTimeStampTimer.IsStopped
+- uid: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.PassedSeconds
+  name: PassedSeconds
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_PassedSeconds
+  commentId: P:NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.PassedSeconds
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.PassedSeconds
+  nameWithType: CooldownTimeStampTimer.PassedSeconds
+- uid: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.PassedSeconds*
+  name: PassedSeconds
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_PassedSeconds_
+  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.PassedSeconds
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.PassedSeconds
+  nameWithType: CooldownTimeStampTimer.PassedSeconds
+- uid: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.PassedTimeRatio
+  name: PassedTimeRatio
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_PassedTimeRatio
+  commentId: P:NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.PassedTimeRatio
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.PassedTimeRatio
+  nameWithType: CooldownTimeStampTimer.PassedTimeRatio
+- uid: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.PassedTimeRatio*
+  name: PassedTimeRatio
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_PassedTimeRatio_
+  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.PassedTimeRatio
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.PassedTimeRatio
+  nameWithType: CooldownTimeStampTimer.PassedTimeRatio
 - uid: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.Reset
   name: Reset()
   href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_Reset
@@ -2013,19 +2084,71 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.Reset
   nameWithType: CooldownTimeStampTimer.Reset
-- uid: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.SetNewEndTime(System.Single)
-  name: SetNewEndTime(Single)
-  href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_SetNewEndTime_System_Single_
-  commentId: M:NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.SetNewEndTime(System.Single)
-  fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.SetNewEndTime(System.Single)
-  nameWithType: CooldownTimeStampTimer.SetNewEndTime(Single)
-- uid: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.SetNewEndTime*
-  name: SetNewEndTime
-  href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_SetNewEndTime_
-  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.SetNewEndTime
+- uid: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.ResetAndStart
+  name: ResetAndStart()
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_ResetAndStart
+  commentId: M:NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.ResetAndStart
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.ResetAndStart()
+  nameWithType: CooldownTimeStampTimer.ResetAndStart()
+- uid: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.ResetAndStart*
+  name: ResetAndStart
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_ResetAndStart_
+  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.ResetAndStart
   isSpec: "True"
-  fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.SetNewEndTime
-  nameWithType: CooldownTimeStampTimer.SetNewEndTime
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.ResetAndStart
+  nameWithType: CooldownTimeStampTimer.ResetAndStart
+- uid: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.Resume
+  name: Resume()
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_Resume
+  commentId: M:NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.Resume
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.Resume()
+  nameWithType: CooldownTimeStampTimer.Resume()
+- uid: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.Resume*
+  name: Resume
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_Resume_
+  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.Resume
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.Resume
+  nameWithType: CooldownTimeStampTimer.Resume
+- uid: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.SecondsToPass
+  name: SecondsToPass
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_SecondsToPass
+  commentId: P:NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.SecondsToPass
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.SecondsToPass
+  nameWithType: CooldownTimeStampTimer.SecondsToPass
+- uid: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.SecondsToPass*
+  name: SecondsToPass
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_SecondsToPass_
+  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.SecondsToPass
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.SecondsToPass
+  nameWithType: CooldownTimeStampTimer.SecondsToPass
+- uid: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.SetDateTimeProvider(NiceGraphicLibrary.IDateTimeProvider)
+  name: SetDateTimeProvider(IDateTimeProvider)
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_SetDateTimeProvider_NiceGraphicLibrary_IDateTimeProvider_
+  commentId: M:NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.SetDateTimeProvider(NiceGraphicLibrary.IDateTimeProvider)
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.SetDateTimeProvider(NiceGraphicLibrary.IDateTimeProvider)
+  nameWithType: CooldownTimeStampTimer.SetDateTimeProvider(IDateTimeProvider)
+- uid: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.SetDateTimeProvider*
+  name: SetDateTimeProvider
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_SetDateTimeProvider_
+  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.SetDateTimeProvider
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.SetDateTimeProvider
+  nameWithType: CooldownTimeStampTimer.SetDateTimeProvider
+- uid: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.Stop
+  name: Stop()
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_Stop
+  commentId: M:NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.Stop
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.Stop()
+  nameWithType: CooldownTimeStampTimer.Stop()
+- uid: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.Stop*
+  name: Stop
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_Stop_
+  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.Stop
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.Stop
+  nameWithType: CooldownTimeStampTimer.Stop
 - uid: NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.WornOff
   name: WornOff
   href: api/NiceGraphicLibrary.Utility.Cooldown.CooldownTimeStampTimer.html#NiceGraphicLibrary_Utility_Cooldown_CooldownTimeStampTimer_WornOff
@@ -2058,19 +2181,6 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.CountDown
   nameWithType: CountDown.CountDown
-- uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.IsDone
-  name: IsDone
-  href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_IsDone
-  commentId: P:NiceGraphicLibrary.Utility.Cooldown.CountDown.IsDone
-  fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.IsDone
-  nameWithType: CountDown.IsDone
-- uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.IsDone*
-  name: IsDone
-  href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_IsDone_
-  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.CountDown.IsDone
-  isSpec: "True"
-  fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.IsDone
-  nameWithType: CountDown.IsDone
 - uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.IsStopped
   name: IsStopped
   href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_IsStopped
@@ -2084,25 +2194,38 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.IsStopped
   nameWithType: CountDown.IsStopped
-- uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.RemainingSeconds
-  name: RemainingSeconds
-  href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_RemainingSeconds
-  commentId: P:NiceGraphicLibrary.Utility.Cooldown.CountDown.RemainingSeconds
-  fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.RemainingSeconds
-  nameWithType: CountDown.RemainingSeconds
-- uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.RemainingSeconds*
-  name: RemainingSeconds
-  href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_RemainingSeconds_
-  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.CountDown.RemainingSeconds
+- uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.PassedSeconds
+  name: PassedSeconds
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_PassedSeconds
+  commentId: P:NiceGraphicLibrary.Utility.Cooldown.CountDown.PassedSeconds
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.PassedSeconds
+  nameWithType: CountDown.PassedSeconds
+- uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.PassedSeconds*
+  name: PassedSeconds
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_PassedSeconds_
+  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.CountDown.PassedSeconds
   isSpec: "True"
-  fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.RemainingSeconds
-  nameWithType: CountDown.RemainingSeconds
-- uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.Reset(System.Boolean)
-  name: Reset(Boolean)
-  href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_Reset_System_Boolean_
-  commentId: M:NiceGraphicLibrary.Utility.Cooldown.CountDown.Reset(System.Boolean)
-  fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.Reset(System.Boolean)
-  nameWithType: CountDown.Reset(Boolean)
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.PassedSeconds
+  nameWithType: CountDown.PassedSeconds
+- uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.PassedTimeRatio
+  name: PassedTimeRatio
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_PassedTimeRatio
+  commentId: P:NiceGraphicLibrary.Utility.Cooldown.CountDown.PassedTimeRatio
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.PassedTimeRatio
+  nameWithType: CountDown.PassedTimeRatio
+- uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.PassedTimeRatio*
+  name: PassedTimeRatio
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_PassedTimeRatio_
+  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.CountDown.PassedTimeRatio
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.PassedTimeRatio
+  nameWithType: CountDown.PassedTimeRatio
+- uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.Reset
+  name: Reset()
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_Reset
+  commentId: M:NiceGraphicLibrary.Utility.Cooldown.CountDown.Reset
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.Reset()
+  nameWithType: CountDown.Reset()
 - uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.Reset*
   name: Reset
   href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_Reset_
@@ -2110,6 +2233,19 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.Reset
   nameWithType: CountDown.Reset
+- uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.ResetAndStart
+  name: ResetAndStart()
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_ResetAndStart
+  commentId: M:NiceGraphicLibrary.Utility.Cooldown.CountDown.ResetAndStart
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.ResetAndStart()
+  nameWithType: CountDown.ResetAndStart()
+- uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.ResetAndStart*
+  name: ResetAndStart
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_ResetAndStart_
+  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.CountDown.ResetAndStart
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.ResetAndStart
+  nameWithType: CountDown.ResetAndStart
 - uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.Resume
   name: Resume()
   href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_Resume
@@ -2123,6 +2259,19 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.Resume
   nameWithType: CountDown.Resume
+- uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.SecondsToPass
+  name: SecondsToPass
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_SecondsToPass
+  commentId: P:NiceGraphicLibrary.Utility.Cooldown.CountDown.SecondsToPass
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.SecondsToPass
+  nameWithType: CountDown.SecondsToPass
+- uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.SecondsToPass*
+  name: SecondsToPass
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_SecondsToPass_
+  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.CountDown.SecondsToPass
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.SecondsToPass
+  nameWithType: CountDown.SecondsToPass
 - uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.SetDateTimeProvider(NiceGraphicLibrary.IDateTimeProvider)
   name: SetDateTimeProvider(IDateTimeProvider)
   href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_SetDateTimeProvider_NiceGraphicLibrary_IDateTimeProvider_
@@ -2136,19 +2285,6 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.SetDateTimeProvider
   nameWithType: CountDown.SetDateTimeProvider
-- uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.StartSeconds
-  name: StartSeconds
-  href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_StartSeconds
-  commentId: P:NiceGraphicLibrary.Utility.Cooldown.CountDown.StartSeconds
-  fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.StartSeconds
-  nameWithType: CountDown.StartSeconds
-- uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.StartSeconds*
-  name: StartSeconds
-  href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_StartSeconds_
-  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.CountDown.StartSeconds
-  isSpec: "True"
-  fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.StartSeconds
-  nameWithType: CountDown.StartSeconds
 - uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.Stop
   name: Stop()
   href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_Stop
@@ -2162,6 +2298,190 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.Stop
   nameWithType: CountDown.Stop
+- uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.WornOff
+  name: WornOff
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_WornOff
+  commentId: P:NiceGraphicLibrary.Utility.Cooldown.CountDown.WornOff
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.WornOff
+  nameWithType: CountDown.WornOff
+- uid: NiceGraphicLibrary.Utility.Cooldown.CountDown.WornOff*
+  name: WornOff
+  href: api/NiceGraphicLibrary.Utility.Cooldown.CountDown.html#NiceGraphicLibrary_Utility_Cooldown_CountDown_WornOff_
+  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.CountDown.WornOff
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Cooldown.CountDown.WornOff
+  nameWithType: CountDown.WornOff
+- uid: NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer`1
+  name: ICooldownTimer<TSeconds>
+  href: api/NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer-1.html
+  commentId: T:NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer`1
+  name.vb: ICooldownTimer(Of TSeconds)
+  fullName: NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer<TSeconds>
+  fullName.vb: NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer(Of TSeconds)
+  nameWithType: ICooldownTimer<TSeconds>
+  nameWithType.vb: ICooldownTimer(Of TSeconds)
+- uid: NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer`1.PassedSeconds
+  name: PassedSeconds
+  href: api/NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer-1.html#NiceGraphicLibrary_Utility_Cooldown_ICooldownTimer_1_PassedSeconds
+  commentId: P:NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer`1.PassedSeconds
+  fullName: NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer<TSeconds>.PassedSeconds
+  fullName.vb: NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer(Of TSeconds).PassedSeconds
+  nameWithType: ICooldownTimer<TSeconds>.PassedSeconds
+  nameWithType.vb: ICooldownTimer(Of TSeconds).PassedSeconds
+- uid: NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer`1.PassedSeconds*
+  name: PassedSeconds
+  href: api/NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer-1.html#NiceGraphicLibrary_Utility_Cooldown_ICooldownTimer_1_PassedSeconds_
+  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer`1.PassedSeconds
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer<TSeconds>.PassedSeconds
+  fullName.vb: NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer(Of TSeconds).PassedSeconds
+  nameWithType: ICooldownTimer<TSeconds>.PassedSeconds
+  nameWithType.vb: ICooldownTimer(Of TSeconds).PassedSeconds
+- uid: NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer`1.PassedTimeRatio
+  name: PassedTimeRatio
+  href: api/NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer-1.html#NiceGraphicLibrary_Utility_Cooldown_ICooldownTimer_1_PassedTimeRatio
+  commentId: P:NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer`1.PassedTimeRatio
+  fullName: NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer<TSeconds>.PassedTimeRatio
+  fullName.vb: NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer(Of TSeconds).PassedTimeRatio
+  nameWithType: ICooldownTimer<TSeconds>.PassedTimeRatio
+  nameWithType.vb: ICooldownTimer(Of TSeconds).PassedTimeRatio
+- uid: NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer`1.PassedTimeRatio*
+  name: PassedTimeRatio
+  href: api/NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer-1.html#NiceGraphicLibrary_Utility_Cooldown_ICooldownTimer_1_PassedTimeRatio_
+  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer`1.PassedTimeRatio
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer<TSeconds>.PassedTimeRatio
+  fullName.vb: NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer(Of TSeconds).PassedTimeRatio
+  nameWithType: ICooldownTimer<TSeconds>.PassedTimeRatio
+  nameWithType.vb: ICooldownTimer(Of TSeconds).PassedTimeRatio
+- uid: NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer`1.Reset
+  name: Reset()
+  href: api/NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer-1.html#NiceGraphicLibrary_Utility_Cooldown_ICooldownTimer_1_Reset
+  commentId: M:NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer`1.Reset
+  fullName: NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer<TSeconds>.Reset()
+  fullName.vb: NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer(Of TSeconds).Reset()
+  nameWithType: ICooldownTimer<TSeconds>.Reset()
+  nameWithType.vb: ICooldownTimer(Of TSeconds).Reset()
+- uid: NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer`1.Reset*
+  name: Reset
+  href: api/NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer-1.html#NiceGraphicLibrary_Utility_Cooldown_ICooldownTimer_1_Reset_
+  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer`1.Reset
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer<TSeconds>.Reset
+  fullName.vb: NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer(Of TSeconds).Reset
+  nameWithType: ICooldownTimer<TSeconds>.Reset
+  nameWithType.vb: ICooldownTimer(Of TSeconds).Reset
+- uid: NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer`1.SecondsToPass
+  name: SecondsToPass
+  href: api/NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer-1.html#NiceGraphicLibrary_Utility_Cooldown_ICooldownTimer_1_SecondsToPass
+  commentId: P:NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer`1.SecondsToPass
+  fullName: NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer<TSeconds>.SecondsToPass
+  fullName.vb: NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer(Of TSeconds).SecondsToPass
+  nameWithType: ICooldownTimer<TSeconds>.SecondsToPass
+  nameWithType.vb: ICooldownTimer(Of TSeconds).SecondsToPass
+- uid: NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer`1.SecondsToPass*
+  name: SecondsToPass
+  href: api/NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer-1.html#NiceGraphicLibrary_Utility_Cooldown_ICooldownTimer_1_SecondsToPass_
+  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer`1.SecondsToPass
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer<TSeconds>.SecondsToPass
+  fullName.vb: NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer(Of TSeconds).SecondsToPass
+  nameWithType: ICooldownTimer<TSeconds>.SecondsToPass
+  nameWithType.vb: ICooldownTimer(Of TSeconds).SecondsToPass
+- uid: NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer`1.WornOff
+  name: WornOff
+  href: api/NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer-1.html#NiceGraphicLibrary_Utility_Cooldown_ICooldownTimer_1_WornOff
+  commentId: P:NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer`1.WornOff
+  fullName: NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer<TSeconds>.WornOff
+  fullName.vb: NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer(Of TSeconds).WornOff
+  nameWithType: ICooldownTimer<TSeconds>.WornOff
+  nameWithType.vb: ICooldownTimer(Of TSeconds).WornOff
+- uid: NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer`1.WornOff*
+  name: WornOff
+  href: api/NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer-1.html#NiceGraphicLibrary_Utility_Cooldown_ICooldownTimer_1_WornOff_
+  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer`1.WornOff
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer<TSeconds>.WornOff
+  fullName.vb: NiceGraphicLibrary.Utility.Cooldown.ICooldownTimer(Of TSeconds).WornOff
+  nameWithType: ICooldownTimer<TSeconds>.WornOff
+  nameWithType.vb: ICooldownTimer(Of TSeconds).WornOff
+- uid: NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer`1
+  name: IStoppableCoolDownTimer<TSeconds>
+  href: api/NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer-1.html
+  commentId: T:NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer`1
+  name.vb: IStoppableCoolDownTimer(Of TSeconds)
+  fullName: NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer<TSeconds>
+  fullName.vb: NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer(Of TSeconds)
+  nameWithType: IStoppableCoolDownTimer<TSeconds>
+  nameWithType.vb: IStoppableCoolDownTimer(Of TSeconds)
+- uid: NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer`1.IsStopped
+  name: IsStopped
+  href: api/NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer-1.html#NiceGraphicLibrary_Utility_Cooldown_IStoppableCoolDownTimer_1_IsStopped
+  commentId: P:NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer`1.IsStopped
+  fullName: NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer<TSeconds>.IsStopped
+  fullName.vb: NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer(Of TSeconds).IsStopped
+  nameWithType: IStoppableCoolDownTimer<TSeconds>.IsStopped
+  nameWithType.vb: IStoppableCoolDownTimer(Of TSeconds).IsStopped
+- uid: NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer`1.IsStopped*
+  name: IsStopped
+  href: api/NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer-1.html#NiceGraphicLibrary_Utility_Cooldown_IStoppableCoolDownTimer_1_IsStopped_
+  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer`1.IsStopped
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer<TSeconds>.IsStopped
+  fullName.vb: NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer(Of TSeconds).IsStopped
+  nameWithType: IStoppableCoolDownTimer<TSeconds>.IsStopped
+  nameWithType.vb: IStoppableCoolDownTimer(Of TSeconds).IsStopped
+- uid: NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer`1.ResetAndStart
+  name: ResetAndStart()
+  href: api/NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer-1.html#NiceGraphicLibrary_Utility_Cooldown_IStoppableCoolDownTimer_1_ResetAndStart
+  commentId: M:NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer`1.ResetAndStart
+  fullName: NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer<TSeconds>.ResetAndStart()
+  fullName.vb: NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer(Of TSeconds).ResetAndStart()
+  nameWithType: IStoppableCoolDownTimer<TSeconds>.ResetAndStart()
+  nameWithType.vb: IStoppableCoolDownTimer(Of TSeconds).ResetAndStart()
+- uid: NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer`1.ResetAndStart*
+  name: ResetAndStart
+  href: api/NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer-1.html#NiceGraphicLibrary_Utility_Cooldown_IStoppableCoolDownTimer_1_ResetAndStart_
+  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer`1.ResetAndStart
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer<TSeconds>.ResetAndStart
+  fullName.vb: NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer(Of TSeconds).ResetAndStart
+  nameWithType: IStoppableCoolDownTimer<TSeconds>.ResetAndStart
+  nameWithType.vb: IStoppableCoolDownTimer(Of TSeconds).ResetAndStart
+- uid: NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer`1.Resume
+  name: Resume()
+  href: api/NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer-1.html#NiceGraphicLibrary_Utility_Cooldown_IStoppableCoolDownTimer_1_Resume
+  commentId: M:NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer`1.Resume
+  fullName: NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer<TSeconds>.Resume()
+  fullName.vb: NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer(Of TSeconds).Resume()
+  nameWithType: IStoppableCoolDownTimer<TSeconds>.Resume()
+  nameWithType.vb: IStoppableCoolDownTimer(Of TSeconds).Resume()
+- uid: NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer`1.Resume*
+  name: Resume
+  href: api/NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer-1.html#NiceGraphicLibrary_Utility_Cooldown_IStoppableCoolDownTimer_1_Resume_
+  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer`1.Resume
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer<TSeconds>.Resume
+  fullName.vb: NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer(Of TSeconds).Resume
+  nameWithType: IStoppableCoolDownTimer<TSeconds>.Resume
+  nameWithType.vb: IStoppableCoolDownTimer(Of TSeconds).Resume
+- uid: NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer`1.Stop
+  name: Stop()
+  href: api/NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer-1.html#NiceGraphicLibrary_Utility_Cooldown_IStoppableCoolDownTimer_1_Stop
+  commentId: M:NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer`1.Stop
+  fullName: NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer<TSeconds>.Stop()
+  fullName.vb: NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer(Of TSeconds).Stop()
+  nameWithType: IStoppableCoolDownTimer<TSeconds>.Stop()
+  nameWithType.vb: IStoppableCoolDownTimer(Of TSeconds).Stop()
+- uid: NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer`1.Stop*
+  name: Stop
+  href: api/NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer-1.html#NiceGraphicLibrary_Utility_Cooldown_IStoppableCoolDownTimer_1_Stop_
+  commentId: Overload:NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer`1.Stop
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer<TSeconds>.Stop
+  fullName.vb: NiceGraphicLibrary.Utility.Cooldown.IStoppableCoolDownTimer(Of TSeconds).Stop
+  nameWithType: IStoppableCoolDownTimer<TSeconds>.Stop
+  nameWithType.vb: IStoppableCoolDownTimer(Of TSeconds).Stop
 - uid: NiceGraphicLibrary.Utility.Coroutines
   name: NiceGraphicLibrary.Utility.Coroutines
   href: api/NiceGraphicLibrary.Utility.Coroutines.html

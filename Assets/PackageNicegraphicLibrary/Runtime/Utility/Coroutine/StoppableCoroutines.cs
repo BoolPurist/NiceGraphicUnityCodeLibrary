@@ -7,7 +7,7 @@ namespace NiceGraphicLibrary.Utility.Coroutines
 {
   /// <summary>
   /// Allows to stop all coroutines, including sub coroutines, started by a function which returns this instance.
-  /// Can not be constructed but is returned by certain functions for example in the static class <see cref="NiceGraphicLibrary.Utility.CoroutineUtility"/>
+  /// Can not be constructed but is returned by certain functions for example in the static class <see cref="CoroutineUtility"/>
   /// </summary>
   public class StoppableCoroutines
   {
