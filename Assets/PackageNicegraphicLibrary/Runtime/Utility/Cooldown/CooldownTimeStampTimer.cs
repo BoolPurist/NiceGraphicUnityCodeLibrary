@@ -12,23 +12,24 @@ namespace NiceGraphicLibrary.Utility.Cooldown
   /// Object to return a value for the passed time within an interval.
   /// Inner timer stops if Time.timeScale == 0.
   /// </summary>
-  public class CooldownTimeStampTimer : ICooldownTimer
+  public class CooldownTimeStampTimer : ICooldownTimer, ITakesDateTimeProvider
   {
-    // Moment to pass for cool down to wear off.
-    private DateTime _endMoment;
+
     // Moment in time at which the cool down started to wear off.
     private DateTime _startMoment;
     
     // Used to calculates the left time until the cool down wears off.
-    private double _endTime;
+    private double _miliSecondsToPass;
+
+    private IDateTimeProvider _dateTimeProvider = new UtcDateTimeProvider();
 
     /// <param name="_endTime">
     /// Time needs to pass untiles the cool down wears off
     /// Negative value will be converted to a positive one.
     /// </param>
-    public CooldownTimeStampTimer(double endTime = 1f)
+    public CooldownTimeStampTimer(float endTime = 1f)
     {
-      _endTime = Math.Abs(endTime);      
+      SetNewEndTime(endTime);
       Reset();
     }
 
@@ -37,38 +38,38 @@ namespace NiceGraphicLibrary.Utility.Cooldown
     {
       get
       {
-        if (DateTime.Now >= _endMoment)
-        {
-          return 1f;
-        }
-        else
-        {
-          double differnceInSeconds = (_endMoment - DateTime.UtcNow).TotalSeconds;
-          double differencFactor = 1.0 - Math.Min(1, differnceInSeconds / _endTime);
-          return Mathf.Min(1f, Convert.ToSingle(differencFactor));
-        }
-
+        DateTime currentMoment = _dateTimeProvider.GetNowDateTime();
+        TimeSpan difference = currentMoment - _startMoment;
+        double clampedDifference = Math.Min(difference.TotalMilliseconds, _miliSecondsToPass) / _miliSecondsToPass;
+        return Convert.ToSingle(clampedDifference);
       }
     }
 
     public void Reset()
-    {
-      _startMoment = DateTime.Now;
-      _endMoment = DateTime.Now.AddSeconds(_endTime);
+    {      
+      _startMoment = _dateTimeProvider.GetNowDateTime();
     }
 
     public bool WornOff => PassedTimeFactor == 1f;
 
-    public float PassedTime => throw new NotImplementedException();
+    public float PassedTime => (PassedTimeFactor * Convert.ToSingle(_miliSecondsToPass)) / 1000f;
     
 
     public void SetNewEndTime(float newEndTime)
     {
-      double absNewEndTime = Convert.ToDouble(Mathf.Abs(newEndTime));
-      _endMoment = _startMoment.AddSeconds(absNewEndTime);
-      _endTime = absNewEndTime;      
+      _miliSecondsToPass = Convert.ToDouble(Mathf.Abs(newEndTime) * 1000f);
     }
+
+
     #endregion
+
+    public void SetDateTimeProvider(IDateTimeProvider provider)
+    {
+      if (provider != null)
+      {
+        _dateTimeProvider = provider;
+      }
+    }
 
   }
 }

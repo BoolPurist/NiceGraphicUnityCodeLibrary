@@ -7,12 +7,13 @@ namespace NiceGraphicLibrary
 {
   public class FixedDateTimeProvider : IDateTimeProvider
   {
+  
     public DateTime FixedTimeStamp { get; set; } = DateTime.UtcNow;
 
-    public DateTime ChangeBySeconds(int seconds) => FixedTimeStamp = FixedTimeStamp.AddSeconds(seconds);
+    public void ChangeBySeconds(int seconds) => FixedTimeStamp = FixedTimeStamp.AddSeconds(seconds);
 
-    public DateTime PlusOneSecond() => ChangeBySeconds(1);
-    public DateTime MinusOneSecond() => ChangeBySeconds(-1);
+    public void PlusOneSecond() => ChangeBySeconds(1);
+    public void MinusOneSecond() => ChangeBySeconds(-1);
 
     public DateTime GetNowDateTime()
       => FixedTimeStamp;
