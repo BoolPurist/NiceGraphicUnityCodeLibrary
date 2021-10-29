@@ -43,7 +43,7 @@ namespace NiceGraphicLibrary.Utility.Cooldown
         }
         else
         {
-          double differnceInSeconds = (_endMoment - DateTime.Now).TotalSeconds;
+          double differnceInSeconds = (_endMoment - DateTime.UtcNow).TotalSeconds;
           double differencFactor = 1.0 - Math.Min(1, differnceInSeconds / _endTime);
           return Mathf.Min(1f, Convert.ToSingle(differencFactor));
         }
@@ -58,6 +58,9 @@ namespace NiceGraphicLibrary.Utility.Cooldown
     }
 
     public bool WornOff => PassedTimeFactor == 1f;
+
+    public float PassedTime => throw new NotImplementedException();
+    
 
     public void SetNewEndTime(float newEndTime)
     {

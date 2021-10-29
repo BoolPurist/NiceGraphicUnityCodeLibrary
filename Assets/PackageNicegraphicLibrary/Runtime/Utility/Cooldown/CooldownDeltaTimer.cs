@@ -12,12 +12,14 @@ namespace NiceGraphicLibrary.Utility.Cooldown
   /// Object to return a value for the passed time within an interval.
   /// That cool down does not stop even if Time.timeScale== 0 because the inner timer works the DateTime API
   /// </summary>
-  public class CooldownDeltaTimer : ICooldownTimer
+  public class CooldownDeltaTimer : ICooldownTimer, ITakesDeltaTimeProvider
   {
     // Time to be passed until cool down wears off.
-    private float endTime;
+    private float _endTime;
     // Time already passed
-    private float passedTime;
+    private float _passedTime;
+
+    private IDeltaTimeProvider _deltaTimeProvider = new UnityDeltaTimeProvider();
 
     /// <param name="_endTime">
     /// Time needs to pass untiles the cool down wears off
@@ -25,28 +27,40 @@ namespace NiceGraphicLibrary.Utility.Cooldown
     /// </param>
     public CooldownDeltaTimer(float _endTime = 1f)
     {
-      endTime = Mathf.Abs(_endTime);
-      passedTime = 0f;
+      this._endTime = Mathf.Abs(_endTime);
+      _passedTime = 0f;
     }
 
     /// <summary>
     /// Adds the seconds passed since the last frame
     /// </summary>
-    public void Update() => passedTime += Time.deltaTime;
+    public void Update() => _passedTime += _deltaTimeProvider.GetDelatTime();
 
     /// <summary>
     /// Adds given value to the passed time for the cool down.
     /// </summary>
-    public void Update(float time) => passedTime += Mathf.Abs(time);
+    public void Update(float time) => _passedTime += Mathf.Abs(time);
 
     #region Implementation of the interface ICooldownTimer
-    public float PassedTimeFactor => Mathf.Clamp(passedTime, 0f, endTime) / endTime;
+    public float PassedTimeFactor => PassedTime / _endTime;
 
-    public void Reset() => passedTime = 0f;
+    public void Reset() => _passedTime = 0f;
 
-    public bool WornOff => passedTime >= endTime;
+    public bool WornOff => _passedTime >= _endTime;
 
-    public void SetNewEndTime(float newEndTime) => endTime = Mathf.Abs(newEndTime);
+    public float PassedTime => Mathf.Clamp(_passedTime, 0f, _endTime);
+
+    public void SetNewEndTime(float newEndTime) => _endTime = Mathf.Abs(newEndTime);
+
     #endregion
+
+    public void SetDeltaTimeProvider(IDeltaTimeProvider provider)
+    {
+      if (provider != null)
+      {
+        _deltaTimeProvider = provider;
+      }
+    }
+
   }
 }

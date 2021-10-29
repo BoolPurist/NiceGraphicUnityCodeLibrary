@@ -20,6 +20,10 @@ namespace NiceGraphicLibrary.Utility.Cooldown
     /// </summary>
     float PassedTimeFactor { get; }
     /// <summary>
+    /// Returns the passed time between zero and the given end time
+    /// </summary>
+    float PassedTime { get; }
+    /// <summary>
     /// Returns true if the cool down has worn off completely
     /// </summary>
     bool WornOff { get; }
@@ -31,5 +35,7 @@ namespace NiceGraphicLibrary.Utility.Cooldown
     /// Negative value will be converted to a positive one
     /// </param>
     void SetNewEndTime(float newEndTime);
+
+    
   }
 }
