@@ -12,12 +12,25 @@ namespace NiceGraphicLibrary.Utility.Cooldown
   /// Object to return a value for the passed time within an interval.
   /// That cool down does not stop even if Time.timeScale== 0 because the inner timer works the DateTime API
   /// </summary>
-  public class CooldownDeltaTimer : ICooldownTimer, ITakesDeltaTimeProvider
+  public class CooldownDeltaTimer : ICooldownTimer<float>, ITakesDeltaTimeProvider
   {
+    public bool WornOff => _passedTime >= _endTime;
+
+    public float PassedSeconds => Mathf.Clamp(_passedTime, 0f, _endTime);
+
+    public float SecondsToPass
+    {
+      get => _secondsToPass;
+      set => _secondsToPass = _endTime = Mathf.Abs(value);
+    }
+
+    public float PassedTimeRatio => PassedSeconds / _endTime;
+
     // Time to be passed until cool down wears off.
     private float _endTime;
     // Time already passed
     private float _passedTime;
+    private float _secondsToPass = 0f;
 
     private IDeltaTimeProvider _deltaTimeProvider = new UnityDeltaTimeProvider();
 
@@ -41,18 +54,7 @@ namespace NiceGraphicLibrary.Utility.Cooldown
     /// </summary>
     public void Update(float time) => _passedTime += Mathf.Abs(time);
 
-    #region Implementation of the interface ICooldownTimer
-    public float PassedTimeFactor => PassedTime / _endTime;
-
     public void Reset() => _passedTime = 0f;
-
-    public bool WornOff => _passedTime >= _endTime;
-
-    public float PassedTime => Mathf.Clamp(_passedTime, 0f, _endTime);
-
-    public void SetNewEndTime(float newEndTime) => _endTime = Mathf.Abs(newEndTime);
-
-    #endregion
 
     public void SetDeltaTimeProvider(IDeltaTimeProvider provider)
     {

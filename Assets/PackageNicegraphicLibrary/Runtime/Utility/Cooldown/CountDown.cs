@@ -8,17 +8,8 @@ namespace NiceGraphicLibrary.Utility.Cooldown
   /// <summary>
   /// Used to manage a countdown independently from Time.deltaTime.
   /// </summary>
-  public class CountDown : ITakesDateTimeProvider
+  public class CountDown : ITakesDateTimeProvider, IStoppableCoolDownTimer<int>
   {
-    private IDateTimeProvider _dateTimeProvider = new UtcDateTimeProvider();
-
-    // Moment to pass to reach zero, end of count down.
-    private DateTime _timeStamp;
-    private int _startSeconds = 1;
-
-    private bool _isStopped = true;
-    private int _previousRemainingSeconds = 1;
-
     /// <summary>
     /// Getter: If true count down is stopped, not counting down further
     /// </summary>
@@ -26,7 +17,7 @@ namespace NiceGraphicLibrary.Utility.Cooldown
     /// <summary>
     /// Getter: If true the count down has counted down completely. 
     /// </summary>
-    public bool IsDone => RemainingSeconds == 0;
+    public bool WornOff => PassedSeconds == 0;
 
     /// <summary>
     /// Seconds from which the countdown starts to count down.
@@ -34,18 +25,18 @@ namespace NiceGraphicLibrary.Utility.Cooldown
     /// <value>
     /// Negativ values will be converted to positive values
     /// </value>
-    public int StartSeconds
+    public int SecondsToPass
     {
-      get => _startSeconds;
+      get => _secondsToPass;
       set
       {
-        _startSeconds = Mathf.Abs(value);
+        _secondsToPass = Mathf.Abs(value);
       }
     }
     /// <summary>
     /// Returns remaining seconds to count down. If zero the count down is done.
     /// </summary>
-    public int RemainingSeconds
+    public int PassedSeconds
     {
       get
       {
@@ -61,6 +52,19 @@ namespace NiceGraphicLibrary.Utility.Cooldown
       }
     }
 
+    public float PassedTimeRatio => throw new NotImplementedException();
+
+
+    private IDateTimeProvider _dateTimeProvider = new UtcDateTimeProvider();
+
+    // Moment to pass to reach zero, end of count down.
+    private DateTime _timeStamp;
+    private int _secondsToPass = 1;
+
+    private bool _isStopped = true;
+    private int _previousRemainingSeconds = 1;
+
+
     /// <summary>
     /// Sets up count down.
     /// </summary>
@@ -73,25 +77,23 @@ namespace NiceGraphicLibrary.Utility.Cooldown
     /// </param>
     public CountDown(int seconds, bool startAfterCreation = false)
     {
-      StartSeconds = seconds;      
-      Reset(startAfterCreation);      
+      SecondsToPass = seconds;
+      if (startAfterCreation)
+      {
+        ResetAndStart();
+      }
+      else
+      {
+        Reset();
+      }
+
     }
 
-    /// <summary>
-    /// Resets the countdown. it starts from <see cref="StartSeconds"/> again
-    /// </summary>
-    /// <param name="startAfterReset">
-    /// If true the count down starts from <see cref="StartSeconds"/> to count down right away.
-    /// If false the count down does not start until <see cref="Resume"/> is called
-    /// </param>
-    public void Reset(bool startAfterReset = false)
-    {
-      _isStopped = true;
-      _previousRemainingSeconds = StartSeconds;
-      SetTimeStamp(StartSeconds);
+    public void ResetAndStart()
+      => InnerReset(true);
 
-      _isStopped = !startAfterReset;
-    }
+    public void Reset() 
+      => InnerReset(false);
 
     /// <remarks>
     /// Resets the count down after this call
@@ -106,7 +108,7 @@ namespace NiceGraphicLibrary.Utility.Cooldown
     }
 
     /// <summary>
-    /// Stops the count down from counting further. <see cref="RemainingSeconds"/> does not change anymore.
+    /// Stops the count down from counting further. <see cref="PassedSeconds"/> does not change anymore.
     /// </summary>
     public void Stop()
     {
@@ -118,7 +120,7 @@ namespace NiceGraphicLibrary.Utility.Cooldown
     }
 
     /// <summary>
-    /// Resumes the counting. <see cref="RemainingSeconds"/> changes again. 
+    /// Resumes the counting. <see cref="PassedSeconds"/> changes again. 
     /// Counting starts from the remaining seconds before <see cref="Stop"/> was called.
     /// </summary>
     public void Resume()
@@ -137,5 +139,21 @@ namespace NiceGraphicLibrary.Utility.Cooldown
     private void SetTimeStamp(in float seconds)
       => _timeStamp = _dateTimeProvider.GetNowDateTime().AddSeconds(seconds);
 
-  } 
+    /// <summary>
+    /// Resets the countdown. it starts from <see cref="StartSeconds"/> again
+    /// </summary>
+    /// <param name="startAfterReset">
+    /// If true the count down starts from <see cref="StartSeconds"/> to count down right away.
+    /// If false the count down does not start until <see cref="Resume"/> is called
+    /// </param>
+    private void InnerReset(bool startAfterReset = false)
+    {
+      _isStopped = true;
+      _previousRemainingSeconds = SecondsToPass;
+      SetTimeStamp(SecondsToPass);
+
+      _isStopped = !startAfterReset;
+    }
+
+  }
 }

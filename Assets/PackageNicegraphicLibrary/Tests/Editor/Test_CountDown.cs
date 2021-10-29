@@ -36,13 +36,13 @@ namespace NiceGraphicLibrary.Tests.Editor
 
       countDown.Stop();
 
-      int secondsAfterStop = countDown.RemainingSeconds;
+      int secondsAfterStop = countDown.PassedSeconds;
       for (int i = durationOfStop; i > 0; i--)
       {
         fakeDateTimeProvider.PlusOneSecond();
         Assert.AreEqual(
           secondsAfterStop, 
-          countDown.RemainingSeconds, 
+          countDown.PassedSeconds, 
           $"Count down should not have be lowered"
           );
 
@@ -67,20 +67,20 @@ namespace NiceGraphicLibrary.Tests.Editor
       float expectedRemainingSeconds = COOLDOWN_DURATION - secondsForCooldownBeforeReset;
       fakeDateTimeProvider.ChangeBySeconds(secondsForCooldownBeforeReset);
 
-      Assert.AreEqual(expectedRemainingSeconds, countDown.RemainingSeconds, $"Cool down did count down to {expectedRemainingSeconds}");
+      Assert.AreEqual(expectedRemainingSeconds, countDown.PassedSeconds, $"Cool down did count down to {expectedRemainingSeconds}");
 
       countDown.Reset();
-      Assert.AreEqual(COOLDOWN_DURATION, countDown.RemainingSeconds, $"Count did not reset !");
+      Assert.AreEqual(COOLDOWN_DURATION, countDown.PassedSeconds, $"Count did not reset !");
       Assert.IsTrue(countDown.IsStopped, $"Count down is not stopped after reset !");
-      Assert.IsFalse(countDown.IsDone, $"Count down should not be done after reset!");
+      Assert.IsFalse(countDown.WornOff, $"Count down should not be done after reset!");
 
       fakeDateTimeProvider.ChangeBySeconds(secondsForCooldownBeforeReset);
-      countDown.Reset(startAfterReset:true);
+      countDown.ResetAndStart();
       Assert.IsFalse(countDown.IsStopped, $"Count down should be started after reset with argument startAfterReset being true!");
-      Assert.IsFalse(countDown.IsDone, $"Count down should not be done after reset!");
+      Assert.IsFalse(countDown.WornOff, $"Count down should not be done after reset!");
 
       fakeDateTimeProvider.PlusOneSecond();
-      Assert.AreEqual(COOLDOWN_DURATION - 1, countDown.RemainingSeconds, $"Cool down should have been decreased by one after reset and start.");
+      Assert.AreEqual(COOLDOWN_DURATION - 1, countDown.PassedSeconds, $"Cool down should have been decreased by one after reset and start.");
     }
 
     private static CountDown SetUpCountDown(int secondsToCountDown, out FixedDateTimeProvider provider)
@@ -102,9 +102,9 @@ namespace NiceGraphicLibrary.Tests.Editor
     {
       for (int i = Mathf.Abs(secondsToCountDown); i > secondToAbort; i--)
       {
-        int remaininSeconds = countDown.RemainingSeconds;
+        int remaininSeconds = countDown.PassedSeconds;
         Assert.AreEqual(i, remaininSeconds, $"Count down did not go down by one second !");
-        Assert.IsFalse(countDown.IsDone, $"Count down should not be done already, Remaining seconds [{remaininSeconds}]");
+        Assert.IsFalse(countDown.WornOff, $"Count down should not be done already, Remaining seconds [{remaininSeconds}]");
         Assert.IsFalse(countDown.IsStopped, $"Count down should not have been stopped !");
         dateTimeProvider.PlusOneSecond();
       }
@@ -113,11 +113,11 @@ namespace NiceGraphicLibrary.Tests.Editor
     private static void AssertForFinishedCountDown(CountDown countDown)
     {
       Assert.IsTrue(
-        countDown.IsDone,
-        $"Count down has not counted down completely, Remaining count is {countDown.RemainingSeconds} as seconds"
+        countDown.WornOff,
+        $"Count down has not counted down completely, Remaining count is {countDown.PassedSeconds} as seconds"
         );
       Assert.AreEqual(
-        0, countDown.RemainingSeconds, $"Remaining seconds should be zero if count down is done."
+        0, countDown.PassedSeconds, $"Remaining seconds should be zero if count down is done."
         );
     }
 

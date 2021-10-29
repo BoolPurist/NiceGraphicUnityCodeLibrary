@@ -30,12 +30,12 @@ namespace NiceGraphicLibrary.Tests.Editor
     {
       const float TIME_TO_PASS = 5f;
       
-      _timer.SetNewEndTime(TIME_TO_PASS);
+      _timer.SecondsToPass = TIME_TO_PASS;
 
       float previousPassedTimeFactor = 0f;
       
 
-      Assert.AreEqual(0f, _timer.PassedTimeFactor, $"{nameof(_timer.PassedTimeFactor)} should be zero.");
+      Assert.AreEqual(0f, _timer.PassedTimeRatio, $"{nameof(_timer.PassedTimeRatio)} should be zero.");
       Assert.IsFalse(_timer.WornOff, $"Timer should not have worn off yet !");
 
 
@@ -45,26 +45,26 @@ namespace NiceGraphicLibrary.Tests.Editor
         currentPassedTime += FAKE_DELTA_TIME_FACTOR
         )
       {
-        Assert.AreEqual(currentPassedTime, _timer.PassedTime, $"Passed time from time is not correct.");
+        Assert.AreEqual(currentPassedTime, _timer.PassedSeconds, $"Passed time from time is not correct.");
 
         _timer.Update();
         Assert.Greater(
-          _timer.PassedTimeFactor, 
+          _timer.PassedTimeRatio, 
           previousPassedTimeFactor, 
-          $"{nameof(_timer.PassedTimeFactor)} should have been greater than the previous passed time factor."
+          $"{nameof(_timer.PassedTimeRatio)} should have been greater than the previous passed time factor."
           );
 
-        previousPassedTimeFactor = _timer.PassedTimeFactor;
+        previousPassedTimeFactor = _timer.PassedTimeRatio;
         Assert.IsFalse(_timer.WornOff, $"Timer should not have worn off yet !");
       }
 
       // Last Update leading to end moment
       _timer.Update();
-      Assert.AreEqual(1f, _timer.PassedTimeFactor, $"{nameof(_timer.PassedTimeFactor)} should be one.");
+      Assert.AreEqual(1f, _timer.PassedTimeRatio, $"{nameof(_timer.PassedTimeRatio)} should be one.");
       Assert.IsTrue(_timer.WornOff, $"Timer should have worn off !");
 
       _timer.Update();
-      Assert.AreEqual(1f, _timer.PassedTimeFactor, $"{nameof(_timer.PassedTimeFactor)} should be one still.");
+      Assert.AreEqual(1f, _timer.PassedTimeRatio, $"{nameof(_timer.PassedTimeRatio)} should be one still.");
     }
   }
 }
