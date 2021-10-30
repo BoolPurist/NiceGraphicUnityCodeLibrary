@@ -1809,6 +1809,75 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.ReadOnlyFieldAttribute.ReadOnlyForPlay
   nameWithType: ReadOnlyFieldAttribute.ReadOnlyForPlay
+- uid: NiceGraphicLibrary.SingletonComponent`1
+  name: SingletonComponent<TComponent>
+  href: api/NiceGraphicLibrary.SingletonComponent-1.html
+  commentId: T:NiceGraphicLibrary.SingletonComponent`1
+  name.vb: SingletonComponent(Of TComponent)
+  fullName: NiceGraphicLibrary.SingletonComponent<TComponent>
+  fullName.vb: NiceGraphicLibrary.SingletonComponent(Of TComponent)
+  nameWithType: SingletonComponent<TComponent>
+  nameWithType.vb: SingletonComponent(Of TComponent)
+- uid: NiceGraphicLibrary.SingletonComponent`1.Awake
+  name: Awake()
+  href: api/NiceGraphicLibrary.SingletonComponent-1.html#NiceGraphicLibrary_SingletonComponent_1_Awake
+  commentId: M:NiceGraphicLibrary.SingletonComponent`1.Awake
+  fullName: NiceGraphicLibrary.SingletonComponent<TComponent>.Awake()
+  fullName.vb: NiceGraphicLibrary.SingletonComponent(Of TComponent).Awake()
+  nameWithType: SingletonComponent<TComponent>.Awake()
+  nameWithType.vb: SingletonComponent(Of TComponent).Awake()
+- uid: NiceGraphicLibrary.SingletonComponent`1.Awake*
+  name: Awake
+  href: api/NiceGraphicLibrary.SingletonComponent-1.html#NiceGraphicLibrary_SingletonComponent_1_Awake_
+  commentId: Overload:NiceGraphicLibrary.SingletonComponent`1.Awake
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.SingletonComponent<TComponent>.Awake
+  fullName.vb: NiceGraphicLibrary.SingletonComponent(Of TComponent).Awake
+  nameWithType: SingletonComponent<TComponent>.Awake
+  nameWithType.vb: SingletonComponent(Of TComponent).Awake
+- uid: NiceGraphicLibrary.SingletonComponent`1.Instance
+  name: Instance
+  href: api/NiceGraphicLibrary.SingletonComponent-1.html#NiceGraphicLibrary_SingletonComponent_1_Instance
+  commentId: P:NiceGraphicLibrary.SingletonComponent`1.Instance
+  fullName: NiceGraphicLibrary.SingletonComponent<TComponent>.Instance
+  fullName.vb: NiceGraphicLibrary.SingletonComponent(Of TComponent).Instance
+  nameWithType: SingletonComponent<TComponent>.Instance
+  nameWithType.vb: SingletonComponent(Of TComponent).Instance
+- uid: NiceGraphicLibrary.SingletonComponent`1.Instance*
+  name: Instance
+  href: api/NiceGraphicLibrary.SingletonComponent-1.html#NiceGraphicLibrary_SingletonComponent_1_Instance_
+  commentId: Overload:NiceGraphicLibrary.SingletonComponent`1.Instance
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.SingletonComponent<TComponent>.Instance
+  fullName.vb: NiceGraphicLibrary.SingletonComponent(Of TComponent).Instance
+  nameWithType: SingletonComponent<TComponent>.Instance
+  nameWithType.vb: SingletonComponent(Of TComponent).Instance
+- uid: NiceGraphicLibrary.SingletonComponentPersistent`1
+  name: SingletonComponentPersistent<TComponent>
+  href: api/NiceGraphicLibrary.SingletonComponentPersistent-1.html
+  commentId: T:NiceGraphicLibrary.SingletonComponentPersistent`1
+  name.vb: SingletonComponentPersistent(Of TComponent)
+  fullName: NiceGraphicLibrary.SingletonComponentPersistent<TComponent>
+  fullName.vb: NiceGraphicLibrary.SingletonComponentPersistent(Of TComponent)
+  nameWithType: SingletonComponentPersistent<TComponent>
+  nameWithType.vb: SingletonComponentPersistent(Of TComponent)
+- uid: NiceGraphicLibrary.SingletonComponentPersistent`1.Start
+  name: Start()
+  href: api/NiceGraphicLibrary.SingletonComponentPersistent-1.html#NiceGraphicLibrary_SingletonComponentPersistent_1_Start
+  commentId: M:NiceGraphicLibrary.SingletonComponentPersistent`1.Start
+  fullName: NiceGraphicLibrary.SingletonComponentPersistent<TComponent>.Start()
+  fullName.vb: NiceGraphicLibrary.SingletonComponentPersistent(Of TComponent).Start()
+  nameWithType: SingletonComponentPersistent<TComponent>.Start()
+  nameWithType.vb: SingletonComponentPersistent(Of TComponent).Start()
+- uid: NiceGraphicLibrary.SingletonComponentPersistent`1.Start*
+  name: Start
+  href: api/NiceGraphicLibrary.SingletonComponentPersistent-1.html#NiceGraphicLibrary_SingletonComponentPersistent_1_Start_
+  commentId: Overload:NiceGraphicLibrary.SingletonComponentPersistent`1.Start
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.SingletonComponentPersistent<TComponent>.Start
+  fullName.vb: NiceGraphicLibrary.SingletonComponentPersistent(Of TComponent).Start
+  nameWithType: SingletonComponentPersistent<TComponent>.Start
+  nameWithType.vb: SingletonComponentPersistent(Of TComponent).Start
 - uid: NiceGraphicLibrary.UnityDeltaTimeProvider
   name: UnityDeltaTimeProvider
   href: api/NiceGraphicLibrary.UnityDeltaTimeProvider.html
