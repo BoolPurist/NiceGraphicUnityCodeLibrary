@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace NiceGraphicLibrary
+namespace NiceGraphicLibrary.Tests.Editor.Stubs
 {
   /// <summary>
   /// Used for unit testing. Fakes return value for Time.deltaTime to test without waiting for frames

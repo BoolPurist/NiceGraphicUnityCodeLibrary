@@ -4,9 +4,9 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-using NiceGraphicLibrary.Component;
 using NiceGraphicLibrary.Utility;
 using NiceGraphicLibrary.Component.Movement;
+using NiceGraphicLibrary.Tests.Editor.Stubs;
 
 namespace NiceGraphicLibrary.Tests.Runtime.Tests_RigidMotion
 {

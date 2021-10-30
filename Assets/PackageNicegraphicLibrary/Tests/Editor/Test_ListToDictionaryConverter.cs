@@ -19,24 +19,32 @@ namespace NiceGraphicLibrary.Tests.Editor
 
     private class InvalidPerson
     {
-      public string Name;
-      public string Age;
+      public string Name { get; set; } = default;
+      public string Age { get; set; } = default;
     }
 
     private class PersonWithOnlyName
     {
-      public string Name;
+
+      public string Name { get; set; } = default;
     }
+
+
 
     #region Test data
     private class EmptyPerson { }
 
+#pragma warning disable IDE0090 // Use 'new(...)'
     private ListToDictionaryConverter<string, int, Person> ConverterForTests
       => new ListToDictionaryConverter<string, int, Person>(nameof(Person.Name), nameof(Person.Age));
+#pragma warning restore IDE0090 // Use 'new(...)'
+    
     #endregion
 
+#pragma warning disable IDE0090 // Use 'new(...)'
     private List<Person> ListForTets
       => new List<Person>()
+#pragma warning restore IDE0090 // Use 'new(...)'
         {
           new Person()
           {

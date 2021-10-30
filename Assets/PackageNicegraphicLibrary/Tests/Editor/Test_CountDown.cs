@@ -5,7 +5,7 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-
+using NiceGraphicLibrary.Tests.Editor.Stubs;
 using NiceGraphicLibrary.Utility.Cooldown;
 
 namespace NiceGraphicLibrary.Tests.Editor
@@ -85,8 +85,10 @@ namespace NiceGraphicLibrary.Tests.Editor
 
     private static CountDown SetUpCountDown(int secondsToCountDown, out FixedDateTimeProvider provider)
     {
-      provider = new FixedDateTimeProvider();
-      provider.FixedTimeStamp = new DateTime(0);
+      provider = new FixedDateTimeProvider()
+      {
+        FixedTimeStamp = new DateTime(0)
+      };
       var countDown = new CountDown(secondsToCountDown);
       countDown.SetDateTimeProvider(provider);
       countDown.Resume();

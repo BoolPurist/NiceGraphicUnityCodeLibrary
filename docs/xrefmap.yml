@@ -139,6 +139,25 @@ references:
   commentId: N:NiceGraphicLibrary.Component.Movement
   fullName: NiceGraphicLibrary.Component.Movement
   nameWithType: NiceGraphicLibrary.Component.Movement
+- uid: NiceGraphicLibrary.Component.Movement.ButtonRigidMotion
+  name: ButtonRigidMotion
+  href: api/NiceGraphicLibrary.Component.Movement.ButtonRigidMotion.html
+  commentId: T:NiceGraphicLibrary.Component.Movement.ButtonRigidMotion
+  fullName: NiceGraphicLibrary.Component.Movement.ButtonRigidMotion
+  nameWithType: ButtonRigidMotion
+- uid: NiceGraphicLibrary.Component.Movement.ButtonRigidMotion.InputChecker(System.String)
+  name: InputChecker(String)
+  href: api/NiceGraphicLibrary.Component.Movement.ButtonRigidMotion.html#NiceGraphicLibrary_Component_Movement_ButtonRigidMotion_InputChecker_System_String_
+  commentId: M:NiceGraphicLibrary.Component.Movement.ButtonRigidMotion.InputChecker(System.String)
+  fullName: NiceGraphicLibrary.Component.Movement.ButtonRigidMotion.InputChecker(System.String)
+  nameWithType: ButtonRigidMotion.InputChecker(String)
+- uid: NiceGraphicLibrary.Component.Movement.ButtonRigidMotion.InputChecker*
+  name: InputChecker
+  href: api/NiceGraphicLibrary.Component.Movement.ButtonRigidMotion.html#NiceGraphicLibrary_Component_Movement_ButtonRigidMotion_InputChecker_
+  commentId: Overload:NiceGraphicLibrary.Component.Movement.ButtonRigidMotion.InputChecker
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Component.Movement.ButtonRigidMotion.InputChecker
+  nameWithType: ButtonRigidMotion.InputChecker
 - uid: NiceGraphicLibrary.Component.Movement.Follow
   name: Follow
   href: api/NiceGraphicLibrary.Component.Movement.Follow.html
@@ -201,6 +220,19 @@ references:
   commentId: T:NiceGraphicLibrary.Component.Movement.KeyboardRigidMotion
   fullName: NiceGraphicLibrary.Component.Movement.KeyboardRigidMotion
   nameWithType: KeyboardRigidMotion
+- uid: NiceGraphicLibrary.Component.Movement.KeyboardRigidMotion.InputChecker(KeyCode)
+  name: InputChecker(KeyCode)
+  href: api/NiceGraphicLibrary.Component.Movement.KeyboardRigidMotion.html#NiceGraphicLibrary_Component_Movement_KeyboardRigidMotion_InputChecker_KeyCode_
+  commentId: M:NiceGraphicLibrary.Component.Movement.KeyboardRigidMotion.InputChecker(KeyCode)
+  fullName: NiceGraphicLibrary.Component.Movement.KeyboardRigidMotion.InputChecker(KeyCode)
+  nameWithType: KeyboardRigidMotion.InputChecker(KeyCode)
+- uid: NiceGraphicLibrary.Component.Movement.KeyboardRigidMotion.InputChecker*
+  name: InputChecker
+  href: api/NiceGraphicLibrary.Component.Movement.KeyboardRigidMotion.html#NiceGraphicLibrary_Component_Movement_KeyboardRigidMotion_InputChecker_
+  commentId: Overload:NiceGraphicLibrary.Component.Movement.KeyboardRigidMotion.InputChecker
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Component.Movement.KeyboardRigidMotion.InputChecker
+  nameWithType: KeyboardRigidMotion.InputChecker
 - uid: NiceGraphicLibrary.Component.Movement.MovementAxisLevel
   name: MovementAxisLevel
   href: api/NiceGraphicLibrary.Component.Movement.MovementAxisLevel.html
@@ -386,6 +418,19 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.Component.Movement.RigidGeometryMotion.Awake
   nameWithType: RigidGeometryMotion.Awake
+- uid: NiceGraphicLibrary.Component.Movement.RigidGeometryMotion.AxisINput
+  name: AxisINput
+  href: api/NiceGraphicLibrary.Component.Movement.RigidGeometryMotion.html#NiceGraphicLibrary_Component_Movement_RigidGeometryMotion_AxisINput
+  commentId: P:NiceGraphicLibrary.Component.Movement.RigidGeometryMotion.AxisINput
+  fullName: NiceGraphicLibrary.Component.Movement.RigidGeometryMotion.AxisINput
+  nameWithType: RigidGeometryMotion.AxisINput
+- uid: NiceGraphicLibrary.Component.Movement.RigidGeometryMotion.AxisINput*
+  name: AxisINput
+  href: api/NiceGraphicLibrary.Component.Movement.RigidGeometryMotion.html#NiceGraphicLibrary_Component_Movement_RigidGeometryMotion_AxisINput_
+  commentId: Overload:NiceGraphicLibrary.Component.Movement.RigidGeometryMotion.AxisINput
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Component.Movement.RigidGeometryMotion.AxisINput
+  nameWithType: RigidGeometryMotion.AxisINput
 - uid: NiceGraphicLibrary.Component.Movement.RigidGeometryMotion.AxisLevel
   name: AxisLevel
   href: api/NiceGraphicLibrary.Component.Movement.RigidGeometryMotion.html#NiceGraphicLibrary_Component_Movement_RigidGeometryMotion_AxisLevel
@@ -620,6 +665,130 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.Component.Movement.RigidGeometryMotion.Velocity
   nameWithType: RigidGeometryMotion.Velocity
+- uid: NiceGraphicLibrary.Component.Movement.RigidInputMotion`1
+  name: RigidInputMotion<TInput>
+  href: api/NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html
+  commentId: T:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1
+  name.vb: RigidInputMotion(Of TInput)
+  fullName: NiceGraphicLibrary.Component.Movement.RigidInputMotion<TInput>
+  fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInputMotion(Of TInput)
+  nameWithType: RigidInputMotion<TInput>
+  nameWithType.vb: RigidInputMotion(Of TInput)
+- uid: NiceGraphicLibrary.Component.Movement.RigidInputMotion`1._inputProvider
+  name: _inputProvider
+  href: api/NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1__inputProvider
+  commentId: F:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1._inputProvider
+  fullName: NiceGraphicLibrary.Component.Movement.RigidInputMotion<TInput>._inputProvider
+  fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInputMotion(Of TInput)._inputProvider
+  nameWithType: RigidInputMotion<TInput>._inputProvider
+  nameWithType.vb: RigidInputMotion(Of TInput)._inputProvider
+- uid: NiceGraphicLibrary.Component.Movement.RigidInputMotion`1._Motion
+  name: _Motion
+  href: api/NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1__Motion
+  commentId: F:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1._Motion
+  fullName: NiceGraphicLibrary.Component.Movement.RigidInputMotion<TInput>._Motion
+  fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInputMotion(Of TInput)._Motion
+  nameWithType: RigidInputMotion<TInput>._Motion
+  nameWithType.vb: RigidInputMotion(Of TInput)._Motion
+- uid: NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.InputChecker(`0)
+  name: InputChecker(TInput)
+  href: api/NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_InputChecker__0_
+  commentId: M:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.InputChecker(`0)
+  fullName: NiceGraphicLibrary.Component.Movement.RigidInputMotion<TInput>.InputChecker(TInput)
+  fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInputMotion(Of TInput).InputChecker(TInput)
+  nameWithType: RigidInputMotion<TInput>.InputChecker(TInput)
+  nameWithType.vb: RigidInputMotion(Of TInput).InputChecker(TInput)
+- uid: NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.InputChecker*
+  name: InputChecker
+  href: api/NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_InputChecker_
+  commentId: Overload:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.InputChecker
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Component.Movement.RigidInputMotion<TInput>.InputChecker
+  fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInputMotion(Of TInput).InputChecker
+  nameWithType: RigidInputMotion<TInput>.InputChecker
+  nameWithType.vb: RigidInputMotion(Of TInput).InputChecker
+- uid: NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveBack
+  name: MoveBack
+  href: api/NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_MoveBack
+  commentId: F:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveBack
+  fullName: NiceGraphicLibrary.Component.Movement.RigidInputMotion<TInput>.MoveBack
+  fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInputMotion(Of TInput).MoveBack
+  nameWithType: RigidInputMotion<TInput>.MoveBack
+  nameWithType.vb: RigidInputMotion(Of TInput).MoveBack
+- uid: NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveDown
+  name: MoveDown
+  href: api/NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_MoveDown
+  commentId: F:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveDown
+  fullName: NiceGraphicLibrary.Component.Movement.RigidInputMotion<TInput>.MoveDown
+  fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInputMotion(Of TInput).MoveDown
+  nameWithType: RigidInputMotion<TInput>.MoveDown
+  nameWithType.vb: RigidInputMotion(Of TInput).MoveDown
+- uid: NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveForward
+  name: MoveForward
+  href: api/NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_MoveForward
+  commentId: F:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveForward
+  fullName: NiceGraphicLibrary.Component.Movement.RigidInputMotion<TInput>.MoveForward
+  fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInputMotion(Of TInput).MoveForward
+  nameWithType: RigidInputMotion<TInput>.MoveForward
+  nameWithType.vb: RigidInputMotion(Of TInput).MoveForward
+- uid: NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveLeft
+  name: MoveLeft
+  href: api/NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_MoveLeft
+  commentId: F:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveLeft
+  fullName: NiceGraphicLibrary.Component.Movement.RigidInputMotion<TInput>.MoveLeft
+  fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInputMotion(Of TInput).MoveLeft
+  nameWithType: RigidInputMotion<TInput>.MoveLeft
+  nameWithType.vb: RigidInputMotion(Of TInput).MoveLeft
+- uid: NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveRight
+  name: MoveRight
+  href: api/NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_MoveRight
+  commentId: F:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveRight
+  fullName: NiceGraphicLibrary.Component.Movement.RigidInputMotion<TInput>.MoveRight
+  fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInputMotion(Of TInput).MoveRight
+  nameWithType: RigidInputMotion<TInput>.MoveRight
+  nameWithType.vb: RigidInputMotion(Of TInput).MoveRight
+- uid: NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveUp
+  name: MoveUp
+  href: api/NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_MoveUp
+  commentId: F:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveUp
+  fullName: NiceGraphicLibrary.Component.Movement.RigidInputMotion<TInput>.MoveUp
+  fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInputMotion(Of TInput).MoveUp
+  nameWithType: RigidInputMotion<TInput>.MoveUp
+  nameWithType.vb: RigidInputMotion(Of TInput).MoveUp
+- uid: NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.SetKeyButtonProvider(NiceGraphicLibrary.IKeyButtonProvider)
+  name: SetKeyButtonProvider(IKeyButtonProvider)
+  href: api/NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_SetKeyButtonProvider_NiceGraphicLibrary_IKeyButtonProvider_
+  commentId: M:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.SetKeyButtonProvider(NiceGraphicLibrary.IKeyButtonProvider)
+  fullName: NiceGraphicLibrary.Component.Movement.RigidInputMotion<TInput>.SetKeyButtonProvider(NiceGraphicLibrary.IKeyButtonProvider)
+  fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInputMotion(Of TInput).SetKeyButtonProvider(NiceGraphicLibrary.IKeyButtonProvider)
+  nameWithType: RigidInputMotion<TInput>.SetKeyButtonProvider(IKeyButtonProvider)
+  nameWithType.vb: RigidInputMotion(Of TInput).SetKeyButtonProvider(IKeyButtonProvider)
+- uid: NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.SetKeyButtonProvider*
+  name: SetKeyButtonProvider
+  href: api/NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_SetKeyButtonProvider_
+  commentId: Overload:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.SetKeyButtonProvider
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Component.Movement.RigidInputMotion<TInput>.SetKeyButtonProvider
+  fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInputMotion(Of TInput).SetKeyButtonProvider
+  nameWithType: RigidInputMotion<TInput>.SetKeyButtonProvider
+  nameWithType.vb: RigidInputMotion(Of TInput).SetKeyButtonProvider
+- uid: NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.Update
+  name: Update()
+  href: api/NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_Update
+  commentId: M:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.Update
+  fullName: NiceGraphicLibrary.Component.Movement.RigidInputMotion<TInput>.Update()
+  fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInputMotion(Of TInput).Update()
+  nameWithType: RigidInputMotion<TInput>.Update()
+  nameWithType.vb: RigidInputMotion(Of TInput).Update()
+- uid: NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.Update*
+  name: Update
+  href: api/NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_Update_
+  commentId: Overload:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.Update
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Component.Movement.RigidInputMotion<TInput>.Update
+  fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInputMotion(Of TInput).Update
+  nameWithType: RigidInputMotion<TInput>.Update
+  nameWithType.vb: RigidInputMotion(Of TInput).Update
 - uid: NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion
   name: RigidInterpolatedMotion
   href: api/NiceGraphicLibrary.Component.Movement.RigidInterpolatedMotion.html
@@ -1522,128 +1691,6 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.Extensions.Vector3Extension.SubZScale
   nameWithType: Vector3Extension.SubZScale
-- uid: NiceGraphicLibrary.FakeDeltaTimeProvider
-  name: FakeDeltaTimeProvider
-  href: api/NiceGraphicLibrary.FakeDeltaTimeProvider.html
-  commentId: T:NiceGraphicLibrary.FakeDeltaTimeProvider
-  fullName: NiceGraphicLibrary.FakeDeltaTimeProvider
-  nameWithType: FakeDeltaTimeProvider
-- uid: NiceGraphicLibrary.FakeDeltaTimeProvider.#ctor
-  name: FakeDeltaTimeProvider()
-  href: api/NiceGraphicLibrary.FakeDeltaTimeProvider.html#NiceGraphicLibrary_FakeDeltaTimeProvider__ctor
-  commentId: M:NiceGraphicLibrary.FakeDeltaTimeProvider.#ctor
-  fullName: NiceGraphicLibrary.FakeDeltaTimeProvider.FakeDeltaTimeProvider()
-  nameWithType: FakeDeltaTimeProvider.FakeDeltaTimeProvider()
-- uid: NiceGraphicLibrary.FakeDeltaTimeProvider.#ctor(System.Single)
-  name: FakeDeltaTimeProvider(Single)
-  href: api/NiceGraphicLibrary.FakeDeltaTimeProvider.html#NiceGraphicLibrary_FakeDeltaTimeProvider__ctor_System_Single_
-  commentId: M:NiceGraphicLibrary.FakeDeltaTimeProvider.#ctor(System.Single)
-  fullName: NiceGraphicLibrary.FakeDeltaTimeProvider.FakeDeltaTimeProvider(System.Single)
-  nameWithType: FakeDeltaTimeProvider.FakeDeltaTimeProvider(Single)
-- uid: NiceGraphicLibrary.FakeDeltaTimeProvider.#ctor*
-  name: FakeDeltaTimeProvider
-  href: api/NiceGraphicLibrary.FakeDeltaTimeProvider.html#NiceGraphicLibrary_FakeDeltaTimeProvider__ctor_
-  commentId: Overload:NiceGraphicLibrary.FakeDeltaTimeProvider.#ctor
-  isSpec: "True"
-  fullName: NiceGraphicLibrary.FakeDeltaTimeProvider.FakeDeltaTimeProvider
-  nameWithType: FakeDeltaTimeProvider.FakeDeltaTimeProvider
-- uid: NiceGraphicLibrary.FakeDeltaTimeProvider.DeltaTimeFactor
-  name: DeltaTimeFactor
-  href: api/NiceGraphicLibrary.FakeDeltaTimeProvider.html#NiceGraphicLibrary_FakeDeltaTimeProvider_DeltaTimeFactor
-  commentId: P:NiceGraphicLibrary.FakeDeltaTimeProvider.DeltaTimeFactor
-  fullName: NiceGraphicLibrary.FakeDeltaTimeProvider.DeltaTimeFactor
-  nameWithType: FakeDeltaTimeProvider.DeltaTimeFactor
-- uid: NiceGraphicLibrary.FakeDeltaTimeProvider.DeltaTimeFactor*
-  name: DeltaTimeFactor
-  href: api/NiceGraphicLibrary.FakeDeltaTimeProvider.html#NiceGraphicLibrary_FakeDeltaTimeProvider_DeltaTimeFactor_
-  commentId: Overload:NiceGraphicLibrary.FakeDeltaTimeProvider.DeltaTimeFactor
-  isSpec: "True"
-  fullName: NiceGraphicLibrary.FakeDeltaTimeProvider.DeltaTimeFactor
-  nameWithType: FakeDeltaTimeProvider.DeltaTimeFactor
-- uid: NiceGraphicLibrary.FakeDeltaTimeProvider.GetDelatTime
-  name: GetDelatTime()
-  href: api/NiceGraphicLibrary.FakeDeltaTimeProvider.html#NiceGraphicLibrary_FakeDeltaTimeProvider_GetDelatTime
-  commentId: M:NiceGraphicLibrary.FakeDeltaTimeProvider.GetDelatTime
-  fullName: NiceGraphicLibrary.FakeDeltaTimeProvider.GetDelatTime()
-  nameWithType: FakeDeltaTimeProvider.GetDelatTime()
-- uid: NiceGraphicLibrary.FakeDeltaTimeProvider.GetDelatTime*
-  name: GetDelatTime
-  href: api/NiceGraphicLibrary.FakeDeltaTimeProvider.html#NiceGraphicLibrary_FakeDeltaTimeProvider_GetDelatTime_
-  commentId: Overload:NiceGraphicLibrary.FakeDeltaTimeProvider.GetDelatTime
-  isSpec: "True"
-  fullName: NiceGraphicLibrary.FakeDeltaTimeProvider.GetDelatTime
-  nameWithType: FakeDeltaTimeProvider.GetDelatTime
-- uid: NiceGraphicLibrary.FixedDateTimeProvider
-  name: FixedDateTimeProvider
-  href: api/NiceGraphicLibrary.FixedDateTimeProvider.html
-  commentId: T:NiceGraphicLibrary.FixedDateTimeProvider
-  fullName: NiceGraphicLibrary.FixedDateTimeProvider
-  nameWithType: FixedDateTimeProvider
-- uid: NiceGraphicLibrary.FixedDateTimeProvider.ChangeBySeconds(System.Int32)
-  name: ChangeBySeconds(Int32)
-  href: api/NiceGraphicLibrary.FixedDateTimeProvider.html#NiceGraphicLibrary_FixedDateTimeProvider_ChangeBySeconds_System_Int32_
-  commentId: M:NiceGraphicLibrary.FixedDateTimeProvider.ChangeBySeconds(System.Int32)
-  fullName: NiceGraphicLibrary.FixedDateTimeProvider.ChangeBySeconds(System.Int32)
-  nameWithType: FixedDateTimeProvider.ChangeBySeconds(Int32)
-- uid: NiceGraphicLibrary.FixedDateTimeProvider.ChangeBySeconds*
-  name: ChangeBySeconds
-  href: api/NiceGraphicLibrary.FixedDateTimeProvider.html#NiceGraphicLibrary_FixedDateTimeProvider_ChangeBySeconds_
-  commentId: Overload:NiceGraphicLibrary.FixedDateTimeProvider.ChangeBySeconds
-  isSpec: "True"
-  fullName: NiceGraphicLibrary.FixedDateTimeProvider.ChangeBySeconds
-  nameWithType: FixedDateTimeProvider.ChangeBySeconds
-- uid: NiceGraphicLibrary.FixedDateTimeProvider.FixedTimeStamp
-  name: FixedTimeStamp
-  href: api/NiceGraphicLibrary.FixedDateTimeProvider.html#NiceGraphicLibrary_FixedDateTimeProvider_FixedTimeStamp
-  commentId: P:NiceGraphicLibrary.FixedDateTimeProvider.FixedTimeStamp
-  fullName: NiceGraphicLibrary.FixedDateTimeProvider.FixedTimeStamp
-  nameWithType: FixedDateTimeProvider.FixedTimeStamp
-- uid: NiceGraphicLibrary.FixedDateTimeProvider.FixedTimeStamp*
-  name: FixedTimeStamp
-  href: api/NiceGraphicLibrary.FixedDateTimeProvider.html#NiceGraphicLibrary_FixedDateTimeProvider_FixedTimeStamp_
-  commentId: Overload:NiceGraphicLibrary.FixedDateTimeProvider.FixedTimeStamp
-  isSpec: "True"
-  fullName: NiceGraphicLibrary.FixedDateTimeProvider.FixedTimeStamp
-  nameWithType: FixedDateTimeProvider.FixedTimeStamp
-- uid: NiceGraphicLibrary.FixedDateTimeProvider.GetNowDateTime
-  name: GetNowDateTime()
-  href: api/NiceGraphicLibrary.FixedDateTimeProvider.html#NiceGraphicLibrary_FixedDateTimeProvider_GetNowDateTime
-  commentId: M:NiceGraphicLibrary.FixedDateTimeProvider.GetNowDateTime
-  fullName: NiceGraphicLibrary.FixedDateTimeProvider.GetNowDateTime()
-  nameWithType: FixedDateTimeProvider.GetNowDateTime()
-- uid: NiceGraphicLibrary.FixedDateTimeProvider.GetNowDateTime*
-  name: GetNowDateTime
-  href: api/NiceGraphicLibrary.FixedDateTimeProvider.html#NiceGraphicLibrary_FixedDateTimeProvider_GetNowDateTime_
-  commentId: Overload:NiceGraphicLibrary.FixedDateTimeProvider.GetNowDateTime
-  isSpec: "True"
-  fullName: NiceGraphicLibrary.FixedDateTimeProvider.GetNowDateTime
-  nameWithType: FixedDateTimeProvider.GetNowDateTime
-- uid: NiceGraphicLibrary.FixedDateTimeProvider.MinusOneSecond
-  name: MinusOneSecond()
-  href: api/NiceGraphicLibrary.FixedDateTimeProvider.html#NiceGraphicLibrary_FixedDateTimeProvider_MinusOneSecond
-  commentId: M:NiceGraphicLibrary.FixedDateTimeProvider.MinusOneSecond
-  fullName: NiceGraphicLibrary.FixedDateTimeProvider.MinusOneSecond()
-  nameWithType: FixedDateTimeProvider.MinusOneSecond()
-- uid: NiceGraphicLibrary.FixedDateTimeProvider.MinusOneSecond*
-  name: MinusOneSecond
-  href: api/NiceGraphicLibrary.FixedDateTimeProvider.html#NiceGraphicLibrary_FixedDateTimeProvider_MinusOneSecond_
-  commentId: Overload:NiceGraphicLibrary.FixedDateTimeProvider.MinusOneSecond
-  isSpec: "True"
-  fullName: NiceGraphicLibrary.FixedDateTimeProvider.MinusOneSecond
-  nameWithType: FixedDateTimeProvider.MinusOneSecond
-- uid: NiceGraphicLibrary.FixedDateTimeProvider.PlusOneSecond
-  name: PlusOneSecond()
-  href: api/NiceGraphicLibrary.FixedDateTimeProvider.html#NiceGraphicLibrary_FixedDateTimeProvider_PlusOneSecond
-  commentId: M:NiceGraphicLibrary.FixedDateTimeProvider.PlusOneSecond
-  fullName: NiceGraphicLibrary.FixedDateTimeProvider.PlusOneSecond()
-  nameWithType: FixedDateTimeProvider.PlusOneSecond()
-- uid: NiceGraphicLibrary.FixedDateTimeProvider.PlusOneSecond*
-  name: PlusOneSecond
-  href: api/NiceGraphicLibrary.FixedDateTimeProvider.html#NiceGraphicLibrary_FixedDateTimeProvider_PlusOneSecond_
-  commentId: Overload:NiceGraphicLibrary.FixedDateTimeProvider.PlusOneSecond
-  isSpec: "True"
-  fullName: NiceGraphicLibrary.FixedDateTimeProvider.PlusOneSecond
-  nameWithType: FixedDateTimeProvider.PlusOneSecond
 - uid: NiceGraphicLibrary.IAdjustableForUnitTest
   name: IAdjustableForUnitTest
   href: api/NiceGraphicLibrary.IAdjustableForUnitTest.html
@@ -1701,6 +1748,121 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.IDeltaTimeProvider.GetDelatTime
   nameWithType: IDeltaTimeProvider.GetDelatTime
+- uid: NiceGraphicLibrary.IKeyButtonProvider
+  name: IKeyButtonProvider
+  href: api/NiceGraphicLibrary.IKeyButtonProvider.html
+  commentId: T:NiceGraphicLibrary.IKeyButtonProvider
+  fullName: NiceGraphicLibrary.IKeyButtonProvider
+  nameWithType: IKeyButtonProvider
+- uid: NiceGraphicLibrary.IKeyButtonProvider.GetAxis(System.String)
+  name: GetAxis(String)
+  href: api/NiceGraphicLibrary.IKeyButtonProvider.html#NiceGraphicLibrary_IKeyButtonProvider_GetAxis_System_String_
+  commentId: M:NiceGraphicLibrary.IKeyButtonProvider.GetAxis(System.String)
+  fullName: NiceGraphicLibrary.IKeyButtonProvider.GetAxis(System.String)
+  nameWithType: IKeyButtonProvider.GetAxis(String)
+- uid: NiceGraphicLibrary.IKeyButtonProvider.GetAxis*
+  name: GetAxis
+  href: api/NiceGraphicLibrary.IKeyButtonProvider.html#NiceGraphicLibrary_IKeyButtonProvider_GetAxis_
+  commentId: Overload:NiceGraphicLibrary.IKeyButtonProvider.GetAxis
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.IKeyButtonProvider.GetAxis
+  nameWithType: IKeyButtonProvider.GetAxis
+- uid: NiceGraphicLibrary.IKeyButtonProvider.GetButton(System.String)
+  name: GetButton(String)
+  href: api/NiceGraphicLibrary.IKeyButtonProvider.html#NiceGraphicLibrary_IKeyButtonProvider_GetButton_System_String_
+  commentId: M:NiceGraphicLibrary.IKeyButtonProvider.GetButton(System.String)
+  fullName: NiceGraphicLibrary.IKeyButtonProvider.GetButton(System.String)
+  nameWithType: IKeyButtonProvider.GetButton(String)
+- uid: NiceGraphicLibrary.IKeyButtonProvider.GetButton*
+  name: GetButton
+  href: api/NiceGraphicLibrary.IKeyButtonProvider.html#NiceGraphicLibrary_IKeyButtonProvider_GetButton_
+  commentId: Overload:NiceGraphicLibrary.IKeyButtonProvider.GetButton
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.IKeyButtonProvider.GetButton
+  nameWithType: IKeyButtonProvider.GetButton
+- uid: NiceGraphicLibrary.IKeyButtonProvider.GetButtonDown(System.String)
+  name: GetButtonDown(String)
+  href: api/NiceGraphicLibrary.IKeyButtonProvider.html#NiceGraphicLibrary_IKeyButtonProvider_GetButtonDown_System_String_
+  commentId: M:NiceGraphicLibrary.IKeyButtonProvider.GetButtonDown(System.String)
+  fullName: NiceGraphicLibrary.IKeyButtonProvider.GetButtonDown(System.String)
+  nameWithType: IKeyButtonProvider.GetButtonDown(String)
+- uid: NiceGraphicLibrary.IKeyButtonProvider.GetButtonDown*
+  name: GetButtonDown
+  href: api/NiceGraphicLibrary.IKeyButtonProvider.html#NiceGraphicLibrary_IKeyButtonProvider_GetButtonDown_
+  commentId: Overload:NiceGraphicLibrary.IKeyButtonProvider.GetButtonDown
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.IKeyButtonProvider.GetButtonDown
+  nameWithType: IKeyButtonProvider.GetButtonDown
+- uid: NiceGraphicLibrary.IKeyButtonProvider.GetButtonUp(System.String)
+  name: GetButtonUp(String)
+  href: api/NiceGraphicLibrary.IKeyButtonProvider.html#NiceGraphicLibrary_IKeyButtonProvider_GetButtonUp_System_String_
+  commentId: M:NiceGraphicLibrary.IKeyButtonProvider.GetButtonUp(System.String)
+  fullName: NiceGraphicLibrary.IKeyButtonProvider.GetButtonUp(System.String)
+  nameWithType: IKeyButtonProvider.GetButtonUp(String)
+- uid: NiceGraphicLibrary.IKeyButtonProvider.GetButtonUp*
+  name: GetButtonUp
+  href: api/NiceGraphicLibrary.IKeyButtonProvider.html#NiceGraphicLibrary_IKeyButtonProvider_GetButtonUp_
+  commentId: Overload:NiceGraphicLibrary.IKeyButtonProvider.GetButtonUp
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.IKeyButtonProvider.GetButtonUp
+  nameWithType: IKeyButtonProvider.GetButtonUp
+- uid: NiceGraphicLibrary.IKeyButtonProvider.GetKey(KeyCode)
+  name: GetKey(KeyCode)
+  href: api/NiceGraphicLibrary.IKeyButtonProvider.html#NiceGraphicLibrary_IKeyButtonProvider_GetKey_KeyCode_
+  commentId: M:NiceGraphicLibrary.IKeyButtonProvider.GetKey(KeyCode)
+  fullName: NiceGraphicLibrary.IKeyButtonProvider.GetKey(KeyCode)
+  nameWithType: IKeyButtonProvider.GetKey(KeyCode)
+- uid: NiceGraphicLibrary.IKeyButtonProvider.GetKey(System.String)
+  name: GetKey(String)
+  href: api/NiceGraphicLibrary.IKeyButtonProvider.html#NiceGraphicLibrary_IKeyButtonProvider_GetKey_System_String_
+  commentId: M:NiceGraphicLibrary.IKeyButtonProvider.GetKey(System.String)
+  fullName: NiceGraphicLibrary.IKeyButtonProvider.GetKey(System.String)
+  nameWithType: IKeyButtonProvider.GetKey(String)
+- uid: NiceGraphicLibrary.IKeyButtonProvider.GetKey*
+  name: GetKey
+  href: api/NiceGraphicLibrary.IKeyButtonProvider.html#NiceGraphicLibrary_IKeyButtonProvider_GetKey_
+  commentId: Overload:NiceGraphicLibrary.IKeyButtonProvider.GetKey
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.IKeyButtonProvider.GetKey
+  nameWithType: IKeyButtonProvider.GetKey
+- uid: NiceGraphicLibrary.IKeyButtonProvider.GetKeyDown(KeyCode)
+  name: GetKeyDown(KeyCode)
+  href: api/NiceGraphicLibrary.IKeyButtonProvider.html#NiceGraphicLibrary_IKeyButtonProvider_GetKeyDown_KeyCode_
+  commentId: M:NiceGraphicLibrary.IKeyButtonProvider.GetKeyDown(KeyCode)
+  fullName: NiceGraphicLibrary.IKeyButtonProvider.GetKeyDown(KeyCode)
+  nameWithType: IKeyButtonProvider.GetKeyDown(KeyCode)
+- uid: NiceGraphicLibrary.IKeyButtonProvider.GetKeyDown(System.String)
+  name: GetKeyDown(String)
+  href: api/NiceGraphicLibrary.IKeyButtonProvider.html#NiceGraphicLibrary_IKeyButtonProvider_GetKeyDown_System_String_
+  commentId: M:NiceGraphicLibrary.IKeyButtonProvider.GetKeyDown(System.String)
+  fullName: NiceGraphicLibrary.IKeyButtonProvider.GetKeyDown(System.String)
+  nameWithType: IKeyButtonProvider.GetKeyDown(String)
+- uid: NiceGraphicLibrary.IKeyButtonProvider.GetKeyDown*
+  name: GetKeyDown
+  href: api/NiceGraphicLibrary.IKeyButtonProvider.html#NiceGraphicLibrary_IKeyButtonProvider_GetKeyDown_
+  commentId: Overload:NiceGraphicLibrary.IKeyButtonProvider.GetKeyDown
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.IKeyButtonProvider.GetKeyDown
+  nameWithType: IKeyButtonProvider.GetKeyDown
+- uid: NiceGraphicLibrary.IKeyButtonProvider.GetKeyUp(KeyCode)
+  name: GetKeyUp(KeyCode)
+  href: api/NiceGraphicLibrary.IKeyButtonProvider.html#NiceGraphicLibrary_IKeyButtonProvider_GetKeyUp_KeyCode_
+  commentId: M:NiceGraphicLibrary.IKeyButtonProvider.GetKeyUp(KeyCode)
+  fullName: NiceGraphicLibrary.IKeyButtonProvider.GetKeyUp(KeyCode)
+  nameWithType: IKeyButtonProvider.GetKeyUp(KeyCode)
+- uid: NiceGraphicLibrary.IKeyButtonProvider.GetKeyUp(System.String)
+  name: GetKeyUp(String)
+  href: api/NiceGraphicLibrary.IKeyButtonProvider.html#NiceGraphicLibrary_IKeyButtonProvider_GetKeyUp_System_String_
+  commentId: M:NiceGraphicLibrary.IKeyButtonProvider.GetKeyUp(System.String)
+  fullName: NiceGraphicLibrary.IKeyButtonProvider.GetKeyUp(System.String)
+  nameWithType: IKeyButtonProvider.GetKeyUp(String)
+- uid: NiceGraphicLibrary.IKeyButtonProvider.GetKeyUp*
+  name: GetKeyUp
+  href: api/NiceGraphicLibrary.IKeyButtonProvider.html#NiceGraphicLibrary_IKeyButtonProvider_GetKeyUp_
+  commentId: Overload:NiceGraphicLibrary.IKeyButtonProvider.GetKeyUp
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.IKeyButtonProvider.GetKeyUp
+  nameWithType: IKeyButtonProvider.GetKeyUp
 - uid: NiceGraphicLibrary.ITakesDateTimeProvider
   name: ITakesDateTimeProvider
   href: api/NiceGraphicLibrary.ITakesDateTimeProvider.html
@@ -1739,6 +1901,25 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.ITakesDeltaTimeProvider.SetDeltaTimeProvider
   nameWithType: ITakesDeltaTimeProvider.SetDeltaTimeProvider
+- uid: NiceGraphicLibrary.ITakesKeyButtonProvider
+  name: ITakesKeyButtonProvider
+  href: api/NiceGraphicLibrary.ITakesKeyButtonProvider.html
+  commentId: T:NiceGraphicLibrary.ITakesKeyButtonProvider
+  fullName: NiceGraphicLibrary.ITakesKeyButtonProvider
+  nameWithType: ITakesKeyButtonProvider
+- uid: NiceGraphicLibrary.ITakesKeyButtonProvider.SetKeyButtonProvider(NiceGraphicLibrary.IKeyButtonProvider)
+  name: SetKeyButtonProvider(IKeyButtonProvider)
+  href: api/NiceGraphicLibrary.ITakesKeyButtonProvider.html#NiceGraphicLibrary_ITakesKeyButtonProvider_SetKeyButtonProvider_NiceGraphicLibrary_IKeyButtonProvider_
+  commentId: M:NiceGraphicLibrary.ITakesKeyButtonProvider.SetKeyButtonProvider(NiceGraphicLibrary.IKeyButtonProvider)
+  fullName: NiceGraphicLibrary.ITakesKeyButtonProvider.SetKeyButtonProvider(NiceGraphicLibrary.IKeyButtonProvider)
+  nameWithType: ITakesKeyButtonProvider.SetKeyButtonProvider(IKeyButtonProvider)
+- uid: NiceGraphicLibrary.ITakesKeyButtonProvider.SetKeyButtonProvider*
+  name: SetKeyButtonProvider
+  href: api/NiceGraphicLibrary.ITakesKeyButtonProvider.html#NiceGraphicLibrary_ITakesKeyButtonProvider_SetKeyButtonProvider_
+  commentId: Overload:NiceGraphicLibrary.ITakesKeyButtonProvider.SetKeyButtonProvider
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.ITakesKeyButtonProvider.SetKeyButtonProvider
+  nameWithType: ITakesKeyButtonProvider.SetKeyButtonProvider
 - uid: NiceGraphicLibrary.ReadOnlyFieldAttribute
   name: ReadOnlyFieldAttribute
   href: api/NiceGraphicLibrary.ReadOnlyFieldAttribute.html
@@ -1897,6 +2078,121 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.UnityDeltaTimeProvider.GetDelatTime
   nameWithType: UnityDeltaTimeProvider.GetDelatTime
+- uid: NiceGraphicLibrary.UnityKeyButtonProvider
+  name: UnityKeyButtonProvider
+  href: api/NiceGraphicLibrary.UnityKeyButtonProvider.html
+  commentId: T:NiceGraphicLibrary.UnityKeyButtonProvider
+  fullName: NiceGraphicLibrary.UnityKeyButtonProvider
+  nameWithType: UnityKeyButtonProvider
+- uid: NiceGraphicLibrary.UnityKeyButtonProvider.GetAxis(System.String)
+  name: GetAxis(String)
+  href: api/NiceGraphicLibrary.UnityKeyButtonProvider.html#NiceGraphicLibrary_UnityKeyButtonProvider_GetAxis_System_String_
+  commentId: M:NiceGraphicLibrary.UnityKeyButtonProvider.GetAxis(System.String)
+  fullName: NiceGraphicLibrary.UnityKeyButtonProvider.GetAxis(System.String)
+  nameWithType: UnityKeyButtonProvider.GetAxis(String)
+- uid: NiceGraphicLibrary.UnityKeyButtonProvider.GetAxis*
+  name: GetAxis
+  href: api/NiceGraphicLibrary.UnityKeyButtonProvider.html#NiceGraphicLibrary_UnityKeyButtonProvider_GetAxis_
+  commentId: Overload:NiceGraphicLibrary.UnityKeyButtonProvider.GetAxis
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.UnityKeyButtonProvider.GetAxis
+  nameWithType: UnityKeyButtonProvider.GetAxis
+- uid: NiceGraphicLibrary.UnityKeyButtonProvider.GetButton(System.String)
+  name: GetButton(String)
+  href: api/NiceGraphicLibrary.UnityKeyButtonProvider.html#NiceGraphicLibrary_UnityKeyButtonProvider_GetButton_System_String_
+  commentId: M:NiceGraphicLibrary.UnityKeyButtonProvider.GetButton(System.String)
+  fullName: NiceGraphicLibrary.UnityKeyButtonProvider.GetButton(System.String)
+  nameWithType: UnityKeyButtonProvider.GetButton(String)
+- uid: NiceGraphicLibrary.UnityKeyButtonProvider.GetButton*
+  name: GetButton
+  href: api/NiceGraphicLibrary.UnityKeyButtonProvider.html#NiceGraphicLibrary_UnityKeyButtonProvider_GetButton_
+  commentId: Overload:NiceGraphicLibrary.UnityKeyButtonProvider.GetButton
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.UnityKeyButtonProvider.GetButton
+  nameWithType: UnityKeyButtonProvider.GetButton
+- uid: NiceGraphicLibrary.UnityKeyButtonProvider.GetButtonDown(System.String)
+  name: GetButtonDown(String)
+  href: api/NiceGraphicLibrary.UnityKeyButtonProvider.html#NiceGraphicLibrary_UnityKeyButtonProvider_GetButtonDown_System_String_
+  commentId: M:NiceGraphicLibrary.UnityKeyButtonProvider.GetButtonDown(System.String)
+  fullName: NiceGraphicLibrary.UnityKeyButtonProvider.GetButtonDown(System.String)
+  nameWithType: UnityKeyButtonProvider.GetButtonDown(String)
+- uid: NiceGraphicLibrary.UnityKeyButtonProvider.GetButtonDown*
+  name: GetButtonDown
+  href: api/NiceGraphicLibrary.UnityKeyButtonProvider.html#NiceGraphicLibrary_UnityKeyButtonProvider_GetButtonDown_
+  commentId: Overload:NiceGraphicLibrary.UnityKeyButtonProvider.GetButtonDown
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.UnityKeyButtonProvider.GetButtonDown
+  nameWithType: UnityKeyButtonProvider.GetButtonDown
+- uid: NiceGraphicLibrary.UnityKeyButtonProvider.GetButtonUp(System.String)
+  name: GetButtonUp(String)
+  href: api/NiceGraphicLibrary.UnityKeyButtonProvider.html#NiceGraphicLibrary_UnityKeyButtonProvider_GetButtonUp_System_String_
+  commentId: M:NiceGraphicLibrary.UnityKeyButtonProvider.GetButtonUp(System.String)
+  fullName: NiceGraphicLibrary.UnityKeyButtonProvider.GetButtonUp(System.String)
+  nameWithType: UnityKeyButtonProvider.GetButtonUp(String)
+- uid: NiceGraphicLibrary.UnityKeyButtonProvider.GetButtonUp*
+  name: GetButtonUp
+  href: api/NiceGraphicLibrary.UnityKeyButtonProvider.html#NiceGraphicLibrary_UnityKeyButtonProvider_GetButtonUp_
+  commentId: Overload:NiceGraphicLibrary.UnityKeyButtonProvider.GetButtonUp
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.UnityKeyButtonProvider.GetButtonUp
+  nameWithType: UnityKeyButtonProvider.GetButtonUp
+- uid: NiceGraphicLibrary.UnityKeyButtonProvider.GetKey(KeyCode)
+  name: GetKey(KeyCode)
+  href: api/NiceGraphicLibrary.UnityKeyButtonProvider.html#NiceGraphicLibrary_UnityKeyButtonProvider_GetKey_KeyCode_
+  commentId: M:NiceGraphicLibrary.UnityKeyButtonProvider.GetKey(KeyCode)
+  fullName: NiceGraphicLibrary.UnityKeyButtonProvider.GetKey(KeyCode)
+  nameWithType: UnityKeyButtonProvider.GetKey(KeyCode)
+- uid: NiceGraphicLibrary.UnityKeyButtonProvider.GetKey(System.String)
+  name: GetKey(String)
+  href: api/NiceGraphicLibrary.UnityKeyButtonProvider.html#NiceGraphicLibrary_UnityKeyButtonProvider_GetKey_System_String_
+  commentId: M:NiceGraphicLibrary.UnityKeyButtonProvider.GetKey(System.String)
+  fullName: NiceGraphicLibrary.UnityKeyButtonProvider.GetKey(System.String)
+  nameWithType: UnityKeyButtonProvider.GetKey(String)
+- uid: NiceGraphicLibrary.UnityKeyButtonProvider.GetKey*
+  name: GetKey
+  href: api/NiceGraphicLibrary.UnityKeyButtonProvider.html#NiceGraphicLibrary_UnityKeyButtonProvider_GetKey_
+  commentId: Overload:NiceGraphicLibrary.UnityKeyButtonProvider.GetKey
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.UnityKeyButtonProvider.GetKey
+  nameWithType: UnityKeyButtonProvider.GetKey
+- uid: NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyDown(KeyCode)
+  name: GetKeyDown(KeyCode)
+  href: api/NiceGraphicLibrary.UnityKeyButtonProvider.html#NiceGraphicLibrary_UnityKeyButtonProvider_GetKeyDown_KeyCode_
+  commentId: M:NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyDown(KeyCode)
+  fullName: NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyDown(KeyCode)
+  nameWithType: UnityKeyButtonProvider.GetKeyDown(KeyCode)
+- uid: NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyDown(System.String)
+  name: GetKeyDown(String)
+  href: api/NiceGraphicLibrary.UnityKeyButtonProvider.html#NiceGraphicLibrary_UnityKeyButtonProvider_GetKeyDown_System_String_
+  commentId: M:NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyDown(System.String)
+  fullName: NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyDown(System.String)
+  nameWithType: UnityKeyButtonProvider.GetKeyDown(String)
+- uid: NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyDown*
+  name: GetKeyDown
+  href: api/NiceGraphicLibrary.UnityKeyButtonProvider.html#NiceGraphicLibrary_UnityKeyButtonProvider_GetKeyDown_
+  commentId: Overload:NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyDown
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyDown
+  nameWithType: UnityKeyButtonProvider.GetKeyDown
+- uid: NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyUp(KeyCode)
+  name: GetKeyUp(KeyCode)
+  href: api/NiceGraphicLibrary.UnityKeyButtonProvider.html#NiceGraphicLibrary_UnityKeyButtonProvider_GetKeyUp_KeyCode_
+  commentId: M:NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyUp(KeyCode)
+  fullName: NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyUp(KeyCode)
+  nameWithType: UnityKeyButtonProvider.GetKeyUp(KeyCode)
+- uid: NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyUp(System.String)
+  name: GetKeyUp(String)
+  href: api/NiceGraphicLibrary.UnityKeyButtonProvider.html#NiceGraphicLibrary_UnityKeyButtonProvider_GetKeyUp_System_String_
+  commentId: M:NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyUp(System.String)
+  fullName: NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyUp(System.String)
+  nameWithType: UnityKeyButtonProvider.GetKeyUp(String)
+- uid: NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyUp*
+  name: GetKeyUp
+  href: api/NiceGraphicLibrary.UnityKeyButtonProvider.html#NiceGraphicLibrary_UnityKeyButtonProvider_GetKeyUp_
+  commentId: Overload:NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyUp
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyUp
+  nameWithType: UnityKeyButtonProvider.GetKeyUp
 - uid: NiceGraphicLibrary.UtcDateTimeProvider
   name: UtcDateTimeProvider
   href: api/NiceGraphicLibrary.UtcDateTimeProvider.html

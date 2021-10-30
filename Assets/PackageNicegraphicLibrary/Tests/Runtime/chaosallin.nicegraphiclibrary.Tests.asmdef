@@ -4,7 +4,8 @@
     "references": [
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
-        "chaosallin.nicegraphiclibrary"
+        "chaosallin.nicegraphiclibrary",
+        "chaosallin.nicegraphiclibrary.Tests.Editor"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

@@ -8,6 +8,7 @@ using UnityEngine.TestTools;
 
 
 using NiceGraphicLibrary.Utility.Cooldown;
+using NiceGraphicLibrary.Tests.Editor.Stubs;
 
 namespace NiceGraphicLibrary.Tests.Editor
 {

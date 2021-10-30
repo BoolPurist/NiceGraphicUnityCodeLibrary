@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace NiceGraphicLibrary
+namespace NiceGraphicLibrary.Tests.Editor.Stubs
 {
   public class FixedDateTimeProvider : IDateTimeProvider
   {

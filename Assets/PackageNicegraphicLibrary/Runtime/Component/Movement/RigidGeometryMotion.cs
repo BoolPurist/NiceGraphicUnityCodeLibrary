@@ -26,6 +26,8 @@ namespace NiceGraphicLibrary.Component.Movement
     public Vector3 Velocity => _rb != null ? _rb.velocity : Vector3.zero;
     public float Speed => _Speed;
 
+    public Vector3 AxisINput => _movement;
+
     public virtual void ForceStand()
       => _rb.velocity = Vector3.zero;
 

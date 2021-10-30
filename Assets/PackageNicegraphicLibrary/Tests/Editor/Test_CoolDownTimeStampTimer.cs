@@ -5,6 +5,7 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
+using NiceGraphicLibrary.Tests.Editor.Stubs;
 using NiceGraphicLibrary.Utility.Cooldown;
 
 namespace NiceGraphicLibrary.Tests.Editor
@@ -16,7 +17,9 @@ namespace NiceGraphicLibrary.Tests.Editor
     private const float FAKE_DELTA_TIME_FACTOR = 1f;
 
     private CooldownTimeStampTimer _timer;
-    private FixedDateTimeProvider _fakeDateTimeProvider = new FixedDateTimeProvider();
+#pragma warning disable IDE0090 // Use 'new(...)'
+    private readonly FixedDateTimeProvider _fakeDateTimeProvider = new FixedDateTimeProvider();
+#pragma warning restore IDE0090 // Use 'new(...)'
 
     [SetUp]
     public void SetUp()
