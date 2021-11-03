@@ -682,14 +682,6 @@ references:
   fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInputMotion(Of TInput)._inputProvider
   nameWithType: RigidInputMotion<TInput>._inputProvider
   nameWithType.vb: RigidInputMotion(Of TInput)._inputProvider
-- uid: NiceGraphicLibrary.Component.Movement.RigidInputMotion`1._Motion
-  name: _Motion
-  href: api/NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1__Motion
-  commentId: F:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1._Motion
-  fullName: NiceGraphicLibrary.Component.Movement.RigidInputMotion<TInput>._Motion
-  fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInputMotion(Of TInput)._Motion
-  nameWithType: RigidInputMotion<TInput>._Motion
-  nameWithType.vb: RigidInputMotion(Of TInput)._Motion
 - uid: NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.InputChecker(`0)
   name: InputChecker(TInput)
   href: api/NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_InputChecker__0_
@@ -710,7 +702,16 @@ references:
 - uid: NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveBack
   name: MoveBack
   href: api/NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_MoveBack
-  commentId: F:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveBack
+  commentId: P:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveBack
+  fullName: NiceGraphicLibrary.Component.Movement.RigidInputMotion<TInput>.MoveBack
+  fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInputMotion(Of TInput).MoveBack
+  nameWithType: RigidInputMotion<TInput>.MoveBack
+  nameWithType.vb: RigidInputMotion(Of TInput).MoveBack
+- uid: NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveBack*
+  name: MoveBack
+  href: api/NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_MoveBack_
+  commentId: Overload:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveBack
+  isSpec: "True"
   fullName: NiceGraphicLibrary.Component.Movement.RigidInputMotion<TInput>.MoveBack
   fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInputMotion(Of TInput).MoveBack
   nameWithType: RigidInputMotion<TInput>.MoveBack
@@ -718,7 +719,16 @@ references:
 - uid: NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveDown
   name: MoveDown
   href: api/NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_MoveDown
-  commentId: F:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveDown
+  commentId: P:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveDown
+  fullName: NiceGraphicLibrary.Component.Movement.RigidInputMotion<TInput>.MoveDown
+  fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInputMotion(Of TInput).MoveDown
+  nameWithType: RigidInputMotion<TInput>.MoveDown
+  nameWithType.vb: RigidInputMotion(Of TInput).MoveDown
+- uid: NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveDown*
+  name: MoveDown
+  href: api/NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_MoveDown_
+  commentId: Overload:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveDown
+  isSpec: "True"
   fullName: NiceGraphicLibrary.Component.Movement.RigidInputMotion<TInput>.MoveDown
   fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInputMotion(Of TInput).MoveDown
   nameWithType: RigidInputMotion<TInput>.MoveDown
@@ -726,7 +736,16 @@ references:
 - uid: NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveForward
   name: MoveForward
   href: api/NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_MoveForward
-  commentId: F:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveForward
+  commentId: P:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveForward
+  fullName: NiceGraphicLibrary.Component.Movement.RigidInputMotion<TInput>.MoveForward
+  fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInputMotion(Of TInput).MoveForward
+  nameWithType: RigidInputMotion<TInput>.MoveForward
+  nameWithType.vb: RigidInputMotion(Of TInput).MoveForward
+- uid: NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveForward*
+  name: MoveForward
+  href: api/NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_MoveForward_
+  commentId: Overload:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveForward
+  isSpec: "True"
   fullName: NiceGraphicLibrary.Component.Movement.RigidInputMotion<TInput>.MoveForward
   fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInputMotion(Of TInput).MoveForward
   nameWithType: RigidInputMotion<TInput>.MoveForward
@@ -734,7 +753,16 @@ references:
 - uid: NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveLeft
   name: MoveLeft
   href: api/NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_MoveLeft
-  commentId: F:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveLeft
+  commentId: P:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveLeft
+  fullName: NiceGraphicLibrary.Component.Movement.RigidInputMotion<TInput>.MoveLeft
+  fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInputMotion(Of TInput).MoveLeft
+  nameWithType: RigidInputMotion<TInput>.MoveLeft
+  nameWithType.vb: RigidInputMotion(Of TInput).MoveLeft
+- uid: NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveLeft*
+  name: MoveLeft
+  href: api/NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_MoveLeft_
+  commentId: Overload:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveLeft
+  isSpec: "True"
   fullName: NiceGraphicLibrary.Component.Movement.RigidInputMotion<TInput>.MoveLeft
   fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInputMotion(Of TInput).MoveLeft
   nameWithType: RigidInputMotion<TInput>.MoveLeft
@@ -742,7 +770,16 @@ references:
 - uid: NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveRight
   name: MoveRight
   href: api/NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_MoveRight
-  commentId: F:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveRight
+  commentId: P:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveRight
+  fullName: NiceGraphicLibrary.Component.Movement.RigidInputMotion<TInput>.MoveRight
+  fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInputMotion(Of TInput).MoveRight
+  nameWithType: RigidInputMotion<TInput>.MoveRight
+  nameWithType.vb: RigidInputMotion(Of TInput).MoveRight
+- uid: NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveRight*
+  name: MoveRight
+  href: api/NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_MoveRight_
+  commentId: Overload:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveRight
+  isSpec: "True"
   fullName: NiceGraphicLibrary.Component.Movement.RigidInputMotion<TInput>.MoveRight
   fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInputMotion(Of TInput).MoveRight
   nameWithType: RigidInputMotion<TInput>.MoveRight
@@ -750,7 +787,16 @@ references:
 - uid: NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveUp
   name: MoveUp
   href: api/NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_MoveUp
-  commentId: F:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveUp
+  commentId: P:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveUp
+  fullName: NiceGraphicLibrary.Component.Movement.RigidInputMotion<TInput>.MoveUp
+  fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInputMotion(Of TInput).MoveUp
+  nameWithType: RigidInputMotion<TInput>.MoveUp
+  nameWithType.vb: RigidInputMotion(Of TInput).MoveUp
+- uid: NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveUp*
+  name: MoveUp
+  href: api/NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_MoveUp_
+  commentId: Overload:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.MoveUp
+  isSpec: "True"
   fullName: NiceGraphicLibrary.Component.Movement.RigidInputMotion<TInput>.MoveUp
   fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInputMotion(Of TInput).MoveUp
   nameWithType: RigidInputMotion<TInput>.MoveUp
@@ -772,6 +818,23 @@ references:
   fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInputMotion(Of TInput).SetKeyButtonProvider
   nameWithType: RigidInputMotion<TInput>.SetKeyButtonProvider
   nameWithType.vb: RigidInputMotion(Of TInput).SetKeyButtonProvider
+- uid: NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.SetRigidMotion(NiceGraphicLibrary.Component.Movement.RigidGeometryMotion)
+  name: SetRigidMotion(RigidGeometryMotion)
+  href: api/NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_SetRigidMotion_NiceGraphicLibrary_Component_Movement_RigidGeometryMotion_
+  commentId: M:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.SetRigidMotion(NiceGraphicLibrary.Component.Movement.RigidGeometryMotion)
+  fullName: NiceGraphicLibrary.Component.Movement.RigidInputMotion<TInput>.SetRigidMotion(NiceGraphicLibrary.Component.Movement.RigidGeometryMotion)
+  fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInputMotion(Of TInput).SetRigidMotion(NiceGraphicLibrary.Component.Movement.RigidGeometryMotion)
+  nameWithType: RigidInputMotion<TInput>.SetRigidMotion(RigidGeometryMotion)
+  nameWithType.vb: RigidInputMotion(Of TInput).SetRigidMotion(RigidGeometryMotion)
+- uid: NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.SetRigidMotion*
+  name: SetRigidMotion
+  href: api/NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_SetRigidMotion_
+  commentId: Overload:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.SetRigidMotion
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Component.Movement.RigidInputMotion<TInput>.SetRigidMotion
+  fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInputMotion(Of TInput).SetRigidMotion
+  nameWithType: RigidInputMotion<TInput>.SetRigidMotion
+  nameWithType.vb: RigidInputMotion(Of TInput).SetRigidMotion
 - uid: NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.Update
   name: Update()
   href: api/NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_Update
@@ -1863,6 +1926,38 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.IKeyButtonProvider.GetKeyUp
   nameWithType: IKeyButtonProvider.GetKeyUp
+- uid: NiceGraphicLibrary.IRandomGenerator
+  name: IRandomGenerator
+  href: api/NiceGraphicLibrary.IRandomGenerator.html
+  commentId: T:NiceGraphicLibrary.IRandomGenerator
+  fullName: NiceGraphicLibrary.IRandomGenerator
+  nameWithType: IRandomGenerator
+- uid: NiceGraphicLibrary.IRandomGenerator.Range(System.Int32,System.Int32)
+  name: Range(Int32, Int32)
+  href: api/NiceGraphicLibrary.IRandomGenerator.html#NiceGraphicLibrary_IRandomGenerator_Range_System_Int32_System_Int32_
+  commentId: M:NiceGraphicLibrary.IRandomGenerator.Range(System.Int32,System.Int32)
+  fullName: NiceGraphicLibrary.IRandomGenerator.Range(System.Int32, System.Int32)
+  nameWithType: IRandomGenerator.Range(Int32, Int32)
+- uid: NiceGraphicLibrary.IRandomGenerator.Range*
+  name: Range
+  href: api/NiceGraphicLibrary.IRandomGenerator.html#NiceGraphicLibrary_IRandomGenerator_Range_
+  commentId: Overload:NiceGraphicLibrary.IRandomGenerator.Range
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.IRandomGenerator.Range
+  nameWithType: IRandomGenerator.Range
+- uid: NiceGraphicLibrary.IRandomGenerator.Value
+  name: Value
+  href: api/NiceGraphicLibrary.IRandomGenerator.html#NiceGraphicLibrary_IRandomGenerator_Value
+  commentId: P:NiceGraphicLibrary.IRandomGenerator.Value
+  fullName: NiceGraphicLibrary.IRandomGenerator.Value
+  nameWithType: IRandomGenerator.Value
+- uid: NiceGraphicLibrary.IRandomGenerator.Value*
+  name: Value
+  href: api/NiceGraphicLibrary.IRandomGenerator.html#NiceGraphicLibrary_IRandomGenerator_Value_
+  commentId: Overload:NiceGraphicLibrary.IRandomGenerator.Value
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.IRandomGenerator.Value
+  nameWithType: IRandomGenerator.Value
 - uid: NiceGraphicLibrary.ITakesDateTimeProvider
   name: ITakesDateTimeProvider
   href: api/NiceGraphicLibrary.ITakesDateTimeProvider.html
@@ -2193,6 +2288,38 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyUp
   nameWithType: UnityKeyButtonProvider.GetKeyUp
+- uid: NiceGraphicLibrary.UnityRandomGenerator
+  name: UnityRandomGenerator
+  href: api/NiceGraphicLibrary.UnityRandomGenerator.html
+  commentId: T:NiceGraphicLibrary.UnityRandomGenerator
+  fullName: NiceGraphicLibrary.UnityRandomGenerator
+  nameWithType: UnityRandomGenerator
+- uid: NiceGraphicLibrary.UnityRandomGenerator.Range(System.Int32,System.Int32)
+  name: Range(Int32, Int32)
+  href: api/NiceGraphicLibrary.UnityRandomGenerator.html#NiceGraphicLibrary_UnityRandomGenerator_Range_System_Int32_System_Int32_
+  commentId: M:NiceGraphicLibrary.UnityRandomGenerator.Range(System.Int32,System.Int32)
+  fullName: NiceGraphicLibrary.UnityRandomGenerator.Range(System.Int32, System.Int32)
+  nameWithType: UnityRandomGenerator.Range(Int32, Int32)
+- uid: NiceGraphicLibrary.UnityRandomGenerator.Range*
+  name: Range
+  href: api/NiceGraphicLibrary.UnityRandomGenerator.html#NiceGraphicLibrary_UnityRandomGenerator_Range_
+  commentId: Overload:NiceGraphicLibrary.UnityRandomGenerator.Range
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.UnityRandomGenerator.Range
+  nameWithType: UnityRandomGenerator.Range
+- uid: NiceGraphicLibrary.UnityRandomGenerator.Value
+  name: Value
+  href: api/NiceGraphicLibrary.UnityRandomGenerator.html#NiceGraphicLibrary_UnityRandomGenerator_Value
+  commentId: P:NiceGraphicLibrary.UnityRandomGenerator.Value
+  fullName: NiceGraphicLibrary.UnityRandomGenerator.Value
+  nameWithType: UnityRandomGenerator.Value
+- uid: NiceGraphicLibrary.UnityRandomGenerator.Value*
+  name: Value
+  href: api/NiceGraphicLibrary.UnityRandomGenerator.html#NiceGraphicLibrary_UnityRandomGenerator_Value_
+  commentId: Overload:NiceGraphicLibrary.UnityRandomGenerator.Value
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.UnityRandomGenerator.Value
+  nameWithType: UnityRandomGenerator.Value
 - uid: NiceGraphicLibrary.UtcDateTimeProvider
   name: UtcDateTimeProvider
   href: api/NiceGraphicLibrary.UtcDateTimeProvider.html
@@ -3227,3 +3354,162 @@ references:
   fullName.vb: NiceGraphicLibrary.Utility.ListToDictionaryConverter(Of TKey, TValue, OType).ToString
   nameWithType: ListToDictionaryConverter<TKey, TValue, OType>.ToString
   nameWithType.vb: ListToDictionaryConverter(Of TKey, TValue, OType).ToString
+- uid: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker`1
+  name: NoRepeatedRandomPicker<TElement>
+  href: api/NiceGraphicLibrary.Utility.NoRepeatedRandomPicker-1.html
+  commentId: T:NiceGraphicLibrary.Utility.NoRepeatedRandomPicker`1
+  name.vb: NoRepeatedRandomPicker(Of TElement)
+  fullName: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker<TElement>
+  fullName.vb: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker(Of TElement)
+  nameWithType: NoRepeatedRandomPicker<TElement>
+  nameWithType.vb: NoRepeatedRandomPicker(Of TElement)
+- uid: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker`1.#ctor(IEnumerable{`0})
+  name: NoRepeatedRandomPicker(IEnumerable<TElement>)
+  href: api/NiceGraphicLibrary.Utility.NoRepeatedRandomPicker-1.html#NiceGraphicLibrary_Utility_NoRepeatedRandomPicker_1__ctor_IEnumerable__0__
+  commentId: M:NiceGraphicLibrary.Utility.NoRepeatedRandomPicker`1.#ctor(IEnumerable{`0})
+  name.vb: NoRepeatedRandomPicker(IEnumerable(Of TElement))
+  fullName: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker<TElement>.NoRepeatedRandomPicker(IEnumerable<TElement>)
+  fullName.vb: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker(Of TElement).NoRepeatedRandomPicker(IEnumerable(Of TElement))
+  nameWithType: NoRepeatedRandomPicker<TElement>.NoRepeatedRandomPicker(IEnumerable<TElement>)
+  nameWithType.vb: NoRepeatedRandomPicker(Of TElement).NoRepeatedRandomPicker(IEnumerable(Of TElement))
+- uid: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker`1.#ctor*
+  name: NoRepeatedRandomPicker
+  href: api/NiceGraphicLibrary.Utility.NoRepeatedRandomPicker-1.html#NiceGraphicLibrary_Utility_NoRepeatedRandomPicker_1__ctor_
+  commentId: Overload:NiceGraphicLibrary.Utility.NoRepeatedRandomPicker`1.#ctor
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker<TElement>.NoRepeatedRandomPicker
+  fullName.vb: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker(Of TElement).NoRepeatedRandomPicker
+  nameWithType: NoRepeatedRandomPicker<TElement>.NoRepeatedRandomPicker
+  nameWithType.vb: NoRepeatedRandomPicker(Of TElement).NoRepeatedRandomPicker
+- uid: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker`1.Next
+  name: Next
+  href: api/NiceGraphicLibrary.Utility.NoRepeatedRandomPicker-1.html#NiceGraphicLibrary_Utility_NoRepeatedRandomPicker_1_Next
+  commentId: P:NiceGraphicLibrary.Utility.NoRepeatedRandomPicker`1.Next
+  fullName: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker<TElement>.Next
+  fullName.vb: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker(Of TElement).Next
+  nameWithType: NoRepeatedRandomPicker<TElement>.Next
+  nameWithType.vb: NoRepeatedRandomPicker(Of TElement).Next
+- uid: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker`1.Next*
+  name: Next
+  href: api/NiceGraphicLibrary.Utility.NoRepeatedRandomPicker-1.html#NiceGraphicLibrary_Utility_NoRepeatedRandomPicker_1_Next_
+  commentId: Overload:NiceGraphicLibrary.Utility.NoRepeatedRandomPicker`1.Next
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker<TElement>.Next
+  fullName.vb: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker(Of TElement).Next
+  nameWithType: NoRepeatedRandomPicker<TElement>.Next
+  nameWithType.vb: NoRepeatedRandomPicker(Of TElement).Next
+- uid: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker`1.Reset
+  name: Reset()
+  href: api/NiceGraphicLibrary.Utility.NoRepeatedRandomPicker-1.html#NiceGraphicLibrary_Utility_NoRepeatedRandomPicker_1_Reset
+  commentId: M:NiceGraphicLibrary.Utility.NoRepeatedRandomPicker`1.Reset
+  fullName: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker<TElement>.Reset()
+  fullName.vb: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker(Of TElement).Reset()
+  nameWithType: NoRepeatedRandomPicker<TElement>.Reset()
+  nameWithType.vb: NoRepeatedRandomPicker(Of TElement).Reset()
+- uid: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker`1.Reset*
+  name: Reset
+  href: api/NiceGraphicLibrary.Utility.NoRepeatedRandomPicker-1.html#NiceGraphicLibrary_Utility_NoRepeatedRandomPicker_1_Reset_
+  commentId: Overload:NiceGraphicLibrary.Utility.NoRepeatedRandomPicker`1.Reset
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker<TElement>.Reset
+  fullName.vb: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker(Of TElement).Reset
+  nameWithType: NoRepeatedRandomPicker<TElement>.Reset
+  nameWithType.vb: NoRepeatedRandomPicker(Of TElement).Reset
+- uid: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker`1.SetANew(IEnumerable{`0})
+  name: SetANew(IEnumerable<TElement>)
+  href: api/NiceGraphicLibrary.Utility.NoRepeatedRandomPicker-1.html#NiceGraphicLibrary_Utility_NoRepeatedRandomPicker_1_SetANew_IEnumerable__0__
+  commentId: M:NiceGraphicLibrary.Utility.NoRepeatedRandomPicker`1.SetANew(IEnumerable{`0})
+  name.vb: SetANew(IEnumerable(Of TElement))
+  fullName: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker<TElement>.SetANew(IEnumerable<TElement>)
+  fullName.vb: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker(Of TElement).SetANew(IEnumerable(Of TElement))
+  nameWithType: NoRepeatedRandomPicker<TElement>.SetANew(IEnumerable<TElement>)
+  nameWithType.vb: NoRepeatedRandomPicker(Of TElement).SetANew(IEnumerable(Of TElement))
+- uid: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker`1.SetANew*
+  name: SetANew
+  href: api/NiceGraphicLibrary.Utility.NoRepeatedRandomPicker-1.html#NiceGraphicLibrary_Utility_NoRepeatedRandomPicker_1_SetANew_
+  commentId: Overload:NiceGraphicLibrary.Utility.NoRepeatedRandomPicker`1.SetANew
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker<TElement>.SetANew
+  fullName.vb: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker(Of TElement).SetANew
+  nameWithType: NoRepeatedRandomPicker<TElement>.SetANew
+  nameWithType.vb: NoRepeatedRandomPicker(Of TElement).SetANew
+- uid: NiceGraphicLibrary.Utility.RandomUtility
+  name: RandomUtility
+  href: api/NiceGraphicLibrary.Utility.RandomUtility.html
+  commentId: T:NiceGraphicLibrary.Utility.RandomUtility
+  fullName: NiceGraphicLibrary.Utility.RandomUtility
+  nameWithType: RandomUtility
+- uid: NiceGraphicLibrary.Utility.RandomUtility.ChooseByChances(IList{System.Single})
+  name: ChooseByChances(IList<Single>)
+  href: api/NiceGraphicLibrary.Utility.RandomUtility.html#NiceGraphicLibrary_Utility_RandomUtility_ChooseByChances_IList_System_Single__
+  commentId: M:NiceGraphicLibrary.Utility.RandomUtility.ChooseByChances(IList{System.Single})
+  name.vb: ChooseByChances(IList(Of Single))
+  fullName: NiceGraphicLibrary.Utility.RandomUtility.ChooseByChances(IList<System.Single>)
+  fullName.vb: NiceGraphicLibrary.Utility.RandomUtility.ChooseByChances(IList(Of System.Single))
+  nameWithType: RandomUtility.ChooseByChances(IList<Single>)
+  nameWithType.vb: RandomUtility.ChooseByChances(IList(Of Single))
+- uid: NiceGraphicLibrary.Utility.RandomUtility.ChooseByChances*
+  name: ChooseByChances
+  href: api/NiceGraphicLibrary.Utility.RandomUtility.html#NiceGraphicLibrary_Utility_RandomUtility_ChooseByChances_
+  commentId: Overload:NiceGraphicLibrary.Utility.RandomUtility.ChooseByChances
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.RandomUtility.ChooseByChances
+  nameWithType: RandomUtility.ChooseByChances
+- uid: NiceGraphicLibrary.Utility.RandomUtility.DoesChanceOccure(System.Single,System.Single)
+  name: DoesChanceOccure(Single, Single)
+  href: api/NiceGraphicLibrary.Utility.RandomUtility.html#NiceGraphicLibrary_Utility_RandomUtility_DoesChanceOccure_System_Single_System_Single_
+  commentId: M:NiceGraphicLibrary.Utility.RandomUtility.DoesChanceOccure(System.Single,System.Single)
+  fullName: NiceGraphicLibrary.Utility.RandomUtility.DoesChanceOccure(System.Single, System.Single)
+  nameWithType: RandomUtility.DoesChanceOccure(Single, Single)
+- uid: NiceGraphicLibrary.Utility.RandomUtility.DoesChanceOccure*
+  name: DoesChanceOccure
+  href: api/NiceGraphicLibrary.Utility.RandomUtility.html#NiceGraphicLibrary_Utility_RandomUtility_DoesChanceOccure_
+  commentId: Overload:NiceGraphicLibrary.Utility.RandomUtility.DoesChanceOccure
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.RandomUtility.DoesChanceOccure
+  nameWithType: RandomUtility.DoesChanceOccure
+- uid: NiceGraphicLibrary.Utility.RandomUtility.PickRandomFrom*
+  name: PickRandomFrom
+  href: api/NiceGraphicLibrary.Utility.RandomUtility.html#NiceGraphicLibrary_Utility_RandomUtility_PickRandomFrom_
+  commentId: Overload:NiceGraphicLibrary.Utility.RandomUtility.PickRandomFrom
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.RandomUtility.PickRandomFrom
+  nameWithType: RandomUtility.PickRandomFrom
+- uid: NiceGraphicLibrary.Utility.RandomUtility.PickRandomFrom``1(IList{``0})
+  name: PickRandomFrom<TElement>(IList<TElement>)
+  href: api/NiceGraphicLibrary.Utility.RandomUtility.html#NiceGraphicLibrary_Utility_RandomUtility_PickRandomFrom__1_IList___0__
+  commentId: M:NiceGraphicLibrary.Utility.RandomUtility.PickRandomFrom``1(IList{``0})
+  name.vb: PickRandomFrom(Of TElement)(IList(Of TElement))
+  fullName: NiceGraphicLibrary.Utility.RandomUtility.PickRandomFrom<TElement>(IList<TElement>)
+  fullName.vb: NiceGraphicLibrary.Utility.RandomUtility.PickRandomFrom(Of TElement)(IList(Of TElement))
+  nameWithType: RandomUtility.PickRandomFrom<TElement>(IList<TElement>)
+  nameWithType.vb: RandomUtility.PickRandomFrom(Of TElement)(IList(Of TElement))
+- uid: NiceGraphicLibrary.Utility.RandomUtility.SetRandomGenerator(NiceGraphicLibrary.IRandomGenerator)
+  name: SetRandomGenerator(IRandomGenerator)
+  href: api/NiceGraphicLibrary.Utility.RandomUtility.html#NiceGraphicLibrary_Utility_RandomUtility_SetRandomGenerator_NiceGraphicLibrary_IRandomGenerator_
+  commentId: M:NiceGraphicLibrary.Utility.RandomUtility.SetRandomGenerator(NiceGraphicLibrary.IRandomGenerator)
+  fullName: NiceGraphicLibrary.Utility.RandomUtility.SetRandomGenerator(NiceGraphicLibrary.IRandomGenerator)
+  nameWithType: RandomUtility.SetRandomGenerator(IRandomGenerator)
+- uid: NiceGraphicLibrary.Utility.RandomUtility.SetRandomGenerator*
+  name: SetRandomGenerator
+  href: api/NiceGraphicLibrary.Utility.RandomUtility.html#NiceGraphicLibrary_Utility_RandomUtility_SetRandomGenerator_
+  commentId: Overload:NiceGraphicLibrary.Utility.RandomUtility.SetRandomGenerator
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.RandomUtility.SetRandomGenerator
+  nameWithType: RandomUtility.SetRandomGenerator
+- uid: NiceGraphicLibrary.Utility.RandomUtility.Shuffle*
+  name: Shuffle
+  href: api/NiceGraphicLibrary.Utility.RandomUtility.html#NiceGraphicLibrary_Utility_RandomUtility_Shuffle_
+  commentId: Overload:NiceGraphicLibrary.Utility.RandomUtility.Shuffle
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.RandomUtility.Shuffle
+  nameWithType: RandomUtility.Shuffle
+- uid: NiceGraphicLibrary.Utility.RandomUtility.Shuffle``1(IList{``0})
+  name: Shuffle<TElement>(IList<TElement>)
+  href: api/NiceGraphicLibrary.Utility.RandomUtility.html#NiceGraphicLibrary_Utility_RandomUtility_Shuffle__1_IList___0__
+  commentId: M:NiceGraphicLibrary.Utility.RandomUtility.Shuffle``1(IList{``0})
+  name.vb: Shuffle(Of TElement)(IList(Of TElement))
+  fullName: NiceGraphicLibrary.Utility.RandomUtility.Shuffle<TElement>(IList<TElement>)
+  fullName.vb: NiceGraphicLibrary.Utility.RandomUtility.Shuffle(Of TElement)(IList(Of TElement))
+  nameWithType: RandomUtility.Shuffle<TElement>(IList<TElement>)
+  nameWithType.vb: RandomUtility.Shuffle(Of TElement)(IList(Of TElement))

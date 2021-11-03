@@ -6,25 +6,29 @@ namespace NiceGraphicLibrary.Component.Movement
 {
   public abstract class RigidInputMotion<TInput> : MonoBehaviour
   {
-
     [SerializeField]
-    protected RigidGeometryMotion _Motion;
-
+    private RigidGeometryMotion _Motion;
     [SerializeField]
-    protected TInput MoveLeft;
+    private TInput moveLeft;
     [SerializeField]
-    protected TInput MoveRight;
+    private TInput moveRight;
     [SerializeField]
-    protected TInput MoveUp;
+    private TInput moveUp;
     [SerializeField]
-    protected TInput MoveDown;
+    private TInput moveDown;
     [SerializeField]
-    protected TInput MoveForward;
+    private TInput moveForward;
     [SerializeField]
-    protected TInput MoveBack;
-
+    private TInput moveBack;
+    public TInput MoveLeft { get => moveLeft; set => moveLeft = value; }
+    public TInput MoveRight { get => moveRight; set => moveRight = value; }
+    public TInput MoveUp { get => moveUp; set => moveUp = value; }
+    public TInput MoveDown { get => moveDown; set => moveDown = value; }
+    public TInput MoveForward { get => moveForward; set => moveForward = value; }
+    public TInput MoveBack { get => moveBack; set => moveBack = value; }
 
     protected IKeyButtonProvider _inputProvider = new UnityKeyButtonProvider();
+
 
     private void Start()
     {
@@ -65,6 +69,21 @@ namespace NiceGraphicLibrary.Component.Movement
       if (newProvider != null)
       {
         _inputProvider = newProvider;
+      }
+    }
+
+    /// <summary>
+    /// Allows to set on which motion component the received input is applied to.
+    /// </summary>
+    /// <param name="newMotion">
+    /// New motion to apply input to.
+    /// If null the motion is not changed.
+    /// </param>
+    public void SetRigidMotion(RigidGeometryMotion newMotion)
+    {
+      if (newMotion != null)
+      {
+        _Motion = newMotion;
       }
     }
   }

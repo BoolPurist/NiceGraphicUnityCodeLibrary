@@ -248,6 +248,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 677017280}
+  - component: {fileID: 677017279}
   m_Layer: 0
   m_Name: Test
   m_TagString: Untagged
@@ -255,6 +256,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &677017279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677017278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6c8059093e55b64990f2c14883af081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _RandomMax: 5
+  _Prop: 0.5
 --- !u!4 &677017280
 Transform:
   m_ObjectHideFlags: 0
@@ -630,7 +645,6 @@ GameObject:
   - component: {fileID: 1596519685}
   - component: {fileID: 1596519684}
   - component: {fileID: 1596519683}
-  - component: {fileID: 1596519681}
   - component: {fileID: 1596519688}
   - component: {fileID: 1596519682}
   m_Layer: 0
@@ -640,18 +654,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1596519681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1596519680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 641f793ebfd161b46a8bc6a090848bcd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1596519682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -774,9 +776,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Motion: {fileID: 1596519682}
-  MoveLeft: 97
-  MoveRight: 100
-  MoveUp: 119
-  MoveDown: 115
-  MoveForward: 32
-  MoveBack: 99
+  moveLeft: 0
+  moveRight: 0
+  moveUp: 0
+  moveDown: 0
+  moveForward: 0
+  moveBack: 0
