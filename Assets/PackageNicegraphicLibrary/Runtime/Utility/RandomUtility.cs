@@ -65,7 +65,7 @@ namespace NiceGraphicLibrary.Utility
     /// // if returnValue is true then the chance with 80 percent has occurred from 200 percent as total.
     /// </code>    
     /// </example>
-    public static bool DoesChanceOccure(float probability, float total = 1f)
+    public static bool DoesChanceOccur(float probability, float total = 1f)
     {
       total = Mathf.Abs(total);
       probability = Mathf.Abs(probability);
