@@ -122,6 +122,22 @@ namespace NiceGraphicLibrary.Tests.Editor
       Assert.IsNull(arrayAsNull, $"array with value null should remain null.");
     }
 
+    [TestCaseSource(nameof(TestCases_ChooseByChances))]
+    public void Test_ChooseByChances(float[] chances, float randomValues, int expectedIndex)
+    {
+      RandomUtility.SetRandomGenerator(_fakeRandomGenerator);
+      _fakeRandomGenerator.FakeValue = randomValues;
+
+      int actualReturnedIndex = RandomUtility.ChooseByChances(chances);
+
+      Assert.AreEqual(
+        expectedIndex,
+        actualReturnedIndex,
+        $"The expected indes was not returned."
+        );
+    }
+
+
     #region Test routines
     private TElement[] CreateSortedCopy<TElement>(IEnumerable<TElement> sequenceToCopy)
     {
@@ -156,6 +172,42 @@ namespace NiceGraphicLibrary.Tests.Editor
     #endregion
 
     #region Test cases
+
+    public static object[] TestCases_ChooseByChances
+      => new object[]
+      {
+        new object[]
+        {
+          new float[] { 0.1f, 0.15f, 0.25f, 0.5f },
+          0.6f,
+          3
+        },
+        new object[]
+        {
+          new float[] { 0.1f, 0.15f, 0.25f, 0.5f },
+          1f,
+          3
+        },
+        new object[]
+        {
+          new float[] { 0.1f, 0.15f, 0.25f, 0.5f },
+          0.05f,
+          0
+        },
+        new object[]
+        {
+          new float[] { 0.1f, 0.15f, -0.25f, 0.5f },
+          0.12f,
+          1
+        },
+        new object[]
+        {
+          new float[] { 0.5f, 0.10f, 0.20f },
+          0.22f,
+          1
+        }
+      };
+
     public static object[] TestCases_Shuffel
       => new object[]
       {

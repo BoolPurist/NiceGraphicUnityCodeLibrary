@@ -74,9 +74,6 @@ namespace NiceGraphicLibrary.Utility
       return probabilityThreshold <= probability;
     }
 
-    private static int CompareForReverseSort(float x, float y)
-      => x.CompareTo(y) * -1;
-
     public static int ChooseByChances(IList<float> list)
     {
       float total = 0f;
@@ -89,7 +86,7 @@ namespace NiceGraphicLibrary.Utility
         total += absoluteChance;
       }
 
-      chances.Sort(CompareForReverseSort);
+      chances.Sort();
 
       float randomPoint = _randomGenerator.Value * total;
 
