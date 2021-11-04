@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface IRandomGenerator
+    <title>Class ICustomEnumerableExtension
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface IRandomGenerator
+    <meta name="title" content="Class ICustomEnumerableExtension
    ">
     <meta name="generator" content="docfx 2.58.4.0">
     
@@ -68,62 +68,60 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="NiceGraphicLibrary.IRandomGenerator">
+            <article class="content wrap" id="_content" data-uid="NiceGraphicLibrary.ICustomEnumerableExtension">
   
   
-  <h1 id="NiceGraphicLibrary_IRandomGenerator" data-uid="NiceGraphicLibrary.IRandomGenerator" class="text-break">Interface IRandomGenerator
+  <h1 id="NiceGraphicLibrary_ICustomEnumerableExtension" data-uid="NiceGraphicLibrary.ICustomEnumerableExtension" class="text-break">Class ICustomEnumerableExtension
   </h1>
-  <div class="markdown level0 summary"><p>Object to produce pseudo random numbers</p>
+  <div class="markdown level0 summary"><p>Extensions for all objects which are sequences</p>
 </div>
   <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ICustomEnumerableExtension</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="NiceGraphicLibrary.html">NiceGraphicLibrary</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="NiceGraphicLibrary_IRandomGenerator_syntax">Syntax</h5>
+  <h5 id="NiceGraphicLibrary_ICustomEnumerableExtension_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IRandomGenerator</code></pre>
+    <pre><code class="lang-csharp hljs">public static class ICustomEnumerableExtension</code></pre>
   </div>
-  <h5 id="NiceGraphicLibrary_IRandomGenerator_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>It not suitable to produce random numbers for security sakes</p>
-</div>
-  <h3 id="properties">Properties
-  </h3>
-  
-  
-  <a id="NiceGraphicLibrary_IRandomGenerator_Value_" data-uid="NiceGraphicLibrary.IRandomGenerator.Value*"></a>
-  <h4 id="NiceGraphicLibrary_IRandomGenerator_Value" data-uid="NiceGraphicLibrary.IRandomGenerator.Value">Value</h4>
-  <div class="markdown level1 summary"><p>Returns a random value between 0 and 1.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">float Value { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="methods">Methods
   </h3>
   
   
-  <a id="NiceGraphicLibrary_IRandomGenerator_Range_" data-uid="NiceGraphicLibrary.IRandomGenerator.Range*"></a>
-  <h4 id="NiceGraphicLibrary_IRandomGenerator_Range_System_Int32_System_Int32_" data-uid="NiceGraphicLibrary.IRandomGenerator.Range(System.Int32,System.Int32)">Range(Int32, Int32)</h4>
+  <a id="NiceGraphicLibrary_ICustomEnumerableExtension_GetValuesAsString_" data-uid="NiceGraphicLibrary.ICustomEnumerableExtension.GetValuesAsString*"></a>
+  <h4 id="NiceGraphicLibrary_ICustomEnumerableExtension_GetValuesAsString__1_IEnumerable___0__System_Int32_" data-uid="NiceGraphicLibrary.ICustomEnumerableExtension.GetValuesAsString``1(IEnumerable{``0},System.Int32)">GetValuesAsString&lt;TElement&gt;(IEnumerable&lt;TElement&gt;, Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">int Range(int minInclusive, int maxInclusive)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string GetValuesAsString&lt;TElement&gt;(this IEnumerable&lt;TElement&gt; sequence, int ElementsPerLine = 20)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -136,15 +134,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">minInclusive</span></td>
-        <td><p>Minimal value which can be returned</p>
+        <td><span class="xref">IEnumerable</span>&lt;TElement&gt;</td>
+        <td><span class="parametername">sequence</span></td>
+        <td><p>Sequence to get string from</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">maxInclusive</span></td>
-        <td><p>Maximum value which can be returned</p>
+        <td><span class="parametername">ElementsPerLine</span></td>
+        <td><p>How many elements are in one line of the sequence</p>
 </td>
       </tr>
     </tbody>
@@ -159,12 +157,31 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><p>Returns a whole number between minInclusive and maxInclusive</p>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Returns one textuell representation of an sequence</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TElement</span></td>
+        <td><p>Type of an element in the sequence</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="NiceGraphicLibrary_ICustomEnumerableExtension_GetValuesAsString__1_IEnumerable___0__System_Int32__examples">Examples</h5>
+  <p>For an array new int[] { 1, 2, 3, 4, 5 } it returns [ 1, 2, 3, 4, 5 ]</p>
+
 </article>
           </div>
           

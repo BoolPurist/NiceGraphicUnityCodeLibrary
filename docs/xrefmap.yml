@@ -1482,6 +1482,50 @@ references:
   commentId: N:NiceGraphicLibrary.Extensions
   fullName: NiceGraphicLibrary.Extensions
   nameWithType: NiceGraphicLibrary.Extensions
+- uid: NiceGraphicLibrary.Extensions.ICustomEnumerableExtension
+  name: ICustomEnumerableExtension
+  href: api/NiceGraphicLibrary.Extensions.ICustomEnumerableExtension.html
+  commentId: T:NiceGraphicLibrary.Extensions.ICustomEnumerableExtension
+  fullName: NiceGraphicLibrary.Extensions.ICustomEnumerableExtension
+  nameWithType: ICustomEnumerableExtension
+- uid: NiceGraphicLibrary.Extensions.ICustomEnumerableExtension.GetValuesAsString*
+  name: GetValuesAsString
+  href: api/NiceGraphicLibrary.Extensions.ICustomEnumerableExtension.html#NiceGraphicLibrary_Extensions_ICustomEnumerableExtension_GetValuesAsString_
+  commentId: Overload:NiceGraphicLibrary.Extensions.ICustomEnumerableExtension.GetValuesAsString
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Extensions.ICustomEnumerableExtension.GetValuesAsString
+  nameWithType: ICustomEnumerableExtension.GetValuesAsString
+- uid: NiceGraphicLibrary.Extensions.ICustomEnumerableExtension.GetValuesAsString``1(IEnumerable{``0},System.Int32)
+  name: GetValuesAsString<TElement>(IEnumerable<TElement>, Int32)
+  href: api/NiceGraphicLibrary.Extensions.ICustomEnumerableExtension.html#NiceGraphicLibrary_Extensions_ICustomEnumerableExtension_GetValuesAsString__1_IEnumerable___0__System_Int32_
+  commentId: M:NiceGraphicLibrary.Extensions.ICustomEnumerableExtension.GetValuesAsString``1(IEnumerable{``0},System.Int32)
+  name.vb: GetValuesAsString(Of TElement)(IEnumerable(Of TElement), Int32)
+  fullName: NiceGraphicLibrary.Extensions.ICustomEnumerableExtension.GetValuesAsString<TElement>(IEnumerable<TElement>, System.Int32)
+  fullName.vb: NiceGraphicLibrary.Extensions.ICustomEnumerableExtension.GetValuesAsString(Of TElement)(IEnumerable(Of TElement), System.Int32)
+  nameWithType: ICustomEnumerableExtension.GetValuesAsString<TElement>(IEnumerable<TElement>, Int32)
+  nameWithType.vb: ICustomEnumerableExtension.GetValuesAsString(Of TElement)(IEnumerable(Of TElement), Int32)
+- uid: NiceGraphicLibrary.Extensions.QueueExtension
+  name: QueueExtension
+  href: api/NiceGraphicLibrary.Extensions.QueueExtension.html
+  commentId: T:NiceGraphicLibrary.Extensions.QueueExtension
+  fullName: NiceGraphicLibrary.Extensions.QueueExtension
+  nameWithType: QueueExtension
+- uid: NiceGraphicLibrary.Extensions.QueueExtension.EnqueueRange*
+  name: EnqueueRange
+  href: api/NiceGraphicLibrary.Extensions.QueueExtension.html#NiceGraphicLibrary_Extensions_QueueExtension_EnqueueRange_
+  commentId: Overload:NiceGraphicLibrary.Extensions.QueueExtension.EnqueueRange
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Extensions.QueueExtension.EnqueueRange
+  nameWithType: QueueExtension.EnqueueRange
+- uid: NiceGraphicLibrary.Extensions.QueueExtension.EnqueueRange``1(Queue{``0},IEnumerable{``0})
+  name: EnqueueRange<T>(Queue<T>, IEnumerable<T>)
+  href: api/NiceGraphicLibrary.Extensions.QueueExtension.html#NiceGraphicLibrary_Extensions_QueueExtension_EnqueueRange__1_Queue___0__IEnumerable___0__
+  commentId: M:NiceGraphicLibrary.Extensions.QueueExtension.EnqueueRange``1(Queue{``0},IEnumerable{``0})
+  name.vb: EnqueueRange(Of T)(Queue(Of T), IEnumerable(Of T))
+  fullName: NiceGraphicLibrary.Extensions.QueueExtension.EnqueueRange<T>(Queue<T>, IEnumerable<T>)
+  fullName.vb: NiceGraphicLibrary.Extensions.QueueExtension.EnqueueRange(Of T)(Queue(Of T), IEnumerable(Of T))
+  nameWithType: QueueExtension.EnqueueRange<T>(Queue<T>, IEnumerable<T>)
+  nameWithType.vb: QueueExtension.EnqueueRange(Of T)(Queue(Of T), IEnumerable(Of T))
 - uid: NiceGraphicLibrary.Extensions.StringExtension
   name: StringExtension
   href: api/NiceGraphicLibrary.Extensions.StringExtension.html
@@ -3455,19 +3499,19 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.Utility.RandomUtility.ChooseByChances
   nameWithType: RandomUtility.ChooseByChances
-- uid: NiceGraphicLibrary.Utility.RandomUtility.DoesChanceOccure(System.Single,System.Single)
-  name: DoesChanceOccure(Single, Single)
-  href: api/NiceGraphicLibrary.Utility.RandomUtility.html#NiceGraphicLibrary_Utility_RandomUtility_DoesChanceOccure_System_Single_System_Single_
-  commentId: M:NiceGraphicLibrary.Utility.RandomUtility.DoesChanceOccure(System.Single,System.Single)
-  fullName: NiceGraphicLibrary.Utility.RandomUtility.DoesChanceOccure(System.Single, System.Single)
-  nameWithType: RandomUtility.DoesChanceOccure(Single, Single)
-- uid: NiceGraphicLibrary.Utility.RandomUtility.DoesChanceOccure*
-  name: DoesChanceOccure
-  href: api/NiceGraphicLibrary.Utility.RandomUtility.html#NiceGraphicLibrary_Utility_RandomUtility_DoesChanceOccure_
-  commentId: Overload:NiceGraphicLibrary.Utility.RandomUtility.DoesChanceOccure
+- uid: NiceGraphicLibrary.Utility.RandomUtility.DoesChanceOccur(System.Single,System.Single)
+  name: DoesChanceOccur(Single, Single)
+  href: api/NiceGraphicLibrary.Utility.RandomUtility.html#NiceGraphicLibrary_Utility_RandomUtility_DoesChanceOccur_System_Single_System_Single_
+  commentId: M:NiceGraphicLibrary.Utility.RandomUtility.DoesChanceOccur(System.Single,System.Single)
+  fullName: NiceGraphicLibrary.Utility.RandomUtility.DoesChanceOccur(System.Single, System.Single)
+  nameWithType: RandomUtility.DoesChanceOccur(Single, Single)
+- uid: NiceGraphicLibrary.Utility.RandomUtility.DoesChanceOccur*
+  name: DoesChanceOccur
+  href: api/NiceGraphicLibrary.Utility.RandomUtility.html#NiceGraphicLibrary_Utility_RandomUtility_DoesChanceOccur_
+  commentId: Overload:NiceGraphicLibrary.Utility.RandomUtility.DoesChanceOccur
   isSpec: "True"
-  fullName: NiceGraphicLibrary.Utility.RandomUtility.DoesChanceOccure
-  nameWithType: RandomUtility.DoesChanceOccure
+  fullName: NiceGraphicLibrary.Utility.RandomUtility.DoesChanceOccur
+  nameWithType: RandomUtility.DoesChanceOccur
 - uid: NiceGraphicLibrary.Utility.RandomUtility.PickRandomFrom*
   name: PickRandomFrom
   href: api/NiceGraphicLibrary.Utility.RandomUtility.html#NiceGraphicLibrary_Utility_RandomUtility_PickRandomFrom_

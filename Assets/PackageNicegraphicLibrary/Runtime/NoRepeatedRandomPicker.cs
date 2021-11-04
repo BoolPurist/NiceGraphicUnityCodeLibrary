@@ -8,7 +8,9 @@ namespace NiceGraphicLibrary.Utility
 {
   public class NoRepeatedRandomPicker<TElement>
   {
+#pragma warning disable IDE0090 // Use 'new(...)'
     private List<TElement> _innerCollection = new List<TElement>();
+#pragma warning restore IDE0090 // Use 'new(...)'
     private int _currentIndex = -1;
 
     public NoRepeatedRandomPicker(IEnumerable<TElement> collectionToPickFrom)
@@ -22,7 +24,7 @@ namespace NiceGraphicLibrary.Utility
       {
         if (_innerCollection.Count == 0)
         {
-          return default(TElement);
+          return default;
         }
         else
         {          

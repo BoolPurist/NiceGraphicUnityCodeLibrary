@@ -112,12 +112,19 @@ namespace NiceGraphicLibrary.Utility
 
     public static void Shuffle<TElement>(IList<TElement> list)
     {
-      for (int i = 0; i < list.Count; i++)
+      if (list == null)
       {
-        TElement temp = list[i];
-        int randomIndex = _randomGenerator.Range(0, list.Count);
-        list[i] = list[randomIndex];
-        list[randomIndex] = temp;
+        return;
+      }
+      else
+      {
+        for (int i = 0; i < list.Count; i++)
+        {
+          TElement temp = list[i];
+          int randomIndex = _randomGenerator.Range(0, list.Count);
+          list[i] = list[randomIndex];
+          list[randomIndex] = temp;
+        }
       }
     }
   }

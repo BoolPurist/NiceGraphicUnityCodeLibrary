@@ -7,6 +7,7 @@ using UnityEngine;
 using UnityEngine.TestTools;
 
 using NiceGraphicLibrary.Utility;
+using NiceGraphicLibrary.Extensions;
 using NiceGraphicLibrary.Tests.Editor.Stubs;
 
 namespace NiceGraphicLibrary.Tests.Editor
@@ -39,30 +40,17 @@ namespace NiceGraphicLibrary.Tests.Editor
     [TestCaseSource(nameof(TestCases_SomeArrays))]
     public void Test_PickRandomFrom_ShouldReturnRandomValue(int[] input, int numberOfInvocations)
     {
-      // Set up
-      int length = input.Length;
-      var cachedSortedInputArry = new int[length];
-      Array.Copy(input, cachedSortedInputArry, length);
-      Array.Sort(cachedSortedInputArry);
+      // Set up      
+      int[] cachedSortedInputArry = CreateSortedCopy(input);
 
       // Act
       int[] expectedRandomValues = CreateExpectedRandomArray(out int[] indexesToFake);
       RandomUtility.SetRandomGenerator(_fakeRandomGenerator);
       int[] actualRandomValues = CreateActualRandomArray(indexesToFake);
 
-      // Assert
-      Assert.AreEqual(
-        expectedRandomValues, 
-        actualRandomValues, 
-        $"Random value are not as expected with test seed"
-        );
+      AssertIfActualMatchesExpected(expectedRandomValues, actualRandomValues);
 
-      Array.Sort(input);
-      Assert.AreEqual(
-        cachedSortedInputArry, 
-        input,
-        $"Content of some element was changed"
-        );
+      AssertIfContentOfSequenceWasNotChanged(input, cachedSortedInputArry);
 
       int[] CreateExpectedRandomArray(out int[] randomIndexes)
       {
@@ -105,7 +93,7 @@ namespace NiceGraphicLibrary.Tests.Editor
     {
       RandomUtility.SetRandomGenerator(_fakeRandomGenerator);
       _fakeRandomGenerator.FakeValue = actualFakeRandomValue;
-      bool actualReturnValue = RandomUtility.DoesChanceOccure(acutalGivenProbability, actualGivenTotal);
+      bool actualReturnValue = RandomUtility.DoesChanceOccur(acutalGivenProbability, actualGivenTotal);
       Assert.AreEqual(
         expectedReturnValue, 
         actualReturnValue, 
@@ -114,7 +102,89 @@ namespace NiceGraphicLibrary.Tests.Editor
         );
     }
 
+    [TestCaseSource(nameof(TestCases_Shuffel))]
+    public void Test_Shuffle(int[] randomRangeValues, int[] actualArray, int[] expectedArray)
+    {
+      var cachedActualArrayInSorted = CreateSortedCopy(actualArray);
+      _fakeRandomGenerator.AddRandomRangeValues(randomRangeValues);
+      RandomUtility.SetRandomGenerator(_fakeRandomGenerator);
+      RandomUtility.Shuffle(actualArray);
+
+      AssertIfActualMatchesExpected(expectedArray, actualArray);
+      AssertIfContentOfSequenceWasNotChanged(actualArray, cachedActualArrayInSorted);
+    }
+
+    [Test]
+    public void Test_Shuffle_WithNull()
+    {
+      int[] arrayAsNull = null;
+      RandomUtility.Shuffle(arrayAsNull);
+      Assert.IsNull(arrayAsNull, $"array with value null should remain null.");
+    }
+
+    #region Test routines
+    private TElement[] CreateSortedCopy<TElement>(IEnumerable<TElement> sequenceToCopy)
+    {
+      // Set up
+      TElement[] cachedSortedInputArray = sequenceToCopy.ToArray();
+      Array.Sort(cachedSortedInputArray);
+      return cachedSortedInputArray;
+    }
+
+    private void AssertIfContentOfSequenceWasNotChanged(int[] sequnceToCheck, int[] originalSorted)
+    {
+      Array.Sort(sequnceToCheck);
+      Assert.AreEqual(
+        originalSorted,
+        sequnceToCheck,
+        $"Content of some element was changed" +
+        $"Actual result: {sequnceToCheck.GetValuesAsString()}"
+        );
+    }
+
+    private void AssertIfActualMatchesExpected(int[] expectedSequence, int[] actualSequence)
+    {
+      // Assert
+      Assert.AreEqual(
+        expectedSequence,
+        actualSequence,
+        $"Random value are not as expected." +
+        $"Expected result: {expectedSequence.GetValuesAsString()}" +
+        $"Actual result: {actualSequence.GetValuesAsString()}"
+        );
+    }
+    #endregion
+
     #region Test cases
+    public static object[] TestCases_Shuffel
+      => new object[]
+      {
+        new object[]
+        {
+          new int[] { 1, 1 },
+          Enumerable.Range(1, 2).ToArray(),
+          new int[] { 2, 1 },
+        },
+        new object[]
+        {
+          new int[] { 0 },
+          new int[] { 20 },
+          new int[] { 20 },
+        },
+        new object[]
+        {
+          new int[] { 0 },
+          new int[] {  },
+          new int[] {  },
+        },
+        new object[]
+        {
+          new int[] { 1, 3, 4, 1, 4},
+          Enumerable.Range(1, 5).ToArray(),
+          new int[] { 2, 1, 5, 4, 3 },
+        }
+      };
+
     public static object[] TestCases_DoesChanceOccure
       => new object[]
       {
