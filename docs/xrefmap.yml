@@ -41,6 +41,32 @@ references:
   commentId: T:NiceGraphicLibrary.Component.Debugging.DebugValueScreenViewer
   fullName: NiceGraphicLibrary.Component.Debugging.DebugValueScreenViewer
   nameWithType: DebugValueScreenViewer
+- uid: NiceGraphicLibrary.Component.Debugging.DebugValueScreenViewer.Awake
+  name: Awake()
+  href: api/NiceGraphicLibrary.Component.Debugging.DebugValueScreenViewer.html#NiceGraphicLibrary_Component_Debugging_DebugValueScreenViewer_Awake
+  commentId: M:NiceGraphicLibrary.Component.Debugging.DebugValueScreenViewer.Awake
+  fullName: NiceGraphicLibrary.Component.Debugging.DebugValueScreenViewer.Awake()
+  nameWithType: DebugValueScreenViewer.Awake()
+- uid: NiceGraphicLibrary.Component.Debugging.DebugValueScreenViewer.Awake*
+  name: Awake
+  href: api/NiceGraphicLibrary.Component.Debugging.DebugValueScreenViewer.html#NiceGraphicLibrary_Component_Debugging_DebugValueScreenViewer_Awake_
+  commentId: Overload:NiceGraphicLibrary.Component.Debugging.DebugValueScreenViewer.Awake
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Component.Debugging.DebugValueScreenViewer.Awake
+  nameWithType: DebugValueScreenViewer.Awake
+- uid: NiceGraphicLibrary.Component.Debugging.DebugValueScreenViewer.ContentAlignment
+  name: ContentAlignment
+  href: api/NiceGraphicLibrary.Component.Debugging.DebugValueScreenViewer.html#NiceGraphicLibrary_Component_Debugging_DebugValueScreenViewer_ContentAlignment
+  commentId: P:NiceGraphicLibrary.Component.Debugging.DebugValueScreenViewer.ContentAlignment
+  fullName: NiceGraphicLibrary.Component.Debugging.DebugValueScreenViewer.ContentAlignment
+  nameWithType: DebugValueScreenViewer.ContentAlignment
+- uid: NiceGraphicLibrary.Component.Debugging.DebugValueScreenViewer.ContentAlignment*
+  name: ContentAlignment
+  href: api/NiceGraphicLibrary.Component.Debugging.DebugValueScreenViewer.html#NiceGraphicLibrary_Component_Debugging_DebugValueScreenViewer_ContentAlignment_
+  commentId: Overload:NiceGraphicLibrary.Component.Debugging.DebugValueScreenViewer.ContentAlignment
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Component.Debugging.DebugValueScreenViewer.ContentAlignment
+  nameWithType: DebugValueScreenViewer.ContentAlignment
 - uid: NiceGraphicLibrary.Component.Debugging.DebugValueScreenViewer.RemoveValue(System.String)
   name: RemoveValue(String)
   href: api/NiceGraphicLibrary.Component.Debugging.DebugValueScreenViewer.html#NiceGraphicLibrary_Component_Debugging_DebugValueScreenViewer_RemoveValue_System_String_
@@ -1460,22 +1486,22 @@ references:
   commentId: T:NiceGraphicLibrary.ErrorMessages
   fullName: NiceGraphicLibrary.ErrorMessages
   nameWithType: ErrorMessages
-- uid: NiceGraphicLibrary.ErrorMessages.NotAccountedEnumValue*
-  name: NotAccountedEnumValue
-  href: api/NiceGraphicLibrary.ErrorMessages.html#NiceGraphicLibrary_ErrorMessages_NotAccountedEnumValue_
-  commentId: Overload:NiceGraphicLibrary.ErrorMessages.NotAccountedEnumValue
+- uid: NiceGraphicLibrary.ErrorMessages.NotAccountedValueInSwitch*
+  name: NotAccountedValueInSwitch
+  href: api/NiceGraphicLibrary.ErrorMessages.html#NiceGraphicLibrary_ErrorMessages_NotAccountedValueInSwitch_
+  commentId: Overload:NiceGraphicLibrary.ErrorMessages.NotAccountedValueInSwitch
   isSpec: "True"
-  fullName: NiceGraphicLibrary.ErrorMessages.NotAccountedEnumValue
-  nameWithType: ErrorMessages.NotAccountedEnumValue
-- uid: NiceGraphicLibrary.ErrorMessages.NotAccountedEnumValue``1(``0)
-  name: NotAccountedEnumValue<T>(T)
-  href: api/NiceGraphicLibrary.ErrorMessages.html#NiceGraphicLibrary_ErrorMessages_NotAccountedEnumValue__1___0_
-  commentId: M:NiceGraphicLibrary.ErrorMessages.NotAccountedEnumValue``1(``0)
-  name.vb: NotAccountedEnumValue(Of T)(T)
-  fullName: NiceGraphicLibrary.ErrorMessages.NotAccountedEnumValue<T>(T)
-  fullName.vb: NiceGraphicLibrary.ErrorMessages.NotAccountedEnumValue(Of T)(T)
-  nameWithType: ErrorMessages.NotAccountedEnumValue<T>(T)
-  nameWithType.vb: ErrorMessages.NotAccountedEnumValue(Of T)(T)
+  fullName: NiceGraphicLibrary.ErrorMessages.NotAccountedValueInSwitch
+  nameWithType: ErrorMessages.NotAccountedValueInSwitch
+- uid: NiceGraphicLibrary.ErrorMessages.NotAccountedValueInSwitch``1(``0)
+  name: NotAccountedValueInSwitch<T>(T)
+  href: api/NiceGraphicLibrary.ErrorMessages.html#NiceGraphicLibrary_ErrorMessages_NotAccountedValueInSwitch__1___0_
+  commentId: M:NiceGraphicLibrary.ErrorMessages.NotAccountedValueInSwitch``1(``0)
+  name.vb: NotAccountedValueInSwitch(Of T)(T)
+  fullName: NiceGraphicLibrary.ErrorMessages.NotAccountedValueInSwitch<T>(T)
+  fullName.vb: NiceGraphicLibrary.ErrorMessages.NotAccountedValueInSwitch(Of T)(T)
+  nameWithType: ErrorMessages.NotAccountedValueInSwitch<T>(T)
+  nameWithType.vb: ErrorMessages.NotAccountedValueInSwitch(Of T)(T)
 - uid: NiceGraphicLibrary.Extensions
   name: NiceGraphicLibrary.Extensions
   href: api/NiceGraphicLibrary.Extensions.html
