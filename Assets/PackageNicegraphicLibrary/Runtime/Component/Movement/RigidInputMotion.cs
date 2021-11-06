@@ -27,7 +27,7 @@ namespace NiceGraphicLibrary.Component.Movement
     public TInput MoveForward { get => moveForward; set => moveForward = value; }
     public TInput MoveBack { get => moveBack; set => moveBack = value; }
 
-    protected IKeyButtonProvider _inputProvider = new UnityKeyButtonProvider();
+    protected IGameInputProvider _inputProvider = new UnityGameInputProvider();
 
 
     private void Start()
@@ -64,7 +64,7 @@ namespace NiceGraphicLibrary.Component.Movement
 
     protected abstract bool InputChecker(TInput input);
 
-    public void SetKeyButtonProvider(IKeyButtonProvider newProvider)
+    public void SetKeyButtonProvider(IGameInputProvider newProvider)
     {
       if (newProvider != null)
       {

@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace NiceGraphicLibrary
 {
-  public class UnityKeyButtonProvider : IKeyButtonProvider
+  public class UnityGameInputProvider : IGameInputProvider
   {
     public float GetAxis(string axisName)
       => Input.GetAxis(axisName);
@@ -37,6 +37,7 @@ namespace NiceGraphicLibrary
     public bool GetKeyUp(KeyCode keyCode)
       => Input.GetKeyUp(keyCode);
 
-
+    public Vector2 GetMousePosition()
+     => Input.mousePosition;
   }
 }

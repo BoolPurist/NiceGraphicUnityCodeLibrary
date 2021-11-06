@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace NiceGraphicLibrary.Tests.Editor.Stubs
 {
-  public partial class FakeKeyButtonProvider
+  public partial class FakeGameInputProvider
   {
     private class InputState
     {

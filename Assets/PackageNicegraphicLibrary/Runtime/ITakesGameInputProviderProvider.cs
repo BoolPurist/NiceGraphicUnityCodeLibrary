@@ -5,8 +5,8 @@ using UnityEngine;
 
 namespace NiceGraphicLibrary
 {
-  public interface ITakesKeyButtonProvider
+  public interface ITakesGameInputProviderProvider
   {
-    public void SetKeyButtonProvider(IKeyButtonProvider newProvider);
+    public void SetKeyButtonProvider(IGameInputProvider newProvider);
   }
 }

@@ -13,12 +13,12 @@ namespace NiceGraphicLibrary.Tests.Editor
   [TestFixture]
   public class Test_FakeKeyButtonProvider
   {
-    public FakeKeyButtonProvider _fakeProvider;
+    public FakeGameInputProvider _fakeProvider;
 
     [SetUp]
     public void SetUp()
     {
-      _fakeProvider = new FakeKeyButtonProvider();
+      _fakeProvider = new FakeGameInputProvider();
     }
 
     [Test]

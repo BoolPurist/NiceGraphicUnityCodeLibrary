@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace NiceGraphicLibrary
 {
-  public interface IKeyButtonProvider
+  public interface IGameInputProvider
   {
     public bool GetKey(string keyName);
     public bool GetKey(KeyCode keyCode);
@@ -19,5 +19,7 @@ namespace NiceGraphicLibrary
     bool GetButtonUp(string buttonName);
 
     float GetAxis(string axisName);
+
+    Vector2 GetMousePosition();
   }
 }

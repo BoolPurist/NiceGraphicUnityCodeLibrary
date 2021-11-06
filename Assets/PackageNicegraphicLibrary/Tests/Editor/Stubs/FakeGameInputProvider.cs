@@ -8,7 +8,7 @@ using UnityEngine;
 
 namespace NiceGraphicLibrary.Tests.Editor.Stubs
 {
-  public partial class FakeKeyButtonProvider : IKeyButtonProvider
+  public partial class FakeGameInputProvider : IGameInputProvider
   {
 #pragma warning disable IDE0090 // Use 'new(...)'
     private readonly Dictionary<KeyCode, InputState> _keyCodes = new Dictionary<KeyCode, InputState>();
@@ -16,6 +16,8 @@ namespace NiceGraphicLibrary.Tests.Editor.Stubs
     private readonly Dictionary<string, InputState> _buttonNames = new Dictionary<string, InputState>();
     private readonly Dictionary<string, float> _axisNames = new Dictionary<string, float>();
 #pragma warning restore IDE0090 // Use 'new(...)'
+
+    public Vector2 FakeMousePosition { get; set; } = Vector2.zero;
 
     public void UpdateKeyCode(InpuType type, KeyCode code, bool newValue)
       => SetInputState(_keyCodes, code, newValue, type);
@@ -73,6 +75,8 @@ namespace NiceGraphicLibrary.Tests.Editor.Stubs
       }
     }
 
+
+
     public bool GetButton(string buttonName)
       => GetInputState(_buttonNames, buttonName, InpuType.Pressed);
 
@@ -100,6 +104,11 @@ namespace NiceGraphicLibrary.Tests.Editor.Stubs
     public bool GetKeyUp(KeyCode keyCode)
       => GetInputState(_keyCodes, keyCode, InpuType.Released);
 
+    public Vector2 GetMousePosition()
+     => FakeMousePosition;
+
+
+
     private bool GetInputState<TName>(Dictionary<TName, InputState> dictionary, TName name, InpuType type)
     {
       if (dictionary.ContainsKey(name))
@@ -124,8 +133,8 @@ namespace NiceGraphicLibrary.Tests.Editor.Stubs
         newState.SetInputStateActive(type, newValue);
         dictionary.Add(name, newState);
       }
-    }    
+    }
 
-  
+   
   }
 }
