@@ -69,6 +69,7 @@ namespace NiceGraphicLibrary.Utility
 
     /// <summary>
     /// Changes given sequence to choose random elements from.
+    /// A copy of the given sequence is created as inner sequence for picking.
     /// </summary>
     /// <param name="collectionToPickFrom">
     /// New given sequence for picking random elements.

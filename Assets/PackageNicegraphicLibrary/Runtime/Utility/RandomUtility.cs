@@ -5,11 +5,21 @@ using UnityEngine;
 
 namespace NiceGraphicLibrary.Utility
 {
+  /// <summary>
+  /// Collection of functions for working with randomness in a game.
+  /// </summary>
   public static class RandomUtility
   {
 
     private static IRandomGenerator _randomGenerator = new UnityRandomGenerator();
 
+    /// <summary>
+    /// Changes implementation of generating randomness of the functions under this class.
+    /// </summary>
+    /// <param name="newRandomGenerator">
+    /// New implementation to use for generating randomness
+    /// If null the old implementation is kept
+    /// </param>
     public static void SetRandomGenerator(IRandomGenerator newRandomGenerator)
     {
       if (newRandomGenerator != null)
@@ -74,6 +84,15 @@ namespace NiceGraphicLibrary.Utility
       return probabilityThreshold <= probability;
     }
 
+    /// <summary>
+    /// Take a sequence of given chances and returns first smallest chance occurred. 
+    /// </summary>
+    /// <param name="list">
+    /// Given sequence to choose the index from
+    /// </param>
+    /// <returns>
+    /// Randomly chosen index from the given sequence
+    /// </returns>
     public static int ChooseByChances(IList<float> list)
     {
       float total = 0f;
@@ -107,6 +126,9 @@ namespace NiceGraphicLibrary.Utility
       return chances.Count - 1;
     }
 
+    /// <summary>
+    /// Shuffles the give sequence so elements are in new random order.
+    /// </summary>
     public static void Shuffle<TElement>(IList<TElement> list)
     {
       if (list == null)
