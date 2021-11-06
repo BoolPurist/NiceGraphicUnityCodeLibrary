@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class ButtonRigidMotion
+    <title>Class FollowMouse
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class ButtonRigidMotion
+    <meta name="title" content="Class FollowMouse
    ">
     <meta name="generator" content="docfx 2.58.4.0">
     
@@ -68,69 +68,40 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="NiceGraphicLibrary.Component.Movement.ButtonRigidMotion">
+            <article class="content wrap" id="_content" data-uid="NiceGraphicLibrary.Component.Movement.FollowMouse">
   
   
-  <h1 id="NiceGraphicLibrary_Component_Movement_ButtonRigidMotion" data-uid="NiceGraphicLibrary.Component.Movement.ButtonRigidMotion" class="text-break">Class ButtonRigidMotion
+  <h1 id="NiceGraphicLibrary_Component_Movement_FollowMouse" data-uid="NiceGraphicLibrary.Component.Movement.FollowMouse" class="text-break">Class FollowMouse
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Game object which the component is attached to, follows the mouse cursor.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><a class="xref" href="NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html">RigidInputMotion</a>&lt;<span class="xref">System.String</span>&gt;</div>
-    <div class="level2"><span class="xref">ButtonRigidMotion</span></div>
+    <div class="level1"><span class="xref">FollowMouse</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_MoveLeft">RigidInputMotion&lt;String&gt;.MoveLeft</a>
-    </div>
-    <div>
-      <a class="xref" href="NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_MoveRight">RigidInputMotion&lt;String&gt;.MoveRight</a>
-    </div>
-    <div>
-      <a class="xref" href="NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_MoveUp">RigidInputMotion&lt;String&gt;.MoveUp</a>
-    </div>
-    <div>
-      <a class="xref" href="NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_MoveDown">RigidInputMotion&lt;String&gt;.MoveDown</a>
-    </div>
-    <div>
-      <a class="xref" href="NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_MoveForward">RigidInputMotion&lt;String&gt;.MoveForward</a>
-    </div>
-    <div>
-      <a class="xref" href="NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_MoveBack">RigidInputMotion&lt;String&gt;.MoveBack</a>
-    </div>
-    <div>
-      <a class="xref" href="NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1__inputProvider">RigidInputMotion&lt;String&gt;._inputProvider</a>
-    </div>
-    <div>
-      <a class="xref" href="NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_Update">RigidInputMotion&lt;String&gt;.Update()</a>
-    </div>
-    <div>
-      <a class="xref" href="NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_SetKeyButtonProvider_NiceGraphicLibrary_IGameInputProvider_">RigidInputMotion&lt;String&gt;.SetKeyButtonProvider(IGameInputProvider)</a>
-    </div>
-    <div>
-      <a class="xref" href="NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_SetRigidMotion_NiceGraphicLibrary_Component_Movement_RigidGeometryMotion_">RigidInputMotion&lt;String&gt;.SetRigidMotion(RigidGeometryMotion)</a>
-    </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="NiceGraphicLibrary.ITakesGameInputProviderProvider.html">ITakesGameInputProviderProvider</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="NiceGraphicLibrary.Component.Movement.html">NiceGraphicLibrary.Component.Movement</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="NiceGraphicLibrary_Component_Movement_ButtonRigidMotion_syntax">Syntax</h5>
+  <h5 id="NiceGraphicLibrary_Component_Movement_FollowMouse_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ButtonRigidMotion : RigidInputMotion&lt;string&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class FollowMouse : MonoBehaviour, ITakesGameInputProviderProvider</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   
   
-  <a id="NiceGraphicLibrary_Component_Movement_ButtonRigidMotion_InputChecker_" data-uid="NiceGraphicLibrary.Component.Movement.ButtonRigidMotion.InputChecker*"></a>
-  <h4 id="NiceGraphicLibrary_Component_Movement_ButtonRigidMotion_InputChecker_System_String_" data-uid="NiceGraphicLibrary.Component.Movement.ButtonRigidMotion.InputChecker(System.String)">InputChecker(String)</h4>
+  <a id="NiceGraphicLibrary_Component_Movement_FollowMouse_SetKeyButtonProvider_" data-uid="NiceGraphicLibrary.Component.Movement.FollowMouse.SetKeyButtonProvider*"></a>
+  <h4 id="NiceGraphicLibrary_Component_Movement_FollowMouse_SetKeyButtonProvider_NiceGraphicLibrary_IGameInputProvider_" data-uid="NiceGraphicLibrary.Component.Movement.FollowMouse.SetKeyButtonProvider(NiceGraphicLibrary.IGameInputProvider)">SetKeyButtonProvider(IGameInputProvider)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override bool InputChecker(string input)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SetKeyButtonProvider(IGameInputProvider newProvider)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -143,29 +114,16 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">input</span></td>
+        <td><a class="xref" href="NiceGraphicLibrary.IGameInputProvider.html">IGameInputProvider</a></td>
+        <td><span class="parametername">newProvider</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">NiceGraphicLibrary.Component.Movement.RigidInputMotion&lt;System.String&gt;.InputChecker(System.String)</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="NiceGraphicLibrary.ITakesGameInputProviderProvider.html">ITakesGameInputProviderProvider</a>
+  </div>
 </article>
           </div>
           

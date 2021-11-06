@@ -216,6 +216,25 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.Component.Movement.Follow.Update
   nameWithType: Follow.Update
+- uid: NiceGraphicLibrary.Component.Movement.FollowMouse
+  name: FollowMouse
+  href: api/NiceGraphicLibrary.Component.Movement.FollowMouse.html
+  commentId: T:NiceGraphicLibrary.Component.Movement.FollowMouse
+  fullName: NiceGraphicLibrary.Component.Movement.FollowMouse
+  nameWithType: FollowMouse
+- uid: NiceGraphicLibrary.Component.Movement.FollowMouse.SetKeyButtonProvider(NiceGraphicLibrary.IGameInputProvider)
+  name: SetKeyButtonProvider(IGameInputProvider)
+  href: api/NiceGraphicLibrary.Component.Movement.FollowMouse.html#NiceGraphicLibrary_Component_Movement_FollowMouse_SetKeyButtonProvider_NiceGraphicLibrary_IGameInputProvider_
+  commentId: M:NiceGraphicLibrary.Component.Movement.FollowMouse.SetKeyButtonProvider(NiceGraphicLibrary.IGameInputProvider)
+  fullName: NiceGraphicLibrary.Component.Movement.FollowMouse.SetKeyButtonProvider(NiceGraphicLibrary.IGameInputProvider)
+  nameWithType: FollowMouse.SetKeyButtonProvider(IGameInputProvider)
+- uid: NiceGraphicLibrary.Component.Movement.FollowMouse.SetKeyButtonProvider*
+  name: SetKeyButtonProvider
+  href: api/NiceGraphicLibrary.Component.Movement.FollowMouse.html#NiceGraphicLibrary_Component_Movement_FollowMouse_SetKeyButtonProvider_
+  commentId: Overload:NiceGraphicLibrary.Component.Movement.FollowMouse.SetKeyButtonProvider
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Component.Movement.FollowMouse.SetKeyButtonProvider
+  nameWithType: FollowMouse.SetKeyButtonProvider
 - uid: NiceGraphicLibrary.Component.Movement.InterpolationKind
   name: InterpolationKind
   href: api/NiceGraphicLibrary.Component.Movement.InterpolationKind.html
@@ -827,14 +846,14 @@ references:
   fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInputMotion(Of TInput).MoveUp
   nameWithType: RigidInputMotion<TInput>.MoveUp
   nameWithType.vb: RigidInputMotion(Of TInput).MoveUp
-- uid: NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.SetKeyButtonProvider(NiceGraphicLibrary.IKeyButtonProvider)
-  name: SetKeyButtonProvider(IKeyButtonProvider)
-  href: api/NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_SetKeyButtonProvider_NiceGraphicLibrary_IKeyButtonProvider_
-  commentId: M:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.SetKeyButtonProvider(NiceGraphicLibrary.IKeyButtonProvider)
-  fullName: NiceGraphicLibrary.Component.Movement.RigidInputMotion<TInput>.SetKeyButtonProvider(NiceGraphicLibrary.IKeyButtonProvider)
-  fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInputMotion(Of TInput).SetKeyButtonProvider(NiceGraphicLibrary.IKeyButtonProvider)
-  nameWithType: RigidInputMotion<TInput>.SetKeyButtonProvider(IKeyButtonProvider)
-  nameWithType.vb: RigidInputMotion(Of TInput).SetKeyButtonProvider(IKeyButtonProvider)
+- uid: NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.SetKeyButtonProvider(NiceGraphicLibrary.IGameInputProvider)
+  name: SetKeyButtonProvider(IGameInputProvider)
+  href: api/NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_SetKeyButtonProvider_NiceGraphicLibrary_IGameInputProvider_
+  commentId: M:NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.SetKeyButtonProvider(NiceGraphicLibrary.IGameInputProvider)
+  fullName: NiceGraphicLibrary.Component.Movement.RigidInputMotion<TInput>.SetKeyButtonProvider(NiceGraphicLibrary.IGameInputProvider)
+  fullName.vb: NiceGraphicLibrary.Component.Movement.RigidInputMotion(Of TInput).SetKeyButtonProvider(NiceGraphicLibrary.IGameInputProvider)
+  nameWithType: RigidInputMotion<TInput>.SetKeyButtonProvider(IGameInputProvider)
+  nameWithType.vb: RigidInputMotion(Of TInput).SetKeyButtonProvider(IGameInputProvider)
 - uid: NiceGraphicLibrary.Component.Movement.RigidInputMotion`1.SetKeyButtonProvider*
   name: SetKeyButtonProvider
   href: api/NiceGraphicLibrary.Component.Movement.RigidInputMotion-1.html#NiceGraphicLibrary_Component_Movement_RigidInputMotion_1_SetKeyButtonProvider_
@@ -1881,121 +1900,134 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.IDeltaTimeProvider.GetDelatTime
   nameWithType: IDeltaTimeProvider.GetDelatTime
-- uid: NiceGraphicLibrary.IKeyButtonProvider
-  name: IKeyButtonProvider
-  href: api/NiceGraphicLibrary.IKeyButtonProvider.html
-  commentId: T:NiceGraphicLibrary.IKeyButtonProvider
-  fullName: NiceGraphicLibrary.IKeyButtonProvider
-  nameWithType: IKeyButtonProvider
-- uid: NiceGraphicLibrary.IKeyButtonProvider.GetAxis(System.String)
+- uid: NiceGraphicLibrary.IGameInputProvider
+  name: IGameInputProvider
+  href: api/NiceGraphicLibrary.IGameInputProvider.html
+  commentId: T:NiceGraphicLibrary.IGameInputProvider
+  fullName: NiceGraphicLibrary.IGameInputProvider
+  nameWithType: IGameInputProvider
+- uid: NiceGraphicLibrary.IGameInputProvider.GetAxis(System.String)
   name: GetAxis(String)
-  href: api/NiceGraphicLibrary.IKeyButtonProvider.html#NiceGraphicLibrary_IKeyButtonProvider_GetAxis_System_String_
-  commentId: M:NiceGraphicLibrary.IKeyButtonProvider.GetAxis(System.String)
-  fullName: NiceGraphicLibrary.IKeyButtonProvider.GetAxis(System.String)
-  nameWithType: IKeyButtonProvider.GetAxis(String)
-- uid: NiceGraphicLibrary.IKeyButtonProvider.GetAxis*
+  href: api/NiceGraphicLibrary.IGameInputProvider.html#NiceGraphicLibrary_IGameInputProvider_GetAxis_System_String_
+  commentId: M:NiceGraphicLibrary.IGameInputProvider.GetAxis(System.String)
+  fullName: NiceGraphicLibrary.IGameInputProvider.GetAxis(System.String)
+  nameWithType: IGameInputProvider.GetAxis(String)
+- uid: NiceGraphicLibrary.IGameInputProvider.GetAxis*
   name: GetAxis
-  href: api/NiceGraphicLibrary.IKeyButtonProvider.html#NiceGraphicLibrary_IKeyButtonProvider_GetAxis_
-  commentId: Overload:NiceGraphicLibrary.IKeyButtonProvider.GetAxis
+  href: api/NiceGraphicLibrary.IGameInputProvider.html#NiceGraphicLibrary_IGameInputProvider_GetAxis_
+  commentId: Overload:NiceGraphicLibrary.IGameInputProvider.GetAxis
   isSpec: "True"
-  fullName: NiceGraphicLibrary.IKeyButtonProvider.GetAxis
-  nameWithType: IKeyButtonProvider.GetAxis
-- uid: NiceGraphicLibrary.IKeyButtonProvider.GetButton(System.String)
+  fullName: NiceGraphicLibrary.IGameInputProvider.GetAxis
+  nameWithType: IGameInputProvider.GetAxis
+- uid: NiceGraphicLibrary.IGameInputProvider.GetButton(System.String)
   name: GetButton(String)
-  href: api/NiceGraphicLibrary.IKeyButtonProvider.html#NiceGraphicLibrary_IKeyButtonProvider_GetButton_System_String_
-  commentId: M:NiceGraphicLibrary.IKeyButtonProvider.GetButton(System.String)
-  fullName: NiceGraphicLibrary.IKeyButtonProvider.GetButton(System.String)
-  nameWithType: IKeyButtonProvider.GetButton(String)
-- uid: NiceGraphicLibrary.IKeyButtonProvider.GetButton*
+  href: api/NiceGraphicLibrary.IGameInputProvider.html#NiceGraphicLibrary_IGameInputProvider_GetButton_System_String_
+  commentId: M:NiceGraphicLibrary.IGameInputProvider.GetButton(System.String)
+  fullName: NiceGraphicLibrary.IGameInputProvider.GetButton(System.String)
+  nameWithType: IGameInputProvider.GetButton(String)
+- uid: NiceGraphicLibrary.IGameInputProvider.GetButton*
   name: GetButton
-  href: api/NiceGraphicLibrary.IKeyButtonProvider.html#NiceGraphicLibrary_IKeyButtonProvider_GetButton_
-  commentId: Overload:NiceGraphicLibrary.IKeyButtonProvider.GetButton
+  href: api/NiceGraphicLibrary.IGameInputProvider.html#NiceGraphicLibrary_IGameInputProvider_GetButton_
+  commentId: Overload:NiceGraphicLibrary.IGameInputProvider.GetButton
   isSpec: "True"
-  fullName: NiceGraphicLibrary.IKeyButtonProvider.GetButton
-  nameWithType: IKeyButtonProvider.GetButton
-- uid: NiceGraphicLibrary.IKeyButtonProvider.GetButtonDown(System.String)
+  fullName: NiceGraphicLibrary.IGameInputProvider.GetButton
+  nameWithType: IGameInputProvider.GetButton
+- uid: NiceGraphicLibrary.IGameInputProvider.GetButtonDown(System.String)
   name: GetButtonDown(String)
-  href: api/NiceGraphicLibrary.IKeyButtonProvider.html#NiceGraphicLibrary_IKeyButtonProvider_GetButtonDown_System_String_
-  commentId: M:NiceGraphicLibrary.IKeyButtonProvider.GetButtonDown(System.String)
-  fullName: NiceGraphicLibrary.IKeyButtonProvider.GetButtonDown(System.String)
-  nameWithType: IKeyButtonProvider.GetButtonDown(String)
-- uid: NiceGraphicLibrary.IKeyButtonProvider.GetButtonDown*
+  href: api/NiceGraphicLibrary.IGameInputProvider.html#NiceGraphicLibrary_IGameInputProvider_GetButtonDown_System_String_
+  commentId: M:NiceGraphicLibrary.IGameInputProvider.GetButtonDown(System.String)
+  fullName: NiceGraphicLibrary.IGameInputProvider.GetButtonDown(System.String)
+  nameWithType: IGameInputProvider.GetButtonDown(String)
+- uid: NiceGraphicLibrary.IGameInputProvider.GetButtonDown*
   name: GetButtonDown
-  href: api/NiceGraphicLibrary.IKeyButtonProvider.html#NiceGraphicLibrary_IKeyButtonProvider_GetButtonDown_
-  commentId: Overload:NiceGraphicLibrary.IKeyButtonProvider.GetButtonDown
+  href: api/NiceGraphicLibrary.IGameInputProvider.html#NiceGraphicLibrary_IGameInputProvider_GetButtonDown_
+  commentId: Overload:NiceGraphicLibrary.IGameInputProvider.GetButtonDown
   isSpec: "True"
-  fullName: NiceGraphicLibrary.IKeyButtonProvider.GetButtonDown
-  nameWithType: IKeyButtonProvider.GetButtonDown
-- uid: NiceGraphicLibrary.IKeyButtonProvider.GetButtonUp(System.String)
+  fullName: NiceGraphicLibrary.IGameInputProvider.GetButtonDown
+  nameWithType: IGameInputProvider.GetButtonDown
+- uid: NiceGraphicLibrary.IGameInputProvider.GetButtonUp(System.String)
   name: GetButtonUp(String)
-  href: api/NiceGraphicLibrary.IKeyButtonProvider.html#NiceGraphicLibrary_IKeyButtonProvider_GetButtonUp_System_String_
-  commentId: M:NiceGraphicLibrary.IKeyButtonProvider.GetButtonUp(System.String)
-  fullName: NiceGraphicLibrary.IKeyButtonProvider.GetButtonUp(System.String)
-  nameWithType: IKeyButtonProvider.GetButtonUp(String)
-- uid: NiceGraphicLibrary.IKeyButtonProvider.GetButtonUp*
+  href: api/NiceGraphicLibrary.IGameInputProvider.html#NiceGraphicLibrary_IGameInputProvider_GetButtonUp_System_String_
+  commentId: M:NiceGraphicLibrary.IGameInputProvider.GetButtonUp(System.String)
+  fullName: NiceGraphicLibrary.IGameInputProvider.GetButtonUp(System.String)
+  nameWithType: IGameInputProvider.GetButtonUp(String)
+- uid: NiceGraphicLibrary.IGameInputProvider.GetButtonUp*
   name: GetButtonUp
-  href: api/NiceGraphicLibrary.IKeyButtonProvider.html#NiceGraphicLibrary_IKeyButtonProvider_GetButtonUp_
-  commentId: Overload:NiceGraphicLibrary.IKeyButtonProvider.GetButtonUp
+  href: api/NiceGraphicLibrary.IGameInputProvider.html#NiceGraphicLibrary_IGameInputProvider_GetButtonUp_
+  commentId: Overload:NiceGraphicLibrary.IGameInputProvider.GetButtonUp
   isSpec: "True"
-  fullName: NiceGraphicLibrary.IKeyButtonProvider.GetButtonUp
-  nameWithType: IKeyButtonProvider.GetButtonUp
-- uid: NiceGraphicLibrary.IKeyButtonProvider.GetKey(KeyCode)
+  fullName: NiceGraphicLibrary.IGameInputProvider.GetButtonUp
+  nameWithType: IGameInputProvider.GetButtonUp
+- uid: NiceGraphicLibrary.IGameInputProvider.GetKey(KeyCode)
   name: GetKey(KeyCode)
-  href: api/NiceGraphicLibrary.IKeyButtonProvider.html#NiceGraphicLibrary_IKeyButtonProvider_GetKey_KeyCode_
-  commentId: M:NiceGraphicLibrary.IKeyButtonProvider.GetKey(KeyCode)
-  fullName: NiceGraphicLibrary.IKeyButtonProvider.GetKey(KeyCode)
-  nameWithType: IKeyButtonProvider.GetKey(KeyCode)
-- uid: NiceGraphicLibrary.IKeyButtonProvider.GetKey(System.String)
+  href: api/NiceGraphicLibrary.IGameInputProvider.html#NiceGraphicLibrary_IGameInputProvider_GetKey_KeyCode_
+  commentId: M:NiceGraphicLibrary.IGameInputProvider.GetKey(KeyCode)
+  fullName: NiceGraphicLibrary.IGameInputProvider.GetKey(KeyCode)
+  nameWithType: IGameInputProvider.GetKey(KeyCode)
+- uid: NiceGraphicLibrary.IGameInputProvider.GetKey(System.String)
   name: GetKey(String)
-  href: api/NiceGraphicLibrary.IKeyButtonProvider.html#NiceGraphicLibrary_IKeyButtonProvider_GetKey_System_String_
-  commentId: M:NiceGraphicLibrary.IKeyButtonProvider.GetKey(System.String)
-  fullName: NiceGraphicLibrary.IKeyButtonProvider.GetKey(System.String)
-  nameWithType: IKeyButtonProvider.GetKey(String)
-- uid: NiceGraphicLibrary.IKeyButtonProvider.GetKey*
+  href: api/NiceGraphicLibrary.IGameInputProvider.html#NiceGraphicLibrary_IGameInputProvider_GetKey_System_String_
+  commentId: M:NiceGraphicLibrary.IGameInputProvider.GetKey(System.String)
+  fullName: NiceGraphicLibrary.IGameInputProvider.GetKey(System.String)
+  nameWithType: IGameInputProvider.GetKey(String)
+- uid: NiceGraphicLibrary.IGameInputProvider.GetKey*
   name: GetKey
-  href: api/NiceGraphicLibrary.IKeyButtonProvider.html#NiceGraphicLibrary_IKeyButtonProvider_GetKey_
-  commentId: Overload:NiceGraphicLibrary.IKeyButtonProvider.GetKey
+  href: api/NiceGraphicLibrary.IGameInputProvider.html#NiceGraphicLibrary_IGameInputProvider_GetKey_
+  commentId: Overload:NiceGraphicLibrary.IGameInputProvider.GetKey
   isSpec: "True"
-  fullName: NiceGraphicLibrary.IKeyButtonProvider.GetKey
-  nameWithType: IKeyButtonProvider.GetKey
-- uid: NiceGraphicLibrary.IKeyButtonProvider.GetKeyDown(KeyCode)
+  fullName: NiceGraphicLibrary.IGameInputProvider.GetKey
+  nameWithType: IGameInputProvider.GetKey
+- uid: NiceGraphicLibrary.IGameInputProvider.GetKeyDown(KeyCode)
   name: GetKeyDown(KeyCode)
-  href: api/NiceGraphicLibrary.IKeyButtonProvider.html#NiceGraphicLibrary_IKeyButtonProvider_GetKeyDown_KeyCode_
-  commentId: M:NiceGraphicLibrary.IKeyButtonProvider.GetKeyDown(KeyCode)
-  fullName: NiceGraphicLibrary.IKeyButtonProvider.GetKeyDown(KeyCode)
-  nameWithType: IKeyButtonProvider.GetKeyDown(KeyCode)
-- uid: NiceGraphicLibrary.IKeyButtonProvider.GetKeyDown(System.String)
+  href: api/NiceGraphicLibrary.IGameInputProvider.html#NiceGraphicLibrary_IGameInputProvider_GetKeyDown_KeyCode_
+  commentId: M:NiceGraphicLibrary.IGameInputProvider.GetKeyDown(KeyCode)
+  fullName: NiceGraphicLibrary.IGameInputProvider.GetKeyDown(KeyCode)
+  nameWithType: IGameInputProvider.GetKeyDown(KeyCode)
+- uid: NiceGraphicLibrary.IGameInputProvider.GetKeyDown(System.String)
   name: GetKeyDown(String)
-  href: api/NiceGraphicLibrary.IKeyButtonProvider.html#NiceGraphicLibrary_IKeyButtonProvider_GetKeyDown_System_String_
-  commentId: M:NiceGraphicLibrary.IKeyButtonProvider.GetKeyDown(System.String)
-  fullName: NiceGraphicLibrary.IKeyButtonProvider.GetKeyDown(System.String)
-  nameWithType: IKeyButtonProvider.GetKeyDown(String)
-- uid: NiceGraphicLibrary.IKeyButtonProvider.GetKeyDown*
+  href: api/NiceGraphicLibrary.IGameInputProvider.html#NiceGraphicLibrary_IGameInputProvider_GetKeyDown_System_String_
+  commentId: M:NiceGraphicLibrary.IGameInputProvider.GetKeyDown(System.String)
+  fullName: NiceGraphicLibrary.IGameInputProvider.GetKeyDown(System.String)
+  nameWithType: IGameInputProvider.GetKeyDown(String)
+- uid: NiceGraphicLibrary.IGameInputProvider.GetKeyDown*
   name: GetKeyDown
-  href: api/NiceGraphicLibrary.IKeyButtonProvider.html#NiceGraphicLibrary_IKeyButtonProvider_GetKeyDown_
-  commentId: Overload:NiceGraphicLibrary.IKeyButtonProvider.GetKeyDown
+  href: api/NiceGraphicLibrary.IGameInputProvider.html#NiceGraphicLibrary_IGameInputProvider_GetKeyDown_
+  commentId: Overload:NiceGraphicLibrary.IGameInputProvider.GetKeyDown
   isSpec: "True"
-  fullName: NiceGraphicLibrary.IKeyButtonProvider.GetKeyDown
-  nameWithType: IKeyButtonProvider.GetKeyDown
-- uid: NiceGraphicLibrary.IKeyButtonProvider.GetKeyUp(KeyCode)
+  fullName: NiceGraphicLibrary.IGameInputProvider.GetKeyDown
+  nameWithType: IGameInputProvider.GetKeyDown
+- uid: NiceGraphicLibrary.IGameInputProvider.GetKeyUp(KeyCode)
   name: GetKeyUp(KeyCode)
-  href: api/NiceGraphicLibrary.IKeyButtonProvider.html#NiceGraphicLibrary_IKeyButtonProvider_GetKeyUp_KeyCode_
-  commentId: M:NiceGraphicLibrary.IKeyButtonProvider.GetKeyUp(KeyCode)
-  fullName: NiceGraphicLibrary.IKeyButtonProvider.GetKeyUp(KeyCode)
-  nameWithType: IKeyButtonProvider.GetKeyUp(KeyCode)
-- uid: NiceGraphicLibrary.IKeyButtonProvider.GetKeyUp(System.String)
+  href: api/NiceGraphicLibrary.IGameInputProvider.html#NiceGraphicLibrary_IGameInputProvider_GetKeyUp_KeyCode_
+  commentId: M:NiceGraphicLibrary.IGameInputProvider.GetKeyUp(KeyCode)
+  fullName: NiceGraphicLibrary.IGameInputProvider.GetKeyUp(KeyCode)
+  nameWithType: IGameInputProvider.GetKeyUp(KeyCode)
+- uid: NiceGraphicLibrary.IGameInputProvider.GetKeyUp(System.String)
   name: GetKeyUp(String)
-  href: api/NiceGraphicLibrary.IKeyButtonProvider.html#NiceGraphicLibrary_IKeyButtonProvider_GetKeyUp_System_String_
-  commentId: M:NiceGraphicLibrary.IKeyButtonProvider.GetKeyUp(System.String)
-  fullName: NiceGraphicLibrary.IKeyButtonProvider.GetKeyUp(System.String)
-  nameWithType: IKeyButtonProvider.GetKeyUp(String)
-- uid: NiceGraphicLibrary.IKeyButtonProvider.GetKeyUp*
+  href: api/NiceGraphicLibrary.IGameInputProvider.html#NiceGraphicLibrary_IGameInputProvider_GetKeyUp_System_String_
+  commentId: M:NiceGraphicLibrary.IGameInputProvider.GetKeyUp(System.String)
+  fullName: NiceGraphicLibrary.IGameInputProvider.GetKeyUp(System.String)
+  nameWithType: IGameInputProvider.GetKeyUp(String)
+- uid: NiceGraphicLibrary.IGameInputProvider.GetKeyUp*
   name: GetKeyUp
-  href: api/NiceGraphicLibrary.IKeyButtonProvider.html#NiceGraphicLibrary_IKeyButtonProvider_GetKeyUp_
-  commentId: Overload:NiceGraphicLibrary.IKeyButtonProvider.GetKeyUp
+  href: api/NiceGraphicLibrary.IGameInputProvider.html#NiceGraphicLibrary_IGameInputProvider_GetKeyUp_
+  commentId: Overload:NiceGraphicLibrary.IGameInputProvider.GetKeyUp
   isSpec: "True"
-  fullName: NiceGraphicLibrary.IKeyButtonProvider.GetKeyUp
-  nameWithType: IKeyButtonProvider.GetKeyUp
+  fullName: NiceGraphicLibrary.IGameInputProvider.GetKeyUp
+  nameWithType: IGameInputProvider.GetKeyUp
+- uid: NiceGraphicLibrary.IGameInputProvider.GetMousePosition
+  name: GetMousePosition()
+  href: api/NiceGraphicLibrary.IGameInputProvider.html#NiceGraphicLibrary_IGameInputProvider_GetMousePosition
+  commentId: M:NiceGraphicLibrary.IGameInputProvider.GetMousePosition
+  fullName: NiceGraphicLibrary.IGameInputProvider.GetMousePosition()
+  nameWithType: IGameInputProvider.GetMousePosition()
+- uid: NiceGraphicLibrary.IGameInputProvider.GetMousePosition*
+  name: GetMousePosition
+  href: api/NiceGraphicLibrary.IGameInputProvider.html#NiceGraphicLibrary_IGameInputProvider_GetMousePosition_
+  commentId: Overload:NiceGraphicLibrary.IGameInputProvider.GetMousePosition
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.IGameInputProvider.GetMousePosition
+  nameWithType: IGameInputProvider.GetMousePosition
 - uid: NiceGraphicLibrary.IRandomGenerator
   name: IRandomGenerator
   href: api/NiceGraphicLibrary.IRandomGenerator.html
@@ -2066,25 +2098,25 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.ITakesDeltaTimeProvider.SetDeltaTimeProvider
   nameWithType: ITakesDeltaTimeProvider.SetDeltaTimeProvider
-- uid: NiceGraphicLibrary.ITakesKeyButtonProvider
-  name: ITakesKeyButtonProvider
-  href: api/NiceGraphicLibrary.ITakesKeyButtonProvider.html
-  commentId: T:NiceGraphicLibrary.ITakesKeyButtonProvider
-  fullName: NiceGraphicLibrary.ITakesKeyButtonProvider
-  nameWithType: ITakesKeyButtonProvider
-- uid: NiceGraphicLibrary.ITakesKeyButtonProvider.SetKeyButtonProvider(NiceGraphicLibrary.IKeyButtonProvider)
-  name: SetKeyButtonProvider(IKeyButtonProvider)
-  href: api/NiceGraphicLibrary.ITakesKeyButtonProvider.html#NiceGraphicLibrary_ITakesKeyButtonProvider_SetKeyButtonProvider_NiceGraphicLibrary_IKeyButtonProvider_
-  commentId: M:NiceGraphicLibrary.ITakesKeyButtonProvider.SetKeyButtonProvider(NiceGraphicLibrary.IKeyButtonProvider)
-  fullName: NiceGraphicLibrary.ITakesKeyButtonProvider.SetKeyButtonProvider(NiceGraphicLibrary.IKeyButtonProvider)
-  nameWithType: ITakesKeyButtonProvider.SetKeyButtonProvider(IKeyButtonProvider)
-- uid: NiceGraphicLibrary.ITakesKeyButtonProvider.SetKeyButtonProvider*
+- uid: NiceGraphicLibrary.ITakesGameInputProviderProvider
+  name: ITakesGameInputProviderProvider
+  href: api/NiceGraphicLibrary.ITakesGameInputProviderProvider.html
+  commentId: T:NiceGraphicLibrary.ITakesGameInputProviderProvider
+  fullName: NiceGraphicLibrary.ITakesGameInputProviderProvider
+  nameWithType: ITakesGameInputProviderProvider
+- uid: NiceGraphicLibrary.ITakesGameInputProviderProvider.SetKeyButtonProvider(NiceGraphicLibrary.IGameInputProvider)
+  name: SetKeyButtonProvider(IGameInputProvider)
+  href: api/NiceGraphicLibrary.ITakesGameInputProviderProvider.html#NiceGraphicLibrary_ITakesGameInputProviderProvider_SetKeyButtonProvider_NiceGraphicLibrary_IGameInputProvider_
+  commentId: M:NiceGraphicLibrary.ITakesGameInputProviderProvider.SetKeyButtonProvider(NiceGraphicLibrary.IGameInputProvider)
+  fullName: NiceGraphicLibrary.ITakesGameInputProviderProvider.SetKeyButtonProvider(NiceGraphicLibrary.IGameInputProvider)
+  nameWithType: ITakesGameInputProviderProvider.SetKeyButtonProvider(IGameInputProvider)
+- uid: NiceGraphicLibrary.ITakesGameInputProviderProvider.SetKeyButtonProvider*
   name: SetKeyButtonProvider
-  href: api/NiceGraphicLibrary.ITakesKeyButtonProvider.html#NiceGraphicLibrary_ITakesKeyButtonProvider_SetKeyButtonProvider_
-  commentId: Overload:NiceGraphicLibrary.ITakesKeyButtonProvider.SetKeyButtonProvider
+  href: api/NiceGraphicLibrary.ITakesGameInputProviderProvider.html#NiceGraphicLibrary_ITakesGameInputProviderProvider_SetKeyButtonProvider_
+  commentId: Overload:NiceGraphicLibrary.ITakesGameInputProviderProvider.SetKeyButtonProvider
   isSpec: "True"
-  fullName: NiceGraphicLibrary.ITakesKeyButtonProvider.SetKeyButtonProvider
-  nameWithType: ITakesKeyButtonProvider.SetKeyButtonProvider
+  fullName: NiceGraphicLibrary.ITakesGameInputProviderProvider.SetKeyButtonProvider
+  nameWithType: ITakesGameInputProviderProvider.SetKeyButtonProvider
 - uid: NiceGraphicLibrary.ReadOnlyFieldAttribute
   name: ReadOnlyFieldAttribute
   href: api/NiceGraphicLibrary.ReadOnlyFieldAttribute.html
@@ -2243,121 +2275,134 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.UnityDeltaTimeProvider.GetDelatTime
   nameWithType: UnityDeltaTimeProvider.GetDelatTime
-- uid: NiceGraphicLibrary.UnityKeyButtonProvider
-  name: UnityKeyButtonProvider
-  href: api/NiceGraphicLibrary.UnityKeyButtonProvider.html
-  commentId: T:NiceGraphicLibrary.UnityKeyButtonProvider
-  fullName: NiceGraphicLibrary.UnityKeyButtonProvider
-  nameWithType: UnityKeyButtonProvider
-- uid: NiceGraphicLibrary.UnityKeyButtonProvider.GetAxis(System.String)
+- uid: NiceGraphicLibrary.UnityGameInputProvider
+  name: UnityGameInputProvider
+  href: api/NiceGraphicLibrary.UnityGameInputProvider.html
+  commentId: T:NiceGraphicLibrary.UnityGameInputProvider
+  fullName: NiceGraphicLibrary.UnityGameInputProvider
+  nameWithType: UnityGameInputProvider
+- uid: NiceGraphicLibrary.UnityGameInputProvider.GetAxis(System.String)
   name: GetAxis(String)
-  href: api/NiceGraphicLibrary.UnityKeyButtonProvider.html#NiceGraphicLibrary_UnityKeyButtonProvider_GetAxis_System_String_
-  commentId: M:NiceGraphicLibrary.UnityKeyButtonProvider.GetAxis(System.String)
-  fullName: NiceGraphicLibrary.UnityKeyButtonProvider.GetAxis(System.String)
-  nameWithType: UnityKeyButtonProvider.GetAxis(String)
-- uid: NiceGraphicLibrary.UnityKeyButtonProvider.GetAxis*
+  href: api/NiceGraphicLibrary.UnityGameInputProvider.html#NiceGraphicLibrary_UnityGameInputProvider_GetAxis_System_String_
+  commentId: M:NiceGraphicLibrary.UnityGameInputProvider.GetAxis(System.String)
+  fullName: NiceGraphicLibrary.UnityGameInputProvider.GetAxis(System.String)
+  nameWithType: UnityGameInputProvider.GetAxis(String)
+- uid: NiceGraphicLibrary.UnityGameInputProvider.GetAxis*
   name: GetAxis
-  href: api/NiceGraphicLibrary.UnityKeyButtonProvider.html#NiceGraphicLibrary_UnityKeyButtonProvider_GetAxis_
-  commentId: Overload:NiceGraphicLibrary.UnityKeyButtonProvider.GetAxis
+  href: api/NiceGraphicLibrary.UnityGameInputProvider.html#NiceGraphicLibrary_UnityGameInputProvider_GetAxis_
+  commentId: Overload:NiceGraphicLibrary.UnityGameInputProvider.GetAxis
   isSpec: "True"
-  fullName: NiceGraphicLibrary.UnityKeyButtonProvider.GetAxis
-  nameWithType: UnityKeyButtonProvider.GetAxis
-- uid: NiceGraphicLibrary.UnityKeyButtonProvider.GetButton(System.String)
+  fullName: NiceGraphicLibrary.UnityGameInputProvider.GetAxis
+  nameWithType: UnityGameInputProvider.GetAxis
+- uid: NiceGraphicLibrary.UnityGameInputProvider.GetButton(System.String)
   name: GetButton(String)
-  href: api/NiceGraphicLibrary.UnityKeyButtonProvider.html#NiceGraphicLibrary_UnityKeyButtonProvider_GetButton_System_String_
-  commentId: M:NiceGraphicLibrary.UnityKeyButtonProvider.GetButton(System.String)
-  fullName: NiceGraphicLibrary.UnityKeyButtonProvider.GetButton(System.String)
-  nameWithType: UnityKeyButtonProvider.GetButton(String)
-- uid: NiceGraphicLibrary.UnityKeyButtonProvider.GetButton*
+  href: api/NiceGraphicLibrary.UnityGameInputProvider.html#NiceGraphicLibrary_UnityGameInputProvider_GetButton_System_String_
+  commentId: M:NiceGraphicLibrary.UnityGameInputProvider.GetButton(System.String)
+  fullName: NiceGraphicLibrary.UnityGameInputProvider.GetButton(System.String)
+  nameWithType: UnityGameInputProvider.GetButton(String)
+- uid: NiceGraphicLibrary.UnityGameInputProvider.GetButton*
   name: GetButton
-  href: api/NiceGraphicLibrary.UnityKeyButtonProvider.html#NiceGraphicLibrary_UnityKeyButtonProvider_GetButton_
-  commentId: Overload:NiceGraphicLibrary.UnityKeyButtonProvider.GetButton
+  href: api/NiceGraphicLibrary.UnityGameInputProvider.html#NiceGraphicLibrary_UnityGameInputProvider_GetButton_
+  commentId: Overload:NiceGraphicLibrary.UnityGameInputProvider.GetButton
   isSpec: "True"
-  fullName: NiceGraphicLibrary.UnityKeyButtonProvider.GetButton
-  nameWithType: UnityKeyButtonProvider.GetButton
-- uid: NiceGraphicLibrary.UnityKeyButtonProvider.GetButtonDown(System.String)
+  fullName: NiceGraphicLibrary.UnityGameInputProvider.GetButton
+  nameWithType: UnityGameInputProvider.GetButton
+- uid: NiceGraphicLibrary.UnityGameInputProvider.GetButtonDown(System.String)
   name: GetButtonDown(String)
-  href: api/NiceGraphicLibrary.UnityKeyButtonProvider.html#NiceGraphicLibrary_UnityKeyButtonProvider_GetButtonDown_System_String_
-  commentId: M:NiceGraphicLibrary.UnityKeyButtonProvider.GetButtonDown(System.String)
-  fullName: NiceGraphicLibrary.UnityKeyButtonProvider.GetButtonDown(System.String)
-  nameWithType: UnityKeyButtonProvider.GetButtonDown(String)
-- uid: NiceGraphicLibrary.UnityKeyButtonProvider.GetButtonDown*
+  href: api/NiceGraphicLibrary.UnityGameInputProvider.html#NiceGraphicLibrary_UnityGameInputProvider_GetButtonDown_System_String_
+  commentId: M:NiceGraphicLibrary.UnityGameInputProvider.GetButtonDown(System.String)
+  fullName: NiceGraphicLibrary.UnityGameInputProvider.GetButtonDown(System.String)
+  nameWithType: UnityGameInputProvider.GetButtonDown(String)
+- uid: NiceGraphicLibrary.UnityGameInputProvider.GetButtonDown*
   name: GetButtonDown
-  href: api/NiceGraphicLibrary.UnityKeyButtonProvider.html#NiceGraphicLibrary_UnityKeyButtonProvider_GetButtonDown_
-  commentId: Overload:NiceGraphicLibrary.UnityKeyButtonProvider.GetButtonDown
+  href: api/NiceGraphicLibrary.UnityGameInputProvider.html#NiceGraphicLibrary_UnityGameInputProvider_GetButtonDown_
+  commentId: Overload:NiceGraphicLibrary.UnityGameInputProvider.GetButtonDown
   isSpec: "True"
-  fullName: NiceGraphicLibrary.UnityKeyButtonProvider.GetButtonDown
-  nameWithType: UnityKeyButtonProvider.GetButtonDown
-- uid: NiceGraphicLibrary.UnityKeyButtonProvider.GetButtonUp(System.String)
+  fullName: NiceGraphicLibrary.UnityGameInputProvider.GetButtonDown
+  nameWithType: UnityGameInputProvider.GetButtonDown
+- uid: NiceGraphicLibrary.UnityGameInputProvider.GetButtonUp(System.String)
   name: GetButtonUp(String)
-  href: api/NiceGraphicLibrary.UnityKeyButtonProvider.html#NiceGraphicLibrary_UnityKeyButtonProvider_GetButtonUp_System_String_
-  commentId: M:NiceGraphicLibrary.UnityKeyButtonProvider.GetButtonUp(System.String)
-  fullName: NiceGraphicLibrary.UnityKeyButtonProvider.GetButtonUp(System.String)
-  nameWithType: UnityKeyButtonProvider.GetButtonUp(String)
-- uid: NiceGraphicLibrary.UnityKeyButtonProvider.GetButtonUp*
+  href: api/NiceGraphicLibrary.UnityGameInputProvider.html#NiceGraphicLibrary_UnityGameInputProvider_GetButtonUp_System_String_
+  commentId: M:NiceGraphicLibrary.UnityGameInputProvider.GetButtonUp(System.String)
+  fullName: NiceGraphicLibrary.UnityGameInputProvider.GetButtonUp(System.String)
+  nameWithType: UnityGameInputProvider.GetButtonUp(String)
+- uid: NiceGraphicLibrary.UnityGameInputProvider.GetButtonUp*
   name: GetButtonUp
-  href: api/NiceGraphicLibrary.UnityKeyButtonProvider.html#NiceGraphicLibrary_UnityKeyButtonProvider_GetButtonUp_
-  commentId: Overload:NiceGraphicLibrary.UnityKeyButtonProvider.GetButtonUp
+  href: api/NiceGraphicLibrary.UnityGameInputProvider.html#NiceGraphicLibrary_UnityGameInputProvider_GetButtonUp_
+  commentId: Overload:NiceGraphicLibrary.UnityGameInputProvider.GetButtonUp
   isSpec: "True"
-  fullName: NiceGraphicLibrary.UnityKeyButtonProvider.GetButtonUp
-  nameWithType: UnityKeyButtonProvider.GetButtonUp
-- uid: NiceGraphicLibrary.UnityKeyButtonProvider.GetKey(KeyCode)
+  fullName: NiceGraphicLibrary.UnityGameInputProvider.GetButtonUp
+  nameWithType: UnityGameInputProvider.GetButtonUp
+- uid: NiceGraphicLibrary.UnityGameInputProvider.GetKey(KeyCode)
   name: GetKey(KeyCode)
-  href: api/NiceGraphicLibrary.UnityKeyButtonProvider.html#NiceGraphicLibrary_UnityKeyButtonProvider_GetKey_KeyCode_
-  commentId: M:NiceGraphicLibrary.UnityKeyButtonProvider.GetKey(KeyCode)
-  fullName: NiceGraphicLibrary.UnityKeyButtonProvider.GetKey(KeyCode)
-  nameWithType: UnityKeyButtonProvider.GetKey(KeyCode)
-- uid: NiceGraphicLibrary.UnityKeyButtonProvider.GetKey(System.String)
+  href: api/NiceGraphicLibrary.UnityGameInputProvider.html#NiceGraphicLibrary_UnityGameInputProvider_GetKey_KeyCode_
+  commentId: M:NiceGraphicLibrary.UnityGameInputProvider.GetKey(KeyCode)
+  fullName: NiceGraphicLibrary.UnityGameInputProvider.GetKey(KeyCode)
+  nameWithType: UnityGameInputProvider.GetKey(KeyCode)
+- uid: NiceGraphicLibrary.UnityGameInputProvider.GetKey(System.String)
   name: GetKey(String)
-  href: api/NiceGraphicLibrary.UnityKeyButtonProvider.html#NiceGraphicLibrary_UnityKeyButtonProvider_GetKey_System_String_
-  commentId: M:NiceGraphicLibrary.UnityKeyButtonProvider.GetKey(System.String)
-  fullName: NiceGraphicLibrary.UnityKeyButtonProvider.GetKey(System.String)
-  nameWithType: UnityKeyButtonProvider.GetKey(String)
-- uid: NiceGraphicLibrary.UnityKeyButtonProvider.GetKey*
+  href: api/NiceGraphicLibrary.UnityGameInputProvider.html#NiceGraphicLibrary_UnityGameInputProvider_GetKey_System_String_
+  commentId: M:NiceGraphicLibrary.UnityGameInputProvider.GetKey(System.String)
+  fullName: NiceGraphicLibrary.UnityGameInputProvider.GetKey(System.String)
+  nameWithType: UnityGameInputProvider.GetKey(String)
+- uid: NiceGraphicLibrary.UnityGameInputProvider.GetKey*
   name: GetKey
-  href: api/NiceGraphicLibrary.UnityKeyButtonProvider.html#NiceGraphicLibrary_UnityKeyButtonProvider_GetKey_
-  commentId: Overload:NiceGraphicLibrary.UnityKeyButtonProvider.GetKey
+  href: api/NiceGraphicLibrary.UnityGameInputProvider.html#NiceGraphicLibrary_UnityGameInputProvider_GetKey_
+  commentId: Overload:NiceGraphicLibrary.UnityGameInputProvider.GetKey
   isSpec: "True"
-  fullName: NiceGraphicLibrary.UnityKeyButtonProvider.GetKey
-  nameWithType: UnityKeyButtonProvider.GetKey
-- uid: NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyDown(KeyCode)
+  fullName: NiceGraphicLibrary.UnityGameInputProvider.GetKey
+  nameWithType: UnityGameInputProvider.GetKey
+- uid: NiceGraphicLibrary.UnityGameInputProvider.GetKeyDown(KeyCode)
   name: GetKeyDown(KeyCode)
-  href: api/NiceGraphicLibrary.UnityKeyButtonProvider.html#NiceGraphicLibrary_UnityKeyButtonProvider_GetKeyDown_KeyCode_
-  commentId: M:NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyDown(KeyCode)
-  fullName: NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyDown(KeyCode)
-  nameWithType: UnityKeyButtonProvider.GetKeyDown(KeyCode)
-- uid: NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyDown(System.String)
+  href: api/NiceGraphicLibrary.UnityGameInputProvider.html#NiceGraphicLibrary_UnityGameInputProvider_GetKeyDown_KeyCode_
+  commentId: M:NiceGraphicLibrary.UnityGameInputProvider.GetKeyDown(KeyCode)
+  fullName: NiceGraphicLibrary.UnityGameInputProvider.GetKeyDown(KeyCode)
+  nameWithType: UnityGameInputProvider.GetKeyDown(KeyCode)
+- uid: NiceGraphicLibrary.UnityGameInputProvider.GetKeyDown(System.String)
   name: GetKeyDown(String)
-  href: api/NiceGraphicLibrary.UnityKeyButtonProvider.html#NiceGraphicLibrary_UnityKeyButtonProvider_GetKeyDown_System_String_
-  commentId: M:NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyDown(System.String)
-  fullName: NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyDown(System.String)
-  nameWithType: UnityKeyButtonProvider.GetKeyDown(String)
-- uid: NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyDown*
+  href: api/NiceGraphicLibrary.UnityGameInputProvider.html#NiceGraphicLibrary_UnityGameInputProvider_GetKeyDown_System_String_
+  commentId: M:NiceGraphicLibrary.UnityGameInputProvider.GetKeyDown(System.String)
+  fullName: NiceGraphicLibrary.UnityGameInputProvider.GetKeyDown(System.String)
+  nameWithType: UnityGameInputProvider.GetKeyDown(String)
+- uid: NiceGraphicLibrary.UnityGameInputProvider.GetKeyDown*
   name: GetKeyDown
-  href: api/NiceGraphicLibrary.UnityKeyButtonProvider.html#NiceGraphicLibrary_UnityKeyButtonProvider_GetKeyDown_
-  commentId: Overload:NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyDown
+  href: api/NiceGraphicLibrary.UnityGameInputProvider.html#NiceGraphicLibrary_UnityGameInputProvider_GetKeyDown_
+  commentId: Overload:NiceGraphicLibrary.UnityGameInputProvider.GetKeyDown
   isSpec: "True"
-  fullName: NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyDown
-  nameWithType: UnityKeyButtonProvider.GetKeyDown
-- uid: NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyUp(KeyCode)
+  fullName: NiceGraphicLibrary.UnityGameInputProvider.GetKeyDown
+  nameWithType: UnityGameInputProvider.GetKeyDown
+- uid: NiceGraphicLibrary.UnityGameInputProvider.GetKeyUp(KeyCode)
   name: GetKeyUp(KeyCode)
-  href: api/NiceGraphicLibrary.UnityKeyButtonProvider.html#NiceGraphicLibrary_UnityKeyButtonProvider_GetKeyUp_KeyCode_
-  commentId: M:NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyUp(KeyCode)
-  fullName: NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyUp(KeyCode)
-  nameWithType: UnityKeyButtonProvider.GetKeyUp(KeyCode)
-- uid: NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyUp(System.String)
+  href: api/NiceGraphicLibrary.UnityGameInputProvider.html#NiceGraphicLibrary_UnityGameInputProvider_GetKeyUp_KeyCode_
+  commentId: M:NiceGraphicLibrary.UnityGameInputProvider.GetKeyUp(KeyCode)
+  fullName: NiceGraphicLibrary.UnityGameInputProvider.GetKeyUp(KeyCode)
+  nameWithType: UnityGameInputProvider.GetKeyUp(KeyCode)
+- uid: NiceGraphicLibrary.UnityGameInputProvider.GetKeyUp(System.String)
   name: GetKeyUp(String)
-  href: api/NiceGraphicLibrary.UnityKeyButtonProvider.html#NiceGraphicLibrary_UnityKeyButtonProvider_GetKeyUp_System_String_
-  commentId: M:NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyUp(System.String)
-  fullName: NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyUp(System.String)
-  nameWithType: UnityKeyButtonProvider.GetKeyUp(String)
-- uid: NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyUp*
+  href: api/NiceGraphicLibrary.UnityGameInputProvider.html#NiceGraphicLibrary_UnityGameInputProvider_GetKeyUp_System_String_
+  commentId: M:NiceGraphicLibrary.UnityGameInputProvider.GetKeyUp(System.String)
+  fullName: NiceGraphicLibrary.UnityGameInputProvider.GetKeyUp(System.String)
+  nameWithType: UnityGameInputProvider.GetKeyUp(String)
+- uid: NiceGraphicLibrary.UnityGameInputProvider.GetKeyUp*
   name: GetKeyUp
-  href: api/NiceGraphicLibrary.UnityKeyButtonProvider.html#NiceGraphicLibrary_UnityKeyButtonProvider_GetKeyUp_
-  commentId: Overload:NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyUp
+  href: api/NiceGraphicLibrary.UnityGameInputProvider.html#NiceGraphicLibrary_UnityGameInputProvider_GetKeyUp_
+  commentId: Overload:NiceGraphicLibrary.UnityGameInputProvider.GetKeyUp
   isSpec: "True"
-  fullName: NiceGraphicLibrary.UnityKeyButtonProvider.GetKeyUp
-  nameWithType: UnityKeyButtonProvider.GetKeyUp
+  fullName: NiceGraphicLibrary.UnityGameInputProvider.GetKeyUp
+  nameWithType: UnityGameInputProvider.GetKeyUp
+- uid: NiceGraphicLibrary.UnityGameInputProvider.GetMousePosition
+  name: GetMousePosition()
+  href: api/NiceGraphicLibrary.UnityGameInputProvider.html#NiceGraphicLibrary_UnityGameInputProvider_GetMousePosition
+  commentId: M:NiceGraphicLibrary.UnityGameInputProvider.GetMousePosition
+  fullName: NiceGraphicLibrary.UnityGameInputProvider.GetMousePosition()
+  nameWithType: UnityGameInputProvider.GetMousePosition()
+- uid: NiceGraphicLibrary.UnityGameInputProvider.GetMousePosition*
+  name: GetMousePosition
+  href: api/NiceGraphicLibrary.UnityGameInputProvider.html#NiceGraphicLibrary_UnityGameInputProvider_GetMousePosition_
+  commentId: Overload:NiceGraphicLibrary.UnityGameInputProvider.GetMousePosition
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.UnityGameInputProvider.GetMousePosition
+  nameWithType: UnityGameInputProvider.GetMousePosition
 - uid: NiceGraphicLibrary.UnityRandomGenerator
   name: UnityRandomGenerator
   href: api/NiceGraphicLibrary.UnityRandomGenerator.html
