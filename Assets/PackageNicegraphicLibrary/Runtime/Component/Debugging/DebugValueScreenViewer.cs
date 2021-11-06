@@ -8,7 +8,7 @@ namespace NiceGraphicLibrary.Component.Debugging
   /// Other components can use the API of this one 
   /// To show values to the screen.
   /// </summary>
-  public class DebugValueScreenViewer : MonoBehaviour
+  public class DebugValueScreenViewer : SingletonComponent<DebugValueScreenViewer>
   {
     [SerializeField]
     [Min(0)]
@@ -20,13 +20,25 @@ namespace NiceGraphicLibrary.Component.Debugging
     private int Spacing = 10;
     [SerializeField]
     [Tooltip(" Where to place the text lines on screen, top left, bottom right etc ")]
-    private TextAnchor ContentAlignment = TextAnchor.UpperLeft;
+    private TextAnchor _ContentAlignment = TextAnchor.UpperLeft;
 
     [SerializeField]
     private Color FontColor = Color.black;
     [SerializeField]
     [Min(0)]
     private int FontSize = 20;
+
+    private VerticalLayoutGroup _layoutAlignment;
+
+    public TextAnchor ContentAlignment
+    {
+      get => _ContentAlignment;
+      set
+      {
+        _ContentAlignment = value;
+        _layout.childAlignment = value;
+      }
+    }
 
     private readonly Dictionary<string, Text> _textLines = new Dictionary<string, Text>();
 
@@ -36,6 +48,11 @@ namespace NiceGraphicLibrary.Component.Debugging
     // If true, the viewer and text lines can be changed in respect of appearance
     // in the inspector after the start of the game.
     private bool _isSetUp = false;
+
+    private void Start()
+    {
+      _layout = GetComponentInChildren<VerticalLayoutGroup>();
+    }
 
     /// <summary>
     /// Either creates a new text line to show an arbitrary value to the screen during the game or
@@ -119,7 +136,7 @@ namespace NiceGraphicLibrary.Component.Debugging
       _layout.padding.top = Margin;
       _layout.padding.bottom = Margin;
       _layout.spacing = Spacing;
-      _layout.childAlignment = ContentAlignment;
+      _layout.childAlignment = _ContentAlignment;
     }
 
     private void UpdateTextFieldStyles()
@@ -138,7 +155,7 @@ namespace NiceGraphicLibrary.Component.Debugging
 
     #region Creation of view
 
-    private void Awake()
+    protected override void Awake()
     {
       CreateCanvas();
       _isSetUp = true;
@@ -187,6 +204,6 @@ namespace NiceGraphicLibrary.Component.Debugging
 
     #endregion
 
-    private string CreateContentForTextLine(string valueName, string value) => $"{valueName}: {value}";
+    private string CreateContentForTextLine(string valueName, string value) => $"{valueName}{value}";
   }
 }

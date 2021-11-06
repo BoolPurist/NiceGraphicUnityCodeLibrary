@@ -24,7 +24,7 @@ namespace NiceGraphicLibrary.Tests.Editor.Stubs
           case InpuType.Released:
             return IsRelease;
           default:
-            Debug.LogError(ErrorMessages.NotAccountedEnumValue(type));
+            Debug.LogError(ErrorMessages.NotAccountedValueInSwitch(type));
             return false;
         }
       }
@@ -43,7 +43,7 @@ namespace NiceGraphicLibrary.Tests.Editor.Stubs
             IsRelease = newInputState;
             return;
           default:
-            Debug.LogError(ErrorMessages.NotAccountedEnumValue(type));
+            Debug.LogError(ErrorMessages.NotAccountedValueInSwitch(type));
             return;
         }
       }

@@ -7,7 +7,7 @@ namespace NiceGraphicLibrary
 {
   public static class ErrorMessages
   {
-    public static string NotAccountedEnumValue<T>(T notAccountedForEnumValue)
-      => $"For the Enum of type {notAccountedForEnumValue.GetType().Name}, the value [{notAccountedForEnumValue}] is not accounted for !";
+    public static string NotAccountedValueInSwitch<T>(T notAccountedForEnumValue)
+      => $"For the type {notAccountedForEnumValue.GetType().Name}, the value [{notAccountedForEnumValue}] is not accounted for !";
   } 
 }

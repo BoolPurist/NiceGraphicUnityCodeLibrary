@@ -133,7 +133,7 @@ namespace NiceGraphicLibrary.Tests.Editor
       Assert.AreEqual(
         expectedIndex,
         actualReturnedIndex,
-        $"The expected indes was not returned."
+        $"The expected index was not returned."
         );
     }
 

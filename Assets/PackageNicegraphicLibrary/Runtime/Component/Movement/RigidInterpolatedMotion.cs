@@ -42,7 +42,7 @@ namespace NiceGraphicLibrary.Component.Movement
             _currentInverseInterpolation = InverseSmootherStepInterpolation;
             break;
           default:
-            Debug.LogError(ErrorMessages.NotAccountedEnumValue(value), this.gameObject);
+            Debug.LogError(ErrorMessages.NotAccountedValueInSwitch(value), this.gameObject);
             break;
         }
       }
