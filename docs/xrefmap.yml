@@ -248,6 +248,25 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.Component.GUI.ObserverForButtonClick.OnEnable
   nameWithType: ObserverForButtonClick.OnEnable
+- uid: NiceGraphicLibrary.Component.GUI.QuitGameOnButtonClick
+  name: QuitGameOnButtonClick
+  href: api/NiceGraphicLibrary.Component.GUI.QuitGameOnButtonClick.html
+  commentId: T:NiceGraphicLibrary.Component.GUI.QuitGameOnButtonClick
+  fullName: NiceGraphicLibrary.Component.GUI.QuitGameOnButtonClick
+  nameWithType: QuitGameOnButtonClick
+- uid: NiceGraphicLibrary.Component.GUI.QuitGameOnButtonClick.OnButtonClicked
+  name: OnButtonClicked()
+  href: api/NiceGraphicLibrary.Component.GUI.QuitGameOnButtonClick.html#NiceGraphicLibrary_Component_GUI_QuitGameOnButtonClick_OnButtonClicked
+  commentId: M:NiceGraphicLibrary.Component.GUI.QuitGameOnButtonClick.OnButtonClicked
+  fullName: NiceGraphicLibrary.Component.GUI.QuitGameOnButtonClick.OnButtonClicked()
+  nameWithType: QuitGameOnButtonClick.OnButtonClicked()
+- uid: NiceGraphicLibrary.Component.GUI.QuitGameOnButtonClick.OnButtonClicked*
+  name: OnButtonClicked
+  href: api/NiceGraphicLibrary.Component.GUI.QuitGameOnButtonClick.html#NiceGraphicLibrary_Component_GUI_QuitGameOnButtonClick_OnButtonClicked_
+  commentId: Overload:NiceGraphicLibrary.Component.GUI.QuitGameOnButtonClick.OnButtonClicked
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Component.GUI.QuitGameOnButtonClick.OnButtonClicked
+  nameWithType: QuitGameOnButtonClick.OnButtonClicked
 - uid: NiceGraphicLibrary.Component.Movement
   name: NiceGraphicLibrary.Component.Movement
   href: api/NiceGraphicLibrary.Component.Movement.html

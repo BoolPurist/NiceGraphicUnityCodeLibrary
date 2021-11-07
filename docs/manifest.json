@@ -117,7 +117,19 @@
       "output": {
         ".html": {
           "relative_path": "api/NiceGraphicLibrary.Component.GUI.ObserverForButtonClick.html",
-          "hash": "IwN3uhA2F+nRzS9dxMwmo7N+7qmpcBhbRQi2v84gSoI="
+          "hash": "MZPOXIjbwpj/OxFkwecou53J9iUrBxmykwEJZgEk+/E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NiceGraphicLibrary.Component.GUI.QuitGameOnButtonClick.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NiceGraphicLibrary.Component.GUI.QuitGameOnButtonClick.html",
+          "hash": "olo19h2yh9b8cIuKmRBfDVPk18fuGmPfy/T0dnS7ffk="
         }
       },
       "is_incremental": false,
@@ -129,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/NiceGraphicLibrary.Component.GUI.html",
-          "hash": "hiTCSDwrr2RCsCNl0ZJEAe7wUbfi5DO29c64jH+e/ug="
+          "hash": "/8vbdYnwyzHPcf6axbOVOPXuLskVuEjbAczCKNOLkeo="
         }
       },
       "is_incremental": false,
@@ -873,7 +885,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "oS/+QMvZ/tdmpFVP0Xnp2NJ/aJXRtpW3gTSY4bVuyco="
+          "hash": "J7N27ZHPjvG2L29nyetZbqUuELGnUbT0wXrp4g5rQ68="
         }
       },
       "is_incremental": false,
@@ -946,7 +958,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 70,
+          "total_file_count": 71,
           "skipped_file_count": 25
         },
         "TocDocumentProcessor": {
