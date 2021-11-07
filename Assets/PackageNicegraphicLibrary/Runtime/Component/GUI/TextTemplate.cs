@@ -10,7 +10,7 @@ using NiceGraphicLibrary.Utility;
 namespace NiceGraphicLibrary.Component.GUI
 {
   [RequireComponent(typeof(TextMeshProUGUI))]
-  public class TextTemplateInsertion : MonoBehaviour
+  public class TextTemplate : MonoBehaviour
   {
     [SerializeField]
     private TextTemplateData _templateDate;
@@ -24,9 +24,8 @@ namespace NiceGraphicLibrary.Component.GUI
       Start();
     }
 
-    private void Start()
-    {
-      
+    public void Start()
+    {      
       _textComponent = ComponentUtility.EnsureComponentOn<TextMeshProUGUI>(gameObject);
       if (_textComponent != null)
       {

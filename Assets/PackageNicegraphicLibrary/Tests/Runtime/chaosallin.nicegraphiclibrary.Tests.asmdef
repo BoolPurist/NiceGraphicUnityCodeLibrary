@@ -5,7 +5,8 @@
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
         "chaosallin.nicegraphiclibrary",
-        "chaosallin.nicegraphiclibrary.Tests.Editor"
+        "chaosallin.nicegraphiclibrary.Tests.Editor",
+        "Unity.TextMeshPro"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
