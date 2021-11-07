@@ -1,0 +1,14 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+
+namespace NiceGraphicLibrary.ScriptableObjects
+{
+  [CreateAssetMenu(fileName = "New#SCRIPTNAME#", menuName = "NiceGraphicLibrary/#SCRIPTNAME#")]
+  public class #SCRIPTNAME# : ScriptableObject
+  {
+      #NOTRIM#
+  }
+}
