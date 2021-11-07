@@ -101,6 +101,42 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/NiceGraphicLibrary.Component.GUI.LoadSceneByNameOnButtonClick.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NiceGraphicLibrary.Component.GUI.LoadSceneByNameOnButtonClick.html",
+          "hash": "aj2dUtERhh9uQ6v7uyuvIpt79o1zwVNNh1qysXsBL7c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NiceGraphicLibrary.Component.GUI.ObserverForButtonClick.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NiceGraphicLibrary.Component.GUI.ObserverForButtonClick.html",
+          "hash": "IwN3uhA2F+nRzS9dxMwmo7N+7qmpcBhbRQi2v84gSoI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NiceGraphicLibrary.Component.GUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NiceGraphicLibrary.Component.GUI.html",
+          "hash": "hiTCSDwrr2RCsCNl0ZJEAe7wUbfi5DO29c64jH+e/ug="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/NiceGraphicLibrary.Component.Movement.ButtonRigidMotion.yml",
       "output": {
         ".html": {
@@ -837,7 +873,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "CouUOgeAleOWaTyMAeFxFpNXOxV5MgMOCTue3cS9qgg="
+          "hash": "oS/+QMvZ/tdmpFVP0Xnp2NJ/aJXRtpW3gTSY4bVuyco="
         }
       },
       "is_incremental": false,
@@ -910,8 +946,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 67,
-          "skipped_file_count": 12
+          "total_file_count": 70,
+          "skipped_file_count": 25
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
