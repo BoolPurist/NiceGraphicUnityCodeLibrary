@@ -17,6 +17,8 @@ namespace NiceGraphicLibrary.Component.GUI
 
     private TextMeshProUGUI _textComponent;
 
+    private Dictionary<string, string> _valueTable = new Dictionary<string, string>();
+
     private void OnValidate()
     {
       Start();
@@ -24,18 +26,29 @@ namespace NiceGraphicLibrary.Component.GUI
 
     private void Start()
     {
+      
       _textComponent = ComponentUtility.EnsureComponentOn<TextMeshProUGUI>(gameObject);
       if (_textComponent != null)
       {
-        _textComponent.text = _templateDate == null ? "No data asset applied !": _templateDate.Text;
+        
+        if (_templateDate == null)
+        {
+          _textComponent.text = "No data asset applied !";
+        }
+        else
+        {
+          _textComponent.text = _templateDate.GetPreviewText();
+          _valueTable = _templateDate.DefaultValuesCopy;
+        }
       }
-      
+
+    
     }
 
-    public void InsertValueWithName(string name, string insertedValue)
+    public void InsertValueWithName(in string name, in string insertedValue)
     {
-      _templateDate.InsertValueAt(name, insertedValue);
-      _textComponent.text = _templateDate.Text;
+
+      _textComponent.text = _templateDate.GetTextWithInsertedValue(name, insertedValue, _valueTable);
     }
   } 
 }
