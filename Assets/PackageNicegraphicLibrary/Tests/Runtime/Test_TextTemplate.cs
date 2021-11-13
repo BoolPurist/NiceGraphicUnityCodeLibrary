@@ -13,7 +13,7 @@ using NiceGraphicLibrary.Component.GUI;
 
 namespace NiceGraphicLibrary.Tests.Runtime
 {
-  [TestFixture]
+  [TestFixture]  
   public class Test_TextTemplate
   {
     private const int DEFAULT_HP = 100;

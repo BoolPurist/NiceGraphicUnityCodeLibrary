@@ -1,0 +1,547 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PersistentDataUtility
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PersistentDataUtility
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="NiceGraphicLibrary.Utility.PersistentDataUtility">
+  
+  
+  <h1 id="NiceGraphicLibrary_Utility_PersistentDataUtility" data-uid="NiceGraphicLibrary.Utility.PersistentDataUtility" class="text-break">Class PersistentDataUtility
+  </h1>
+  <div class="markdown level0 summary"><p>Utility functions to save game data permanently. All operations, like read and write are done relative to the path Appplication.persistentDataPath.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">PersistentDataUtility</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="NiceGraphicLibrary.Utility.html">NiceGraphicLibrary.Utility</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="NiceGraphicLibrary_Utility_PersistentDataUtility_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class PersistentDataUtility</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="NiceGraphicLibrary_Utility_PersistentDataUtility_Append_" data-uid="NiceGraphicLibrary.Utility.PersistentDataUtility.Append*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_PersistentDataUtility_Append_System_String__System_String__" data-uid="NiceGraphicLibrary.Utility.PersistentDataUtility.Append(System.String@,System.String@)">Append(in String, in String)</h4>
+  <div class="markdown level1 summary"><p>Appends text content to the text content of a file. If the file does not exists then a new file with the given content is created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Append(in string path, in string content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>Path where to store the content
+If empty or null nothing happens</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>Content as text to append.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="NiceGraphicLibrary_Utility_PersistentDataUtility_AppendWithNewLine_" data-uid="NiceGraphicLibrary.Utility.PersistentDataUtility.AppendWithNewLine*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_PersistentDataUtility_AppendWithNewLine_System_String__System_String__" data-uid="NiceGraphicLibrary.Utility.PersistentDataUtility.AppendWithNewLine(System.String@,System.String@)">AppendWithNewLine(in String, in String)</h4>
+  <div class="markdown level1 summary"><p>Appends text content to the text content of a file in a new line. If the file does not exists then a new file with the given content is created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AppendWithNewLine(in string path, in string content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>Path where to store the content
+If empty or null nothing happens</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>Content as text to append in a new line.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="NiceGraphicLibrary_Utility_PersistentDataUtility_CreateDirectory_" data-uid="NiceGraphicLibrary.Utility.PersistentDataUtility.CreateDirectory*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_PersistentDataUtility_CreateDirectory_System_String__" data-uid="NiceGraphicLibrary.Utility.PersistentDataUtility.CreateDirectory(System.String@)">CreateDirectory(in String)</h4>
+  <div class="markdown level1 summary"><p>Creates a directory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CreateDirectory(in string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>Where to Creates a directory.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="NiceGraphicLibrary_Utility_PersistentDataUtility_CreateEmptyFile_" data-uid="NiceGraphicLibrary.Utility.PersistentDataUtility.CreateEmptyFile*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_PersistentDataUtility_CreateEmptyFile_System_String__" data-uid="NiceGraphicLibrary.Utility.PersistentDataUtility.CreateEmptyFile(System.String@)">CreateEmptyFile(in String)</h4>
+  <div class="markdown level1 summary"><p>Creates file without any content. If the files already exits it deletes its content</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CreateEmptyFile(in string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>Where to create the empty file.
+If empty or null nothing happens</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="NiceGraphicLibrary_Utility_PersistentDataUtility_DeleteDirectory_" data-uid="NiceGraphicLibrary.Utility.PersistentDataUtility.DeleteDirectory*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_PersistentDataUtility_DeleteDirectory_System_String__" data-uid="NiceGraphicLibrary.Utility.PersistentDataUtility.DeleteDirectory(System.String@)">DeleteDirectory(in String)</h4>
+  <div class="markdown level1 summary"><p>Deletes a directory. if the directory does not exits nothing will be deleted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DeleteDirectory(in string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>If null or empty nothing will be deleted.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="NiceGraphicLibrary_Utility_PersistentDataUtility_DeleteFile_" data-uid="NiceGraphicLibrary.Utility.PersistentDataUtility.DeleteFile*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_PersistentDataUtility_DeleteFile_System_String__" data-uid="NiceGraphicLibrary.Utility.PersistentDataUtility.DeleteFile(System.String@)">DeleteFile(in String)</h4>
+  <div class="markdown level1 summary"><p>Deletes a file. if the file does not exits nothing will be deleted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DeleteFile(in string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>If null or empty nothing will be deleted.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="NiceGraphicLibrary_Utility_PersistentDataUtility_DirectoryExits_" data-uid="NiceGraphicLibrary.Utility.PersistentDataUtility.DirectoryExits*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_PersistentDataUtility_DirectoryExits_System_String__" data-uid="NiceGraphicLibrary.Utility.PersistentDataUtility.DirectoryExits(System.String@)">DirectoryExits(in String)</h4>
+  <div class="markdown level1 summary"><p>Checks if a directory exits.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool DirectoryExits(in string fullPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fullPath</span></td>
+        <td><p>Where to check</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>If true the file located at the given path
+Returns true if this file does not exits.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="NiceGraphicLibrary_Utility_PersistentDataUtility_FileExits_" data-uid="NiceGraphicLibrary.Utility.PersistentDataUtility.FileExits*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_PersistentDataUtility_FileExits_System_String__" data-uid="NiceGraphicLibrary.Utility.PersistentDataUtility.FileExits(System.String@)">FileExits(in String)</h4>
+  <div class="markdown level1 summary"><p>Checks if  a file exits.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool FileExits(in string fullPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fullPath</span></td>
+        <td><p>Where to check</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>If true the file located at the given path
+Returns false if this file does not exits.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="NiceGraphicLibrary_Utility_PersistentDataUtility_ReadFrom_" data-uid="NiceGraphicLibrary.Utility.PersistentDataUtility.ReadFrom*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_PersistentDataUtility_ReadFrom_System_String__" data-uid="NiceGraphicLibrary.Utility.PersistentDataUtility.ReadFrom(System.String@)">ReadFrom(in String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ReadFrom(in string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>Where read the content from.
+If null or empty null is returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Returns content of a file.
+Returns null if this file does not exits.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="NiceGraphicLibrary_Utility_PersistentDataUtility_SetFileSystem_" data-uid="NiceGraphicLibrary.Utility.PersistentDataUtility.SetFileSystem*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_PersistentDataUtility_SetFileSystem_IFileSystem_" data-uid="NiceGraphicLibrary.Utility.PersistentDataUtility.SetFileSystem(IFileSystem)">SetFileSystem(IFileSystem)</h4>
+  <div class="markdown level1 summary"><p>Changes the file system to save game data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetFileSystem(IFileSystem fileSystem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IFileSystem</span></td>
+        <td><span class="parametername">fileSystem</span></td>
+        <td><p>If null the inner file system is not changed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="NiceGraphicLibrary_Utility_PersistentDataUtility_SetFileSystem_IFileSystem__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Useful to inject fake file system for unit testing.</p>
+</div>
+  
+  
+  <a id="NiceGraphicLibrary_Utility_PersistentDataUtility_Write_" data-uid="NiceGraphicLibrary.Utility.PersistentDataUtility.Write*"></a>
+  <h4 id="NiceGraphicLibrary_Utility_PersistentDataUtility_Write_System_String__System_String__" data-uid="NiceGraphicLibrary.Utility.PersistentDataUtility.Write(System.String@,System.String@)">Write(in String, in String)</h4>
+  <div class="markdown level1 summary"><p>Saves text content into a file. If the file does not exists then a new file with the given content is created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Write(in string path, in string content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>Path where to store the content
+If empty or null nothing happens</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>Content as text to save.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

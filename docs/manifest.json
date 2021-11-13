@@ -137,11 +137,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/NiceGraphicLibrary.Component.GUI.TextTemplate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NiceGraphicLibrary.Component.GUI.TextTemplate.html",
+          "hash": "jo1s/bVl3Y/4q51bphqOzlD1+hEIZatI8WNBt/76mcQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/NiceGraphicLibrary.Component.GUI.yml",
       "output": {
         ".html": {
           "relative_path": "api/NiceGraphicLibrary.Component.GUI.html",
-          "hash": "/8vbdYnwyzHPcf6axbOVOPXuLskVuEjbAczCKNOLkeo="
+          "hash": "B0t5jJHy4Fe5P1T8m7i5k+R465sVr8uVcUz2qv+R5HE="
         }
       },
       "is_incremental": false,
@@ -429,7 +441,7 @@
       "output": {
         ".html": {
           "relative_path": "api/NiceGraphicLibrary.Extensions.ICustomEnumerableExtension.html",
-          "hash": "vmx7G0Ec6uO20c0bJGtt8jBE9HgoC7Ulzar92uzvJt8="
+          "hash": "/YgLKNZnJla97DNrjL6DILy62JLVKwYk+mrrl56t8eE="
         }
       },
       "is_incremental": false,
@@ -441,7 +453,7 @@
       "output": {
         ".html": {
           "relative_path": "api/NiceGraphicLibrary.Extensions.QueueExtension.html",
-          "hash": "6fkE92YTIZpCz1//AtNPoZHwNsQwZlw/KSJkaL/Or+8="
+          "hash": "e9hLNN6QazXKTp+gTCwa3t+XcB44pac2GCPojwLSnL4="
         }
       },
       "is_incremental": false,
@@ -586,6 +598,42 @@
         ".html": {
           "relative_path": "api/NiceGraphicLibrary.ReadOnlyFieldAttribute.html",
           "hash": "SyaxPn5rqNZVJ0gs8d7EUL6H/jdSt1F7Pgzj6s4/dXY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NiceGraphicLibrary.ScriptableObjects.TextTemplateData.ValueEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NiceGraphicLibrary.ScriptableObjects.TextTemplateData.ValueEntry.html",
+          "hash": "qX2PubE9dBHg+/t0e4yw6h2wgJlAVcqUVTJBkfS4+kY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NiceGraphicLibrary.ScriptableObjects.TextTemplateData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NiceGraphicLibrary.ScriptableObjects.TextTemplateData.html",
+          "hash": "MtHlFHTkAJaxxASUdD7sOLRbQYE4KCIPqG+J1UJJSlM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NiceGraphicLibrary.ScriptableObjects.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NiceGraphicLibrary.ScriptableObjects.html",
+          "hash": "ANClSunyFODsXXOxC2QK/Bt1sxEwTI90iEp9wWYDNMA="
         }
       },
       "is_incremental": false,
@@ -753,7 +801,7 @@
       "output": {
         ".html": {
           "relative_path": "api/NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.html",
-          "hash": "Z0V8+FaRjyG+RU0tQYk4B/RdfzPEC84Or+a0zbnvAMk="
+          "hash": "5MuAgVijUx8GTf+YEb4gDaXuwjZn2S2BjrLJfVjvb6w="
         }
       },
       "is_incremental": false,
@@ -801,7 +849,7 @@
       "output": {
         ".html": {
           "relative_path": "api/NiceGraphicLibrary.Utility.Interpolation.html",
-          "hash": "GKhs68kFNhsTVbwWbgbUXpyEeziMJCidt/Os9/RX1Ek="
+          "hash": "MerZ8jFrnBSnfj1ENm++rWuorORheHS62jYTA60nEiw="
         }
       },
       "is_incremental": false,
@@ -813,7 +861,7 @@
       "output": {
         ".html": {
           "relative_path": "api/NiceGraphicLibrary.Utility.ListToDictionaryConverter-3.html",
-          "hash": "jK4+5rh/7cVRCMSZ0eNcoEJKXl3AqkRqLTd0bfCEtn8="
+          "hash": "wYZRCGKj28PNtj60O0hamt8B8XQ+ZmYxXT/wtT4dbPU="
         }
       },
       "is_incremental": false,
@@ -825,7 +873,19 @@
       "output": {
         ".html": {
           "relative_path": "api/NiceGraphicLibrary.Utility.NoRepeatedRandomPicker-1.html",
-          "hash": "221z1Swu/aiyJAx7V626SQXnxMbxL+T9ycZpoo+uLRU="
+          "hash": "AhXwE0vSUn5PecJSz48u6li6aNf+JarYA/qYOJ3WS+Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NiceGraphicLibrary.Utility.PersistentDataUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NiceGraphicLibrary.Utility.PersistentDataUtility.html",
+          "hash": "9jyZe6wh1sLdr8kF7vqEyZc2gUvq7zCjcZ+UlTXF66k="
         }
       },
       "is_incremental": false,
@@ -837,7 +897,7 @@
       "output": {
         ".html": {
           "relative_path": "api/NiceGraphicLibrary.Utility.RandomUtility.html",
-          "hash": "ZV5OnMJgzA2R7eq8xhfHti0MWDikEks9q0xvTBQcMYI="
+          "hash": "9HMWnidPM38KCicdKGfio9i7VZI4HbA4MdX7a786wpc="
         }
       },
       "is_incremental": false,
@@ -849,7 +909,7 @@
       "output": {
         ".html": {
           "relative_path": "api/NiceGraphicLibrary.Utility.html",
-          "hash": "s3mNCv3SITA68k7sxtvWhL/kdtbHl7jiy70XOv/1q1A="
+          "hash": "ywD3RHYyup5omqOzV8iaBmacW1+aW3pjaN7shShPG44="
         }
       },
       "is_incremental": false,
@@ -885,7 +945,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "J7N27ZHPjvG2L29nyetZbqUuELGnUbT0wXrp4g5rQ68="
+          "hash": "4p1TXUbsGBGZaPgzqJQz9SjuCJwrLBTuW+okqmvLyDI="
         }
       },
       "is_incremental": false,
@@ -958,8 +1018,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 71,
-          "skipped_file_count": 25
+          "total_file_count": 76,
+          "skipped_file_count": 7
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

@@ -267,6 +267,41 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.Component.GUI.QuitGameOnButtonClick.OnButtonClicked
   nameWithType: QuitGameOnButtonClick.OnButtonClicked
+- uid: NiceGraphicLibrary.Component.GUI.TextTemplate
+  name: TextTemplate
+  href: api/NiceGraphicLibrary.Component.GUI.TextTemplate.html
+  commentId: T:NiceGraphicLibrary.Component.GUI.TextTemplate
+  fullName: NiceGraphicLibrary.Component.GUI.TextTemplate
+  nameWithType: TextTemplate
+- uid: NiceGraphicLibrary.Component.GUI.TextTemplate.InsertValueWithName(System.String@,System.String@)
+  name: InsertValueWithName(in String, in String)
+  href: api/NiceGraphicLibrary.Component.GUI.TextTemplate.html#NiceGraphicLibrary_Component_GUI_TextTemplate_InsertValueWithName_System_String__System_String__
+  commentId: M:NiceGraphicLibrary.Component.GUI.TextTemplate.InsertValueWithName(System.String@,System.String@)
+  name.vb: InsertValueWithName(ByRef String, ByRef String)
+  fullName: NiceGraphicLibrary.Component.GUI.TextTemplate.InsertValueWithName(in System.String, in System.String)
+  fullName.vb: NiceGraphicLibrary.Component.GUI.TextTemplate.InsertValueWithName(ByRef System.String, ByRef System.String)
+  nameWithType: TextTemplate.InsertValueWithName(in String, in String)
+  nameWithType.vb: TextTemplate.InsertValueWithName(ByRef String, ByRef String)
+- uid: NiceGraphicLibrary.Component.GUI.TextTemplate.InsertValueWithName*
+  name: InsertValueWithName
+  href: api/NiceGraphicLibrary.Component.GUI.TextTemplate.html#NiceGraphicLibrary_Component_GUI_TextTemplate_InsertValueWithName_
+  commentId: Overload:NiceGraphicLibrary.Component.GUI.TextTemplate.InsertValueWithName
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Component.GUI.TextTemplate.InsertValueWithName
+  nameWithType: TextTemplate.InsertValueWithName
+- uid: NiceGraphicLibrary.Component.GUI.TextTemplate.Start
+  name: Start()
+  href: api/NiceGraphicLibrary.Component.GUI.TextTemplate.html#NiceGraphicLibrary_Component_GUI_TextTemplate_Start
+  commentId: M:NiceGraphicLibrary.Component.GUI.TextTemplate.Start
+  fullName: NiceGraphicLibrary.Component.GUI.TextTemplate.Start()
+  nameWithType: TextTemplate.Start()
+- uid: NiceGraphicLibrary.Component.GUI.TextTemplate.Start*
+  name: Start
+  href: api/NiceGraphicLibrary.Component.GUI.TextTemplate.html#NiceGraphicLibrary_Component_GUI_TextTemplate_Start_
+  commentId: Overload:NiceGraphicLibrary.Component.GUI.TextTemplate.Start
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Component.GUI.TextTemplate.Start
+  nameWithType: TextTemplate.Start
 - uid: NiceGraphicLibrary.Component.Movement
   name: NiceGraphicLibrary.Component.Movement
   href: api/NiceGraphicLibrary.Component.Movement.html
@@ -1648,13 +1683,13 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.Extensions.ICustomEnumerableExtension.GetValuesAsString
   nameWithType: ICustomEnumerableExtension.GetValuesAsString
-- uid: NiceGraphicLibrary.Extensions.ICustomEnumerableExtension.GetValuesAsString``1(IEnumerable{``0},System.Int32)
+- uid: NiceGraphicLibrary.Extensions.ICustomEnumerableExtension.GetValuesAsString``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
   name: GetValuesAsString<TElement>(IEnumerable<TElement>, Int32)
-  href: api/NiceGraphicLibrary.Extensions.ICustomEnumerableExtension.html#NiceGraphicLibrary_Extensions_ICustomEnumerableExtension_GetValuesAsString__1_IEnumerable___0__System_Int32_
-  commentId: M:NiceGraphicLibrary.Extensions.ICustomEnumerableExtension.GetValuesAsString``1(IEnumerable{``0},System.Int32)
+  href: api/NiceGraphicLibrary.Extensions.ICustomEnumerableExtension.html#NiceGraphicLibrary_Extensions_ICustomEnumerableExtension_GetValuesAsString__1_System_Collections_Generic_IEnumerable___0__System_Int32_
+  commentId: M:NiceGraphicLibrary.Extensions.ICustomEnumerableExtension.GetValuesAsString``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
   name.vb: GetValuesAsString(Of TElement)(IEnumerable(Of TElement), Int32)
-  fullName: NiceGraphicLibrary.Extensions.ICustomEnumerableExtension.GetValuesAsString<TElement>(IEnumerable<TElement>, System.Int32)
-  fullName.vb: NiceGraphicLibrary.Extensions.ICustomEnumerableExtension.GetValuesAsString(Of TElement)(IEnumerable(Of TElement), System.Int32)
+  fullName: NiceGraphicLibrary.Extensions.ICustomEnumerableExtension.GetValuesAsString<TElement>(System.Collections.Generic.IEnumerable<TElement>, System.Int32)
+  fullName.vb: NiceGraphicLibrary.Extensions.ICustomEnumerableExtension.GetValuesAsString(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement), System.Int32)
   nameWithType: ICustomEnumerableExtension.GetValuesAsString<TElement>(IEnumerable<TElement>, Int32)
   nameWithType.vb: ICustomEnumerableExtension.GetValuesAsString(Of TElement)(IEnumerable(Of TElement), Int32)
 - uid: NiceGraphicLibrary.Extensions.QueueExtension
@@ -1670,13 +1705,13 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.Extensions.QueueExtension.EnqueueRange
   nameWithType: QueueExtension.EnqueueRange
-- uid: NiceGraphicLibrary.Extensions.QueueExtension.EnqueueRange``1(Queue{``0},IEnumerable{``0})
+- uid: NiceGraphicLibrary.Extensions.QueueExtension.EnqueueRange``1(System.Collections.Generic.Queue{``0},System.Collections.Generic.IEnumerable{``0})
   name: EnqueueRange<T>(Queue<T>, IEnumerable<T>)
-  href: api/NiceGraphicLibrary.Extensions.QueueExtension.html#NiceGraphicLibrary_Extensions_QueueExtension_EnqueueRange__1_Queue___0__IEnumerable___0__
-  commentId: M:NiceGraphicLibrary.Extensions.QueueExtension.EnqueueRange``1(Queue{``0},IEnumerable{``0})
+  href: api/NiceGraphicLibrary.Extensions.QueueExtension.html#NiceGraphicLibrary_Extensions_QueueExtension_EnqueueRange__1_System_Collections_Generic_Queue___0__System_Collections_Generic_IEnumerable___0__
+  commentId: M:NiceGraphicLibrary.Extensions.QueueExtension.EnqueueRange``1(System.Collections.Generic.Queue{``0},System.Collections.Generic.IEnumerable{``0})
   name.vb: EnqueueRange(Of T)(Queue(Of T), IEnumerable(Of T))
-  fullName: NiceGraphicLibrary.Extensions.QueueExtension.EnqueueRange<T>(Queue<T>, IEnumerable<T>)
-  fullName.vb: NiceGraphicLibrary.Extensions.QueueExtension.EnqueueRange(Of T)(Queue(Of T), IEnumerable(Of T))
+  fullName: NiceGraphicLibrary.Extensions.QueueExtension.EnqueueRange<T>(System.Collections.Generic.Queue<T>, System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: NiceGraphicLibrary.Extensions.QueueExtension.EnqueueRange(Of T)(System.Collections.Generic.Queue(Of T), System.Collections.Generic.IEnumerable(Of T))
   nameWithType: QueueExtension.EnqueueRange<T>(Queue<T>, IEnumerable<T>)
   nameWithType.vb: QueueExtension.EnqueueRange(Of T)(Queue(Of T), IEnumerable(Of T))
 - uid: NiceGraphicLibrary.Extensions.StringExtension
@@ -2295,6 +2330,78 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.ReadOnlyFieldAttribute.ReadOnlyForPlay
   nameWithType: ReadOnlyFieldAttribute.ReadOnlyForPlay
+- uid: NiceGraphicLibrary.ScriptableObjects
+  name: NiceGraphicLibrary.ScriptableObjects
+  href: api/NiceGraphicLibrary.ScriptableObjects.html
+  commentId: N:NiceGraphicLibrary.ScriptableObjects
+  fullName: NiceGraphicLibrary.ScriptableObjects
+  nameWithType: NiceGraphicLibrary.ScriptableObjects
+- uid: NiceGraphicLibrary.ScriptableObjects.TextTemplateData
+  name: TextTemplateData
+  href: api/NiceGraphicLibrary.ScriptableObjects.TextTemplateData.html
+  commentId: T:NiceGraphicLibrary.ScriptableObjects.TextTemplateData
+  fullName: NiceGraphicLibrary.ScriptableObjects.TextTemplateData
+  nameWithType: TextTemplateData
+- uid: NiceGraphicLibrary.ScriptableObjects.TextTemplateData.DefaultValuesCopy
+  name: DefaultValuesCopy
+  href: api/NiceGraphicLibrary.ScriptableObjects.TextTemplateData.html#NiceGraphicLibrary_ScriptableObjects_TextTemplateData_DefaultValuesCopy
+  commentId: P:NiceGraphicLibrary.ScriptableObjects.TextTemplateData.DefaultValuesCopy
+  fullName: NiceGraphicLibrary.ScriptableObjects.TextTemplateData.DefaultValuesCopy
+  nameWithType: TextTemplateData.DefaultValuesCopy
+- uid: NiceGraphicLibrary.ScriptableObjects.TextTemplateData.DefaultValuesCopy*
+  name: DefaultValuesCopy
+  href: api/NiceGraphicLibrary.ScriptableObjects.TextTemplateData.html#NiceGraphicLibrary_ScriptableObjects_TextTemplateData_DefaultValuesCopy_
+  commentId: Overload:NiceGraphicLibrary.ScriptableObjects.TextTemplateData.DefaultValuesCopy
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.ScriptableObjects.TextTemplateData.DefaultValuesCopy
+  nameWithType: TextTemplateData.DefaultValuesCopy
+- uid: NiceGraphicLibrary.ScriptableObjects.TextTemplateData.GetPreviewText
+  name: GetPreviewText()
+  href: api/NiceGraphicLibrary.ScriptableObjects.TextTemplateData.html#NiceGraphicLibrary_ScriptableObjects_TextTemplateData_GetPreviewText
+  commentId: M:NiceGraphicLibrary.ScriptableObjects.TextTemplateData.GetPreviewText
+  fullName: NiceGraphicLibrary.ScriptableObjects.TextTemplateData.GetPreviewText()
+  nameWithType: TextTemplateData.GetPreviewText()
+- uid: NiceGraphicLibrary.ScriptableObjects.TextTemplateData.GetPreviewText*
+  name: GetPreviewText
+  href: api/NiceGraphicLibrary.ScriptableObjects.TextTemplateData.html#NiceGraphicLibrary_ScriptableObjects_TextTemplateData_GetPreviewText_
+  commentId: Overload:NiceGraphicLibrary.ScriptableObjects.TextTemplateData.GetPreviewText
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.ScriptableObjects.TextTemplateData.GetPreviewText
+  nameWithType: TextTemplateData.GetPreviewText
+- uid: NiceGraphicLibrary.ScriptableObjects.TextTemplateData.GetTextWithInsertedValue(System.String@,System.Object@,System.Collections.Generic.Dictionary{System.String,System.String})
+  name: GetTextWithInsertedValue(in String, in Object, Dictionary<String, String>)
+  href: api/NiceGraphicLibrary.ScriptableObjects.TextTemplateData.html#NiceGraphicLibrary_ScriptableObjects_TextTemplateData_GetTextWithInsertedValue_System_String__System_Object__System_Collections_Generic_Dictionary_System_String_System_String__
+  commentId: M:NiceGraphicLibrary.ScriptableObjects.TextTemplateData.GetTextWithInsertedValue(System.String@,System.Object@,System.Collections.Generic.Dictionary{System.String,System.String})
+  name.vb: GetTextWithInsertedValue(ByRef String, ByRef Object, Dictionary(Of String, String))
+  fullName: NiceGraphicLibrary.ScriptableObjects.TextTemplateData.GetTextWithInsertedValue(in System.String, in System.Object, System.Collections.Generic.Dictionary<System.String, System.String>)
+  fullName.vb: NiceGraphicLibrary.ScriptableObjects.TextTemplateData.GetTextWithInsertedValue(ByRef System.String, ByRef System.Object, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  nameWithType: TextTemplateData.GetTextWithInsertedValue(in String, in Object, Dictionary<String, String>)
+  nameWithType.vb: TextTemplateData.GetTextWithInsertedValue(ByRef String, ByRef Object, Dictionary(Of String, String))
+- uid: NiceGraphicLibrary.ScriptableObjects.TextTemplateData.GetTextWithInsertedValue*
+  name: GetTextWithInsertedValue
+  href: api/NiceGraphicLibrary.ScriptableObjects.TextTemplateData.html#NiceGraphicLibrary_ScriptableObjects_TextTemplateData_GetTextWithInsertedValue_
+  commentId: Overload:NiceGraphicLibrary.ScriptableObjects.TextTemplateData.GetTextWithInsertedValue
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.ScriptableObjects.TextTemplateData.GetTextWithInsertedValue
+  nameWithType: TextTemplateData.GetTextWithInsertedValue
+- uid: NiceGraphicLibrary.ScriptableObjects.TextTemplateData.ValueEntry
+  name: TextTemplateData.ValueEntry
+  href: api/NiceGraphicLibrary.ScriptableObjects.TextTemplateData.ValueEntry.html
+  commentId: T:NiceGraphicLibrary.ScriptableObjects.TextTemplateData.ValueEntry
+  fullName: NiceGraphicLibrary.ScriptableObjects.TextTemplateData.ValueEntry
+  nameWithType: TextTemplateData.ValueEntry
+- uid: NiceGraphicLibrary.ScriptableObjects.TextTemplateData.ValueEntry.DefaultValue
+  name: DefaultValue
+  href: api/NiceGraphicLibrary.ScriptableObjects.TextTemplateData.ValueEntry.html#NiceGraphicLibrary_ScriptableObjects_TextTemplateData_ValueEntry_DefaultValue
+  commentId: F:NiceGraphicLibrary.ScriptableObjects.TextTemplateData.ValueEntry.DefaultValue
+  fullName: NiceGraphicLibrary.ScriptableObjects.TextTemplateData.ValueEntry.DefaultValue
+  nameWithType: TextTemplateData.ValueEntry.DefaultValue
+- uid: NiceGraphicLibrary.ScriptableObjects.TextTemplateData.ValueEntry.Name
+  name: Name
+  href: api/NiceGraphicLibrary.ScriptableObjects.TextTemplateData.ValueEntry.html#NiceGraphicLibrary_ScriptableObjects_TextTemplateData_ValueEntry_Name
+  commentId: F:NiceGraphicLibrary.ScriptableObjects.TextTemplateData.ValueEntry.Name
+  fullName: NiceGraphicLibrary.ScriptableObjects.TextTemplateData.ValueEntry.Name
+  nameWithType: TextTemplateData.ValueEntry.Name
 - uid: NiceGraphicLibrary.SingletonComponent`1
   name: SingletonComponent<TComponent>
   href: api/NiceGraphicLibrary.SingletonComponent-1.html
@@ -3209,11 +3316,11 @@ references:
   commentId: T:NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility
   fullName: NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility
   nameWithType: CoroutineUtility
-- uid: NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.ResetCoroutine(MonoBehaviour,IEnumerator)
+- uid: NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.ResetCoroutine(MonoBehaviour,System.Collections.IEnumerator)
   name: ResetCoroutine(MonoBehaviour, IEnumerator)
-  href: api/NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.html#NiceGraphicLibrary_Utility_Coroutines_CoroutineUtility_ResetCoroutine_MonoBehaviour_IEnumerator_
-  commentId: M:NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.ResetCoroutine(MonoBehaviour,IEnumerator)
-  fullName: NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.ResetCoroutine(MonoBehaviour, IEnumerator)
+  href: api/NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.html#NiceGraphicLibrary_Utility_Coroutines_CoroutineUtility_ResetCoroutine_MonoBehaviour_System_Collections_IEnumerator_
+  commentId: M:NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.ResetCoroutine(MonoBehaviour,System.Collections.IEnumerator)
+  fullName: NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.ResetCoroutine(MonoBehaviour, System.Collections.IEnumerator)
   nameWithType: CoroutineUtility.ResetCoroutine(MonoBehaviour, IEnumerator)
 - uid: NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.ResetCoroutine*
   name: ResetCoroutine
@@ -3222,13 +3329,13 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.ResetCoroutine
   nameWithType: CoroutineUtility.ResetCoroutine
-- uid: NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.StarCoroutineInInterval(MonoBehaviour,System.Func{IEnumerator},System.Single)
+- uid: NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.StarCoroutineInInterval(MonoBehaviour,System.Func{System.Collections.IEnumerator},System.Single)
   name: StarCoroutineInInterval(MonoBehaviour, Func<IEnumerator>, Single)
-  href: api/NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.html#NiceGraphicLibrary_Utility_Coroutines_CoroutineUtility_StarCoroutineInInterval_MonoBehaviour_System_Func_IEnumerator__System_Single_
-  commentId: M:NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.StarCoroutineInInterval(MonoBehaviour,System.Func{IEnumerator},System.Single)
+  href: api/NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.html#NiceGraphicLibrary_Utility_Coroutines_CoroutineUtility_StarCoroutineInInterval_MonoBehaviour_System_Func_System_Collections_IEnumerator__System_Single_
+  commentId: M:NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.StarCoroutineInInterval(MonoBehaviour,System.Func{System.Collections.IEnumerator},System.Single)
   name.vb: StarCoroutineInInterval(MonoBehaviour, Func(Of IEnumerator), Single)
-  fullName: NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.StarCoroutineInInterval(MonoBehaviour, System.Func<IEnumerator>, System.Single)
-  fullName.vb: NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.StarCoroutineInInterval(MonoBehaviour, System.Func(Of IEnumerator), System.Single)
+  fullName: NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.StarCoroutineInInterval(MonoBehaviour, System.Func<System.Collections.IEnumerator>, System.Single)
+  fullName.vb: NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.StarCoroutineInInterval(MonoBehaviour, System.Func(Of System.Collections.IEnumerator), System.Single)
   nameWithType: CoroutineUtility.StarCoroutineInInterval(MonoBehaviour, Func<IEnumerator>, Single)
   nameWithType.vb: CoroutineUtility.StarCoroutineInInterval(MonoBehaviour, Func(Of IEnumerator), Single)
 - uid: NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.StarCoroutineInInterval*
@@ -3277,13 +3384,13 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.StartActionInLoop
   nameWithType: CoroutineUtility.StartActionInLoop
-- uid: NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.StartCoroutineDelayed(MonoBehaviour,System.Func{IEnumerator},System.Single)
+- uid: NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.StartCoroutineDelayed(MonoBehaviour,System.Func{System.Collections.IEnumerator},System.Single)
   name: StartCoroutineDelayed(MonoBehaviour, Func<IEnumerator>, Single)
-  href: api/NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.html#NiceGraphicLibrary_Utility_Coroutines_CoroutineUtility_StartCoroutineDelayed_MonoBehaviour_System_Func_IEnumerator__System_Single_
-  commentId: M:NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.StartCoroutineDelayed(MonoBehaviour,System.Func{IEnumerator},System.Single)
+  href: api/NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.html#NiceGraphicLibrary_Utility_Coroutines_CoroutineUtility_StartCoroutineDelayed_MonoBehaviour_System_Func_System_Collections_IEnumerator__System_Single_
+  commentId: M:NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.StartCoroutineDelayed(MonoBehaviour,System.Func{System.Collections.IEnumerator},System.Single)
   name.vb: StartCoroutineDelayed(MonoBehaviour, Func(Of IEnumerator), Single)
-  fullName: NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.StartCoroutineDelayed(MonoBehaviour, System.Func<IEnumerator>, System.Single)
-  fullName.vb: NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.StartCoroutineDelayed(MonoBehaviour, System.Func(Of IEnumerator), System.Single)
+  fullName: NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.StartCoroutineDelayed(MonoBehaviour, System.Func<System.Collections.IEnumerator>, System.Single)
+  fullName.vb: NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.StartCoroutineDelayed(MonoBehaviour, System.Func(Of System.Collections.IEnumerator), System.Single)
   nameWithType: CoroutineUtility.StartCoroutineDelayed(MonoBehaviour, Func<IEnumerator>, Single)
   nameWithType.vb: CoroutineUtility.StartCoroutineDelayed(MonoBehaviour, Func(Of IEnumerator), Single)
 - uid: NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.StartCoroutineDelayed*
@@ -3293,13 +3400,13 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.StartCoroutineDelayed
   nameWithType: CoroutineUtility.StartCoroutineDelayed
-- uid: NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.StartCoroutineInLoop(MonoBehaviour,System.Func{IEnumerator})
+- uid: NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.StartCoroutineInLoop(MonoBehaviour,System.Func{System.Collections.IEnumerator})
   name: StartCoroutineInLoop(MonoBehaviour, Func<IEnumerator>)
-  href: api/NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.html#NiceGraphicLibrary_Utility_Coroutines_CoroutineUtility_StartCoroutineInLoop_MonoBehaviour_System_Func_IEnumerator__
-  commentId: M:NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.StartCoroutineInLoop(MonoBehaviour,System.Func{IEnumerator})
+  href: api/NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.html#NiceGraphicLibrary_Utility_Coroutines_CoroutineUtility_StartCoroutineInLoop_MonoBehaviour_System_Func_System_Collections_IEnumerator__
+  commentId: M:NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.StartCoroutineInLoop(MonoBehaviour,System.Func{System.Collections.IEnumerator})
   name.vb: StartCoroutineInLoop(MonoBehaviour, Func(Of IEnumerator))
-  fullName: NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.StartCoroutineInLoop(MonoBehaviour, System.Func<IEnumerator>)
-  fullName.vb: NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.StartCoroutineInLoop(MonoBehaviour, System.Func(Of IEnumerator))
+  fullName: NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.StartCoroutineInLoop(MonoBehaviour, System.Func<System.Collections.IEnumerator>)
+  fullName.vb: NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.StartCoroutineInLoop(MonoBehaviour, System.Func(Of System.Collections.IEnumerator))
   nameWithType: CoroutineUtility.StartCoroutineInLoop(MonoBehaviour, Func<IEnumerator>)
   nameWithType.vb: CoroutineUtility.StartCoroutineInLoop(MonoBehaviour, Func(Of IEnumerator))
 - uid: NiceGraphicLibrary.Utility.Coroutines.CoroutineUtility.StartCoroutineInLoop*
@@ -3524,13 +3631,13 @@ references:
   fullName.vb: NiceGraphicLibrary.Utility.ListToDictionaryConverter(Of TKey, TValue, OType).ListToDictionaryConverter
   nameWithType: ListToDictionaryConverter<TKey, TValue, OType>.ListToDictionaryConverter
   nameWithType.vb: ListToDictionaryConverter(Of TKey, TValue, OType).ListToDictionaryConverter
-- uid: NiceGraphicLibrary.Utility.ListToDictionaryConverter`3.CreateDictionaryFrom(IList{`2})
+- uid: NiceGraphicLibrary.Utility.ListToDictionaryConverter`3.CreateDictionaryFrom(System.Collections.Generic.IList{`2})
   name: CreateDictionaryFrom(IList<OType>)
-  href: api/NiceGraphicLibrary.Utility.ListToDictionaryConverter-3.html#NiceGraphicLibrary_Utility_ListToDictionaryConverter_3_CreateDictionaryFrom_IList__2__
-  commentId: M:NiceGraphicLibrary.Utility.ListToDictionaryConverter`3.CreateDictionaryFrom(IList{`2})
+  href: api/NiceGraphicLibrary.Utility.ListToDictionaryConverter-3.html#NiceGraphicLibrary_Utility_ListToDictionaryConverter_3_CreateDictionaryFrom_System_Collections_Generic_IList__2__
+  commentId: M:NiceGraphicLibrary.Utility.ListToDictionaryConverter`3.CreateDictionaryFrom(System.Collections.Generic.IList{`2})
   name.vb: CreateDictionaryFrom(IList(Of OType))
-  fullName: NiceGraphicLibrary.Utility.ListToDictionaryConverter<TKey, TValue, OType>.CreateDictionaryFrom(IList<OType>)
-  fullName.vb: NiceGraphicLibrary.Utility.ListToDictionaryConverter(Of TKey, TValue, OType).CreateDictionaryFrom(IList(Of OType))
+  fullName: NiceGraphicLibrary.Utility.ListToDictionaryConverter<TKey, TValue, OType>.CreateDictionaryFrom(System.Collections.Generic.IList<OType>)
+  fullName.vb: NiceGraphicLibrary.Utility.ListToDictionaryConverter(Of TKey, TValue, OType).CreateDictionaryFrom(System.Collections.Generic.IList(Of OType))
   nameWithType: ListToDictionaryConverter<TKey, TValue, OType>.CreateDictionaryFrom(IList<OType>)
   nameWithType.vb: ListToDictionaryConverter(Of TKey, TValue, OType).CreateDictionaryFrom(IList(Of OType))
 - uid: NiceGraphicLibrary.Utility.ListToDictionaryConverter`3.CreateDictionaryFrom*
@@ -3542,13 +3649,13 @@ references:
   fullName.vb: NiceGraphicLibrary.Utility.ListToDictionaryConverter(Of TKey, TValue, OType).CreateDictionaryFrom
   nameWithType: ListToDictionaryConverter<TKey, TValue, OType>.CreateDictionaryFrom
   nameWithType.vb: ListToDictionaryConverter(Of TKey, TValue, OType).CreateDictionaryFrom
-- uid: NiceGraphicLibrary.Utility.ListToDictionaryConverter`3.CreateListFrom(IDictionary{`0,`1})
+- uid: NiceGraphicLibrary.Utility.ListToDictionaryConverter`3.CreateListFrom(System.Collections.Generic.IDictionary{`0,`1})
   name: CreateListFrom(IDictionary<TKey, TValue>)
-  href: api/NiceGraphicLibrary.Utility.ListToDictionaryConverter-3.html#NiceGraphicLibrary_Utility_ListToDictionaryConverter_3_CreateListFrom_IDictionary__0__1__
-  commentId: M:NiceGraphicLibrary.Utility.ListToDictionaryConverter`3.CreateListFrom(IDictionary{`0,`1})
+  href: api/NiceGraphicLibrary.Utility.ListToDictionaryConverter-3.html#NiceGraphicLibrary_Utility_ListToDictionaryConverter_3_CreateListFrom_System_Collections_Generic_IDictionary__0__1__
+  commentId: M:NiceGraphicLibrary.Utility.ListToDictionaryConverter`3.CreateListFrom(System.Collections.Generic.IDictionary{`0,`1})
   name.vb: CreateListFrom(IDictionary(Of TKey, TValue))
-  fullName: NiceGraphicLibrary.Utility.ListToDictionaryConverter<TKey, TValue, OType>.CreateListFrom(IDictionary<TKey, TValue>)
-  fullName.vb: NiceGraphicLibrary.Utility.ListToDictionaryConverter(Of TKey, TValue, OType).CreateListFrom(IDictionary(Of TKey, TValue))
+  fullName: NiceGraphicLibrary.Utility.ListToDictionaryConverter<TKey, TValue, OType>.CreateListFrom(System.Collections.Generic.IDictionary<TKey, TValue>)
+  fullName.vb: NiceGraphicLibrary.Utility.ListToDictionaryConverter(Of TKey, TValue, OType).CreateListFrom(System.Collections.Generic.IDictionary(Of TKey, TValue))
   nameWithType: ListToDictionaryConverter<TKey, TValue, OType>.CreateListFrom(IDictionary<TKey, TValue>)
   nameWithType.vb: ListToDictionaryConverter(Of TKey, TValue, OType).CreateListFrom(IDictionary(Of TKey, TValue))
 - uid: NiceGraphicLibrary.Utility.ListToDictionaryConverter`3.CreateListFrom*
@@ -3586,13 +3693,13 @@ references:
   fullName.vb: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker(Of TElement)
   nameWithType: NoRepeatedRandomPicker<TElement>
   nameWithType.vb: NoRepeatedRandomPicker(Of TElement)
-- uid: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker`1.#ctor(IEnumerable{`0})
+- uid: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker`1.#ctor(System.Collections.Generic.IEnumerable{`0})
   name: NoRepeatedRandomPicker(IEnumerable<TElement>)
-  href: api/NiceGraphicLibrary.Utility.NoRepeatedRandomPicker-1.html#NiceGraphicLibrary_Utility_NoRepeatedRandomPicker_1__ctor_IEnumerable__0__
-  commentId: M:NiceGraphicLibrary.Utility.NoRepeatedRandomPicker`1.#ctor(IEnumerable{`0})
+  href: api/NiceGraphicLibrary.Utility.NoRepeatedRandomPicker-1.html#NiceGraphicLibrary_Utility_NoRepeatedRandomPicker_1__ctor_System_Collections_Generic_IEnumerable__0__
+  commentId: M:NiceGraphicLibrary.Utility.NoRepeatedRandomPicker`1.#ctor(System.Collections.Generic.IEnumerable{`0})
   name.vb: NoRepeatedRandomPicker(IEnumerable(Of TElement))
-  fullName: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker<TElement>.NoRepeatedRandomPicker(IEnumerable<TElement>)
-  fullName.vb: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker(Of TElement).NoRepeatedRandomPicker(IEnumerable(Of TElement))
+  fullName: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker<TElement>.NoRepeatedRandomPicker(System.Collections.Generic.IEnumerable<TElement>)
+  fullName.vb: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker(Of TElement).NoRepeatedRandomPicker(System.Collections.Generic.IEnumerable(Of TElement))
   nameWithType: NoRepeatedRandomPicker<TElement>.NoRepeatedRandomPicker(IEnumerable<TElement>)
   nameWithType.vb: NoRepeatedRandomPicker(Of TElement).NoRepeatedRandomPicker(IEnumerable(Of TElement))
 - uid: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker`1.#ctor*
@@ -3638,13 +3745,13 @@ references:
   fullName.vb: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker(Of TElement).Reset
   nameWithType: NoRepeatedRandomPicker<TElement>.Reset
   nameWithType.vb: NoRepeatedRandomPicker(Of TElement).Reset
-- uid: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker`1.SetANew(IEnumerable{`0})
+- uid: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker`1.SetANew(System.Collections.Generic.IEnumerable{`0})
   name: SetANew(IEnumerable<TElement>)
-  href: api/NiceGraphicLibrary.Utility.NoRepeatedRandomPicker-1.html#NiceGraphicLibrary_Utility_NoRepeatedRandomPicker_1_SetANew_IEnumerable__0__
-  commentId: M:NiceGraphicLibrary.Utility.NoRepeatedRandomPicker`1.SetANew(IEnumerable{`0})
+  href: api/NiceGraphicLibrary.Utility.NoRepeatedRandomPicker-1.html#NiceGraphicLibrary_Utility_NoRepeatedRandomPicker_1_SetANew_System_Collections_Generic_IEnumerable__0__
+  commentId: M:NiceGraphicLibrary.Utility.NoRepeatedRandomPicker`1.SetANew(System.Collections.Generic.IEnumerable{`0})
   name.vb: SetANew(IEnumerable(Of TElement))
-  fullName: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker<TElement>.SetANew(IEnumerable<TElement>)
-  fullName.vb: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker(Of TElement).SetANew(IEnumerable(Of TElement))
+  fullName: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker<TElement>.SetANew(System.Collections.Generic.IEnumerable<TElement>)
+  fullName.vb: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker(Of TElement).SetANew(System.Collections.Generic.IEnumerable(Of TElement))
   nameWithType: NoRepeatedRandomPicker<TElement>.SetANew(IEnumerable<TElement>)
   nameWithType.vb: NoRepeatedRandomPicker(Of TElement).SetANew(IEnumerable(Of TElement))
 - uid: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker`1.SetANew*
@@ -3656,19 +3763,198 @@ references:
   fullName.vb: NiceGraphicLibrary.Utility.NoRepeatedRandomPicker(Of TElement).SetANew
   nameWithType: NoRepeatedRandomPicker<TElement>.SetANew
   nameWithType.vb: NoRepeatedRandomPicker(Of TElement).SetANew
+- uid: NiceGraphicLibrary.Utility.PersistentDataUtility
+  name: PersistentDataUtility
+  href: api/NiceGraphicLibrary.Utility.PersistentDataUtility.html
+  commentId: T:NiceGraphicLibrary.Utility.PersistentDataUtility
+  fullName: NiceGraphicLibrary.Utility.PersistentDataUtility
+  nameWithType: PersistentDataUtility
+- uid: NiceGraphicLibrary.Utility.PersistentDataUtility.Append(System.String@,System.String@)
+  name: Append(in String, in String)
+  href: api/NiceGraphicLibrary.Utility.PersistentDataUtility.html#NiceGraphicLibrary_Utility_PersistentDataUtility_Append_System_String__System_String__
+  commentId: M:NiceGraphicLibrary.Utility.PersistentDataUtility.Append(System.String@,System.String@)
+  name.vb: Append(ByRef String, ByRef String)
+  fullName: NiceGraphicLibrary.Utility.PersistentDataUtility.Append(in System.String, in System.String)
+  fullName.vb: NiceGraphicLibrary.Utility.PersistentDataUtility.Append(ByRef System.String, ByRef System.String)
+  nameWithType: PersistentDataUtility.Append(in String, in String)
+  nameWithType.vb: PersistentDataUtility.Append(ByRef String, ByRef String)
+- uid: NiceGraphicLibrary.Utility.PersistentDataUtility.Append*
+  name: Append
+  href: api/NiceGraphicLibrary.Utility.PersistentDataUtility.html#NiceGraphicLibrary_Utility_PersistentDataUtility_Append_
+  commentId: Overload:NiceGraphicLibrary.Utility.PersistentDataUtility.Append
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.PersistentDataUtility.Append
+  nameWithType: PersistentDataUtility.Append
+- uid: NiceGraphicLibrary.Utility.PersistentDataUtility.AppendWithNewLine(System.String@,System.String@)
+  name: AppendWithNewLine(in String, in String)
+  href: api/NiceGraphicLibrary.Utility.PersistentDataUtility.html#NiceGraphicLibrary_Utility_PersistentDataUtility_AppendWithNewLine_System_String__System_String__
+  commentId: M:NiceGraphicLibrary.Utility.PersistentDataUtility.AppendWithNewLine(System.String@,System.String@)
+  name.vb: AppendWithNewLine(ByRef String, ByRef String)
+  fullName: NiceGraphicLibrary.Utility.PersistentDataUtility.AppendWithNewLine(in System.String, in System.String)
+  fullName.vb: NiceGraphicLibrary.Utility.PersistentDataUtility.AppendWithNewLine(ByRef System.String, ByRef System.String)
+  nameWithType: PersistentDataUtility.AppendWithNewLine(in String, in String)
+  nameWithType.vb: PersistentDataUtility.AppendWithNewLine(ByRef String, ByRef String)
+- uid: NiceGraphicLibrary.Utility.PersistentDataUtility.AppendWithNewLine*
+  name: AppendWithNewLine
+  href: api/NiceGraphicLibrary.Utility.PersistentDataUtility.html#NiceGraphicLibrary_Utility_PersistentDataUtility_AppendWithNewLine_
+  commentId: Overload:NiceGraphicLibrary.Utility.PersistentDataUtility.AppendWithNewLine
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.PersistentDataUtility.AppendWithNewLine
+  nameWithType: PersistentDataUtility.AppendWithNewLine
+- uid: NiceGraphicLibrary.Utility.PersistentDataUtility.CreateDirectory(System.String@)
+  name: CreateDirectory(in String)
+  href: api/NiceGraphicLibrary.Utility.PersistentDataUtility.html#NiceGraphicLibrary_Utility_PersistentDataUtility_CreateDirectory_System_String__
+  commentId: M:NiceGraphicLibrary.Utility.PersistentDataUtility.CreateDirectory(System.String@)
+  name.vb: CreateDirectory(ByRef String)
+  fullName: NiceGraphicLibrary.Utility.PersistentDataUtility.CreateDirectory(in System.String)
+  fullName.vb: NiceGraphicLibrary.Utility.PersistentDataUtility.CreateDirectory(ByRef System.String)
+  nameWithType: PersistentDataUtility.CreateDirectory(in String)
+  nameWithType.vb: PersistentDataUtility.CreateDirectory(ByRef String)
+- uid: NiceGraphicLibrary.Utility.PersistentDataUtility.CreateDirectory*
+  name: CreateDirectory
+  href: api/NiceGraphicLibrary.Utility.PersistentDataUtility.html#NiceGraphicLibrary_Utility_PersistentDataUtility_CreateDirectory_
+  commentId: Overload:NiceGraphicLibrary.Utility.PersistentDataUtility.CreateDirectory
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.PersistentDataUtility.CreateDirectory
+  nameWithType: PersistentDataUtility.CreateDirectory
+- uid: NiceGraphicLibrary.Utility.PersistentDataUtility.CreateEmptyFile(System.String@)
+  name: CreateEmptyFile(in String)
+  href: api/NiceGraphicLibrary.Utility.PersistentDataUtility.html#NiceGraphicLibrary_Utility_PersistentDataUtility_CreateEmptyFile_System_String__
+  commentId: M:NiceGraphicLibrary.Utility.PersistentDataUtility.CreateEmptyFile(System.String@)
+  name.vb: CreateEmptyFile(ByRef String)
+  fullName: NiceGraphicLibrary.Utility.PersistentDataUtility.CreateEmptyFile(in System.String)
+  fullName.vb: NiceGraphicLibrary.Utility.PersistentDataUtility.CreateEmptyFile(ByRef System.String)
+  nameWithType: PersistentDataUtility.CreateEmptyFile(in String)
+  nameWithType.vb: PersistentDataUtility.CreateEmptyFile(ByRef String)
+- uid: NiceGraphicLibrary.Utility.PersistentDataUtility.CreateEmptyFile*
+  name: CreateEmptyFile
+  href: api/NiceGraphicLibrary.Utility.PersistentDataUtility.html#NiceGraphicLibrary_Utility_PersistentDataUtility_CreateEmptyFile_
+  commentId: Overload:NiceGraphicLibrary.Utility.PersistentDataUtility.CreateEmptyFile
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.PersistentDataUtility.CreateEmptyFile
+  nameWithType: PersistentDataUtility.CreateEmptyFile
+- uid: NiceGraphicLibrary.Utility.PersistentDataUtility.DeleteDirectory(System.String@)
+  name: DeleteDirectory(in String)
+  href: api/NiceGraphicLibrary.Utility.PersistentDataUtility.html#NiceGraphicLibrary_Utility_PersistentDataUtility_DeleteDirectory_System_String__
+  commentId: M:NiceGraphicLibrary.Utility.PersistentDataUtility.DeleteDirectory(System.String@)
+  name.vb: DeleteDirectory(ByRef String)
+  fullName: NiceGraphicLibrary.Utility.PersistentDataUtility.DeleteDirectory(in System.String)
+  fullName.vb: NiceGraphicLibrary.Utility.PersistentDataUtility.DeleteDirectory(ByRef System.String)
+  nameWithType: PersistentDataUtility.DeleteDirectory(in String)
+  nameWithType.vb: PersistentDataUtility.DeleteDirectory(ByRef String)
+- uid: NiceGraphicLibrary.Utility.PersistentDataUtility.DeleteDirectory*
+  name: DeleteDirectory
+  href: api/NiceGraphicLibrary.Utility.PersistentDataUtility.html#NiceGraphicLibrary_Utility_PersistentDataUtility_DeleteDirectory_
+  commentId: Overload:NiceGraphicLibrary.Utility.PersistentDataUtility.DeleteDirectory
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.PersistentDataUtility.DeleteDirectory
+  nameWithType: PersistentDataUtility.DeleteDirectory
+- uid: NiceGraphicLibrary.Utility.PersistentDataUtility.DeleteFile(System.String@)
+  name: DeleteFile(in String)
+  href: api/NiceGraphicLibrary.Utility.PersistentDataUtility.html#NiceGraphicLibrary_Utility_PersistentDataUtility_DeleteFile_System_String__
+  commentId: M:NiceGraphicLibrary.Utility.PersistentDataUtility.DeleteFile(System.String@)
+  name.vb: DeleteFile(ByRef String)
+  fullName: NiceGraphicLibrary.Utility.PersistentDataUtility.DeleteFile(in System.String)
+  fullName.vb: NiceGraphicLibrary.Utility.PersistentDataUtility.DeleteFile(ByRef System.String)
+  nameWithType: PersistentDataUtility.DeleteFile(in String)
+  nameWithType.vb: PersistentDataUtility.DeleteFile(ByRef String)
+- uid: NiceGraphicLibrary.Utility.PersistentDataUtility.DeleteFile*
+  name: DeleteFile
+  href: api/NiceGraphicLibrary.Utility.PersistentDataUtility.html#NiceGraphicLibrary_Utility_PersistentDataUtility_DeleteFile_
+  commentId: Overload:NiceGraphicLibrary.Utility.PersistentDataUtility.DeleteFile
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.PersistentDataUtility.DeleteFile
+  nameWithType: PersistentDataUtility.DeleteFile
+- uid: NiceGraphicLibrary.Utility.PersistentDataUtility.DirectoryExits(System.String@)
+  name: DirectoryExits(in String)
+  href: api/NiceGraphicLibrary.Utility.PersistentDataUtility.html#NiceGraphicLibrary_Utility_PersistentDataUtility_DirectoryExits_System_String__
+  commentId: M:NiceGraphicLibrary.Utility.PersistentDataUtility.DirectoryExits(System.String@)
+  name.vb: DirectoryExits(ByRef String)
+  fullName: NiceGraphicLibrary.Utility.PersistentDataUtility.DirectoryExits(in System.String)
+  fullName.vb: NiceGraphicLibrary.Utility.PersistentDataUtility.DirectoryExits(ByRef System.String)
+  nameWithType: PersistentDataUtility.DirectoryExits(in String)
+  nameWithType.vb: PersistentDataUtility.DirectoryExits(ByRef String)
+- uid: NiceGraphicLibrary.Utility.PersistentDataUtility.DirectoryExits*
+  name: DirectoryExits
+  href: api/NiceGraphicLibrary.Utility.PersistentDataUtility.html#NiceGraphicLibrary_Utility_PersistentDataUtility_DirectoryExits_
+  commentId: Overload:NiceGraphicLibrary.Utility.PersistentDataUtility.DirectoryExits
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.PersistentDataUtility.DirectoryExits
+  nameWithType: PersistentDataUtility.DirectoryExits
+- uid: NiceGraphicLibrary.Utility.PersistentDataUtility.FileExits(System.String@)
+  name: FileExits(in String)
+  href: api/NiceGraphicLibrary.Utility.PersistentDataUtility.html#NiceGraphicLibrary_Utility_PersistentDataUtility_FileExits_System_String__
+  commentId: M:NiceGraphicLibrary.Utility.PersistentDataUtility.FileExits(System.String@)
+  name.vb: FileExits(ByRef String)
+  fullName: NiceGraphicLibrary.Utility.PersistentDataUtility.FileExits(in System.String)
+  fullName.vb: NiceGraphicLibrary.Utility.PersistentDataUtility.FileExits(ByRef System.String)
+  nameWithType: PersistentDataUtility.FileExits(in String)
+  nameWithType.vb: PersistentDataUtility.FileExits(ByRef String)
+- uid: NiceGraphicLibrary.Utility.PersistentDataUtility.FileExits*
+  name: FileExits
+  href: api/NiceGraphicLibrary.Utility.PersistentDataUtility.html#NiceGraphicLibrary_Utility_PersistentDataUtility_FileExits_
+  commentId: Overload:NiceGraphicLibrary.Utility.PersistentDataUtility.FileExits
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.PersistentDataUtility.FileExits
+  nameWithType: PersistentDataUtility.FileExits
+- uid: NiceGraphicLibrary.Utility.PersistentDataUtility.ReadFrom(System.String@)
+  name: ReadFrom(in String)
+  href: api/NiceGraphicLibrary.Utility.PersistentDataUtility.html#NiceGraphicLibrary_Utility_PersistentDataUtility_ReadFrom_System_String__
+  commentId: M:NiceGraphicLibrary.Utility.PersistentDataUtility.ReadFrom(System.String@)
+  name.vb: ReadFrom(ByRef String)
+  fullName: NiceGraphicLibrary.Utility.PersistentDataUtility.ReadFrom(in System.String)
+  fullName.vb: NiceGraphicLibrary.Utility.PersistentDataUtility.ReadFrom(ByRef System.String)
+  nameWithType: PersistentDataUtility.ReadFrom(in String)
+  nameWithType.vb: PersistentDataUtility.ReadFrom(ByRef String)
+- uid: NiceGraphicLibrary.Utility.PersistentDataUtility.ReadFrom*
+  name: ReadFrom
+  href: api/NiceGraphicLibrary.Utility.PersistentDataUtility.html#NiceGraphicLibrary_Utility_PersistentDataUtility_ReadFrom_
+  commentId: Overload:NiceGraphicLibrary.Utility.PersistentDataUtility.ReadFrom
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.PersistentDataUtility.ReadFrom
+  nameWithType: PersistentDataUtility.ReadFrom
+- uid: NiceGraphicLibrary.Utility.PersistentDataUtility.SetFileSystem(IFileSystem)
+  name: SetFileSystem(IFileSystem)
+  href: api/NiceGraphicLibrary.Utility.PersistentDataUtility.html#NiceGraphicLibrary_Utility_PersistentDataUtility_SetFileSystem_IFileSystem_
+  commentId: M:NiceGraphicLibrary.Utility.PersistentDataUtility.SetFileSystem(IFileSystem)
+  fullName: NiceGraphicLibrary.Utility.PersistentDataUtility.SetFileSystem(IFileSystem)
+  nameWithType: PersistentDataUtility.SetFileSystem(IFileSystem)
+- uid: NiceGraphicLibrary.Utility.PersistentDataUtility.SetFileSystem*
+  name: SetFileSystem
+  href: api/NiceGraphicLibrary.Utility.PersistentDataUtility.html#NiceGraphicLibrary_Utility_PersistentDataUtility_SetFileSystem_
+  commentId: Overload:NiceGraphicLibrary.Utility.PersistentDataUtility.SetFileSystem
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.PersistentDataUtility.SetFileSystem
+  nameWithType: PersistentDataUtility.SetFileSystem
+- uid: NiceGraphicLibrary.Utility.PersistentDataUtility.Write(System.String@,System.String@)
+  name: Write(in String, in String)
+  href: api/NiceGraphicLibrary.Utility.PersistentDataUtility.html#NiceGraphicLibrary_Utility_PersistentDataUtility_Write_System_String__System_String__
+  commentId: M:NiceGraphicLibrary.Utility.PersistentDataUtility.Write(System.String@,System.String@)
+  name.vb: Write(ByRef String, ByRef String)
+  fullName: NiceGraphicLibrary.Utility.PersistentDataUtility.Write(in System.String, in System.String)
+  fullName.vb: NiceGraphicLibrary.Utility.PersistentDataUtility.Write(ByRef System.String, ByRef System.String)
+  nameWithType: PersistentDataUtility.Write(in String, in String)
+  nameWithType.vb: PersistentDataUtility.Write(ByRef String, ByRef String)
+- uid: NiceGraphicLibrary.Utility.PersistentDataUtility.Write*
+  name: Write
+  href: api/NiceGraphicLibrary.Utility.PersistentDataUtility.html#NiceGraphicLibrary_Utility_PersistentDataUtility_Write_
+  commentId: Overload:NiceGraphicLibrary.Utility.PersistentDataUtility.Write
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Utility.PersistentDataUtility.Write
+  nameWithType: PersistentDataUtility.Write
 - uid: NiceGraphicLibrary.Utility.RandomUtility
   name: RandomUtility
   href: api/NiceGraphicLibrary.Utility.RandomUtility.html
   commentId: T:NiceGraphicLibrary.Utility.RandomUtility
   fullName: NiceGraphicLibrary.Utility.RandomUtility
   nameWithType: RandomUtility
-- uid: NiceGraphicLibrary.Utility.RandomUtility.ChooseByChances(IList{System.Single})
+- uid: NiceGraphicLibrary.Utility.RandomUtility.ChooseByChances(System.Collections.Generic.IList{System.Single})
   name: ChooseByChances(IList<Single>)
-  href: api/NiceGraphicLibrary.Utility.RandomUtility.html#NiceGraphicLibrary_Utility_RandomUtility_ChooseByChances_IList_System_Single__
-  commentId: M:NiceGraphicLibrary.Utility.RandomUtility.ChooseByChances(IList{System.Single})
+  href: api/NiceGraphicLibrary.Utility.RandomUtility.html#NiceGraphicLibrary_Utility_RandomUtility_ChooseByChances_System_Collections_Generic_IList_System_Single__
+  commentId: M:NiceGraphicLibrary.Utility.RandomUtility.ChooseByChances(System.Collections.Generic.IList{System.Single})
   name.vb: ChooseByChances(IList(Of Single))
-  fullName: NiceGraphicLibrary.Utility.RandomUtility.ChooseByChances(IList<System.Single>)
-  fullName.vb: NiceGraphicLibrary.Utility.RandomUtility.ChooseByChances(IList(Of System.Single))
+  fullName: NiceGraphicLibrary.Utility.RandomUtility.ChooseByChances(System.Collections.Generic.IList<System.Single>)
+  fullName.vb: NiceGraphicLibrary.Utility.RandomUtility.ChooseByChances(System.Collections.Generic.IList(Of System.Single))
   nameWithType: RandomUtility.ChooseByChances(IList<Single>)
   nameWithType.vb: RandomUtility.ChooseByChances(IList(Of Single))
 - uid: NiceGraphicLibrary.Utility.RandomUtility.ChooseByChances*
@@ -3698,13 +3984,13 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.Utility.RandomUtility.PickRandomFrom
   nameWithType: RandomUtility.PickRandomFrom
-- uid: NiceGraphicLibrary.Utility.RandomUtility.PickRandomFrom``1(IList{``0})
+- uid: NiceGraphicLibrary.Utility.RandomUtility.PickRandomFrom``1(System.Collections.Generic.IList{``0})
   name: PickRandomFrom<TElement>(IList<TElement>)
-  href: api/NiceGraphicLibrary.Utility.RandomUtility.html#NiceGraphicLibrary_Utility_RandomUtility_PickRandomFrom__1_IList___0__
-  commentId: M:NiceGraphicLibrary.Utility.RandomUtility.PickRandomFrom``1(IList{``0})
+  href: api/NiceGraphicLibrary.Utility.RandomUtility.html#NiceGraphicLibrary_Utility_RandomUtility_PickRandomFrom__1_System_Collections_Generic_IList___0__
+  commentId: M:NiceGraphicLibrary.Utility.RandomUtility.PickRandomFrom``1(System.Collections.Generic.IList{``0})
   name.vb: PickRandomFrom(Of TElement)(IList(Of TElement))
-  fullName: NiceGraphicLibrary.Utility.RandomUtility.PickRandomFrom<TElement>(IList<TElement>)
-  fullName.vb: NiceGraphicLibrary.Utility.RandomUtility.PickRandomFrom(Of TElement)(IList(Of TElement))
+  fullName: NiceGraphicLibrary.Utility.RandomUtility.PickRandomFrom<TElement>(System.Collections.Generic.IList<TElement>)
+  fullName.vb: NiceGraphicLibrary.Utility.RandomUtility.PickRandomFrom(Of TElement)(System.Collections.Generic.IList(Of TElement))
   nameWithType: RandomUtility.PickRandomFrom<TElement>(IList<TElement>)
   nameWithType.vb: RandomUtility.PickRandomFrom(Of TElement)(IList(Of TElement))
 - uid: NiceGraphicLibrary.Utility.RandomUtility.SetRandomGenerator(NiceGraphicLibrary.IRandomGenerator)
@@ -3727,12 +4013,12 @@ references:
   isSpec: "True"
   fullName: NiceGraphicLibrary.Utility.RandomUtility.Shuffle
   nameWithType: RandomUtility.Shuffle
-- uid: NiceGraphicLibrary.Utility.RandomUtility.Shuffle``1(IList{``0})
+- uid: NiceGraphicLibrary.Utility.RandomUtility.Shuffle``1(System.Collections.Generic.IList{``0})
   name: Shuffle<TElement>(IList<TElement>)
-  href: api/NiceGraphicLibrary.Utility.RandomUtility.html#NiceGraphicLibrary_Utility_RandomUtility_Shuffle__1_IList___0__
-  commentId: M:NiceGraphicLibrary.Utility.RandomUtility.Shuffle``1(IList{``0})
+  href: api/NiceGraphicLibrary.Utility.RandomUtility.html#NiceGraphicLibrary_Utility_RandomUtility_Shuffle__1_System_Collections_Generic_IList___0__
+  commentId: M:NiceGraphicLibrary.Utility.RandomUtility.Shuffle``1(System.Collections.Generic.IList{``0})
   name.vb: Shuffle(Of TElement)(IList(Of TElement))
-  fullName: NiceGraphicLibrary.Utility.RandomUtility.Shuffle<TElement>(IList<TElement>)
-  fullName.vb: NiceGraphicLibrary.Utility.RandomUtility.Shuffle(Of TElement)(IList(Of TElement))
+  fullName: NiceGraphicLibrary.Utility.RandomUtility.Shuffle<TElement>(System.Collections.Generic.IList<TElement>)
+  fullName.vb: NiceGraphicLibrary.Utility.RandomUtility.Shuffle(Of TElement)(System.Collections.Generic.IList(Of TElement))
   nameWithType: RandomUtility.Shuffle<TElement>(IList<TElement>)
   nameWithType.vb: RandomUtility.Shuffle(Of TElement)(IList(Of TElement))
