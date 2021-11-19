@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
-using UnityEditor; 
+using UnityEditor;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace NiceGraphicLibrary.Editor
 {
   public class PackageBuilder : EditorWindow
   {
     private string PACKAGE_PATH;
+    private string PATH_TO_PACKAGEJSON;
     private string PACKAGE_OUTPUT_PATH;
     private ExportPackageOptions EXPORT_OPTIONS;
 
@@ -21,6 +24,8 @@ namespace NiceGraphicLibrary.Editor
     private bool lastPackageWasDuplicate;
     private string previousPackageName;
 
+    private bool useCustomVersion = false;
+
     private int majorVersion;
     private int minorVersion;
     private int pathVersion;
@@ -32,12 +37,14 @@ namespace NiceGraphicLibrary.Editor
       window.titleContent = new GUIContent("Package Builder");
       window.maxSize = new Vector2(MAX_WINDOW_WIDTH, MAX_WINDOW_HEIGHT);
       window.Show();
+      
     }
 
     private void OnEnable()
     {
       PACKAGE_PATH = $"Assets/PackageNicegraphicLibrary";
       PACKAGE_OUTPUT_PATH = $"{Application.dataPath}/Built Packages";
+      PATH_TO_PACKAGEJSON = $"{PACKAGE_PATH}/package.json";
       EXPORT_OPTIONS = ExportPackageOptions.Recurse;
 
       packageName = "NiceGraphicLibrary";
@@ -56,25 +63,23 @@ namespace NiceGraphicLibrary.Editor
       packageName = EditorGUILayout.TextField("Package Name", packageName);
       includeDependencies = EditorGUILayout.Toggle("Include Dependencies", includeDependencies);
 
-      RenderVersioningInput();
+      RenderCustomVersioningInput();
 
       if (GUILayout.Button("Create Package"))
       {
-        
-        string finalPath = CreateFinalPath();
         previousPackageName = CreateFinalName();
+        string finalPath = CreateFinalPath(previousPackageName);
+        
         EnsureOutputPathCorrectOutputPath();
 
         if (IsDuplicatePackageInTarget(finalPath))
         {
-          lastPackageWasDuplicate = true;
-          
+          lastPackageWasDuplicate = true;          
         }
         else
         {
           AdjustExportOptions();
-          lastPackageWasDuplicate = false;
-          
+          lastPackageWasDuplicate = false;         
           Export(finalPath);
         }        
       }
@@ -85,20 +90,43 @@ namespace NiceGraphicLibrary.Editor
       }
     }
 
-    private void RenderVersioningInput()
+    private void RenderCustomVersioningInput()
     {
-      majorVersion = EditorGUILayout.IntField("Major Version", majorVersion);
-      minorVersion = EditorGUILayout.IntField("Minor Version", minorVersion);
-      pathVersion = EditorGUILayout.IntField("Path Version", pathVersion);
+      useCustomVersion = EditorGUILayout.Toggle("Use custom version", useCustomVersion);
+      
+      if (useCustomVersion)
+      {
+        majorVersion = EditorGUILayout.IntField("Major Version", majorVersion);
+        minorVersion = EditorGUILayout.IntField("Minor Version", minorVersion);
+        pathVersion = EditorGUILayout.IntField("Path Version", pathVersion);
 
-      majorVersion = Mathf.Abs(majorVersion);
-      minorVersion = Mathf.Abs(minorVersion);
-      pathVersion = Mathf.Abs(pathVersion);
+        majorVersion = Mathf.Abs(majorVersion);
+        minorVersion = Mathf.Abs(minorVersion);
+        pathVersion = Mathf.Abs(pathVersion);
+      }
     }
 
-    private string CreateFinalPath() => $"{PACKAGE_OUTPUT_PATH}/{packageName}_v{majorVersion}.{minorVersion}.{pathVersion}.unitypackage";
+    private string CreateFinalPath(in string packageName)
+     => $"{PACKAGE_OUTPUT_PATH}/{packageName}";
 
-    private string CreateFinalName() => $"{packageName}_v{majorVersion}.{minorVersion}.{pathVersion}.unitypackage";
+    private string CreateFinalName()
+    {
+      string version = "";
+
+      if (useCustomVersion)
+      {
+        version = $"{majorVersion}.{minorVersion}.{pathVersion}";
+      }
+      else
+      {
+        string contentOfPackageJson = File.ReadAllText(PATH_TO_PACKAGEJSON);
+        JObject parsedJsonContent = JObject.Parse(contentOfPackageJson);
+        version = (string)parsedJsonContent.SelectToken("version");        
+      }
+
+      return $"{packageName}_v{version}.unitypackage";
+    }
+    
 
     private void AdjustExportOptions()
     {
@@ -121,7 +149,7 @@ namespace NiceGraphicLibrary.Editor
 
     private void Export(in string finalOutPath)
     {
-      Debug.Log($"PACKAGE_PATH: {PACKAGE_PATH}");
+      
       AssetDatabase.ExportPackage(PACKAGE_PATH, finalOutPath, EXPORT_OPTIONS);
       AssetDatabase.Refresh();
     }
