@@ -165,6 +165,12 @@ references:
   commentId: N:NiceGraphicLibrary.Component.GUI
   fullName: NiceGraphicLibrary.Component.GUI
   nameWithType: NiceGraphicLibrary.Component.GUI
+- uid: NiceGraphicLibrary.Component.GUI.KeyboardButtonNavigation
+  name: KeyboardButtonNavigation
+  href: api/NiceGraphicLibrary.Component.GUI.KeyboardButtonNavigation.html
+  commentId: T:NiceGraphicLibrary.Component.GUI.KeyboardButtonNavigation
+  fullName: NiceGraphicLibrary.Component.GUI.KeyboardButtonNavigation
+  nameWithType: KeyboardButtonNavigation
 - uid: NiceGraphicLibrary.Component.GUI.LoadSceneByNameOnButtonClick
   name: LoadSceneByNameOnButtonClick
   href: api/NiceGraphicLibrary.Component.GUI.LoadSceneByNameOnButtonClick.html
