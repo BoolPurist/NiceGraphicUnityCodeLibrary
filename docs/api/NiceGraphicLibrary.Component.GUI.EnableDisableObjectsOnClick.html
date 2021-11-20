@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace NiceGraphicLibrary.Component.GUI
+    <title>Class EnableDisableObjectsOnClick
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace NiceGraphicLibrary.Component.GUI
+    <meta name="title" content="Class EnableDisableObjectsOnClick
    ">
     <meta name="generator" content="docfx 2.58.4.0">
     
@@ -68,32 +68,60 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="NiceGraphicLibrary.Component.GUI">
+            <article class="content wrap" id="_content" data-uid="NiceGraphicLibrary.Component.GUI.EnableDisableObjectsOnClick">
   
-  <h1 id="NiceGraphicLibrary_Component_GUI" data-uid="NiceGraphicLibrary.Component.GUI" class="text-break">Namespace NiceGraphicLibrary.Component.GUI
+  
+  <h1 id="NiceGraphicLibrary_Component_GUI_EnableDisableObjectsOnClick" data-uid="NiceGraphicLibrary.Component.GUI.EnableDisableObjectsOnClick" class="text-break">Class EnableDisableObjectsOnClick
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Component which enables chosen objects and disables other chosen game objects</p>
+</div>
   <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
-    <h3 id="classes">Classes
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="NiceGraphicLibrary.Component.GUI.ObserverForButtonClick.html">ObserverForButtonClick</a></div>
+    <div class="level2"><span class="xref">EnableDisableObjectsOnClick</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="NiceGraphicLibrary.Component.GUI.ObserverForButtonClick.html#NiceGraphicLibrary_Component_GUI_ObserverForButtonClick_attachedButton">ObserverForButtonClick.attachedButton</a>
+    </div>
+    <div>
+      <a class="xref" href="NiceGraphicLibrary.Component.GUI.ObserverForButtonClick.html#NiceGraphicLibrary_Component_GUI_ObserverForButtonClick_OnEnable">ObserverForButtonClick.OnEnable()</a>
+    </div>
+    <div>
+      <a class="xref" href="NiceGraphicLibrary.Component.GUI.ObserverForButtonClick.html#NiceGraphicLibrary_Component_GUI_ObserverForButtonClick_OnDisable">ObserverForButtonClick.OnDisable()</a>
+    </div>
+    <div>
+      <a class="xref" href="NiceGraphicLibrary.Component.GUI.ObserverForButtonClick.html#NiceGraphicLibrary_Component_GUI_ObserverForButtonClick_OnDestroy">ObserverForButtonClick.OnDestroy()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="NiceGraphicLibrary.Component.GUI.html">NiceGraphicLibrary.Component.GUI</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="NiceGraphicLibrary_Component_GUI_EnableDisableObjectsOnClick_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EnableDisableObjectsOnClick : ObserverForButtonClick</code></pre>
+  </div>
+  <h5 id="NiceGraphicLibrary_Component_GUI_EnableDisableObjectsOnClick_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Useful for toggling different GUI menus</p>
+</div>
+  <h3 id="methods">Methods
   </h3>
-      <h4><a class="xref" href="NiceGraphicLibrary.Component.GUI.EnableDisableObjectsOnClick.html">EnableDisableObjectsOnClick</a></h4>
-      <section><p>Component which enables chosen objects and disables other chosen game objects</p>
-</section>
-      <h4><a class="xref" href="NiceGraphicLibrary.Component.GUI.KeyboardButtonNavigation.html">KeyboardButtonNavigation</a></h4>
-      <section><p>Component to let the player select buttons via keyboard</p>
-</section>
-      <h4><a class="xref" href="NiceGraphicLibrary.Component.GUI.LoadSceneByNameOnButtonClick.html">LoadSceneByNameOnButtonClick</a></h4>
-      <section><p>Loads scene by a given name if the unity button on the same object is clicked.</p>
-</section>
-      <h4><a class="xref" href="NiceGraphicLibrary.Component.GUI.ObserverForButtonClick.html">ObserverForButtonClick</a></h4>
-      <section><p>Base class for attaching a handler to the click event of an unity button component</p>
-</section>
-      <h4><a class="xref" href="NiceGraphicLibrary.Component.GUI.QuitGameOnButtonClick.html">QuitGameOnButtonClick</a></h4>
-      <section><p>Component to end game by a button click.</p>
-</section>
-      <h4><a class="xref" href="NiceGraphicLibrary.Component.GUI.TextTemplate.html">TextTemplate</a></h4>
-      <section></section>
+  
+  
+  <a id="NiceGraphicLibrary_Component_GUI_EnableDisableObjectsOnClick_OnButtonClicked_" data-uid="NiceGraphicLibrary.Component.GUI.EnableDisableObjectsOnClick.OnButtonClicked*"></a>
+  <h4 id="NiceGraphicLibrary_Component_GUI_EnableDisableObjectsOnClick_OnButtonClicked" data-uid="NiceGraphicLibrary.Component.GUI.EnableDisableObjectsOnClick.OnButtonClicked">OnButtonClicked()</h4>
+  <div class="markdown level1 summary"><p>If attached button component is clicked then objects in inspector field [To Disable On Click] as list are enabled
+and objects in the field [To Enable On Click] as list are disabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnButtonClicked()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="NiceGraphicLibrary.Component.GUI.ObserverForButtonClick.html#NiceGraphicLibrary_Component_GUI_ObserverForButtonClick_OnButtonClicked">ObserverForButtonClick.OnButtonClicked()</a></div>
 </article>
           </div>
           

@@ -165,6 +165,25 @@ references:
   commentId: N:NiceGraphicLibrary.Component.GUI
   fullName: NiceGraphicLibrary.Component.GUI
   nameWithType: NiceGraphicLibrary.Component.GUI
+- uid: NiceGraphicLibrary.Component.GUI.EnableDisableObjectsOnClick
+  name: EnableDisableObjectsOnClick
+  href: api/NiceGraphicLibrary.Component.GUI.EnableDisableObjectsOnClick.html
+  commentId: T:NiceGraphicLibrary.Component.GUI.EnableDisableObjectsOnClick
+  fullName: NiceGraphicLibrary.Component.GUI.EnableDisableObjectsOnClick
+  nameWithType: EnableDisableObjectsOnClick
+- uid: NiceGraphicLibrary.Component.GUI.EnableDisableObjectsOnClick.OnButtonClicked
+  name: OnButtonClicked()
+  href: api/NiceGraphicLibrary.Component.GUI.EnableDisableObjectsOnClick.html#NiceGraphicLibrary_Component_GUI_EnableDisableObjectsOnClick_OnButtonClicked
+  commentId: M:NiceGraphicLibrary.Component.GUI.EnableDisableObjectsOnClick.OnButtonClicked
+  fullName: NiceGraphicLibrary.Component.GUI.EnableDisableObjectsOnClick.OnButtonClicked()
+  nameWithType: EnableDisableObjectsOnClick.OnButtonClicked()
+- uid: NiceGraphicLibrary.Component.GUI.EnableDisableObjectsOnClick.OnButtonClicked*
+  name: OnButtonClicked
+  href: api/NiceGraphicLibrary.Component.GUI.EnableDisableObjectsOnClick.html#NiceGraphicLibrary_Component_GUI_EnableDisableObjectsOnClick_OnButtonClicked_
+  commentId: Overload:NiceGraphicLibrary.Component.GUI.EnableDisableObjectsOnClick.OnButtonClicked
+  isSpec: "True"
+  fullName: NiceGraphicLibrary.Component.GUI.EnableDisableObjectsOnClick.OnButtonClicked
+  nameWithType: EnableDisableObjectsOnClick.OnButtonClicked
 - uid: NiceGraphicLibrary.Component.GUI.KeyboardButtonNavigation
   name: KeyboardButtonNavigation
   href: api/NiceGraphicLibrary.Component.GUI.KeyboardButtonNavigation.html

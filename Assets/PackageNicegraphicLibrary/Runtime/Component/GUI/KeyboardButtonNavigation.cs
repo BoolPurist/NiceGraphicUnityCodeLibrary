@@ -13,7 +13,10 @@ namespace NiceGraphicLibrary.Component.GUI
   public class KeyboardButtonNavigation : MonoBehaviour
   {
     [SerializeField, Tooltip("Buttons to navigate through via keyboard. The start is at element 0, end is at 1. element from bottom")]
-    private List<Button> _buttonToNavigate;
+#pragma warning disable IDE0044 // Add readonly modifier
+#pragma warning disable IDE0090 // Use 'new(...)'
+    private List<Button> _buttonToNavigate = new List<Button>();
+#pragma warning restore IDE0090 // Use 'new(...)'
 
     [SerializeField, Tooltip("if pressed then next bottom button in list Button To Navigate ")]
     private KeyCode GoUpKey = KeyCode.UpArrow;
@@ -25,6 +28,7 @@ namespace NiceGraphicLibrary.Component.GUI
 
     [SerializeField, Tooltip("if true then the navigation cycles if selection goes over top or bottom of list.")]
     private bool _navigateInCycle;
+#pragma warning restore IDE0044 // Add readonly modifier
 
     #region internal fields
     private int _lastIndexOfNavigatedButtons = -1;
@@ -37,6 +41,8 @@ namespace NiceGraphicLibrary.Component.GUI
     #endregion
 
     #region Unity callbacks
+
+#pragma warning disable IDE0051 // Remove unused private members
     private void OnEnable()
     {
       ResetNavigation();
@@ -48,7 +54,7 @@ namespace NiceGraphicLibrary.Component.GUI
     private void OnValidate()
     {
       SetNaviagetInCycle(_navigateInCycle);
-      _lastIndexOfNavigatedButtons = _CountOfButtons - 1;
+      _lastIndexOfNavigatedButtons = CountOfButtons - 1;
     }
 
     private void Update()
@@ -67,9 +73,8 @@ namespace NiceGraphicLibrary.Component.GUI
       }
       else if (!IsSubmitOfStandaloneInputModuleFired && Input.GetKeyDown(ConfirmKey) && _currentIndex != -1)
       {
-        Button buttonToSelect = _buttonToNavigate[_currentIndex];
         _currentSelectedButton.Select();
-        buttonToSelect.onClick.Invoke();        
+        _currentSelectedButton.onClick.Invoke();        
       }
 
       void SelectNewButton()
@@ -78,6 +83,21 @@ namespace NiceGraphicLibrary.Component.GUI
         _currentSelectedButton.Select();
       }
     }
+
+
+    #endregion
+
+    #region Context menu
+
+    [ContextMenu("Collect buttons under this object."), ExecuteInEditMode]
+    private void CollectButtonsUnderThisObject()
+    {
+      Button[] collectedButtons = GetComponentsInChildren<Button>();
+      _buttonToNavigate.Clear();
+      _buttonToNavigate.AddRange(collectedButtons);
+    }
+
+#pragma warning restore IDE0051 // Remove unused private members
 
     #endregion
 
@@ -114,8 +134,7 @@ namespace NiceGraphicLibrary.Component.GUI
     {
       GameObject currentSelectedButton = EventSystem.current.currentSelectedGameObject;
       if (_currentSelectedButton != null && currentSelectedButton != _currentSelectedButton.gameObject)
-      {
-        Debug.Log("asdf");
+      {        
         Button currentButton = currentSelectedButton.GetComponent<Button>();
         int newSelectedIndex = _buttonToNavigate.IndexOf(currentButton);
         _currentIndex = newSelectedIndex;
@@ -158,7 +177,7 @@ namespace NiceGraphicLibrary.Component.GUI
     /// <summary>
     /// Number of navigated buttons
     /// </summary>
-    private int _CountOfButtons => _buttonToNavigate.Count;
+    private int CountOfButtons => _buttonToNavigate.Count;
 
     /// <summary>
     /// True if submit button was pressed which the standalone input module is listening to.
@@ -220,6 +239,8 @@ namespace NiceGraphicLibrary.Component.GUI
       => _currentIndex = _currentIndex < 0 ? _lastIndexOfNavigatedButtons : _currentIndex;
 
     #endregion
+
+
 
   }
 }

@@ -111,7 +111,7 @@ namespace NiceGraphicLibrary.Editor
 
     private string CreateFinalName()
     {
-      string version = "";
+      string version;
 
       if (useCustomVersion)
       {
