@@ -73,7 +73,8 @@
   
   <h1 id="NiceGraphicLibrary_ScriptableObjects_TextTemplateData" data-uid="NiceGraphicLibrary.ScriptableObjects.TextTemplateData" class="text-break">Class TextTemplateData
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Asset as parameter for component <a class="xref" href="NiceGraphicLibrary.Component.GUI.TextTemplate.html">TextTemplate</a> to provide a template for a text with values to be inserted at certain places marked by keys</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -92,7 +93,8 @@
   
   <a id="NiceGraphicLibrary_ScriptableObjects_TextTemplateData_DefaultValuesCopy_" data-uid="NiceGraphicLibrary.ScriptableObjects.TextTemplateData.DefaultValuesCopy*"></a>
   <h4 id="NiceGraphicLibrary_ScriptableObjects_TextTemplateData_DefaultValuesCopy" data-uid="NiceGraphicLibrary.ScriptableObjects.TextTemplateData.DefaultValuesCopy">DefaultValuesCopy</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Table of keys with their default values in the text template.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -119,7 +121,8 @@
   
   <a id="NiceGraphicLibrary_ScriptableObjects_TextTemplateData_GetPreviewText_" data-uid="NiceGraphicLibrary.ScriptableObjects.TextTemplateData.GetPreviewText*"></a>
   <h4 id="NiceGraphicLibrary_ScriptableObjects_TextTemplateData_GetPreviewText" data-uid="NiceGraphicLibrary.ScriptableObjects.TextTemplateData.GetPreviewText">GetPreviewText()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Text created from the text template with default values inserted.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -144,7 +147,9 @@
   
   <a id="NiceGraphicLibrary_ScriptableObjects_TextTemplateData_GetTextWithInsertedValue_" data-uid="NiceGraphicLibrary.ScriptableObjects.TextTemplateData.GetTextWithInsertedValue*"></a>
   <h4 id="NiceGraphicLibrary_ScriptableObjects_TextTemplateData_GetTextWithInsertedValue_System_String__System_Object__System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="NiceGraphicLibrary.ScriptableObjects.TextTemplateData.GetTextWithInsertedValue(System.String@,System.Object@,System.Collections.Generic.Dictionary{System.String,System.String})">GetTextWithInsertedValue(in String, in Object, Dictionary&lt;String, String&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns a rendered text with values provided by a dictionary and the new value.
+Provided dictionary will be updated after call.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -163,12 +168,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Name</span></td>
-        <td></td>
+        <td><p>Key of new value. Note if not defined in text template the new value will not considered.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Object</span></td>
         <td><span class="parametername">newValue</span></td>
-        <td></td>
+        <td><p>New value to be inserted. if null, the word [null] will be inserted.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>

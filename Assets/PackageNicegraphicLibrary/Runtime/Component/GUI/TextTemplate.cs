@@ -9,6 +9,10 @@ using NiceGraphicLibrary.Utility;
 
 namespace NiceGraphicLibrary.Component.GUI
 {
+  /// <summary>
+  /// Component to update [text mesh pro] component according to text template.
+  /// Text template is text with certain place to insert values.
+  /// </summary>
   [RequireComponent(typeof(TextMeshProUGUI))]
   public class TextTemplate : MonoBehaviour
   {
@@ -39,14 +43,20 @@ namespace NiceGraphicLibrary.Component.GUI
           _textComponent.text = _templateDate.GetPreviewText();
           _valueTable = _templateDate.DefaultValuesCopy;
         }
-      }
-
-    
+      }    
     }
 
+    /// <summary>
+    /// Allows to insert a value at certain place in the text template.
+    /// </summary>    
+    /// <param name="name">
+    /// Key for the certain place. Note: if not found in asset [Template Date] nothing will happen.
+    /// </param>
+    /// <param name="insertedValue">
+    /// Value to be inserted at a place in the text template. Note: if null then "null" as word will be inserted.
+    /// </param>
     public void InsertValueWithName(in string name, in string insertedValue)
     {
-
       _textComponent.text = _templateDate.GetTextWithInsertedValue(name, insertedValue, _valueTable);
     }
   } 

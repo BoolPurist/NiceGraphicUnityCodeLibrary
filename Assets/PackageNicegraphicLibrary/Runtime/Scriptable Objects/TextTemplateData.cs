@@ -9,6 +9,9 @@ using NiceGraphicLibrary.Utility;
 
 namespace NiceGraphicLibrary.ScriptableObjects
 {
+  /// <summary>
+  /// Asset as parameter for component <see cref="NiceGraphicLibrary.Component.GUI.TextTemplate"/> to provide a template for a text with values to be inserted at certain places marked by keys
+  /// </summary>
   [CreateAssetMenu(fileName = "NewTextTemplateData", menuName = "NiceGraphicLibrary/TextTemplateData")]
   public class TextTemplateData : ScriptableObject
   {
@@ -18,28 +21,37 @@ namespace NiceGraphicLibrary.ScriptableObjects
     [System.Serializable]
     public class ValueEntry
     {
-      public string Name = "";    
+      [Tooltip("Name of key as place to insert value there")]
+      public string Name = "";
+      [Tooltip("Default value to insert at the certain place")]
       public string DefaultValue = "";
     }
 
-    [SerializeField]
+    [SerializeField, Tooltip("Left symbols marking the content of a value to be inserted.")]
     private string _leftSeparator = DEFAULT_LEFT_SEPARATOR;
-    [SerializeField]
+    [SerializeField, Tooltip("Right symbols marking the content of a value to be inserted.")]
     private string _rightSeparator = DEFAULT_RIGHT_SEPARATOR;
 
-    [SerializeField, TextArea]
+    [SerializeField, TextArea, Tooltip("Template to render a text with inserted values.")]
     private string TextTemplate = "";
 
-    public string GetPreviewText() => TextPreview;
-
-    public Dictionary<string, string> DefaultValuesCopy => new Dictionary<string, string>(_defaultValueTable);
-
-    [SerializeField, TextArea]
+    [SerializeField, TextArea, Tooltip("Result text with default values to get impression.")]
     private string TextPreview = "";
 
-    [SerializeField]
+    [SerializeField, Tooltip("Key for a certain place with a certain value inserted there.")]
     private List<ValueEntry> ValueInText;
 
+    /// <summary>
+    /// Text created from the text template with default values inserted.
+    /// </summary>
+    public string GetPreviewText() => TextPreview;
+
+    /// <summary>
+    /// Table of keys with their default values in the text template.
+    /// </summary>
+    public Dictionary<string, string> DefaultValuesCopy => new Dictionary<string, string>(_defaultValueTable);
+
+    
     private Dictionary<string, string> _defaultValueTable = new Dictionary<string, string>();
 
     private ListToDictionaryConverter<string, string, ValueEntry> _converter =
@@ -51,8 +63,12 @@ namespace NiceGraphicLibrary.ScriptableObjects
       TextPreview = GetUpdatedText(_defaultValueTable);
     }
 
-       
-
+    /// <summary>
+    /// Returns a text on base of the text template and provided values.
+    /// </summar>
+    /// <param name="values">
+    /// Values with keys for the places to be inserted.
+    /// </param>
     private string GetUpdatedText(Dictionary<string, string> values)
     {     
       var newTextBuilder = new StringBuilder(TextTemplate);
@@ -65,6 +81,16 @@ namespace NiceGraphicLibrary.ScriptableObjects
       return newTextBuilder.ToString();
     }
 
+    /// <summary>
+    /// Returns a rendered text with values provided by a dictionary and the new value.
+    /// Provided dictionary will be updated after call.
+    /// </summary>
+    /// <param name="Name">
+    /// Key of new value. Note if not defined in text template the new value will not considered.
+    /// </param>
+    /// <param name="newValue">
+    /// New value to be inserted. if null, the word [null] will be inserted.
+    /// </param>
     public string GetTextWithInsertedValue(
       in string Name, 
       in object newValue, 
