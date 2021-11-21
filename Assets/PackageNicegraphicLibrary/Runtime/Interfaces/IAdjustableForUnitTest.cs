@@ -14,6 +14,6 @@ namespace NiceGraphicLibrary
     /// If true the object behaves differently in certain parts of the logic to work for unit tests
     /// Usually not relying on input or certain physics functionalities of unity to work.
     /// </summary>
-    public bool IsSetForUnitTest { get; set; } 
+    bool IsSetForUnitTest { get; set; } 
   } 
 }

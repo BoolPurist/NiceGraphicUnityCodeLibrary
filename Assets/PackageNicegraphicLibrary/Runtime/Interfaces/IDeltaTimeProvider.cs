@@ -17,6 +17,6 @@ namespace NiceGraphicLibrary
     /// <returns>
     /// Passed seconds between the last past frame and the current frame
     /// </returns>
-    public float GetDelatTime();
+    float GetDelatTime();
   }
 }

@@ -7,12 +7,12 @@ namespace NiceGraphicLibrary
 {
   public interface IGameInputProvider
   {
-    public bool GetKey(string keyName);
-    public bool GetKey(KeyCode keyCode);
-    public bool GetKeyDown(string keyName);
-    public bool GetKeyDown(KeyCode keyCode);
-    public bool GetKeyUp(string keyName);
-    public bool GetKeyUp(KeyCode keyCode);
+    bool GetKey(string keyName);
+    bool GetKey(KeyCode keyCode);
+    bool GetKeyDown(string keyName);
+    bool GetKeyDown(KeyCode keyCode);
+    bool GetKeyUp(string keyName);
+    bool GetKeyUp(KeyCode keyCode);
 
     bool GetButton(string buttonName);
     bool GetButtonDown(string buttonName);

@@ -7,7 +7,7 @@ namespace NiceGraphicLibrary
 {
   public interface ITakesDeltaTimeProvider
   {
-    public void SetDeltaTimeProvider(IDeltaTimeProvider provider);
+    void SetDeltaTimeProvider(IDeltaTimeProvider provider);
     
   }
 }

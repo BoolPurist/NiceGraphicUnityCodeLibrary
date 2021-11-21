@@ -16,6 +16,6 @@ namespace NiceGraphicLibrary
     /// <param name="newProvider">
     /// New implementation for getting game input.
     /// </param>
-    public void SetKeyButtonProvider(IGameInputProvider newProvider);
+    void SetKeyButtonProvider(IGameInputProvider newProvider);
   }
 }

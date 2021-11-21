@@ -16,7 +16,7 @@ namespace NiceGraphicLibrary
     /// <summary>
     /// Returns a random value between 0 and 1.
     /// </summary>
-    public float Value { get; }
+    float Value { get; }
 
     /// <param name="minInclusive">
     /// Minimal value which can be returned
@@ -27,6 +27,6 @@ namespace NiceGraphicLibrary
     /// <returns>
     /// Returns a whole number between minInclusive and maxInclusive
     /// </returns>
-    public int Range(int minInclusive, int maxInclusive);
+    int Range(int minInclusive, int maxInclusive);
   }
 }
