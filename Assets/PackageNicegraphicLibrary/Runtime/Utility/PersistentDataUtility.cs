@@ -10,7 +10,7 @@ using System.IO.Abstractions;
 namespace NiceGraphicLibrary.Utility
 {
   /// <summary>
-  /// Utility functions to save game data permanently. All operations, like read and write are done relative to the path Appplication.persistentDataPath.
+  /// Utility functions to save game data permanently. All operations, like read and write are done relative to the path Appplication.persistentDataPath and synchronously
   /// </summary>
   public static class PersistentDataUtility
   {
@@ -117,9 +117,8 @@ namespace NiceGraphicLibrary.Utility
     /// </param>
     public static void CreateDirectory(in string path)
     {
-      if (string.IsNullOrWhiteSpace(path)) return;
-      var paths = new PersistentPathRecord(path);
-      _fileSystem.Directory.CreateDirectory(paths.FullPath);
+      if (string.IsNullOrWhiteSpace(path)) return;      
+      _fileSystem.Directory.CreateDirectory(Path.Combine(PresistentPath, path));
     }
 
 
@@ -134,7 +133,8 @@ namespace NiceGraphicLibrary.Utility
     public static string ReadFrom(in string path)
     {
       if (string.IsNullOrWhiteSpace(path)) return null;
-      string fullPath = $"{Application.persistentDataPath}/{path}";
+      
+      string fullPath = Path.Combine(PresistentPath, path);
 
       if (!File.Exists(fullPath))
       {
@@ -216,18 +216,6 @@ namespace NiceGraphicLibrary.Utility
       }
     }
 
-    /// <summary>
-    /// Uses / for 2.0 net standard to combine.
-    /// </summary>
-    private static string CombinePaths(params string[] paths)
-    {
-      string result = paths[0];
-      for (int i = 1; i < paths.Length; i++)
-      {
-        result += $"/{paths[i]}";
-      }
-      return result;
-    }
 
     /// <summary>
     /// Used to provide relevant parts of given path relative to Application.persistentDataPath
@@ -246,12 +234,17 @@ namespace NiceGraphicLibrary.Utility
         RelativeFullPath = fullPath;
         FileName = _fileSystem.Path.GetFileName(RelativeFullPath);
         RelativePathToFile = _fileSystem.Path.GetDirectoryName(RelativeFullPath);
+        
+        FullPathToFile = Path.Combine(PresistentPath, RelativePathToFile);
+        FullPath = Path.Combine(FullPathToFile, FileName);
 
-        FullPathToFile = CombinePaths(Application.persistentDataPath, RelativePathToFile);
-        FullPath = CombinePaths(FullPathToFile, FileName);
       }
+
+      
     }
-    
-    
+
+    private static readonly string PresistentPath = Application.persistentDataPath.Replace('/', Path.DirectorySeparatorChar);
+
+
   } 
 }
